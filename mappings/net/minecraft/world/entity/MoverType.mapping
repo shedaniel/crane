@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/MoverType
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/entity/MoverType;
+		ARG 0 name

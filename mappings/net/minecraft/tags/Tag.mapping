@@ -1,0 +1,67 @@
+CLASS net/minecraft/tags/Tag
+	METHOD codec (Ljava/util/function/Supplier;)Lcom/mojang/serialization/Codec;
+		ARG 0 supplier
+	METHOD contains (Ljava/lang/Object;)Z
+		ARG 1 value
+	METHOD fromSet (Ljava/util/Set;)Lnet/minecraft/tags/Tag;
+		ARG 0 values
+	METHOD getRandomElement (Ljava/util/Random;)Ljava/lang/Object;
+		ARG 1 random
+	METHOD lambda$codec$1 (Ljava/util/function/Supplier;Lnet/minecraft/resources/ResourceLocation;)Lcom/mojang/serialization/DataResult;
+		ARG 1 location
+	CLASS Entry
+		METHOD serializeTo (Lcom/google/gson/JsonArray;)V
+			ARG 1 array
+		METHOD visitOptionalDependencies (Ljava/util/function/Consumer;)V
+			ARG 1 consumer
+		METHOD visitRequiredDependencies (Ljava/util/function/Consumer;)V
+			ARG 1 consumer
+	CLASS Builder
+		METHOD add (Lnet/minecraft/tags/Tag$BuilderEntry;)Lnet/minecraft/tags/Tag$Builder;
+			ARG 1 entry
+		METHOD add (Lnet/minecraft/tags/Tag$Entry;Ljava/lang/String;)Lnet/minecraft/tags/Tag$Builder;
+			ARG 1 entry
+			ARG 2 source
+		METHOD addElement (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Lnet/minecraft/tags/Tag$Builder;
+			ARG 1 location
+			ARG 2 source
+		METHOD addFromJson (Lcom/google/gson/JsonObject;Ljava/lang/String;)Lnet/minecraft/tags/Tag$Builder;
+			ARG 1 object
+			ARG 2 source
+		METHOD addOptionalElement (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Lnet/minecraft/tags/Tag$Builder;
+			ARG 1 location
+			ARG 2 source
+		METHOD addOptionalTag (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Lnet/minecraft/tags/Tag$Builder;
+			ARG 1 location
+			ARG 2 source
+		METHOD addTag (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Lnet/minecraft/tags/Tag$Builder;
+			ARG 1 location
+			ARG 2 source
+		METHOD lambda$addFromJson$2 (Ljava/lang/String;Lnet/minecraft/tags/Tag$Entry;)V
+			ARG 2 entry
+		METHOD lambda$visitOptionalDependencies$1 (Ljava/util/function/Consumer;Lnet/minecraft/tags/Tag$BuilderEntry;)V
+			ARG 1 builderEntry
+		METHOD lambda$visitRequiredDependencies$0 (Ljava/util/function/Consumer;Lnet/minecraft/tags/Tag$BuilderEntry;)V
+			ARG 1 builderEntry
+		METHOD parseEntry (Lcom/google/gson/JsonElement;)Lnet/minecraft/tags/Tag$Entry;
+			ARG 0 jsonElement
+		METHOD visitOptionalDependencies (Ljava/util/function/Consumer;)V
+			ARG 1 consumer
+		METHOD visitRequiredDependencies (Ljava/util/function/Consumer;)V
+			ARG 1 consumer
+	CLASS TagEntry
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+			ARG 1 id
+	CLASS BuilderEntry
+		METHOD <init> (Lnet/minecraft/tags/Tag$Entry;Ljava/lang/String;)V
+			ARG 1 entry
+			ARG 2 source
+	CLASS ElementEntry
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+			ARG 1 id
+	CLASS OptionalTagEntry
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+			ARG 1 id
+	CLASS OptionalElementEntry
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+			ARG 1 id

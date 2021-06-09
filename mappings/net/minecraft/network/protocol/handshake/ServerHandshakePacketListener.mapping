@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/handshake/ServerHandshakePacketListener
+	METHOD handleIntention (Lnet/minecraft/network/protocol/handshake/ClientIntentionPacket;)V
+		ARG 1 packet

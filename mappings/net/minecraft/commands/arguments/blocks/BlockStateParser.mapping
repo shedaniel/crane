@@ -1,0 +1,17 @@
+CLASS net/minecraft/commands/arguments/blocks/BlockStateParser
+	METHOD appendProperty (Ljava/lang/StringBuilder;Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)V
+		ARG 0 builder
+		ARG 1 property
+		ARG 2 value
+	METHOD fillSuggestions (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lnet/minecraft/tags/TagCollection;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 suggestions
+		ARG 2 tags
+	METHOD lambda$readVagueProperties$8 (Ljava/lang/String;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lnet/minecraft/tags/TagCollection;)Ljava/util/concurrent/CompletableFuture;
+		ARG 2 suggestions
+		ARG 3 tags
+	METHOD serialize (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/lang/String;
+		ARG 0 state
+	METHOD setValue (Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/String;I)V
+		ARG 1 property
+		ARG 2 string
+		ARG 3 cursor

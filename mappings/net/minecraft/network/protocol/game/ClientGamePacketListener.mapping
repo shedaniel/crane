@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientGamePacketListener
+	METHOD handleAddEntity (Lnet/minecraft/network/protocol/game/ClientboundAddEntityPacket;)V
+		ARG 1 packet
+	METHOD handleAddExperienceOrb (Lnet/minecraft/network/protocol/game/ClientboundAddExperienceOrbPacket;)V
+		ARG 1 packet
+	METHOD handleAddVibrationSignal (Lnet/minecraft/network/protocol/game/ClientboundAddVibrationSignalPacket;)V
+		ARG 1 packet

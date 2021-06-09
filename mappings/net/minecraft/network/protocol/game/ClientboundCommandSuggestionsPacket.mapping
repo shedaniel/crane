@@ -1,0 +1,9 @@
+CLASS net/minecraft/network/protocol/game/ClientboundCommandSuggestionsPacket
+	METHOD <init> (ILcom/mojang/brigadier/suggestion/Suggestions;)V
+		ARG 1 id
+		ARG 2 suggestions
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD lambda$write$1 (Lnet/minecraft/network/FriendlyByteBuf;Lcom/mojang/brigadier/suggestion/Suggestion;)V
+		ARG 0 b
+		ARG 1 suggestion

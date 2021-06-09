@@ -1,0 +1,13 @@
+CLASS net/minecraft/server/network/ServerLoginPacketListenerImpl
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/network/Connection;)V
+		ARG 1 server
+		ARG 2 connection
+	METHOD createFakeProfile (Lcom/mojang/authlib/GameProfile;)Lcom/mojang/authlib/GameProfile;
+		ARG 1 profile
+	METHOD disconnect (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 disconnectReason
+	METHOD placeNewPlayer (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
+	CLASS State
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/server/network/ServerLoginPacketListenerImpl$State;
+			ARG 0 name

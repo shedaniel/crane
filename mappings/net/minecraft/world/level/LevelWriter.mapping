@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/LevelWriter
+	METHOD setBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 flag
+	METHOD setBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;II)Z
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 flag

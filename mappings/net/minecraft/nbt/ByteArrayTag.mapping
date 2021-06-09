@@ -1,0 +1,11 @@
+CLASS net/minecraft/nbt/ByteArrayTag
+	METHOD <init> (Ljava/util/List;)V
+		ARG 1 value
+	METHOD <init> ([B)V
+		ARG 1 value
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD get (I)Ljava/lang/Object;
+		ARG 1 index
+	METHOD toArray (Ljava/util/List;)[B
+		ARG 0 bytes

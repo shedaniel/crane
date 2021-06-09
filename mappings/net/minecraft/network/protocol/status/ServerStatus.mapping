@@ -1,0 +1,46 @@
+CLASS net/minecraft/network/protocol/status/ServerStatus
+	METHOD setDescription (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 description
+	METHOD setFavicon (Ljava/lang/String;)V
+		ARG 1 favicon
+	METHOD setPlayers (Lnet/minecraft/network/protocol/status/ServerStatus$Players;)V
+		ARG 1 players
+	METHOD setVersion (Lnet/minecraft/network/protocol/status/ServerStatus$Version;)V
+		ARG 1 version
+	CLASS Players
+		METHOD <init> (II)V
+			ARG 1 maxPlayers
+			ARG 2 numPlayers
+		METHOD setSample ([Lcom/mojang/authlib/GameProfile;)V
+			ARG 1 sample
+		CLASS Serializer
+			METHOD deserialize (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
+				ARG 1 jsonElement
+				ARG 2 type
+				ARG 3 context
+			METHOD serialize (Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;
+				ARG 1 players
+				ARG 2 type
+				ARG 3 context
+	CLASS Version
+		METHOD <init> (Ljava/lang/String;I)V
+			ARG 1 name
+			ARG 2 protocol
+		CLASS Serializer
+			METHOD deserialize (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
+				ARG 1 jsonElement
+				ARG 2 type
+				ARG 3 context
+			METHOD serialize (Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;
+				ARG 1 version
+				ARG 2 type
+				ARG 3 context
+	CLASS Serializer
+		METHOD deserialize (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
+			ARG 1 jsonElement
+			ARG 2 type
+			ARG 3 context
+		METHOD serialize (Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;
+			ARG 1 status
+			ARG 2 type
+			ARG 3 context

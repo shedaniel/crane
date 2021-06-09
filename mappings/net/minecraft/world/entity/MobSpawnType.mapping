@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/MobSpawnType
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/entity/MobSpawnType;
+		ARG 0 name

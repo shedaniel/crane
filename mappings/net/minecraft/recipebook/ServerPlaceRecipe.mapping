@@ -1,0 +1,11 @@
+CLASS net/minecraft/recipebook/ServerPlaceRecipe
+	METHOD <init> (Lnet/minecraft/world/inventory/RecipeBookMenu;)V
+		ARG 1 menu
+	METHOD handleRecipeClicked (Lnet/minecraft/world/item/crafting/Recipe;Z)V
+		ARG 1 recipe
+	METHOD moveItemToGrid (Lnet/minecraft/world/inventory/Slot;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 slot
+		ARG 2 stack
+	METHOD recipeClicked (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/item/crafting/Recipe;Z)V
+		ARG 1 player
+		ARG 2 recipe

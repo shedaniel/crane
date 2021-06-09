@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/status/ClientboundStatusResponsePacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/network/protocol/status/ServerStatus;)V
+		ARG 1 status

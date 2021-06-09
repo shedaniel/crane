@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/SkipPacketException
+	METHOD <init> (Ljava/lang/Throwable;)V
+		ARG 1 throwable

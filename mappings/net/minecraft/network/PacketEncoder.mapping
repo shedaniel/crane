@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/PacketEncoder
+	METHOD <init> (Lnet/minecraft/network/protocol/PacketFlow;)V
+		ARG 1 flow
+	METHOD encode (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/buffer/ByteBuf;)V
+		ARG 1 context
+		ARG 2 packet
+		ARG 3 buf

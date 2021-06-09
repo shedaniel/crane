@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/Varint21LengthFieldPrepender
+	METHOD encode (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/buffer/ByteBuf;)V
+		ARG 1 context

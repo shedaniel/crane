@@ -1,0 +1,16 @@
+CLASS net/minecraft/data/models/blockstates/Condition
+	METHOD and ([Lnet/minecraft/data/models/blockstates/Condition;)Lnet/minecraft/data/models/blockstates/Condition;
+		ARG 0 conditions
+	METHOD or ([Lnet/minecraft/data/models/blockstates/Condition;)Lnet/minecraft/data/models/blockstates/Condition;
+		ARG 0 conditions
+	METHOD validate (Lnet/minecraft/world/level/block/state/StateDefinition;)V
+		ARG 1 definition
+	CLASS TerminalCondition
+		METHOD getTerm (Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;[Ljava/lang/Comparable;)Ljava/lang/String;
+			ARG 0 property
+			ARG 1 values
+		METHOD joinValues (Lnet/minecraft/world/level/block/state/properties/Property;Ljava/util/stream/Stream;)Ljava/lang/String;
+			ARG 0 property
+			ARG 1 stream
+		METHOD putValue (Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/String;)V
+			ARG 1 property

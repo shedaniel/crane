@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/chunk/LightChunkGetter
+	METHOD getChunkForLighting (II)Lnet/minecraft/world/level/BlockGetter;
+		ARG 1 x
+		ARG 2 z

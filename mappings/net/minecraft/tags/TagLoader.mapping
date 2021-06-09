@@ -1,0 +1,12 @@
+CLASS net/minecraft/tags/TagLoader
+	METHOD <init> (Ljava/util/function/Function;Ljava/lang/String;)V
+		ARG 1 idToValue
+		ARG 2 directory
+	METHOD lambda$load$0 (Ljava/lang/String;)Z
+		ARG 0 path
+	METHOD lambda$load$1 (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/Tag$Builder;
+		ARG 0 location
+	METHOD load (Lnet/minecraft/server/packs/resources/ResourceManager;)Ljava/util/Map;
+		ARG 1 resourceManager
+	METHOD visitDependenciesAndElement (Ljava/util/Map;Lcom/google/common/collect/Multimap;Ljava/util/Set;Lnet/minecraft/resources/ResourceLocation;Ljava/util/function/BiConsumer;)V
+		ARG 0 tags

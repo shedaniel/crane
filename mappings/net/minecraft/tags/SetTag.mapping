@@ -1,0 +1,8 @@
+CLASS net/minecraft/tags/SetTag
+	METHOD <init> (Ljava/util/Set;Ljava/lang/Class;)V
+		ARG 1 values
+		ARG 2 closestCommonSuperType
+	METHOD create (Ljava/util/Set;)Lnet/minecraft/tags/SetTag;
+		ARG 0 values
+	METHOD findCommonSuperClass (Ljava/util/Set;)Ljava/lang/Class;
+		ARG 0 values

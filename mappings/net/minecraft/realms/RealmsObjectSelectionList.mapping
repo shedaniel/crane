@@ -1,0 +1,5 @@
+CLASS net/minecraft/realms/RealmsObjectSelectionList
+	METHOD selectItem (I)V
+		ARG 1 selectedIndex
+	METHOD setSelectedItem (I)V
+		ARG 1 selectedIndex

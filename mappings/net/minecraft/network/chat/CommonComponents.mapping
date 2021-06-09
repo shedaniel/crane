@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/chat/CommonComponents
+	METHOD joinLines (Ljava/util/Collection;)Lnet/minecraft/network/chat/Component;
+		ARG 0 lines
+	METHOD joinLines ([Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;
+		ARG 0 lines
+	METHOD optionStatus (Lnet/minecraft/network/chat/Component;Z)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 0 status
+		ARG 1 enabled
+	METHOD optionStatus (Z)Lnet/minecraft/network/chat/Component;
+		ARG 0 enabled

@@ -1,0 +1,5 @@
+CLASS net/minecraft/server/Bootstrap
+	METHOD lambda$getMissingTranslations$1 (Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/String;
+		ARG 0 location
+	METHOD realStdoutPrintln (Ljava/lang/String;)V
+		ARG 0 string

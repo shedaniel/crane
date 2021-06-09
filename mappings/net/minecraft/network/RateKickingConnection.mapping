@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/RateKickingConnection
+	METHOD <init> (I)V
+		ARG 1 rateLimitPacketsPerSecond
+	METHOD lambda$tickSecond$0 (Lio/netty/util/concurrent/Future;)V
+		ARG 1 future

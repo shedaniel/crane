@@ -1,0 +1,17 @@
+CLASS net/minecraft/data/loot/LootTableProvider
+	METHOD <init> (Lnet/minecraft/data/DataGenerator;)V
+		ARG 1 generator
+	METHOD createPath (Ljava/nio/file/Path;Lnet/minecraft/resources/ResourceLocation;)Ljava/nio/file/Path;
+		ARG 0 path
+		ARG 1 location
+	METHOD lambda$run$0 (Ljava/util/Map;Lcom/mojang/datafixers/util/Pair;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/LootTable$Builder;)V
+		ARG 2 location
+		ARG 3 builder
+	METHOD lambda$run$1 (Ljava/util/Map;Lcom/mojang/datafixers/util/Pair;)V
+		ARG 1 subProvider
+	METHOD lambda$run$3 (Lnet/minecraft/world/level/storage/loot/ValidationContext;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/LootTable;)V
+		ARG 1 location
+		ARG 2 lootTable
+	METHOD lambda$run$5 (Ljava/nio/file/Path;Lnet/minecraft/data/HashCache;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/LootTable;)V
+		ARG 2 location
+		ARG 3 lootTable

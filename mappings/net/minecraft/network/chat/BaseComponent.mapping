@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/chat/BaseComponent
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other

@@ -1,0 +1,7 @@
+CLASS net/minecraft/nbt/ShortTag
+	METHOD <init> (S)V
+		ARG 1 value
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD valueOf (S)Lnet/minecraft/nbt/ShortTag;
+		ARG 0 value

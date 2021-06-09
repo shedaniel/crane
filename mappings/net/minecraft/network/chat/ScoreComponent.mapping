@@ -1,0 +1,14 @@
+CLASS net/minecraft/network/chat/ScoreComponent
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 name
+		ARG 2 objective
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/commands/arguments/selector/EntitySelector;Ljava/lang/String;)V
+		ARG 1 name
+		ARG 2 selector
+		ARG 3 objective
+	METHOD findTargetName (Lnet/minecraft/commands/CommandSourceStack;)Ljava/lang/String;
+		ARG 1 commandSources
+	METHOD getScore (Ljava/lang/String;Lnet/minecraft/commands/CommandSourceStack;)Ljava/lang/String;
+		ARG 2 commandSources
+	METHOD parseSelector (Ljava/lang/String;)Lnet/minecraft/commands/arguments/selector/EntitySelector;
+		ARG 0 name

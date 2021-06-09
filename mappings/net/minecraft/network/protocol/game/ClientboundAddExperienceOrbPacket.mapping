@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/game/ClientboundAddExperienceOrbPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/world/entity/ExperienceOrb;)V
+		ARG 1 orb

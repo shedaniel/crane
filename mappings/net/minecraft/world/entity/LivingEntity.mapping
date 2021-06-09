@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/LivingEntity
+	METHOD canAttackType (Lnet/minecraft/world/entity/EntityType;)Z
+		ARG 1 entityType
+	METHOD dropFromLootTable (Lnet/minecraft/world/damagesource/DamageSource;Z)V
+		ARG 1 souce
+	METHOD getExperienceReward (Lnet/minecraft/world/entity/player/Player;)I
+		ARG 1 player
+	METHOD playHurtSound (Lnet/minecraft/world/damagesource/DamageSource;)V
+		ARG 1 source
+	METHOD setSpeed (F)V
+		ARG 1 speed

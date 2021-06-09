@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/datafix/fixes/NamedEntityFix
+	METHOD fix (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 typed

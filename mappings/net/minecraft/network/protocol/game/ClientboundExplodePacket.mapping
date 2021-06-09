@@ -1,0 +1,15 @@
+CLASS net/minecraft/network/protocol/game/ClientboundExplodePacket
+	METHOD <init> (DDDFLjava/util/List;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 power
+		ARG 8 toBlow
+		ARG 9 knockback
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD lambda$new$0 (IIILnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/core/BlockPos;
+		ARG 3 b
+	METHOD lambda$write$1 (IIILnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/core/BlockPos;)V
+		ARG 3 b
+		ARG 4 pos

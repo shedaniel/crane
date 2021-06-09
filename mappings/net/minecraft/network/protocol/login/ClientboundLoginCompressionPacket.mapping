@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/login/ClientboundLoginCompressionPacket
+	METHOD <init> (I)V
+		ARG 1 compressionThreshold
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/CollisionGetter
+	METHOD getChunkForCollisions (II)Lnet/minecraft/world/level/BlockGetter;
+		ARG 1 x
+		ARG 2 y

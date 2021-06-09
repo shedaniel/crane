@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/status/ServerboundPingRequestPacket
+	METHOD <init> (J)V
+		ARG 1 time
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

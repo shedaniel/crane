@@ -1,0 +1,12 @@
+CLASS net/minecraft/util/datafix/DataFixers
+	METHOD addFixers (Lcom/mojang/datafixers/DataFixerBuilder;)V
+		ARG 0 builder
+	METHOD createRenamer (Ljava/lang/String;Ljava/lang/String;)Ljava/util/function/UnaryOperator;
+		ARG 0 from
+		ARG 1 to
+	METHOD createRenamer (Ljava/util/Map;)Ljava/util/function/UnaryOperator;
+		ARG 0 renamer
+	METHOD lambda$createRenamer$3 (Ljava/util/Map;Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 string
+	METHOD lambda$createRenamer$4 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 2 string

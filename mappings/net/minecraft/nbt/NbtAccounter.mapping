@@ -1,0 +1,5 @@
+CLASS net/minecraft/nbt/NbtAccounter
+	METHOD <init> (J)V
+		ARG 1 quota
+	METHOD accountBits (J)V
+		ARG 1 length

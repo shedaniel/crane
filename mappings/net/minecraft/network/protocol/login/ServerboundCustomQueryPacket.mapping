@@ -1,0 +1,6 @@
+CLASS net/minecraft/network/protocol/login/ServerboundCustomQueryPacket
+	METHOD <init> (ILnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 transactionId
+		ARG 2 data
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
