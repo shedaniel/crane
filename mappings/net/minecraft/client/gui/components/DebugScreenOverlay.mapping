@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/gui/components/DebugScreenOverlay
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD lambda$static$0 (Ljava/util/EnumMap;)V
+		ARG 0 map

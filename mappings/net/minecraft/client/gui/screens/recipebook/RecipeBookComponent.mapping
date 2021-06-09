@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookComponent
+	METHOD init (IILnet/minecraft/client/Minecraft;ZLnet/minecraft/world/inventory/RecipeBookMenu;)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 minecraft
+		ARG 4 widthTooNarrow
+		ARG 5 menu

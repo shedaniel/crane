@@ -1,0 +1,6 @@
+CLASS net/minecraft/commands/SharedSuggestionProvider
+	METHOD customSuggestion (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 suggestions
+	METHOD hasPermission (I)Z
+		ARG 1 permission

@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/renderer/CubeMap
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 textureIdPrefix
+	METHOD render (Lnet/minecraft/client/Minecraft;FFF)V
+		ARG 1 minecraft
+		ARG 2 xRot
+		ARG 3 yRot

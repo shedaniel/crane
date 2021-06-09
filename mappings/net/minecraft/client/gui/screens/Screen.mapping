@@ -49,6 +49,7 @@ CLASS net/minecraft/client/gui/screens/Screen
 		ARG 3 x
 		ARG 4 y
 	METHOD resize (Lnet/minecraft/client/Minecraft;II)V
+		ARG 1 minecraft
 		ARG 2 width
 		ARG 3 height
 	METHOD scheduleNarration (JZ)V

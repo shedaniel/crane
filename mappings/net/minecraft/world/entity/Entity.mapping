@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/Entity
+	METHOD hurt (Lnet/minecraft/world/damagesource/DamageSource;F)Z
+		ARG 1 damageSource
+		ARG 2 amount
+	METHOD shouldRenderAtSqrDistance (D)Z
+		ARG 1 distance

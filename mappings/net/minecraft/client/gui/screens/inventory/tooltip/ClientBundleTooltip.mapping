@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/gui/screens/inventory/tooltip/ClientBundleTooltip
+	METHOD <init> (Lnet/minecraft/world/inventory/tooltip/BundleTooltip;)V
+		ARG 1 tooltip

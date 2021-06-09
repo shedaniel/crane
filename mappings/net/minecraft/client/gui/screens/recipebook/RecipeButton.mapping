@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/screens/recipebook/RecipeButton
+	METHOD init (Lnet/minecraft/client/gui/screens/recipebook/RecipeCollection;Lnet/minecraft/client/gui/screens/recipebook/RecipeBookPage;)V
+		ARG 1 collection
+		ARG 2 page
+	METHOD setPosition (II)V
+		ARG 1 x
+		ARG 2 y

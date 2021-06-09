@@ -1,0 +1,15 @@
+CLASS com/mojang/math/OctahedralGroup
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lcom/mojang/math/SymmetricGroup3;ZZZ)V
+		ARG 3 name
+		ARG 4 permutation
+		ARG 5 invertX
+		ARG 6 invertY
+		ARG 7 invertZ
+	METHOD compose (Lcom/mojang/math/OctahedralGroup;)Lcom/mojang/math/OctahedralGroup;
+		ARG 1 group
+	METHOD inverts (Lnet/minecraft/core/Direction$Axis;)Z
+		ARG 1 axis
+	METHOD rotate (Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Direction;
+		ARG 1 direction
+	METHOD valueOf (Ljava/lang/String;)Lcom/mojang/math/OctahedralGroup;
+		ARG 0 name

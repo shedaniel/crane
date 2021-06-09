@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/BossEvent
+	METHOD setProgress (F)V
+		ARG 1 targetPercent

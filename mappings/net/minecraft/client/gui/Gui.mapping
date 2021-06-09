@@ -1,3 +1,24 @@
 CLASS net/minecraft/client/gui/Gui
+	METHOD displayScoreboardSidebar (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/scores/Objective;)V
+		ARG 2 objective
+	METHOD getVehicleMaxHearts (Lnet/minecraft/world/entity/LivingEntity;)I
+		ARG 1 entity
 	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;F)V
 		ARG 2 delta
+	METHOD renderExperienceBar (Lcom/mojang/blaze3d/vertex/PoseStack;I)V
+		ARG 2 x
+	METHOD renderJumpMeter (Lcom/mojang/blaze3d/vertex/PoseStack;I)V
+		ARG 2 x
+	METHOD renderPortalOverlay (F)V
+		ARG 1 alpha
+	METHOD renderSlot (IIFLnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;I)V
+		ARG 1 x
+		ARG 2 y
+		ARG 5 stack
+	METHOD renderTextureOverlay (Lnet/minecraft/resources/ResourceLocation;F)V
+		ARG 1 texture
+		ARG 2 alpha
+	METHOD renderVignette (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity
+	METHOD updateVignetteBrightness (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity

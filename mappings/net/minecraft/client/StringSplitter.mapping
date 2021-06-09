@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/StringSplitter
+	METHOD <init> (Lnet/minecraft/client/StringSplitter$WidthProvider;)V
+		ARG 1 widthProvider
+	METHOD stringWidth (Ljava/lang/String;)F
+		ARG 1 string
+	METHOD stringWidth (Lnet/minecraft/network/chat/FormattedText;)F
+		ARG 1 text
+	METHOD stringWidth (Lnet/minecraft/util/FormattedCharSequence;)F
+		ARG 1 sequence

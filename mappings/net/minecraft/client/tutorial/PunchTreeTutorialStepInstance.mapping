@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/tutorial/PunchTreeTutorialStepInstance
+	METHOD <init> (Lnet/minecraft/client/tutorial/Tutorial;)V
+		ARG 1 tutorial

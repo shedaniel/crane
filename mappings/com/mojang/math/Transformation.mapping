@@ -1,0 +1,3 @@
+CLASS com/mojang/math/Transformation
+	METHOD <init> (Lcom/mojang/math/Matrix4f;)V
+		ARG 1 matrix

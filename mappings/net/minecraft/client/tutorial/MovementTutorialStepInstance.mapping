@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/tutorial/MovementTutorialStepInstance
+	METHOD <init> (Lnet/minecraft/client/tutorial/Tutorial;)V
+		ARG 1 tutorial

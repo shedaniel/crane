@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
+	METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/Minecraft;IIIII)V
+		ARG 1 screen
+		ARG 2 minecraft

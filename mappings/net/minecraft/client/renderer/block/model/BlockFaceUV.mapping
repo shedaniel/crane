@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/renderer/block/model/BlockFaceUV
+	METHOD <init> ([FI)V
+		ARG 1 uvs
+		ARG 2 rotation
+	METHOD getU (I)F
+		ARG 1 index
+	METHOD getV (I)F
+		ARG 1 index
+	METHOD setMissingUv ([F)V
+		ARG 1 uvs

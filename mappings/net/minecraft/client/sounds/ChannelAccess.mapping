@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/sounds/ChannelAccess
+	METHOD <init> (Lcom/mojang/blaze3d/audio/Library;Ljava/util/concurrent/Executor;)V
+		ARG 1 library
+		ARG 2 executor
+	METHOD createHandle (Lcom/mojang/blaze3d/audio/Library$Pool;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 pool

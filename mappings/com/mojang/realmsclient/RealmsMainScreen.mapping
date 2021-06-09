@@ -1,0 +1,11 @@
+CLASS com/mojang/realmsclient/RealmsMainScreen
+	METHOD shouldConfigureButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
+		ARG 1 server
+	METHOD shouldLeaveButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
+		ARG 1 server
+	METHOD shouldPlayButtonBeActive (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
+		ARG 1 server
+	METHOD shouldRenewButtonBeActive (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
+		ARG 1 server
+	METHOD updateButtonStates (Lcom/mojang/realmsclient/dto/RealmsServer;)V
+		ARG 1 server

@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/player/LocalPlayer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/multiplayer/ClientPacketListener;Lnet/minecraft/stats/StatsCounter;Lnet/minecraft/client/ClientRecipeBook;ZZ)V
+		ARG 1 minecraft
+		ARG 2 level
+		ARG 3 connection
+		ARG 4 stats
+		ARG 5 recipeBook
+		ARG 6 wasShiftKeyDown
+		ARG 7 wasSprinting

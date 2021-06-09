@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/screens/packs/PackSelectionScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/server/packs/repository/PackRepository;Ljava/util/function/Consumer;Ljava/io/File;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 lastScreen
+		ARG 2 repository
+		ARG 3 output
+		ARG 4 packDir
+		ARG 5 title

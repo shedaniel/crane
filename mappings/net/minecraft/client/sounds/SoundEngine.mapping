@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/sounds/SoundEngine
+	METHOD <init> (Lnet/minecraft/client/sounds/SoundManager;Lnet/minecraft/client/Options;Lnet/minecraft/server/packs/resources/ResourceManager;)V
+		ARG 1 soundManager
+		ARG 2 options
+		ARG 3 resourceManager

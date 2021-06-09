@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/gui/components/LerpingBossEvent
+	METHOD <init> (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;FLnet/minecraft/world/BossEvent$BossBarColor;Lnet/minecraft/world/BossEvent$BossBarOverlay;ZZZ)V
+		ARG 1 uuid
+		ARG 2 message
+		ARG 3 targetPercent
+		ARG 4 color
+		ARG 5 oveerlay
+		ARG 6 darkenScreen
+		ARG 7 playBossMusic
+		ARG 8 createWorldFog

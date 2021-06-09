@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/color/item/ItemColors
+	METHOD getColor (Lnet/minecraft/world/item/ItemStack;I)I
+		ARG 1 stack
+		ARG 2 layer
+	METHOD register (Lnet/minecraft/client/color/item/ItemColor;[Lnet/minecraft/world/level/ItemLike;)V
+		ARG 1 stack
+		ARG 2 items

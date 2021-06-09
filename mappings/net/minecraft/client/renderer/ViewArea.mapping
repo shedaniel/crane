@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/renderer/ViewArea
+	METHOD <init> (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher;Lnet/minecraft/world/level/Level;ILnet/minecraft/client/renderer/LevelRenderer;)V
+		ARG 1 chunkRenderer
+		ARG 2 level
+		ARG 3 viewDistance
+		ARG 4 levelRenderer
+	METHOD createChunks (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher;)V
+		ARG 1 chunkRenderer

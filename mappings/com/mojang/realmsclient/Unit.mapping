@@ -1,0 +1,5 @@
+CLASS com/mojang/realmsclient/Unit
+	METHOD getLargest (J)Lcom/mojang/realmsclient/Unit;
+		ARG 0 value
+	METHOD valueOf (Ljava/lang/String;)Lcom/mojang/realmsclient/Unit;
+		ARG 0 name

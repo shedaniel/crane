@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/renderer/block/model/BakedQuad
+	METHOD <init> ([IILnet/minecraft/core/Direction;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Z)V
+		ARG 1 vertices
+		ARG 2 tinyIndex
+		ARG 3 direction
+		ARG 4 sprite
+		ARG 5 shade

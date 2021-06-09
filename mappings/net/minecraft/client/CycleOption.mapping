@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/CycleOption
+	METHOD <init> (Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/client/CycleOption$OptionSetter;Ljava/util/function/Supplier;)V
+		ARG 2 getter
+		ARG 3 setter
+		ARG 4 buttonSetup
+	METHOD setTooltip (Ljava/util/function/Function;)Lnet/minecraft/client/CycleOption;
+		ARG 1 tooltip

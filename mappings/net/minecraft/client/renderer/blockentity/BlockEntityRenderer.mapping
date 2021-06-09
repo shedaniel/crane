@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/blockentity/BlockEntityRenderer
+	METHOD render (Lnet/minecraft/world/level/block/entity/BlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V
+		ARG 1 bannerBlockEntity
+		ARG 4 buffers

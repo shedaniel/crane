@@ -1,0 +1,6 @@
+CLASS net/minecraft/server/players/PlayerList
+	METHOD canPlayerLogin (Ljava/net/SocketAddress;Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/network/chat/Component;
+		ARG 1 address
+		ARG 2 gameProfile
+	METHOD save (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 serverPlayer

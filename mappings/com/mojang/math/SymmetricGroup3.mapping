@@ -1,0 +1,11 @@
+CLASS com/mojang/math/SymmetricGroup3
+	METHOD <init> (Ljava/lang/String;IIII)V
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+	METHOD compose (Lcom/mojang/math/SymmetricGroup3;)Lcom/mojang/math/SymmetricGroup3;
+		ARG 1 group
+	METHOD permutation (I)I
+		ARG 1 id
+	METHOD valueOf (Ljava/lang/String;)Lcom/mojang/math/SymmetricGroup3;
+		ARG 0 name

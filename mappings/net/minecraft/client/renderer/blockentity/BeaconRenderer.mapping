@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/renderer/blockentity/BeaconRenderer
+	METHOD renderBeaconBeam (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;FJII[F)V
+		ARG 1 buffers
+	METHOD renderBeaconBeam (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/resources/ResourceLocation;FFJII[FFF)V
+		ARG 1 buffers
