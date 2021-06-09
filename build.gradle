@@ -1,7 +1,11 @@
-import dev.architectury.plugin.mojmapextensions.tasks.RunTask
+buildscript {
+    dependencies {
+        classpath project(":enigmaBootstrapper")
+    }
+}
 
 plugins {
-	id "dev.architectury.plugin.mojmap-extensions"
+    id "dev.architectury.plugin.mojmap-extensions"
 }
 
 group "dev.architectury"
@@ -9,16 +13,16 @@ version "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-	maven { url "https://maven.architectury.dev" }
-	maven { url "https://maven.fabricmc.net" }
-}
-
-dependencies {
-	
+    maven { url "https://maven.architectury.dev" }
+    maven { url "https://maven.fabricmc.net" }
 }
 
 mojmap {
     minecraftVersion.set project.minecraft_version
+}
+
+afterEvaluate {
+    tasks.run.dependsOn project(":enigmaBootstrapper").tasks.getByName("jar")
 }
 
 tasks.run.apply {

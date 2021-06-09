@@ -65,10 +65,11 @@ public class RunTask extends AbstractTask {
     public void invoke() {
         getProject().javaexec(spec -> {
             spec.classpath(getRuntimeClasspath(getProject()));
+            spec.args("cuchaz.enigma.gui.Main");
             spec.args("--jar", escapePath(getMinecraftJar().getAsFile().get()));
             spec.args("--mappings", escapePath(getMappingsDir().getAsFile().get()));
             spec.args("--profile", "enigma-profile.json");
-            spec.setMain("cuchaz.enigma.gui.Main");
+            spec.setMain("dev.architectury.mojmapextensions.bootstrap.EnigmaBootstrapper");
             for (Action<? super JavaExecSpec> action : this.specs) {
                 action.execute(spec);
             }

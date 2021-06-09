@@ -77,7 +77,7 @@ public class DownloadLibrariesTask extends MinecraftVersionBasedTask {
             }
             FileUtils.deleteDirectory(outputDirectory);
             outputDirectory.mkdirs();
-            ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 2);
+            ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 4);
             List<CompletableFuture<Void>> futures = new ArrayList<>();
             JsonArray libraries = manifest.getAsJsonArray("libraries");
             try (ProgressBar progressBar = new ProgressBarBuilder()
