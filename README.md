@@ -1,9 +1,8 @@
-# Architectury Mojmap Extensions
-
-A project to provide extensions to Mojang's official mappings.
+# Crane
+Crane is a set of extensions to Mojang's official Minecraft obfuscation mappings, providing things such as parameter names and Javadocs not supplied by the original mappings set.
 
 ________
-Architectury is built on the same foundation as Yarn, with gui-based mappings via [Enigma](https://github.com/FabricMC/Enigma).
+Crane is built on the same foundation as Yarn, with gui-based mappings via [Enigma](https://github.com/FabricMC/Enigma).
 
 ### Contributing
 

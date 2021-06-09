@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/gui/chat/ChatListener
+	METHOD handle (Lnet/minecraft/network/chat/ChatType;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+		ARG 1 chatType
+		ARG 2 message
+		ARG 3 sender

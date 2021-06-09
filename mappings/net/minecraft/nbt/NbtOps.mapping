@@ -23,4 +23,4 @@ CLASS net/minecraft/nbt/NbtOps
 	METHOD getNumberValue (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 		ARG 1 tag
 	METHOD getStringValue (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
-		ARG 1 ag
+		ARG 1 tag

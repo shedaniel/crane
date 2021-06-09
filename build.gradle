@@ -1,11 +1,11 @@
 buildscript {
     dependencies {
-        classpath project(":enigmaBootstrapper")
+        classpath project(":bootstrapper")
     }
 }
 
 plugins {
-    id "dev.architectury.plugin.mojmap-extensions"
+    id "dev.architectury.plugin.crane"
 }
 
 group "dev.architectury"
@@ -17,12 +17,12 @@ repositories {
     maven { url "https://maven.fabricmc.net" }
 }
 
-mojmap {
+crane {
     minecraftVersion.set project.minecraft_version
 }
 
 afterEvaluate {
-    tasks.run.dependsOn project(":enigmaBootstrapper").tasks.getByName("jar")
+    tasks.run.dependsOn project(":bootstrapper").tasks.getByName("jar")
 }
 
 tasks.run.apply {

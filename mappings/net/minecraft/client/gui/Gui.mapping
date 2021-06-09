@@ -1,4 +1,6 @@
 CLASS net/minecraft/client/gui/Gui
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
 	METHOD displayScoreboardSidebar (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/scores/Objective;)V
 		ARG 2 objective
 	METHOD getVehicleMaxHearts (Lnet/minecraft/world/entity/LivingEntity;)I

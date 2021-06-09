@@ -13,4 +13,4 @@ if (JavaVersion.current().ordinal() + 1 < 16) {
 rootProject.name = "mojmap-extensions"
 
 includeBuild("gradlePlugin")
-include("enigmaBootstrapper")
+include("bootstrapper")

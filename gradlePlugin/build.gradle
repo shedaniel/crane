@@ -42,8 +42,8 @@ dependencies {
 gradlePlugin {
     plugins {
         plugin {
-            id = "dev.architectury.plugin.mojmap-extensions"
-            implementationClass = "dev.architectury.plugin.mojmapextensions.MojmapExtensionsPlugin"
+            id = "dev.architectury.plugin.crane"
+            implementationClass = "dev.architectury.plugin.crane.CranePlugin"
         }
     }
 }

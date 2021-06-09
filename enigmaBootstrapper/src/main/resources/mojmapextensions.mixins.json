@@ -1,7 +1,0 @@
-{
-  "compatibilityLevel": "JAVA_16",
-  "package": "dev.architectury.mojmapextensions.bootstrap.mixins",
-  "mixins": [
-    "MixinEnigmaProject"
-  ]
-}
