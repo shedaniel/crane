@@ -89,5 +89,11 @@ public class CranePlugin implements Plugin<Project> {
             task.getMinecraftJar().convention(remapJar.getOutput());
             task.getMappingsDir().convention(project.provider(() -> task.getExtension().getMappingsDir()));
         });
+        tasks.create("export", ExportTinyTask.class, task -> {
+            task.dependsOn(remapJar);
+            task.getMinecraftJar().convention(remapJar.getOutput());
+            task.getMappingsDir().convention(project.provider(() -> task.getExtension().getMappingsDir()));
+            task.getOutput().convention(() -> task.getExtension().getExportedFile());
+        });
     }
 }

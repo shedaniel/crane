@@ -1,0 +1,12 @@
+CLASS net/minecraft/advancements/AdvancementProgress
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 criteria
+	METHOD fromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/advancements/AdvancementProgress;
+		ARG 0 buf
+	METHOD lambda$update$0 (Ljava/util/Set;Ljava/util/Map$Entry;)Z
+		ARG 1 entry
+	METHOD serializeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD update (Ljava/util/Map;[[Ljava/lang/String;)V
+		ARG 1 criteria
+		ARG 2 requirements

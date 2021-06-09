@@ -26,6 +26,7 @@ import org.gradle.api.tasks.InputFile;
 import org.gradle.api.tasks.OutputFile;
 import org.gradle.api.tasks.TaskAction;
 
+import java.io.File;
 import java.io.IOException;
 
 public class MergeJarsTask extends AbstractTask {
@@ -57,7 +58,12 @@ public class MergeJarsTask extends AbstractTask {
 
 	@TaskAction
 	public void merge() throws IOException {
-		try (JarMerger merger = new JarMerger(client.getAsFile().get(), server.getAsFile().get(), merged.getAsFile().get())) {
+        File merged = this.getMerged().getAsFile().get();
+        if (merged.getParentFile() != null) {
+            merged.getParentFile().mkdirs();
+        }
+        merged.delete();
+		try (JarMerger merger = new JarMerger(client.getAsFile().get(), server.getAsFile().get(), merged)) {
 			merger.merge();
 		}
 	}

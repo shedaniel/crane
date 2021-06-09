@@ -1,0 +1,5 @@
+CLASS com/mojang/blaze3d/Blaze3D
+	METHOD process (Lcom/mojang/blaze3d/pipeline/RenderPipeline;F)V
+		ARG 0 pipeline
+	METHOD render (Lcom/mojang/blaze3d/pipeline/RenderPipeline;F)V
+		ARG 0 pipeline

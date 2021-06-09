@@ -10,6 +10,8 @@ CLASS net/minecraft/advancements/Advancement
 		ARG 1 child
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
+	METHOD lambda$new$0 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;
+		ARG 1 style
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/advancements/DisplayInfo;Lnet/minecraft/advancements/AdvancementRewards;Ljava/util/Map;[[Ljava/lang/String;)V
 			ARG 1 parentId
