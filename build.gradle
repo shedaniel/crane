@@ -1,0 +1,26 @@
+import dev.architectury.plugin.mojmapextensions.tasks.RunTask
+
+plugins {
+	id "dev.architectury.plugin.mojmap-extensions"
+}
+
+group "dev.architectury"
+version "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+	maven { url "https://maven.architectury.dev" }
+	maven { url "https://maven.fabricmc.net" }
+}
+
+dependencies {
+	
+}
+
+mojmap {
+    minecraftVersion.set project.minecraft_version
+}
+
+tasks.run.apply {
+    systemProperty("awt.useSystemAAFontSettings", "lcd")
+}

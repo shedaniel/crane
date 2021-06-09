@@ -1,0 +1,49 @@
+plugins {
+    id "java"
+    id "java-gradle-plugin"
+    id "org.cadixdev.licenser" version "0.5.0"
+}
+
+repositories {
+    maven { url "https://maven.fabricmc.net/" }
+    maven { url "https://maven.architectury.dev/" }
+    gradlePluginPortal()
+}
+
+license {
+    header = rootProject.file("HEADER")
+
+    ext {
+        name = "architectury"
+        year = "2021"
+    }
+
+    include "**/*.java"
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation "cuchaz:enigma-swing:${project.enigma_version}"
+    implementation "net.fabricmc:stitch:${project.stitch_version}"
+    implementation "com.google.guava:guava:${project.guava_version}"
+    implementation "commons-io:commons-io:${project.apache_commons_versions}"
+    implementation "com.google.code.gson:gson:${project.gson_versions}"
+    implementation "dev.architectury:tiny-remapper:${project.tiny_remapper_versions}"
+    implementation 'me.tongfei:progressbar:0.9.0'
+    implementation("net.fabricmc:lorenz-tiny:3.0.0") {
+        transitive = false
+    }
+    implementation "org.cadixdev:lorenz-io-proguard:0.5.6"
+    implementation "org.cadixdev:lorenz:0.5.3"
+    implementation "dev.architectury:mappings-layers-core:1.2.7"
+    implementation "net.fabricmc:tiny-mappings-parser:0.3.0+build.17"
+}
+
+gradlePlugin {
+    plugins {
+        plugin {
+            id = "dev.architectury.plugin.mojmap-extensions"
+            implementationClass = "dev.architectury.plugin.mojmapextensions.MojmapExtensionsPlugin"
+        }
+    }
+}
