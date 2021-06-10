@@ -5,18 +5,12 @@ CLASS net/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent
 		ARG 3 x
 		ARG 4 y
 		ARG 7 delta
-	METHOD nineInchSprite (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIII)V
-		ARG 1 poses
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	METHOD setVisible (Z)V
 		ARG 1 isVisible
 	CLASS OverlayRecipeButton
 		METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent;IILnet/minecraft/world/item/crafting/Recipe;Z)V
 			ARG 4 recipe
 			ARG 5 isCraftable
-		METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-			ARG 1 poses
 		CLASS Pos
 			METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent$OverlayRecipeButton;II[Lnet/minecraft/world/item/ItemStack;)V
 				ARG 2 x

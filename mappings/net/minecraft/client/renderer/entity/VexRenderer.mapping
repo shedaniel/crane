@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/VexRenderer
-	METHOD scale (Lnet/minecraft/world/entity/monster/Vex;Lcom/mojang/blaze3d/vertex/PoseStack;F)V
-		ARG 2 poses

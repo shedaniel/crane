@@ -17,7 +17,5 @@ CLASS net/minecraft/client/gui/screens/ConfirmScreen
 		ARG 1 button
 	METHOD lambda$addButtons$1 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	METHOD setDelay (I)V
 		ARG 1 delayTicker

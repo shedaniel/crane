@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/AnvilBlock
-	METHOD damage (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 0 state

@@ -34,8 +34,6 @@ CLASS net/minecraft/client/gui/screens/worldselection/WorldGenSettingsComponent
 		ARG 2 settings
 	METHOD parseLong (Ljava/lang/String;)Ljava/util/OptionalLong;
 		ARG 0 value
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	METHOD selectWorldTypeButton (Z)V
 		ARG 1 visible
 	METHOD setVisibility (Z)V

@@ -3,15 +3,6 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsSelectFileToUploadScreen
 		ARG 1 worldId
 		ARG 3 slotId
 		ARG 4 lastScreen
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	CLASS Entry
 		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsSelectFileToUploadScreen;Lnet/minecraft/world/level/storage/LevelSummary;)V
 			ARG 2 levelSummary
-		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
-			ARG 1 poses
-		METHOD renderItem (Lcom/mojang/blaze3d/vertex/PoseStack;III)V
-			ARG 1 poses
-	CLASS WorldSelectionList
-		METHOD renderBackground (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-			ARG 1 poses

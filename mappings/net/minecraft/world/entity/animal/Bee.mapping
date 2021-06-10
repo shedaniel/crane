@@ -1,26 +1,7 @@
 CLASS net/minecraft/world/entity/animal/Bee
-	METHOD doesHiveHaveSpace (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
-	METHOD isFlowerValid (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
-	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD isTooFarAway (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
-	METHOD pathfindRandomlyTowards (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
 	METHOD setPersistentAngerTarget (Ljava/util/UUID;)V
 		ARG 1 persistentAngerTarget
 	METHOD setSavedFlowerPos (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 savedFlowerPos
 	METHOD setStayOutOfHiveCountdown (I)V
 		ARG 1 stayOutOfHiveCountdown
-	CLASS BeeGoToHiveGoal
-		METHOD blacklistTarget (Lnet/minecraft/core/BlockPos;)V
-			ARG 1 pos
-		METHOD hasReachedTarget (Lnet/minecraft/core/BlockPos;)Z
-			ARG 1 pos
-		METHOD isTargetBlacklisted (Lnet/minecraft/core/BlockPos;)Z
-			ARG 1 pos
-		METHOD pathfindDirectlyTowards (Lnet/minecraft/core/BlockPos;)Z
-			ARG 1 pos

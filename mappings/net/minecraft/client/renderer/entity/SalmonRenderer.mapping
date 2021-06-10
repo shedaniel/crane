@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/SalmonRenderer
-	METHOD setupRotations (Lnet/minecraft/world/entity/animal/Salmon;Lcom/mojang/blaze3d/vertex/PoseStack;FFF)V
-		ARG 2 poses

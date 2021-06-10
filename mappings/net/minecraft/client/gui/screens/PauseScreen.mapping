@@ -21,5 +21,3 @@ CLASS net/minecraft/client/gui/screens/PauseScreen
 		ARG 1 button
 	METHOD lambda$createPauseMenu$9 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses

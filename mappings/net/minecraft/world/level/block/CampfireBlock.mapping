@@ -2,13 +2,3 @@ CLASS net/minecraft/world/level/block/CampfireBlock
 	METHOD <init> (ZILnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 spawnParticles
 		ARG 2 fireDamage
-	METHOD canLight (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
-	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 state
-	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
-		ARG 1 state
-	METHOD isLitCampfire (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
-	METHOD isSmokeSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/blockentity/CampfireRenderer
-	METHOD render (Lnet/minecraft/world/level/block/entity/CampfireBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V
-		ARG 3 poses

@@ -4,5 +4,3 @@ CLASS net/minecraft/world/entity/ai/goal/MoveThroughVillageGoal
 		ARG 2 speedModifier
 		ARG 4 onlyAtNight
 		ARG 5 distanceToPoi
-	METHOD hasNotVisited (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos

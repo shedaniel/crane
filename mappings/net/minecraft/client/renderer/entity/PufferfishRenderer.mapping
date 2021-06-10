@@ -1,5 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/PufferfishRenderer
-	METHOD render (Lnet/minecraft/world/entity/animal/Pufferfish;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
-		ARG 4 poses
-	METHOD setupRotations (Lnet/minecraft/world/entity/animal/Pufferfish;Lcom/mojang/blaze3d/vertex/PoseStack;FFF)V
-		ARG 2 poses

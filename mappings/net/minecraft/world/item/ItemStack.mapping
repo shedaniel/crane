@@ -1,20 +1,10 @@
 CLASS net/minecraft/world/item/ItemStack
 	METHOD <init> (Lnet/minecraft/world/level/ItemLike;I)V
 		ARG 2 count
-	METHOD getDestroySpeed (Lnet/minecraft/world/level/block/state/BlockState;)F
-		ARG 1 state
 	METHOD hasAdventureModeBreakTagForBlock (Lnet/minecraft/tags/TagContainer;Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
 		ARG 2 cachedBreakBlock
 	METHOD hasAdventureModePlaceTagForBlock (Lnet/minecraft/tags/TagContainer;Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
 		ARG 2 cachedPlaceBlock
-	METHOD isCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
-	METHOD matches (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD sameItem (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD sameItemStackIgnoreDurability (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
 	METHOD setCount (I)V
 		ARG 1 count
 	METHOD setEntityRepresentation (Lnet/minecraft/world/entity/Entity;)V

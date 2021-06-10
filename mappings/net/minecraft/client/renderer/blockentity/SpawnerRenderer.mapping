@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/blockentity/SpawnerRenderer
-	METHOD render (Lnet/minecraft/world/level/block/entity/SpawnerBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V
-		ARG 3 poses

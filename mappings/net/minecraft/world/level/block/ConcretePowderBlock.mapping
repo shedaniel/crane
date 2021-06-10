@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/ConcretePowderBlock
-	METHOD canSolidify (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

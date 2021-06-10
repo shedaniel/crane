@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/carver/WorldCarver
-	METHOD canReplaceBlock (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

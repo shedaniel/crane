@@ -15,8 +15,6 @@ CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookComponent
 		ARG 0 collection
 	METHOD lambda$updateCollections$5 (Lnet/minecraft/client/gui/screens/recipebook/RecipeCollection;)Z
 		ARG 0 collection
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	METHOD renderGhostRecipe (Lcom/mojang/blaze3d/vertex/PoseStack;IIZF)V
 		ARG 1 poses
 		ARG 2 x

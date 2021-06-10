@@ -4,13 +4,3 @@ CLASS net/minecraft/world/inventory/Slot
 		ARG 2 slot
 		ARG 3 x
 		ARG 4 y
-	METHOD checkTakeAchievements (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD getMaxStackSize (Lnet/minecraft/world/item/ItemStack;)I
-		ARG 1 stack
-	METHOD mayPlace (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD safeInsert (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
-		ARG 1 stack
-	METHOD set (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack

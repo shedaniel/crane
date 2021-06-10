@@ -1,7 +1,3 @@
 CLASS net/minecraft/world/level/block/CommandBlock
 	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Z)V
 		ARG 2 automatic
-	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
-		ARG 1 state
-	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

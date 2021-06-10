@@ -3,5 +3,3 @@ CLASS net/minecraft/advancements/critereon/SlideDownBlockTrigger
 		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/advancements/critereon/StatePropertiesPredicate;)V
 			ARG 2 block
 			ARG 3 state
-		METHOD matches (Lnet/minecraft/world/level/block/state/BlockState;)Z
-			ARG 1 state

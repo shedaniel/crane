@@ -1,11 +1,4 @@
 CLASS net/minecraft/world/entity/animal/Dolphin
-	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD setTreasurePos (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
-	CLASS PlayWithItemsGoal
-		METHOD drop (Lnet/minecraft/world/item/ItemStack;)V
-			ARG 1 stack
 	CLASS DolphinSwimToTreasureGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Dolphin;)V
 			ARG 1 dolphin

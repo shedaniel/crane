@@ -1,10 +1,4 @@
 CLASS net/minecraft/world/entity/player/StackedContents
-	METHOD accountSimpleStack (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD accountStack (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD getStackingIndex (Lnet/minecraft/world/item/ItemStack;)I
-		ARG 0 stack
 	CLASS RecipePicker
 		METHOD <init> (Lnet/minecraft/world/entity/player/StackedContents;Lnet/minecraft/world/item/crafting/Recipe;)V
 			ARG 2 recipe

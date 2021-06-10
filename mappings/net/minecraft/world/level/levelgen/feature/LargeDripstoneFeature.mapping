@@ -2,8 +2,6 @@ CLASS net/minecraft/world/level/levelgen/feature/LargeDripstoneFeature
 	CLASS WindOffsetter
 		METHOD <init> (ILjava/util/Random;Lnet/minecraft/util/valueproviders/FloatProvider;)V
 			ARG 1 originY
-		METHOD offset (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;
-			ARG 1 pos
 	CLASS LargeDripstone
 		METHOD <init> (Lnet/minecraft/core/BlockPos;ZIDD)V
 			ARG 1 root

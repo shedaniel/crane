@@ -7,7 +7,3 @@ CLASS net/minecraft/world/entity/npc/Villager
 		ARG 1 offers
 	METHOD setVillagerXp (I)V
 		ARG 1 villagerXp
-	METHOD startSleeping (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
-	METHOD wantsToPickUp (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack

@@ -17,9 +17,6 @@ CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
 		ARG 1 servers
 	METHOD updateOnlineServers (Lnet/minecraft/client/multiplayer/ServerList;)V
 		ARG 1 servers
-	CLASS LANHeader
-		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
-			ARG 1 poses
 	CLASS OnlineServerEntry
 		METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList;Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/multiplayer/ServerData;)V
 			ARG 2 screen
@@ -29,8 +26,6 @@ CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
 			ARG 2 x
 			ARG 3 y
 			ARG 4 texture
-		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
-			ARG 1 poses
 		METHOD swap (II)V
 			ARG 1 first
 			ARG 2 second
@@ -40,5 +35,3 @@ CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
 		METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/server/LanServer;)V
 			ARG 1 screen
 			ARG 2 serverData
-		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
-			ARG 1 poses

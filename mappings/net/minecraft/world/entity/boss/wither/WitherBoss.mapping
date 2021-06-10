@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/entity/boss/wither/WitherBoss
-	METHOD canDestroy (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

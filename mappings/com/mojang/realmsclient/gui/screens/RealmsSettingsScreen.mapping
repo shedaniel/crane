@@ -2,5 +2,3 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsSettingsScreen
 	METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsConfigureWorldScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
 		ARG 1 configureWorldScreen
 		ARG 2 serverData
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses

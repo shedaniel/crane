@@ -6,13 +6,9 @@ CLASS net/minecraft/world/entity/ai/navigation/PathNavigation
 		ARG 4 reachRange
 	METHOD doStuckDetection (Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 lastStuckCheckPos
-	METHOD isStableDestination (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
 	METHOD moveTo (Lnet/minecraft/world/level/pathfinder/Path;D)Z
 		ARG 1 path
 		ARG 2 speedModifier
-	METHOD recomputePath (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
 	METHOD setMaxVisitedNodesMultiplier (F)V
 		ARG 1 maxVisitedNodesMultiplier
 	METHOD setSpeedModifier (D)V

@@ -22,8 +22,6 @@ CLASS net/minecraft/client/gui/screens/worldselection/CreateWorldScreen
 		ARG 1 path
 	METHOD lambda$tryApplyNewDataPacks$15 (Lnet/minecraft/world/level/DataPackConfig;Lnet/minecraft/server/ServerResources;)V
 		ARG 2 resources
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	METHOD setGameMode (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen$SelectedGameMode;)V
 		ARG 1 gameMode
 	METHOD setWorldGenSettingsVisible (Z)V

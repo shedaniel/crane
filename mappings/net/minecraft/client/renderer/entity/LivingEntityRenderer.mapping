@@ -2,9 +2,3 @@ CLASS net/minecraft/client/renderer/entity/LivingEntityRenderer
 	METHOD <init> (Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/minecraft/client/model/EntityModel;F)V
 		ARG 2 model
 		ARG 3 shadowRadius
-	METHOD render (Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
-		ARG 4 poses
-	METHOD scale (Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V
-		ARG 2 poses
-	METHOD setupRotations (Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;FFF)V
-		ARG 2 poses

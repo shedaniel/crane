@@ -1,16 +1,6 @@
 CLASS net/minecraft/world/level/block/Block
-	METHOD getId (Lnet/minecraft/world/level/block/state/BlockState;)I
-		ARG 0 state
-	METHOD getSoundType (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/SoundType;
-		ARG 1 state
-	METHOD isExceptionForConnection (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
-	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	METHOD registerDefaultState (Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 defaultBlockState
-	METHOD withPropertiesOf (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 1 state
 	CLASS BlockStatePairKey
 		METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;)V
 			ARG 1 first

@@ -3,16 +3,8 @@ CLASS net/minecraft/client/renderer/GameRenderer
 		ARG 1 minecraft
 		ARG 2 resourceManager
 		ARG 3 renderBuffers
-	METHOD bobHurt (Lcom/mojang/blaze3d/vertex/PoseStack;F)V
-		ARG 1 poses
-	METHOD bobView (Lcom/mojang/blaze3d/vertex/PoseStack;F)V
-		ARG 1 poses
 	METHOD displayItemActivation (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 itemActivationItem
-	METHOD renderItemInHand (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;F)V
-		ARG 1 poses
-	METHOD renderLevel (FJLcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 3 poses
 	METHOD renderZoomed (FFF)V
 		ARG 1 zoom
 		ARG 2 zoomX

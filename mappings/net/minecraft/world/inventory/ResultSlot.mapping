@@ -2,7 +2,3 @@ CLASS net/minecraft/world/inventory/ResultSlot
 	METHOD <init> (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/inventory/CraftingContainer;Lnet/minecraft/world/Container;III)V
 		ARG 1 player
 		ARG 2 craftSlots
-	METHOD checkTakeAchievements (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD mayPlace (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack

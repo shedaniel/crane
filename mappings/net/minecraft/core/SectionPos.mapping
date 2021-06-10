@@ -1,7 +1,0 @@
-CLASS net/minecraft/core/SectionPos
-	METHOD asLong (Lnet/minecraft/core/BlockPos;)J
-		ARG 0 pos
-	METHOD of (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/SectionPos;
-		ARG 0 pos
-	METHOD sectionRelativePos (Lnet/minecraft/core/BlockPos;)S
-		ARG 0 pos

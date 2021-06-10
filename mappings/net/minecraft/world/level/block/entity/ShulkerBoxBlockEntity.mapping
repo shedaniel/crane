@@ -1,8 +1,6 @@
 CLASS net/minecraft/world/level/block/entity/ShulkerBoxBlockEntity
 	METHOD <init> (Lnet/minecraft/world/item/DyeColor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 color
-	METHOD getBoundingBox (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/phys/AABB;
-		ARG 1 state
 	METHOD setItems (Lnet/minecraft/core/NonNullList;)V
 		ARG 1 itemStacks
 	METHOD triggerEvent (II)Z

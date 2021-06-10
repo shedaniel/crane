@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/FallingBlock
-	METHOD isFree (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

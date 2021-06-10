@@ -6,5 +6,3 @@ CLASS net/minecraft/advancements/critereon/FilledBucketTrigger
 		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/ItemPredicate;)V
 			ARG 1 player
 			ARG 2 item
-		METHOD matches (Lnet/minecraft/world/item/ItemStack;)Z
-			ARG 1 stack

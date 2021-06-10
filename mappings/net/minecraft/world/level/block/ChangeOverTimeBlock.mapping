@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/ChangeOverTimeBlock
-	METHOD getNext (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/Optional;
-		ARG 1 state

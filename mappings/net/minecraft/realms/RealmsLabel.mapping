@@ -4,5 +4,3 @@ CLASS net/minecraft/realms/RealmsLabel
 		ARG 2 x
 		ARG 3 y
 		ARG 4 color
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses

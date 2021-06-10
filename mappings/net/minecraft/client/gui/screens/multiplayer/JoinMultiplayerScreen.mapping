@@ -25,8 +25,6 @@ CLASS net/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen
 		ARG 1 button
 	METHOD lambda$init$6 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	METHOD setSelected (Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList$Entry;)V
 		ARG 1 entry
 	METHOD setToolTip (Ljava/util/List;)V

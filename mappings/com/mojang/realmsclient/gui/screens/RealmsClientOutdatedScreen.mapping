@@ -2,5 +2,3 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsClientOutdatedScreen
 	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Z)V
 		ARG 1 lastScreen
 		ARG 2 outdated
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses

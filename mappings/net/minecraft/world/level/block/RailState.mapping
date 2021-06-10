@@ -3,11 +3,3 @@ CLASS net/minecraft/world/level/block/RailState
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 state
-	METHOD getRail (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/RailState;
-		ARG 1 pos
-	METHOD hasConnection (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
-	METHOD hasNeighborRail (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
-	METHOD hasRail (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos

@@ -14,5 +14,3 @@ CLASS net/minecraft/client/gui/components/Checkbox
 		ARG 5 message
 		ARG 6 selected
 		ARG 7 showLabel
-	METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses

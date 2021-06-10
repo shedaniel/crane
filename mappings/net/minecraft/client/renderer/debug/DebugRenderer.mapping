@@ -1,6 +1,0 @@
-CLASS net/minecraft/client/renderer/debug/DebugRenderer
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;DDD)V
-		ARG 1 poses
-	CLASS SimpleDebugRenderer
-		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;DDD)V
-			ARG 1 poses

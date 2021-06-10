@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/WitherSkullRenderer
-	METHOD render (Lnet/minecraft/world/entity/projectile/WitherSkull;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
-		ARG 4 poses

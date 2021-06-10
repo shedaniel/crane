@@ -20,8 +20,6 @@ CLASS net/minecraft/client/gui/components/OptionsList
 			ARG 2 option
 		METHOD lambda$render$0 (ILcom/mojang/blaze3d/vertex/PoseStack;IIFLnet/minecraft/client/gui/components/AbstractWidget;)V
 			ARG 5 widget
-		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
-			ARG 1 poses
 		METHOD small (Lnet/minecraft/client/Options;ILnet/minecraft/client/Option;Lnet/minecraft/client/Option;)Lnet/minecraft/client/gui/components/OptionsList$Entry;
 			ARG 0 options
 			ARG 1 width

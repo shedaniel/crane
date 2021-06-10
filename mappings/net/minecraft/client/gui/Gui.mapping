@@ -2,39 +2,17 @@ CLASS net/minecraft/client/gui/Gui
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD displayScoreboardSidebar (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/scores/Objective;)V
-		ARG 1 poses
 		ARG 2 objective
-	METHOD drawBackdrop (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;III)V
-		ARG 1 poses
 	METHOD getVehicleMaxHearts (Lnet/minecraft/world/entity/LivingEntity;)I
 		ARG 1 entity
 	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;F)V
-		ARG 1 poses
 		ARG 2 delta
-	METHOD renderCrosshair (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
-	METHOD renderDemoOverlay (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
-	METHOD renderEffects (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
 	METHOD renderExperienceBar (Lcom/mojang/blaze3d/vertex/PoseStack;I)V
-		ARG 1 poses
 		ARG 2 x
-	METHOD renderHeart (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Gui$HeartType;IIIZZ)V
-		ARG 1 poses
-	METHOD renderHearts (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/player/Player;IIIIFIIIZ)V
-		ARG 1 poses
-	METHOD renderHotbar (FLcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 2 poses
 	METHOD renderJumpMeter (Lcom/mojang/blaze3d/vertex/PoseStack;I)V
-		ARG 1 poses
 		ARG 2 x
-	METHOD renderPlayerHealth (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
 	METHOD renderPortalOverlay (F)V
 		ARG 1 alpha
-	METHOD renderSelectedItemName (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
 	METHOD renderSlot (IIFLnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 1 x
 		ARG 2 y
@@ -42,8 +20,6 @@ CLASS net/minecraft/client/gui/Gui
 	METHOD renderTextureOverlay (Lnet/minecraft/resources/ResourceLocation;F)V
 		ARG 1 texture
 		ARG 2 alpha
-	METHOD renderVehicleHealth (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
 	METHOD renderVignette (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD setOverlayMessage (Lnet/minecraft/network/chat/Component;Z)V

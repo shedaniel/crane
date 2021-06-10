@@ -4,5 +4,3 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsSlotOptionsScreen
 		ARG 2 options
 		ARG 3 worldType
 		ARG 4 activeSlot
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses

@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/item/HoneycombItem
-	METHOD getWaxed (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/Optional;
-		ARG 0 state

@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/level/block/BarrelBlock
-	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
-		ARG 1 state
-	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

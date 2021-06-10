@@ -1,9 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/feature/DripstoneUtils
-	METHOD isDripstoneBase (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
-	METHOD isDripstoneBaseOrLava (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
-	METHOD isEmptyOrWater (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
-	METHOD isEmptyOrWaterOrLava (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

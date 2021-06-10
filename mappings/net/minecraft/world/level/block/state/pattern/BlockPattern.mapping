@@ -5,8 +5,6 @@ CLASS net/minecraft/world/level/block/state/pattern/BlockPattern
 		METHOD <init> (Lnet/minecraft/world/level/LevelReader;Z)V
 			ARG 1 level
 			ARG 2 loadChunks
-		METHOD load (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;
-			ARG 1 pos
 	CLASS BlockPatternMatch
 		METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;Lcom/google/common/cache/LoadingCache;III)V
 			ARG 1 frontTopLeft

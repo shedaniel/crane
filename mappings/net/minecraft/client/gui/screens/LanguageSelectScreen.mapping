@@ -5,15 +5,9 @@ CLASS net/minecraft/client/gui/screens/LanguageSelectScreen
 		ARG 3 languageManager
 	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	CLASS LanguageSelectionList
 		METHOD <init> (Lnet/minecraft/client/gui/screens/LanguageSelectScreen;Lnet/minecraft/client/Minecraft;)V
 			ARG 2 minecraft
-		METHOD renderBackground (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-			ARG 1 poses
 		CLASS Entry
 			METHOD <init> (Lnet/minecraft/client/gui/screens/LanguageSelectScreen$LanguageSelectionList;Lnet/minecraft/client/resources/language/LanguageInfo;)V
 				ARG 2 language
-			METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
-				ARG 1 poses

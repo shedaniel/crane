@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/entity/item/ItemEntity
-	METHOD setItem (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
 	METHOD setOwner (Ljava/util/UUID;)V
 		ARG 1 owner
 	METHOD setPickUpDelay (I)V

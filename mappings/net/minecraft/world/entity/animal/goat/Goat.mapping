@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/entity/animal/goat/Goat
-	METHOD getEatingSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent;
-		ARG 1 stack

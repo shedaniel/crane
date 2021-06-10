@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/TrappedChestBlock
-	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

@@ -3,11 +3,3 @@ CLASS net/minecraft/client/gui/screens/inventory/StonecutterScreen
 		ARG 1 menu
 		ARG 2 inventory
 		ARG 3 title
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
-	METHOD renderBg (Lcom/mojang/blaze3d/vertex/PoseStack;FII)V
-		ARG 1 poses
-	METHOD renderButtons (Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V
-		ARG 1 poses
-	METHOD renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
-		ARG 1 poses

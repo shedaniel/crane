@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/feature/Feature
-	METHOD isDirt (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
-	METHOD isStone (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

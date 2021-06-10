@@ -1,9 +1,0 @@
-CLASS net/minecraft/world/level/block/VineBlock
-	METHOD calculateShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/phys/shapes/VoxelShape;
-		ARG 0 state
-	METHOD countFaces (Lnet/minecraft/world/level/block/state/BlockState;)I
-		ARG 1 state
-	METHOD hasFaces (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
-	METHOD hasHorizontalConnection (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

@@ -15,10 +15,6 @@ CLASS net/minecraft/client/gui/screens/social/SocialInteractionsScreen
 		ARG 1 player
 	METHOD onRemovePlayer (Ljava/util/UUID;)V
 		ARG 1 uuid
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
-	METHOD renderBackground (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
 	METHOD setPostRenderRunnable (Ljava/lang/Runnable;)V
 		ARG 1 postRenderRunnable
 	METHOD showPage (Lnet/minecraft/client/gui/screens/social/SocialInteractionsScreen$Page;)V

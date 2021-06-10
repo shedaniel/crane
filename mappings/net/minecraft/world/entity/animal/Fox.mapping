@@ -1,18 +1,4 @@
 CLASS net/minecraft/world/entity/animal/Fox
-	METHOD canEat (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD canHoldItem (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD dropItemStack (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD getEatingSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent;
-		ARG 1 stack
-	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD spitOutItem (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
 	CLASS Type
 		METHOD <init> (Ljava/lang/String;IILjava/lang/String;[Lnet/minecraft/resources/ResourceKey;)V
 			ARG 3 id
@@ -20,11 +6,6 @@ CLASS net/minecraft/world/entity/animal/Fox
 	CLASS FoxGroupData
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Fox$Type;)V
 			ARG 1 type
-	CLASS FoxEatBerriesGoal
-		METHOD pickGlowBerry (Lnet/minecraft/world/level/block/state/BlockState;)V
-			ARG 1 state
-		METHOD pickSweetBerries (Lnet/minecraft/world/level/block/state/BlockState;)V
-			ARG 1 state
 	CLASS FoxFollowParentGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Fox;Lnet/minecraft/world/entity/animal/Fox;D)V
 			ARG 2 fox

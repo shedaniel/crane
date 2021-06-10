@@ -9,5 +9,3 @@ CLASS net/minecraft/client/gui/screens/WinScreen
 	METHOD lambda$render$0 (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/Integer;Ljava/lang/Integer;)V
 		ARG 2 x
 		ARG 3 y
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses

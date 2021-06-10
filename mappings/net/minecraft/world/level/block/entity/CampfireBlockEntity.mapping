@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/entity/CampfireBlockEntity
-	METHOD getCookableRecipe (Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;
-		ARG 1 stack

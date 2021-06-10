@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/blockentity/EnchantTableRenderer
-	METHOD render (Lnet/minecraft/world/level/block/entity/EnchantmentTableBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V
-		ARG 3 poses

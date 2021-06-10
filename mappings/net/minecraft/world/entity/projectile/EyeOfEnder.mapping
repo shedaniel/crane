@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/entity/projectile/EyeOfEnder
-	METHOD setItem (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD signalTo (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos

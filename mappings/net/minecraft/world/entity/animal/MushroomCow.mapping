@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/entity/animal/MushroomCow
-	METHOD getEffectFromItemStack (Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;
-		ARG 1 stack
 	CLASS MushroomType
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/block/state/BlockState;)V
 			ARG 3 type

@@ -1,10 +1,4 @@
 CLASS net/minecraft/world/entity/animal/horse/Horse
-	METHOD isArmor (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD setArmor (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD setArmorEquipment (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
 	CLASS HorseGroupData
 		METHOD <init> (Lnet/minecraft/world/entity/animal/horse/Variant;)V
 			ARG 1 variant

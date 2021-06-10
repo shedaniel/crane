@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/FoxRenderer
-	METHOD setupRotations (Lnet/minecraft/world/entity/animal/Fox;Lcom/mojang/blaze3d/vertex/PoseStack;FFF)V
-		ARG 2 poses

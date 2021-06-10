@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/level/block/ComposterBlock
-	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	CLASS InputContainer
 		METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)V
 			ARG 1 state

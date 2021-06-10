@@ -2,7 +2,3 @@ CLASS net/minecraft/world/level/ChunkPos
 	METHOD <init> (II)V
 		ARG 1 x
 		ARG 2 z
-	METHOD <init> (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
-	METHOD asLong (Lnet/minecraft/core/BlockPos;)J
-		ARG 0 pos

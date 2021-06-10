@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/WitherSkeletonRenderer
-	METHOD scale (Lnet/minecraft/world/entity/monster/AbstractSkeleton;Lcom/mojang/blaze3d/vertex/PoseStack;F)V
-		ARG 2 poses

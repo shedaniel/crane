@@ -1,9 +1,0 @@
-CLASS net/minecraft/client/renderer/ScreenEffectRenderer
-	METHOD renderFire (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
-	METHOD renderScreenEffect (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
-	METHOD renderTex (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
-	METHOD renderWater (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses

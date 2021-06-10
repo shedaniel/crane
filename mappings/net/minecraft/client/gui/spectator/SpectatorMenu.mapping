@@ -9,8 +9,3 @@ CLASS net/minecraft/client/gui/spectator/SpectatorMenu
 		METHOD <init> (IZ)V
 			ARG 1 direction
 			ARG 2 enabled
-		METHOD renderIcon (Lcom/mojang/blaze3d/vertex/PoseStack;FI)V
-			ARG 1 poses
-	CLASS CloseSpectatorItem
-		METHOD renderIcon (Lcom/mojang/blaze3d/vertex/PoseStack;FI)V
-			ARG 1 poses

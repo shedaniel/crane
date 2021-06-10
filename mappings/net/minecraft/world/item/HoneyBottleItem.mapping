@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/item/HoneyBottleItem
-	METHOD getUseAnimation (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/UseAnim;
-		ARG 1 stack
-	METHOD getUseDuration (Lnet/minecraft/world/item/ItemStack;)I
-		ARG 1 stack

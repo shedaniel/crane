@@ -1,8 +1,6 @@
 CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookTabButton
 	METHOD <init> (Lnet/minecraft/client/RecipeBookCategories;)V
 		ARG 1 categories
-	METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	METHOD renderIcon (Lnet/minecraft/client/renderer/entity/ItemRenderer;)V
 		ARG 1 itemRenderer
 	METHOD startAnimation (Lnet/minecraft/client/Minecraft;)V

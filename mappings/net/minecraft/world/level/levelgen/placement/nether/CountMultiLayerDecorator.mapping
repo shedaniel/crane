@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/placement/nether/CountMultiLayerDecorator
-	METHOD isEmpty (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

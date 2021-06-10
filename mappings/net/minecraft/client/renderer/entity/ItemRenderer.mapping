@@ -39,7 +39,6 @@ CLASS net/minecraft/client/renderer/entity/ItemRenderer
 	METHOD render (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;ZLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/resources/model/BakedModel;)V
 		ARG 1 stack
 		ARG 2 transformType
-		ARG 4 poses
 		ARG 5 buffers
 		ARG 6 uv2
 		ARG 7 overlay
@@ -94,9 +93,7 @@ CLASS net/minecraft/client/renderer/entity/ItemRenderer
 		ARG 2 stack
 		ARG 3 uv2
 		ARG 4 overlay
-		ARG 5 poses
 	METHOD renderQuadList (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Ljava/util/List;Lnet/minecraft/world/item/ItemStack;II)V
-		ARG 1 poses
 		ARG 3 quads
 		ARG 4 stack
 		ARG 5 uv2
@@ -105,7 +102,6 @@ CLASS net/minecraft/client/renderer/entity/ItemRenderer
 		ARG 1 entity
 		ARG 2 stack
 		ARG 3 transformType
-		ARG 5 poses
 		ARG 6 buffers
 		ARG 7 level
 		ARG 8 uv2
@@ -116,7 +112,6 @@ CLASS net/minecraft/client/renderer/entity/ItemRenderer
 		ARG 2 transformType
 		ARG 3 uv2
 		ARG 4 overlay
-		ARG 5 poses
 		ARG 6 buffers
 		ARG 7 seed
 	METHOD tryRenderGuiItem (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;III)V

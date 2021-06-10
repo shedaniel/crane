@@ -1,5 +1,3 @@
 CLASS net/minecraft/world/entity/animal/Animal
-	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
 	METHOD setInLoveTime (I)V
 		ARG 1 inLove

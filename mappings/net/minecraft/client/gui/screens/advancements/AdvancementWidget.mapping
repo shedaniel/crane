@@ -20,9 +20,5 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementWidget
 	METHOD getMaxWidth (Lnet/minecraft/client/StringSplitter;Ljava/util/List;)F
 		ARG 0 splitter
 		ARG 1 texts
-	METHOD render9Sprite (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIII)V
-		ARG 1 poses
-	METHOD renderRepeating (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIII)V
-		ARG 1 poses
 	METHOD setProgress (Lnet/minecraft/advancements/AdvancementProgress;)V
 		ARG 1 progress

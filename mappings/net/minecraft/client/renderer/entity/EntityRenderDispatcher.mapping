@@ -11,14 +11,6 @@ CLASS net/minecraft/client/renderer/entity/EntityRenderDispatcher
 		ARG 1 level
 		ARG 2 camera
 		ARG 3 crosshairPickEntity
-	METHOD render (Lnet/minecraft/world/entity/Entity;DDDFFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
-		ARG 7 poses
-	METHOD renderFlame (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/world/entity/Entity;)V
-		ARG 1 poses
-	METHOD renderHitbox (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/entity/Entity;F)V
-		ARG 0 poses
-	METHOD renderShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/world/entity/Entity;FFLnet/minecraft/world/level/LevelReader;F)V
-		ARG 0 poses
 	METHOD setLevel (Lnet/minecraft/world/level/Level;)V
 		ARG 1 level
 	METHOD setRenderHitBoxes (Z)V

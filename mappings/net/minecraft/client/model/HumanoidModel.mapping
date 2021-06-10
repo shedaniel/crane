@@ -17,8 +17,6 @@ CLASS net/minecraft/client/model/HumanoidModel
 		ARG 1 visible
 	METHOD setupAttackAnimation (Lnet/minecraft/world/entity/LivingEntity;F)V
 		ARG 1 entity
-	METHOD translateToHand (Lnet/minecraft/world/entity/HumanoidArm;Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 2 poses
 	CLASS ArmPose
 		METHOD <init> (Ljava/lang/String;IZ)V
 			ARG 3 twoHanded

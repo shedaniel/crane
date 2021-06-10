@@ -3,10 +3,6 @@ CLASS com/mojang/realmsclient/gui/RealmsWorldSlotButton
 		ARG 5 serverDataProvider
 		ARG 6 toolTipSetter
 		ARG 7 slotIndex
-	METHOD drawSlotFrame (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIZLjava/lang/String;IJLjava/lang/String;ZZLcom/mojang/realmsclient/gui/RealmsWorldSlotButton$Action;Lnet/minecraft/network/chat/Component;)V
-		ARG 1 poses
-	METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	CLASS State
 		METHOD <init> (ZLjava/lang/String;JLjava/lang/String;ZZLcom/mojang/realmsclient/gui/RealmsWorldSlotButton$Action;Lnet/minecraft/network/chat/Component;)V
 			ARG 1 isCurrentlyActiveSlot

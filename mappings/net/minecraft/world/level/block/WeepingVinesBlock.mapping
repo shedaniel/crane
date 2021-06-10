@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/WeepingVinesBlock
-	METHOD canGrowInto (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

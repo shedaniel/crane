@@ -3,7 +3,5 @@ CLASS net/minecraft/world/level/levelgen/structure/StructurePiece
 		ARG 1 type
 		ARG 2 genDepth
 		ARG 3 box
-	METHOD isReplaceableByStructures (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	METHOD setOrientation (Lnet/minecraft/core/Direction;)V
 		ARG 1 orientation

@@ -1,5 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/TntMinecartRenderer
-	METHOD renderMinecartContents (Lnet/minecraft/world/entity/vehicle/MinecartTNT;FLnet/minecraft/world/level/block/state/BlockState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
-		ARG 4 poses
-	METHOD renderWhiteSolidBlock (Lnet/minecraft/world/level/block/state/BlockState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IZ)V
-		ARG 1 poses

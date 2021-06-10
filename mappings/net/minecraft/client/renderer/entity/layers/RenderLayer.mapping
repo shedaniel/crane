@@ -1,9 +1,3 @@
 CLASS net/minecraft/client/renderer/entity/layers/RenderLayer
 	METHOD <init> (Lnet/minecraft/client/renderer/entity/RenderLayerParent;)V
 		ARG 1 renderer
-	METHOD coloredCutoutModelCopyLayerRender (Lnet/minecraft/client/model/EntityModel;Lnet/minecraft/client/model/EntityModel;Lnet/minecraft/resources/ResourceLocation;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/LivingEntity;FFFFFFFFF)V
-		ARG 3 poses
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V
-		ARG 1 poses
-	METHOD renderColoredCutoutModel (Lnet/minecraft/client/model/EntityModel;Lnet/minecraft/resources/ResourceLocation;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/LivingEntity;FFF)V
-		ARG 2 poses

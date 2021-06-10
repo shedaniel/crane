@@ -6,19 +6,16 @@ CLASS net/minecraft/client/gui/Font
 	METHOD bidirectionalShaping (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 text
 	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/String;FFI)I
-		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Component;FFI)I
-		ARG 1 poses
 		ARG 2 component
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/util/FormattedCharSequence;FFI)I
-		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
@@ -100,26 +97,22 @@ CLASS net/minecraft/client/gui/Font
 		ARG 8 seeThrough
 		ARG 10 packedLightCoords
 	METHOD drawShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/String;FFI)I
-		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 	METHOD drawShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/String;FFIZ)I
-		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 		ARG 6 bidirectional
 	METHOD drawShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Component;FFI)I
-		ARG 1 poses
 		ARG 2 component
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 	METHOD drawShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/util/FormattedCharSequence;FFI)I
-		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y

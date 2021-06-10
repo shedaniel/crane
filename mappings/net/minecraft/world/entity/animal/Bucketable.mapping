@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/entity/animal/Bucketable
-	METHOD saveToBucketTag (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack

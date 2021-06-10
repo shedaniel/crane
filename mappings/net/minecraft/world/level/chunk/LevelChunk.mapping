@@ -7,24 +7,6 @@ CLASS net/minecraft/world/level/chunk/LevelChunk
 		ARG 5 blockTicks
 		ARG 6 liquidTicks
 		ARG 7 inhabitedTime
-	METHOD createBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
-		ARG 1 pos
-	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
-		ARG 1 pos
-	METHOD getBlockEntityNbt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
-		ARG 1 pos
-	METHOD getBlockEntityNbtForSaving (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
-		ARG 1 pos
-	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 1 pos
-	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 pos
-	METHOD isTicking (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
-	METHOD removeBlockEntity (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
-	METHOD removeBlockEntityTicker (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
 	METHOD replaceWithPacketData (Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/nbt/CompoundTag;Ljava/util/BitSet;)V
 		ARG 1 biomes
 	METHOD setFullStatus (Ljava/util/function/Supplier;)V

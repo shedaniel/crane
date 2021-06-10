@@ -4,7 +4,5 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsLongRunningMcoTaskScreen
 		ARG 2 task
 	METHOD error (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 errorMessage
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
 	METHOD setTitle (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 title

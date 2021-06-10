@@ -1,15 +1,3 @@
 CLASS net/minecraft/world/entity/monster/piglin/Piglin
-	METHOD addToInventory (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
-		ARG 1 stack
-	METHOD canAddToInventory (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD canReplaceCurrentItem (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD holdInMainHand (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD holdInOffHand (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
 	METHOD setCannotHunt (Z)V
 		ARG 1 cannotHunt
-	METHOD wantsToPickUp (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack

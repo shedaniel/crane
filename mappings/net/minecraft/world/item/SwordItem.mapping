@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/item/SwordItem
-	METHOD isCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

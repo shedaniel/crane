@@ -3,8 +3,6 @@ CLASS net/minecraft/world/level/block/entity/BlockEntityType
 		ARG 1 factory
 		ARG 2 validBlocks
 		ARG 3 dataType
-	METHOD isValid (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;Ljava/util/Set;)V
 			ARG 1 factory

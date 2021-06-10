@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/entity/projectile/Arrow
-	METHOD getCustomColor (Lnet/minecraft/world/item/ItemStack;)I
-		ARG 0 stack
-	METHOD setEffectsFromItem (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack

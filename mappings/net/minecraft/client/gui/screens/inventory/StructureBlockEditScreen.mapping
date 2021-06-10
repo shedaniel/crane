@@ -1,5 +1,3 @@
 CLASS net/minecraft/client/gui/screens/inventory/StructureBlockEditScreen
 	METHOD <init> (Lnet/minecraft/world/level/block/entity/StructureBlockEntity;)V
 		ARG 1 structure
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses

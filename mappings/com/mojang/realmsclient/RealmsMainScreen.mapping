@@ -1,36 +1,6 @@
 CLASS com/mojang/realmsclient/RealmsMainScreen
 	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;)V
 		ARG 1 lastScreen
-	METHOD drawClose (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-		ARG 1 poses
-	METHOD drawConfigure (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-		ARG 1 poses
-	METHOD drawExpired (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-		ARG 1 poses
-	METHOD drawExpiring (Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V
-		ARG 1 poses
-	METHOD drawInvitationPendingIcon (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIZZ)V
-		ARG 1 poses
-	METHOD drawLeave (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-		ARG 1 poses
-	METHOD drawOpen (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-		ARG 1 poses
-	METHOD drawPopup (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
-		ARG 1 poses
-	METHOD drawRealmsLogo (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
-		ARG 1 poses
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
-	METHOD renderLocal (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
-	METHOD renderMoreInfo (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIZ)V
-		ARG 1 poses
-	METHOD renderMousehoverTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V
-		ARG 1 poses
-	METHOD renderNews (Lcom/mojang/blaze3d/vertex/PoseStack;IIZIIZZ)V
-		ARG 1 poses
-	METHOD renderStage (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
 	METHOD setCreatedTrial (Z)V
 		ARG 1 createdTrial
 	METHOD shouldConfigureButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
@@ -43,29 +13,6 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 1 server
 	METHOD updateButtonStates (Lcom/mojang/realmsclient/dto/RealmsServer;)V
 		ARG 1 server
-	CLASS NewsButton
-		METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-			ARG 1 poses
-	CLASS TrialEntry
-		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
-			ARG 1 poses
-		METHOD renderTrialItem (Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V
-			ARG 1 poses
-	CLASS CloseButton
-		METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-			ARG 1 poses
 	CLASS ServerEntry
 		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
 			ARG 2 serverData
-		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
-			ARG 1 poses
-		METHOD renderLegacy (Lcom/mojang/realmsclient/dto/RealmsServer;Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-			ARG 2 poses
-		METHOD renderMcoServerItem (Lcom/mojang/realmsclient/dto/RealmsServer;Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-			ARG 2 poses
-	CLASS ShowPopupButton
-		METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-			ARG 1 poses
-	CLASS PendingInvitesButton
-		METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-			ARG 1 poses

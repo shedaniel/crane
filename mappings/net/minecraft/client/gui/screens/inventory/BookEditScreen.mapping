@@ -3,10 +3,6 @@ CLASS net/minecraft/client/gui/screens/inventory/BookEditScreen
 		ARG 1 owner
 		ARG 2 book
 		ARG 3 hand
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
-		ARG 1 poses
-	METHOD renderCursor (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/screens/inventory/BookEditScreen$Pos2i;Z)V
-		ARG 1 poses
 	METHOD saveChanges (Z)V
 		ARG 1 addAuthor
 	METHOD setClipboard (Ljava/lang/String;)V

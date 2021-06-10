@@ -19,5 +19,3 @@ CLASS net/minecraft/client/player/LocalPlayer
 		ARG 1 showDeathScreen
 	METHOD startUsingItem (Lnet/minecraft/world/InteractionHand;)V
 		ARG 1 usingItemHand
-	METHOD suffocatesAt (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos

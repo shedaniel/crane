@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/PandaRenderer
-	METHOD setupRotations (Lnet/minecraft/world/entity/animal/Panda;Lcom/mojang/blaze3d/vertex/PoseStack;FFF)V
-		ARG 2 poses

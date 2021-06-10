@@ -1,7 +1,0 @@
-CLASS net/minecraft/world/level/block/KelpBlock
-	METHOD canAttachTo (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
-	METHOD canGrowInto (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
-	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 state
