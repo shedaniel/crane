@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/monster/Vex
+	METHOD setBoundOrigin (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 boundOrigin
+	METHOD setLimitedLife (I)V
+		ARG 1 limitedLifeTicks
+	METHOD setOwner (Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 owner

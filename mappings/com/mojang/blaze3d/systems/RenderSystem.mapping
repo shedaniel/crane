@@ -1,0 +1,14 @@
+CLASS com/mojang/blaze3d/systems/RenderSystem
+	METHOD _setShaderFogEnd (F)V
+		ARG 0 shaderFogEnd
+	METHOD _setShaderFogStart (F)V
+		ARG 0 shaderFogStart
+	METHOD lineWidth (F)V
+		ARG 0 shaderLineWidth
+	CLASS a
+		METHOD <init> (IILcom/mojang/blaze3d/systems/RenderSystem$a$a;)V
+			ARG 1 a
+			ARG 2 b
+			ARG 3 c
+		METHOD a (I)V
+			ARG 1 f

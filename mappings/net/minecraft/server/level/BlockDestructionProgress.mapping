@@ -1,0 +1,8 @@
+CLASS net/minecraft/server/level/BlockDestructionProgress
+	METHOD <init> (ILnet/minecraft/core/BlockPos;)V
+		ARG 1 id
+		ARG 2 pos
+	METHOD setProgress (I)V
+		ARG 1 progress
+	METHOD updateTick (I)V
+		ARG 1 updatedRenderTick

@@ -1,0 +1,11 @@
+CLASS com/mojang/blaze3d/shaders/BlendMode
+	METHOD <init> (ZZIIIII)V
+		ARG 1 separateBlend
+		ARG 2 opaque
+		ARG 3 srcColorFactor
+		ARG 4 dstColorFactor
+		ARG 5 srcAlphaFactor
+		ARG 6 dstAlphaFactor
+		ARG 7 blendFunc
+	METHOD apply ()V
+		ARG 0 lastApplied

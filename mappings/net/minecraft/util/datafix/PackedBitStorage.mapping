@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/datafix/PackedBitStorage
+	METHOD <init> (II[J)V
+		ARG 1 bits
+		ARG 2 size
+		ARG 3 data

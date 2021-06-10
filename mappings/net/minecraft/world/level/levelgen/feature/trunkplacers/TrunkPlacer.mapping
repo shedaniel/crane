@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacer
+	METHOD <init> (III)V
+		ARG 1 baseHeight
+		ARG 2 heightRandA
+		ARG 3 heightRandB

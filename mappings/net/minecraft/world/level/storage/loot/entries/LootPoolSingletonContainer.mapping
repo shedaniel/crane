@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer
+	METHOD <init> (II[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;[Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)V
+		ARG 1 weight
+		ARG 2 quality
+		ARG 4 functions
+	CLASS Builder
+		METHOD setQuality (I)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+			ARG 1 quality
+		METHOD setWeight (I)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+			ARG 1 weight
+	CLASS DummyBuilder
+		METHOD <init> (Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$EntryConstructor;)V
+			ARG 1 constructor

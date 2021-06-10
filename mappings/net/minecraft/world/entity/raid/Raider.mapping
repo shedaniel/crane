@@ -1,0 +1,22 @@
+CLASS net/minecraft/world/entity/raid/Raider
+	METHOD setCanJoinRaid (Z)V
+		ARG 1 canJoinRaid
+	METHOD setCurrentRaid (Lnet/minecraft/world/entity/raid/Raid;)V
+		ARG 1 raid
+	METHOD setTicksOutsideRaid (I)V
+		ARG 1 ticksOutsideRaid
+	METHOD setWave (I)V
+		ARG 1 wave
+	CLASS RaiderCelebration
+		METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;Lnet/minecraft/world/entity/raid/Raider;)V
+			ARG 2 mob
+	CLASS HoldGroundAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;Lnet/minecraft/world/entity/monster/AbstractIllager;F)V
+			ARG 2 mob
+	CLASS ObtainRaidLeaderBannerGoal
+		METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;Lnet/minecraft/world/entity/raid/Raider;)V
+			ARG 2 mob
+	CLASS RaiderMoveThroughVillageGoal
+		METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;DI)V
+			ARG 1 raider
+			ARG 2 speedModifier

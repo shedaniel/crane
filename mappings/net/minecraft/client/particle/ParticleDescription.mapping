@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/particle/ParticleDescription
+	METHOD <init> (Ljava/util/List;)V
+		ARG 1 textures

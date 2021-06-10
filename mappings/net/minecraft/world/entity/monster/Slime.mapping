@@ -1,0 +1,21 @@
+CLASS net/minecraft/world/entity/monster/Slime
+	CLASS SlimeFloatGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Slime;)V
+			ARG 1 slime
+	CLASS SlimeAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Slime;)V
+			ARG 1 slime
+	CLASS SlimeMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Slime;)V
+			ARG 1 slime
+		METHOD setDirection (FZ)V
+			ARG 1 yRot
+			ARG 2 isAggressive
+		METHOD setWantedMovement (D)V
+			ARG 1 speedModifier
+	CLASS SlimeKeepOnJumpingGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Slime;)V
+			ARG 1 slime
+	CLASS SlimeRandomDirectionGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Slime;)V
+			ARG 1 slime

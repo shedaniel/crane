@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/lighting/DynamicGraphMinFixedPoint
+	METHOD <init> (III)V
+		ARG 1 levelCount
+	METHOD checkFirstQueuedLevel (I)V
+		ARG 1 firstQueuedLevel

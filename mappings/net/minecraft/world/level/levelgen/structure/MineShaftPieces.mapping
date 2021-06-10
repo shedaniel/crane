@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/structure/MineShaftPieces
+	CLASS MineShaftRoom
+		METHOD <init> (ILjava/util/Random;IILnet/minecraft/world/level/levelgen/feature/MineshaftFeature$Type;)V
+			ARG 5 type
+	CLASS MineShaftPiece
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/StructurePieceType;ILnet/minecraft/world/level/levelgen/feature/MineshaftFeature$Type;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;)V
+			ARG 3 type
+	CLASS MineShaftCrossing
+		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/levelgen/feature/MineshaftFeature$Type;)V
+			ARG 3 direction

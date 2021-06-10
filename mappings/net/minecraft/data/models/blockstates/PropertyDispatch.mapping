@@ -1,0 +1,26 @@
+CLASS net/minecraft/data/models/blockstates/PropertyDispatch
+	CLASS C1
+		METHOD <init> (Lnet/minecraft/world/level/block/state/properties/Property;)V
+			ARG 1 property1
+	CLASS C2
+		METHOD <init> (Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;)V
+			ARG 1 property1
+			ARG 2 property2
+	CLASS C3
+		METHOD <init> (Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;)V
+			ARG 1 property1
+			ARG 2 property2
+			ARG 3 property3
+	CLASS C4
+		METHOD <init> (Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;)V
+			ARG 1 property1
+			ARG 2 property2
+			ARG 3 property3
+			ARG 4 property4
+	CLASS C5
+		METHOD <init> (Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/world/level/block/state/properties/Property;)V
+			ARG 1 property1
+			ARG 2 property2
+			ARG 3 property3
+			ARG 4 property4
+			ARG 5 property5

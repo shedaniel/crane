@@ -1,0 +1,8 @@
+CLASS com/mojang/realmsclient/gui/screens/RealmsSelectFileToUploadScreen
+	METHOD <init> (JILcom/mojang/realmsclient/gui/screens/RealmsResetWorldScreen;Ljava/lang/Runnable;)V
+		ARG 1 worldId
+		ARG 3 slotId
+		ARG 4 lastScreen
+	CLASS Entry
+		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsSelectFileToUploadScreen;Lnet/minecraft/world/level/storage/LevelSummary;)V
+			ARG 2 levelSummary

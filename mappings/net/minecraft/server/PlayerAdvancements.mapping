@@ -1,0 +1,10 @@
+CLASS net/minecraft/server/PlayerAdvancements
+	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/server/players/PlayerList;Lnet/minecraft/server/ServerAdvancementManager;Ljava/io/File;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 dataFixer
+		ARG 2 playerList
+		ARG 4 file
+		ARG 5 player
+	METHOD setPlayer (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
+	METHOD setSelectedTab (Lnet/minecraft/advancements/Advancement;)V
+		ARG 1 lastSelectedTab

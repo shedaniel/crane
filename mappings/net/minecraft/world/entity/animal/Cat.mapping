@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/entity/animal/Cat
+	CLASS CatTemptGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Cat;DLnet/minecraft/world/item/crafting/Ingredient;Z)V
+			ARG 1 cat
+	CLASS CatAvoidEntityGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Cat;Ljava/lang/Class;FDD)V
+			ARG 1 cat
+	CLASS CatRelaxOnOwnerGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Cat;)V
+			ARG 1 cat

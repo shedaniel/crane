@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/storage/loot/LootTable
+	METHOD <init> (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParamSet;[Lnet/minecraft/world/level/storage/loot/LootPool;[Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)V
+		ARG 1 paramSet
+		ARG 2 pools
+		ARG 3 functions
+	CLASS Builder
+		METHOD setParamSet (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParamSet;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+			ARG 1 paramSet

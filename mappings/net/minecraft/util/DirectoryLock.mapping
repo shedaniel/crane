@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/DirectoryLock
+	METHOD <init> (Ljava/nio/channels/FileChannel;Ljava/nio/channels/FileLock;)V
+		ARG 1 lockFile
+		ARG 2 lock

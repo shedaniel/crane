@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/gui/screens/SimpleOptionsSubScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/Options;Lnet/minecraft/network/chat/Component;[Lnet/minecraft/client/Option;)V
+		ARG 4 smallOptions

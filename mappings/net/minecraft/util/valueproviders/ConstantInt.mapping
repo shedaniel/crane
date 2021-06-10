@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/valueproviders/ConstantInt
+	METHOD <init> (I)V
+		ARG 1 value

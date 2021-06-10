@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/material/Material
+	METHOD <init> (Lnet/minecraft/world/level/material/MaterialColor;ZZZZZZLnet/minecraft/world/level/material/PushReaction;)V
+		ARG 1 color
+		ARG 2 liquid
+		ARG 3 solid
+		ARG 4 blocksMotion
+		ARG 5 solidBlocking
+		ARG 6 flammable
+		ARG 7 replaceable
+		ARG 8 pushReaction
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/material/MaterialColor;)V
+			ARG 1 color

@@ -1,0 +1,7 @@
+CLASS net/minecraft/server/level/Ticket
+	METHOD <init> (Lnet/minecraft/server/level/TicketType;ILjava/lang/Object;)V
+		ARG 1 type
+		ARG 2 ticketLevel
+		ARG 3 key
+	METHOD setCreatedTick (J)V
+		ARG 1 createdTick

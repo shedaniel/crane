@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/player/Abilities
+	METHOD setFlyingSpeed (F)V
+		ARG 1 flyingSpeed
+	METHOD setWalkingSpeed (F)V
+		ARG 1 walkingSpeed

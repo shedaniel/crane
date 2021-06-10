@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/LocationCheck
+	METHOD <init> (Lnet/minecraft/advancements/critereon/LocationPredicate;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 predicate
+		ARG 2 offset

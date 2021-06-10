@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/monster/piglin/StartAdmiringItemIfSeen
+	METHOD <init> (I)V
+		ARG 1 admireDuration

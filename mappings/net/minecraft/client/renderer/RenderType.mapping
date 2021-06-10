@@ -1,0 +1,53 @@
+CLASS net/minecraft/client/renderer/RenderType
+	METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;IZZLjava/lang/Runnable;Ljava/lang/Runnable;)V
+		ARG 2 format
+		ARG 3 mode
+		ARG 4 bufferSize
+		ARG 5 affectsCrumbling
+		ARG 6 sortOnUpload
+	CLASS CompositeState
+		METHOD <init> (Lnet/minecraft/client/renderer/RenderStateShard$EmptyTextureStateShard;Lnet/minecraft/client/renderer/RenderStateShard$ShaderStateShard;Lnet/minecraft/client/renderer/RenderStateShard$TransparencyStateShard;Lnet/minecraft/client/renderer/RenderStateShard$DepthTestStateShard;Lnet/minecraft/client/renderer/RenderStateShard$CullStateShard;Lnet/minecraft/client/renderer/RenderStateShard$LightmapStateShard;Lnet/minecraft/client/renderer/RenderStateShard$OverlayStateShard;Lnet/minecraft/client/renderer/RenderStateShard$LayeringStateShard;Lnet/minecraft/client/renderer/RenderStateShard$OutputStateShard;Lnet/minecraft/client/renderer/RenderStateShard$TexturingStateShard;Lnet/minecraft/client/renderer/RenderStateShard$WriteMaskStateShard;Lnet/minecraft/client/renderer/RenderStateShard$LineStateShard;Lnet/minecraft/client/renderer/RenderType$OutlineProperty;)V
+			ARG 1 textureState
+			ARG 2 shaderState
+			ARG 3 transparencyState
+			ARG 4 depthTestState
+			ARG 5 cullState
+			ARG 6 lightmapState
+			ARG 7 overlayState
+			ARG 8 layeringState
+			ARG 9 outputState
+			ARG 10 texturingState
+			ARG 11 writeMaskState
+			ARG 12 lineState
+			ARG 13 outlineProperty
+		CLASS CompositeStateBuilder
+			METHOD setCullState (Lnet/minecraft/client/renderer/RenderStateShard$CullStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 cullState
+			METHOD setDepthTestState (Lnet/minecraft/client/renderer/RenderStateShard$DepthTestStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 depthTestState
+			METHOD setLayeringState (Lnet/minecraft/client/renderer/RenderStateShard$LayeringStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 layeringState
+			METHOD setLightmapState (Lnet/minecraft/client/renderer/RenderStateShard$LightmapStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 lightmapState
+			METHOD setLineState (Lnet/minecraft/client/renderer/RenderStateShard$LineStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 lineState
+			METHOD setOutputState (Lnet/minecraft/client/renderer/RenderStateShard$OutputStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 outputState
+			METHOD setOverlayState (Lnet/minecraft/client/renderer/RenderStateShard$OverlayStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 overlayState
+			METHOD setShaderState (Lnet/minecraft/client/renderer/RenderStateShard$ShaderStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 shaderState
+			METHOD setTextureState (Lnet/minecraft/client/renderer/RenderStateShard$EmptyTextureStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 textureState
+			METHOD setTexturingState (Lnet/minecraft/client/renderer/RenderStateShard$TexturingStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 texturingState
+			METHOD setTransparencyState (Lnet/minecraft/client/renderer/RenderStateShard$TransparencyStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 transparencyState
+			METHOD setWriteMaskState (Lnet/minecraft/client/renderer/RenderStateShard$WriteMaskStateShard;)Lnet/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder;
+				ARG 1 writeMaskState
+	CLASS OutlineProperty
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+	CLASS CompositeRenderType
+		METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;IZZLnet/minecraft/client/renderer/RenderType$CompositeState;)V
+			ARG 7 state

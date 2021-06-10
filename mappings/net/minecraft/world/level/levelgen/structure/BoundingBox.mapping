@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/levelgen/structure/BoundingBox
+	METHOD <init> (IIIIII)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ

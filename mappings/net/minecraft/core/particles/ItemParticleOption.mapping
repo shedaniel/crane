@@ -1,0 +1,4 @@
+CLASS net/minecraft/core/particles/ItemParticleOption
+	METHOD <init> (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 type
+		ARG 2 itemStack

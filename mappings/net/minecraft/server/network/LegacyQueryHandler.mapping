@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/network/LegacyQueryHandler
+	METHOD <init> (Lnet/minecraft/server/network/ServerConnectionListener;)V
+		ARG 1 serverConnectionListener

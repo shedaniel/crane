@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/Explosion
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/level/ExplosionDamageCalculator;DDDFZLnet/minecraft/world/level/Explosion$BlockInteraction;)V
+		ARG 1 level
+		ARG 2 source
+		ARG 5 x
+		ARG 7 y
+		ARG 9 z

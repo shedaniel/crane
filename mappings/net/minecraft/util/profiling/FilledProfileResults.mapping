@@ -1,0 +1,6 @@
+CLASS net/minecraft/util/profiling/FilledProfileResults
+	METHOD <init> (Ljava/util/Map;JIJI)V
+		ARG 1 entries
+		ARG 2 startTimeNano
+		ARG 4 startTimeTicks
+		ARG 5 endTimeNano

@@ -1,0 +1,4 @@
+CLASS net/minecraft/server/rcon/thread/QueryThreadGs4
+	METHOD <init> (Lnet/minecraft/server/ServerInterface;I)V
+		ARG 1 serverInterface
+		ARG 2 port

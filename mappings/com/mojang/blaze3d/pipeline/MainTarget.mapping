@@ -1,0 +1,5 @@
+CLASS com/mojang/blaze3d/pipeline/MainTarget
+	CLASS Dimension
+		METHOD <init> (II)V
+			ARG 1 width
+			ARG 2 height

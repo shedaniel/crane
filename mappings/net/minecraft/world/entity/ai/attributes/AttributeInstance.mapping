@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/ai/attributes/AttributeInstance
+	METHOD <init> (Lnet/minecraft/world/entity/ai/attributes/Attribute;Ljava/util/function/Consumer;)V
+		ARG 1 attribute
+		ARG 2 onDirty
+	METHOD setBaseValue (D)V
+		ARG 1 baseValue

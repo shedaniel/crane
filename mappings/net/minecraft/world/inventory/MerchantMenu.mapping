@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/inventory/MerchantMenu
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/item/trading/Merchant;)V
+		ARG 3 trader
+	METHOD setCanRestock (Z)V
+		ARG 1 canRestock
+	METHOD setMerchantLevel (I)V
+		ARG 1 merchantLevel
+	METHOD setShowProgressBar (Z)V
+		ARG 1 showProgressBar

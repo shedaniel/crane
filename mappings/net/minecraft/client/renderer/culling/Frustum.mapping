@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/culling/Frustum
+	METHOD prepare (DDD)V
+		ARG 1 camX
+		ARG 3 camY

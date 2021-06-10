@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/item/enchantment/Enchantment
+	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$Rarity;Lnet/minecraft/world/item/enchantment/EnchantmentCategory;[Lnet/minecraft/world/entity/EquipmentSlot;)V
+		ARG 1 rarity
+		ARG 2 category
+		ARG 3 slots
+	CLASS Rarity
+		METHOD <init> (Ljava/lang/String;II)V
+			ARG 3 weight

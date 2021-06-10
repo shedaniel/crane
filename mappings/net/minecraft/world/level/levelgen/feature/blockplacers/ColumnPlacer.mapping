@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/levelgen/feature/blockplacers/ColumnPlacer
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;)V
+		ARG 1 size

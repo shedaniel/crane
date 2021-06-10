@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/animal/Squid
+	METHOD setMovementVector (FFF)V
+		ARG 1 tx
+		ARG 2 ty
+		ARG 3 tz
+	CLASS SquidRandomMovementGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Squid;Lnet/minecraft/world/entity/animal/Squid;)V
+			ARG 2 squid

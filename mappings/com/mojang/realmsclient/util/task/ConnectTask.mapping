@@ -1,0 +1,4 @@
+CLASS com/mojang/realmsclient/util/task/ConnectTask
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lcom/mojang/realmsclient/dto/RealmsServer;Lcom/mojang/realmsclient/dto/RealmsServerAddress;)V
+		ARG 2 server
+		ARG 3 address

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/block/DoubleBlockCombiner
+	CLASS NeighborCombineResult
+		CLASS Double
+			METHOD <init> (Ljava/lang/Object;Ljava/lang/Object;)V
+				ARG 1 first
+				ARG 2 second
+		CLASS Single
+			METHOD <init> (Ljava/lang/Object;)V
+				ARG 1 single

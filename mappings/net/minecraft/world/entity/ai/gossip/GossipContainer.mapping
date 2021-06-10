@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/ai/gossip/GossipContainer
+	CLASS GossipEntry
+		METHOD <init> (Ljava/util/UUID;Lnet/minecraft/world/entity/ai/gossip/GossipType;I)V
+			ARG 1 target
+			ARG 2 type
+			ARG 3 value

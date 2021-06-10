@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/chunk/ChunkGenerator
+	METHOD <init> (Lnet/minecraft/world/level/biome/BiomeSource;Lnet/minecraft/world/level/biome/BiomeSource;Lnet/minecraft/world/level/levelgen/StructureSettings;J)V
+		ARG 1 biomeSource
+		ARG 2 runtimeBiomeSource
+		ARG 3 settings
+		ARG 4 strongholdSeed

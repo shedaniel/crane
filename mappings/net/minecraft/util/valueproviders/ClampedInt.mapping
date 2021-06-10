@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/valueproviders/ClampedInt
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;II)V
+		ARG 1 source
+		ARG 2 minInclusive
+		ARG 3 maxInclusive

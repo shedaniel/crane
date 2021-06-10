@@ -1,0 +1,7 @@
+CLASS net/minecraft/advancements/critereon/EntityTypePredicate
+	CLASS TagPredicate
+		METHOD <init> (Lnet/minecraft/tags/Tag;)V
+			ARG 1 tag
+	CLASS TypePredicate
+		METHOD <init> (Lnet/minecraft/world/entity/EntityType;)V
+			ARG 1 type

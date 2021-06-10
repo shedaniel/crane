@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/screens/CreateFlatWorldScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Ljava/util/function/Consumer;Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)V
+		ARG 1 parent
+		ARG 2 applySettings
+		ARG 3 generator
+	METHOD setConfig (Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)V
+		ARG 1 generator

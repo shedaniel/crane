@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/game/ClientboundTakeItemEntityPacket
+	METHOD <init> (III)V
+		ARG 1 itemId
+		ARG 2 playerId
+		ARG 3 amount

@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/model/geom/builders/CubeListBuilder
+	METHOD mirror (Z)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+		ARG 1 mirror
+	METHOD texOffs (II)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+		ARG 1 xTexOffs
+		ARG 2 yTexOffs

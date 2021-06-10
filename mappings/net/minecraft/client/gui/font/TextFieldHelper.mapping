@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/font/TextFieldHelper
+	METHOD <init> (Ljava/util/function/Supplier;Ljava/util/function/Consumer;Ljava/util/function/Supplier;Ljava/util/function/Consumer;Ljava/util/function/Predicate;)V
+		ARG 1 getMessageFn
+		ARG 2 setMessageFn
+		ARG 3 getClipboardFn
+		ARG 4 setClipboardFn
+		ARG 5 stringValidator

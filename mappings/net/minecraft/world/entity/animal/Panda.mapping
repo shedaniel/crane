@@ -1,0 +1,38 @@
+CLASS net/minecraft/world/entity/animal/Panda
+	CLASS Gene
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;Z)V
+			ARG 3 id
+			ARG 4 name
+			ARG 5 isRecessive
+	CLASS PandaRollGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;)V
+			ARG 1 panda
+	CLASS PandaAvoidGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;Ljava/lang/Class;FDD)V
+			ARG 1 panda
+	CLASS PandaBreedGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;Lnet/minecraft/world/entity/animal/Panda;D)V
+			ARG 2 panda
+	CLASS PandaPanicGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;D)V
+			ARG 1 panda
+	CLASS PandaAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;DZ)V
+			ARG 1 panda
+	CLASS PandaSneezeGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;)V
+			ARG 1 panda
+	CLASS PandaMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;)V
+			ARG 1 panda
+	CLASS PandaLieOnBackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;)V
+			ARG 1 panda
+	CLASS PandaHurtByTargetGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;[Ljava/lang/Class;)V
+			ARG 1 panda
+	CLASS PandaLookAtPlayerGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;Ljava/lang/Class;F)V
+			ARG 1 panda
+		METHOD setTarget (Lnet/minecraft/world/entity/LivingEntity;)V
+			ARG 1 lookAt

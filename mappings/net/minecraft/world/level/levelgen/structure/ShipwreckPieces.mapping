@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/structure/ShipwreckPieces
+	CLASS ShipwreckPiece
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureManager;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;Z)V
+			ARG 5 isBeached

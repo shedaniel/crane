@@ -1,0 +1,6 @@
+CLASS net/minecraft/advancements/critereon/BredAnimalsTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
+			ARG 2 parent
+			ARG 3 partner
+			ARG 4 child

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/block/entity/TheEndGatewayBlockEntity
+	METHOD setExitPosition (Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 exitPortal
+		ARG 2 exactTeleport

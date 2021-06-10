@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/multiplayer/PlayerInfo
+	METHOD setDisplayHealth (I)V
+		ARG 1 displayHealth
+	METHOD setGameMode (Lnet/minecraft/world/level/GameType;)V
+		ARG 1 gameMode
+	METHOD setHealthBlinkTime (J)V
+		ARG 1 healthBlinkTime
+	METHOD setLastHealth (I)V
+		ARG 1 lastHealth
+	METHOD setLastHealthTime (J)V
+		ARG 1 lastHealthTime
+	METHOD setLatency (I)V
+		ARG 1 latency
+	METHOD setRenderVisibilityId (J)V
+		ARG 1 renderVisibilityId
+	METHOD setTabListDisplayName (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 tabListDisplayName

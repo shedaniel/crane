@@ -1,0 +1,5 @@
+CLASS net/minecraft/server/rcon/thread/RconThread
+	METHOD <init> (Lnet/minecraft/server/ServerInterface;Ljava/net/ServerSocket;Ljava/lang/String;)V
+		ARG 1 serverInterface
+		ARG 2 socket
+		ARG 3 rconPassword

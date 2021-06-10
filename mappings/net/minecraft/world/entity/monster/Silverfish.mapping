@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/monster/Silverfish
+	CLASS SilverfishWakeUpFriendsGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Silverfish;)V
+			ARG 1 silverfish

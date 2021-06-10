@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/valueproviders/UniformFloat
+	METHOD <init> (FF)V
+		ARG 1 minInclusive
+		ARG 2 maxExclusive

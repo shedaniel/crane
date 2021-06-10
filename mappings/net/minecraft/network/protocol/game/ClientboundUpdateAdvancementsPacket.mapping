@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ClientboundUpdateAdvancementsPacket
+	METHOD <init> (ZLjava/util/Collection;Ljava/util/Set;Ljava/util/Map;)V
+		ARG 1 reset

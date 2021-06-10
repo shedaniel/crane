@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/behavior/RunIf
+	METHOD <init> (Ljava/util/Map;Ljava/util/function/Predicate;Lnet/minecraft/world/entity/ai/behavior/Behavior;Z)V
+		ARG 2 predicate
+		ARG 3 wrappedBehavior
+		ARG 4 checkWhileRunningAlso

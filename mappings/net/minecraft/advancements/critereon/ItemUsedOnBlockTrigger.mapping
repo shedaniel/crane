@@ -1,0 +1,5 @@
+CLASS net/minecraft/advancements/critereon/ItemUsedOnBlockTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/LocationPredicate;Lnet/minecraft/advancements/critereon/ItemPredicate;)V
+			ARG 2 location
+			ARG 3 item

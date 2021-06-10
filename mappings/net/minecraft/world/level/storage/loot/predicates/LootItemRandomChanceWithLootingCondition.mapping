@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceWithLootingCondition
+	METHOD <init> (FF)V
+		ARG 1 percent
+		ARG 2 lootingMultiplier

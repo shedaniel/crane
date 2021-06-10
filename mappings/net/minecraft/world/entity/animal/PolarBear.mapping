@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/animal/PolarBear
+	METHOD setPersistentAngerTarget (Ljava/util/UUID;)V
+		ARG 1 persistentAngerTarget
+	METHOD setRemainingPersistentAngerTime (I)V
+		ARG 1 remainingPersistentAngerTime

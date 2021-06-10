@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/BannerPatternItem
+	METHOD <init> (Lnet/minecraft/world/level/block/entity/BannerPattern;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 bannerPattern

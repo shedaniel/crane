@@ -1,0 +1,11 @@
+CLASS net/minecraft/server/packs/repository/Pack
+	METHOD <init> (Ljava/lang/String;ZLjava/util/function/Supplier;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/PackCompatibility;Lnet/minecraft/server/packs/repository/Pack$Position;ZLnet/minecraft/server/packs/repository/PackSource;)V
+		ARG 1 id
+		ARG 2 required
+		ARG 3 supplier
+		ARG 4 title
+		ARG 5 description
+		ARG 6 compatibility
+		ARG 7 defaultPosition
+		ARG 8 fixedPosition
+		ARG 9 packSource

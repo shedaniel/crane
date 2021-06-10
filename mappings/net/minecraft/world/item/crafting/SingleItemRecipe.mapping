@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/item/crafting/SingleItemRecipe
+	METHOD <init> (Lnet/minecraft/world/item/crafting/RecipeType;Lnet/minecraft/world/item/crafting/RecipeSerializer;Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;Lnet/minecraft/world/item/crafting/Ingredient;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 type
+		ARG 2 serializer
+		ARG 3 id
+		ARG 4 group
+		ARG 5 ingredient
+		ARG 6 result
+	CLASS Serializer
+		METHOD <init> (Lnet/minecraft/world/item/crafting/SingleItemRecipe$Serializer$SingleItemMaker;)V
+			ARG 1 factory

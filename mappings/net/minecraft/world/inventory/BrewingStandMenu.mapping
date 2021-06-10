@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/inventory/BrewingStandMenu
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V
+		ARG 3 brewingStand
+		ARG 4 brewingStandData

@@ -1,0 +1,6 @@
+CLASS net/minecraft/commands/arguments/ScoreHolderArgument
+	METHOD <init> (Z)V
+		ARG 1 multiple
+	CLASS SelectorResult
+		METHOD <init> (Lnet/minecraft/commands/arguments/selector/EntitySelector;)V
+			ARG 1 selector

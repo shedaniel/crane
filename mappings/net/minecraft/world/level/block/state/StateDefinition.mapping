@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/block/state/StateDefinition
+	METHOD <init> (Ljava/util/function/Function;Ljava/lang/Object;Lnet/minecraft/world/level/block/state/StateDefinition$Factory;Ljava/util/Map;)V
+		ARG 2 owner
+	CLASS Builder
+		METHOD <init> (Ljava/lang/Object;)V
+			ARG 1 owner

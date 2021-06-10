@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/animal/TropicalFish
+	CLASS Pattern
+		METHOD <init> (Ljava/lang/String;III)V
+			ARG 3 base
+			ARG 4 index
+	CLASS TropicalFishGroupData
+		METHOD <init> (Lnet/minecraft/world/entity/animal/TropicalFish;IIII)V
+			ARG 2 base
+			ARG 3 pattern
+			ARG 4 baseColor
+			ARG 5 patternColor

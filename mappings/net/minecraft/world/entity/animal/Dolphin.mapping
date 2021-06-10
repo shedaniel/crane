@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/animal/Dolphin
+	CLASS DolphinSwimToTreasureGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Dolphin;)V
+			ARG 1 dolphin
+	CLASS DolphinSwimWithPlayerGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Dolphin;D)V
+			ARG 1 dolphin
+			ARG 2 speedModifier

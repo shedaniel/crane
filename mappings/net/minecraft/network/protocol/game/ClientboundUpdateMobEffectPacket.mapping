@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ClientboundUpdateMobEffectPacket
+	METHOD <init> (ILnet/minecraft/world/effect/MobEffectInstance;)V
+		ARG 1 entityId

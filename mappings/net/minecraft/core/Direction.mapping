@@ -1,0 +1,20 @@
+CLASS net/minecraft/core/Direction
+	METHOD <init> (Ljava/lang/String;IIIILjava/lang/String;Lnet/minecraft/core/Direction$AxisDirection;Lnet/minecraft/core/Direction$Axis;Lnet/minecraft/core/Vec3i;)V
+		ARG 3 data3d
+		ARG 4 oppositeIndex
+		ARG 5 data2d
+		ARG 6 name
+		ARG 7 axisDirection
+		ARG 8 axis
+		ARG 9 normal
+	CLASS Axis
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+	CLASS Plane
+		METHOD <init> (Ljava/lang/String;I[Lnet/minecraft/core/Direction;[Lnet/minecraft/core/Direction$Axis;)V
+			ARG 3 faces
+			ARG 4 axis
+	CLASS AxisDirection
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+			ARG 3 step
+			ARG 4 name

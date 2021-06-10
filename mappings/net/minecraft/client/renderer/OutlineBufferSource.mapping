@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/renderer/OutlineBufferSource
+	METHOD <init> (Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;)V
+		ARG 1 bufferSource
+	METHOD setColor (IIII)V
+		ARG 1 teamR
+		ARG 2 teamG
+		ARG 3 teamB
+		ARG 4 teamA
+	CLASS EntityOutlineGenerator
+		METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexConsumer;IIII)V
+			ARG 1 delegate
+		METHOD uv (FF)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+			ARG 1 u
+			ARG 2 v
+		METHOD vertex (DDD)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+			ARG 1 x
+			ARG 3 y

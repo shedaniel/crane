@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/renderer/texture/TextureAtlas
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 location
+	CLASS Preparations
+		METHOD <init> (Ljava/util/Set;IIILjava/util/List;)V
+			ARG 1 sprites
+			ARG 2 width
+			ARG 3 height
+			ARG 4 mipLevel
+			ARG 5 regions

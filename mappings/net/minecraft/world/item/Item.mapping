@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/item/Item
+	CLASS Properties
+		METHOD craftRemainder (Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/Item$Properties;
+			ARG 1 craftingRemainingItem
+		METHOD durability (I)Lnet/minecraft/world/item/Item$Properties;
+			ARG 1 maxDamage
+		METHOD food (Lnet/minecraft/world/food/FoodProperties;)Lnet/minecraft/world/item/Item$Properties;
+			ARG 1 foodProperties
+		METHOD rarity (Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+			ARG 1 rarity
+		METHOD stacksTo (I)Lnet/minecraft/world/item/Item$Properties;
+			ARG 1 maxStackSize
+		METHOD tab (Lnet/minecraft/world/item/CreativeModeTab;)Lnet/minecraft/world/item/Item$Properties;
+			ARG 1 category

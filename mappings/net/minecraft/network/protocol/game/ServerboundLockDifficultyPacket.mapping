@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ServerboundLockDifficultyPacket
+	METHOD <init> (Z)V
+		ARG 1 locked

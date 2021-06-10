@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/block/model/multipart/KeyValueCondition
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 key
+		ARG 2 value

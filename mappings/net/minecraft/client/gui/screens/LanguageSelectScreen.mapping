@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/screens/LanguageSelectScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/Options;Lnet/minecraft/client/resources/language/LanguageManager;)V
+		ARG 3 languageManager
+	CLASS LanguageSelectionList
+		CLASS Entry
+			METHOD <init> (Lnet/minecraft/client/gui/screens/LanguageSelectScreen$LanguageSelectionList;Lnet/minecraft/client/resources/language/LanguageInfo;)V
+				ARG 2 language

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/structure/templatesystem/ProcessorRule
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/RuleTest;Lnet/minecraft/world/level/levelgen/structure/templatesystem/RuleTest;Lnet/minecraft/world/level/levelgen/structure/templatesystem/PosRuleTest;Lnet/minecraft/world/level/block/state/BlockState;Ljava/util/Optional;)V
+		ARG 1 inputPredicate
+		ARG 2 locPredicate
+		ARG 3 posPredicate
+		ARG 4 outputState

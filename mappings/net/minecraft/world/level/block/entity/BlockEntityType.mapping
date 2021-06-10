@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/block/entity/BlockEntityType
+	METHOD <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;Ljava/util/Set;Lcom/mojang/datafixers/types/Type;)V
+		ARG 1 factory
+		ARG 2 validBlocks
+		ARG 3 dataType
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;Ljava/util/Set;)V
+			ARG 1 factory
+			ARG 2 validBlocks

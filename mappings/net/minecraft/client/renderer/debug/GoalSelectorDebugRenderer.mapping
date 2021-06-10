@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/renderer/debug/GoalSelectorDebugRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	CLASS DebugGoal
+		METHOD <init> (Lnet/minecraft/core/BlockPos;ILjava/lang/String;Z)V
+			ARG 1 pos
+			ARG 2 priority
+			ARG 3 name
+			ARG 4 isRunning

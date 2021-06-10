@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/multiplayer/MultiPlayerGameMode
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientPacketListener;)V
+		ARG 1 minecraft
+		ARG 2 connection
+	METHOD setLocalMode (Lnet/minecraft/world/level/GameType;)V
+		ARG 1 localPlayerMode
+	METHOD setLocalMode (Lnet/minecraft/world/level/GameType;Lnet/minecraft/world/level/GameType;)V
+		ARG 1 localPlayerMode
+		ARG 2 previousLocalPlayerMode
+	METHOD startDestroyBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
+		ARG 1 destroyBlockPos

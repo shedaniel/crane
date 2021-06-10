@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition
+	METHOD <init> (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/advancements/critereon/StatePropertiesPredicate;)V
+		ARG 1 block
+		ARG 2 properties
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/block/Block;)V
+			ARG 1 block

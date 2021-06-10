@@ -1,0 +1,5 @@
+CLASS net/minecraft/advancements/critereon/CuredZombieVillagerTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
+			ARG 2 zombie
+			ARG 3 villager

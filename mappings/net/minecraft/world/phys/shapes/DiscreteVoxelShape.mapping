@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/phys/shapes/DiscreteVoxelShape
+	METHOD <init> (III)V
+		ARG 1 xSize
+		ARG 2 ySize
+		ARG 3 zSize

@@ -1,0 +1,18 @@
+CLASS net/minecraft/client/renderer/chunk/ChunkRenderDispatcher
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/client/renderer/LevelRenderer;Ljava/util/concurrent/Executor;ZLnet/minecraft/client/renderer/ChunkBufferBuilderPack;)V
+		ARG 1 level
+		ARG 2 renderer
+		ARG 3 executor
+		ARG 5 fixedBuffers
+	METHOD setCamera (Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 camera
+	METHOD setLevel (Lnet/minecraft/world/level/Level;)V
+		ARG 1 level
+	CLASS RenderChunk
+		METHOD <init> (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher;I)V
+			ARG 2 index
+		METHOD setFrame (I)Z
+			ARG 1 lastFrame
+		CLASS ChunkCompileTask
+			METHOD <init> (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$RenderChunk;D)V
+				ARG 2 distAtCreation

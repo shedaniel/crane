@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/sensing/Sensor
+	METHOD <init> (I)V
+		ARG 1 scanRate

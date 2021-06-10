@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/lighting/SpatialLongSet
+	CLASS InternalMap
+		METHOD <init> (IF)V
+			ARG 1 minSize

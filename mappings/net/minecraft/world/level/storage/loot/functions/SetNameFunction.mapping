@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetNameFunction
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)V
+		ARG 2 name
+		ARG 3 resolutionContext

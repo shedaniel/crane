@@ -1,0 +1,24 @@
+CLASS net/minecraft/world/entity/animal/Turtle
+	CLASS TurtleBreedGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;D)V
+			ARG 1 turtle
+	CLASS TurtleGoHomeGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier
+	CLASS TurtleLayEggGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;D)V
+			ARG 1 turtle
+	CLASS TurtleTravelGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier
+	CLASS TurtleMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;)V
+			ARG 1 turtle
+	CLASS TurtleGoToWaterGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;D)V
+			ARG 1 turtle
+	CLASS TurtleRandomStrollGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;DI)V
+			ARG 1 turtle

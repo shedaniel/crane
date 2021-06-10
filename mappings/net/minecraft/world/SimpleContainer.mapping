@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/SimpleContainer
+	METHOD <init> (I)V
+		ARG 1 size

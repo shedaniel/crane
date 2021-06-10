@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/LootItemEntityPropertyCondition
+	METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate;Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)V
+		ARG 1 predicate
+		ARG 2 entityTarget

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/LevelVersion
+	METHOD <init> (IJLjava/lang/String;IZ)V
+		ARG 1 levelDataVersion
+		ARG 2 lastPlayed
+		ARG 4 minecraftVersionName
+		ARG 5 minecraftVersion

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/levelgen/feature/featuresize/FeatureSize
+	METHOD <init> (Ljava/util/OptionalInt;)V
+		ARG 1 minClippedHeight

@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/entity/layers/RenderLayer
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/RenderLayerParent;)V
+		ARG 1 renderer

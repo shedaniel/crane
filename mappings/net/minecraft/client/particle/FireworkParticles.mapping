@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/particle/FireworkParticles
+	CLASS Starter
+		METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/client/particle/ParticleEngine;Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 8 xd
+	CLASS FlashProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS SparkParticle
+		METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/client/particle/ParticleEngine;Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 8 xd
+		METHOD setFlicker (Z)V
+			ARG 1 flicker
+		METHOD setTrail (Z)V
+			ARG 1 trail
+	CLASS SparkProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprites

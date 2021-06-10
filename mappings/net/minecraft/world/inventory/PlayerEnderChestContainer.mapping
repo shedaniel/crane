@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/inventory/PlayerEnderChestContainer
+	METHOD setActiveChest (Lnet/minecraft/world/level/block/entity/EnderChestBlockEntity;)V
+		ARG 1 activeChest

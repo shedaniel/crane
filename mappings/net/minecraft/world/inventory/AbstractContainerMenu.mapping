@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/inventory/AbstractContainerMenu
+	METHOD <init> (Lnet/minecraft/world/inventory/MenuType;I)V
+		ARG 1 menuType
+		ARG 2 containerId
+	METHOD setCarried (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 carried
+	METHOD setSynchronizer (Lnet/minecraft/world/inventory/ContainerSynchronizer;)V
+		ARG 1 synchronizer

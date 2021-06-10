@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/packs/VanillaPackResources
+	METHOD <init> (Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;[Ljava/lang/String;)V
+		ARG 1 packMetadata

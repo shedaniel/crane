@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/block/FungusBlock
+	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Ljava/util/function/Supplier;)V
+		ARG 2 feature

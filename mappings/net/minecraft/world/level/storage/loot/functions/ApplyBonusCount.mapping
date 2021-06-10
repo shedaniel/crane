@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/level/storage/loot/functions/ApplyBonusCount
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/world/item/enchantment/Enchantment;Lnet/minecraft/world/level/storage/loot/functions/ApplyBonusCount$Formula;)V
+		ARG 2 enchantment
+		ARG 3 formula
+	CLASS UniformBonusCount
+		METHOD <init> (I)V
+			ARG 1 bonusMultiplier
+	CLASS BinomialWithBonusCount
+		METHOD <init> (IF)V
+			ARG 1 extraRounds
+			ARG 2 probability

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/feature/trunkplacers/BendingTrunkPlacer
+	METHOD <init> (IIIILnet/minecraft/util/valueproviders/IntProvider;)V
+		ARG 4 minHeightForLeaves
+		ARG 5 bendLength

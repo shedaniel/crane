@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/npc/WanderingTraderSpawner
+	METHOD <init> (Lnet/minecraft/world/level/storage/ServerLevelData;)V
+		ARG 1 serverLevelData

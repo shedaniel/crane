@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/feature/StrongholdFeature
+	CLASS StrongholdStart
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/StructureFeature;Lnet/minecraft/world/level/ChunkPos;IJ)V
+			ARG 4 seed

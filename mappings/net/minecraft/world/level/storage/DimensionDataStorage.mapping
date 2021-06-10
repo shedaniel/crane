@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/DimensionDataStorage
+	METHOD <init> (Ljava/io/File;Lcom/mojang/datafixers/DataFixer;)V
+		ARG 1 dataFolder
+		ARG 2 fixerUpper

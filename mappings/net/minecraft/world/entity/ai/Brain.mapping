@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/entity/ai/Brain
+	METHOD <init> (Ljava/util/Collection;Ljava/util/Collection;Lcom/google/common/collect/ImmutableList;Ljava/util/function/Supplier;)V
+		ARG 4 codec
+	METHOD setCoreActivities (Ljava/util/Set;)V
+		ARG 1 coreActivities
+	METHOD setDefaultActivity (Lnet/minecraft/world/entity/schedule/Activity;)V
+		ARG 1 defaultActivity
+	METHOD setSchedule (Lnet/minecraft/world/entity/schedule/Schedule;)V
+		ARG 1 schedule
+	CLASS Provider
+		METHOD <init> (Ljava/util/Collection;Ljava/util/Collection;)V
+			ARG 1 memoryTypes
+			ARG 2 sensorTypes
+	CLASS MemoryValue
+		METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;Ljava/util/Optional;)V
+			ARG 1 type
+			ARG 2 value

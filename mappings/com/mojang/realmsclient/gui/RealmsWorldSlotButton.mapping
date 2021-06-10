@@ -1,0 +1,14 @@
+CLASS com/mojang/realmsclient/gui/RealmsWorldSlotButton
+	METHOD <init> (IIIILjava/util/function/Supplier;Ljava/util/function/Consumer;ILnet/minecraft/client/gui/components/Button$OnPress;)V
+		ARG 5 serverDataProvider
+		ARG 6 toolTipSetter
+		ARG 7 slotIndex
+	CLASS State
+		METHOD <init> (ZLjava/lang/String;JLjava/lang/String;ZZLcom/mojang/realmsclient/gui/RealmsWorldSlotButton$Action;Lnet/minecraft/network/chat/Component;)V
+			ARG 1 isCurrentlyActiveSlot
+			ARG 2 slotName
+			ARG 3 imageId
+			ARG 5 image
+			ARG 6 empty
+			ARG 7 minigame
+			ARG 8 action

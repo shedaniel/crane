@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ServerboundSetCreativeModeSlotPacket
+	METHOD <init> (ILnet/minecraft/world/item/ItemStack;)V
+		ARG 1 slotNum

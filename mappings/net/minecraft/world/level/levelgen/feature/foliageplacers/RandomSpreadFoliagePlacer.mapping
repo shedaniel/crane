@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/feature/foliageplacers/RandomSpreadFoliagePlacer
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;I)V
+		ARG 3 foliageHeight
+		ARG 4 leafPlacementAttempts

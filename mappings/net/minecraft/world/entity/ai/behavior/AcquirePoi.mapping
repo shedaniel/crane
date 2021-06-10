@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/ai/behavior/AcquirePoi
+	METHOD <init> (Lnet/minecraft/world/entity/ai/village/poi/PoiType;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;ZLjava/util/Optional;)V
+		ARG 1 poiType
+		ARG 3 memoryToAcquire
+		ARG 4 onlyIfAdult
+		ARG 5 onPoiAcquisitionEvent
+	CLASS JitteredLinearRetry
+		METHOD <init> (Ljava/util/Random;J)V
+			ARG 1 random
+		METHOD markAttempt (J)V
+			ARG 1 previousAttemptTimestamp

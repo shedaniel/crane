@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/texture/AbstractTexture
+	METHOD setFilter (ZZ)V
+		ARG 1 blur
+		ARG 2 mipmap

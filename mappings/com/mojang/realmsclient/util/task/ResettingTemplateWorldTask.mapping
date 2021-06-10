@@ -1,0 +1,3 @@
+CLASS com/mojang/realmsclient/util/task/ResettingTemplateWorldTask
+	METHOD <init> (Lcom/mojang/realmsclient/dto/WorldTemplate;JLnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)V
+		ARG 1 template

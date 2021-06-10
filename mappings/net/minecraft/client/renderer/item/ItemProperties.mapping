@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/item/ItemProperties
+	CLASS CompassWobble
+		METHOD update (JD)V
+			ARG 1 lastUpdateTick

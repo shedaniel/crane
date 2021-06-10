@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/gui/screens/DeathScreen
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Z)V
+		ARG 1 causeOfDeath
+		ARG 2 hardcore

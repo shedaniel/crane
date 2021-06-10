@@ -1,0 +1,6 @@
+CLASS net/minecraft/util/valueproviders/ClampedNormalFloat
+	METHOD <init> (FFFF)V
+		ARG 1 mean
+		ARG 2 deviation
+		ARG 3 min
+		ARG 4 max

@@ -1,0 +1,21 @@
+CLASS net/minecraft/world/entity/animal/Rabbit
+	CLASS RaidGardenGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;)V
+			ARG 1 rabbit
+	CLASS RabbitGroupData
+		METHOD <init> (I)V
+			ARG 1 rabbitType
+	CLASS RabbitPanicGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;D)V
+			ARG 1 rabbit
+	CLASS RabbitJumpControl
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;Lnet/minecraft/world/entity/animal/Rabbit;)V
+			ARG 2 rabbit
+		METHOD setCanJump (Z)V
+			ARG 1 canJump
+	CLASS RabbitMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;)V
+			ARG 1 rabbit
+	CLASS RabbitAvoidEntityGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;Ljava/lang/Class;FDD)V
+			ARG 1 rabbit

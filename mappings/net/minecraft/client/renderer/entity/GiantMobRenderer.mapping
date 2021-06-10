@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/entity/GiantMobRenderer
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;F)V
+		ARG 2 scale

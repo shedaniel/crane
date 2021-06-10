@@ -1,0 +1,5 @@
+CLASS com/mojang/realmsclient/dto/UploadInfo
+	METHOD <init> (ZLjava/lang/String;Ljava/net/URI;)V
+		ARG 1 worldClosed
+		ARG 2 token
+		ARG 3 uploadEndpoint

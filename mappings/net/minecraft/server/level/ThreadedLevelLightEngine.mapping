@@ -1,0 +1,7 @@
+CLASS net/minecraft/server/level/ThreadedLevelLightEngine
+	METHOD <init> (Lnet/minecraft/world/level/chunk/LightChunkGetter;Lnet/minecraft/server/level/ChunkMap;ZLnet/minecraft/util/thread/ProcessorMailbox;Lnet/minecraft/util/thread/ProcessorHandle;)V
+		ARG 2 chunkMap
+		ARG 4 taskMailbox
+		ARG 5 sorterMailbox
+	METHOD setTaskPerBatch (I)V
+		ARG 1 taskPerBatch

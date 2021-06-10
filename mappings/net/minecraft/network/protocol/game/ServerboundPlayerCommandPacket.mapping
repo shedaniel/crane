@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ServerboundPlayerCommandPacket
+	METHOD <init> (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/protocol/game/ServerboundPlayerCommandPacket$Action;I)V
+		ARG 2 action
+		ARG 3 data

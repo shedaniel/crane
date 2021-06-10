@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/animal/Ocelot
+	CLASS OcelotTemptGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Ocelot;DLnet/minecraft/world/item/crafting/Ingredient;Z)V
+			ARG 1 ocelot
+	CLASS OcelotAvoidEntityGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Ocelot;Ljava/lang/Class;FDD)V
+			ARG 1 ocelot

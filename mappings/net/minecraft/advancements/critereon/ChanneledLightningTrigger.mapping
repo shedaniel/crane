@@ -1,0 +1,4 @@
+CLASS net/minecraft/advancements/critereon/ChanneledLightningTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;[Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
+			ARG 2 victims

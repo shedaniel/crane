@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/block/entity/ComparatorBlockEntity
+	METHOD setOutputSignal (I)V
+		ARG 1 output

@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/resources/model/Material
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 atlasLocation
+		ARG 2 texture

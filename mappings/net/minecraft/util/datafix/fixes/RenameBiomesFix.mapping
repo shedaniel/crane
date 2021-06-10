@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/datafix/fixes/RenameBiomesFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;ZLjava/lang/String;Ljava/util/Map;)V
+		ARG 3 name
+		ARG 4 biomes

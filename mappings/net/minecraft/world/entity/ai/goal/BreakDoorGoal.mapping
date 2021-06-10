@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/goal/BreakDoorGoal
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;ILjava/util/function/Predicate;)V
+		ARG 2 doorBreakTime
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;Ljava/util/function/Predicate;)V
+		ARG 2 validDifficulties

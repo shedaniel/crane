@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/model/WitchModel
+	METHOD setHoldingItem (Z)V
+		ARG 1 holdingItem

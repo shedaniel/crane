@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/level/storage/loot/GsonAdapterFactory
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/core/Registry;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Function;)V
+			ARG 1 registry
+			ARG 2 elementName
+			ARG 3 typeKey
+			ARG 4 typeGetter
+		METHOD withDefaultType (Lnet/minecraft/world/level/storage/loot/SerializerType;)Lnet/minecraft/world/level/storage/loot/GsonAdapterFactory$Builder;
+			ARG 1 defaultType
+	CLASS JsonAdapter
+		METHOD <init> (Lnet/minecraft/core/Registry;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/level/storage/loot/SerializerType;Lcom/mojang/datafixers/util/Pair;)V
+			ARG 1 registry
+			ARG 2 elementName
+			ARG 3 typeKey
+			ARG 4 typeGetter
+			ARG 5 defaultType
+			ARG 6 inlineType

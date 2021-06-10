@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/goal/GoalSelector
+	METHOD <init> (Ljava/util/function/Supplier;)V
+		ARG 1 profiler
+	METHOD setNewGoalRate (I)V
+		ARG 1 newGoalRate

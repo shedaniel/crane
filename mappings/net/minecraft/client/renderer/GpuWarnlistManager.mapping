@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/GpuWarnlistManager
+	CLASS Preparations
+		METHOD <init> (Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+			ARG 1 rendererPatterns
+			ARG 2 versionPatterns
+			ARG 3 vendorPatterns

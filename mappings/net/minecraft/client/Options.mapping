@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/Options
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
+		ARG 1 minecraft
+	METHOD setCameraType (Lnet/minecraft/client/CameraType;)V
+		ARG 1 cameraType

@@ -1,0 +1,9 @@
+CLASS net/minecraft/server/level/DistanceManager
+	METHOD <init> (Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)V
+		ARG 2 mainThreadExecutor
+	CLASS PlayerTicketTracker
+		METHOD updateViewDistance (I)V
+			ARG 1 viewDistance
+	CLASS FixedPlayerDistanceChunkTracker
+		METHOD <init> (Lnet/minecraft/server/level/DistanceManager;I)V
+			ARG 2 maxDistance

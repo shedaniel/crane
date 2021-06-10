@@ -1,0 +1,19 @@
+CLASS net/minecraft/commands/arguments/NbtPathArgument
+	CLASS NbtPath
+		METHOD <init> (Ljava/lang/String;[Lnet/minecraft/commands/arguments/NbtPathArgument$Node;Lit/unimi/dsi/fastutil/objects/Object2IntMap;)V
+			ARG 1 original
+			ARG 2 nodes
+			ARG 3 nodeToOriginalPosition
+	CLASS MatchObjectNode
+		METHOD <init> (Ljava/lang/String;Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 name
+			ARG 2 pattern
+	CLASS MatchElementNode
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 pattern
+	CLASS CompoundChildNode
+		METHOD <init> (Ljava/lang/String;)V
+			ARG 1 name
+	CLASS IndexedElementNode
+		METHOD <init> (I)V
+			ARG 1 index

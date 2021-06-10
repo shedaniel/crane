@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/renderer/debug/GameEventListenerRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	CLASS TrackedListener
+		METHOD <init> (Lnet/minecraft/world/level/gameevent/PositionSource;I)V
+			ARG 1 listenerSource
+			ARG 2 listenerRange
+	CLASS TrackedGameEvent
+		METHOD <init> (JLnet/minecraft/world/level/gameevent/GameEvent;Lnet/minecraft/world/phys/Vec3;)V
+			ARG 1 timeStamp
+			ARG 3 gameEvent

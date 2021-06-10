@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/resources/language/I18n
+	METHOD setLanguage (Lnet/minecraft/locale/Language;)V
+		ARG 0 language

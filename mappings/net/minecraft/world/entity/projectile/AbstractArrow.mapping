@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/projectile/AbstractArrow
+	METHOD setBaseDamage (D)V
+		ARG 1 baseDamage
+	METHOD setKnockback (I)V
+		ARG 1 knockback
+	METHOD setNoPhysics (Z)V
+		ARG 1 noPhysics
+	METHOD setSoundEvent (Lnet/minecraft/sounds/SoundEvent;)V
+		ARG 1 soundEvent

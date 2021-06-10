@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/levelgen/feature/foliageplacers/BlobFoliagePlacer
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;I)V
+		ARG 3 height

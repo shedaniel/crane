@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/particle/ReversePortalParticle
+	CLASS ReversePortalProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite

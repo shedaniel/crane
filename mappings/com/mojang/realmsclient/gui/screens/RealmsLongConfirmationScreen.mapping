@@ -1,0 +1,10 @@
+CLASS com/mojang/realmsclient/gui/screens/RealmsLongConfirmationScreen
+	METHOD <init> (Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;Lcom/mojang/realmsclient/gui/screens/RealmsLongConfirmationScreen$Type;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Z)V
+		ARG 1 callback
+		ARG 2 type
+		ARG 3 line2
+		ARG 4 line3
+		ARG 5 yesNoQuestion
+	CLASS Type
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
+			ARG 4 colorCode

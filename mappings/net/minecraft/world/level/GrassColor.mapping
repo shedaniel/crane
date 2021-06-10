@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/GrassColor
+	METHOD init ([I)V
+		ARG 0 pixels

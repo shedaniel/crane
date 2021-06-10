@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/behavior/StartAttacking
+	METHOD <init> (Ljava/util/function/Predicate;Ljava/util/function/Function;)V
+		ARG 1 canAttackPredicate
+		ARG 2 targetFinderFunction

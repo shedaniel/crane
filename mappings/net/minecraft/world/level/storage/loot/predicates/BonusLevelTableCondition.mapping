@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/BonusLevelTableCondition
+	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment;[F)V
+		ARG 1 enchantment
+		ARG 2 values

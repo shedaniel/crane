@@ -1,0 +1,5 @@
+CLASS net/minecraft/advancements/critereon/PlayerHurtEntityTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/DamagePredicate;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
+			ARG 2 damage
+			ARG 3 entity

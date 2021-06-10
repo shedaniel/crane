@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/monster/Skeleton
+	METHOD startFreezeConversion (I)V
+		ARG 1 conversionTime

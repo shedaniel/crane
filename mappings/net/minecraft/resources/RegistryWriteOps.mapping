@@ -1,0 +1,3 @@
+CLASS net/minecraft/resources/RegistryWriteOps
+	METHOD <init> (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/core/RegistryAccess;)V
+		ARG 2 registryAccess

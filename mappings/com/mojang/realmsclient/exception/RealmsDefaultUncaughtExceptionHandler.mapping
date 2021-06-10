@@ -1,0 +1,3 @@
+CLASS com/mojang/realmsclient/exception/RealmsDefaultUncaughtExceptionHandler
+	METHOD <init> (Lorg/apache/logging/log4j/Logger;)V
+		ARG 1 logger

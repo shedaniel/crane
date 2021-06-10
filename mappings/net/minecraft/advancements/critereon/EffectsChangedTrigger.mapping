@@ -1,0 +1,5 @@
+CLASS net/minecraft/advancements/critereon/EffectsChangedTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/MobEffectsPredicate;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
+			ARG 2 effects
+			ARG 3 source

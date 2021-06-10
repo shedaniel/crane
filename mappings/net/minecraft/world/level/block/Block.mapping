@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/Block
+	METHOD registerDefaultState (Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 defaultBlockState
+	CLASS BlockStatePairKey
+		METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;)V
+			ARG 1 first
+			ARG 2 second
+			ARG 3 direction

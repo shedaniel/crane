@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/StandingAndWallBlockItem
+	METHOD <init> (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 2 wallBlock

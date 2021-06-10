@@ -1,0 +1,4 @@
+CLASS net/minecraft/core/GlobalPos
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 dimension
+		ARG 2 pos

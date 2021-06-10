@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/entity/EntitySectionStorage
+	METHOD <init> (Ljava/lang/Class;Lit/unimi/dsi/fastutil/longs/Long2ObjectFunction;)V
+		ARG 1 entityClass
+		ARG 2 intialSectionVisibility

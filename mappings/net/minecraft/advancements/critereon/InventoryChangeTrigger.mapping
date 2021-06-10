@@ -1,0 +1,7 @@
+CLASS net/minecraft/advancements/critereon/InventoryChangeTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;[Lnet/minecraft/advancements/critereon/ItemPredicate;)V
+			ARG 2 slotsOccupied
+			ARG 3 slotsFull
+			ARG 4 slotsEmpty
+			ARG 5 predicates

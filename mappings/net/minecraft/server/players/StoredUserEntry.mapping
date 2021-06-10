@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/players/StoredUserEntry
+	METHOD <init> (Ljava/lang/Object;)V
+		ARG 1 user

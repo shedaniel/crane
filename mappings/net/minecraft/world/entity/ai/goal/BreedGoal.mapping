@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/goal/BreedGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/Animal;DLjava/lang/Class;)V
+		ARG 1 animal
+		ARG 2 speedModifier

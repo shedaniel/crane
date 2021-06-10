@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/item/ItemCooldowns
+	CLASS CooldownInstance
+		METHOD <init> (Lnet/minecraft/world/item/ItemCooldowns;II)V
+			ARG 2 startTime
+			ARG 3 endTime

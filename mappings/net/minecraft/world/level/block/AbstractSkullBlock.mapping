@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/block/AbstractSkullBlock
+	METHOD <init> (Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 type

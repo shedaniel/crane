@@ -1,0 +1,6 @@
+CLASS com/mojang/blaze3d/vertex/DefaultedVertexConsumer
+	METHOD defaultColor (IIII)V
+		ARG 1 defaultR
+		ARG 2 defaultG
+		ARG 3 defaultB
+		ARG 4 defaultA

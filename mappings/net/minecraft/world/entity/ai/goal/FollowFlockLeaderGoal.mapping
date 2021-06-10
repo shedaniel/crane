@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/goal/FollowFlockLeaderGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/AbstractSchoolingFish;)V
+		ARG 1 mob

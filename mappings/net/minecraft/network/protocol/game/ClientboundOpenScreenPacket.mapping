@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ClientboundOpenScreenPacket
+	METHOD <init> (ILnet/minecraft/world/inventory/MenuType;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 containerId
+		ARG 3 title

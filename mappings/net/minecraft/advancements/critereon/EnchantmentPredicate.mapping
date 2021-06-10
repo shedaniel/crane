@@ -1,0 +1,4 @@
+CLASS net/minecraft/advancements/critereon/EnchantmentPredicate
+	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;)V
+		ARG 1 enchantment
+		ARG 2 level

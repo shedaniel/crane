@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/scores/Team
+	CLASS Visibility
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
+			ARG 3 name
+			ARG 4 id
+	CLASS CollisionRule
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
+			ARG 3 name
+			ARG 4 id

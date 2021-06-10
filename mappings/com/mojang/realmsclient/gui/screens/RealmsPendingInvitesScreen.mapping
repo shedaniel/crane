@@ -1,0 +1,6 @@
+CLASS com/mojang/realmsclient/gui/screens/RealmsPendingInvitesScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 lastScreen
+	CLASS Entry
+		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsPendingInvitesScreen;Lcom/mojang/realmsclient/dto/PendingInvite;)V
+			ARG 2 pendingInvite

@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/ai/goal/AvoidEntityGoal
+	METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;Ljava/lang/Class;Ljava/util/function/Predicate;FDDLjava/util/function/Predicate;)V
+		ARG 1 mob
+		ARG 2 avoidClass
+		ARG 3 avoidPredicate
+		ARG 4 maxDist
+		ARG 5 walkSpeedModifier
+		ARG 7 sprintSpeedModifier

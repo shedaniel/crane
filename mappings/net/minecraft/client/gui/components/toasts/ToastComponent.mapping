@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/gui/components/toasts/ToastComponent
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	CLASS ToastInstance
+		METHOD <init> (Lnet/minecraft/client/gui/components/toasts/ToastComponent;Lnet/minecraft/client/gui/components/toasts/Toast;)V
+			ARG 2 toast

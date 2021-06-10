@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/resources/model/ModelManager
+	METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/client/color/block/BlockColors;I)V
+		ARG 1 textureManager
+		ARG 2 blockColors
+		ARG 3 maxMipmapLevels
+	METHOD updateMaxMipLevel (I)V
+		ARG 1 maxMipmapLevels

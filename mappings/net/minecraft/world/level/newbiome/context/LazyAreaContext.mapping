@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/newbiome/context/LazyAreaContext
+	METHOD <init> (IJJ)V
+		ARG 1 maxCache

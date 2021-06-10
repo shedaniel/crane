@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/ai/goal/RangedAttackGoal
+	METHOD <init> (Lnet/minecraft/world/entity/monster/RangedAttackMob;DIIF)V
+		ARG 1 rangedAttackMob
+		ARG 2 speedModifier
+		ARG 4 attackIntervalMin
+		ARG 5 attackIntervalMax

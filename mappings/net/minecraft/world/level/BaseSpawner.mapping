@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/BaseSpawner
+	METHOD setNextSpawnData (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/SpawnData;)V
+		ARG 3 nextSpawnData

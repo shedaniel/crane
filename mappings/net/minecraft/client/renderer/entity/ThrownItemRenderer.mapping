@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/entity/ThrownItemRenderer
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;FZ)V
+		ARG 2 scale
+		ARG 3 fullBright

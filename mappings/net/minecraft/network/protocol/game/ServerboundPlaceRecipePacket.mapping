@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ServerboundPlaceRecipePacket
+	METHOD <init> (ILnet/minecraft/world/item/crafting/Recipe;Z)V
+		ARG 1 containerId
+		ARG 3 shiftDown

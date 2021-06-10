@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/TickNextTickData
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Ljava/lang/Object;JLnet/minecraft/world/level/TickPriority;)V
+		ARG 2 type
+		ARG 3 triggerTick

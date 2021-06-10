@@ -1,0 +1,16 @@
+CLASS net/minecraft/server/level/ChunkHolder
+	METHOD <init> (Lnet/minecraft/world/level/ChunkPos;ILnet/minecraft/world/level/LevelHeightAccessor;Lnet/minecraft/world/level/lighting/LevelLightEngine;Lnet/minecraft/server/level/ChunkHolder$LevelChangeListener;Lnet/minecraft/server/level/ChunkHolder$PlayerProvider;)V
+		ARG 1 pos
+		ARG 3 levelHeightAccessor
+		ARG 4 lightEngine
+		ARG 5 onLevelChange
+		ARG 6 playerProvider
+	METHOD setQueueLevel (I)V
+		ARG 1 queueLevel
+	METHOD setTicketLevel (I)V
+		ARG 1 ticketLevel
+	CLASS ChunkSaveDebug
+		METHOD <init> (Ljava/lang/Thread;Ljava/util/concurrent/CompletableFuture;Ljava/lang/String;)V
+			ARG 1 thread
+			ARG 2 future
+			ARG 3 source

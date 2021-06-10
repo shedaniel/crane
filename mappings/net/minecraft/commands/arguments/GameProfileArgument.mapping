@@ -1,0 +1,4 @@
+CLASS net/minecraft/commands/arguments/GameProfileArgument
+	CLASS SelectorResult
+		METHOD <init> (Lnet/minecraft/commands/arguments/selector/EntitySelector;)V
+			ARG 1 selector

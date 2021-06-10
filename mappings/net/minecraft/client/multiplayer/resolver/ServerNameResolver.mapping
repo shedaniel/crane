@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/multiplayer/resolver/ServerNameResolver
+	METHOD <init> (Lnet/minecraft/client/multiplayer/resolver/ServerAddressResolver;Lnet/minecraft/client/multiplayer/resolver/ServerRedirectHandler;Lnet/minecraft/client/multiplayer/resolver/AddressCheck;)V
+		ARG 1 resolver
+		ARG 2 redirectHandler
+		ARG 3 addressCheck

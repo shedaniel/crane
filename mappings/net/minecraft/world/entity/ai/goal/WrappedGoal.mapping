@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/goal/WrappedGoal
+	METHOD <init> (ILnet/minecraft/world/entity/ai/goal/Goal;)V
+		ARG 1 priority
+		ARG 2 goal

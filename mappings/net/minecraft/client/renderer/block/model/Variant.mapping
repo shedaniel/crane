@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/block/model/Variant
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lcom/mojang/math/Transformation;ZI)V
+		ARG 1 modelLocation
+		ARG 2 rotation
+		ARG 3 uvLock
+		ARG 4 weight

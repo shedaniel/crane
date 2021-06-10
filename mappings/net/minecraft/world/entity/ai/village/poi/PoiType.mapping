@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/entity/ai/village/poi/PoiType
+	METHOD <init> (Ljava/lang/String;Ljava/util/Set;II)V
+		ARG 1 name
+		ARG 3 maxTickets
+		ARG 4 validRange
+	METHOD <init> (Ljava/lang/String;Ljava/util/Set;ILjava/util/function/Predicate;I)V
+		ARG 1 name
+		ARG 3 maxTickets
+		ARG 4 predicate
+		ARG 5 validRange

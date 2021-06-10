@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ServerboundPlayerActionPacket
+	METHOD <init> (Lnet/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)V
+		ARG 1 action
+		ARG 3 direction

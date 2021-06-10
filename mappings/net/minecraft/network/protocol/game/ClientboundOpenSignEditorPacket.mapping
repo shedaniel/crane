@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ClientboundOpenSignEditorPacket
+	METHOD <init> (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos

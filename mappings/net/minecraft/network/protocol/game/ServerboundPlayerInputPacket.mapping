@@ -1,0 +1,6 @@
+CLASS net/minecraft/network/protocol/game/ServerboundPlayerInputPacket
+	METHOD <init> (FFZZ)V
+		ARG 1 xxa
+		ARG 2 zza
+		ARG 3 isJumping
+		ARG 4 isShiftKeyDown

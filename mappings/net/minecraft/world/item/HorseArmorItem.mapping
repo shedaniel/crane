@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/HorseArmorItem
+	METHOD <init> (ILjava/lang/String;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 protection

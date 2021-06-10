@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/entity/monster/Guardian
+	CLASS GuardianAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Guardian;)V
+			ARG 1 guardian
+	CLASS GuardianMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Guardian;)V
+			ARG 1 guardian
+	CLASS GuardianAttackSelector
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Guardian;)V
+			ARG 1 guardian

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/block/entity/BaseContainerBlockEntity
+	METHOD setCustomName (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 name

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/block/entity/BeaconBlockEntity
+	METHOD setCustomName (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 name
+	CLASS BeaconBeamSection
+		METHOD <init> ([F)V
+			ARG 1 color

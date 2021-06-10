@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/lighting/LayerLightEngine
+	METHOD <init> (Lnet/minecraft/world/level/chunk/LightChunkGetter;Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/world/level/lighting/LayerLightSectionStorage;)V
+		ARG 1 chunkSource
+		ARG 2 layer
+		ARG 3 storage

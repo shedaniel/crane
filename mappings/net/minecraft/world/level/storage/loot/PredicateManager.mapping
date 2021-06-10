@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/loot/PredicateManager
+	CLASS CompositePredicate
+		METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)V
+			ARG 1 terms

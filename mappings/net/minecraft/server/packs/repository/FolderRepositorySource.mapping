@@ -1,0 +1,4 @@
+CLASS net/minecraft/server/packs/repository/FolderRepositorySource
+	METHOD <init> (Ljava/io/File;Lnet/minecraft/server/packs/repository/PackSource;)V
+		ARG 1 folder
+		ARG 2 packSource

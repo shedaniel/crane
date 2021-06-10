@@ -1,0 +1,14 @@
+CLASS net/minecraft/client/gui/screens/debug/GameModeSwitcherScreen
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 2 firstMouseX
+		ARG 3 firstMouseY
+	CLASS GameModeIcon
+		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;Ljava/lang/String;Lnet/minecraft/world/item/ItemStack;)V
+			ARG 3 name
+			ARG 4 command
+			ARG 5 renderStack
+	CLASS GameModeSlot
+		METHOD <init> (Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen;Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeIcon;II)V
+			ARG 2 icon
+		METHOD setSelected (Z)V
+			ARG 1 isSelected

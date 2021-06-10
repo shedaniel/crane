@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/goal/OfferFlowerGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/IronGolem;)V
+		ARG 1 golem

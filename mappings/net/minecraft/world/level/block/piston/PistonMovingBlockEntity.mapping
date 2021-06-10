@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/block/piston/PistonMovingBlockEntity
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;ZZ)V
+		ARG 3 movedState
+		ARG 4 direction
+		ARG 5 extending
+		ARG 6 isSourcePiston

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/block/piston/PistonStructureResolver
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Z)V
+		ARG 1 level
+		ARG 2 pistonPos
+		ARG 3 pistonDirection
+		ARG 4 extending

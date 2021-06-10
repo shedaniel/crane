@@ -1,0 +1,4 @@
+CLASS net/minecraft/core/Registry
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;)V
+		ARG 1 key
+		ARG 2 lifecycle

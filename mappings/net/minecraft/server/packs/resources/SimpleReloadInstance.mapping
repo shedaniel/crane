@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/packs/resources/SimpleReloadInstance
+	METHOD <init> (Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/List;Lnet/minecraft/server/packs/resources/SimpleReloadInstance$StateFactory;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 3 resourceManager

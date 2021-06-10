@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/gui/components/toasts/SystemToast
+	METHOD <init> (Lnet/minecraft/client/gui/components/toasts/SystemToast$SystemToastIds;Lnet/minecraft/network/chat/Component;Ljava/util/List;I)V
+		ARG 1 id
+		ARG 2 title
+		ARG 3 messageLines
+		ARG 4 width
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/components/toasts/ToastComponent;J)Lnet/minecraft/client/gui/components/toasts/Toast$Visibility;
+		ARG 3 lastChanged
+	METHOD reset (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 title

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/PlayerDataStorage
+	METHOD <init> (Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lcom/mojang/datafixers/DataFixer;)V
+		ARG 2 fixerUpper

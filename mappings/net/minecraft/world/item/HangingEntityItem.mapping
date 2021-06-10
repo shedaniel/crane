@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/HangingEntityItem
+	METHOD <init> (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 type

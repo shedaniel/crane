@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/renderer/texture/SimpleTexture
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 location
+	CLASS TextureImage
+		METHOD <init> (Ljava/io/IOException;)V
+			ARG 1 exception
+		METHOD <init> (Lnet/minecraft/client/resources/metadata/texture/TextureMetadataSection;Lcom/mojang/blaze3d/platform/NativeImage;)V
+			ARG 1 metadata
+			ARG 2 image

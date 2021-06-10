@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/particle/PortalParticle
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDD)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	CLASS Provider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite

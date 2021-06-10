@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetObjectivePacket
+	METHOD <init> (Lnet/minecraft/world/scores/Objective;I)V
+		ARG 2 method

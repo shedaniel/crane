@@ -1,0 +1,4 @@
+CLASS net/minecraft/server/commands/data/StorageDataAccessor
+	METHOD <init> (Lnet/minecraft/world/level/storage/CommandStorage;Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 storage
+		ARG 2 id

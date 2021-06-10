@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/monster/SpellcasterIllager
+	METHOD setIsCastingSpell (Lnet/minecraft/world/entity/monster/SpellcasterIllager$IllagerSpell;)V
+		ARG 1 currentSpell
+	CLASS IllagerSpell
+		METHOD <init> (Ljava/lang/String;IIDDD)V
+			ARG 3 id

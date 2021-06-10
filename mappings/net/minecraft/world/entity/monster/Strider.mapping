@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/monster/Strider
+	CLASS StriderGoToLavaGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Strider;D)V
+			ARG 1 strider

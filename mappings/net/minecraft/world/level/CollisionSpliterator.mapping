@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/CollisionSpliterator
+	METHOD <init> (Lnet/minecraft/world/level/CollisionGetter;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/AABB;Ljava/util/function/BiPredicate;)V
+		ARG 1 collisionGetter
+		ARG 2 source
+		ARG 3 box
+		ARG 4 predicate

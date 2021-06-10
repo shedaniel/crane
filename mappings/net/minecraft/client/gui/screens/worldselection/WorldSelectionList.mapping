@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/gui/screens/worldselection/WorldSelectionList
+	METHOD <init> (Lnet/minecraft/client/gui/screens/worldselection/SelectWorldScreen;Lnet/minecraft/client/Minecraft;IIIIILjava/util/function/Supplier;Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList;)V
+		ARG 1 screen
+	CLASS WorldListEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList;Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList;Lnet/minecraft/world/level/storage/LevelSummary;)V
+			ARG 3 summary

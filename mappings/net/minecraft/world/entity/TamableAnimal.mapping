@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/TamableAnimal
+	METHOD setOrderedToSit (Z)V
+		ARG 1 orderedToSit

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/MinecartItem
+	METHOD <init> (Lnet/minecraft/world/entity/vehicle/AbstractMinecart$Type;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 type

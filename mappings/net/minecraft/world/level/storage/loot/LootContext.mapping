@@ -1,0 +1,18 @@
+CLASS net/minecraft/world/level/storage/loot/LootContext
+	METHOD <init> (Ljava/util/Random;FLnet/minecraft/server/level/ServerLevel;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/Map;Ljava/util/Map;)V
+		ARG 1 random
+		ARG 2 luck
+		ARG 3 level
+		ARG 4 lootTables
+		ARG 5 conditions
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/server/level/ServerLevel;)V
+			ARG 1 level
+		METHOD withLuck (F)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 luck
+		METHOD withRandom (Ljava/util/Random;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 random
+	CLASS EntityTarget
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)V
+			ARG 3 name
+			ARG 4 param

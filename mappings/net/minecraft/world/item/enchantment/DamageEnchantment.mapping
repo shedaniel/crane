@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/enchantment/DamageEnchantment
+	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$Rarity;I[Lnet/minecraft/world/entity/EquipmentSlot;)V
+		ARG 2 type

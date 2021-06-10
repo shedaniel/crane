@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/debug/GameTestDebugRenderer
+	CLASS Marker
+		METHOD <init> (ILjava/lang/String;J)V
+			ARG 1 color
+			ARG 2 text
+			ARG 3 removeAtTime

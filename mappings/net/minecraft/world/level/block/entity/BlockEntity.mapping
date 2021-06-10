@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/entity/BlockEntity
+	METHOD <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 type
+		ARG 3 blockState
+	METHOD setBlockState (Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 blockState
+	METHOD setLevel (Lnet/minecraft/world/level/Level;)V
+		ARG 1 level

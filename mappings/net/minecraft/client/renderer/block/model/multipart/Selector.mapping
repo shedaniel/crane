@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/block/model/multipart/Selector
+	METHOD <init> (Lnet/minecraft/client/renderer/block/model/multipart/Condition;Lnet/minecraft/client/renderer/block/model/MultiVariant;)V
+		ARG 1 condition
+		ARG 2 variant

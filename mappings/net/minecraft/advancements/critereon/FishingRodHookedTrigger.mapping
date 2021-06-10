@@ -1,0 +1,6 @@
+CLASS net/minecraft/advancements/critereon/FishingRodHookedTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/ItemPredicate;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/ItemPredicate;)V
+			ARG 2 rod
+			ARG 3 entity
+			ARG 4 item

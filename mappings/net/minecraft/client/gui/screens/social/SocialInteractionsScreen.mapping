@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/screens/social/SocialInteractionsScreen
+	METHOD checkSearchStringUpdate (Ljava/lang/String;)V
+		ARG 1 lastSearch
+	METHOD setPostRenderRunnable (Ljava/lang/Runnable;)V
+		ARG 1 postRenderRunnable
+	METHOD showPage (Lnet/minecraft/client/gui/screens/social/SocialInteractionsScreen$Page;)V
+		ARG 1 page

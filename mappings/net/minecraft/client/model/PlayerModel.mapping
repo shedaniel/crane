@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/model/PlayerModel
+	METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;Z)V
+		ARG 2 slim

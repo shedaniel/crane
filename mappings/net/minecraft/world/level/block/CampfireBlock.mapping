@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/block/CampfireBlock
+	METHOD <init> (ZILnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 spawnParticles
+		ARG 2 fireDamage

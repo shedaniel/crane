@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/inventory/ResultContainer
+	METHOD setRecipeUsed (Lnet/minecraft/world/item/crafting/Recipe;)V
+		ARG 1 recipeUsed

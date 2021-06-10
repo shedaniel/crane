@@ -1,0 +1,3 @@
+CLASS net/minecraft/data/recipes/SpecialRecipeBuilder
+	METHOD <init> (Lnet/minecraft/world/item/crafting/SimpleRecipeSerializer;)V
+		ARG 1 serializer

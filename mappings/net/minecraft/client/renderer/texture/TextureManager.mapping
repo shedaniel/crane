@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/texture/TextureManager
+	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;)V
+		ARG 1 resourceManager

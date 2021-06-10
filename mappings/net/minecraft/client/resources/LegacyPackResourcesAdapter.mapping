@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/resources/LegacyPackResourcesAdapter
+	METHOD <init> (Lnet/minecraft/server/packs/PackResources;Ljava/util/Map;)V
+		ARG 1 source
+		ARG 2 patches

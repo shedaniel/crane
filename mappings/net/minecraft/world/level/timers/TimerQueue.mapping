@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/timers/TimerQueue
+	METHOD <init> (Lnet/minecraft/world/level/timers/TimerCallbacks;)V
+		ARG 1 callbacksRegistry
+	CLASS Event
+		METHOD <init> (JLcom/google/common/primitives/UnsignedLong;Ljava/lang/String;Lnet/minecraft/world/level/timers/TimerCallback;)V
+			ARG 1 triggerTime
+			ARG 3 sequentialId
+			ARG 4 id

@@ -1,0 +1,10 @@
+CLASS net/minecraft/commands/arguments/MessageArgument
+	CLASS Part
+		METHOD <init> (IILnet/minecraft/commands/arguments/selector/EntitySelector;)V
+			ARG 1 start
+			ARG 2 end
+			ARG 3 selector
+	CLASS Message
+		METHOD <init> (Ljava/lang/String;[Lnet/minecraft/commands/arguments/MessageArgument$Part;)V
+			ARG 1 text
+			ARG 2 parts

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetItemCountFunction
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Z)V
+		ARG 2 value
+		ARG 3 add

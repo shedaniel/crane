@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/item/crafting/Ingredient
+	CLASS TagValue
+		METHOD <init> (Lnet/minecraft/tags/Tag;)V
+			ARG 1 tag
+	CLASS ItemValue
+		METHOD <init> (Lnet/minecraft/world/item/ItemStack;)V
+			ARG 1 item

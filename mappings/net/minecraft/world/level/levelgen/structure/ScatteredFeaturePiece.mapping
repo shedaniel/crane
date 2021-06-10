@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/structure/ScatteredFeaturePiece
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V
+		ARG 5 width
+		ARG 6 height
+		ARG 7 depth

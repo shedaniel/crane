@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetChunkCacheRadiusPacket
+	METHOD <init> (I)V
+		ARG 1 radius

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/GeodeCrackSettings
+	METHOD <init> (DDI)V
+		ARG 1 generateCrackChance
+		ARG 3 baseCrackSize

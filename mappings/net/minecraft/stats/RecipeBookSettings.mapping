@@ -1,0 +1,7 @@
+CLASS net/minecraft/stats/RecipeBookSettings
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 states
+	CLASS TypeSettings
+		METHOD <init> (ZZ)V
+			ARG 1 open
+			ARG 2 filtering
