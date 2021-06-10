@@ -43,7 +43,7 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 3 y
 		ARG 5 z
 	METHOD isFree (Lnet/minecraft/world/phys/AABB;)Z
-		ARG 1 aabb
+		ARG 1 box
 	METHOD lambda$move$0 (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
 	METHOD limitPistonMovement (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
@@ -73,7 +73,7 @@ CLASS net/minecraft/world/entity/Entity
 	METHOD removeTag (Ljava/lang/String;)Z
 		ARG 1 tag
 	METHOD setBoundingBox (Lnet/minecraft/world/phys/AABB;)V
-		ARG 1 bb
+		ARG 1 box
 	METHOD setDeltaMovement (Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 deltaMovement
 	METHOD setGlowingTag (Z)V

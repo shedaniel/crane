@@ -6,7 +6,7 @@ CLASS net/minecraft/commands/arguments/selector/EntitySelector
 		ARG 4 predicate
 		ARG 5 range
 		ARG 6 position
-		ARG 7 aabb
+		ARG 7 box
 		ARG 8 order
 		ARG 9 currentEntity
 		ARG 10 playerName

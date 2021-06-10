@@ -1,6 +1,22 @@
 CLASS net/minecraft/world/level/CollisionSpliterator
+	METHOD <init> (Lnet/minecraft/world/level/CollisionGetter;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/AABB;)V
+		ARG 1 collisionGetter
+		ARG 2 source
+		ARG 3 box
 	METHOD <init> (Lnet/minecraft/world/level/CollisionGetter;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/AABB;Ljava/util/function/BiPredicate;)V
 		ARG 1 collisionGetter
 		ARG 2 source
 		ARG 3 box
 		ARG 4 predicate
+	METHOD isBoxFullyWithinWorldBorder (Lnet/minecraft/world/level/border/WorldBorder;Lnet/minecraft/world/phys/AABB;)Z
+		ARG 0 border
+		ARG 1 box
+	METHOD isCloseToBorder (Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/AABB;)Z
+		ARG 0 shape
+		ARG 1 box
+	METHOD isOutsideBorder (Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/AABB;)Z
+		ARG 0 shape
+		ARG 1 box
+	METHOD lambda$new$0 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 state
+		ARG 1 pos

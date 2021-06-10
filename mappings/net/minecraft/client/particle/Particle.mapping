@@ -6,7 +6,7 @@ CLASS net/minecraft/client/particle/Particle
 	METHOD setAlpha (F)V
 		ARG 1 alpha
 	METHOD setBoundingBox (Lnet/minecraft/world/phys/AABB;)V
-		ARG 1 bb
+		ARG 1 box
 	METHOD setColor (FFF)V
 		ARG 1 rCol
 		ARG 2 gCol

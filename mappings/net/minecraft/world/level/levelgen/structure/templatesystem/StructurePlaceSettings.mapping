@@ -1,6 +1,6 @@
 CLASS net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings
 	METHOD setBoundingBox (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
-		ARG 1 boundingBox
+		ARG 1 box
 	METHOD setFinalizeEntities (Z)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
 		ARG 1 finalizeEntities
 	METHOD setIgnoreEntities (Z)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;

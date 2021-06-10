@@ -2,6 +2,6 @@ CLASS net/minecraft/world/level/levelgen/structure/StructurePiece
 	METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/StructurePieceType;ILnet/minecraft/world/level/levelgen/structure/BoundingBox;)V
 		ARG 1 type
 		ARG 2 genDepth
-		ARG 3 boundingBox
+		ARG 3 box
 	METHOD setOrientation (Lnet/minecraft/core/Direction;)V
 		ARG 1 orientation
