@@ -21,3 +21,5 @@ CLASS net/minecraft/client/player/LocalPlayer
 		ARG 1 usingItemHand
 	METHOD suffocatesAt (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
+	METHOD swing (Lnet/minecraft/world/InteractionHand;)V
+		ARG 1 hand

@@ -25,6 +25,8 @@ tasks.suggestMappings {
     autoMap("net/minecraft/core/BlockPos", "pos")
     autoMap("net/minecraft/world/level/block/state/BlockState", "state")
     autoMap("net/minecraft/world/item/ItemStack", "stack")
+	autoMap("net/minecraft/world/InteractionHand", "hand")
+    autoMap("net/minecraft/world/phys/AABB", "box")
 }
 
 tasks.run.apply {

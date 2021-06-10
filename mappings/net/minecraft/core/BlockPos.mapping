@@ -1,0 +1,3 @@
+CLASS net/minecraft/core/BlockPos
+	METHOD betweenClosedStream (Lnet/minecraft/world/phys/AABB;)Ljava/util/stream/Stream;
+		ARG 0 box

@@ -3,6 +3,9 @@ CLASS net/minecraft/network/protocol/game/ServerboundInteractPacket
 		ARG 1 entityId
 		ARG 2 usingSecondaryAction
 		ARG 3 action
+	CLASS Handler
+		METHOD onInteraction (Lnet/minecraft/world/InteractionHand;)V
+			ARG 1 hand
 	CLASS ActionType
 		METHOD <init> (Ljava/lang/String;ILjava/util/function/Function;)V
 			ARG 3 reader

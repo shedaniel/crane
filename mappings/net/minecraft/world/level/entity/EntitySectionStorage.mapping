@@ -2,3 +2,5 @@ CLASS net/minecraft/world/level/entity/EntitySectionStorage
 	METHOD <init> (Ljava/lang/Class;Lit/unimi/dsi/fastutil/longs/Long2ObjectFunction;)V
 		ARG 1 entityClass
 		ARG 2 intialSectionVisibility
+	METHOD createBoundingBoxCheck (Lnet/minecraft/world/phys/AABB;)Ljava/util/function/Predicate;
+		ARG 0 box

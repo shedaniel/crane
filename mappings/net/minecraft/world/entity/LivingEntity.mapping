@@ -1,6 +1,8 @@
 CLASS net/minecraft/world/entity/LivingEntity
 	METHOD breakItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
+	METHOD broadcastBreakEvent (Lnet/minecraft/world/InteractionHand;)V
+		ARG 1 hand
 	METHOD canAttackType (Lnet/minecraft/world/entity/EntityType;)Z
 		ARG 1 entityType
 	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
@@ -17,6 +19,8 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 0 stack
 	METHOD getExperienceReward (Lnet/minecraft/world/entity/player/Player;)I
 		ARG 1 player
+	METHOD getItemInHand (Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 hand
 	METHOD getProjectile (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 stack
 	METHOD hurt (Lnet/minecraft/world/damagesource/DamageSource;F)Z
@@ -60,6 +64,10 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 1 autoSpinAttackTicks
 	METHOD startSleeping (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
+	METHOD startUsingItem (Lnet/minecraft/world/InteractionHand;)V
+		ARG 1 hand
+	METHOD swing (Lnet/minecraft/world/InteractionHand;)V
+		ARG 1 hand
 	METHOD swing (Lnet/minecraft/world/InteractionHand;Z)V
 		ARG 1 swingingArm
 	METHOD updateUsingItem (Lnet/minecraft/world/item/ItemStack;)V
