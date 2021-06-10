@@ -8,6 +8,39 @@ CLASS net/minecraft/client/gui/screens/worldselection/WorldGenSettingsComponent
 		ARG 1 registryHolder
 		ARG 2 settings
 	METHOD init (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/Font;)V
+		ARG 1 screen
+		ARG 2 minecraft
 		ARG 3 font
+	METHOD lambda$init$0 (Ljava/lang/String;)V
+		ARG 1 text
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/CycleButton;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 0 button
+	METHOD lambda$init$10 (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 3 button
+	METHOD lambda$init$3 (Lnet/minecraft/client/gui/components/CycleButton;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 0 button
+	METHOD lambda$init$4 (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/client/gui/components/CycleButton;Lnet/minecraft/client/gui/screens/worldselection/WorldPreset;)V
+		ARG 2 button
+		ARG 3 preset
+	METHOD lambda$init$6 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 3 button
+	METHOD lambda$init$8 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/levelgen/WorldGenSettings;Z)V
+		ARG 5 confirmed
+	METHOD lambda$init$9 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lcom/mojang/serialization/Lifecycle;Lnet/minecraft/world/level/levelgen/WorldGenSettings;)V
+		ARG 5 settings
+	METHOD lambda$updateDataPacks$11 (Lnet/minecraft/resources/RegistryReadOps;Lcom/google/gson/JsonElement;)Lcom/mojang/serialization/DataResult;
+		ARG 1 json
+	METHOD lambda$updateDataPacks$12 (Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/levelgen/WorldGenSettings;)V
+		ARG 2 settings
+	METHOD parseLong (Ljava/lang/String;)Ljava/util/OptionalLong;
+		ARG 0 value
+	METHOD selectWorldTypeButton (Z)V
+		ARG 1 visible
+	METHOD setVisibility (Z)V
+		ARG 1 visible
+	METHOD toString (Ljava/util/OptionalLong;)Ljava/lang/String;
+		ARG 0 value
+	METHOD updateDataPacks (Lnet/minecraft/server/ServerResources;)V
+		ARG 1 resources
 	METHOD updateSettings (Lnet/minecraft/world/level/levelgen/WorldGenSettings;)V
 		ARG 1 settings

@@ -1,5 +1,16 @@
 CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookPage
+	METHOD addListener (Lnet/minecraft/client/gui/screens/recipebook/RecipeBookComponent;)V
+		ARG 1 component
 	METHOD init (Lnet/minecraft/client/Minecraft;II)V
 		ARG 1 minecraft
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIF)V
+		ARG 1 poses
+		ARG 4 mouseX
+		ARG 5 mouseY
+		ARG 6 delta
+	METHOD renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+		ARG 1 poses
+		ARG 2 mouseX
+		ARG 3 mouseY
 	METHOD updateCollections (Ljava/util/List;Z)V
 		ARG 1 recipeCollections

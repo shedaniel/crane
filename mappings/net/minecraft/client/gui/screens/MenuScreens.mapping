@@ -1,0 +1,21 @@
+CLASS net/minecraft/client/gui/screens/MenuScreens
+	METHOD create (Lnet/minecraft/world/inventory/MenuType;Lnet/minecraft/client/Minecraft;ILnet/minecraft/network/chat/Component;)V
+		ARG 0 type
+		ARG 1 minecraft
+		ARG 2 containerId
+		ARG 3 name
+	METHOD getConstructor (Lnet/minecraft/world/inventory/MenuType;)Lnet/minecraft/client/gui/screens/MenuScreens$ScreenConstructor;
+		ARG 0 type
+	METHOD register (Lnet/minecraft/world/inventory/MenuType;Lnet/minecraft/client/gui/screens/MenuScreens$ScreenConstructor;)V
+		ARG 0 type
+		ARG 1 constructor
+	CLASS ScreenConstructor
+		METHOD create (Lnet/minecraft/world/inventory/AbstractContainerMenu;Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/client/gui/screens/Screen;
+			ARG 1 menu
+			ARG 2 inventory
+			ARG 3 name
+		METHOD fromPacket (Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/inventory/MenuType;Lnet/minecraft/client/Minecraft;I)V
+			ARG 1 name
+			ARG 2 type
+			ARG 3 minecraft
+			ARG 4 containerId

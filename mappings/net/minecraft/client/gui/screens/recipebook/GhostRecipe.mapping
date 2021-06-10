@@ -6,9 +6,11 @@ CLASS net/minecraft/client/gui/screens/recipebook/GhostRecipe
 	METHOD get (I)Lnet/minecraft/client/gui/screens/recipebook/GhostRecipe$GhostIngredient;
 		ARG 1 index
 	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Minecraft;IIZF)V
+		ARG 1 poses
 		ARG 2 minecraft
 		ARG 3 x
 		ARG 4 y
+		ARG 6 delta
 	METHOD setRecipe (Lnet/minecraft/world/item/crafting/Recipe;)V
 		ARG 1 recipe
 	CLASS GhostIngredient

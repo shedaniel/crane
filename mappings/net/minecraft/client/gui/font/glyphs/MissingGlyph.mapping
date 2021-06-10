@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/gui/font/glyphs/MissingGlyph
+	METHOD lambda$static$0 (Lcom/mojang/blaze3d/platform/NativeImage;)V
+		ARG 0 image
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/gui/font/glyphs/MissingGlyph;
+		ARG 0 name

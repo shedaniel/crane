@@ -1,4 +1,7 @@
 CLASS com/mojang/blaze3d/platform/NativeImage
+	METHOD <init> (IIZ)V
+		ARG 1 width
+		ARG 2 height
 	METHOD <init> (Lcom/mojang/blaze3d/platform/NativeImage$Format;IIZ)V
 		ARG 1 format
 		ARG 2 width
@@ -9,6 +12,68 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 3 height
 		ARG 4 useStbFree
 		ARG 5 pixels
+	METHOD _upload (IIIIIIIZZZZ)V
+		ARG 6 width
+		ARG 11 closing
+	METHOD blendPixel (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 color
+	METHOD combine (IIII)I
+		ARG 0 alpha
+		ARG 1 blue
+		ARG 2 green
+		ARG 3 red
+	METHOD getA (I)I
+		ARG 0 color
+	METHOD getB (I)I
+		ARG 0 color
+	METHOD getBlueOrLuminance (II)B
+		ARG 1 x
+		ARG 2 y
+	METHOD getG (I)I
+		ARG 0 color
+	METHOD getGreenOrLuminance (II)B
+		ARG 1 x
+		ARG 2 y
+	METHOD getLuminanceOrAlpha (II)B
+		ARG 1 x
+		ARG 2 y
+	METHOD getPixelRGBA (II)I
+		ARG 1 x
+		ARG 2 y
+	METHOD getR (I)I
+		ARG 0 color
+	METHOD getRedOrLuminance (II)B
+		ARG 1 x
+		ARG 2 y
+	METHOD isOutsideBounds (II)Z
+		ARG 1 x
+		ARG 2 y
+	METHOD read (Lcom/mojang/blaze3d/platform/NativeImage$Format;Ljava/io/InputStream;)Lcom/mojang/blaze3d/platform/NativeImage;
+		ARG 0 format
+		ARG 1 stream
+	METHOD read (Lcom/mojang/blaze3d/platform/NativeImage$Format;Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/platform/NativeImage;
+		ARG 0 format
+		ARG 1 buf
+	METHOD read (Ljava/io/InputStream;)Lcom/mojang/blaze3d/platform/NativeImage;
+		ARG 0 stream
+	METHOD read (Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/platform/NativeImage;
+		ARG 0 buf
+	METHOD setPixelLuminance (IIB)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 luminance
+	METHOD setPixelRGBA (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 rgba
+	METHOD writeToFile (Ljava/io/File;)V
+		ARG 1 file
+	METHOD writeToFile (Ljava/lang/String;)V
+		ARG 1 path
+	METHOD writeToFile (Ljava/nio/file/Path;)V
+		ARG 1 path
 	CLASS Format
 		METHOD <init> (Ljava/lang/String;IIIZZZZZIIIIIZ)V
 			ARG 3 components
@@ -24,6 +89,8 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 			ARG 13 luminanceOffset
 			ARG 14 alphaOffset
 			ARG 15 supportedByStb
+		METHOD valueOf (Ljava/lang/String;)Lcom/mojang/blaze3d/platform/NativeImage$Format;
+			ARG 0 name
 	CLASS WriteCallback
 		METHOD <init> (Ljava/nio/channels/WritableByteChannel;)V
 			ARG 1 output

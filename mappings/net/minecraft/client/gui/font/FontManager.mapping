@@ -1,5 +1,14 @@
 CLASS net/minecraft/client/gui/font/FontManager
 	METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureManager;)V
 		ARG 1 textureManager
+	METHOD lambda$createFont$1 (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/gui/font/FontSet;
+		ARG 1 location
+	METHOD lambda$new$0 (Lnet/minecraft/client/gui/font/FontSet;)V
+		ARG 0 fontSet
 	METHOD setRenames (Ljava/util/Map;)V
 		ARG 1 renames
+	CLASS 1
+		METHOD lambda$prepare$0 (Ljava/lang/String;)Z
+			ARG 0 path
+		METHOD lambda$prepare$1 (Lnet/minecraft/resources/ResourceLocation;)Ljava/util/List;
+			ARG 0 location

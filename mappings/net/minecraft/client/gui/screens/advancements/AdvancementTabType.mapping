@@ -5,3 +5,28 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementTabType
 		ARG 5 width
 		ARG 6 height
 		ARG 7 max
+	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiComponent;IIZI)V
+		ARG 1 poses
+		ARG 2 guiComponent
+		ARG 3 x
+		ARG 4 y
+		ARG 5 reverse
+		ARG 6 index
+	METHOD drawIcon (IIILnet/minecraft/client/renderer/entity/ItemRenderer;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 index
+		ARG 4 itemRenderer
+		ARG 5 stack
+	METHOD getX (I)I
+		ARG 1 index
+	METHOD getY (I)I
+		ARG 1 index
+	METHOD isMouseOver (IIIDD)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 index
+		ARG 4 mouseX
+		ARG 6 mouseY
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/gui/screens/advancements/AdvancementTabType;
+		ARG 0 name

@@ -1,6 +1,24 @@
 CLASS net/minecraft/client/model/HumanoidModel
 	METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;)V
 		ARG 1 part
+	METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;Ljava/util/function/Function;)V
+		ARG 1 part
+	METHOD copyPropertiesTo (Lnet/minecraft/client/model/HumanoidModel;)V
+		ARG 1 model
+	METHOD getArm (Lnet/minecraft/world/entity/HumanoidArm;)Lnet/minecraft/client/model/geom/ModelPart;
+		ARG 1 arm
+	METHOD getAttackArm (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/entity/HumanoidArm;
+		ARG 1 entity
+	METHOD poseLeftArm (Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 entity
+	METHOD poseRightArm (Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 entity
+	METHOD setAllVisible (Z)V
+		ARG 1 visible
+	METHOD setupAttackAnimation (Lnet/minecraft/world/entity/LivingEntity;F)V
+		ARG 1 entity
 	CLASS ArmPose
 		METHOD <init> (Ljava/lang/String;IZ)V
 			ARG 3 twoHanded
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/model/HumanoidModel$ArmPose;
+			ARG 0 name

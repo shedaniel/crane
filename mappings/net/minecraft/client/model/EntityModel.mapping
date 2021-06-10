@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/model/EntityModel
+	METHOD prepareMobModel (Lnet/minecraft/world/entity/Entity;FFF)V
+		ARG 1 entity
+	METHOD setupAnim (Lnet/minecraft/world/entity/Entity;FFFFF)V
+		ARG 1 entity

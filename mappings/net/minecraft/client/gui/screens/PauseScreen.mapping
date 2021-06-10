@@ -1,3 +1,23 @@
 CLASS net/minecraft/client/gui/screens/PauseScreen
 	METHOD <init> (Z)V
 		ARG 1 showPauseMenu
+	METHOD lambda$createPauseMenu$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createPauseMenu$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createPauseMenu$2 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createPauseMenu$3 (Ljava/lang/String;Z)V
+		ARG 2 confirmed
+	METHOD lambda$createPauseMenu$4 (Ljava/lang/String;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 2 button
+	METHOD lambda$createPauseMenu$5 (Z)V
+		ARG 1 confirmed
+	METHOD lambda$createPauseMenu$6 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createPauseMenu$7 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createPauseMenu$8 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createPauseMenu$9 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button

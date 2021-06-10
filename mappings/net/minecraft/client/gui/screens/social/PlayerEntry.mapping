@@ -1,8 +1,24 @@
 CLASS net/minecraft/client/gui/screens/social/PlayerEntry
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/social/SocialInteractionsScreen;Ljava/util/UUID;Ljava/lang/String;Ljava/util/function/Supplier;)V
 		ARG 1 minecraft
+		ARG 2 parent
 		ARG 3 id
 		ARG 4 playerName
 		ARG 5 skinGetter
+	METHOD getEntryNarationMessage (Lnet/minecraft/network/chat/MutableComponent;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 1 message
+	METHOD lambda$new$0 (Lnet/minecraft/client/gui/screens/social/PlayerSocialManager;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 4 button
+	METHOD lambda$new$1 (Lnet/minecraft/client/gui/screens/social/PlayerSocialManager;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 4 button
+	METHOD onHiddenOrShown (ZLnet/minecraft/network/chat/Component;)V
+		ARG 1 hidden
+		ARG 2 message
+	METHOD postRenderTooltip (Lnet/minecraft/client/gui/screens/social/SocialInteractionsScreen;Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V
+		ARG 0 parent
+		ARG 1 poses
+		ARG 2 lines
+		ARG 3 mouseX
+		ARG 4 mouseY
 	METHOD setRemoved (Z)V
 		ARG 1 isRemoved

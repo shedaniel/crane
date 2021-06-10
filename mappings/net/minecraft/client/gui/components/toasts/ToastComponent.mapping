@@ -1,6 +1,15 @@
 CLASS net/minecraft/client/gui/components/toasts/ToastComponent
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD addToast (Lnet/minecraft/client/gui/components/toasts/Toast;)V
+		ARG 1 toast
+	METHOD getToast (Ljava/lang/Class;Ljava/lang/Object;)Lnet/minecraft/client/gui/components/toasts/Toast;
+		ARG 1 toastClass
+		ARG 2 token
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
 	CLASS ToastInstance
 		METHOD <init> (Lnet/minecraft/client/gui/components/toasts/ToastComponent;Lnet/minecraft/client/gui/components/toasts/Toast;)V
 			ARG 2 toast
+		METHOD render (IILcom/mojang/blaze3d/vertex/PoseStack;)Z
+			ARG 1 width

@@ -6,3 +6,7 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementTab
 		ARG 4 index
 		ARG 5 advancement
 		ARG 6 display
+	METHOD drawContents (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD drawTooltips (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
+		ARG 1 poses

@@ -1,6 +1,8 @@
 CLASS net/minecraft/client/gui/components/SubtitleOverlay
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
 	CLASS Subtitle
 		METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/phys/Vec3;)V
 			ARG 1 text

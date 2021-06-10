@@ -1,3 +1,22 @@
 CLASS net/minecraft/client/gui/components/spectator/SpectatorGui
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD onMouseScrolled (D)V
+		ARG 1 amount
+	METHOD renderHotbar (Lcom/mojang/blaze3d/vertex/PoseStack;F)V
+		ARG 1 poses
+	METHOD renderPage (Lcom/mojang/blaze3d/vertex/PoseStack;FIILnet/minecraft/client/gui/spectator/categories/SpectatorPage;)V
+		ARG 1 poses
+		ARG 2 alpha
+		ARG 3 centerX
+		ARG 4 y
+		ARG 5 page
+	METHOD renderSlot (Lcom/mojang/blaze3d/vertex/PoseStack;IIFFLnet/minecraft/client/gui/spectator/SpectatorMenuItem;)V
+		ARG 1 poses
+		ARG 2 slot
+		ARG 3 x
+		ARG 4 y
+		ARG 5 alpha
+		ARG 6 menuItem
+	METHOD renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses

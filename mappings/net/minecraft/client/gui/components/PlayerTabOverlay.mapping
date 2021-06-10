@@ -7,9 +7,23 @@ CLASS net/minecraft/client/gui/components/PlayerTabOverlay
 		ARG 2 name
 	METHOD getNameForDisplay (Lnet/minecraft/client/multiplayer/PlayerInfo;)Lnet/minecraft/network/chat/Component;
 		ARG 1 playerInfo
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;ILnet/minecraft/world/scores/Scoreboard;Lnet/minecraft/world/scores/Objective;)V
+		ARG 1 poses
+		ARG 3 scoreboard
+		ARG 4 objective
+	METHOD renderPingIcon (Lcom/mojang/blaze3d/vertex/PoseStack;IIILnet/minecraft/client/multiplayer/PlayerInfo;)V
+		ARG 1 poses
+		ARG 5 playerInfo
+	METHOD renderTablistScore (Lnet/minecraft/world/scores/Objective;ILjava/lang/String;IILnet/minecraft/client/multiplayer/PlayerInfo;Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 objective
+		ARG 6 playerInfo
 	METHOD setFooter (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 footer
 	METHOD setHeader (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 header
 	METHOD setVisible (Z)V
 		ARG 1 visible
+	CLASS PlayerInfoComparator
+		METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
+			ARG 1 first
+			ARG 2 second

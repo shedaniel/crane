@@ -4,7 +4,34 @@ CLASS net/minecraft/client/gui/components/toasts/SystemToast
 		ARG 2 title
 		ARG 3 messageLines
 		ARG 4 width
+	METHOD <init> (Lnet/minecraft/client/gui/components/toasts/SystemToast$SystemToastIds;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 ids
+		ARG 2 title
+		ARG 3 message
+	METHOD add (Lnet/minecraft/client/gui/components/toasts/ToastComponent;Lnet/minecraft/client/gui/components/toasts/SystemToast$SystemToastIds;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 toastComponent
+		ARG 1 ids
+	METHOD multiline (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/components/toasts/SystemToast$SystemToastIds;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/client/gui/components/toasts/SystemToast;
+		ARG 0 minecraft
+		ARG 1 ids
+		ARG 2 title
+		ARG 3 message
+	METHOD nullToEmpty (Lnet/minecraft/network/chat/Component;)Lcom/google/common/collect/ImmutableList;
+		ARG 0 component
+	METHOD onPackCopyFailure (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
+		ARG 0 minecraft
+	METHOD onWorldAccessFailure (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
+		ARG 0 minecraft
+	METHOD onWorldDeleteFailure (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
+		ARG 0 minecraft
 	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/components/toasts/ToastComponent;J)Lnet/minecraft/client/gui/components/toasts/Toast$Visibility;
 		ARG 3 lastChanged
+	METHOD renderBackgroundRow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/components/toasts/ToastComponent;IIII)V
+		ARG 1 poses
+		ARG 2 toastComponent
 	METHOD reset (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 1 title
+		ARG 2 message
+	CLASS SystemToastIds
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/gui/components/toasts/SystemToast$SystemToastIds;
+			ARG 0 name

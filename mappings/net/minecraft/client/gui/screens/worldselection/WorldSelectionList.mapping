@@ -1,6 +1,25 @@
 CLASS net/minecraft/client/gui/screens/worldselection/WorldSelectionList
 	METHOD <init> (Lnet/minecraft/client/gui/screens/worldselection/SelectWorldScreen;Lnet/minecraft/client/Minecraft;IIIIILjava/util/function/Supplier;Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList;)V
 		ARG 1 screen
+		ARG 2 minecraft
+		ARG 3 width
+		ARG 4 height
+		ARG 5 y0
+		ARG 6 y1
+		ARG 7 itemHeight
+		ARG 9 previousList
+	METHOD lambda$moveSelection$0 (Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList$WorldListEntry;)Z
+		ARG 0 entry
 	CLASS WorldListEntry
 		METHOD <init> (Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList;Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList;Lnet/minecraft/world/level/storage/LevelSummary;)V
+			ARG 2 list
 			ARG 3 summary
+		METHOD lambda$deleteWorld$3 (Z)V
+			ARG 1 confirmed
+		METHOD lambda$joinWorld$0 (ZZ)V
+			ARG 1 confirmed
+			ARG 2 eraseCache
+		METHOD lambda$joinWorld$2 (Z)V
+			ARG 1 confirmed
+		METHOD lambda$recreateWorld$8 (Lnet/minecraft/world/level/LevelSettings;Lnet/minecraft/world/level/levelgen/WorldGenSettings;Ljava/nio/file/Path;Lnet/minecraft/world/level/DataPackConfig;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Z)V
+			ARG 6 confirmed

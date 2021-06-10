@@ -27,3 +27,13 @@ CLASS net/minecraft/world/level/GameRules
 			ARG 2 value
 		METHOD set (ILnet/minecraft/server/MinecraftServer;)V
 			ARG 1 value
+	CLASS GameRuleTypeVisitor
+		METHOD visit (Lnet/minecraft/world/level/GameRules$Key;Lnet/minecraft/world/level/GameRules$Type;)V
+			ARG 1 key
+			ARG 2 type
+		METHOD visitBoolean (Lnet/minecraft/world/level/GameRules$Key;Lnet/minecraft/world/level/GameRules$Type;)V
+			ARG 1 key
+			ARG 2 type
+		METHOD visitInteger (Lnet/minecraft/world/level/GameRules$Key;Lnet/minecraft/world/level/GameRules$Type;)V
+			ARG 1 key
+			ARG 2 type

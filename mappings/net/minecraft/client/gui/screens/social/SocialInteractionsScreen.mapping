@@ -1,7 +1,26 @@
 CLASS net/minecraft/client/gui/screens/social/SocialInteractionsScreen
 	METHOD checkSearchStringUpdate (Ljava/lang/String;)V
 		ARG 1 lastSearch
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$2 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$3 (Z)V
+		ARG 1 confirmed
+	METHOD lambda$init$4 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD onAddPlayer (Lnet/minecraft/client/multiplayer/PlayerInfo;)V
+		ARG 1 player
+	METHOD onRemovePlayer (Ljava/util/UUID;)V
+		ARG 1 uuid
 	METHOD setPostRenderRunnable (Ljava/lang/Runnable;)V
 		ARG 1 postRenderRunnable
 	METHOD showPage (Lnet/minecraft/client/gui/screens/social/SocialInteractionsScreen$Page;)V
 		ARG 1 page
+	METHOD updateServerLabel (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	CLASS Page
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/gui/screens/social/SocialInteractionsScreen$Page;
+			ARG 0 name

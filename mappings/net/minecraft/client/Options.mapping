@@ -1,7 +1,89 @@
 CLASS net/minecraft/client/Options
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
 		ARG 1 minecraft
+		ARG 2 gameDir
+	METHOD dataFix (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 tag
+	METHOD getBackgroundColor (F)I
+		ARG 1 chatOpacity
+	METHOD getBackgroundColor (I)I
+		ARG 1 chatColor
+	METHOD getBackgroundOpacity (F)F
+		ARG 1 chatOpacity
+	METHOD getSoundSourceVolume (Lnet/minecraft/sounds/SoundSource;)F
+		ARG 1 source
+	METHOD isFalse (Ljava/lang/String;)Z
+		ARG 0 value
+	METHOD isModelPartEnabled (Lnet/minecraft/world/entity/player/PlayerModelPart;)Z
+		ARG 1 part
+	METHOD isTrue (Ljava/lang/String;)Z
+		ARG 0 value
+	METHOD lambda$dumpOptionsForReport$6 (Lcom/mojang/datafixers/util/Pair;)Ljava/lang/String;
+		ARG 0 pair
 	METHOD lambda$new$0 (Lit/unimi/dsi/fastutil/objects/Object2FloatOpenHashMap;)V
 		ARG 0 map
+	METHOD lambda$processOptions$4 (Lnet/minecraft/client/Options$FieldAccess;Lnet/minecraft/sounds/SoundSource;Ljava/lang/Float;)Ljava/lang/Float;
+		ARG 1 source
+		ARG 2 volume
+	METHOD loadSelectedResourcePacks (Lnet/minecraft/server/packs/repository/PackRepository;)V
+		ARG 1 repository
+	METHOD processOptions (Lnet/minecraft/client/Options$FieldAccess;)V
+		ARG 1 access
+	METHOD readAmbientOcclusion (Ljava/lang/String;)Lnet/minecraft/client/AmbientOcclusionStatus;
+		ARG 0 value
+	METHOD readCloudStatus (Ljava/lang/String;)Lnet/minecraft/client/CloudStatus;
+		ARG 0 value
+	METHOD readMainHand (Ljava/lang/String;)Lnet/minecraft/world/entity/HumanoidArm;
+		ARG 0 value
+	METHOD readPackList (Ljava/lang/String;)Ljava/util/List;
+		ARG 0 json
 	METHOD setCameraType (Lnet/minecraft/client/CameraType;)V
 		ARG 1 cameraType
+	METHOD setKey (Lnet/minecraft/client/KeyMapping;Lcom/mojang/blaze3d/platform/InputConstants$Key;)V
+		ARG 1 keyMapping
+		ARG 2 key
+	METHOD setModelPart (Lnet/minecraft/world/entity/player/PlayerModelPart;Z)V
+		ARG 1 part
+		ARG 2 add
+	METHOD setSoundCategoryVolume (Lnet/minecraft/sounds/SoundSource;F)V
+		ARG 1 source
+		ARG 2 volume
+	METHOD toggleModelPart (Lnet/minecraft/world/entity/player/PlayerModelPart;Z)V
+		ARG 1 part
+		ARG 2 add
+	METHOD writeCloudStatus (Lnet/minecraft/client/CloudStatus;)Ljava/lang/String;
+		ARG 0 status
+	METHOD writeMainHand (Lnet/minecraft/world/entity/HumanoidArm;)Ljava/lang/String;
+		ARG 0 arm
+	CLASS 2
+		METHOD getValueOrNull (Ljava/lang/String;)Ljava/lang/String;
+			ARG 1 key
+	CLASS 3
+		METHOD writePrefix (Ljava/lang/String;)V
+			ARG 1 prefix
+	CLASS FieldAccess
+		METHOD process (Ljava/lang/String;D)D
+			ARG 1 key
+			ARG 2 value
+		METHOD process (Ljava/lang/String;F)F
+			ARG 1 key
+			ARG 2 value
+		METHOD process (Ljava/lang/String;I)I
+			ARG 1 key
+			ARG 2 value
+		METHOD process (Ljava/lang/String;Ljava/lang/Object;Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/lang/Object;
+			ARG 1 key
+			ARG 2 value
+			ARG 3 deserializer
+			ARG 4 serializer
+		METHOD process (Ljava/lang/String;Ljava/lang/Object;Ljava/util/function/IntFunction;Ljava/util/function/ToIntFunction;)Ljava/lang/Object;
+			ARG 1 key
+			ARG 2 value
+			ARG 3 deserializer
+			ARG 4 serializer
+		METHOD process (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+			ARG 1 key
+			ARG 2 value
+		METHOD process (Ljava/lang/String;Z)Z
+			ARG 1 key
+			ARG 2 value

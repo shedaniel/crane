@@ -1,14 +1,37 @@
 CLASS net/minecraft/client/gui/screens/debug/GameModeSwitcherScreen
+	METHOD lambda$render$0 (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeIcon;)V
+		ARG 2 hovered
+	METHOD lambda$render$1 (Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeSlot;Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeIcon;)V
+		ARG 1 hovered
 	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
 		ARG 2 firstMouseX
 		ARG 3 firstMouseY
+	METHOD switchToHoveredGameMode (Lnet/minecraft/client/Minecraft;Ljava/util/Optional;)V
+		ARG 0 minecraft
+		ARG 1 mode
 	CLASS GameModeIcon
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;Ljava/lang/String;Lnet/minecraft/world/item/ItemStack;)V
 			ARG 3 name
 			ARG 4 command
 			ARG 5 renderStack
+		METHOD drawIcon (Lnet/minecraft/client/renderer/entity/ItemRenderer;II)V
+			ARG 1 itemRenderer
+			ARG 2 x
+			ARG 3 y
+		METHOD getFromGameType (Lnet/minecraft/world/level/GameType;)Ljava/util/Optional;
+			ARG 0 type
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeIcon;
+			ARG 0 name
 	CLASS GameModeSlot
 		METHOD <init> (Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen;Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeIcon;II)V
 			ARG 2 icon
+			ARG 3 x
+			ARG 4 y
+		METHOD drawSelection (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/texture/TextureManager;)V
+			ARG 1 poses
+			ARG 2 textureManager
+		METHOD drawSlot (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/texture/TextureManager;)V
+			ARG 1 poses
+			ARG 2 textureManager
 		METHOD setSelected (Z)V
 			ARG 1 isSelected

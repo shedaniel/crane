@@ -4,5 +4,21 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementWidget
 		ARG 2 minecraft
 		ARG 3 advancement
 		ARG 4 display
+	METHOD addChild (Lnet/minecraft/client/gui/screens/advancements/AdvancementWidget;)V
+		ARG 1 widget
+	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+		ARG 1 poses
+	METHOD drawConnectivity (Lcom/mojang/blaze3d/vertex/PoseStack;IIZ)V
+		ARG 1 poses
+	METHOD drawHover (Lcom/mojang/blaze3d/vertex/PoseStack;IIFII)V
+		ARG 1 poses
+	METHOD findOptimalLines (Lnet/minecraft/network/chat/Component;I)Ljava/util/List;
+		ARG 1 text
+		ARG 2 width
+	METHOD getFirstVisibleParent (Lnet/minecraft/advancements/Advancement;)Lnet/minecraft/client/gui/screens/advancements/AdvancementWidget;
+		ARG 1 advancement
+	METHOD getMaxWidth (Lnet/minecraft/client/StringSplitter;Ljava/util/List;)F
+		ARG 0 splitter
+		ARG 1 texts
 	METHOD setProgress (Lnet/minecraft/advancements/AdvancementProgress;)V
 		ARG 1 progress
