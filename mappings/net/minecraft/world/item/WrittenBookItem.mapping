@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/item/WrittenBookItem
+	METHOD getGeneration (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 stack
+	METHOD getPageCount (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 stack
+	METHOD makeSureTagIsValid (Lnet/minecraft/nbt/CompoundTag;)Z
+		ARG 0 tag
+	METHOD resolveBookComponents (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 0 stack
+		ARG 1 commandSource
+		ARG 2 player
+	METHOD resolvePage (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/entity/player/Player;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 commandSource
+		ARG 1 player
+		ARG 2 string

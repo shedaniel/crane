@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/item/CompassItem
+	METHOD addLodestoneTags (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/BlockPos;Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 dimension
+		ARG 2 pos
+		ARG 3 tag
+	METHOD getLodestoneDimension (Lnet/minecraft/nbt/CompoundTag;)Ljava/util/Optional;
+		ARG 0 tag
+	METHOD isLodestoneCompass (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
+	METHOD lambda$addLodestoneTags$0 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V
+		ARG 1 t

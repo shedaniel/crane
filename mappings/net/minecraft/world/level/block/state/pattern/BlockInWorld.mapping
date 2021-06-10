@@ -5,3 +5,5 @@ CLASS net/minecraft/world/level/block/state/pattern/BlockInWorld
 		ARG 3 loadChunks
 	METHOD hasState (Ljava/util/function/Predicate;)Ljava/util/function/Predicate;
 		ARG 0 predicate
+	METHOD lambda$hasState$0 (Ljava/util/function/Predicate;Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
+		ARG 1 block

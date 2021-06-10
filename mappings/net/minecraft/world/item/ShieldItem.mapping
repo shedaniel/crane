@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/ShieldItem
+	METHOD getColor (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/DyeColor;
+		ARG 0 stack

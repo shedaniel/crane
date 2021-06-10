@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/FishingRodItem
+	METHOD lambda$use$0 (Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 p
