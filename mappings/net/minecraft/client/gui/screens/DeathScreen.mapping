@@ -4,3 +4,5 @@ CLASS net/minecraft/client/gui/screens/DeathScreen
 		ARG 2 hardcore
 	METHOD confirmResult (Z)V
 		ARG 1 confirmed
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/item/DiggerItem
 	METHOD <init> (FFLnet/minecraft/world/item/Tier;Lnet/minecraft/tags/Tag;Lnet/minecraft/world/item/Item$Properties;)V
 		ARG 4 blocks
+	METHOD isCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

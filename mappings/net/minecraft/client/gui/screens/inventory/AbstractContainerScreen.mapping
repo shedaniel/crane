@@ -3,3 +3,15 @@ CLASS net/minecraft/client/gui/screens/inventory/AbstractContainerScreen
 		ARG 1 menu
 		ARG 2 inventory
 		ARG 3 title
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
+	METHOD renderBg (Lcom/mojang/blaze3d/vertex/PoseStack;FII)V
+		ARG 1 poses
+	METHOD renderLabels (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+		ARG 1 poses
+	METHOD renderSlot (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/inventory/Slot;)V
+		ARG 1 poses
+	METHOD renderSlotHighlight (Lcom/mojang/blaze3d/vertex/PoseStack;III)V
+		ARG 0 poses
+	METHOD renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+		ARG 1 poses

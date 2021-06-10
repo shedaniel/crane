@@ -2,6 +2,10 @@ CLASS net/minecraft/client/model/geom/ModelPart
 	METHOD <init> (Ljava/util/List;Ljava/util/Map;)V
 		ARG 1 cubes
 		ARG 2 children
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;II)V
+		ARG 1 poses
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V
+		ARG 1 poses
 	METHOD setPos (FFF)V
 		ARG 1 x
 		ARG 2 y
@@ -10,6 +14,12 @@ CLASS net/minecraft/client/model/geom/ModelPart
 		ARG 1 xRot
 		ARG 2 yRot
 		ARG 3 zRot
+	METHOD translateAndRotate (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD visit (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/model/geom/ModelPart$Visitor;)V
+		ARG 1 poses
+	METHOD visit (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/model/geom/ModelPart$Visitor;Ljava/lang/String;)V
+		ARG 1 poses
 	CLASS Cube
 		METHOD <init> (IIFFFFFFFFFZFF)V
 			ARG 3 minX

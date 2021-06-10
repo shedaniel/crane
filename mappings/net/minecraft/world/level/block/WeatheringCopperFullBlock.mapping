@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/level/block/WeatheringCopperFullBlock
 	METHOD <init> (Lnet/minecraft/world/level/block/WeatheringCopper$WeatherState;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 weatherState
+	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

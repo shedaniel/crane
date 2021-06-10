@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/boss/enderdragon/EndCrystal
+	METHOD setBeamTarget (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos

@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/renderer/chunk/VisGraph
+	METHOD getIndex (Lnet/minecraft/core/BlockPos;)I
+		ARG 0 pos
+	METHOD setOpaque (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos

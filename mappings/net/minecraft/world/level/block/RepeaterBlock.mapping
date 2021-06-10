@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/RepeaterBlock
+	METHOD getDelay (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 1 state
+	METHOD isAlternateInput (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

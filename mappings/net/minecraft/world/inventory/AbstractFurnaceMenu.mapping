@@ -4,3 +4,7 @@ CLASS net/minecraft/world/inventory/AbstractFurnaceMenu
 		ARG 3 recipeBookType
 		ARG 6 container
 		ARG 7 data
+	METHOD canSmelt (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD isFuel (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack

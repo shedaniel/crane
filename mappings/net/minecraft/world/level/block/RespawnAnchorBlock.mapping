@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/block/RespawnAnchorBlock
+	METHOD canBeCharged (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
+	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD isRespawnFuel (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack

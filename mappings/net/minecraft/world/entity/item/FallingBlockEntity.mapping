@@ -5,3 +5,5 @@ CLASS net/minecraft/world/entity/item/FallingBlockEntity
 	METHOD setHurtsEntities (FI)V
 		ARG 1 fallDamagePerDistance
 		ARG 2 fallDamageMax
+	METHOD setStartPos (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos

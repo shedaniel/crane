@@ -1,6 +1,14 @@
 CLASS net/minecraft/client/gui/screens/inventory/tooltip/ClientBundleTooltip
 	METHOD <init> (Lnet/minecraft/world/inventory/tooltip/BundleTooltip;)V
 		ARG 1 tooltip
+	METHOD blit (Lcom/mojang/blaze3d/vertex/PoseStack;IIILnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientBundleTooltip$Texture;)V
+		ARG 1 poses
+	METHOD drawBorder (IIIILcom/mojang/blaze3d/vertex/PoseStack;ILnet/minecraft/client/renderer/texture/TextureManager;)V
+		ARG 5 poses
+	METHOD renderImage (Lnet/minecraft/client/gui/Font;IILcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/entity/ItemRenderer;ILnet/minecraft/client/renderer/texture/TextureManager;)V
+		ARG 4 poses
+	METHOD renderSlot (IIIZLnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/entity/ItemRenderer;ILnet/minecraft/client/renderer/texture/TextureManager;)V
+		ARG 6 poses
 	CLASS Texture
 		METHOD <init> (Ljava/lang/String;IIIII)V
 			ARG 3 x

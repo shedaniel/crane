@@ -20,3 +20,5 @@ CLASS net/minecraft/world/entity/raid/Raider
 		METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;DI)V
 			ARG 1 raider
 			ARG 2 speedModifier
+		METHOD hasNotVisited (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 pos

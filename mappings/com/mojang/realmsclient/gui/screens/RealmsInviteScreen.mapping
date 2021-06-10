@@ -3,5 +3,7 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsInviteScreen
 		ARG 1 configureScreen
 		ARG 2 lastScreen
 		ARG 3 serverData
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD showError (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 errorMsg

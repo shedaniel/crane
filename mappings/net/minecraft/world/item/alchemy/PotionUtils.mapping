@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/item/alchemy/PotionUtils
+	METHOD getColor (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 stack
+	METHOD getCustomEffects (Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;
+		ARG 0 stack
+	METHOD getMobEffects (Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;
+		ARG 0 stack
+	METHOD getPotion (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/alchemy/Potion;
+		ARG 0 stack

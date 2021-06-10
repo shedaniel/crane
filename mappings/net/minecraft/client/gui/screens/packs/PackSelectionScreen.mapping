@@ -28,6 +28,8 @@ CLASS net/minecraft/client/gui/screens/packs/PackSelectionScreen
 	METHOD loadPackIcon (Lnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/server/packs/repository/Pack;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 1 textureManager
 		ARG 2 pack
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD updateList (Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList;Ljava/util/stream/Stream;)V
 		ARG 1 list
 		ARG 2 entries

@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/SoulFireBlock
+	METHOD canBurn (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD canSurviveOnBlock (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

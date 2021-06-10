@@ -11,6 +11,8 @@ CLASS net/minecraft/client/renderer/chunk/ChunkRenderDispatcher
 	CLASS RenderChunk
 		METHOD <init> (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher;I)V
 			ARG 2 index
+		METHOD doesChunkExistAt (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 pos
 		METHOD setFrame (I)Z
 			ARG 1 lastFrame
 		CLASS ChunkCompileTask

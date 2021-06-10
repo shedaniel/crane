@@ -21,6 +21,10 @@ CLASS net/minecraft/client/gui/components/Button
 		ARG 3 mouseY
 	METHOD lambda$updateNarration$1 (Lnet/minecraft/client/gui/narration/NarrationElementOutput;Lnet/minecraft/network/chat/Component;)V
 		ARG 1 narration
+	METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
+	METHOD renderToolTip (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+		ARG 1 poses
 	CLASS OnPress
 		METHOD onPress (Lnet/minecraft/client/gui/components/Button;)V
 			ARG 1 button

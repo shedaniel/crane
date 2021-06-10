@@ -9,3 +9,5 @@ CLASS net/minecraft/client/gui/screens/ConfirmLinkScreen
 		ARG 1 button
 	METHOD lambda$addButtons$2 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

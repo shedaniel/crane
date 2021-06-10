@@ -10,9 +10,13 @@ CLASS net/minecraft/client/gui/screens/CreateBuffetWorldScreen
 		ARG 1 button
 	METHOD lambda$init$2 (Lnet/minecraft/client/gui/screens/CreateBuffetWorldScreen$BiomeList$Entry;)Z
 		ARG 1 entry
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	CLASS BiomeList
 		METHOD lambda$new$0 (Ljava/util/Map$Entry;)Ljava/lang/String;
 			ARG 0 entry
 		CLASS Entry
 			METHOD <init> (Lnet/minecraft/client/gui/screens/CreateBuffetWorldScreen$BiomeList;Lnet/minecraft/world/level/biome/Biome;)V
 				ARG 2 biome
+			METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
+				ARG 1 poses

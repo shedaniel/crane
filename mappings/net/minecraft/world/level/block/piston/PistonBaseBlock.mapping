@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/level/block/piston/PistonBaseBlock
 	METHOD <init> (ZLnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 isSticky
+	METHOD useShapeForLightOcclusion (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

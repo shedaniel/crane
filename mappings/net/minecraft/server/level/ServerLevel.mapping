@@ -3,3 +3,17 @@ CLASS net/minecraft/server/level/ServerLevel
 		ARG 1 server
 		ARG 4 serverLevelData
 		ARG 12 customSpawners
+	METHOD findLightningRod (Lnet/minecraft/core/BlockPos;)Ljava/util/Optional;
+		ARG 1 pos
+	METHOD findLightningTargetAround (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;
+		ARG 1 pos
+	METHOD getRaidAt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/entity/raid/Raid;
+		ARG 1 pos
+	METHOD isPositionEntityTicking (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD isPositionTickingWithEntitiesLoaded (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD isRaided (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD isVillage (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos

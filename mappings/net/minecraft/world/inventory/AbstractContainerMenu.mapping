@@ -6,6 +6,8 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 		ARG 1 player
 	METHOD setCarried (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 carried
+	METHOD setRemoteCarried (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
 	METHOD setSynchronizer (Lnet/minecraft/world/inventory/ContainerSynchronizer;)V
 		ARG 1 synchronizer
 	METHOD stillValid (Lnet/minecraft/world/entity/player/Player;)Z

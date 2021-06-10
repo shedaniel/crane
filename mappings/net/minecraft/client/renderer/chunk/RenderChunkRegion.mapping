@@ -5,3 +5,11 @@ CLASS net/minecraft/client/renderer/chunk/RenderChunkRegion
 		ARG 3 centerZ
 		ARG 4 chunks
 		ARG 5 start
+	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+		ARG 1 pos
+	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 pos
+	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 pos
+	METHOD index (Lnet/minecraft/core/BlockPos;)I
+		ARG 1 pos

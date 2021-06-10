@@ -5,5 +5,7 @@ CLASS net/minecraft/client/gui/screens/ChatScreen
 		ARG 1 offset
 	METHOD onEdited (Ljava/lang/String;)V
 		ARG 1 text
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD setChatLine (Ljava/lang/String;)V
 		ARG 1 chatLine

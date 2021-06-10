@@ -6,3 +6,5 @@ CLASS net/minecraft/client/renderer/ViewArea
 		ARG 4 levelRenderer
 	METHOD createChunks (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher;)V
 		ARG 1 chunkRenderer
+	METHOD getRenderChunkAt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$RenderChunk;
+		ARG 1 pos

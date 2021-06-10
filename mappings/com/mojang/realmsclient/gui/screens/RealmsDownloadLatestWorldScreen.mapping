@@ -4,3 +4,13 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsDownloadLatestWorldScreen
 		ARG 2 worldDownload
 		ARG 3 worldName
 		ARG 4 callback
+	METHOD drawDots (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD drawDownloadSpeed (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD drawDownloadSpeed0 (Lcom/mojang/blaze3d/vertex/PoseStack;J)V
+		ARG 1 poses
+	METHOD drawProgressBar (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

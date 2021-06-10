@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/level/block/RedstoneTorchBlock
+	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	CLASS Toggle
 		METHOD <init> (Lnet/minecraft/core/BlockPos;J)V
 			ARG 1 pos

@@ -18,6 +18,7 @@ CLASS net/minecraft/client/renderer/block/ModelBlockRenderer
 		ARG 1 level
 		ARG 2 state
 		ARG 3 pos
+		ARG 4 poses
 		ARG 6 quads
 		ARG 8 bitSet
 		ARG 9 occlusionFace
@@ -25,6 +26,7 @@ CLASS net/minecraft/client/renderer/block/ModelBlockRenderer
 		ARG 1 level
 		ARG 2 state
 		ARG 3 pos
+		ARG 7 poses
 		ARG 9 quads
 	METHOD renderQuadList (Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFLjava/util/List;II)V
 		ARG 0 pose
@@ -33,16 +35,19 @@ CLASS net/minecraft/client/renderer/block/ModelBlockRenderer
 		ARG 2 model
 		ARG 3 state
 		ARG 4 pos
+		ARG 5 poses
 	METHOD tesselateWithAO (Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/client/resources/model/BakedModel;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;ZLjava/util/Random;JI)Z
 		ARG 1 level
 		ARG 2 model
 		ARG 3 state
 		ARG 4 pos
+		ARG 5 poses
 	METHOD tesselateWithoutAO (Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/client/resources/model/BakedModel;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;ZLjava/util/Random;JI)Z
 		ARG 1 level
 		ARG 2 model
 		ARG 3 state
 		ARG 4 pos
+		ARG 5 poses
 	CLASS AdjacencyInfo
 		METHOD <init> (Ljava/lang/String;I[Lnet/minecraft/core/Direction;FZ[Lnet/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo;[Lnet/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo;[Lnet/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo;[Lnet/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo;)V
 			ARG 3 corners

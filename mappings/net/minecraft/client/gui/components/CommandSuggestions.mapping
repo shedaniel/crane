@@ -16,6 +16,8 @@ CLASS net/minecraft/client/gui/components/CommandSuggestions
 		ARG 5 button
 	METHOD mouseScrolled (D)Z
 		ARG 1 amount
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+		ARG 1 poses
 	METHOD setAllowSuggestions (Z)V
 		ARG 1 allowSuggestions
 	METHOD sortSuggestions (Lcom/mojang/brigadier/suggestion/Suggestions;)Ljava/util/List;
@@ -23,5 +25,7 @@ CLASS net/minecraft/client/gui/components/CommandSuggestions
 	CLASS SuggestionsList
 		METHOD <init> (Lnet/minecraft/client/gui/components/CommandSuggestions;IIILjava/util/List;Z)V
 			ARG 5 suggestionList
+		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+			ARG 1 poses
 		METHOD select (I)V
 			ARG 1 current

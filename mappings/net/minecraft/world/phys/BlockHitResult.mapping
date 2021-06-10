@@ -4,3 +4,5 @@ CLASS net/minecraft/world/phys/BlockHitResult
 		ARG 3 direction
 		ARG 4 blockPos
 		ARG 5 inside
+	METHOD withPosition (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/BlockHitResult;
+		ARG 1 pos

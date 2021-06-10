@@ -2,3 +2,5 @@ CLASS net/minecraft/server/level/ColumnPos
 	METHOD <init> (II)V
 		ARG 1 x
 		ARG 2 z
+	METHOD <init> (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos

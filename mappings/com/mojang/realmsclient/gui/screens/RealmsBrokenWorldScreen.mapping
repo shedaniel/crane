@@ -3,3 +3,7 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsBrokenWorldScreen
 		ARG 1 lastScreen
 		ARG 2 mainScreen
 		ARG 3 serverId
+	METHOD drawSlotFrame (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIZLjava/lang/String;IJLjava/lang/String;Z)V
+		ARG 1 poses
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

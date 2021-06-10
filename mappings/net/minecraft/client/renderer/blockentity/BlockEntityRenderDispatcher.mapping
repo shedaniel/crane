@@ -6,5 +6,11 @@ CLASS net/minecraft/client/renderer/blockentity/BlockEntityRenderDispatcher
 	METHOD prepare (Lnet/minecraft/world/level/Level;Lnet/minecraft/client/Camera;Lnet/minecraft/world/phys/HitResult;)V
 		ARG 2 camera
 		ARG 3 cameraHitResult
+	METHOD render (Lnet/minecraft/world/level/block/entity/BlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V
+		ARG 3 poses
+	METHOD renderItem (Lnet/minecraft/world/level/block/entity/BlockEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)Z
+		ARG 2 poses
 	METHOD setLevel (Lnet/minecraft/world/level/Level;)V
 		ARG 1 level
+	METHOD setupAndRender (Lnet/minecraft/client/renderer/blockentity/BlockEntityRenderer;Lnet/minecraft/world/level/block/entity/BlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V
+		ARG 3 poses

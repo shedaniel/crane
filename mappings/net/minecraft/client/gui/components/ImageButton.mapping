@@ -57,6 +57,8 @@ CLASS net/minecraft/client/gui/components/ImageButton
 		ARG 6 yTexStart
 		ARG 7 resourceLocation
 		ARG 8 onPress
+	METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD setPosition (II)V
 		ARG 1 x
 		ARG 2 y

@@ -5,3 +5,5 @@ CLASS net/minecraft/realms/DisconnectedRealmsScreen
 		ARG 3 reason
 	METHOD lambda$init$0 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/components/Button;)V
 		ARG 2 button
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

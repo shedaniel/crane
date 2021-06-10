@@ -1,6 +1,12 @@
 CLASS net/minecraft/client/renderer/debug/BeeDebugRenderer
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD getHiveMembers (Lnet/minecraft/core/BlockPos;)Ljava/util/Collection;
+		ARG 1 pos
+	METHOD highlightHive (Lnet/minecraft/core/BlockPos;)V
+		ARG 0 pos
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;DDD)V
+		ARG 1 poses
 	CLASS BeeInfo
 		METHOD <init> (Ljava/util/UUID;ILnet/minecraft/core/Position;Lnet/minecraft/world/level/pathfinder/Path;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;I)V
 			ARG 1 uuid
@@ -10,6 +16,8 @@ CLASS net/minecraft/client/renderer/debug/BeeDebugRenderer
 			ARG 5 hivePos
 			ARG 6 flowerPos
 			ARG 7 travelTicks
+		METHOD hasHive (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 pos
 	CLASS HiveInfo
 		METHOD <init> (Lnet/minecraft/core/BlockPos;Ljava/lang/String;IIZJ)V
 			ARG 1 pos

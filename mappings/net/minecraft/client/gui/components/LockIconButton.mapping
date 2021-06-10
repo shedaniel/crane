@@ -3,6 +3,8 @@ CLASS net/minecraft/client/gui/components/LockIconButton
 		ARG 1 x
 		ARG 2 y
 		ARG 3 onPress
+	METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD setLocked (Z)V
 		ARG 1 locked
 	CLASS Icon

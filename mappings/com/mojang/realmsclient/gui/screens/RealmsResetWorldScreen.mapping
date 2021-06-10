@@ -8,6 +8,10 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsResetWorldScreen
 		ARG 4 subtitle
 		ARG 5 subtitleColor
 		ARG 6 buttonTitle
+	METHOD drawFrame (Lcom/mojang/blaze3d/vertex/PoseStack;IILnet/minecraft/network/chat/Component;Lnet/minecraft/resources/ResourceLocation;ZZ)V
+		ARG 1 poses
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD setResetTitle (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 resetTitle
 	METHOD setSlot (I)V
@@ -15,3 +19,5 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsResetWorldScreen
 	CLASS FrameButton
 		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsResetWorldScreen;IILnet/minecraft/network/chat/Component;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/gui/components/Button$OnPress;)V
 			ARG 5 image
+		METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+			ARG 1 poses

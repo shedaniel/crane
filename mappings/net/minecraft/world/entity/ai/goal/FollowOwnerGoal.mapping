@@ -4,3 +4,5 @@ CLASS net/minecraft/world/entity/ai/goal/FollowOwnerGoal
 		ARG 2 speedModifier
 		ARG 4 startDistance
 		ARG 5 stopDistance
+	METHOD canTeleportTo (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos

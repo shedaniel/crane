@@ -1,3 +1,23 @@
 CLASS net/minecraft/world/entity/player/Inventory
 	METHOD <init> (Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 player
+	METHOD add (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD addResource (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
+	METHOD contains (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD findSlotMatchingItem (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
+	METHOD findSlotMatchingUnusedItem (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
+	METHOD getDestroySpeed (Lnet/minecraft/world/level/block/state/BlockState;)F
+		ARG 1 state
+	METHOD getSlotWithRemainingSpace (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
+	METHOD placeItemBackInInventory (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
+	METHOD removeItem (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
+	METHOD setPickedItem (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack

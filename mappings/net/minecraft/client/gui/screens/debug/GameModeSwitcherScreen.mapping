@@ -4,6 +4,7 @@ CLASS net/minecraft/client/gui/screens/debug/GameModeSwitcherScreen
 	METHOD lambda$render$1 (Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeSlot;Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeIcon;)V
 		ARG 1 hovered
 	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 		ARG 2 firstMouseX
 		ARG 3 firstMouseY
 	METHOD switchToHoveredGameMode (Lnet/minecraft/client/Minecraft;Ljava/util/Optional;)V
@@ -33,5 +34,7 @@ CLASS net/minecraft/client/gui/screens/debug/GameModeSwitcherScreen
 		METHOD drawSlot (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/texture/TextureManager;)V
 			ARG 1 poses
 			ARG 2 textureManager
+		METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+			ARG 1 poses
 		METHOD setSelected (Z)V
 			ARG 1 isSelected

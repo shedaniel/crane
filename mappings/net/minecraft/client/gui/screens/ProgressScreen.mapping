@@ -7,3 +7,5 @@ CLASS net/minecraft/client/gui/screens/ProgressScreen
 		ARG 1 progress
 	METHOD progressStart (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 header
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

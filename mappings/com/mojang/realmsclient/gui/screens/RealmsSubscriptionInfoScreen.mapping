@@ -3,3 +3,5 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsSubscriptionInfoScreen
 		ARG 1 lastScreen
 		ARG 2 serverData
 		ARG 3 mainScreen
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

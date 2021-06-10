@@ -2,3 +2,6 @@ CLASS net/minecraft/world/inventory/BeaconMenu
 	METHOD <init> (ILnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;Lnet/minecraft/world/inventory/ContainerLevelAccess;)V
 		ARG 3 beaconData
 		ARG 4 access
+	CLASS PaymentSlot
+		METHOD mayPlace (Lnet/minecraft/world/item/ItemStack;)Z
+			ARG 1 stack

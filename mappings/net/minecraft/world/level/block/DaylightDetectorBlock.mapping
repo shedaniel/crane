@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/block/DaylightDetectorBlock
+	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
+		ARG 1 state
+	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD useShapeForLightOcclusion (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

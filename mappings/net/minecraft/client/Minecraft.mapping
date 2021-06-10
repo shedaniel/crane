@@ -21,6 +21,7 @@ CLASS net/minecraft/client/Minecraft
 	METHOD finishProfilers (ZLnet/minecraft/util/profiling/SingleTickProfiler;)V
 		ARG 2 profiler
 	METHOD renderFpsMeter (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/util/profiling/ProfileResults;)V
+		ARG 1 poses
 		ARG 2 results
 	METHOD rollbackResourcePacks (Ljava/lang/Throwable;)V
 		ARG 1 throwable

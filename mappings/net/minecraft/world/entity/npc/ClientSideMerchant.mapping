@@ -1,6 +1,8 @@
 CLASS net/minecraft/world/entity/npc/ClientSideMerchant
 	METHOD <init> (Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 source
+	METHOD notifyTradeUpdated (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
 	METHOD overrideOffers (Lnet/minecraft/world/item/trading/MerchantOffers;)V
 		ARG 1 offers
 	METHOD overrideXp (I)V

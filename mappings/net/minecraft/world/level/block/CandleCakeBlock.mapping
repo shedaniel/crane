@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/block/CandleCakeBlock
+	METHOD canLight (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
+	METHOD getParticleOffsets (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/lang/Iterable;
+		ARG 1 state
+	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

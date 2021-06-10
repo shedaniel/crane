@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/entity/ArmorStandRenderer
+	METHOD setupRotations (Lnet/minecraft/world/entity/decoration/ArmorStand;Lcom/mojang/blaze3d/vertex/PoseStack;FFF)V
+		ARG 2 poses

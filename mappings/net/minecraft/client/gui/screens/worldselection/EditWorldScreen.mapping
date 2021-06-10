@@ -30,3 +30,5 @@ CLASS net/minecraft/client/gui/screens/worldselection/EditWorldScreen
 	METHOD makeBackupAndShowToast (Lnet/minecraft/world/level/storage/LevelStorageSource;Ljava/lang/String;)V
 		ARG 0 storageSource
 		ARG 1 level
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

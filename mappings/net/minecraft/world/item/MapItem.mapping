@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/item/MapItem
+	METHOD getColor (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 stack
+	METHOD getMapId (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/Integer;
+		ARG 0 stack

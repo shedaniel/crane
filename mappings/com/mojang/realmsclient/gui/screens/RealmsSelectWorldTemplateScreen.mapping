@@ -2,8 +2,25 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsSelectWorldTemplateScreen
 	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/util/function/Consumer;Lcom/mojang/realmsclient/dto/RealmsServer$WorldType;Lcom/mojang/realmsclient/dto/WorldTemplatePaginatedList;)V
 		ARG 2 callback
 		ARG 3 worldType
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
+	METHOD renderMousehoverTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Component;II)V
+		ARG 1 poses
+	METHOD renderMultilineMessage (Lcom/mojang/blaze3d/vertex/PoseStack;IILjava/util/List;)V
+		ARG 1 poses
 	METHOD setWarning ([Lnet/minecraft/network/chat/Component;)V
 		ARG 1 warning
 	CLASS Entry
 		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsSelectWorldTemplateScreen;Lcom/mojang/realmsclient/dto/WorldTemplate;)V
 			ARG 2 template
+		METHOD drawIcons (Lcom/mojang/blaze3d/vertex/PoseStack;IIIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+			ARG 1 poses
+		METHOD drawImage (Lcom/mojang/blaze3d/vertex/PoseStack;IIIILcom/mojang/realmsclient/dto/WorldTemplate;)V
+			ARG 1 poses
+		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
+			ARG 1 poses
+		METHOD renderWorldTemplateItem (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/realmsclient/dto/WorldTemplate;IIII)V
+			ARG 1 poses
+	CLASS WorldTemplateObjectSelectionList
+		METHOD renderBackground (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+			ARG 1 poses

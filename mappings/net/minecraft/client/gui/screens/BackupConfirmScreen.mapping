@@ -11,6 +11,8 @@ CLASS net/minecraft/client/gui/screens/BackupConfirmScreen
 		ARG 1 button
 	METHOD lambda$init$2 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	CLASS Listener
 		METHOD proceed (ZZ)V
 			ARG 1 confirmed

@@ -10,6 +10,8 @@ CLASS net/minecraft/world/entity/EntityType
 		ARG 8 dimensions
 		ARG 9 clientTrackingRange
 		ARG 10 updateInterval
+	METHOD isBlockDangerous (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)V
 			ARG 1 factory

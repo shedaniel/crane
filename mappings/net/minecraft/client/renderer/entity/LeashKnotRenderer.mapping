@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/entity/LeashKnotRenderer
+	METHOD render (Lnet/minecraft/world/entity/decoration/LeashFenceKnotEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+		ARG 4 poses

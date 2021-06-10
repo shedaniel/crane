@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/level/block/SignBlock
 	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/WoodType;)V
 		ARG 2 type
+	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 state

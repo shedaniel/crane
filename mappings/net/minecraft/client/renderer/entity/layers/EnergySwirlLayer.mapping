@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/entity/layers/EnergySwirlLayer
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V
+		ARG 1 poses

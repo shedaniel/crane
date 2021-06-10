@@ -3,3 +3,7 @@ CLASS net/minecraft/client/renderer/entity/layers/CustomHeadLayer
 		ARG 3 scaleX
 		ARG 4 scaleY
 		ARG 5 scaleZ
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/LivingEntity;FFFFFF)V
+		ARG 1 poses
+	METHOD translateToHead (Lcom/mojang/blaze3d/vertex/PoseStack;Z)V
+		ARG 0 poses

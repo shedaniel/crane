@@ -1,3 +1,13 @@
 CLASS net/minecraft/world/level/block/StairBlock
 	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 baseState
+	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 state
+	METHOD getShapeIndex (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 1 state
+	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD isStairs (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
+	METHOD useShapeForLightOcclusion (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

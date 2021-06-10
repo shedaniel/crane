@@ -3,3 +3,7 @@ CLASS net/minecraft/world/level/portal/PortalShape
 		ARG 1 level
 		ARG 2 bottomLeft
 		ARG 3 axis
+	METHOD calculateBottomLeft (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;
+		ARG 1 pos
+	METHOD isEmpty (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

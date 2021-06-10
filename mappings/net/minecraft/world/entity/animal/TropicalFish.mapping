@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/entity/animal/TropicalFish
+	METHOD saveToBucketTag (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
 	CLASS Pattern
 		METHOD <init> (Ljava/lang/String;III)V
 			ARG 3 base

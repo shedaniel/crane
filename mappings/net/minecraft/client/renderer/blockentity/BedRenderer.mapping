@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/renderer/blockentity/BedRenderer
+	METHOD render (Lnet/minecraft/world/level/block/entity/BedBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V
+		ARG 3 poses
+	METHOD renderPiece (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/core/Direction;Lnet/minecraft/client/resources/model/Material;IIZ)V
+		ARG 1 poses

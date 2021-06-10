@@ -17,6 +17,8 @@ CLASS net/minecraft/client/gui/screens/social/SocialInteractionsPlayerList
 		ARG 1 second
 	METHOD removePlayer (Ljava/util/UUID;)V
 		ARG 1 uuid
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD setFilter (Ljava/lang/String;)V
 		ARG 1 filter
 	METHOD updatePlayerList (Ljava/util/Collection;D)V

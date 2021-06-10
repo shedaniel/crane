@@ -3,3 +3,5 @@ CLASS net/minecraft/world/item/SolidBucketItem
 		ARG 1 block
 		ARG 2 placeSound
 		ARG 3 properties
+	METHOD getPlaceSound (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/sounds/SoundEvent;
+		ARG 1 state

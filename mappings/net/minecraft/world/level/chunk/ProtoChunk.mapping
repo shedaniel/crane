@@ -5,6 +5,24 @@ CLASS net/minecraft/world/level/chunk/ProtoChunk
 		ARG 4 blockTicks
 		ARG 5 liquidTicks
 		ARG 6 levelHeightAccessor
+	METHOD addLight (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+		ARG 1 pos
+	METHOD getBlockEntityNbt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 pos
+	METHOD getBlockEntityNbtForSaving (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 pos
+	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 pos
+	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 pos
+	METHOD markPosForPostprocessing (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD packOffsetCoordinates (Lnet/minecraft/core/BlockPos;)S
+		ARG 0 pos
+	METHOD removeBlockEntity (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
 	METHOD setBiomes (Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;)V
 		ARG 1 biomes
 	METHOD setInhabitedTime (J)V

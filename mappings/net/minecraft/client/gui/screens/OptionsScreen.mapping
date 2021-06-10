@@ -2,3 +2,5 @@ CLASS net/minecraft/client/gui/screens/OptionsScreen
 	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/Options;)V
 		ARG 1 lastScreen
 		ARG 2 options
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

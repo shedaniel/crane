@@ -1,3 +1,5 @@
 CLASS net/minecraft/client/gui/screens/inventory/JigsawBlockEditScreen
 	METHOD <init> (Lnet/minecraft/world/level/block/entity/JigsawBlockEntity;)V
 		ARG 1 jigsawEntity
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

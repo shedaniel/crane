@@ -10,3 +10,5 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsGenericErrorScreen
 	METHOD errorMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 1 line1
 		ARG 2 line2
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses

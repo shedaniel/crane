@@ -4,5 +4,15 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsUploadScreen
 		ARG 3 slotId
 		ARG 4 lastScreen
 		ARG 5 selectedLevel
+	METHOD drawDots (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD drawProgressBar (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD drawUploadSpeed (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD drawUploadSpeed0 (Lcom/mojang/blaze3d/vertex/PoseStack;J)V
+		ARG 1 poses
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD setErrorMessage ([Lnet/minecraft/network/chat/Component;)V
 		ARG 1 errorMessage

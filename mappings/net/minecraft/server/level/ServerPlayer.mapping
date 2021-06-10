@@ -1,6 +1,12 @@
 CLASS net/minecraft/server/level/ServerPlayer
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 server
+	METHOD isReachableBedBlock (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD onChangedBlock (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD onInsideBlock (Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 state
 	METHOD setExperienceLevels (I)V
 		ARG 1 experienceLevel
 	METHOD setLastSectionPos (Lnet/minecraft/core/SectionPos;)V
@@ -16,3 +22,9 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 2 respawnPosition
 		ARG 3 respawnAngle
 		ARG 4 respawnForced
+	METHOD startSleepInBed (Lnet/minecraft/core/BlockPos;)Lcom/mojang/datafixers/util/Either;
+		ARG 1 pos
+	METHOD startSleeping (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD updateUsingItem (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack

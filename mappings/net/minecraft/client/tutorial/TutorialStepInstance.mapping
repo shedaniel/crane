@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/tutorial/TutorialStepInstance
+	METHOD onGetItem (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack

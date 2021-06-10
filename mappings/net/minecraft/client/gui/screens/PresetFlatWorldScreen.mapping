@@ -1,6 +1,8 @@
 CLASS net/minecraft/client/gui/screens/PresetFlatWorldScreen
 	METHOD <init> (Lnet/minecraft/client/gui/screens/CreateFlatWorldScreen;)V
 		ARG 1 parent
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	CLASS PresetInfo
 		METHOD <init> (Lnet/minecraft/world/item/Item;Lnet/minecraft/network/chat/Component;Ljava/util/function/Function;)V
 			ARG 1 icon
@@ -10,3 +12,9 @@ CLASS net/minecraft/client/gui/screens/PresetFlatWorldScreen
 		CLASS Entry
 			METHOD <init> (Lnet/minecraft/client/gui/screens/PresetFlatWorldScreen$PresetsList;Lnet/minecraft/client/gui/screens/PresetFlatWorldScreen$PresetInfo;)V
 				ARG 2 preset
+			METHOD blitSlot (Lcom/mojang/blaze3d/vertex/PoseStack;IILnet/minecraft/world/item/Item;)V
+				ARG 1 poses
+			METHOD blitSlotBg (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+				ARG 1 poses
+			METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V
+				ARG 1 poses

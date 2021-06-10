@@ -30,6 +30,8 @@ CLASS net/minecraft/client/gui/components/EditBox
 		ARG 1 cursorPos
 	METHOD onValueChange (Ljava/lang/String;)V
 		ARG 1 value
+	METHOD renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD setBordered (Z)V
 		ARG 1 bordered
 	METHOD setCanLoseFocus (Z)V

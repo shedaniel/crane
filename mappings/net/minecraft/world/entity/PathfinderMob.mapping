@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/PathfinderMob
+	METHOD getWalkTargetValue (Lnet/minecraft/core/BlockPos;)F
+		ARG 1 pos

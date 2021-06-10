@@ -1,3 +1,9 @@
 CLASS net/minecraft/world/level/block/BaseRailBlock
 	METHOD <init> (ZLnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 isStraight
+	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 state
+	METHOD getPistonPushReaction (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/PushReaction;
+		ARG 1 state
+	METHOD isRail (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

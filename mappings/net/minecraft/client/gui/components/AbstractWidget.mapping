@@ -22,7 +22,10 @@ CLASS net/minecraft/client/gui/components/AbstractWidget
 		ARG 3 mouseY
 	METHOD playDownSound (Lnet/minecraft/client/sounds/SoundManager;)V
 		ARG 1 soundManager
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
 	METHOD renderBg (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Minecraft;II)V
+		ARG 1 poses
 		ARG 2 minecraft
 		ARG 3 mouseX
 		ARG 4 mouseY

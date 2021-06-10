@@ -4,3 +4,5 @@ CLASS net/minecraft/world/item/crafting/UpgradeRecipe
 		ARG 2 base
 		ARG 3 addition
 		ARG 4 result
+	METHOD isAdditionIngredient (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
