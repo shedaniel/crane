@@ -1,12 +1,39 @@
 CLASS net/minecraft/world/level/border/WorldBorder
+	METHOD addListener (Lnet/minecraft/world/level/border/BorderChangeListener;)V
+		ARG 1 listener
+	METHOD applySettings (Lnet/minecraft/world/level/border/WorldBorder$Settings;)V
+		ARG 1 settings
+	METHOD getDistanceToBorder (DD)D
+		ARG 1 x
+		ARG 3 z
+	METHOD getDistanceToBorder (Lnet/minecraft/world/entity/Entity;)D
+		ARG 1 entity
+	METHOD isWithinBounds (DD)Z
+		ARG 1 x
+		ARG 3 z
+	METHOD isWithinBounds (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD isWithinBounds (Lnet/minecraft/world/level/ChunkPos;)Z
+		ARG 1 chunkPos
+	METHOD isWithinBounds (Lnet/minecraft/world/phys/AABB;)Z
+		ARG 1 box
+	METHOD lerpSizeBetween (DDJ)V
+		ARG 1 oldSize
+		ARG 3 newSize
+		ARG 5 duration
+	METHOD removeListener (Lnet/minecraft/world/level/border/BorderChangeListener;)V
+		ARG 1 listener
 	METHOD setAbsoluteMaxSize (I)V
 		ARG 1 absoluteMaxSize
 	METHOD setCenter (DD)V
 		ARG 1 centerX
+		ARG 3 centerZ
 	METHOD setDamagePerBlock (D)V
 		ARG 1 damagePerBlock
 	METHOD setDamageSafeZone (D)V
 		ARG 1 damageSafeZone
+	METHOD setSize (D)V
+		ARG 1 size
 	METHOD setWarningBlocks (I)V
 		ARG 1 warningBlocks
 	METHOD setWarningTime (I)V
@@ -18,10 +45,22 @@ CLASS net/minecraft/world/level/border/WorldBorder
 			ARG 5 damagePerBlock
 			ARG 7 safeZone
 			ARG 9 warningBlocks
+			ARG 10 warningTime
+			ARG 11 size
+			ARG 13 sizeLerpTime
+			ARG 15 sizeLerpTarget
+		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;)V
+			ARG 1 border
+		METHOD read (Lcom/mojang/serialization/DynamicLike;Lnet/minecraft/world/level/border/WorldBorder$Settings;)Lnet/minecraft/world/level/border/WorldBorder$Settings;
+			ARG 0 dynamic
+			ARG 1 settings
+		METHOD write (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 tag
 	CLASS MovingBorderExtent
 		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;DDJ)V
 			ARG 2 from
 			ARG 4 to
+			ARG 6 duration
 	CLASS StaticBorderExtent
 		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;D)V
 			ARG 2 size

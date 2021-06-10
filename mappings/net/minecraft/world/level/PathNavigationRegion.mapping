@@ -2,3 +2,9 @@ CLASS net/minecraft/world/level/PathNavigationRegion
 	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)V
 		ARG 1 level
 		ARG 2 center
+		ARG 3 edge
+	METHOD getChunk (II)Lnet/minecraft/world/level/chunk/ChunkAccess;
+		ARG 1 x
+		ARG 2 z
+	METHOD getChunk (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/chunk/ChunkAccess;
+		ARG 1 pos

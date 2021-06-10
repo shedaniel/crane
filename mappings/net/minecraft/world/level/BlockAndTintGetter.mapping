@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/BlockAndTintGetter
+	METHOD canSeeSky (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD getBlockTint (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/ColorResolver;)I
+		ARG 1 pos
+		ARG 2 colorResolver
+	METHOD getBrightness (Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/BlockPos;)I
+		ARG 1 layer
+		ARG 2 pos
+	METHOD getRawBrightness (Lnet/minecraft/core/BlockPos;I)I
+		ARG 1 pos
+		ARG 2 skyDarken
+	METHOD getShade (Lnet/minecraft/core/Direction;Z)F
+		ARG 1 direction
+		ARG 2 shaded
