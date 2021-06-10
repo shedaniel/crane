@@ -4,3 +4,6 @@ CLASS net/minecraft/client/gui/screens/packs/PackSelectionModel
 		ARG 2 iconGetter
 		ARG 3 repository
 		ARG 4 output
+	CLASS EntryBase
+		METHOD <init> (Lnet/minecraft/client/gui/screens/packs/PackSelectionModel;Lnet/minecraft/server/packs/repository/Pack;)V
+			ARG 2 pack

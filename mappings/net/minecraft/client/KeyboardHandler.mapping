@@ -1,3 +1,7 @@
 CLASS net/minecraft/client/KeyboardHandler
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
 	METHOD debugComponent (Lnet/minecraft/ChatFormatting;Lnet/minecraft/network/chat/Component;)V
 		ARG 1 formatting
+	METHOD setSendRepeatsToGui (Z)V
+		ARG 1 sendRepeatsToGui

@@ -1,4 +1,8 @@
 CLASS com/mojang/realmsclient/RealmsMainScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 lastScreen
+	METHOD setCreatedTrial (Z)V
+		ARG 1 createdTrial
 	METHOD shouldConfigureButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
 		ARG 1 server
 	METHOD shouldLeaveButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
@@ -9,3 +13,6 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 1 server
 	METHOD updateButtonStates (Lcom/mojang/realmsclient/dto/RealmsServer;)V
 		ARG 1 server
+	CLASS ServerEntry
+		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
+			ARG 2 serverData

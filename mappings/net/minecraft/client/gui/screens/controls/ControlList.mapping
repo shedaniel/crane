@@ -2,6 +2,10 @@ CLASS net/minecraft/client/gui/screens/controls/ControlList
 	METHOD <init> (Lnet/minecraft/client/gui/screens/controls/ControlsScreen;Lnet/minecraft/client/Minecraft;)V
 		ARG 1 screen
 		ARG 2 minecraft
+	CLASS KeyEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/controls/ControlList;Lnet/minecraft/client/KeyMapping;Lnet/minecraft/network/chat/Component;)V
+			ARG 2 key
+			ARG 3 name
 	CLASS CategoryEntry
 		METHOD <init> (Lnet/minecraft/client/gui/screens/controls/ControlList;Lnet/minecraft/network/chat/Component;)V
 			ARG 2 name

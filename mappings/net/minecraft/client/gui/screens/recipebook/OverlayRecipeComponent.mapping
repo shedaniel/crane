@@ -4,3 +4,14 @@ CLASS net/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent
 		ARG 2 collection
 		ARG 3 x
 		ARG 4 y
+	METHOD setVisible (Z)V
+		ARG 1 isVisible
+	CLASS OverlayRecipeButton
+		METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent;IILnet/minecraft/world/item/crafting/Recipe;Z)V
+			ARG 4 recipe
+			ARG 5 isCraftable
+		CLASS Pos
+			METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent$OverlayRecipeButton;II[Lnet/minecraft/world/item/ItemStack;)V
+				ARG 2 x
+				ARG 3 y
+				ARG 4 ingredients

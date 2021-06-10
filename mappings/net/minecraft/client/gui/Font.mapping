@@ -1,4 +1,6 @@
 CLASS net/minecraft/client/gui/Font
+	METHOD <init> (Ljava/util/function/Function;)V
+		ARG 1 fonts
 	METHOD bidirectionalShaping (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 text
 	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/String;FFI)I

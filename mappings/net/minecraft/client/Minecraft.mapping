@@ -1,4 +1,6 @@
 CLASS net/minecraft/client/Minecraft
+	METHOD <init> (Lnet/minecraft/client/main/GameConfig;)V
+		ARG 0 instance
 	METHOD archiveProfilingReport (Lnet/minecraft/SystemReport;Ljava/util/List;)Ljava/nio/file/Path;
 		ARG 1 systemReport
 		ARG 2 paths
@@ -22,7 +24,25 @@ CLASS net/minecraft/client/Minecraft
 		ARG 2 results
 	METHOD rollbackResourcePacks (Ljava/lang/Throwable;)V
 		ARG 1 throwable
+	METHOD setCameraEntity (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 cameraEntity
+	METHOD setConnectedToRealms (Z)V
+		ARG 1 connectedToRealms
+	METHOD setCurrentServer (Lnet/minecraft/client/multiplayer/ServerData;)V
+		ARG 1 currentServer
+	METHOD setLevel (Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 level
 	METHOD setOverlay (Lnet/minecraft/client/gui/screens/Overlay;)V
 		ARG 1 overlay
 	METHOD setScreen (Lnet/minecraft/client/gui/screens/Screen;)V
 		ARG 1 screen
+	METHOD setWindowActive (Z)V
+		ARG 1 windowActive
+	CLASS ChatStatus
+		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;)V
+			ARG 3 message
+	CLASS ServerStem
+		METHOD <init> (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/server/ServerResources;Lnet/minecraft/world/level/storage/WorldData;)V
+			ARG 1 packRepository
+			ARG 2 serverResources
+			ARG 3 worldData

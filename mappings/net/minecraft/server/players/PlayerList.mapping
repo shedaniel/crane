@@ -1,6 +1,17 @@
 CLASS net/minecraft/server/players/PlayerList
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/storage/PlayerDataStorage;I)V
+		ARG 1 server
+		ARG 2 registryHolder
+		ARG 3 playerIo
+		ARG 4 maxPlayers
 	METHOD canPlayerLogin (Ljava/net/SocketAddress;Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/network/chat/Component;
 		ARG 1 address
 		ARG 2 gameProfile
 	METHOD save (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 serverPlayer
+	METHOD setAllowCheatsForAllPlayers (Z)V
+		ARG 1 allowCheatsForAllPlayers
+	METHOD setUsingWhiteList (Z)V
+		ARG 1 doWhiteList
+	METHOD setViewDistance (I)V
+		ARG 1 viewDistance

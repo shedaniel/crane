@@ -1,3 +1,6 @@
 CLASS net/minecraft/client/model/HumanoidModel
 	METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;)V
 		ARG 1 part
+	CLASS ArmPose
+		METHOD <init> (Ljava/lang/String;IZ)V
+			ARG 3 twoHanded

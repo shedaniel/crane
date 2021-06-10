@@ -2,3 +2,11 @@ CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
 	METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/Minecraft;IIIII)V
 		ARG 1 screen
 		ARG 2 minecraft
+	CLASS OnlineServerEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList;Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/multiplayer/ServerData;)V
+			ARG 2 screen
+			ARG 3 serverData
+	CLASS NetworkServerEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/server/LanServer;)V
+			ARG 1 screen
+			ARG 2 serverData

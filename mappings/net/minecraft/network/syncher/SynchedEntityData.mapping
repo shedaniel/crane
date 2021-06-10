@@ -34,3 +34,11 @@ CLASS net/minecraft/network/syncher/SynchedEntityData
 	METHOD writeDataItem (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;)V
 		ARG 0 buf
 		ARG 1 item
+	CLASS DataItem
+		METHOD <init> (Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+			ARG 1 accessor
+			ARG 2 value
+		METHOD setDirty (Z)V
+			ARG 1 dirty
+		METHOD setValue (Ljava/lang/Object;)V
+			ARG 1 value

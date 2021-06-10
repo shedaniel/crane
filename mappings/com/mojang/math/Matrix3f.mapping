@@ -9,3 +9,5 @@ CLASS com/mojang/math/Matrix3f
 		ARG 0 scaleX
 		ARG 1 scaleY
 		ARG 2 scaleZ
+	METHOD set (IIF)V
+		ARG 3 m00

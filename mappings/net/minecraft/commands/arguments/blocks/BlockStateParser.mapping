@@ -1,4 +1,7 @@
 CLASS net/minecraft/commands/arguments/blocks/BlockStateParser
+	METHOD <init> (Lcom/mojang/brigadier/StringReader;Z)V
+		ARG 1 reader
+		ARG 2 forTesting
 	METHOD appendProperty (Ljava/lang/StringBuilder;Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)V
 		ARG 0 builder
 		ARG 1 property

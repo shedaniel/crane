@@ -3,3 +3,5 @@ CLASS net/minecraft/server/level/ServerBossEvent
 		ARG 1 player
 	METHOD removePlayer (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 player
+	METHOD setVisible (Z)V
+		ARG 1 visible

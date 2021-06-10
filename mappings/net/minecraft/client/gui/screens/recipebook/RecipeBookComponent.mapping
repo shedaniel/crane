@@ -5,3 +5,5 @@ CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookComponent
 		ARG 3 minecraft
 		ARG 4 widthTooNarrow
 		ARG 5 menu
+	METHOD setVisible (Z)V
+		ARG 1 visible
