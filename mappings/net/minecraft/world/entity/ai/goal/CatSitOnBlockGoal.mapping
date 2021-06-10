@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/goal/CatSitOnBlockGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/Cat;D)V
+		ARG 1 cat

@@ -1,0 +1,3 @@
+CLASS net/minecraft/stats/StatType
+	METHOD <init> (Lnet/minecraft/core/Registry;)V
+		ARG 1 registry

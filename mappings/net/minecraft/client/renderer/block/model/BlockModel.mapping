@@ -14,3 +14,6 @@ CLASS net/minecraft/client/renderer/block/model/BlockModel
 	METHOD getItemOverrides (Lnet/minecraft/client/resources/model/ModelBakery;Lnet/minecraft/client/renderer/block/model/BlockModel;)Lnet/minecraft/client/renderer/block/model/ItemOverrides;
 		ARG 1 bakery
 		ARG 2 model
+	CLASS GuiLight
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name

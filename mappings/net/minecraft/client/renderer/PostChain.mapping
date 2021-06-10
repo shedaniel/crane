@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/PostChain
+	METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/server/packs/resources/ResourceManager;Lcom/mojang/blaze3d/pipeline/RenderTarget;Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 2 resourceManager
+		ARG 3 screenTarget
+	METHOD process (F)V
+		ARG 1 lastStamp

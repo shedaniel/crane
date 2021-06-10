@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetDefaultSpawnPositionPacket
+	METHOD <init> (Lnet/minecraft/core/BlockPos;F)V
+		ARG 1 pos
+		ARG 2 angle

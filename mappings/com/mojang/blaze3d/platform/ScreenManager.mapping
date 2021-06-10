@@ -1,0 +1,3 @@
+CLASS com/mojang/blaze3d/platform/ScreenManager
+	METHOD <init> (Lcom/mojang/blaze3d/platform/MonitorCreator;)V
+		ARG 1 monitorCreator

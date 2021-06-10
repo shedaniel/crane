@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/resources/sounds/SimpleSoundInstance
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/sounds/SoundSource;FFZILnet/minecraft/client/resources/sounds/SoundInstance$Attenuation;DDDZ)V
+		ARG 3 volume
+		ARG 4 pitch
+		ARG 5 looping
+		ARG 6 delay
+		ARG 7 attenuation
+		ARG 8 x
+		ARG 10 y

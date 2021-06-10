@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/state/StateHolder
+	METHOD <init> (Ljava/lang/Object;Lcom/google/common/collect/ImmutableMap;Lcom/mojang/serialization/MapCodec;)V
+		ARG 1 owner
+		ARG 2 values
+		ARG 3 propertiesCodec

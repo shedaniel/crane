@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/ConditionReference
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 name

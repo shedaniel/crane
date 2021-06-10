@@ -1,0 +1,4 @@
+CLASS com/mojang/blaze3d/audio/Library
+	CLASS CountingChannelPool
+		METHOD <init> (I)V
+			ARG 1 limit

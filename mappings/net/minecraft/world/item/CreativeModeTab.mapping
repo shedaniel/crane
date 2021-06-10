@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/item/CreativeModeTab
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 langId
+	METHOD setBackgroundSuffix (Ljava/lang/String;)Lnet/minecraft/world/item/CreativeModeTab;
+		ARG 1 backgroundSuffix
+	METHOD setEnchantmentCategories ([Lnet/minecraft/world/item/enchantment/EnchantmentCategory;)Lnet/minecraft/world/item/CreativeModeTab;
+		ARG 1 enchantmentCategories
+	METHOD setRecipeFolderName (Ljava/lang/String;)Lnet/minecraft/world/item/CreativeModeTab;
+		ARG 1 recipeFolderName

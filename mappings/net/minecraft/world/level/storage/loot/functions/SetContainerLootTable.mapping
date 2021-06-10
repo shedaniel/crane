@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetContainerLootTable
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/resources/ResourceLocation;J)V
+		ARG 2 name
+		ARG 3 seed

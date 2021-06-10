@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/level/BaseCommandBlock
+	METHOD setCommand (Ljava/lang/String;)V
+		ARG 1 command
+	METHOD setLastOutput (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 lastOutput
+	METHOD setName (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 name
+	METHOD setSuccessCount (I)V
+		ARG 1 successCount
+	METHOD setTrackOutput (Z)V
+		ARG 1 trackOutput

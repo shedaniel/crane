@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/pathfinder/NodeEvaluator
+	METHOD prepare (Lnet/minecraft/world/level/PathNavigationRegion;Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 level
+		ARG 2 mob
+	METHOD setCanFloat (Z)V
+		ARG 1 canFloat
+	METHOD setCanOpenDoors (Z)V
+		ARG 1 canOpenDoors
+	METHOD setCanPassDoors (Z)V
+		ARG 1 canPassDoors

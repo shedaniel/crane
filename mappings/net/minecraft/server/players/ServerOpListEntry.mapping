@@ -1,0 +1,4 @@
+CLASS net/minecraft/server/players/ServerOpListEntry
+	METHOD <init> (Lcom/mojang/authlib/GameProfile;IZ)V
+		ARG 2 level
+		ARG 3 bypassesPlayerLimit

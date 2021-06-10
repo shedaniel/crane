@@ -22,5 +22,20 @@ CLASS net/minecraft/client/gui/Gui
 		ARG 2 alpha
 	METHOD renderVignette (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
+	METHOD setOverlayMessage (Lnet/minecraft/network/chat/Component;Z)V
+		ARG 1 overlayMessageString
+		ARG 2 animateOverlayMessageColor
+	METHOD setSubtitle (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 subtitle
+	METHOD setTimes (III)V
+		ARG 1 titleFadeInTime
+		ARG 2 titleStayTime
+		ARG 3 titleFadeOutTime
+	METHOD setTitle (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 title
 	METHOD updateVignetteBrightness (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
+	CLASS HeartType
+		METHOD <init> (Ljava/lang/String;IIZ)V
+			ARG 3 index
+			ARG 4 canBlink

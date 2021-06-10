@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSelectAdvancementsTabPacket
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 tab

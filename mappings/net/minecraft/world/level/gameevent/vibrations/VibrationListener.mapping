@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/gameevent/vibrations/VibrationListener
+	METHOD <init> (Lnet/minecraft/world/level/gameevent/PositionSource;ILnet/minecraft/world/level/gameevent/vibrations/VibrationListener$VibrationListenerConfig;)V
+		ARG 1 listenerSource
+		ARG 2 listenerRange
+		ARG 3 config

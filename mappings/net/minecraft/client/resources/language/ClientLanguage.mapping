@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/resources/language/ClientLanguage
+	METHOD <init> (Ljava/util/Map;Z)V
+		ARG 1 storage
+		ARG 2 defaultRightToLeft

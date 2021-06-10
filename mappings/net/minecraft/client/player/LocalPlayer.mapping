@@ -7,3 +7,15 @@ CLASS net/minecraft/client/player/LocalPlayer
 		ARG 5 recipeBook
 		ARG 6 wasShiftKeyDown
 		ARG 7 wasSprinting
+	METHOD setExperienceValues (FII)V
+		ARG 1 experienceProgress
+		ARG 2 totalExperience
+		ARG 3 experienceLevel
+	METHOD setPermissionLevel (I)V
+		ARG 1 permissionLevel
+	METHOD setServerBrand (Ljava/lang/String;)V
+		ARG 1 serverBrand
+	METHOD setShowDeathScreen (Z)V
+		ARG 1 showDeathScreen
+	METHOD startUsingItem (Lnet/minecraft/world/InteractionHand;)V
+		ARG 1 usingItemHand

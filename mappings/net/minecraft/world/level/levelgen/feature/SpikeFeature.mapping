@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/levelgen/feature/SpikeFeature
+	CLASS EndSpike
+		METHOD <init> (IIIIZ)V
+			ARG 1 centerX
+			ARG 2 centerZ
+			ARG 3 radius
+			ARG 4 height
+			ARG 5 guarded

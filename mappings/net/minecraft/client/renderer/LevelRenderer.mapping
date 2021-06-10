@@ -1,0 +1,13 @@
+CLASS net/minecraft/client/renderer/LevelRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/renderer/RenderBuffers;)V
+		ARG 1 minecraft
+		ARG 2 renderBuffers
+	METHOD renderChunkLayer (Lnet/minecraft/client/renderer/RenderType;Lcom/mojang/blaze3d/vertex/PoseStack;DDDLcom/mojang/math/Matrix4f;)V
+		ARG 3 xTransparentOld
+		ARG 5 yTransparentOld
+	METHOD setLevel (Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 level
+	CLASS RenderChunkInfo
+		METHOD <init> (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$RenderChunk;Lnet/minecraft/core/Direction;I)V
+			ARG 1 chunk
+			ARG 3 step

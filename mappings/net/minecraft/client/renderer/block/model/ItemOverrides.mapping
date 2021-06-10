@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/renderer/block/model/ItemOverrides
+	CLASS BakedOverride
+		METHOD <init> ([Lnet/minecraft/client/renderer/block/model/ItemOverrides$PropertyMatcher;Lnet/minecraft/client/resources/model/BakedModel;)V
+			ARG 1 matchers
+			ARG 2 model
+	CLASS PropertyMatcher
+		METHOD <init> (IF)V
+			ARG 1 index
+			ARG 2 value

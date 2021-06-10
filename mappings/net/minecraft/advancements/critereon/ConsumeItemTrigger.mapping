@@ -1,0 +1,4 @@
+CLASS net/minecraft/advancements/critereon/ConsumeItemTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/ItemPredicate;)V
+			ARG 2 item

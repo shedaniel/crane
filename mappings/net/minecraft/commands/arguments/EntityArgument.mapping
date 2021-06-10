@@ -1,0 +1,4 @@
+CLASS net/minecraft/commands/arguments/EntityArgument
+	METHOD <init> (ZZ)V
+		ARG 1 single
+		ARG 2 playersOnly

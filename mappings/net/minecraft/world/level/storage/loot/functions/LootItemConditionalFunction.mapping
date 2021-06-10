@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)V
+		ARG 1 predicates
+	CLASS DummyBuilder
+		METHOD <init> (Ljava/util/function/Function;)V
+			ARG 1 constructor

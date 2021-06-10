@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/inventory/FurnaceFuelSlot
+	METHOD <init> (Lnet/minecraft/world/inventory/AbstractFurnaceMenu;Lnet/minecraft/world/Container;III)V
+		ARG 1 menu

@@ -1,0 +1,11 @@
+CLASS net/minecraft/network/protocol/game/ClientboundPlayerInfoPacket
+	METHOD <init> (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoPacket$Action;Ljava/util/Collection;)V
+		ARG 1 action
+	METHOD <init> (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoPacket$Action;[Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 action
+	CLASS PlayerUpdate
+		METHOD <init> (Lcom/mojang/authlib/GameProfile;ILnet/minecraft/world/level/GameType;Lnet/minecraft/network/chat/Component;)V
+			ARG 1 profile
+			ARG 2 latency
+			ARG 3 gameMode
+			ARG 4 displayName

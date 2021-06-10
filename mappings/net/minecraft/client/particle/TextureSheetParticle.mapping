@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/particle/TextureSheetParticle
+	METHOD setSprite (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V
+		ARG 1 sprite

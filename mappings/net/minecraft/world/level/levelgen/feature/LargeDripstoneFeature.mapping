@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/feature/LargeDripstoneFeature
+	CLASS WindOffsetter
+		METHOD <init> (ILjava/util/Random;Lnet/minecraft/util/valueproviders/FloatProvider;)V
+			ARG 1 originY
+	CLASS LargeDripstone
+		METHOD <init> (Lnet/minecraft/core/BlockPos;ZIDD)V
+			ARG 1 root
+			ARG 2 pointingUp
+			ARG 3 radius
+			ARG 4 bluntness

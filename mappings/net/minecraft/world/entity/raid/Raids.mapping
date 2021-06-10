@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/raid/Raids
+	METHOD <init> (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level

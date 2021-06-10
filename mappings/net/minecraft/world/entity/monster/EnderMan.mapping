@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/entity/monster/EnderMan
+	METHOD setPersistentAngerTarget (Ljava/util/UUID;)V
+		ARG 1 persistentAngerTarget
+	METHOD setRemainingPersistentAngerTime (I)V
+		ARG 1 remainingPersistentAngerTime
+	CLASS EndermanTakeBlockGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;)V
+			ARG 1 enderman
+	CLASS EndermanLeaveBlockGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;)V
+			ARG 1 enderman
+	CLASS EndermanLookForPlayerGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;Ljava/util/function/Predicate;)V
+			ARG 1 enderman
+	CLASS EndermanFreezeWhenLookedAt
+		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;)V
+			ARG 1 enderman

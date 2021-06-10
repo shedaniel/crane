@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/phys/Vec2
+	METHOD <init> (FF)V
+		ARG 1 x
+		ARG 2 y

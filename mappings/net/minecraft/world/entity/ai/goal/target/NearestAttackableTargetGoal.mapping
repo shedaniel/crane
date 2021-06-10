@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V
+		ARG 2 targetType
+		ARG 3 randomInterval
+	METHOD setTarget (Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 target

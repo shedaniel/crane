@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/animal/AbstractSchoolingFish
+	METHOD startFollowing (Lnet/minecraft/world/entity/animal/AbstractSchoolingFish;)Lnet/minecraft/world/entity/animal/AbstractSchoolingFish;
+		ARG 1 leader
+	CLASS SchoolSpawnGroupData
+		METHOD <init> (Lnet/minecraft/world/entity/animal/AbstractSchoolingFish;)V
+			ARG 1 leader

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/phys/Vec3
+	METHOD <init> (DDD)V
+		ARG 1 x
+		ARG 3 y

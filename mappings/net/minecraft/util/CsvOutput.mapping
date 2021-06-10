@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/CsvOutput
+	METHOD <init> (Ljava/io/Writer;Ljava/util/List;)V
+		ARG 1 output

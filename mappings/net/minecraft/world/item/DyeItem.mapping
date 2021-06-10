@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/DyeItem
+	METHOD <init> (Lnet/minecraft/world/item/DyeColor;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 dyeColor

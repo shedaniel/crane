@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/gui/font/providers/GlyphProviderBuilderType
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/function/Function;)V
+		ARG 3 name
+		ARG 4 factory

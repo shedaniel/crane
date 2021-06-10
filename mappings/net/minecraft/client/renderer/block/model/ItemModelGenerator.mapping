@@ -1,0 +1,13 @@
+CLASS net/minecraft/client/renderer/block/model/ItemModelGenerator
+	CLASS Span
+		METHOD <init> (Lnet/minecraft/client/renderer/block/model/ItemModelGenerator$SpanFacing;II)V
+			ARG 1 facing
+			ARG 2 min
+			ARG 3 anchor
+		METHOD expand (I)V
+			ARG 1 min
+	CLASS SpanFacing
+		METHOD <init> (Ljava/lang/String;ILnet/minecraft/core/Direction;II)V
+			ARG 3 direction
+			ARG 4 xOffset
+			ARG 5 yOffset

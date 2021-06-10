@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/ServerAdvancementManager
+	METHOD <init> (Lnet/minecraft/world/level/storage/loot/PredicateManager;)V
+		ARG 1 predicateManager

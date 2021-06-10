@@ -1,0 +1,6 @@
+CLASS net/minecraft/commands/arguments/selector/options/EntitySelectorOptions
+	CLASS Option
+		METHOD <init> (Lnet/minecraft/commands/arguments/selector/options/EntitySelectorOptions$Modifier;Ljava/util/function/Predicate;Lnet/minecraft/network/chat/Component;)V
+			ARG 1 modifier
+			ARG 2 predicate
+			ARG 3 description

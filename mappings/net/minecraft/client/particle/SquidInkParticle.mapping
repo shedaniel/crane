@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/particle/SquidInkParticle
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDILnet/minecraft/client/particle/SpriteSet;)V
+		ARG 8 xd
+	CLASS Provider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprites
+	CLASS GlowInkProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprites

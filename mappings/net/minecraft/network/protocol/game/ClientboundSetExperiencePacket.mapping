@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetExperiencePacket
+	METHOD <init> (FII)V
+		ARG 1 experienceProgress
+		ARG 2 totalExperience
+		ARG 3 experienceLevel

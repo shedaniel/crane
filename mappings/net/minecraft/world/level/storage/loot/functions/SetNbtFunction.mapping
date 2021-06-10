@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetNbtFunction
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 2 tag

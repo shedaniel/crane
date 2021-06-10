@@ -1,0 +1,3 @@
+CLASS net/minecraft/gametest/framework/JUnitLikeTestReporter
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 destination

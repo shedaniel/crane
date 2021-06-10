@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/behavior/GoToWantedItem
+	METHOD <init> (Ljava/util/function/Predicate;FZI)V
+		ARG 1 predicate
+		ARG 2 speedModifier
+		ARG 4 maxDistToWalk

@@ -1,0 +1,3 @@
+CLASS net/minecraft/SharedConstants
+	METHOD setVersion (Lcom/mojang/bridge/game/GameVersion;)V
+		ARG 0 CURRENT_VERSION

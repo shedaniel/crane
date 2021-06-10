@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ClientboundStopSoundPacket
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/sounds/SoundSource;)V
+		ARG 1 name
+		ARG 2 source

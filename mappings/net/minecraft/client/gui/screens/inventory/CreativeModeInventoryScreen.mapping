@@ -1,3 +1,6 @@
 CLASS net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen
 	METHOD <init> (Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 player
+	CLASS SlotWrapper
+		METHOD <init> (Lnet/minecraft/world/inventory/Slot;III)V
+			ARG 1 target

@@ -1,0 +1,6 @@
+CLASS com/mojang/realmsclient/gui/screens/RealmsSlotOptionsScreen
+	METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsConfigureWorldScreen;Lcom/mojang/realmsclient/dto/RealmsWorldOptions;Lcom/mojang/realmsclient/dto/RealmsServer$WorldType;I)V
+		ARG 1 parent
+		ARG 2 options
+		ARG 3 worldType
+		ARG 4 activeSlot

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/monster/piglin/Piglin
+	METHOD setCannotHunt (Z)V
+		ARG 1 cannotHunt

@@ -1,0 +1,18 @@
+CLASS net/minecraft/advancements/critereon/DamagePredicate
+	METHOD <init> (Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Lnet/minecraft/advancements/critereon/EntityPredicate;Ljava/lang/Boolean;Lnet/minecraft/advancements/critereon/DamageSourcePredicate;)V
+		ARG 1 dealtDamage
+		ARG 2 takenDamage
+		ARG 3 sourceEntity
+		ARG 4 blocked
+		ARG 5 type
+	CLASS Builder
+		METHOD blocked (Ljava/lang/Boolean;)Lnet/minecraft/advancements/critereon/DamagePredicate$Builder;
+			ARG 1 blocked
+		METHOD dealtDamage (Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;)Lnet/minecraft/advancements/critereon/DamagePredicate$Builder;
+			ARG 1 dealtDamage
+		METHOD sourceEntity (Lnet/minecraft/advancements/critereon/EntityPredicate;)Lnet/minecraft/advancements/critereon/DamagePredicate$Builder;
+			ARG 1 sourceEntity
+		METHOD takenDamage (Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;)Lnet/minecraft/advancements/critereon/DamagePredicate$Builder;
+			ARG 1 takenDamage
+		METHOD type (Lnet/minecraft/advancements/critereon/DamageSourcePredicate;)Lnet/minecraft/advancements/critereon/DamagePredicate$Builder;
+			ARG 1 type

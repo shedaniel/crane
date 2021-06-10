@@ -1,0 +1,14 @@
+CLASS net/minecraft/server/ServerFunctionManager
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/ServerFunctionLibrary;)V
+		ARG 1 server
+		ARG 2 library
+	METHOD replaceLibrary (Lnet/minecraft/server/ServerFunctionLibrary;)V
+		ARG 1 library
+	CLASS QueuedCommand
+		METHOD <init> (Lnet/minecraft/commands/CommandSourceStack;ILnet/minecraft/commands/CommandFunction$Entry;)V
+			ARG 1 sender
+			ARG 2 depth
+			ARG 3 entry
+	CLASS ExecutionContext
+		METHOD <init> (Lnet/minecraft/server/ServerFunctionManager;Lnet/minecraft/server/ServerFunctionManager$TraceCallbacks;)V
+			ARG 2 tracer

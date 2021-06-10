@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/ai/goal/RangedBowAttackGoal
+	METHOD <init> (Lnet/minecraft/world/entity/monster/Monster;DIF)V
+		ARG 1 mob
+		ARG 2 speedModifier
+		ARG 4 attackIntervalMin
+	METHOD setMinAttackInterval (I)V
+		ARG 1 attackIntervalMin

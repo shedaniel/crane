@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/ai/navigation/PathNavigation
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/Level;)V
+		ARG 1 mob
+		ARG 2 level
+	METHOD createPath (Ljava/util/Set;IZIF)Lnet/minecraft/world/level/pathfinder/Path;
+		ARG 4 reachRange
+	METHOD doStuckDetection (Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 lastStuckCheckPos
+	METHOD moveTo (Lnet/minecraft/world/level/pathfinder/Path;D)Z
+		ARG 1 path
+		ARG 2 speedModifier
+	METHOD setMaxVisitedNodesMultiplier (F)V
+		ARG 1 maxVisitedNodesMultiplier
+	METHOD setSpeedModifier (D)V
+		ARG 1 speedModifier

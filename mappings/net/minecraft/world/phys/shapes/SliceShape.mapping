@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/phys/shapes/SliceShape
+	METHOD <init> (Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/core/Direction$Axis;I)V
+		ARG 1 delegate
+		ARG 2 axis

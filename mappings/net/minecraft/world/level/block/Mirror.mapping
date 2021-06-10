@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/block/Mirror
+	METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;Lcom/mojang/math/OctahedralGroup;)V
+		ARG 3 symbol
+		ARG 4 rotation

@@ -1,0 +1,6 @@
+CLASS net/minecraft/advancements/critereon/NetherTravelTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/LocationPredicate;Lnet/minecraft/advancements/critereon/LocationPredicate;Lnet/minecraft/advancements/critereon/DistancePredicate;)V
+			ARG 2 entered
+			ARG 3 exited
+			ARG 4 distance

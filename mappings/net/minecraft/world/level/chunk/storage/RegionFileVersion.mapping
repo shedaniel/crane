@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/chunk/storage/RegionFileVersion
+	METHOD <init> (ILnet/minecraft/world/level/chunk/storage/RegionFileVersion$StreamWrapper;Lnet/minecraft/world/level/chunk/storage/RegionFileVersion$StreamWrapper;)V
+		ARG 1 id
+		ARG 2 inputWrapper
+		ARG 3 outputWrapper

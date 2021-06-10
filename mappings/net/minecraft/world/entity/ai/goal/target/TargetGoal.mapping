@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/ai/goal/target/TargetGoal
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;ZZ)V
+		ARG 1 mob
+		ARG 2 mustSee
+		ARG 3 mustReach
+	METHOD setUnseenMemoryTicks (I)Lnet/minecraft/world/entity/ai/goal/target/TargetGoal;
+		ARG 1 unseenMemoryTicks

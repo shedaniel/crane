@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientboundUpdateAttributesPacket
+	METHOD <init> (ILjava/util/Collection;)V
+		ARG 1 entityId
+	CLASS AttributeSnapshot
+		METHOD <init> (Lnet/minecraft/world/entity/ai/attributes/Attribute;DLjava/util/Collection;)V
+			ARG 1 attribute
+			ARG 2 base

@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/model/geom/builders/LayerDefinition
+	METHOD <init> (Lnet/minecraft/client/model/geom/builders/MeshDefinition;Lnet/minecraft/client/model/geom/builders/MaterialDefinition;)V
+		ARG 1 mesh
+		ARG 2 material

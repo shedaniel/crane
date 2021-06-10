@@ -1,0 +1,4 @@
+CLASS net/minecraft/advancements/critereon/ConstructBeaconTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;)V
+			ARG 2 level

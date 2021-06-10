@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/StructureFeatureManager
+	METHOD <init> (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/level/levelgen/WorldGenSettings;)V
+		ARG 1 level
+		ARG 2 worldGenSettings

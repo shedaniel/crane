@@ -1,0 +1,5 @@
+CLASS net/minecraft/server/commands/SpreadPlayersCommand
+	CLASS Position
+		METHOD clamp (DDDD)Z
+			ARG 1 x
+			ARG 3 z

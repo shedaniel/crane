@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/behavior/StrollAroundPoi
+	METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;FI)V
+		ARG 1 memoryType
+		ARG 2 speedModifier
+		ARG 3 maxDistanceFromPoi

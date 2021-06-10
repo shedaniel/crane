@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/phys/EntityHitResult
+	METHOD <init> (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 entity

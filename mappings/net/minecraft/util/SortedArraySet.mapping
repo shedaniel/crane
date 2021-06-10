@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/SortedArraySet
+	METHOD <init> (ILjava/util/Comparator;)V
+		ARG 2 comparator

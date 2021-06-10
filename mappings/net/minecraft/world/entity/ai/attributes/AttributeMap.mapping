@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/attributes/AttributeMap
+	METHOD <init> (Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+		ARG 1 supplier

@@ -1,0 +1,4 @@
+CLASS net/minecraft/advancements/critereon/AbstractCriterionTriggerInstance
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
+		ARG 1 criterion
+		ARG 2 player

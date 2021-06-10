@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetLoreFunction
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;ZLjava/util/List;Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)V
+		ARG 2 replace
+		ARG 4 resolutionContext
+	CLASS Builder
+		METHOD setReplace (Z)Lnet/minecraft/world/level/storage/loot/functions/SetLoreFunction$Builder;
+			ARG 1 replace
+		METHOD setResolutionContext (Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)Lnet/minecraft/world/level/storage/loot/functions/SetLoreFunction$Builder;
+			ARG 1 resolutionContext

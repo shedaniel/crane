@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/animal/horse/Llama
+	METHOD joinCaravan (Lnet/minecraft/world/entity/animal/horse/Llama;)V
+		ARG 1 caravanHead
+	METHOD setDidSpit (Z)V
+		ARG 1 didSpit
+	CLASS LlamaGroupData
+		METHOD <init> (I)V
+			ARG 1 variant

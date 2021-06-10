@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/multiplayer/ClientChunkCache
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;I)V
+		ARG 1 level
+	CLASS Storage
+		METHOD <init> (Lnet/minecraft/client/multiplayer/ClientChunkCache;I)V
+			ARG 2 chunkRadius

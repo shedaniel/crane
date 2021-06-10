@@ -1,0 +1,4 @@
+CLASS com/mojang/realmsclient/util/task/ResettingWorldTask
+	METHOD <init> (JLnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)V
+		ARG 1 serverId
+		ARG 3 title

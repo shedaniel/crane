@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetTimePacket
+	METHOD <init> (JJZ)V
+		ARG 1 gameTime

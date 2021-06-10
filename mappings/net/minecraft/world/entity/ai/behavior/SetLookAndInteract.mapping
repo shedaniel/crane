@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/behavior/SetLookAndInteract
+	METHOD <init> (Lnet/minecraft/world/entity/EntityType;ILjava/util/function/Predicate;Ljava/util/function/Predicate;)V
+		ARG 1 type
+		ARG 3 selfFilter
+		ARG 4 targetFilter

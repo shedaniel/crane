@@ -1,0 +1,5 @@
+CLASS net/minecraft/advancements/critereon/LevitationTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/DistancePredicate;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;)V
+			ARG 2 distance
+			ARG 3 duration

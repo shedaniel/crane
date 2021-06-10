@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/block/model/multipart/OrCondition
+	METHOD <init> (Ljava/lang/Iterable;)V
+		ARG 1 conditions

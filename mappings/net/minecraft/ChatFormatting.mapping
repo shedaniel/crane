@@ -1,0 +1,7 @@
+CLASS net/minecraft/ChatFormatting
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;CZILjava/lang/Integer;)V
+		ARG 3 name
+		ARG 4 code
+		ARG 5 isFormat
+		ARG 6 id
+		ARG 7 color

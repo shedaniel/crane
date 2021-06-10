@@ -1,0 +1,6 @@
+CLASS com/mojang/realmsclient/util/task/GetServerDetailsTask
+	METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lnet/minecraft/client/gui/screens/Screen;Lcom/mojang/realmsclient/dto/RealmsServer;Ljava/util/concurrent/locks/ReentrantLock;)V
+		ARG 1 mainScreen
+		ARG 2 lastScreen
+		ARG 3 server
+		ARG 4 connectLock

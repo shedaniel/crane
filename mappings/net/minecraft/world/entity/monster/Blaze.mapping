@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/monster/Blaze
+	CLASS BlazeAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Blaze;)V
+			ARG 1 blaze

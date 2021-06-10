@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/resources/SkinManager
+	METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureManager;Ljava/io/File;Lcom/mojang/authlib/minecraft/MinecraftSessionService;)V
+		ARG 1 textureManager
+		ARG 2 skinsDirectory
+		ARG 3 sessionService

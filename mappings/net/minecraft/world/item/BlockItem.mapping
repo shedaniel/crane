@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/BlockItem
+	METHOD <init> (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 block

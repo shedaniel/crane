@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/inventory/Slot
+	METHOD <init> (Lnet/minecraft/world/Container;III)V
+		ARG 1 container
+		ARG 2 slot
+		ARG 3 x
+		ARG 4 y

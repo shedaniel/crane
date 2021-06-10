@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/gui/screens/PresetFlatWorldScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/CreateFlatWorldScreen;)V
+		ARG 1 parent
+	CLASS PresetInfo
+		METHOD <init> (Lnet/minecraft/world/item/Item;Lnet/minecraft/network/chat/Component;Ljava/util/function/Function;)V
+			ARG 1 icon
+			ARG 2 name
+			ARG 3 settings
+	CLASS PresetsList
+		CLASS Entry
+			METHOD <init> (Lnet/minecraft/client/gui/screens/PresetFlatWorldScreen$PresetsList;Lnet/minecraft/client/gui/screens/PresetFlatWorldScreen$PresetInfo;)V
+				ARG 2 preset

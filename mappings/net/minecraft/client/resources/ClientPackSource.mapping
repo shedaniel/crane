@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/resources/ClientPackSource
+	METHOD <init> (Ljava/io/File;Lnet/minecraft/client/resources/AssetIndex;)V
+		ARG 1 serverPackDir
+		ARG 2 assetIndex

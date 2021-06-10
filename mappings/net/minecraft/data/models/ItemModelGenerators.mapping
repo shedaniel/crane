@@ -1,0 +1,3 @@
+CLASS net/minecraft/data/models/ItemModelGenerators
+	METHOD <init> (Ljava/util/function/BiConsumer;)V
+		ARG 1 output

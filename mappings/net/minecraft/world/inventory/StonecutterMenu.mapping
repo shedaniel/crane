@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/inventory/StonecutterMenu
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/inventory/ContainerLevelAccess;)V
+		ARG 3 access
+	METHOD registerUpdateListener (Ljava/lang/Runnable;)V
+		ARG 1 slotUpdateListener

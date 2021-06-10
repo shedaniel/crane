@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/particle/FallingDustParticle
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDFFFLnet/minecraft/client/particle/SpriteSet;)V
+		ARG 8 rCol
+	CLASS Provider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite

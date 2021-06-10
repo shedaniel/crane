@@ -1,0 +1,20 @@
+CLASS net/minecraft/client/renderer/texture/TextureAtlasSprite
+	METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureAtlas;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;IIIIILcom/mojang/blaze3d/platform/NativeImage;)V
+		ARG 1 atlas
+		ARG 6 x
+		ARG 7 y
+	CLASS Info
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;IILnet/minecraft/client/resources/metadata/animation/AnimationMetadataSection;)V
+			ARG 1 name
+			ARG 2 width
+			ARG 3 height
+			ARG 4 metadata
+	CLASS FrameInfo
+		METHOD <init> (II)V
+			ARG 1 index
+			ARG 2 time
+	CLASS AnimatedTexture
+		METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Ljava/util/List;ILnet/minecraft/client/renderer/texture/TextureAtlasSprite$InterpolationData;)V
+			ARG 2 frames
+			ARG 3 frameRowSize
+			ARG 4 interpolationData

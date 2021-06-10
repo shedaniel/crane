@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ServerboundCustomPayloadPacket
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 identifier
+		ARG 2 data

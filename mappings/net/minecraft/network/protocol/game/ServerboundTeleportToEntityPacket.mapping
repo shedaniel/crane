@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ServerboundTeleportToEntityPacket
+	METHOD <init> (Ljava/util/UUID;)V
+		ARG 1 uuid

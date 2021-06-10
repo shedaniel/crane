@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/resources/metadata/animation/AnimationFrame
+	METHOD <init> (II)V
+		ARG 1 index
+		ARG 2 time

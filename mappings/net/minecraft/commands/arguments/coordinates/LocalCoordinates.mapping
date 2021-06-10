@@ -1,0 +1,4 @@
+CLASS net/minecraft/commands/arguments/coordinates/LocalCoordinates
+	METHOD <init> (DDD)V
+		ARG 1 left
+		ARG 3 up

@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/level/pathfinder/Path
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 nodes
+		ARG 2 target
+		ARG 3 reached
+	METHOD setDebug ([Lnet/minecraft/world/level/pathfinder/Node;[Lnet/minecraft/world/level/pathfinder/Node;Ljava/util/Set;)V
+		ARG 1 openSet
+		ARG 2 closedSet
+		ARG 3 targetNodes
+	METHOD setNextNodeIndex (I)V
+		ARG 1 nextNodeIndex

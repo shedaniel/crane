@@ -1,0 +1,4 @@
+CLASS net/minecraft/advancements/critereon/MinMaxBounds
+	METHOD <init> (Ljava/lang/Number;Ljava/lang/Number;)V
+		ARG 1 min
+		ARG 2 max

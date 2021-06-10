@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/particle/ItemPickupParticle
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/client/renderer/RenderBuffers;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 entityRenderDispatcher
+		ARG 2 renderBuffers
+		ARG 5 target

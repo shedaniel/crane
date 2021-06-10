@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/effect/MobEffect
+	METHOD <init> (Lnet/minecraft/world/effect/MobEffectCategory;I)V
+		ARG 1 category
+		ARG 2 color

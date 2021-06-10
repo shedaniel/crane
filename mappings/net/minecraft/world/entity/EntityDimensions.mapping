@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/EntityDimensions
+	METHOD <init> (FFZ)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 fixed

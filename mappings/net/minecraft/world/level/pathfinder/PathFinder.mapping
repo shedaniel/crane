@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/pathfinder/PathFinder
+	METHOD <init> (Lnet/minecraft/world/level/pathfinder/NodeEvaluator;I)V
+		ARG 1 nodeEvaluator
+		ARG 2 maxVisitedNodes

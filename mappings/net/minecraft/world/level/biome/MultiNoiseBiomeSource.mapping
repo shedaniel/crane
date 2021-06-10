@@ -1,0 +1,22 @@
+CLASS net/minecraft/world/level/biome/MultiNoiseBiomeSource
+	METHOD <init> (JLjava/util/List;Lnet/minecraft/world/level/biome/MultiNoiseBiomeSource$NoiseParameters;Lnet/minecraft/world/level/biome/MultiNoiseBiomeSource$NoiseParameters;Lnet/minecraft/world/level/biome/MultiNoiseBiomeSource$NoiseParameters;Lnet/minecraft/world/level/biome/MultiNoiseBiomeSource$NoiseParameters;Ljava/util/Optional;)V
+		ARG 1 seed
+		ARG 3 parameters
+		ARG 4 temperatureParams
+		ARG 5 humidityParams
+		ARG 6 altitudeParams
+		ARG 7 weirdnessParams
+	CLASS Preset
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lcom/mojang/datafixers/util/Function3;)V
+			ARG 1 name
+			ARG 2 biomeSource
+	CLASS PresetInstance
+		METHOD <init> (Lnet/minecraft/world/level/biome/MultiNoiseBiomeSource$Preset;Lnet/minecraft/core/Registry;J)V
+			ARG 1 preset
+			ARG 2 biomes
+			ARG 3 seed
+	CLASS NoiseParameters
+		METHOD <init> (ILjava/util/List;)V
+			ARG 1 firstOctave
+		METHOD <init> (I[D)V
+			ARG 1 firstOctave

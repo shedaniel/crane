@@ -1,0 +1,3 @@
+CLASS com/mojang/realmsclient/dto/WorldTemplatePaginatedList
+	METHOD <init> (I)V
+		ARG 1 size

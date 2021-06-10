@@ -1,0 +1,13 @@
+CLASS net/minecraft/client/gui/screens/worldselection/WorldGenSettingsComponent
+	METHOD <init> (Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/levelgen/WorldGenSettings;Ljava/util/Optional;Ljava/util/OptionalLong;)V
+		ARG 1 registryHolder
+		ARG 2 settings
+		ARG 3 preset
+		ARG 4 seed
+	METHOD importSettings (Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/levelgen/WorldGenSettings;)V
+		ARG 1 registryHolder
+		ARG 2 settings
+	METHOD init (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/Font;)V
+		ARG 3 font
+	METHOD updateSettings (Lnet/minecraft/world/level/levelgen/WorldGenSettings;)V
+		ARG 1 settings

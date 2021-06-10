@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/ExtraCodecs
+	CLASS XorCodec
+		METHOD <init> (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V
+			ARG 1 first
+			ARG 2 second

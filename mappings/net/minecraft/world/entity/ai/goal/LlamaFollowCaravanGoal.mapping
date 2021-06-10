@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/goal/LlamaFollowCaravanGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/horse/Llama;D)V
+		ARG 1 llama
+		ARG 2 speedModifier

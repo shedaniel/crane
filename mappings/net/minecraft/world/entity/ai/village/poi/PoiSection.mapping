@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/village/poi/PoiSection
+	METHOD <init> (Ljava/lang/Runnable;ZLjava/util/List;)V
+		ARG 1 setDirty
+		ARG 2 isValid

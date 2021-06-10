@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/LightningBolt
+	METHOD setCause (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 cause
+	METHOD setVisualOnly (Z)V
+		ARG 1 visualOnly

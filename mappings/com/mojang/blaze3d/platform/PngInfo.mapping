@@ -1,0 +1,7 @@
+CLASS com/mojang/blaze3d/platform/PngInfo
+	CLASS StbReaderBufferedChannel
+		METHOD <init> (Ljava/nio/channels/ReadableByteChannel;)V
+			ARG 1 channel
+	CLASS StbReaderSeekableByteChannel
+		METHOD <init> (Ljava/nio/channels/SeekableByteChannel;)V
+			ARG 1 channel

@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/resources/SplashManager
+	METHOD <init> (Lnet/minecraft/client/User;)V
+		ARG 1 user

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/item/ItemEntity
+	METHOD setOwner (Ljava/util/UUID;)V
+		ARG 1 owner
+	METHOD setPickUpDelay (I)V
+		ARG 1 pickupDelay
+	METHOD setThrower (Ljava/util/UUID;)V
+		ARG 1 thrower

@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/gui/spectator/SpectatorMenu
+	METHOD <init> (Lnet/minecraft/client/gui/spectator/SpectatorMenuListener;)V
+		ARG 1 listener
+	METHOD selectCategory (Lnet/minecraft/client/gui/spectator/SpectatorMenuCategory;)V
+		ARG 1 category
+	METHOD selectSlot (I)V
+		ARG 1 selectedSlot
+	CLASS ScrollMenuItem
+		METHOD <init> (IZ)V
+			ARG 1 direction
+			ARG 2 enabled

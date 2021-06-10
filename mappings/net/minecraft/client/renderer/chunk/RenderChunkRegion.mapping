@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/renderer/chunk/RenderChunkRegion
+	METHOD <init> (Lnet/minecraft/world/level/Level;II[[Lnet/minecraft/world/level/chunk/LevelChunk;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 centerX
+		ARG 3 centerZ
+		ARG 4 chunks
+		ARG 5 start

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/storage/loot/ValidationContext
+	METHOD <init> (Lcom/google/common/collect/Multimap;Ljava/util/function/Supplier;Lnet/minecraft/world/level/storage/loot/parameters/LootContextParamSet;Ljava/util/function/Function;Ljava/util/Set;Ljava/util/function/Function;Ljava/util/Set;)V
+		ARG 1 problems
+		ARG 2 context
+		ARG 3 params
+		ARG 4 conditionResolver
+		ARG 5 visitedConditions
+		ARG 6 tableResolver
+		ARG 7 visitedTables

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/animal/Parrot
+	METHOD setRecordPlayingNearby (Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 jukebox
+		ARG 2 partyParrot

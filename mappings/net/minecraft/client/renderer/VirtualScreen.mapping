@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/VirtualScreen
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft

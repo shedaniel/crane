@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/TieredItem
+	METHOD <init> (Lnet/minecraft/world/item/Tier;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 tier

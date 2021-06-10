@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/game/ServerboundRecipeBookChangeSettingsPacket
+	METHOD <init> (Lnet/minecraft/world/inventory/RecipeBookType;ZZ)V
+		ARG 1 bookType
+		ARG 2 isOpen
+		ARG 3 isFiltering

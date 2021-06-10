@@ -1,0 +1,4 @@
+CLASS com/mojang/realmsclient/util/task/SwitchSlotTask
+	METHOD <init> (JILjava/lang/Runnable;)V
+		ARG 1 worldId
+		ARG 3 slot

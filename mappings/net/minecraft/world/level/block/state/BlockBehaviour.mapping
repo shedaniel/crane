@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/level/block/state/BlockBehaviour
+	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 properties
 	METHOD attack (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 state
 		ARG 2 level

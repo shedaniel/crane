@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ServerboundEditBookPacket
+	METHOD <init> (Lnet/minecraft/world/item/ItemStack;ZI)V
+		ARG 2 signing
+		ARG 3 slot

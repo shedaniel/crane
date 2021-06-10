@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/goal/FollowParentGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/Animal;D)V
+		ARG 1 animal
+		ARG 2 speedModifier

@@ -5,7 +5,36 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 1 souce
 	METHOD getExperienceReward (Lnet/minecraft/world/entity/player/Player;)I
 		ARG 1 player
+	METHOD hurt (Lnet/minecraft/world/damagesource/DamageSource;F)Z
+		ARG 1 lastDamageSource
+		ARG 2 lastHurt
+	METHOD lerpHeadTo (FI)V
+		ARG 2 lerpHeadSteps
+	METHOD lerpTo (DDDFFIZ)V
+		ARG 1 lerpX
+		ARG 3 lerpY
+		ARG 5 lerpZ
 	METHOD playHurtSound (Lnet/minecraft/world/damagesource/DamageSource;)V
 		ARG 1 source
+	METHOD setAbsorptionAmount (F)V
+		ARG 1 absorptionAmount
+	METHOD setDiscardFriction (Z)V
+		ARG 1 discardFriction
+	METHOD setJumping (Z)V
+		ARG 1 jumping
+	METHOD setLastHurtByMob (Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 lastHurtByMob
+	METHOD setLastHurtByPlayer (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 lastHurtByPlayer
+	METHOD setNoActionTime (I)V
+		ARG 1 noActionTime
 	METHOD setSpeed (F)V
 		ARG 1 speed
+	METHOD setYBodyRot (F)V
+		ARG 1 yBodyRot
+	METHOD setYHeadRot (F)V
+		ARG 1 yHeadRot
+	METHOD startAutoSpinAttack (I)V
+		ARG 1 autoSpinAttackTicks
+	METHOD swing (Lnet/minecraft/world/InteractionHand;Z)V
+		ARG 1 swingingArm

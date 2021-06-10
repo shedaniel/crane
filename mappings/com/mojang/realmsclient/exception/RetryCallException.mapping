@@ -1,0 +1,3 @@
+CLASS com/mojang/realmsclient/exception/RetryCallException
+	METHOD <init> (II)V
+		ARG 1 delaySeconds

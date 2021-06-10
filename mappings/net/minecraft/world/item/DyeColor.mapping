@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/item/DyeColor
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;ILnet/minecraft/world/level/material/MaterialColor;II)V
+		ARG 3 id
+		ARG 4 name
+		ARG 6 color
+		ARG 7 fireworkColor
+		ARG 8 textColor

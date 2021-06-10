@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/valueproviders/TrapezoidFloat
+	METHOD <init> (FFF)V
+		ARG 1 min
+		ARG 2 max
+		ARG 3 plateau

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/NaturalSpawner
+	CLASS SpawnState
+		METHOD <init> (ILit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;Lnet/minecraft/world/level/PotentialCalculator;)V
+			ARG 1 spawnableChunkCount
+			ARG 2 mobCategoryCounts
+			ARG 3 spawnPotential
+		METHOD canSpawn (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/chunk/ChunkAccess;)Z
+			ARG 1 lastCheckedType
+			ARG 2 lastCheckedPos

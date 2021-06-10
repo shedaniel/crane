@@ -1,4 +1,6 @@
 CLASS net/minecraft/client/Game
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
 	METHOD setSessionEventListener (Lcom/mojang/bridge/launcher/SessionEventListener;)V
 		ARG 1 listener
 	CLASS Metrics

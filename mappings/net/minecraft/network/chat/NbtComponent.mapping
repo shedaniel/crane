@@ -12,3 +12,20 @@ CLASS net/minecraft/network/chat/NbtComponent
 		ARG 0 string
 	METHOD getData (Lnet/minecraft/commands/CommandSourceStack;)Ljava/util/stream/Stream;
 		ARG 1 commandSources
+	CLASS BlockNbtComponent
+		METHOD <init> (Ljava/lang/String;Lnet/minecraft/commands/arguments/NbtPathArgument$NbtPath;ZLjava/lang/String;Lnet/minecraft/commands/arguments/coordinates/Coordinates;Ljava/util/Optional;)V
+			ARG 4 posPattern
+			ARG 5 compiledPos
+		METHOD <init> (Ljava/lang/String;ZLjava/lang/String;Ljava/util/Optional;)V
+			ARG 3 posPattern
+	CLASS EntityNbtComponent
+		METHOD <init> (Ljava/lang/String;Lnet/minecraft/commands/arguments/NbtPathArgument$NbtPath;ZLjava/lang/String;Lnet/minecraft/commands/arguments/selector/EntitySelector;Ljava/util/Optional;)V
+			ARG 4 selectorPattern
+			ARG 5 compiledSelector
+		METHOD <init> (Ljava/lang/String;ZLjava/lang/String;Ljava/util/Optional;)V
+			ARG 3 selectorPattern
+	CLASS StorageNbtComponent
+		METHOD <init> (Ljava/lang/String;Lnet/minecraft/commands/arguments/NbtPathArgument$NbtPath;ZLnet/minecraft/resources/ResourceLocation;Ljava/util/Optional;)V
+			ARG 4 id
+		METHOD <init> (Ljava/lang/String;ZLnet/minecraft/resources/ResourceLocation;Ljava/util/Optional;)V
+			ARG 3 id

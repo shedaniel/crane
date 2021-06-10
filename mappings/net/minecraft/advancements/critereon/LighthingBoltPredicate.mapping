@@ -1,0 +1,4 @@
+CLASS net/minecraft/advancements/critereon/LighthingBoltPredicate
+	METHOD <init> (Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;Lnet/minecraft/advancements/critereon/EntityPredicate;)V
+		ARG 1 blocksSetOnFire
+		ARG 2 entityStruck

@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/multiplayer/ClientPacketListener
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/Connection;Lcom/mojang/authlib/GameProfile;)V
+		ARG 1 minecraft
+		ARG 2 callbackScreen
+		ARG 3 connection
+		ARG 4 localGameProfile

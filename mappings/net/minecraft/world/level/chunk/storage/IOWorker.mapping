@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/chunk/storage/IOWorker
+	CLASS PendingStore
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 data

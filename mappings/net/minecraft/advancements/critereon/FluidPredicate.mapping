@@ -1,0 +1,12 @@
+CLASS net/minecraft/advancements/critereon/FluidPredicate
+	METHOD <init> (Lnet/minecraft/tags/Tag;Lnet/minecraft/world/level/material/Fluid;Lnet/minecraft/advancements/critereon/StatePropertiesPredicate;)V
+		ARG 1 tag
+		ARG 2 fluid
+		ARG 3 properties
+	CLASS Builder
+		METHOD of (Lnet/minecraft/tags/Tag;)Lnet/minecraft/advancements/critereon/FluidPredicate$Builder;
+			ARG 1 fluids
+		METHOD of (Lnet/minecraft/world/level/material/Fluid;)Lnet/minecraft/advancements/critereon/FluidPredicate$Builder;
+			ARG 1 fluid
+		METHOD setProperties (Lnet/minecraft/advancements/critereon/StatePropertiesPredicate;)Lnet/minecraft/advancements/critereon/FluidPredicate$Builder;
+			ARG 1 properties

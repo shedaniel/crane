@@ -1,0 +1,27 @@
+CLASS net/minecraft/world/level/border/WorldBorder
+	METHOD setAbsoluteMaxSize (I)V
+		ARG 1 absoluteMaxSize
+	METHOD setCenter (DD)V
+		ARG 1 centerX
+	METHOD setDamagePerBlock (D)V
+		ARG 1 damagePerBlock
+	METHOD setDamageSafeZone (D)V
+		ARG 1 damageSafeZone
+	METHOD setWarningBlocks (I)V
+		ARG 1 warningBlocks
+	METHOD setWarningTime (I)V
+		ARG 1 warningTime
+	CLASS Settings
+		METHOD <init> (DDDDIIDJD)V
+			ARG 1 centerX
+			ARG 3 centerZ
+			ARG 5 damagePerBlock
+			ARG 7 safeZone
+			ARG 9 warningBlocks
+	CLASS MovingBorderExtent
+		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;DDJ)V
+			ARG 2 from
+			ARG 4 to
+	CLASS StaticBorderExtent
+		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;D)V
+			ARG 2 size

@@ -1,0 +1,5 @@
+CLASS net/minecraft/commands/arguments/EntityAnchorArgument
+	CLASS Anchor
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/function/BiFunction;)V
+			ARG 3 name
+			ARG 4 transform

@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/heightproviders/BiasedToBottomHeight
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/VerticalAnchor;Lnet/minecraft/world/level/levelgen/VerticalAnchor;I)V
+		ARG 1 minInclusive
+		ARG 2 maxInclusive
+		ARG 3 inner

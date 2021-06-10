@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetEnchantmentsFunction
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Ljava/util/Map;Z)V
+		ARG 3 add
+	CLASS Builder
+		METHOD <init> (Z)V
+			ARG 1 add

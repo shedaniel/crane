@@ -1,0 +1,5 @@
+CLASS net/minecraft/advancements/critereon/TargetBlockTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
+			ARG 2 signalStrength
+			ARG 3 projectile

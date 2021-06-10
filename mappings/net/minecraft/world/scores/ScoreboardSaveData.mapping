@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/scores/ScoreboardSaveData
+	METHOD <init> (Lnet/minecraft/world/scores/Scoreboard;)V
+		ARG 1 scoreboard

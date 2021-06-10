@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/food/FoodData
+	METHOD setExhaustion (F)V
+		ARG 1 exhaustionLevel
+	METHOD setFoodLevel (I)V
+		ARG 1 foodLevel
+	METHOD setSaturation (F)V
+		ARG 1 saturationLevel

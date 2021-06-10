@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/profiling/ActiveProfiler
+	METHOD <init> (Ljava/util/function/LongSupplier;Ljava/util/function/IntSupplier;Z)V
+		ARG 1 getRealTime
+		ARG 2 getTickTime
+		ARG 3 warn

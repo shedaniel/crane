@@ -1,0 +1,3 @@
+CLASS com/mojang/realmsclient/util/task/LongRunningTask
+	METHOD setScreen (Lcom/mojang/realmsclient/gui/screens/RealmsLongRunningMcoTaskScreen;)V
+		ARG 1 longRunningMcoTaskScreen

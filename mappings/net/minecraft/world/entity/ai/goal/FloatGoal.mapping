@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/goal/FloatGoal
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 mob

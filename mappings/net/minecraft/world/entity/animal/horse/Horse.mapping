@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/animal/horse/Horse
+	CLASS HorseGroupData
+		METHOD <init> (Lnet/minecraft/world/entity/animal/horse/Variant;)V
+			ARG 1 variant

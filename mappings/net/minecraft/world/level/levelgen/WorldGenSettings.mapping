@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/WorldGenSettings
+	METHOD <init> (JZZLnet/minecraft/core/MappedRegistry;Ljava/util/Optional;)V
+		ARG 1 seed
+		ARG 3 generateFeatures
+		ARG 4 generateBonusChest
+		ARG 5 dimensions

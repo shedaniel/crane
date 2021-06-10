@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/inventory/MenuType
+	METHOD <init> (Lnet/minecraft/world/inventory/MenuType$MenuSupplier;)V
+		ARG 1 constructor

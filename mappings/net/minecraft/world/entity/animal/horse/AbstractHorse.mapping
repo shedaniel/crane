@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/animal/horse/AbstractHorse
+	METHOD setIsJumping (Z)V
+		ARG 1 isJumping
+	METHOD setTemper (I)V
+		ARG 1 temper

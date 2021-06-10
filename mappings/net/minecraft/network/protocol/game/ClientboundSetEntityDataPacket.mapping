@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetEntityDataPacket
+	METHOD <init> (ILnet/minecraft/network/syncher/SynchedEntityData;Z)V
+		ARG 1 id

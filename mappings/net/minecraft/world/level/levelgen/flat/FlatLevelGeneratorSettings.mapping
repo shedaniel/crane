@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/StructureSettings;Lnet/minecraft/core/Registry;)V
+		ARG 1 structureSettings
+		ARG 2 biomes
+	METHOD setBiome (Ljava/util/function/Supplier;)V
+		ARG 1 biome

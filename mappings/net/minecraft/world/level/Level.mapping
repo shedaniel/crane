@@ -1,4 +1,11 @@
 CLASS net/minecraft/world/level/Level
+	METHOD <init> (Lnet/minecraft/world/level/storage/WritableLevelData;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/dimension/DimensionType;Ljava/util/function/Supplier;ZZJ)V
+		ARG 1 levelData
+		ARG 2 dimension
+		ARG 3 dimensionType
+		ARG 4 profiler
+		ARG 5 isClientSide
+		ARG 6 isDebug
 	METHOD addAlwaysVisibleParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
 		ARG 1 particle
 	METHOD addAlwaysVisibleParticle (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V

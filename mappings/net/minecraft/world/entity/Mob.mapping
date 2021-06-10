@@ -23,13 +23,21 @@ CLASS net/minecraft/world/entity/Mob
 		ARG 3 xRot
 	METHOD pickUpItem (Lnet/minecraft/world/entity/item/ItemEntity;)V
 		ARG 1 entity
+	METHOD restrictTo (Lnet/minecraft/core/BlockPos;I)V
+		ARG 1 restrictCenter
 	METHOD setBaby (Z)V
 		ARG 1 baby
+	METHOD setCanPickUpLoot (Z)V
+		ARG 1 canPickUpLoot
+	METHOD setDelayedLeashHolderId (I)V
+		ARG 1 delayedLeashHolderId
 	METHOD setGuaranteedDrop (Lnet/minecraft/world/entity/EquipmentSlot;)V
 		ARG 1 slot
 	METHOD setItemSlotAndDropWhenKilled (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 slot
 		ARG 2 stack
+	METHOD setLeashedTo (Lnet/minecraft/world/entity/Entity;Z)V
+		ARG 1 leashHolder
 	METHOD setPathfindingMalus (Lnet/minecraft/world/level/pathfinder/BlockPathTypes;F)V
 		ARG 1 types
 		ARG 2 malus

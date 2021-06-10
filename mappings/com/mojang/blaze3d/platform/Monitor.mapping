@@ -1,0 +1,3 @@
+CLASS com/mojang/blaze3d/platform/Monitor
+	METHOD <init> (J)V
+		ARG 1 monitor

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/monster/piglin/StopAdmiringIfTiredOfTryingToReachItem
+	METHOD <init> (II)V
+		ARG 1 maxTimeToReachItem
+		ARG 2 disableTime

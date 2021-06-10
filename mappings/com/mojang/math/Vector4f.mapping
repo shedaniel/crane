@@ -1,0 +1,11 @@
+CLASS com/mojang/math/Vector4f
+	METHOD <init> (FFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w
+	METHOD set (FFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w

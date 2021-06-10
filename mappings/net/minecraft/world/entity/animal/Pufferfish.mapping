@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/animal/Pufferfish
+	CLASS PufferfishPuffGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Pufferfish;)V
+			ARG 1 fish

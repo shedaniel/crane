@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetHealthPacket
+	METHOD <init> (FIF)V
+		ARG 1 health
+		ARG 2 food
+		ARG 3 saturation

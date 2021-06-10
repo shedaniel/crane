@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/item/crafting/ShapedRecipe
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;IILnet/minecraft/core/NonNullList;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 id
+		ARG 2 group
+		ARG 3 width
+		ARG 4 height
+		ARG 5 recipeItems
+		ARG 6 result

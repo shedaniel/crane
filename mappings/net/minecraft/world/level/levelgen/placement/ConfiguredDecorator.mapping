@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/placement/ConfiguredDecorator
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/placement/FeatureDecorator;Lnet/minecraft/world/level/levelgen/feature/configurations/DecoratorConfiguration;)V
+		ARG 1 decorator
+		ARG 2 config

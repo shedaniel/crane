@@ -1,0 +1,16 @@
+CLASS net/minecraft/client/renderer/texture/Stitcher
+	METHOD <init> (III)V
+		ARG 1 maxWidth
+		ARG 2 maxHeight
+		ARG 3 mipLevel
+	CLASS Holder
+		METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;I)V
+			ARG 1 spriteInfo
+	CLASS Region
+		METHOD <init> (IIII)V
+			ARG 1 originX
+			ARG 2 originY
+			ARG 3 width
+			ARG 4 height
+		METHOD add (Lnet/minecraft/client/renderer/texture/Stitcher$Holder;)Z
+			ARG 1 holder

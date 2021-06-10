@@ -1,0 +1,12 @@
+CLASS com/mojang/realmsclient/gui/screens/RealmsGenericErrorScreen
+	METHOD <init> (Lcom/mojang/realmsclient/exception/RealmsServiceException;Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 2 nextScreen
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 2 nextScreen
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 3 nextScreen
+	METHOD errorMessage (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 line2
+	METHOD errorMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 line1
+		ARG 2 line2

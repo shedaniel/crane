@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/feature/foliageplacers/FoliagePlacer
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;)V
+		ARG 1 radius
+		ARG 2 offset
+	CLASS FoliageAttachment
+		METHOD <init> (Lnet/minecraft/core/BlockPos;IZ)V
+			ARG 1 pos
+			ARG 2 radiusOffset
+			ARG 3 doubleTrunk

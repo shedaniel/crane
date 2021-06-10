@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/phys/shapes/IdenticalMerger
+	METHOD <init> (Lit/unimi/dsi/fastutil/doubles/DoubleList;)V
+		ARG 1 coords

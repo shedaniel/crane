@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/item/trading/MerchantOffer
+	METHOD <init> (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;IIIFI)V
+		ARG 1 baseCostA
+		ARG 2 costB
+		ARG 3 result
+		ARG 4 uses
+		ARG 5 maxUses
+		ARG 6 xp
+		ARG 7 priceMultiplier
+		ARG 8 demand
+	METHOD setSpecialPriceDiff (I)V
+		ARG 1 specialPriceDiff

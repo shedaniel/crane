@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/animal/Fox
+	CLASS Type
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;[Lnet/minecraft/resources/ResourceKey;)V
+			ARG 3 id
+			ARG 4 name
+	CLASS FoxGroupData
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Fox$Type;)V
+			ARG 1 type
+	CLASS FoxFollowParentGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Fox;Lnet/minecraft/world/entity/animal/Fox;D)V
+			ARG 2 fox

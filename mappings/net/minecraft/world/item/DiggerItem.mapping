@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/DiggerItem
+	METHOD <init> (FFLnet/minecraft/world/item/Tier;Lnet/minecraft/tags/Tag;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 4 blocks

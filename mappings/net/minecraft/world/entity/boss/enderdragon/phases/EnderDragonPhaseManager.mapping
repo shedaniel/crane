@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/boss/enderdragon/phases/EnderDragonPhaseManager
+	METHOD <init> (Lnet/minecraft/world/entity/boss/enderdragon/EnderDragon;)V
+		ARG 1 dragon

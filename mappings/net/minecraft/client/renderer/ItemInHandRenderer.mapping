@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/renderer/ItemInHandRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	CLASS HandRenderSelection
+		METHOD <init> (Ljava/lang/String;IZZ)V
+			ARG 3 renderMainHand
+			ARG 4 renderOffHand

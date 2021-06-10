@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/CompoundContainer
+	METHOD <init> (Lnet/minecraft/world/Container;Lnet/minecraft/world/Container;)V
+		ARG 1 container1
+		ARG 2 container2

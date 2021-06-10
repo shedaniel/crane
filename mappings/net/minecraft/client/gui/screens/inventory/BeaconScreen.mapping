@@ -5,3 +5,16 @@ CLASS net/minecraft/client/gui/screens/inventory/BeaconScreen
 		ARG 3 title
 	METHOD addBeaconButton (Lnet/minecraft/client/gui/components/AbstractWidget;)V
 		ARG 1 widget
+	CLASS BeaconPowerButton
+		METHOD <init> (Lnet/minecraft/client/gui/screens/inventory/BeaconScreen;IILnet/minecraft/world/effect/MobEffect;ZI)V
+			ARG 5 isPrimary
+			ARG 6 tier
+		METHOD setEffect (Lnet/minecraft/world/effect/MobEffect;)V
+			ARG 1 effect
+	CLASS BeaconScreenButton
+		METHOD setSelected (Z)V
+			ARG 1 selected
+	CLASS BeaconSpriteScreenButton
+		METHOD <init> (Lnet/minecraft/client/gui/screens/inventory/BeaconScreen;IIIILnet/minecraft/network/chat/Component;)V
+			ARG 4 iconX
+			ARG 5 iconY

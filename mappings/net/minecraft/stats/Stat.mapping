@@ -1,0 +1,5 @@
+CLASS net/minecraft/stats/Stat
+	METHOD <init> (Lnet/minecraft/stats/StatType;Ljava/lang/Object;Lnet/minecraft/stats/StatFormatter;)V
+		ARG 1 type
+		ARG 2 value
+		ARG 3 formatter

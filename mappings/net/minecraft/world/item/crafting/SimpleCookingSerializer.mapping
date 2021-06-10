@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/item/crafting/SimpleCookingSerializer
+	METHOD <init> (Lnet/minecraft/world/item/crafting/SimpleCookingSerializer$CookieBaker;I)V
+		ARG 1 factory
+		ARG 2 defaultCookingTime

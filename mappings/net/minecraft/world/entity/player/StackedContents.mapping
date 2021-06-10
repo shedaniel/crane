@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/player/StackedContents
+	CLASS RecipePicker
+		METHOD <init> (Lnet/minecraft/world/entity/player/StackedContents;Lnet/minecraft/world/item/crafting/Recipe;)V
+			ARG 2 recipe

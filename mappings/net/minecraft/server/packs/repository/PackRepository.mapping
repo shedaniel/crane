@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/packs/repository/PackRepository
+	METHOD <init> (Lnet/minecraft/server/packs/repository/Pack$PackConstructor;[Lnet/minecraft/server/packs/repository/RepositorySource;)V
+		ARG 1 constructor

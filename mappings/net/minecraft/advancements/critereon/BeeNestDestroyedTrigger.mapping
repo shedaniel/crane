@@ -1,0 +1,6 @@
+CLASS net/minecraft/advancements/critereon/BeeNestDestroyedTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/advancements/critereon/ItemPredicate;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;)V
+			ARG 2 block
+			ARG 3 item
+			ARG 4 numBees

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/goal/LookAtTradingPlayerGoal
+	METHOD <init> (Lnet/minecraft/world/entity/npc/AbstractVillager;)V
+		ARG 1 villager

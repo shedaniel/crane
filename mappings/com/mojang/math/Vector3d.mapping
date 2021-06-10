@@ -1,0 +1,7 @@
+CLASS com/mojang/math/Vector3d
+	METHOD <init> (DDD)V
+		ARG 1 x
+		ARG 3 y
+	METHOD set (DDD)V
+		ARG 1 x
+		ARG 3 y

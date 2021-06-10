@@ -1,0 +1,22 @@
+CLASS net/minecraft/world/level/saveddata/maps/MapItemSavedData
+	METHOD <init> (IIBZZZLnet/minecraft/resources/ResourceKey;)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 scale
+		ARG 4 trackingPosition
+		ARG 5 unlimitedTracking
+		ARG 6 locked
+		ARG 7 dimension
+	CLASS MapPatch
+		METHOD <init> (IIII[B)V
+			ARG 1 startX
+			ARG 2 startY
+			ARG 3 width
+			ARG 4 height
+			ARG 5 mapColors
+	CLASS HoldingPlayer
+		METHOD <init> (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;Lnet/minecraft/world/entity/player/Player;)V
+			ARG 2 player
+		METHOD markColorsDirty (II)V
+			ARG 1 minDirtyX
+			ARG 2 minDirtyY

@@ -1,0 +1,3 @@
+CLASS com/mojang/blaze3d/audio/OggAudioStream
+	METHOD <init> (Ljava/io/InputStream;)V
+		ARG 1 input

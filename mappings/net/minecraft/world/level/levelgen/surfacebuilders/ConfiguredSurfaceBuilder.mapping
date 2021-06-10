@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/surfacebuilders/ConfiguredSurfaceBuilder
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/surfacebuilders/SurfaceBuilder;Lnet/minecraft/world/level/levelgen/surfacebuilders/SurfaceBuilderConfiguration;)V
+		ARG 1 surfaceBuilder
+		ARG 2 config

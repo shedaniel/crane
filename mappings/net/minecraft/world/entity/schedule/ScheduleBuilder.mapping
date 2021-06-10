@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/schedule/ScheduleBuilder
+	METHOD <init> (Lnet/minecraft/world/entity/schedule/Schedule;)V
+		ARG 1 schedule
+	CLASS ActivityTransition
+		METHOD <init> (ILnet/minecraft/world/entity/schedule/Activity;)V
+			ARG 1 time
+			ARG 2 activity

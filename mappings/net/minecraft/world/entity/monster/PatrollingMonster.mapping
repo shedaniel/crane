@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/monster/PatrollingMonster
+	METHOD setPatrolLeader (Z)V
+		ARG 1 patrolLeader
+	METHOD setPatrolTarget (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 patrolTarget
+	METHOD setPatrolling (Z)V
+		ARG 1 patrolling
+	CLASS LongDistancePatrolGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/PatrollingMonster;DD)V
+			ARG 1 mob
+			ARG 2 speedModifier

@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/gui/screens/ConfirmScreen
+	METHOD <init> (Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 callback
+		ARG 3 title2
+		ARG 4 yesButton
+		ARG 5 noButton
+	METHOD setDelay (I)V
+		ARG 1 delayTicker

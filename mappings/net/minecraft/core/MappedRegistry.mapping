@@ -1,0 +1,8 @@
+CLASS net/minecraft/core/MappedRegistry
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;)V
+		ARG 2 elementsLifecycle
+	CLASS RegistryEntry
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;ILjava/lang/Object;)V
+			ARG 1 key
+			ARG 2 id
+			ARG 3 value

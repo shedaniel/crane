@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/RedstoneTorchBlock
+	CLASS Toggle
+		METHOD <init> (Lnet/minecraft/core/BlockPos;J)V
+			ARG 1 pos
+			ARG 2 when

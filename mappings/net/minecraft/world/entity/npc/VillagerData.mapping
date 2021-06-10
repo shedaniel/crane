@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/npc/VillagerData
+	METHOD <init> (Lnet/minecraft/world/entity/npc/VillagerType;Lnet/minecraft/world/entity/npc/VillagerProfession;I)V
+		ARG 1 type
+		ARG 2 profession

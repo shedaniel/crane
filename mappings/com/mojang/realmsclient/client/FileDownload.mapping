@@ -1,0 +1,15 @@
+CLASS com/mojang/realmsclient/client/FileDownload
+	CLASS ProgressListener
+		METHOD <init> (Lcom/mojang/realmsclient/client/FileDownload;Ljava/lang/String;Ljava/io/File;Lnet/minecraft/world/level/storage/LevelStorageSource;Lcom/mojang/realmsclient/gui/screens/RealmsDownloadLatestWorldScreen$DownloadStatus;)V
+			ARG 2 worldName
+			ARG 3 tempFile
+			ARG 4 levelStorageSource
+			ARG 5 downloadStatus
+	CLASS DownloadCountingOutputStream
+		METHOD setListener (Ljava/awt/event/ActionListener;)V
+			ARG 1 listener
+	CLASS ResourcePackProgressListener
+		METHOD <init> (Lcom/mojang/realmsclient/client/FileDownload;Ljava/io/File;Lcom/mojang/realmsclient/gui/screens/RealmsDownloadLatestWorldScreen$DownloadStatus;Lcom/mojang/realmsclient/dto/WorldDownload;)V
+			ARG 2 tempFile
+			ARG 3 downloadStatus
+			ARG 4 worldDownload

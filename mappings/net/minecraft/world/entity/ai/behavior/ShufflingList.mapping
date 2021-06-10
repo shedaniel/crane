@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/behavior/ShufflingList
+	CLASS WeightedEntry
+		METHOD <init> (Ljava/lang/Object;I)V
+			ARG 1 data
+			ARG 2 weight

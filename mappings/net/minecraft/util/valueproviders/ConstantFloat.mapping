@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/valueproviders/ConstantFloat
+	METHOD <init> (F)V
+		ARG 1 value

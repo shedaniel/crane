@@ -1,0 +1,14 @@
+CLASS net/minecraft/server/players/GameProfileCache
+	METHOD <init> (Lcom/mojang/authlib/GameProfileRepository;Ljava/io/File;)V
+		ARG 1 profileRepository
+		ARG 2 file
+	METHOD setExecutor (Ljava/util/concurrent/Executor;)V
+		ARG 1 executor
+	METHOD setUsesAuthentication (Z)V
+		ARG 0 usesAuthentication
+	CLASS GameProfileInfo
+		METHOD <init> (Lcom/mojang/authlib/GameProfile;Ljava/util/Date;)V
+			ARG 1 profile
+			ARG 2 expirationDate
+		METHOD setLastAccess (J)V
+			ARG 1 lastAccess

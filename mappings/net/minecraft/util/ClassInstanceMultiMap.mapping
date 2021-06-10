@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/ClassInstanceMultiMap
+	METHOD <init> (Ljava/lang/Class;)V
+		ARG 1 baseClass

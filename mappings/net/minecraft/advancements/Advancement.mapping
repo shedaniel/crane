@@ -25,6 +25,10 @@ CLASS net/minecraft/advancements/Advancement
 			ARG 1 parent
 		METHOD parent (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 parentId
+		METHOD requirements (Lnet/minecraft/advancements/RequirementsStrategy;)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 1 requirementsStrategy
+		METHOD requirements ([[Ljava/lang/String;)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 1 requirements
 		METHOD rewards (Lnet/minecraft/advancements/AdvancementRewards$Builder;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 builder
 		METHOD rewards (Lnet/minecraft/advancements/AdvancementRewards;)Lnet/minecraft/advancements/Advancement$Builder;

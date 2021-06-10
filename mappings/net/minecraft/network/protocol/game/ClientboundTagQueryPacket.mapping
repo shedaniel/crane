@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ClientboundTagQueryPacket
+	METHOD <init> (ILnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 transactionId
+		ARG 2 tag

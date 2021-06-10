@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/level/biome/MobSpawnSettings
+	METHOD <init> (FLjava/util/Map;Ljava/util/Map;Z)V
+		ARG 1 creatureGenerationProbability
+		ARG 4 playerSpawnFriendly
+	CLASS Builder
+		METHOD creatureGenerationProbability (F)Lnet/minecraft/world/level/biome/MobSpawnSettings$Builder;
+			ARG 1 creatureGenerationProbability
+	CLASS SpawnerData
+		METHOD <init> (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/util/random/Weight;II)V
+			ARG 3 minCount
+			ARG 4 maxCount
+	CLASS MobSpawnCost
+		METHOD <init> (DD)V
+			ARG 1 energyBudget

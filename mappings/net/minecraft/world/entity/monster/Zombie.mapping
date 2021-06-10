@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/monster/Zombie
+	METHOD setCanBreakDoors (Z)V
+		ARG 1 canBreakDoors
+	METHOD startUnderWaterConversion (I)V
+		ARG 1 conversionTime
+	CLASS ZombieGroupData
+		METHOD <init> (ZZ)V
+			ARG 1 isBaby
+			ARG 2 canSpawnJockey

@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/random/Weight
+	METHOD <init> (I)V
+		ARG 1 value

@@ -1,0 +1,22 @@
+CLASS net/minecraft/client/renderer/RenderStateShard
+	METHOD <init> (Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+		ARG 1 name
+		ARG 2 setupState
+		ARG 3 clearState
+	CLASS LineStateShard
+		METHOD <init> (Ljava/util/OptionalDouble;)V
+			ARG 1 width
+	CLASS BooleanStateShard
+		METHOD <init> (Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;Z)V
+			ARG 4 enabled
+	CLASS TextureStateShard
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;ZZ)V
+			ARG 2 blur
+			ARG 3 mipmap
+	CLASS DepthTestStateShard
+		METHOD <init> (Ljava/lang/String;I)V
+			ARG 1 functionName
+	CLASS WriteMaskStateShard
+		METHOD <init> (ZZ)V
+			ARG 1 writeColor
+			ARG 2 writeDepth

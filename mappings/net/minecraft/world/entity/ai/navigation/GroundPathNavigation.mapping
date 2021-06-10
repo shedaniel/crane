@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/navigation/GroundPathNavigation
+	METHOD setAvoidSun (Z)V
+		ARG 1 avoidSun

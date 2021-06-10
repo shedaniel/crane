@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/gui/screens/AlertScreen
+	METHOD <init> (Ljava/lang/Runnable;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 callback
+		ARG 3 text
+		ARG 4 okButton

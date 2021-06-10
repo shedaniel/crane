@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/context/DirectionalPlaceContext
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/Direction;)V
+		ARG 3 direction

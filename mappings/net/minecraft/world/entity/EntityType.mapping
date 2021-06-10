@@ -1,0 +1,20 @@
+CLASS net/minecraft/world/entity/EntityType
+	METHOD <init> (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;ZZZZLcom/google/common/collect/ImmutableSet;Lnet/minecraft/world/entity/EntityDimensions;II)V
+		ARG 1 factory
+		ARG 2 category
+		ARG 3 serialize
+		ARG 4 summon
+		ARG 5 fireImmune
+		ARG 6 canSpawnFarFromPlayer
+		ARG 7 immuneTo
+		ARG 8 dimensions
+		ARG 9 clientTrackingRange
+		ARG 10 updateInterval
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)V
+			ARG 1 factory
+			ARG 2 category
+		METHOD clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;
+			ARG 1 clientTrackingRange
+		METHOD updateInterval (I)Lnet/minecraft/world/entity/EntityType$Builder;
+			ARG 1 updateInterval

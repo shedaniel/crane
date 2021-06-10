@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/loot/entries/LootTableReference
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;II[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;[Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)V
+		ARG 1 name

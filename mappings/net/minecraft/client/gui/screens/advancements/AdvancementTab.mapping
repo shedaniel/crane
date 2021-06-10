@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/gui/screens/advancements/AdvancementTab
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/advancements/AdvancementsScreen;Lnet/minecraft/client/gui/screens/advancements/AdvancementTabType;ILnet/minecraft/advancements/Advancement;Lnet/minecraft/advancements/DisplayInfo;)V
+		ARG 1 minecraft
+		ARG 2 screen
+		ARG 3 type
+		ARG 4 index
+		ARG 5 advancement
+		ARG 6 display

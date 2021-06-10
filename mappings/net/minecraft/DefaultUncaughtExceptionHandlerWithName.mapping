@@ -1,0 +1,3 @@
+CLASS net/minecraft/DefaultUncaughtExceptionHandlerWithName
+	METHOD <init> (Lorg/apache/logging/log4j/Logger;)V
+		ARG 1 logger

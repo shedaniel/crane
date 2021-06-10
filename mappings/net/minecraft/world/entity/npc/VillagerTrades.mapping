@@ -1,0 +1,62 @@
+CLASS net/minecraft/world/entity/npc/VillagerTrades
+	CLASS EmeraldForItems
+		METHOD <init> (Lnet/minecraft/world/level/ItemLike;III)V
+			ARG 2 cost
+			ARG 3 maxUses
+			ARG 4 villagerXp
+	CLASS ItemsForEmeralds
+		METHOD <init> (Lnet/minecraft/world/item/ItemStack;IIIIF)V
+			ARG 1 itemStack
+			ARG 2 emeraldCost
+			ARG 3 numberOfItems
+			ARG 4 maxUses
+			ARG 5 villagerXp
+			ARG 6 priceMultiplier
+	CLASS DyedArmorForEmeralds
+		METHOD <init> (Lnet/minecraft/world/item/Item;III)V
+			ARG 1 item
+			ARG 2 value
+			ARG 3 maxUses
+			ARG 4 villagerXp
+	CLASS EnchantBookForEmeralds
+		METHOD <init> (I)V
+			ARG 1 villagerXp
+	CLASS TreasureMapForEmeralds
+		METHOD <init> (ILnet/minecraft/world/level/levelgen/feature/StructureFeature;Lnet/minecraft/world/level/saveddata/maps/MapDecoration$Type;II)V
+			ARG 1 emeraldCost
+			ARG 2 destination
+			ARG 3 destinationType
+			ARG 4 maxUses
+			ARG 5 villagerXp
+	CLASS ItemsAndEmeraldsToItems
+		METHOD <init> (Lnet/minecraft/world/level/ItemLike;IILnet/minecraft/world/item/Item;III)V
+			ARG 2 fromCount
+			ARG 3 emeraldCost
+			ARG 5 toCount
+			ARG 6 maxUses
+			ARG 7 villagerXp
+	CLASS EnchantedItemForEmeralds
+		METHOD <init> (Lnet/minecraft/world/item/Item;IIIF)V
+			ARG 2 baseEmeraldCost
+			ARG 3 maxUses
+			ARG 4 villagerXp
+			ARG 5 priceMultiplier
+	CLASS SuspisciousStewForEmerald
+		METHOD <init> (Lnet/minecraft/world/effect/MobEffect;II)V
+			ARG 1 effect
+			ARG 2 duration
+			ARG 3 xp
+	CLASS EmeraldsForVillagerTypeItem
+		METHOD <init> (IIILjava/util/Map;)V
+			ARG 1 cost
+			ARG 2 maxUses
+			ARG 3 villagerXp
+			ARG 4 trades
+	CLASS TippedArrowForItemsAndEmeralds
+		METHOD <init> (Lnet/minecraft/world/item/Item;ILnet/minecraft/world/item/Item;IIII)V
+			ARG 1 fromItem
+			ARG 2 fromCount
+			ARG 4 toCount
+			ARG 5 emeraldCost
+			ARG 6 maxUses
+			ARG 7 villagerXp

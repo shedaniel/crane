@@ -1,0 +1,3 @@
+CLASS net/minecraft/locale/Language
+	METHOD inject (Lnet/minecraft/locale/Language;)V
+		ARG 0 instance

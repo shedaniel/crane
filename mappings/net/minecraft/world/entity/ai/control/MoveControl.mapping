@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/ai/control/MoveControl
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 mob
+	METHOD setWantedPosition (DDDD)V
+		ARG 1 wantedX
+		ARG 3 wantedY
+	METHOD strafe (FF)V
+		ARG 1 strafeForwards
+		ARG 2 strafeRight

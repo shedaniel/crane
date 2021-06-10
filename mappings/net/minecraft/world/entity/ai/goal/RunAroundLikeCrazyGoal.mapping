@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/goal/RunAroundLikeCrazyGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/horse/AbstractHorse;D)V
+		ARG 1 horse
+		ARG 2 speedModifier

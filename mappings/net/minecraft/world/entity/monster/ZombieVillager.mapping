@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/entity/monster/ZombieVillager
+	METHOD setGossips (Lnet/minecraft/nbt/Tag;)V
+		ARG 1 gossips
+	METHOD setTradeOffers (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 tradeOffers
+	METHOD setVillagerXp (I)V
+		ARG 1 villagerXp
+	METHOD startConverting (Ljava/util/UUID;I)V
+		ARG 1 conversionStarter
+		ARG 2 villagerConversionTime

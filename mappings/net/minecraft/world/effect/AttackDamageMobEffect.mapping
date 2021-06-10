@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/effect/AttackDamageMobEffect
+	METHOD <init> (Lnet/minecraft/world/effect/MobEffectCategory;ID)V
+		ARG 3 multiplier

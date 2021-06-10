@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/resources/DefaultClientPackResources
+	METHOD <init> (Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;Lnet/minecraft/client/resources/AssetIndex;)V
+		ARG 2 assetIndex

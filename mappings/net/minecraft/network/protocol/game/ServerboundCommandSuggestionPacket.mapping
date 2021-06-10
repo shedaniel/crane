@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/protocol/game/ServerboundCommandSuggestionPacket
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 command

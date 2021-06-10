@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/monster/Evoker
+	METHOD setWololoTarget (Lnet/minecraft/world/entity/animal/Sheep;)V
+		ARG 1 wololoTarget

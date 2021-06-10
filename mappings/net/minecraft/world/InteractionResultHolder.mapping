@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/InteractionResultHolder
+	METHOD <init> (Lnet/minecraft/world/InteractionResult;Ljava/lang/Object;)V
+		ARG 1 result
+		ARG 2 object

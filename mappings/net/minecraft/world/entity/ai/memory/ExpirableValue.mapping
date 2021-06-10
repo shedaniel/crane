@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/memory/ExpirableValue
+	METHOD <init> (Ljava/lang/Object;J)V
+		ARG 1 value
+		ARG 2 timeToLive

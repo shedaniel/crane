@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/pathfinder/BinaryHeap
+	METHOD changeCost (Lnet/minecraft/world/level/pathfinder/Node;F)V
+		ARG 2 f
+	METHOD downHeap (I)V
+		ARG 1 heapIdx
+	METHOD upHeap (I)V
+		ARG 1 heapIdx

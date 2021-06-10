@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/level/block/entity/SignBlockEntity
+	METHOD getRenderMessages (ZLjava/util/function/Function;)[Lnet/minecraft/util/FormattedCharSequence;
+		ARG 1 renderMessagedFiltered
+	METHOD setAllowedPlayerEditor (Ljava/util/UUID;)V
+		ARG 1 playerWhoMayEdit
+	METHOD setColor (Lnet/minecraft/world/item/DyeColor;)Z
+		ARG 1 color
+	METHOD setEditable (Z)V
+		ARG 1 isEditable
+	METHOD setHasGlowingText (Z)Z
+		ARG 1 hasGlowingText

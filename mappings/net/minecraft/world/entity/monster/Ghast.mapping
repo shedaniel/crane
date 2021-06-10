@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/entity/monster/Ghast
+	CLASS GhastLookGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Ghast;)V
+			ARG 1 ghast
+	CLASS GhastMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Ghast;)V
+			ARG 1 ghast
+	CLASS RandomFloatAroundGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Ghast;)V
+			ARG 1 ghast
+	CLASS GhastShootFireballGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Ghast;)V
+			ARG 1 ghast

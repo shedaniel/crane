@@ -43,6 +43,20 @@ CLASS net/minecraft/client/renderer/block/ModelBlockRenderer
 		ARG 2 model
 		ARG 3 state
 		ARG 4 pos
+	CLASS AdjacencyInfo
+		METHOD <init> (Ljava/lang/String;I[Lnet/minecraft/core/Direction;FZ[Lnet/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo;[Lnet/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo;[Lnet/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo;[Lnet/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo;)V
+			ARG 3 corners
+			ARG 5 doNonCubicWeight
+			ARG 6 vert0Weights
+			ARG 7 vert1Weights
+			ARG 8 vert2Weights
+			ARG 9 vert3Weights
+	CLASS AmbientVertexRemap
+		METHOD <init> (Ljava/lang/String;IIIII)V
+			ARG 3 vert0
+			ARG 4 vert1
+			ARG 5 vert2
+			ARG 6 vert3
 	CLASS AmbientOcclusionFace
 		METHOD calculate (Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;[FLjava/util/BitSet;Z)V
 			ARG 1 level

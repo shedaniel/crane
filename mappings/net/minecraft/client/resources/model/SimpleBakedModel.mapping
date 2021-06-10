@@ -1,0 +1,19 @@
+CLASS net/minecraft/client/resources/model/SimpleBakedModel
+	METHOD <init> (Ljava/util/List;Ljava/util/Map;ZZZLnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lnet/minecraft/client/renderer/block/model/ItemTransforms;Lnet/minecraft/client/renderer/block/model/ItemOverrides;)V
+		ARG 1 unculledFaces
+		ARG 2 culledFaces
+		ARG 3 hasAmbientOcclusion
+		ARG 4 usesBlockLight
+		ARG 5 isGui3d
+		ARG 6 particleIcon
+		ARG 7 transforms
+		ARG 8 overrides
+	CLASS Builder
+		METHOD <init> (ZZZLnet/minecraft/client/renderer/block/model/ItemTransforms;Lnet/minecraft/client/renderer/block/model/ItemOverrides;)V
+			ARG 1 hasAmbientOcclusion
+			ARG 2 usesBlockLight
+			ARG 3 isGui3d
+			ARG 4 transforms
+			ARG 5 overrides
+		METHOD particle (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)Lnet/minecraft/client/resources/model/SimpleBakedModel$Builder;
+			ARG 1 particleIcon

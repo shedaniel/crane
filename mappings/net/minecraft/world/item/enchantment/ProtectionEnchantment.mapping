@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/item/enchantment/ProtectionEnchantment
+	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$Rarity;Lnet/minecraft/world/item/enchantment/ProtectionEnchantment$Type;[Lnet/minecraft/world/entity/EquipmentSlot;)V
+		ARG 2 type
+	CLASS Type
+		METHOD <init> (Ljava/lang/String;III)V
+			ARG 3 minCost
+			ARG 4 levelCost

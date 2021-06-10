@@ -1,0 +1,5 @@
+CLASS net/minecraft/advancements/critereon/ChangeDimensionTrigger
+	CLASS TriggerInstance
+		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceKey;)V
+			ARG 2 from
+			ARG 3 to

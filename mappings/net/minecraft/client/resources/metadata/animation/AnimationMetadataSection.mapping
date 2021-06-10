@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/resources/metadata/animation/AnimationMetadataSection
+	METHOD <init> (Ljava/util/List;IIIZ)V
+		ARG 1 frames
+		ARG 2 frameWidth
+		ARG 3 frameHeight
+		ARG 4 defaultFrameTime
+		ARG 5 interpolatedFrames

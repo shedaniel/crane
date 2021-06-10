@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/EntityHasScoreCondition
+	METHOD <init> (Ljava/util/Map;Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)V
+		ARG 2 entityTarget
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)V
+			ARG 1 entityTarget

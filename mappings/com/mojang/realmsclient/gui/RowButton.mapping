@@ -1,0 +1,6 @@
+CLASS com/mojang/realmsclient/gui/RowButton
+	METHOD <init> (IIII)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 xOffset
+		ARG 4 yOffset

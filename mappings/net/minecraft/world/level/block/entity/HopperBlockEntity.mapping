@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/entity/HopperBlockEntity
+	METHOD setCooldown (I)V
+		ARG 1 cooldownTime
+	METHOD setItems (Lnet/minecraft/core/NonNullList;)V
+		ARG 1 items

@@ -1,0 +1,9 @@
+CLASS net/minecraft/core/RegistryAccess
+	CLASS RegistryData
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V
+			ARG 1 key
+			ARG 2 codec
+			ARG 3 networkCodec
+	CLASS RegistryHolder
+		METHOD <init> (Ljava/util/Map;)V
+			ARG 1 registries

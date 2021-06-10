@@ -1,3 +1,9 @@
 CLASS net/minecraft/client/gui/screens/inventory/tooltip/ClientBundleTooltip
 	METHOD <init> (Lnet/minecraft/world/inventory/tooltip/BundleTooltip;)V
 		ARG 1 tooltip
+	CLASS Texture
+		METHOD <init> (Ljava/lang/String;IIIII)V
+			ARG 3 x
+			ARG 4 y
+			ARG 5 w
+			ARG 6 h

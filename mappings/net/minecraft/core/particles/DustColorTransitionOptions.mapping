@@ -1,0 +1,3 @@
+CLASS net/minecraft/core/particles/DustColorTransitionOptions
+	METHOD <init> (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;F)V
+		ARG 2 toColor

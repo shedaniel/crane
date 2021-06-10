@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/renderer/texture/DynamicTexture
+	METHOD <init> (Lcom/mojang/blaze3d/platform/NativeImage;)V
+		ARG 1 pixels
+	METHOD setPixels (Lcom/mojang/blaze3d/platform/NativeImage;)V
+		ARG 1 pixels

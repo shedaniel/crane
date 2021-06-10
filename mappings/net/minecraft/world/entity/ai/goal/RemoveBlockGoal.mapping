@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/goal/RemoveBlockGoal
+	METHOD <init> (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/entity/PathfinderMob;DI)V
+		ARG 1 blockToRemove
+		ARG 2 removerMob

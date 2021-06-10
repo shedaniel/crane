@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/particle/WakeParticle
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/client/particle/SpriteSet;)V
+		ARG 8 xd
+	CLASS Provider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprites

@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/multiplayer/resolver/ServerAddress
+	METHOD <init> (Lcom/google/common/net/HostAndPort;)V
+		ARG 1 hostAndPort

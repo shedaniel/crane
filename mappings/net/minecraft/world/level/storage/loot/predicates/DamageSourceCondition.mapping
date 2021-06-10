@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/DamageSourceCondition
+	METHOD <init> (Lnet/minecraft/advancements/critereon/DamageSourcePredicate;)V
+		ARG 1 predicate

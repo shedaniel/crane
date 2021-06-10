@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/block/state/pattern/BlockPattern
+	METHOD <init> ([[[Ljava/util/function/Predicate;)V
+		ARG 1 pattern
+	CLASS BlockCacheLoader
+		METHOD <init> (Lnet/minecraft/world/level/LevelReader;Z)V
+			ARG 1 level
+			ARG 2 loadChunks
+	CLASS BlockPatternMatch
+		METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;Lcom/google/common/cache/LoadingCache;III)V
+			ARG 1 frontTopLeft
+			ARG 2 forwards
+			ARG 3 up
+			ARG 4 cache
+			ARG 5 width
+			ARG 6 height
+			ARG 7 depth

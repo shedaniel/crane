@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/decoration/ArmorStand
+	METHOD setBodyPose (Lnet/minecraft/core/Rotations;)V
+		ARG 1 bodyPose
+	METHOD setHeadPose (Lnet/minecraft/core/Rotations;)V
+		ARG 1 headPose
+	METHOD setInvisible (Z)V
+		ARG 1 invisible
+	METHOD setLeftArmPose (Lnet/minecraft/core/Rotations;)V
+		ARG 1 leftArmPose
+	METHOD setLeftLegPose (Lnet/minecraft/core/Rotations;)V
+		ARG 1 leftLegPose
+	METHOD setRightArmPose (Lnet/minecraft/core/Rotations;)V
+		ARG 1 rightArmPose
+	METHOD setRightLegPose (Lnet/minecraft/core/Rotations;)V
+		ARG 1 rightLegPose

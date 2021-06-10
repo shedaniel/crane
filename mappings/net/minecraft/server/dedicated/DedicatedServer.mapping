@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/dedicated/DedicatedServer
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/server/ServerResources;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/server/dedicated/DedicatedServerSettings;Lcom/mojang/datafixers/DataFixer;Lcom/mojang/authlib/minecraft/MinecraftSessionService;Lcom/mojang/authlib/GameProfileRepository;Lnet/minecraft/server/players/GameProfileCache;Lnet/minecraft/server/level/progress/ChunkProgressListenerFactory;)V
+		ARG 7 settings

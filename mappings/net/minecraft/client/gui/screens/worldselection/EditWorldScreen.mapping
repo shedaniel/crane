@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/gui/screens/worldselection/EditWorldScreen
+	METHOD <init> (Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;)V
+		ARG 1 callback
+		ARG 2 levelAccess

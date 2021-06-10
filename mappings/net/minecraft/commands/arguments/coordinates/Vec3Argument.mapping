@@ -1,0 +1,3 @@
+CLASS net/minecraft/commands/arguments/coordinates/Vec3Argument
+	METHOD <init> (Z)V
+		ARG 1 centerCorrect

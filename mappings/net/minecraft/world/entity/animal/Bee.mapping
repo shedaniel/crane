@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/animal/Bee
+	METHOD setPersistentAngerTarget (Ljava/util/UUID;)V
+		ARG 1 persistentAngerTarget
+	METHOD setSavedFlowerPos (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 savedFlowerPos
+	METHOD setStayOutOfHiveCountdown (I)V
+		ARG 1 stayOutOfHiveCountdown

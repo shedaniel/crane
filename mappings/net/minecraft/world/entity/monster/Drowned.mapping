@@ -1,0 +1,20 @@
+CLASS net/minecraft/world/entity/monster/Drowned
+	METHOD setSearchingForLand (Z)V
+		ARG 1 searchingForLand
+	CLASS DrownedAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Drowned;DZ)V
+			ARG 1 drowned
+	CLASS DrownedSwimUpGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Drowned;DI)V
+			ARG 1 drowned
+			ARG 2 speedModifier
+	CLASS DrownedMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Drowned;)V
+			ARG 1 drowned
+	CLASS DrownedGoToBeachGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Drowned;D)V
+			ARG 1 drowned
+	CLASS DrownedGoToWaterGoal
+		METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;D)V
+			ARG 1 mob
+			ARG 2 speedModifier

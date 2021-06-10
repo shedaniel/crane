@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/item/alchemy/PotionBrewing
+	CLASS Mix
+		METHOD <init> (Ljava/lang/Object;Lnet/minecraft/world/item/crafting/Ingredient;Ljava/lang/Object;)V
+			ARG 1 from
+			ARG 2 ingredient
+			ARG 3 to

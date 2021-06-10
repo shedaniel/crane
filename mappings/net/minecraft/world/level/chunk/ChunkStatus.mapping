@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/chunk/ChunkStatus
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/level/chunk/ChunkStatus;ILjava/util/EnumSet;Lnet/minecraft/world/level/chunk/ChunkStatus$ChunkType;Lnet/minecraft/world/level/chunk/ChunkStatus$GenerationTask;Lnet/minecraft/world/level/chunk/ChunkStatus$LoadingTask;)V
+		ARG 1 name
+		ARG 3 range
+		ARG 4 heightmapsAfter
+		ARG 5 chunkType
+		ARG 6 generationTask
+		ARG 7 loadingTask

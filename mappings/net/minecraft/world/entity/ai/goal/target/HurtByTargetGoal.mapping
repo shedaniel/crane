@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/goal/target/HurtByTargetGoal
+	METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;[Ljava/lang/Class;)V
+		ARG 2 toIgnoreDamage
+	METHOD setAlertOthers ([Ljava/lang/Class;)Lnet/minecraft/world/entity/ai/goal/target/HurtByTargetGoal;
+		ARG 1 toIgnoreAlert
