@@ -1,11 +1,11 @@
 buildscript {
     dependencies {
-        classpath project(":bootstrapper")
+        classpath "dev.architectury:crane-plugin-bootstrapper:$crane_plugin_version"
     }
 }
 
 plugins {
-    id "dev.architectury.plugin.crane"
+    id "dev.architectury.crane-plugin" version "$crane_plugin_version"
 }
 
 group "dev.architectury"
@@ -19,10 +19,6 @@ repositories {
 
 crane {
     minecraftVersion.set project.minecraft_version
-}
-
-afterEvaluate {
-    tasks.run.dependsOn project(":bootstrapper").tasks.getByName("jar")
 }
 
 tasks.run.apply {

@@ -1,7 +1,0 @@
-{
-  "compatibilityLevel": "JAVA_16",
-  "package": "dev.architectury.crane.bootstrap.mixins",
-  "mixins": [
-    "MixinEnigmaProject"
-  ]
-}
