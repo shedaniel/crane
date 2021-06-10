@@ -21,6 +21,12 @@ crane {
     minecraftVersion.set project.minecraft_version
 }
 
+tasks.suggestMappings {
+    autoMap("net/minecraft/core/BlockPos", "pos")
+    autoMap("net/minecraft/world/level/block/state/BlockState", "state")
+    autoMap("net/minecraft/world/item/ItemStack", "stack")
+}
+
 tasks.run.apply {
     systemProperty("awt.useSystemAAFontSettings", "lcd")
 }

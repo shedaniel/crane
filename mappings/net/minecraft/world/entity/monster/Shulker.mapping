@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/monster/Shulker
+	METHOD findAttachableSurface (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Direction;
+		ARG 1 pos
+	METHOD isPositionBlocked (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos

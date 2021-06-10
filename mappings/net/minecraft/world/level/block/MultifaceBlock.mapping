@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/block/MultifaceBlock
+	METHOD calculateMultifaceShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+		ARG 0 state
+	METHOD canSpreadInto (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD hasAnyFace (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
+	METHOD hasAnyVacantFace (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/projectile/ThrownPotion
+	METHOD dowseFire (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/block/DoorBlock
+	METHOD getPistonPushReaction (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/PushReaction;
+		ARG 1 state
+	METHOD isOpen (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD isWoodenDoor (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

@@ -1,3 +1,11 @@
 CLASS net/minecraft/world/SimpleContainer
 	METHOD <init> (I)V
 		ARG 1 size
+	METHOD addItem (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 stack
+	METHOD canAddItem (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD moveItemToEmptySlots (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
+	METHOD moveItemToOccupiedSlotsWithSameType (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack

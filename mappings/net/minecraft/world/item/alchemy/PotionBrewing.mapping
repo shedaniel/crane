@@ -1,4 +1,10 @@
 CLASS net/minecraft/world/item/alchemy/PotionBrewing
+	METHOD isContainerIngredient (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
+	METHOD isIngredient (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
+	METHOD isPotionIngredient (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
 	CLASS Mix
 		METHOD <init> (Ljava/lang/Object;Lnet/minecraft/world/item/crafting/Ingredient;Ljava/lang/Object;)V
 			ARG 1 from

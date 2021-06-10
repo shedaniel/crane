@@ -1,3 +1,9 @@
 CLASS net/minecraft/world/level/block/InfestedBlock
 	METHOD <init> (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 hostBlock
+	METHOD hostStateByInfested (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 state
+	METHOD infestedStateByHost (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 0 state
+	METHOD isCompatibleHostBlock (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

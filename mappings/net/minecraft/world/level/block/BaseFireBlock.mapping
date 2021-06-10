@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/level/block/BaseFireBlock
 	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;F)V
 		ARG 2 fireDamage
+	METHOD canBurn (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

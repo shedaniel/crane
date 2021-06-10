@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/BuddingAmethystBlock
+	METHOD canClusterGrowAtState (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
+	METHOD getPistonPushReaction (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/PushReaction;
+		ARG 1 state

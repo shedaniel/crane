@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/entity/ItemEntityRenderer
+	METHOD getRenderAmount (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack

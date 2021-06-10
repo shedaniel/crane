@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/JigsawBlock
+	METHOD getFrontFacing (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/core/Direction;
+		ARG 0 state
+	METHOD getTopFacing (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/core/Direction;
+		ARG 0 state

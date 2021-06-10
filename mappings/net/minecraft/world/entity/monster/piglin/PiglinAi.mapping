@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/monster/piglin/PiglinAi
+	METHOD isBarterCurrency (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
+	METHOD isLovedItem (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack

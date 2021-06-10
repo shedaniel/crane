@@ -5,6 +5,10 @@ CLASS net/minecraft/world/item/BundleItem
 	METHOD dropContents (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 0 stack
 		ARG 1 player
+	METHOD getBarColor (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
+	METHOD getBarWidth (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
 	METHOD getContentWeight (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 stack
 	METHOD getContents (Lnet/minecraft/world/item/ItemStack;)Ljava/util/stream/Stream;
@@ -14,8 +18,12 @@ CLASS net/minecraft/world/item/BundleItem
 	METHOD getMatchingItem (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/nbt/ListTag;)Ljava/util/Optional;
 		ARG 0 stack
 		ARG 1 list
+	METHOD getTooltipImage (Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;
+		ARG 1 stack
 	METHOD getWeight (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 stack
+	METHOD isBarVisible (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD lambda$getContentWeight$2 (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 s
 	METHOD lambda$overrideStackedOnOther$0 (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/inventory/Slot;Lnet/minecraft/world/item/ItemStack;)V

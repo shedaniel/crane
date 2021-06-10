@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/item/CrossbowItem
+	METHOD clearChargedProjectiles (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 stack
+	METHOD getChargeDuration (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 stack
+	METHOD getChargedProjectiles (Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;
+		ARG 0 stack
+	METHOD getShootingPower (Lnet/minecraft/world/item/ItemStack;)F
+		ARG 0 stack
+	METHOD getUseAnimation (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/UseAnim;
+		ARG 1 stack
+	METHOD getUseDuration (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
+	METHOD isCharged (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
+	METHOD useOnRelease (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack

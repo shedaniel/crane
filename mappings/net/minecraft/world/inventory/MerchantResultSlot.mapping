@@ -3,3 +3,7 @@ CLASS net/minecraft/world/inventory/MerchantResultSlot
 		ARG 1 player
 		ARG 2 merchant
 		ARG 3 slots
+	METHOD checkTakeAchievements (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
+	METHOD mayPlace (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack

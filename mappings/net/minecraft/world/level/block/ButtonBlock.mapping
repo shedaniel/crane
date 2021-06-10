@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/level/block/ButtonBlock
 	METHOD <init> (ZLnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 sensitive
+	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

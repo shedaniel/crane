@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/level/pathfinder/NodeEvaluator
+	METHOD getNode (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/Node;
+		ARG 1 pos
 	METHOD prepare (Lnet/minecraft/world/level/PathNavigationRegion;Lnet/minecraft/world/entity/Mob;)V
 		ARG 1 level
 		ARG 2 mob

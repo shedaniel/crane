@@ -3,5 +3,7 @@ CLASS net/minecraft/server/level/ThreadedLevelLightEngine
 		ARG 2 chunkMap
 		ARG 4 taskMailbox
 		ARG 5 sorterMailbox
+	METHOD checkBlock (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
 	METHOD setTaskPerBatch (I)V
 		ARG 1 taskPerBatch

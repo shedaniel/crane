@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/entity/npc/WanderingTrader
+	METHOD getDrinkingSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent;
+		ARG 1 stack
 	METHOD setDespawnDelay (I)V
 		ARG 1 despawnDelay
 	METHOD setWanderTarget (Lnet/minecraft/core/BlockPos;)V

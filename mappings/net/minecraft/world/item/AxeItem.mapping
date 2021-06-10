@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/AxeItem
+	METHOD getStripped (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/Optional;
+		ARG 1 state

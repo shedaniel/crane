@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/item/DyeableLeatherItem
+	METHOD clearColor (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
+	METHOD getColor (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
+	METHOD hasCustomColor (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack

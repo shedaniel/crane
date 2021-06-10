@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/CrossCollisionBlock
+	METHOD getAABBIndex (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 1 state
+	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 state

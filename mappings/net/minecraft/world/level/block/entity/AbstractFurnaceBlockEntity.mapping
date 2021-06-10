@@ -1,3 +1,7 @@
 CLASS net/minecraft/world/level/block/entity/AbstractFurnaceBlockEntity
 	METHOD <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/item/crafting/RecipeType;)V
 		ARG 4 recipeType
+	METHOD getBurnDuration (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
+	METHOD isFuel (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack

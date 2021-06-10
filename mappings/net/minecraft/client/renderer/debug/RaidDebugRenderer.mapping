@@ -1,5 +1,7 @@
 CLASS net/minecraft/client/renderer/debug/RaidDebugRenderer
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD highlightRaidCenter (Lnet/minecraft/core/BlockPos;)V
+		ARG 0 pos
 	METHOD setRaidCenters (Ljava/util/Collection;)V
 		ARG 1 raidCenters

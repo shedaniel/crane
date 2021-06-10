@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/entity/animal/Parrot
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD setRecordPlayingNearby (Lnet/minecraft/core/BlockPos;Z)V
 		ARG 1 jukebox
 		ARG 2 partyParrot

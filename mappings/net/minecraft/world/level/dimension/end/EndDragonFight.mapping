@@ -5,3 +5,5 @@ CLASS net/minecraft/world/level/dimension/end/EndDragonFight
 		ARG 1 respawnCrystals
 	METHOD setRespawnStage (Lnet/minecraft/world/level/dimension/end/DragonRespawnAnimation;)V
 		ARG 1 respawnStage
+	METHOD spawnNewGateway (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/block/CropBlock
+	METHOD getAge (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 1 state
+	METHOD isMaxAge (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

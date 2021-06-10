@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/item/crafting/Ingredient
+	METHOD test (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	CLASS TagValue
 		METHOD <init> (Lnet/minecraft/tags/Tag;)V
 			ARG 1 tag

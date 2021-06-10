@@ -1,3 +1,9 @@
 CLASS net/minecraft/world/item/ShieldItem
 	METHOD getColor (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/DyeColor;
 		ARG 0 stack
+	METHOD getDescriptionId (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
+		ARG 1 stack
+	METHOD getUseAnimation (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/UseAnim;
+		ARG 1 stack
+	METHOD getUseDuration (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack

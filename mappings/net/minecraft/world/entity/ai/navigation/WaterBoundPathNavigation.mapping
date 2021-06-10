@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/entity/ai/navigation/WaterBoundPathNavigation
 	METHOD doStuckDetection (Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 lastStuckCheckPos
+	METHOD isStableDestination (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos

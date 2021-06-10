@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/enchantment/DigDurabilityEnchantment
+	METHOD canEnchant (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack

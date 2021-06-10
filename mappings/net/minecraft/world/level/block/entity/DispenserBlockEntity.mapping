@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/level/block/entity/DispenserBlockEntity
+	METHOD addItem (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
 	METHOD setItems (Lnet/minecraft/core/NonNullList;)V
 		ARG 1 items
