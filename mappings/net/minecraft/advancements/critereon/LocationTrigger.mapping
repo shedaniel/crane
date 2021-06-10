@@ -1,6 +1,10 @@
 CLASS net/minecraft/advancements/critereon/LocationTrigger
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
 		ARG 1 id
+	METHOD lambda$trigger$0 (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/advancements/critereon/LocationTrigger$TriggerInstance;)Z
+		ARG 1 trigger
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
 	CLASS TriggerInstance
 		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/LocationPredicate;)V
 			ARG 3 location

@@ -1,7 +1,17 @@
 CLASS net/minecraft/advancements/critereon/KilledTrigger
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
 		ARG 1 id
+	METHOD lambda$trigger$0 (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/advancements/critereon/KilledTrigger$TriggerInstance;)Z
+		ARG 3 trigger
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;)V
+		ARG 1 player
+		ARG 2 entity
+		ARG 3 source
 	CLASS TriggerInstance
 		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/DamageSourcePredicate;)V
 			ARG 3 entityPredicate
 			ARG 4 killingBlow
+		METHOD matches (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/damagesource/DamageSource;)Z
+			ARG 1 player
+			ARG 2 ctx
+			ARG 3 source

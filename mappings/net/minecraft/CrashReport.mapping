@@ -2,5 +2,7 @@ CLASS net/minecraft/CrashReport
 	METHOD <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
 		ARG 1 title
 		ARG 2 exception
+	METHOD getDetails (Ljava/lang/StringBuilder;)V
+		ARG 1 builder
 	METHOD saveToFile (Ljava/io/File;)Z
 		ARG 1 saveFile

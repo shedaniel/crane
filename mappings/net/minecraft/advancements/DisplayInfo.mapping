@@ -8,6 +8,14 @@ CLASS net/minecraft/advancements/DisplayInfo
 		ARG 6 showToast
 		ARG 7 announceChat
 		ARG 8 hidden
+	METHOD fromJson (Lcom/google/gson/JsonObject;)Lnet/minecraft/advancements/DisplayInfo;
+		ARG 0 jsonObject
+	METHOD fromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/advancements/DisplayInfo;
+		ARG 0 buf
+	METHOD getIcon (Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 jsonObject
+	METHOD serializeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD setLocation (FF)V
 		ARG 1 x
 		ARG 2 y

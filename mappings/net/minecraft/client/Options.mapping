@@ -1,5 +1,7 @@
 CLASS net/minecraft/client/Options
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
 		ARG 1 minecraft
+	METHOD lambda$new$0 (Lit/unimi/dsi/fastutil/objects/Object2FloatOpenHashMap;)V
+		ARG 0 map
 	METHOD setCameraType (Lnet/minecraft/client/CameraType;)V
 		ARG 1 cameraType

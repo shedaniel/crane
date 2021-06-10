@@ -1,4 +1,8 @@
 CLASS net/minecraft/advancements/critereon/FilledBucketTrigger
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 player
+		ARG 2 stack
 	CLASS TriggerInstance
 		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/ItemPredicate;)V
+			ARG 1 player
 			ARG 2 item

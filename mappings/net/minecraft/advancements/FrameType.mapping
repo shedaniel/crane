@@ -3,3 +3,7 @@ CLASS net/minecraft/advancements/FrameType
 		ARG 3 name
 		ARG 4 texture
 		ARG 5 chatColor
+	METHOD byName (Ljava/lang/String;)Lnet/minecraft/advancements/FrameType;
+		ARG 0 name
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/advancements/FrameType;
+		ARG 0 name
