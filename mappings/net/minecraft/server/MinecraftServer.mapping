@@ -43,6 +43,10 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 onlineMode
 	METHOD startRecordingMetrics (Ljava/util/function/Consumer;Ljava/util/function/Consumer;)V
 		ARG 2 onMetricsRecordingFinished
+	METHOD tickChildren (Ljava/util/function/BooleanSupplier;)V
+		ARG 1 haveTime
+	METHOD tickServer (Ljava/util/function/BooleanSupplier;)V
+		ARG 1 haveTime
 	CLASS a
 		METHOD <init> (JI)V
 			ARG 1 a

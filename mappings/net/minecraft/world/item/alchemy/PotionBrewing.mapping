@@ -1,9 +1,26 @@
 CLASS net/minecraft/world/item/alchemy/PotionBrewing
+	METHOD addContainer (Lnet/minecraft/world/item/Item;)V
+		ARG 0 container
+	METHOD addContainerRecipe (Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;)V
+		ARG 0 fromPotionType
+		ARG 1 ingredient
+		ARG 2 toPotionType
+	METHOD addMix (Lnet/minecraft/world/item/alchemy/Potion;Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/alchemy/Potion;)V
+		ARG 0 from
+		ARG 1 ingredient
+		ARG 2 to
+	METHOD hasContainerMix (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 container
+		ARG 1 ingredient
+	METHOD isBrewablePotion (Lnet/minecraft/world/item/alchemy/Potion;)Z
+		ARG 0 potion
 	METHOD isContainerIngredient (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
 	METHOD isIngredient (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
 	METHOD isPotionIngredient (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
+	METHOD lambda$static$0 (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
 	CLASS Mix
 		METHOD <init> (Ljava/lang/Object;Lnet/minecraft/world/item/crafting/Ingredient;Ljava/lang/Object;)V

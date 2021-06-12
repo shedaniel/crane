@@ -1,6 +1,34 @@
 CLASS net/minecraft/world/item/crafting/Ingredient
+	METHOD <init> (Ljava/util/stream/Stream;)V
+		ARG 1 values
+	METHOD fromJson (Lcom/google/gson/JsonElement;)Lnet/minecraft/world/item/crafting/Ingredient;
+		ARG 0 json
+	METHOD fromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Ingredient;
+		ARG 0 buf
+	METHOD fromValues (Ljava/util/stream/Stream;)Lnet/minecraft/world/item/crafting/Ingredient;
+		ARG 0 values
+	METHOD lambda$dissolve$1 (Lnet/minecraft/world/item/crafting/Ingredient$Value;)Ljava/util/stream/Stream;
+		ARG 0 value
+	METHOD lambda$of$3 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
+	METHOD lambda$valueFromJson$5 (Lnet/minecraft/resources/ResourceLocation;)Lcom/google/gson/JsonSyntaxException;
+		ARG 0 location
+	METHOD of (Ljava/util/stream/Stream;)Lnet/minecraft/world/item/crafting/Ingredient;
+		ARG 0 stacks
+	METHOD of (Lnet/minecraft/tags/Tag;)Lnet/minecraft/world/item/crafting/Ingredient;
+		ARG 0 itemTag
+	METHOD of ([Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/crafting/Ingredient;
+		ARG 0 stacks
+	METHOD of ([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+		ARG 0 items
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 stack
 	METHOD test (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
+	METHOD toNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD valueFromJson (Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/crafting/Ingredient$Value;
+		ARG 0 json
 	CLASS TagValue
 		METHOD <init> (Lnet/minecraft/tags/Tag;)V
 			ARG 1 tag

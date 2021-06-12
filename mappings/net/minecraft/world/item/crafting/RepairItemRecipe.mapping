@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/crafting/RepairItemRecipe
+	METHOD lambda$assemble$0 (Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lnet/minecraft/world/item/enchantment/Enchantment;)V
+		ARG 3 enchantment

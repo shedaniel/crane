@@ -31,6 +31,7 @@ CLASS net/minecraft/world/level/LevelReader
 		ARG 2 x
 		ARG 3 z
 	METHOD getHeightmapPos (Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;
+		ARG 1 heightmap
 		ARG 2 pos
 	METHOD getMaxLocalRawBrightness (Lnet/minecraft/core/BlockPos;)I
 		ARG 1 pos

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/ColorResolver
+	METHOD getColor (Lnet/minecraft/world/level/biome/Biome;DD)I
+		ARG 1 biome

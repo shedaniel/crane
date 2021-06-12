@@ -3,7 +3,9 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 1 entityType
 		ARG 2 level
 	METHOD absMoveTo (DDD)V
-		ARG 3 yo
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V
 		ARG 1 tag
 	METHOD addTag (Ljava/lang/String;)Z
@@ -57,6 +59,22 @@ CLASS net/minecraft/world/entity/Entity
 	METHOD move (Lnet/minecraft/world/entity/MoverType;Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 moverType
 		ARG 2 velocity
+	METHOD moveTo (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD moveTo (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yRot
+		ARG 8 xRot
+	METHOD moveTo (Lnet/minecraft/core/BlockPos;FF)V
+		ARG 1 pos
+		ARG 2 yRot
+		ARG 3 xRoy
+	METHOD moveTo (Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 pos
 	METHOD onInsideBlock (Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 state
 	METHOD onSyncedDataUpdated (Lnet/minecraft/network/syncher/EntityDataAccessor;)V

@@ -6,3 +6,5 @@ CLASS net/minecraft/world/item/crafting/ShapedRecipe
 		ARG 4 height
 		ARG 5 recipeItems
 		ARG 6 result
+	METHOD matches (Lnet/minecraft/world/inventory/CraftingContainer;IIZ)Z
+		ARG 1 container

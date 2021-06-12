@@ -11,6 +11,7 @@ CLASS net/minecraft/world/level/BlockGetter
 		ARG 1 pos
 	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Ljava/util/Optional;
 		ARG 1 pos
+		ARG 2 type
 	METHOD getBlockFloorHeight (Lnet/minecraft/core/BlockPos;)D
 		ARG 1 pos
 	METHOD getBlockFloorHeight (Lnet/minecraft/world/phys/shapes/VoxelShape;Ljava/util/function/Supplier;)D

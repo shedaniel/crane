@@ -7,6 +7,10 @@ CLASS net/minecraft/server/level/ChunkMap
 		ARG 9 progressListener
 		ARG 10 chunkStatusListener
 		ARG 11 overworldDataStorage
+	METHOD processUnloads (Ljava/util/function/BooleanSupplier;)V
+		ARG 1 haveTime
+	METHOD tick (Ljava/util/function/BooleanSupplier;)V
+		ARG 1 haveTime
 	CLASS TrackedEntity
 		METHOD <init> (Lnet/minecraft/server/level/ChunkMap;Lnet/minecraft/world/entity/Entity;IIZ)V
 			ARG 2 entity

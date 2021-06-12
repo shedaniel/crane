@@ -1,17 +1,69 @@
 CLASS net/minecraft/world/item/enchantment/EnchantmentHelper
+	METHOD deserializeEnchantments (Lnet/minecraft/nbt/ListTag;)Ljava/util/Map;
+		ARG 0 listTag
+	METHOD getBlockEfficiency (Lnet/minecraft/world/entity/LivingEntity;)I
+		ARG 0 entity
+	METHOD getDamageBonus (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/MobType;)F
+		ARG 0 stack
+		ARG 1 mobType
+	METHOD getDamageProtection (Ljava/lang/Iterable;Lnet/minecraft/world/damagesource/DamageSource;)I
+		ARG 0 stacks
+		ARG 1 source
+	METHOD getDepthStrider (Lnet/minecraft/world/entity/LivingEntity;)I
+		ARG 0 entity
 	METHOD getEnchantments (Lnet/minecraft/world/item/ItemStack;)Ljava/util/Map;
 		ARG 0 stack
+	METHOD getFireAspect (Lnet/minecraft/world/entity/LivingEntity;)I
+		ARG 0 entity
 	METHOD getFishingLuckBonus (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 stack
 	METHOD getFishingSpeedBonus (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 stack
+	METHOD getItemEnchantmentLevel (Lnet/minecraft/world/item/enchantment/Enchantment;Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 enchantment
+		ARG 1 stack
+	METHOD getKnockbackBonus (Lnet/minecraft/world/entity/LivingEntity;)I
+		ARG 0 entity
 	METHOD getLoyalty (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 stack
+	METHOD getMobLooting (Lnet/minecraft/world/entity/LivingEntity;)I
+		ARG 0 entity
+	METHOD getRespiration (Lnet/minecraft/world/entity/LivingEntity;)I
+		ARG 0 entity
 	METHOD getRiptide (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 stack
+	METHOD getSweepingDamageRatio (Lnet/minecraft/world/entity/LivingEntity;)F
+		ARG 0 entity
+	METHOD hasAquaAffinity (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 entity
 	METHOD hasBindingCurse (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
 	METHOD hasChanneling (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
+	METHOD hasFrostWalker (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 entity
+	METHOD hasSoulSpeed (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 entity
 	METHOD hasVanishingCurse (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
+	METHOD lambda$getDamageBonus$3 (Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/world/entity/MobType;Lnet/minecraft/world/item/enchantment/Enchantment;I)V
+		ARG 2 enchantment
+		ARG 3 level
+	METHOD lambda$getDamageProtection$2 (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/item/enchantment/Enchantment;I)V
+		ARG 2 enchantment
+		ARG 3 level
+	METHOD lambda$runIterationOnItem$1 (Lnet/minecraft/world/item/enchantment/EnchantmentHelper$EnchantmentVisitor;ILnet/minecraft/world/item/enchantment/Enchantment;)V
+		ARG 2 enchantment
+	METHOD runIterationOnInventory (Lnet/minecraft/world/item/enchantment/EnchantmentHelper$EnchantmentVisitor;Ljava/lang/Iterable;)V
+		ARG 0 visitor
+		ARG 1 stacks
+	METHOD runIterationOnItem (Lnet/minecraft/world/item/enchantment/EnchantmentHelper$EnchantmentVisitor;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 visitor
+		ARG 1 stack
+	METHOD setEnchantments (Ljava/util/Map;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 enchantments
+		ARG 1 stack
+	CLASS EnchantmentVisitor
+		METHOD accept (Lnet/minecraft/world/item/enchantment/Enchantment;I)V
+			ARG 1 enchantment
+			ARG 2 level

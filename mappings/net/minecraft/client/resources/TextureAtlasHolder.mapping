@@ -1,3 +1,9 @@
 CLASS net/minecraft/client/resources/TextureAtlasHolder
 	METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)V
+		ARG 1 textureManager
+		ARG 2 atlasLocation
 		ARG 3 prefix
+	METHOD getSprite (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;
+		ARG 1 location
+	METHOD resolveLocation (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 location

@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/item/crafting/RecipeSerializer
+	METHOD fromJson (Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/crafting/Recipe;
+		ARG 1 id
+		ARG 2 json
+	METHOD fromNetwork (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Recipe;
+		ARG 1 id
+		ARG 2 buf
+	METHOD register (Ljava/lang/String;Lnet/minecraft/world/item/crafting/RecipeSerializer;)Lnet/minecraft/world/item/crafting/RecipeSerializer;
+		ARG 0 id
+		ARG 1 serializer
+	METHOD toNetwork (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/Recipe;)V
+		ARG 1 buf
+		ARG 2 recipe

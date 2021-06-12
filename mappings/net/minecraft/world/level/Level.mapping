@@ -19,13 +19,29 @@ CLASS net/minecraft/world/level/Level
 	METHOD blockEvent (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;II)V
 		ARG 1 pos
 		ARG 2 block
+		ARG 3 paramA
+		ARG 4 paramB
 	METHOD broadcastEntityEvent (Lnet/minecraft/world/entity/Entity;B)V
 		ARG 1 entity
 		ARG 2 eventId
+	METHOD destroyBlockProgress (ILnet/minecraft/core/BlockPos;I)V
+		ARG 1 id
+		ARG 2 pos
+		ARG 3 progress
 	METHOD explode (Lnet/minecraft/world/entity/Entity;DDDFLnet/minecraft/world/level/Explosion$BlockInteraction;)Lnet/minecraft/world/level/Explosion;
 		ARG 1 entity
 	METHOD explode (Lnet/minecraft/world/entity/Entity;DDDFZLnet/minecraft/world/level/Explosion$BlockInteraction;)Lnet/minecraft/world/level/Explosion;
 		ARG 1 entity
+	METHOD explode (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/level/ExplosionDamageCalculator;DDDFZLnet/minecraft/world/level/Explosion$BlockInteraction;)Lnet/minecraft/world/level/Explosion;
+		ARG 1 entity
+		ARG 2 source
+		ARG 3 damageCalculator
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 radius
+		ARG 11 fire
+		ARG 12 blockInteraction
 	METHOD fillReportDetails (Lnet/minecraft/CrashReport;)Lnet/minecraft/CrashReportCategory;
 		ARG 1 crashReport
 	METHOD getBestNeighborSignal (Lnet/minecraft/core/BlockPos;)I
@@ -40,6 +56,8 @@ CLASS net/minecraft/world/level/Level
 		ARG 1 pos
 	METHOD getDirectSignalTo (Lnet/minecraft/core/BlockPos;)I
 		ARG 1 pos
+	METHOD getEntity (I)Lnet/minecraft/world/entity/Entity;
+		ARG 1 id
 	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
 		ARG 1 pos
 	METHOD getSignal (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)I
@@ -47,6 +65,10 @@ CLASS net/minecraft/world/level/Level
 		ARG 2 direction
 	METHOD getSunAngle (F)F
 		ARG 1 time
+	METHOD globalLevelEvent (ILnet/minecraft/core/BlockPos;I)V
+		ARG 1 type
+		ARG 2 pos
+		ARG 3 data
 	METHOD guardEntityTick (Ljava/util/function/Consumer;Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 ticker
 		ARG 2 entity
@@ -96,10 +118,15 @@ CLASS net/minecraft/world/level/Level
 		ARG 6 z
 		ARG 8 sound
 		ARG 9 source
+		ARG 10 volume
+		ARG 11 pitch
 	METHOD playSound (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
 		ARG 1 player
+		ARG 2 entity
 		ARG 3 sound
 		ARG 4 source
+		ARG 5 volume
+		ARG 6 pitch
 	METHOD postGameEventInRadius (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/gameevent/GameEvent;Lnet/minecraft/core/BlockPos;I)V
 		ARG 1 entity
 		ARG 2 gameEvent
@@ -113,6 +140,9 @@ CLASS net/minecraft/world/level/Level
 		ARG 1 blockEntity
 	METHOD setSkyFlashTime (I)V
 		ARG 1 skyFlashTime
+	METHOD setSpawnSettings (ZZ)V
+		ARG 1 spawnEnemies
+		ARG 2 spawnFriendlies
 	METHOD updateNeighborsAt (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;)V
 		ARG 1 pos
 		ARG 2 block

@@ -1,6 +1,7 @@
 CLASS net/minecraft/world/level/block/StairBlock
 	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 baseState
+		ARG 2 properties
 	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
 		ARG 1 state
 	METHOD getShapeIndex (Lnet/minecraft/world/level/block/state/BlockState;)I

@@ -4,3 +4,6 @@ CLASS net/minecraft/world/item/crafting/ShapelessRecipe
 		ARG 2 group
 		ARG 3 result
 		ARG 4 ingredients
+	CLASS Serializer
+		METHOD itemsFromJson (Lcom/google/gson/JsonArray;)Lnet/minecraft/core/NonNullList;
+			ARG 0 json

@@ -1,3 +1,7 @@
 CLASS net/minecraft/world/level/saveddata/SavedData
+	METHOD save (Ljava/io/File;)V
+		ARG 1 file
+	METHOD save (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 tag
 	METHOD setDirty (Z)V
 		ARG 1 dirty

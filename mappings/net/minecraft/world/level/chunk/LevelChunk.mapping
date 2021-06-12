@@ -1,4 +1,12 @@
 CLASS net/minecraft/world/level/chunk/LevelChunk
+	METHOD <init> (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/chunk/ProtoChunk;Ljava/util/function/Consumer;)V
+		ARG 1 leel
+		ARG 2 chunk
+		ARG 3 postLoad
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;)V
+		ARG 1 level
+		ARG 2 chunkPos
+		ARG 3 biomes
 	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;Lnet/minecraft/world/level/chunk/UpgradeData;Lnet/minecraft/world/level/TickList;Lnet/minecraft/world/level/TickList;J[Lnet/minecraft/world/level/chunk/LevelChunkSection;Ljava/util/function/Consumer;)V
 		ARG 1 level
 		ARG 2 chunkPos
@@ -7,6 +15,8 @@ CLASS net/minecraft/world/level/chunk/LevelChunk
 		ARG 5 blockTicks
 		ARG 6 liquidTicks
 		ARG 7 inhabitedTime
+		ARG 9 sections
+		ARG 10 postLoad
 	METHOD createBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
 		ARG 1 pos
 	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;

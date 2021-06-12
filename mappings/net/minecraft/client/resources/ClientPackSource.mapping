@@ -2,3 +2,7 @@ CLASS net/minecraft/client/resources/ClientPackSource
 	METHOD <init> (Ljava/io/File;Lnet/minecraft/client/resources/AssetIndex;)V
 		ARG 1 serverPackDir
 		ARG 2 assetIndex
+	METHOD createProgrammerArtPack (Lnet/minecraft/server/packs/repository/Pack$PackConstructor;)Lnet/minecraft/server/packs/repository/Pack;
+		ARG 1 constructor
+	METHOD createProgrammerArtPack (Lnet/minecraft/server/packs/repository/Pack$PackConstructor;Ljava/util/function/Supplier;)Lnet/minecraft/server/packs/repository/Pack;
+		ARG 0 constructor

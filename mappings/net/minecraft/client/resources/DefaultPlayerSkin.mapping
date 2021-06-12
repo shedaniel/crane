@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/resources/DefaultPlayerSkin
+	METHOD getDefaultSkin (Ljava/util/UUID;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 uuid
+	METHOD getSkinModelName (Ljava/util/UUID;)Ljava/lang/String;
+		ARG 0 uuid
+	METHOD isAlexDefault (Ljava/util/UUID;)Z
+		ARG 0 uuid

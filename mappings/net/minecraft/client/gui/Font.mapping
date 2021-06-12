@@ -6,16 +6,19 @@ CLASS net/minecraft/client/gui/Font
 	METHOD bidirectionalShaping (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 text
 	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/String;FFI)I
+		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Component;FFI)I
+		ARG 1 poses
 		ARG 2 component
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/util/FormattedCharSequence;FFI)I
+		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
@@ -28,6 +31,8 @@ CLASS net/minecraft/client/gui/Font
 		ARG 5 dropShadow
 		ARG 6 pose
 		ARG 7 buffers
+		ARG 8 seeThrough
+		ARG 10 packedLightCoords
 	METHOD drawInBatch (Ljava/lang/String;FFIZLcom/mojang/math/Matrix4f;Lnet/minecraft/client/renderer/MultiBufferSource;ZIIZ)I
 		ARG 1 text
 		ARG 2 x
@@ -36,6 +41,9 @@ CLASS net/minecraft/client/gui/Font
 		ARG 5 dropShadow
 		ARG 6 pose
 		ARG 7 buffers
+		ARG 8 seeThrough
+		ARG 10 packedLightCoords
+		ARG 11 bidirectional
 	METHOD drawInBatch (Lnet/minecraft/network/chat/Component;FFIZLcom/mojang/math/Matrix4f;Lnet/minecraft/client/renderer/MultiBufferSource;ZII)I
 		ARG 1 text
 		ARG 2 x
@@ -44,6 +52,8 @@ CLASS net/minecraft/client/gui/Font
 		ARG 5 dropShadow
 		ARG 6 pose
 		ARG 7 buffers
+		ARG 8 seeThrough
+		ARG 10 packedLightCoords
 	METHOD drawInBatch (Lnet/minecraft/util/FormattedCharSequence;FFIZLcom/mojang/math/Matrix4f;Lnet/minecraft/client/renderer/MultiBufferSource;ZII)I
 		ARG 1 text
 		ARG 2 x
@@ -52,6 +62,8 @@ CLASS net/minecraft/client/gui/Font
 		ARG 5 dropShadow
 		ARG 6 pose
 		ARG 7 buffers
+		ARG 8 seeThrough
+		ARG 10 packedLightCoords
 	METHOD drawInBatch8xOutline (Lnet/minecraft/util/FormattedCharSequence;FFIILcom/mojang/math/Matrix4f;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
 		ARG 1 text
 		ARG 2 x
@@ -68,6 +80,7 @@ CLASS net/minecraft/client/gui/Font
 		ARG 4 color
 		ARG 5 pose
 		ARG 6 dropShadow
+		ARG 7 bidirectional
 	METHOD drawInternal (Ljava/lang/String;FFIZLcom/mojang/math/Matrix4f;Lnet/minecraft/client/renderer/MultiBufferSource;ZIIZ)I
 		ARG 1 text
 		ARG 2 x
@@ -76,7 +89,7 @@ CLASS net/minecraft/client/gui/Font
 		ARG 5 dropShadow
 		ARG 6 pose
 		ARG 7 buffers
-		ARG 8 seeThough
+		ARG 8 seeThrough
 		ARG 10 packedLightCoords
 		ARG 11 bidirectional
 	METHOD drawInternal (Lnet/minecraft/util/FormattedCharSequence;FFILcom/mojang/math/Matrix4f;Z)I
@@ -97,22 +110,26 @@ CLASS net/minecraft/client/gui/Font
 		ARG 8 seeThrough
 		ARG 10 packedLightCoords
 	METHOD drawShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/String;FFI)I
+		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 	METHOD drawShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/String;FFIZ)I
+		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 		ARG 6 bidirectional
 	METHOD drawShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Component;FFI)I
+		ARG 1 poses
 		ARG 2 component
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
 	METHOD drawShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/util/FormattedCharSequence;FFI)I
+		ARG 1 poses
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
@@ -123,6 +140,12 @@ CLASS net/minecraft/client/gui/Font
 		ARG 3 y
 		ARG 4 width
 		ARG 5 color
+	METHOD getFontSet (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/gui/font/FontSet;
+		ARG 1 fontLocation
+	METHOD lambda$drawInBatch8xOutline$1 (Lnet/minecraft/client/gui/Font$StringRenderOutput;[FIFIIILnet/minecraft/network/chat/Style;I)Z
+		ARG 7 index
+		ARG 8 style
+		ARG 9 codepoint
 	METHOD plainSubstrByWidth (Ljava/lang/String;I)Ljava/lang/String;
 		ARG 1 text
 		ARG 2 width

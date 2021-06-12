@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/entity/LevelEntityGetter
+	METHOD get (I)Lnet/minecraft/world/level/entity/EntityAccess;
+		ARG 1 id
+	METHOD get (Ljava/util/UUID;)Lnet/minecraft/world/level/entity/EntityAccess;
+		ARG 1 uuid

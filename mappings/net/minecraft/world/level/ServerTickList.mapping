@@ -4,3 +4,9 @@ CLASS net/minecraft/world/level/ServerTickList
 		ARG 2 ignore
 		ARG 3 toId
 		ARG 4 ticker
+	METHOD fetchTicksInArea (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;ZZ)Ljava/util/List;
+		ARG 1 box
+	METHOD fetchTicksInChunk (Lnet/minecraft/world/level/ChunkPos;ZZ)Ljava/util/List;
+		ARG 1 pos
+	METHOD save (Lnet/minecraft/world/level/ChunkPos;)Lnet/minecraft/nbt/ListTag;
+		ARG 1 chunkPos

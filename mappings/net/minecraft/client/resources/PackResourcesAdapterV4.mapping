@@ -1,3 +1,5 @@
 CLASS net/minecraft/client/resources/PackResourcesAdapterV4
 	METHOD <init> (Lnet/minecraft/server/packs/PackResources;)V
 		ARG 1 pack
+	METHOD lambda$static$0 (Ljava/util/HashMap;)V
+		ARG 0 map

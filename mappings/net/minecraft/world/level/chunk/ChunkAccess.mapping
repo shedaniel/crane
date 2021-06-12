@@ -7,6 +7,12 @@ CLASS net/minecraft/world/level/chunk/ChunkAccess
 		ARG 1 pos
 	METHOD getEventDispatcher (I)Lnet/minecraft/world/level/gameevent/GameEventDispatcher;
 		ARG 1 section
+	METHOD getHeighestPosition (Lnet/minecraft/world/level/levelgen/Heightmap$Types;)Lnet/minecraft/core/BlockPos;
+		ARG 1 heightmap
+	METHOD getHeight (Lnet/minecraft/world/level/levelgen/Heightmap$Types;II)I
+		ARG 1 heightmap
+	METHOD getOrCreateHeightmapUnprimed (Lnet/minecraft/world/level/levelgen/Heightmap$Types;)Lnet/minecraft/world/level/levelgen/Heightmap;
+		ARG 1 heightmap
 	METHOD getOrCreateSection (I)Lnet/minecraft/world/level/chunk/LevelChunkSection;
 		ARG 1 index
 	METHOD isYSpaceEmpty (II)Z
@@ -26,3 +32,11 @@ CLASS net/minecraft/world/level/chunk/ChunkAccess
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 update
+	METHOD setHeightmap (Lnet/minecraft/world/level/levelgen/Heightmap$Types;[J)V
+		ARG 1 heightmap
+	METHOD setInhabitedTime (J)V
+		ARG 1 inhabitedTime
+	METHOD setLightCorrect (Z)V
+		ARG 1 lightCorrect
+	METHOD setUnsaved (Z)V
+		ARG 1 unsaved

@@ -14,3 +14,8 @@ CLASS net/minecraft/world/level/chunk/ChunkSource
 	METHOD hasChunk (II)Z
 		ARG 1 x
 		ARG 2 z
+	METHOD setSpawnSettings (ZZ)V
+		ARG 1 spawnEnemies
+		ARG 2 spawnFriendlies
+	METHOD tick (Ljava/util/function/BooleanSupplier;)V
+		ARG 1 haveTime
