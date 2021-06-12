@@ -3,7 +3,7 @@ name: Compile & Release
 on:
   push:
     branches:
-      - master
+      - "1.17"
 
 jobs:
   build:
