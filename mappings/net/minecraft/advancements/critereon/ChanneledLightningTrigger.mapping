@@ -1,4 +1,16 @@
 CLASS net/minecraft/advancements/critereon/ChanneledLightningTrigger
+	METHOD lambda$trigger$0 (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/world/level/storage/loot/LootContext;
+		ARG 1 victim
+	METHOD lambda$trigger$1 (Ljava/util/List;Lnet/minecraft/advancements/critereon/ChanneledLightningTrigger$TriggerInstance;)Z
+		ARG 1 trigger
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Ljava/util/Collection;)V
+		ARG 1 player
+		ARG 2 victims
 	CLASS TriggerInstance
 		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;[Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
+			ARG 1 player
 			ARG 2 victims
+		METHOD channeledLightning ([Lnet/minecraft/advancements/critereon/EntityPredicate;)Lnet/minecraft/advancements/critereon/ChanneledLightningTrigger$TriggerInstance;
+			ARG 0 victims
+		METHOD matches (Ljava/util/Collection;)Z
+			ARG 1 victims

@@ -4,6 +4,8 @@ CLASS net/minecraft/client/Minecraft
 	METHOD archiveProfilingReport (Lnet/minecraft/SystemReport;Ljava/util/List;)Ljava/nio/file/Path;
 		ARG 1 systemReport
 		ARG 2 paths
+	METHOD clearLevel (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 screen
 	METHOD clearResourcePacksOnError (Ljava/lang/Throwable;Lnet/minecraft/network/chat/Component;)V
 		ARG 1 throwable
 		ARG 2 component
@@ -18,8 +20,25 @@ CLASS net/minecraft/client/Minecraft
 		ARG 1 callback
 	METHOD delayCrash (Lnet/minecraft/CrashReport;)V
 		ARG 1 delayedCrash
+	METHOD displayExperimentalConfirmationDialog (Lnet/minecraft/client/Minecraft$ExperimentalDialogType;Ljava/lang/String;ZLjava/lang/Runnable;)V
+		ARG 1 dialogType
+		ARG 2 worldName
+		ARG 3 stable
+	METHOD doLoadLevel (Ljava/lang/String;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Ljava/util/function/Function;Lcom/mojang/datafixers/util/Function4;ZLnet/minecraft/client/Minecraft$ExperimentalDialogType;)V
+		ARG 1 levelId
+		ARG 2 registryHolder
+		ARG 6 dialogType
 	METHOD finishProfilers (ZLnet/minecraft/util/profiling/SingleTickProfiler;)V
 		ARG 2 profiler
+	METHOD forceSetScreen (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 screen
+	METHOD isBlocked (Ljava/util/UUID;)Z
+		ARG 1 sender
+	METHOD lambda$displayExperimentalConfirmationDialog$40 (Ljava/lang/Runnable;Ljava/lang/String;Z)V
+		ARG 3 confirmed
+	METHOD makeServerStem (Lnet/minecraft/core/RegistryAccess$RegistryHolder;Ljava/util/function/Function;Lcom/mojang/datafixers/util/Function4;ZLnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;)Lnet/minecraft/client/Minecraft$ServerStem;
+		ARG 1 registryHolder
+		ARG 5 storageAccess
 	METHOD renderFpsMeter (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/util/profiling/ProfileResults;)V
 		ARG 2 results
 	METHOD rollbackResourcePacks (Ljava/lang/Throwable;)V
@@ -38,6 +57,10 @@ CLASS net/minecraft/client/Minecraft
 		ARG 1 screen
 	METHOD setWindowActive (Z)V
 		ARG 1 windowActive
+	METHOD updateLevelInEngines (Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 level
+	METHOD updateScreenAndTick (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 screen
 	CLASS ChatStatus
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;)V
 			ARG 3 message

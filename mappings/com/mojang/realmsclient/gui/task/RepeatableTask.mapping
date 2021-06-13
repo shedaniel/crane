@@ -4,3 +4,13 @@ CLASS com/mojang/realmsclient/gui/task/RepeatableTask
 		ARG 2 interval
 		ARG 3 isActive
 		ARG 4 restartDelayCalculator
+	METHOD schedule (Ljava/util/concurrent/ScheduledExecutorService;)Ljava/util/concurrent/ScheduledFuture;
+		ARG 1 service
+	METHOD withImmediateRestart (Ljava/lang/Runnable;Ljava/time/Duration;Ljava/util/function/BooleanSupplier;)Lcom/mojang/realmsclient/gui/task/RepeatableTask;
+		ARG 0 runnable
+		ARG 1 interval
+		ARG 2 isActive
+	METHOD withRestartDelayAccountingForInterval (Ljava/lang/Runnable;Ljava/time/Duration;Ljava/util/function/BooleanSupplier;)Lcom/mojang/realmsclient/gui/task/RepeatableTask;
+		ARG 0 runnable
+		ARG 1 interval
+		ARG 2 isActive

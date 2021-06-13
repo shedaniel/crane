@@ -146,6 +146,9 @@ CLASS net/minecraft/client/gui/Font
 		ARG 7 index
 		ARG 8 style
 		ARG 9 codepoint
+	METHOD lambda$new$0 (ILnet/minecraft/network/chat/Style;)F
+		ARG 1 codepoint
+		ARG 2 style
 	METHOD plainSubstrByWidth (Ljava/lang/String;I)Ljava/lang/String;
 		ARG 1 text
 		ARG 2 width

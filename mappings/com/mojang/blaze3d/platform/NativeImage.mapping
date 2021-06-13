@@ -13,7 +13,16 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 4 useStbFree
 		ARG 5 pixels
 	METHOD _upload (IIIIIIIZZZZ)V
+		ARG 1 level
+		ARG 2 xoffset
+		ARG 3 yoffset
+		ARG 4 skipPixels
+		ARG 5 skipRows
 		ARG 6 width
+		ARG 7 height
+		ARG 8 blur
+		ARG 9 clampToEdge
+		ARG 10 mipmap
 		ARG 11 closing
 	METHOD blendPixel (III)V
 		ARG 1 x
@@ -24,6 +33,11 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 1 blue
 		ARG 2 green
 		ARG 3 red
+	METHOD downloadTexture (IZ)V
+		ARG 1 level
+		ARG 2 removeAlpha
+	METHOD fromBase64 (Ljava/lang/String;)Lcom/mojang/blaze3d/platform/NativeImage;
+		ARG 0 data
 	METHOD getA (I)I
 		ARG 0 color
 	METHOD getB (I)I
@@ -60,6 +74,9 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 0 stream
 	METHOD read (Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/platform/NativeImage;
 		ARG 0 buf
+	METHOD setFilter (ZZ)V
+		ARG 0 blur
+		ARG 1 mipmap
 	METHOD setPixelLuminance (IIB)V
 		ARG 1 x
 		ARG 2 y
@@ -68,6 +85,33 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 1 x
 		ARG 2 y
 		ARG 3 rgba
+	METHOD upload (IIIIIIIZZ)V
+		ARG 1 level
+		ARG 2 xoffset
+		ARG 3 yoffset
+		ARG 4 skipPixels
+		ARG 5 skipRows
+		ARG 6 width
+		ARG 7 height
+		ARG 8 mipmap
+		ARG 9 closing
+	METHOD upload (IIIIIIIZZZZ)V
+		ARG 1 level
+		ARG 2 xoffset
+		ARG 3 yoffset
+		ARG 4 skipPixels
+		ARG 5 skipRows
+		ARG 6 width
+		ARG 7 height
+		ARG 8 blur
+		ARG 9 clampToEdge
+		ARG 10 mipmap
+		ARG 11 closing
+	METHOD upload (IIIZ)V
+		ARG 1 level
+		ARG 2 xoffset
+		ARG 3 yoffset
+		ARG 4 closing
 	METHOD writeToFile (Ljava/io/File;)V
 		ARG 1 file
 	METHOD writeToFile (Ljava/lang/String;)V
@@ -89,11 +133,17 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 			ARG 13 luminanceOffset
 			ARG 14 alphaOffset
 			ARG 15 supportedByStb
+		METHOD getStbFormat (I)Lcom/mojang/blaze3d/platform/NativeImage$Format;
+			ARG 0 stbFormat
 		METHOD valueOf (Ljava/lang/String;)Lcom/mojang/blaze3d/platform/NativeImage$Format;
 			ARG 0 name
 	CLASS WriteCallback
 		METHOD <init> (Ljava/nio/channels/WritableByteChannel;)V
 			ARG 1 output
+		METHOD invoke (JJI)V
+			ARG 1 context
+			ARG 3 data
+			ARG 5 size
 	CLASS InternalGlFormat
 		METHOD <init> (Ljava/lang/String;II)V
 			ARG 3 glFormat

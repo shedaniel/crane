@@ -1,4 +1,14 @@
 CLASS com/mojang/blaze3d/shaders/BlendMode
+	METHOD <init> (III)V
+		ARG 1 srcFactor
+		ARG 2 dstFactor
+		ARG 3 blendFunc
+	METHOD <init> (IIIII)V
+		ARG 1 srcColorFactor
+		ARG 2 dstColorFactor
+		ARG 3 srcAlphaFactor
+		ARG 4 dstAlphaFactor
+		ARG 5 blendFunc
 	METHOD <init> (ZZIIIII)V
 		ARG 1 separateBlend
 		ARG 2 opaque
@@ -9,3 +19,9 @@ CLASS com/mojang/blaze3d/shaders/BlendMode
 		ARG 7 blendFunc
 	METHOD apply ()V
 		ARG 0 lastApplied
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD stringToBlendFactor (Ljava/lang/String;)I
+		ARG 0 string
+	METHOD stringToBlendFunc (Ljava/lang/String;)I
+		ARG 0 string

@@ -1,3 +1,7 @@
 CLASS net/minecraft/core/DefaultedRegistry
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;)V
+		ARG 1 defaultKey
+		ARG 2 key
+		ARG 3 lifecycle
 	METHOD registerMapping (ILnet/minecraft/resources/ResourceKey;Ljava/lang/Object;Lcom/mojang/serialization/Lifecycle;)Ljava/lang/Object;
 		ARG 3 defaultValue

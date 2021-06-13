@@ -1,0 +1,5 @@
+CLASS net/minecraft/core/AxisCycle
+	METHOD cycle (Lnet/minecraft/core/Direction$Axis;)Lnet/minecraft/core/Direction$Axis;
+		ARG 1 axis
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/core/AxisCycle;
+		ARG 0 name

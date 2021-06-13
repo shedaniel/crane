@@ -9,6 +9,8 @@ CLASS net/minecraft/core/Direction
 		ARG 9 normal
 	METHOD fromNormal (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Direction;
 		ARG 0 pos
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/core/Direction;
+		ARG 0 name
 	CLASS Axis
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 			ARG 3 name

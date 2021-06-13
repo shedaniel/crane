@@ -1,17 +1,52 @@
 CLASS net/minecraft/server/MinecraftServer
 	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/server/packs/repository/PackRepository;Ljava/net/Proxy;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/server/ServerResources;Lcom/mojang/authlib/minecraft/MinecraftSessionService;Lcom/mojang/authlib/GameProfileRepository;Lnet/minecraft/server/players/GameProfileCache;Lnet/minecraft/server/level/progress/ChunkProgressListenerFactory;)V
 		ARG 1 thread
-		ARG 2 l
-		ARG 3 j
-		ARG 4 o
-		ARG 5 as
-		ARG 6 m
+		ARG 2 registryHolder
+		ARG 3 storageAccess
+		ARG 4 worldData
+		ARG 5 packRepository
+		ARG 6 proxy
 		ARG 7 fixerUpper
 		ARG 8 resources
 		ARG 9 sessionService
 		ARG 10 profileRepository
 		ARG 11 profileC
 		ARG 12 progressListenerFactory
+	METHOD configurePackRepository (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/world/level/DataPackConfig;Z)Lnet/minecraft/world/level/DataPackConfig;
+		ARG 0 packRepository
+		ARG 1 packConfig
+	METHOD convertFromRegionFormatIfNeeded (Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;)V
+		ARG 0 storageAccess
+	METHOD createLevels (Lnet/minecraft/server/level/progress/ChunkProgressListener;)V
+		ARG 1 listener
+	METHOD fillServerSystemReport (Lnet/minecraft/SystemReport;)Lnet/minecraft/SystemReport;
+		ARG 1 report
+	METHOD getScaledTrackingDistance (I)I
+		ARG 1 distance
+	METHOD getSelectedPacks (Lnet/minecraft/server/packs/repository/PackRepository;)Lnet/minecraft/world/level/DataPackConfig;
+		ARG 0 packRepository
+	METHOD getSpawnRadius (Lnet/minecraft/server/level/ServerLevel;)I
+		ARG 1 level
+	METHOD isSingleplayerOwner (Lcom/mojang/authlib/GameProfile;)Z
+		ARG 1 gameProfile
+	METHOD isUnderSpawnProtection (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 player
+	METHOD kickUnlistedPlayers (Lnet/minecraft/commands/CommandSourceStack;)V
+		ARG 1 commandSource
+	METHOD lambda$setInitialSpawn$4 (Lnet/minecraft/world/level/biome/Biome;)Z
+		ARG 0 biome
+	METHOD onServerCrash (Lnet/minecraft/CrashReport;)V
+		ARG 1 report
+	METHOD publishServer (Lnet/minecraft/world/level/GameType;ZI)Z
+		ARG 1 defaultGameType
+		ARG 2 allowCheats
+		ARG 3 port
+	METHOD readScoreboard (Lnet/minecraft/world/level/storage/DimensionDataStorage;)V
+		ARG 1 dataStorage
+	METHOD setDefaultGameType (Lnet/minecraft/world/level/GameType;)V
+		ARG 1 gameType
 	METHOD setDemo (Z)V
 		ARG 1 isDemo
 	METHOD setEnforceWhitelist (Z)V
@@ -20,6 +55,9 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 allowFlight
 	METHOD setId (Ljava/lang/String;)V
 		ARG 1 serverId
+	METHOD setInitialSpawn (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/storage/ServerLevelData;ZZ)V
+		ARG 0 level
+		ARG 1 levelData
 	METHOD setLocalIp (Ljava/lang/String;)V
 		ARG 1 localIp
 	METHOD setMotd (Ljava/lang/String;)V

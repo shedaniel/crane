@@ -1,14 +1,32 @@
 CLASS net/minecraft/client/gui/Gui
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD canRenderCrosshairForSpectator (Lnet/minecraft/world/phys/HitResult;)Z
+		ARG 1 hitResult
 	METHOD displayScoreboardSidebar (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/scores/Objective;)V
 		ARG 2 objective
+	METHOD drawBackdrop (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;III)V
+		ARG 1 poses
+		ARG 2 font
+		ARG 3 y
+		ARG 5 color
 	METHOD getVehicleMaxHearts (Lnet/minecraft/world/entity/LivingEntity;)I
 		ARG 1 entity
+	METHOD handleChat (Lnet/minecraft/network/chat/ChatType;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+		ARG 1 chatType
+		ARG 2 message
+		ARG 3 sender
 	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;F)V
+		ARG 1 poses
 		ARG 2 delta
+	METHOD renderCrosshair (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD renderEffects (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
 	METHOD renderExperienceBar (Lcom/mojang/blaze3d/vertex/PoseStack;I)V
 		ARG 2 x
+	METHOD renderHotbar (FLcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 2 poses
 	METHOD renderJumpMeter (Lcom/mojang/blaze3d/vertex/PoseStack;I)V
 		ARG 2 x
 	METHOD renderPortalOverlay (F)V
@@ -16,12 +34,16 @@ CLASS net/minecraft/client/gui/Gui
 	METHOD renderSlot (IIFLnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 1 x
 		ARG 2 y
+		ARG 4 player
 		ARG 5 stack
+		ARG 6 seed
 	METHOD renderTextureOverlay (Lnet/minecraft/resources/ResourceLocation;F)V
 		ARG 1 texture
 		ARG 2 alpha
 	METHOD renderVignette (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
+	METHOD setNowPlaying (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 component
 	METHOD setOverlayMessage (Lnet/minecraft/network/chat/Component;Z)V
 		ARG 1 overlayMessageString
 		ARG 2 animateOverlayMessageColor

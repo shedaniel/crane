@@ -1,4 +1,27 @@
 CLASS com/mojang/blaze3d/platform/InputConstants
+	METHOD getKey (II)Lcom/mojang/blaze3d/platform/InputConstants$Key;
+		ARG 0 keyCode
+		ARG 1 scanCode
+	METHOD getKey (Ljava/lang/String;)Lcom/mojang/blaze3d/platform/InputConstants$Key;
+		ARG 0 name
+	METHOD grabOrReleaseMouse (JIDD)V
+		ARG 0 windowId
+		ARG 2 cursorMode
+		ARG 3 xpos
+		ARG 5 ypos
+	METHOD isKeyDown (JI)Z
+		ARG 0 windowId
+		ARG 2 key
+	METHOD setupKeyboardCallbacks (JLorg/lwjgl/glfw/GLFWKeyCallbackI;Lorg/lwjgl/glfw/GLFWCharModsCallbackI;)V
+		ARG 0 windowId
+		ARG 2 keyCallback
+		ARG 3 charModsCallback
+	METHOD setupMouseCallbacks (JLorg/lwjgl/glfw/GLFWCursorPosCallbackI;Lorg/lwjgl/glfw/GLFWMouseButtonCallbackI;Lorg/lwjgl/glfw/GLFWScrollCallbackI;Lorg/lwjgl/glfw/GLFWDropCallbackI;)V
+		ARG 0 windowId
+		ARG 2 cursorPosCallback
+		ARG 3 mouseButtonCallback
+		ARG 4 scrollCallback
+		ARG 5 dropCallback
 	CLASS Key
 		METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/platform/InputConstants$Type;I)V
 			ARG 1 name
@@ -8,3 +31,7 @@ CLASS com/mojang/blaze3d/platform/InputConstants
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/function/BiFunction;)V
 			ARG 3 defaultPrefix
 			ARG 4 displayTextSupplier
+		METHOD getOrCreate (I)Lcom/mojang/blaze3d/platform/InputConstants$Key;
+			ARG 1 value
+		METHOD lambda$getOrCreate$3 (I)Lcom/mojang/blaze3d/platform/InputConstants$Key;
+			ARG 1 code

@@ -71,6 +71,11 @@ CLASS net/minecraft/client/StringSplitter
 		ARG 1 text
 		ARG 2 width
 		ARG 3 style
+		ARG 4 consumer
+	METHOD splitLines (Lnet/minecraft/network/chat/FormattedText;ILnet/minecraft/network/chat/Style;Lnet/minecraft/network/chat/FormattedText;)Ljava/util/List;
+		ARG 1 text
+		ARG 2 width
+		ARG 3 style
 	METHOD stringWidth (Ljava/lang/String;)F
 		ARG 1 string
 	METHOD stringWidth (Lnet/minecraft/network/chat/FormattedText;)F

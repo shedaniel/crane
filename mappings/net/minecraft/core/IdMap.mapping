@@ -1,0 +1,5 @@
+CLASS net/minecraft/core/IdMap
+	METHOD byId (I)Ljava/lang/Object;
+		ARG 1 id
+	METHOD getId (Ljava/lang/Object;)I
+		ARG 1 value

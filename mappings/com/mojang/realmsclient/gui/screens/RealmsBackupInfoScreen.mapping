@@ -2,6 +2,11 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsBackupInfoScreen
 	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lcom/mojang/realmsclient/dto/Backup;)V
 		ARG 1 lastScreen
 		ARG 2 backup
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	CLASS BackupInfoList
+		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsBackupInfoScreen;Lnet/minecraft/client/Minecraft;)V
+			ARG 2 minecraft
 	CLASS BackupInfoListEntry
 		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/RealmsBackupInfoScreen;Ljava/lang/String;Ljava/lang/String;)V
 			ARG 2 key

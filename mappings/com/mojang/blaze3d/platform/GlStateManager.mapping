@@ -1,4 +1,6 @@
 CLASS com/mojang/blaze3d/platform/GlStateManager
+	METHOD _glUseProgram (I)V
+		ARG 0 program
 	CLASS b
 		METHOD <init> (I)V
 			ARG 1 a

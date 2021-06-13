@@ -14,6 +14,9 @@ CLASS net/minecraft/client/gui/font/providers/BitmapProvider
 			ARG 8 ascent
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;IILjava/util/List;)V
+			ARG 1 location
 			ARG 2 height
 			ARG 3 ascent
 			ARG 4 chars
+		METHOD fromJson (Lcom/google/gson/JsonObject;)Lnet/minecraft/client/gui/font/providers/BitmapProvider$Builder;
+			ARG 0 json
