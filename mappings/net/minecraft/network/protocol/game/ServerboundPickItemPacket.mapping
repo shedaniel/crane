@@ -1,3 +1,5 @@
 CLASS net/minecraft/network/protocol/game/ServerboundPickItemPacket
 	METHOD <init> (I)V
 		ARG 1 slot
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

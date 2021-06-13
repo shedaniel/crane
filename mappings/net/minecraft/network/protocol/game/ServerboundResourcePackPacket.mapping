@@ -1,3 +1,8 @@
 CLASS net/minecraft/network/protocol/game/ServerboundResourcePackPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/network/protocol/game/ServerboundResourcePackPacket$Action;)V
 		ARG 1 action
+	CLASS Action
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/network/protocol/game/ServerboundResourcePackPacket$Action;
+			ARG 0 name

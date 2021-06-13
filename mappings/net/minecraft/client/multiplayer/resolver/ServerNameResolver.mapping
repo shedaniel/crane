@@ -3,3 +3,5 @@ CLASS net/minecraft/client/multiplayer/resolver/ServerNameResolver
 		ARG 1 resolver
 		ARG 2 redirectHandler
 		ARG 3 addressCheck
+	METHOD resolveAddress (Lnet/minecraft/client/multiplayer/resolver/ServerAddress;)Ljava/util/Optional;
+		ARG 1 address

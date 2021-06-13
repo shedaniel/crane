@@ -2,7 +2,15 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientPacketListener;Lnet/minecraft/client/multiplayer/ClientLevel$ClientLevelData;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/dimension/DimensionType;ILjava/util/function/Supplier;Lnet/minecraft/client/renderer/LevelRenderer;ZJ)V
 		ARG 1 connection
 		ARG 2 clientLevelData
+		ARG 3 dimension
+		ARG 4 dimensionType
+		ARG 5 storageRange
+		ARG 6 profiler
 		ARG 7 levelRenderer
+		ARG 8 isDebug
+		ARG 9 seed
+	METHOD lambda$new$0 (Lit/unimi/dsi/fastutil/objects/Object2ObjectArrayMap;)V
+		ARG 0 map
 	METHOD setScoreboard (Lnet/minecraft/world/scores/Scoreboard;)V
 		ARG 1 scoreboard
 	METHOD setSkyFlashTime (I)V

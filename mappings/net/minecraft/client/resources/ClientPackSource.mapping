@@ -6,3 +6,5 @@ CLASS net/minecraft/client/resources/ClientPackSource
 		ARG 1 constructor
 	METHOD createProgrammerArtPack (Lnet/minecraft/server/packs/repository/Pack$PackConstructor;Ljava/util/function/Supplier;)Lnet/minecraft/server/packs/repository/Pack;
 		ARG 0 constructor
+	METHOD downloadAndSelectResourcePack (Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/concurrent/CompletableFuture;
+		ARG 3 clearScreenAfterStop

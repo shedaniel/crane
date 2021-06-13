@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/model/AbstractZombieModel
+	METHOD isAggressive (Lnet/minecraft/world/entity/monster/Monster;)Z
+		ARG 1 entity

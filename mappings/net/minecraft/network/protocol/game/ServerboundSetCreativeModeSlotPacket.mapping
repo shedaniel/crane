@@ -1,3 +1,6 @@
 CLASS net/minecraft/network/protocol/game/ServerboundSetCreativeModeSlotPacket
 	METHOD <init> (ILnet/minecraft/world/item/ItemStack;)V
 		ARG 1 slotNum
+		ARG 2 stack
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

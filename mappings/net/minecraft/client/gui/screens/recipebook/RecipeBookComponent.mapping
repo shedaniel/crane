@@ -19,6 +19,7 @@ CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookComponent
 		ARG 1 poses
 		ARG 2 x
 		ARG 3 y
+		ARG 4 hasBigOutput
 		ARG 5 delta
 	METHOD renderGhostRecipeTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
 		ARG 1 poses
@@ -28,6 +29,8 @@ CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookComponent
 		ARG 5 mouseY
 	METHOD renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
 		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
 		ARG 4 mouseX
 		ARG 5 mouseY
 	METHOD setVisible (Z)V
@@ -37,3 +40,5 @@ CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookComponent
 		ARG 2 slots
 	METHOD slotClicked (Lnet/minecraft/world/inventory/Slot;)V
 		ARG 1 slot
+	METHOD updateCollections (Z)V
+		ARG 1 resetPage

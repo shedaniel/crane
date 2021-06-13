@@ -6,6 +6,7 @@ CLASS net/minecraft/world/level/Level
 		ARG 4 profiler
 		ARG 5 isClientSide
 		ARG 6 isDebug
+		ARG 7 seed
 	METHOD addAlwaysVisibleParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
 		ARG 1 particle
 	METHOD addAlwaysVisibleParticle (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V

@@ -2,12 +2,69 @@ CLASS net/minecraft/client/multiplayer/MultiPlayerGameMode
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientPacketListener;)V
 		ARG 1 minecraft
 		ARG 2 connection
+	METHOD adjustPlayer (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player
+	METHOD attack (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 player
+		ARG 2 entity
+	METHOD continueDestroyBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
+		ARG 1 pos
+		ARG 2 direction
+	METHOD createPlayer (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/stats/StatsCounter;Lnet/minecraft/client/ClientRecipeBook;)Lnet/minecraft/client/player/LocalPlayer;
+		ARG 1 level
+		ARG 2 stats
+		ARG 3 recipeBook
+	METHOD createPlayer (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/stats/StatsCounter;Lnet/minecraft/client/ClientRecipeBook;ZZ)Lnet/minecraft/client/player/LocalPlayer;
+		ARG 1 level
+		ARG 2 stats
+		ARG 3 recipeBook
+		ARG 4 wasShiftKeyDown
+		ARG 5 wasSprinting
 	METHOD destroyBlock (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
+	METHOD handleBlockBreakAck (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action;Z)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state
+		ARG 4 action
+		ARG 5 allGood
+	METHOD handleCreativeModeItemAdd (Lnet/minecraft/world/item/ItemStack;I)V
+		ARG 1 stack
+		ARG 2 slotNum
 	METHOD handleCreativeModeItemDrop (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
+	METHOD handleInventoryButtonClick (II)V
+		ARG 1 containerId
+		ARG 2 buttonId
+	METHOD handleInventoryMouseClick (IIILnet/minecraft/world/inventory/ClickType;Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 containerId
+		ARG 2 slotNum
+		ARG 3 buttonNum
+		ARG 4 clickType
+		ARG 5 player
+	METHOD handlePickItem (I)V
+		ARG 1 slot
+	METHOD handlePlaceRecipe (ILnet/minecraft/world/item/crafting/Recipe;Z)V
+		ARG 1 containerId
+		ARG 2 recipe
+		ARG 3 shiftDown
+	METHOD interact (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;
+		ARG 1 player
+		ARG 2 entity
+		ARG 3 hand
+	METHOD interactAt (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/EntityHitResult;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;
+		ARG 1 player
+		ARG 2 entity
+		ARG 3 hitResult
+		ARG 4 hand
+	METHOD releaseUsingItem (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player
 	METHOD sameDestroyTarget (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
+	METHOD sendBlockAction (Lnet/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)V
+		ARG 1 action
+		ARG 2 pos
+		ARG 3 direction
 	METHOD setLocalMode (Lnet/minecraft/world/level/GameType;)V
 		ARG 1 localPlayerMode
 	METHOD setLocalMode (Lnet/minecraft/world/level/GameType;Lnet/minecraft/world/level/GameType;)V
@@ -15,3 +72,13 @@ CLASS net/minecraft/client/multiplayer/MultiPlayerGameMode
 		ARG 2 previousLocalPlayerMode
 	METHOD startDestroyBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
 		ARG 1 destroyBlockPos
+		ARG 2 direction
+	METHOD useItem (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;
+		ARG 1 player
+		ARG 2 level
+		ARG 3 hand
+	METHOD useItemOn (Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;
+		ARG 1 player
+		ARG 2 level
+		ARG 3 hand
+		ARG 4 hitResult

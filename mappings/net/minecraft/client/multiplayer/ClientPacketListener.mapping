@@ -4,3 +4,13 @@ CLASS net/minecraft/client/multiplayer/ClientPacketListener
 		ARG 2 callbackScreen
 		ARG 3 connection
 		ARG 4 localGameProfile
+	METHOD getPlayerInfo (Ljava/lang/String;)Lnet/minecraft/client/multiplayer/PlayerInfo;
+		ARG 1 name
+	METHOD getPlayerInfo (Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;
+		ARG 1 uuid
+	METHOD lambda$handlePlaceRecipe$11 (Lnet/minecraft/world/inventory/AbstractContainerMenu;Lnet/minecraft/world/item/crafting/Recipe;)V
+		ARG 2 recipe
+	METHOD send (Lnet/minecraft/network/protocol/Packet;)V
+		ARG 1 packet
+	METHOD send (Lnet/minecraft/network/protocol/game/ServerboundResourcePackPacket$Action;)V
+		ARG 1 action

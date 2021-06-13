@@ -7,8 +7,11 @@ CLASS net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent
 		ARG 1 font
 	METHOD renderImage (Lnet/minecraft/client/gui/Font;IILcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/entity/ItemRenderer;ILnet/minecraft/client/renderer/texture/TextureManager;)V
 		ARG 1 font
+		ARG 2 x
+		ARG 3 y
 		ARG 4 pose
 		ARG 5 itemRenderer
+		ARG 6 blitOffset
 		ARG 7 textureManager
 	METHOD renderText (Lnet/minecraft/client/gui/Font;IILcom/mojang/math/Matrix4f;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;)V
 		ARG 1 font

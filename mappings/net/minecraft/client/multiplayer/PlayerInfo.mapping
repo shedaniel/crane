@@ -1,4 +1,6 @@
 CLASS net/minecraft/client/multiplayer/PlayerInfo
+	METHOD <init> (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoPacket$PlayerUpdate;)V
+		ARG 1 update
 	METHOD setDisplayHealth (I)V
 		ARG 1 displayHealth
 	METHOD setGameMode (Lnet/minecraft/world/level/GameType;)V

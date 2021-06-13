@@ -5,6 +5,8 @@ CLASS net/minecraft/client/multiplayer/ClientAdvancements
 		ARG 1 listener
 	METHOD setSelectedTab (Lnet/minecraft/advancements/Advancement;Z)V
 		ARG 1 selectedTab
+	METHOD update (Lnet/minecraft/network/protocol/game/ClientboundUpdateAdvancementsPacket;)V
+		ARG 1 packet
 	CLASS Listener
 		METHOD onSelectedTabChanged (Lnet/minecraft/advancements/Advancement;)V
 			ARG 1 advancement

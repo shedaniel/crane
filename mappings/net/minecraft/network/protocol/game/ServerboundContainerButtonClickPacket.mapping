@@ -2,3 +2,5 @@ CLASS net/minecraft/network/protocol/game/ServerboundContainerButtonClickPacket
 	METHOD <init> (II)V
 		ARG 1 containerId
 		ARG 2 buttonId
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
