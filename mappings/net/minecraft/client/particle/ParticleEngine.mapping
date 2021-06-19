@@ -2,5 +2,51 @@ CLASS net/minecraft/client/particle/ParticleEngine
 	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/texture/TextureManager;)V
 		ARG 1 level
 		ARG 2 textureManager
+	METHOD add (Lnet/minecraft/client/particle/Particle;)V
+		ARG 1 particle
+	METHOD createParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)Lnet/minecraft/client/particle/Particle;
+		ARG 1 particleType
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
+	METHOD createTrackingEmitter (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/particles/ParticleOptions;)V
+		ARG 1 entity
+		ARG 2 particleType
+	METHOD createTrackingEmitter (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/particles/ParticleOptions;I)V
+		ARG 1 entity
+		ARG 2 particleType
+		ARG 3 lifeTime
+	METHOD lambda$tick$7 (Lnet/minecraft/client/particle/ParticleRenderType;Ljava/util/Queue;)V
+		ARG 1 particleType
+		ARG 2 particles
+	METHOD lambda$tick$8 (Lnet/minecraft/client/particle/ParticleRenderType;)Ljava/util/Queue;
+		ARG 0 particleType
+	METHOD makeParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)Lnet/minecraft/client/particle/Particle;
+		ARG 1 particleType
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
+	METHOD register (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;)V
+		ARG 1 particleType
+		ARG 2 registration
+	METHOD register (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider;)V
+		ARG 1 particleType
+		ARG 2 particleProvider
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lnet/minecraft/client/renderer/LightTexture;Lnet/minecraft/client/Camera;F)V
+		ARG 1 poses
+		ARG 2 bufferSource
+		ARG 3 lightTexture
+		ARG 4 camera
+		ARG 5 delta
 	METHOD setLevel (Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 level
+	METHOD tickParticle (Lnet/minecraft/client/particle/Particle;)V
+		ARG 1 particle
+	METHOD tickParticleList (Ljava/util/Collection;)V
+		ARG 1 particles

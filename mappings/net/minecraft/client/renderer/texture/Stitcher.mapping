@@ -3,6 +3,16 @@ CLASS net/minecraft/client/renderer/texture/Stitcher
 		ARG 1 maxWidth
 		ARG 2 maxHeight
 		ARG 3 mipLevel
+	METHOD addToStorage (Lnet/minecraft/client/renderer/texture/Stitcher$Holder;)Z
+		ARG 1 holder
+	METHOD expand (Lnet/minecraft/client/renderer/texture/Stitcher$Holder;)Z
+		ARG 1 holder
+	METHOD gatherSprites (Lnet/minecraft/client/renderer/texture/Stitcher$SpriteLoader;)V
+		ARG 1 spriteLoader
+	METHOD lambda$gatherSprites$4 (Lnet/minecraft/client/renderer/texture/Stitcher$SpriteLoader;Lnet/minecraft/client/renderer/texture/Stitcher$Region;)V
+		ARG 2 region
+	METHOD registerSprite (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;)V
+		ARG 1 info
 	CLASS Holder
 		METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;I)V
 			ARG 1 spriteInfo
@@ -14,3 +24,10 @@ CLASS net/minecraft/client/renderer/texture/Stitcher
 			ARG 4 height
 		METHOD add (Lnet/minecraft/client/renderer/texture/Stitcher$Holder;)Z
 			ARG 1 holder
+	CLASS SpriteLoader
+		METHOD load (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;IIII)V
+			ARG 1 info
+			ARG 2 atlasWidth
+			ARG 3 atlasHeight
+			ARG 4 x
+			ARG 5 y

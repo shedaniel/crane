@@ -1,8 +1,15 @@
 CLASS net/minecraft/client/renderer/texture/TextureAtlasSprite
 	METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureAtlas;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;IIIIILcom/mojang/blaze3d/platform/NativeImage;)V
 		ARG 1 atlas
+		ARG 2 info
+		ARG 3 mipLevel
+		ARG 4 atlasWidth
+		ARG 5 atlasHeight
 		ARG 6 x
 		ARG 7 y
+		ARG 8 image
+	METHOD createTicker (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;III)Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$AnimatedTexture;
+		ARG 1 info
 	CLASS Info
 		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;IILnet/minecraft/client/resources/metadata/animation/AnimationMetadataSection;)V
 			ARG 1 name

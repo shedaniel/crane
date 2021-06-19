@@ -2,6 +2,14 @@ CLASS net/minecraft/CrashReport
 	METHOD <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
 		ARG 1 title
 		ARG 2 exception
+	METHOD addCategory (Ljava/lang/String;)Lnet/minecraft/CrashReportCategory;
+		ARG 1 name
+	METHOD addCategory (Ljava/lang/String;I)Lnet/minecraft/CrashReportCategory;
+		ARG 1 name
+		ARG 2 stackTraceOffset
+	METHOD forThrowable (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/CrashReport;
+		ARG 0 throwable
+		ARG 1 title
 	METHOD getDetails (Ljava/lang/StringBuilder;)V
 		ARG 1 builder
 	METHOD saveToFile (Ljava/io/File;)Z
