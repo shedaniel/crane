@@ -6,6 +6,22 @@ CLASS net/minecraft/client/gui/screens/inventory/BookViewScreen
 		ARG 2 playTurnSound
 	METHOD forcePage (I)Z
 		ARG 1 page
+	METHOD getClickedComponentStyleAt (DD)Lnet/minecraft/network/chat/Style;
+		ARG 1 x
+		ARG 3 y
+	METHOD lambda$createMenuControls$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createPageControlButtons$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createPageControlButtons$2 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$loadPages$3 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/ListTag;I)Ljava/lang/String;
+		ARG 2 index
+	METHOD loadPages (Lnet/minecraft/nbt/CompoundTag;)Ljava/util/List;
+		ARG 0 tag
+	METHOD loadPages (Lnet/minecraft/nbt/CompoundTag;Ljava/util/function/Consumer;)V
+		ARG 0 tag
+		ARG 1 callback
 	METHOD setBookAccess (Lnet/minecraft/client/gui/screens/inventory/BookViewScreen$BookAccess;)V
 		ARG 1 bookAccess
 	METHOD setPage (I)Z
@@ -13,6 +29,10 @@ CLASS net/minecraft/client/gui/screens/inventory/BookViewScreen
 	CLASS BookAccess
 		METHOD fromItem (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/client/gui/screens/inventory/BookViewScreen$BookAccess;
 			ARG 0 stack
+		METHOD getPage (I)Lnet/minecraft/network/chat/FormattedText;
+			ARG 1 page
+		METHOD getPageRaw (I)Lnet/minecraft/network/chat/FormattedText;
+			ARG 1 page
 	CLASS WrittenBookAccess
 		METHOD <init> (Lnet/minecraft/world/item/ItemStack;)V
 			ARG 1 stack

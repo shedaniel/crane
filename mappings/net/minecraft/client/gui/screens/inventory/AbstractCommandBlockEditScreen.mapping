@@ -3,7 +3,11 @@ CLASS net/minecraft/client/gui/screens/inventory/AbstractCommandBlockEditScreen
 		ARG 1 button
 	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
+	METHOD lambda$init$2 (Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
+		ARG 2 value
 	METHOD onEdited (Ljava/lang/String;)V
 		ARG 1 text
 	METHOD populateAndSendPacket (Lnet/minecraft/world/level/BaseCommandBlock;)V
 		ARG 1 commandBlock
+	METHOD updatePreviousOutput (Z)V
+		ARG 1 trackOutput

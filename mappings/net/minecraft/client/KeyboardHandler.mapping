@@ -1,7 +1,23 @@
 CLASS net/minecraft/client/KeyboardHandler
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD copyCreateBlockCommand (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 state
+		ARG 2 pos
+		ARG 3 tag
+	METHOD copyCreateEntityCommand (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 location
+		ARG 2 pos
+		ARG 3 tag
 	METHOD debugComponent (Lnet/minecraft/ChatFormatting;Lnet/minecraft/network/chat/Component;)V
 		ARG 1 formatting
+	METHOD keyPress (JIIII)V
+		ARG 1 windowId
+		ARG 3 keyCode
+		ARG 4 scanCode
+	METHOD setClipboard (Ljava/lang/String;)V
+		ARG 1 clipboard
 	METHOD setSendRepeatsToGui (Z)V
 		ARG 1 sendRepeatsToGui
+	METHOD setup (J)V
+		ARG 1 windowId

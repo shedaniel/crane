@@ -1,6 +1,9 @@
 CLASS net/minecraft/client/gui/components/events/GuiEventListener
+	METHOD changeFocus (Z)Z
+		ARG 1 next
 	METHOD charTyped (CI)Z
 		ARG 1 character
+		ARG 2 modifiers
 	METHOD isMouseOver (DD)Z
 		ARG 1 mouseX
 		ARG 3 mouseY

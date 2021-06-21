@@ -10,3 +10,11 @@ CLASS net/minecraft/client/gui/screens/packs/TransferableSelectionList
 			ARG 2 parent
 			ARG 3 screen
 			ARG 4 pack
+		METHOD cacheDescription (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/client/gui/components/MultiLineLabel;
+			ARG 0 minecraft
+			ARG 1 description
+		METHOD cacheName (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/util/FormattedCharSequence;
+			ARG 0 minecraft
+			ARG 1 name
+		METHOD lambda$mouseClicked$0 (Z)V
+			ARG 1 confirmed

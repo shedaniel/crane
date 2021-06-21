@@ -8,13 +8,13 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementTabType
 	METHOD draw (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiComponent;IIZI)V
 		ARG 1 poses
 		ARG 2 guiComponent
-		ARG 3 x
-		ARG 4 y
-		ARG 5 reverse
+		ARG 3 left
+		ARG 4 top
+		ARG 5 bottom
 		ARG 6 index
 	METHOD drawIcon (IIILnet/minecraft/client/renderer/entity/ItemRenderer;Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 x
-		ARG 2 y
+		ARG 1 left
+		ARG 2 top
 		ARG 3 index
 		ARG 4 itemRenderer
 		ARG 5 stack
@@ -23,8 +23,8 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementTabType
 	METHOD getY (I)I
 		ARG 1 index
 	METHOD isMouseOver (IIIDD)Z
-		ARG 1 x
-		ARG 2 y
+		ARG 1 left
+		ARG 2 top
 		ARG 3 index
 		ARG 4 mouseX
 		ARG 6 mouseY

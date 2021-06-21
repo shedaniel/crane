@@ -1,6 +1,8 @@
 CLASS net/minecraft/client/renderer/texture/SimpleTexture
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
 		ARG 1 location
+	METHOD getTextureImage (Lnet/minecraft/server/packs/resources/ResourceManager;)Lnet/minecraft/client/renderer/texture/SimpleTexture$TextureImage;
+		ARG 1 resourceManager
 	CLASS TextureImage
 		METHOD <init> (Ljava/io/IOException;)V
 			ARG 1 exception

@@ -23,6 +23,18 @@ CLASS net/minecraft/client/gui/screens/Screen
 	METHOD insertText (Ljava/lang/String;Z)V
 		ARG 1 text
 		ARG 2 override
+	METHOD isCopy (I)Z
+		ARG 0 keyCode
+	METHOD isCut (I)Z
+		ARG 0 keyCode
+	METHOD isPaste (I)Z
+		ARG 0 keyCode
+	METHOD isSelectAll (I)Z
+		ARG 0 keyCode
+	METHOD isValidCharacterForName (Ljava/lang/String;CI)Z
+		ARG 1 currentText
+		ARG 2 character
+		ARG 3 cursorPos
 	METHOD lambda$renderTooltip$0 (Ljava/util/List;Lnet/minecraft/world/inventory/tooltip/TooltipComponent;)V
 		ARG 1 component
 	METHOD onFilesDrop (Ljava/util/List;)V

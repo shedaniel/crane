@@ -3,6 +3,34 @@ CLASS net/minecraft/client/gui/screens/inventory/MerchantScreen
 		ARG 1 menu
 		ARG 2 inventory
 		ARG 3 title
+	METHOD canScroll (I)Z
+		ARG 1 offerSize
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD renderAndDecorateCostA (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;II)V
+		ARG 1 poses
+		ARG 2 cost
+		ARG 3 baseCost
+		ARG 4 x
+		ARG 5 y
+	METHOD renderButtonArrows (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/item/trading/MerchantOffer;II)V
+		ARG 1 poses
+		ARG 2 offer
+		ARG 3 x
+		ARG 4 y
+	METHOD renderProgressBar (Lcom/mojang/blaze3d/vertex/PoseStack;IILnet/minecraft/world/item/trading/MerchantOffer;)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 offer
+	METHOD renderScroller (Lcom/mojang/blaze3d/vertex/PoseStack;IILnet/minecraft/world/item/trading/MerchantOffers;)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 offers
 	CLASS TradeOfferButton
 		METHOD <init> (Lnet/minecraft/client/gui/screens/inventory/MerchantScreen;IIILnet/minecraft/client/gui/components/Button$OnPress;)V
+			ARG 2 x
+			ARG 3 y
 			ARG 4 index
+			ARG 5 onPress

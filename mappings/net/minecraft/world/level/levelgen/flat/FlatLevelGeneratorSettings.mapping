@@ -2,5 +2,9 @@ CLASS net/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings
 	METHOD <init> (Lnet/minecraft/world/level/levelgen/StructureSettings;Lnet/minecraft/core/Registry;)V
 		ARG 1 structureSettings
 		ARG 2 biomes
+	METHOD lambda$static$4 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD lambda$static$5 (Ljava/util/HashMap;)V
+		ARG 0 map
 	METHOD setBiome (Ljava/util/function/Supplier;)V
 		ARG 1 biome

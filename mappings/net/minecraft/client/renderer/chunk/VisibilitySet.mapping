@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/chunk/VisibilitySet
+	METHOD add (Ljava/util/Set;)V
+		ARG 1 directions

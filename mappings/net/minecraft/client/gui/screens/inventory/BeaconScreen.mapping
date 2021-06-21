@@ -5,16 +5,55 @@ CLASS net/minecraft/client/gui/screens/inventory/BeaconScreen
 		ARG 3 title
 	METHOD addBeaconButton (Lnet/minecraft/client/gui/components/AbstractWidget;)V
 		ARG 1 widget
+	METHOD lambda$updateButtons$0 (ILnet/minecraft/client/gui/screens/inventory/BeaconScreen$BeaconButton;)V
+		ARG 1 button
+	CLASS BeaconButton
+		METHOD renderToolTip (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+			ARG 1 poses
+			ARG 2 x
+			ARG 3 y
+		METHOD updateStatus (I)V
+			ARG 1 tier
 	CLASS BeaconPowerButton
 		METHOD <init> (Lnet/minecraft/client/gui/screens/inventory/BeaconScreen;IILnet/minecraft/world/effect/MobEffect;ZI)V
+			ARG 2 x
+			ARG 3 y
+			ARG 4 effect
 			ARG 5 isPrimary
 			ARG 6 tier
+		METHOD createEffectDescription (Lnet/minecraft/world/effect/MobEffect;)Lnet/minecraft/network/chat/MutableComponent;
+			ARG 1 effect
 		METHOD setEffect (Lnet/minecraft/world/effect/MobEffect;)V
 			ARG 1 effect
+	CLASS BeaconCancelButton
+		METHOD <init> (Lnet/minecraft/client/gui/screens/inventory/BeaconScreen;II)V
+			ARG 2 x
+			ARG 3 y
 	CLASS BeaconScreenButton
+		METHOD <init> (II)V
+			ARG 1 x
+			ARG 2 y
+		METHOD <init> (IILnet/minecraft/network/chat/Component;)V
+			ARG 1 x
+			ARG 2 y
+			ARG 3 message
+		METHOD renderIcon (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+			ARG 1 poses
 		METHOD setSelected (Z)V
 			ARG 1 selected
+	CLASS BeaconConfirmButton
+		METHOD <init> (Lnet/minecraft/client/gui/screens/inventory/BeaconScreen;II)V
+			ARG 2 x
+			ARG 3 y
 	CLASS BeaconSpriteScreenButton
 		METHOD <init> (Lnet/minecraft/client/gui/screens/inventory/BeaconScreen;IIIILnet/minecraft/network/chat/Component;)V
+			ARG 2 x
+			ARG 3 y
 			ARG 4 iconX
 			ARG 5 iconY
+			ARG 6 message
+	CLASS BeaconUpgradePowerButton
+		METHOD <init> (Lnet/minecraft/client/gui/screens/inventory/BeaconScreen;IILnet/minecraft/world/effect/MobEffect;)V
+			ARG 2 x
+			ARG 3 y
+			ARG 4 effect

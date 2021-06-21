@@ -14,8 +14,29 @@ CLASS net/minecraft/client/gui/screens/worldselection/CreateWorldScreen
 		ARG 0 lastScreen
 	METHOD lambda$init$0 (Ljava/lang/String;)V
 		ARG 1 text
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/CycleButton;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 1 button
+	METHOD lambda$init$10 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$11 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$12 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
 	METHOD lambda$init$3 (Lnet/minecraft/client/gui/components/CycleButton;Lnet/minecraft/world/Difficulty;)V
+		ARG 1 button
 		ARG 2 difficulty
+	METHOD lambda$init$4 (Lnet/minecraft/client/gui/components/CycleButton;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 0 button
+	METHOD lambda$init$5 (Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
+		ARG 2 value
+	METHOD lambda$init$6 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$7 (Lnet/minecraft/world/level/GameRules;)V
+		ARG 1 gameRules
+	METHOD lambda$init$8 (Ljava/util/Optional;)V
+		ARG 1 optional
+	METHOD lambda$init$9 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
 	METHOD lambda$removeTempDataPackDir$20 (Ljava/nio/file/Path;)V
 		ARG 0 path
 	METHOD lambda$tryApplyNewDataPacks$13 (Ljava/util/List;Ljava/lang/String;)Z
@@ -25,10 +46,12 @@ CLASS net/minecraft/client/gui/screens/worldselection/CreateWorldScreen
 	METHOD setGameMode (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen$SelectedGameMode;)V
 		ARG 1 gameMode
 	METHOD setWorldGenSettingsVisible (Z)V
-		ARG 1 worldGenSettingsVisible
+		ARG 1 visible
 	METHOD tryApplyNewDataPacks (Lnet/minecraft/server/packs/repository/PackRepository;)V
 		ARG 1 repositories
 	CLASS SelectedGameMode
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/GameType;)V
 			ARG 3 name
 			ARG 4 gameType
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen$SelectedGameMode;
+			ARG 0 name

@@ -4,3 +4,15 @@ CLASS net/minecraft/client/gui/screens/LoadingOverlay
 		ARG 2 reload
 		ARG 3 onFinish
 		ARG 4 fadeIn
+	METHOD drawProgressBar (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIF)V
+		ARG 1 poses
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 alpha
+	METHOD registerTextures (Lnet/minecraft/client/Minecraft;)V
+		ARG 0 minecraft
+	METHOD replaceAlpha (II)I
+		ARG 0 color
+		ARG 1 alpha

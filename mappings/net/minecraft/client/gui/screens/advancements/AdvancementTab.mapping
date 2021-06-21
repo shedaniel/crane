@@ -6,7 +6,40 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementTab
 		ARG 4 index
 		ARG 5 advancement
 		ARG 6 display
+	METHOD addAdvancement (Lnet/minecraft/advancements/Advancement;)V
+		ARG 1 advancement
+	METHOD addWidget (Lnet/minecraft/client/gui/screens/advancements/AdvancementWidget;Lnet/minecraft/advancements/Advancement;)V
+		ARG 1 widget
+		ARG 2 advancement
+	METHOD create (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/advancements/AdvancementsScreen;ILnet/minecraft/advancements/Advancement;)Lnet/minecraft/client/gui/screens/advancements/AdvancementTab;
+		ARG 0 minecraft
+		ARG 1 screen
+		ARG 2 tabsSize
+		ARG 3 advancement
 	METHOD drawContents (Lcom/mojang/blaze3d/vertex/PoseStack;)V
 		ARG 1 poses
+	METHOD drawIcon (IILnet/minecraft/client/renderer/entity/ItemRenderer;)V
+		ARG 1 left
+		ARG 2 top
+		ARG 3 itemRenderer
+	METHOD drawTab (Lcom/mojang/blaze3d/vertex/PoseStack;IIZ)V
+		ARG 1 poses
+		ARG 2 left
+		ARG 3 top
+		ARG 4 bottom
 	METHOD drawTooltips (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
 		ARG 1 poses
+		ARG 2 mouseX
+		ARG 3 mouseY
+		ARG 4 left
+		ARG 5 top
+	METHOD getWidget (Lnet/minecraft/advancements/Advancement;)Lnet/minecraft/client/gui/screens/advancements/AdvancementWidget;
+		ARG 1 advancement
+	METHOD isMouseOver (IIDD)Z
+		ARG 1 left
+		ARG 2 top
+		ARG 3 mouseX
+		ARG 5 mouseY
+	METHOD scroll (DD)V
+		ARG 1 dx
+		ARG 3 dy

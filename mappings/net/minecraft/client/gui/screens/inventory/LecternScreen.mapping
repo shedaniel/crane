@@ -3,3 +3,9 @@ CLASS net/minecraft/client/gui/screens/inventory/LecternScreen
 		ARG 1 menu
 		ARG 2 inventory
 		ARG 3 title
+	METHOD lambda$createMenuControls$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$createMenuControls$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD sendButtonClick (I)V
+		ARG 1 buttonId

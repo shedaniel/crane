@@ -1,6 +1,39 @@
 CLASS net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen
 	METHOD <init> (Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 player
+	METHOD checkTabClicked (Lnet/minecraft/world/item/CreativeModeTab;DD)Z
+		ARG 1 tab
+		ARG 2 mouseX
+		ARG 4 mouseY
+	METHOD checkTabHovering (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/item/CreativeModeTab;II)Z
+		ARG 1 poses
+		ARG 2 tab
+		ARG 3 mouseX
+		ARG 4 mouseY
+	METHOD handleHotbarLoadOrSave (Lnet/minecraft/client/Minecraft;IZZ)V
+		ARG 0 minecraft
+		ARG 1 index
+		ARG 2 save
+		ARG 3 load
+	METHOD insideScrollbar (DD)Z
+		ARG 1 mouseX
+		ARG 3 mouseY
+	METHOD isCreativeSlot (Lnet/minecraft/world/inventory/Slot;)Z
+		ARG 1 slot
+	METHOD lambda$renderTooltip$3 (Lnet/minecraft/world/item/ItemStack;Ljava/util/List;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/tags/Tag;)V
+		ARG 2 location
+		ARG 3 tag
+	METHOD lambda$updateVisibleTags$0 (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z
+		ARG 1 location
+	METHOD lambda$updateVisibleTags$1 (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z
+		ARG 2 location
+	METHOD renderTabButton (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/item/CreativeModeTab;)V
+		ARG 1 poses
+		ARG 2 tab
+	METHOD selectTab (Lnet/minecraft/world/item/CreativeModeTab;)V
+		ARG 1 tab
+	METHOD updateVisibleTags (Ljava/lang/String;)V
+		ARG 1 searchFilter
 	CLASS SlotWrapper
 		METHOD <init> (Lnet/minecraft/world/inventory/Slot;III)V
 			ARG 1 target
@@ -11,5 +44,9 @@ CLASS net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen
 		METHOD set (Lnet/minecraft/world/item/ItemStack;)V
 			ARG 1 stack
 	CLASS ItemPickerMenu
+		METHOD <init> (Lnet/minecraft/world/entity/player/Player;)V
+			ARG 1 player
+		METHOD scrollTo (F)V
+			ARG 1 scrolledAmount
 		METHOD setCarried (Lnet/minecraft/world/item/ItemStack;)V
 			ARG 1 stack

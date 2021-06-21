@@ -49,6 +49,9 @@ CLASS net/minecraft/client/gui/screens/achievement/StatsScreen
 			METHOD renderStat (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/stats/Stat;IIZ)V
 				ARG 1 poses
 				ARG 2 stat
+				ARG 3 x
+				ARG 4 y
+				ARG 5 brighter
 		CLASS ItemRowComparator
 			METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
 				ARG 1 first
@@ -60,6 +63,10 @@ CLASS net/minecraft/client/gui/screens/achievement/StatsScreen
 			METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen$MobsStatisticsList;Lnet/minecraft/world/entity/EntityType;)V
 				ARG 2 type
 	CLASS GeneralStatisticsList
+		METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen;Lnet/minecraft/client/Minecraft;)V
+			ARG 2 minecraft
+		METHOD lambda$new$0 (Lnet/minecraft/stats/Stat;)Ljava/lang/String;
+			ARG 0 stat
 		CLASS Entry
 			METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen$GeneralStatisticsList;Lnet/minecraft/stats/Stat;)V
 				ARG 2 stat
