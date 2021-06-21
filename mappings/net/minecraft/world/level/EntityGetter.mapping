@@ -10,6 +10,57 @@ CLASS net/minecraft/world/level/EntityGetter
 		ARG 1 test
 		ARG 2 box
 		ARG 3 predicate
+	METHOD getEntityCollisions (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+		ARG 1 entity
+		ARG 2 box
+		ARG 3 predicate
+	METHOD getNearbyPlayers (Lnet/minecraft/world/entity/ai/targeting/TargetingConditions;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/phys/AABB;)Ljava/util/List;
+		ARG 1 conditions
+		ARG 2 entity
+		ARG 3 box
+	METHOD getNearestEntity (Ljava/util/List;Lnet/minecraft/world/entity/ai/targeting/TargetingConditions;Lnet/minecraft/world/entity/LivingEntity;DDD)Lnet/minecraft/world/entity/LivingEntity;
+		ARG 1 entities
+		ARG 2 conditions
+		ARG 3 entity
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+	METHOD getNearestPlayer (DDDDLjava/util/function/Predicate;)Lnet/minecraft/world/entity/player/Player;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 distance
+		ARG 9 predicate
+	METHOD getNearestPlayer (DDDDZ)Lnet/minecraft/world/entity/player/Player;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 distance
+		ARG 9 ignoreSpectator
+	METHOD getNearestPlayer (Lnet/minecraft/world/entity/Entity;D)Lnet/minecraft/world/entity/player/Player;
+		ARG 1 entity
+		ARG 2 distance
+	METHOD getNearestPlayer (Lnet/minecraft/world/entity/ai/targeting/TargetingConditions;DDD)Lnet/minecraft/world/entity/player/Player;
+		ARG 1 conditions
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD getNearestPlayer (Lnet/minecraft/world/entity/ai/targeting/TargetingConditions;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/entity/player/Player;
+		ARG 1 conditions
+		ARG 2 entity
+	METHOD getNearestPlayer (Lnet/minecraft/world/entity/ai/targeting/TargetingConditions;Lnet/minecraft/world/entity/LivingEntity;DDD)Lnet/minecraft/world/entity/player/Player;
+		ARG 1 conditions
+		ARG 2 entity
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+	METHOD getPlayerByUUID (Ljava/util/UUID;)Lnet/minecraft/world/entity/player/Player;
+		ARG 1 uuid
+	METHOD hasNearbyAlivePlayer (DDDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 distance
 	METHOD isUnobstructed (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/shapes/VoxelShape;)Z
 		ARG 1 entity
 		ARG 2 box

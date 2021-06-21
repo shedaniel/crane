@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/item/enchantment/EnchantmentCategory
+	METHOD canEnchant (Lnet/minecraft/world/item/Item;)Z
+		ARG 1 item
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/item/enchantment/EnchantmentCategory;
+		ARG 0 name

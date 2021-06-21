@@ -7,3 +7,7 @@ CLASS net/minecraft/world/level/TickNextTickData
 		ARG 2 type
 		ARG 3 triggerTick
 		ARG 5 priority
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD lambda$createTimeComparator$0 (Lnet/minecraft/world/level/TickNextTickData;)J
+		ARG 0 data

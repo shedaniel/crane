@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/UseAnim
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/item/UseAnim;
+		ARG 0 name

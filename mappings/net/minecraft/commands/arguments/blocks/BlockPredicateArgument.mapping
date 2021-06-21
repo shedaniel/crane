@@ -1,4 +1,6 @@
 CLASS net/minecraft/commands/arguments/blocks/BlockPredicateArgument
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+		ARG 1 reader
 	CLASS TagPredicate
 		METHOD <init> (Lnet/minecraft/tags/Tag;Ljava/util/Map;Lnet/minecraft/nbt/CompoundTag;)V
 			ARG 1 tag

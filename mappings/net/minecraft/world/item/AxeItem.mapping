@@ -1,3 +1,14 @@
 CLASS net/minecraft/world/item/AxeItem
+	METHOD <init> (Lnet/minecraft/world/item/Tier;FFLnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 tier
+		ARG 2 attackDamage
+		ARG 3 attackSpeed
+		ARG 4 properties
 	METHOD getStripped (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/Optional;
 		ARG 1 state
+	METHOD lambda$getStripped$2 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 block
+	METHOD lambda$useOn$0 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 block
+	METHOD lambda$useOn$1 (Lnet/minecraft/world/item/context/UseOnContext;Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player

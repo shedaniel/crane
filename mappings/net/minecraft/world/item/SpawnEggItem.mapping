@@ -3,3 +3,20 @@ CLASS net/minecraft/world/item/SpawnEggItem
 		ARG 1 defaultType
 		ARG 2 backgroundColor
 		ARG 3 highlightColor
+		ARG 4 properties
+	METHOD byId (Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/item/SpawnEggItem;
+		ARG 0 type
+	METHOD getColor (I)I
+		ARG 1 tintIndex
+	METHOD getType (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/EntityType;
+		ARG 1 tag
+	METHOD spawnOffspringFromSpawnEgg (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;
+		ARG 1 player
+		ARG 2 mob
+		ARG 3 type
+		ARG 4 level
+		ARG 5 pos
+		ARG 6 stack
+	METHOD spawnsEntity (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/world/entity/EntityType;)Z
+		ARG 1 tag
+		ARG 2 type

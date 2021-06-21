@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/item/enchantment/FrostWalkerEnchantment
+	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$Rarity;[Lnet/minecraft/world/entity/EquipmentSlot;)V
+		ARG 1 rarity
+		ARG 2 slots
+	METHOD onEntityMoved (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;I)V
+		ARG 0 entity
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 radius

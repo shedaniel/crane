@@ -5,6 +5,12 @@ CLASS net/minecraft/world/level/ChunkTickList
 	METHOD <init> (Ljava/util/function/Function;Ljava/util/List;J)V
 		ARG 1 toId
 		ARG 2 nextTicks
+	METHOD copyOut (Lnet/minecraft/world/level/TickList;)V
+		ARG 1 ticks
+	METHOD create (Lnet/minecraft/nbt/ListTag;Ljava/util/function/Function;Ljava/util/function/Function;)Lnet/minecraft/world/level/ChunkTickList;
+		ARG 0 tag
+		ARG 1 toId
+		ARG 2 fromId
 	METHOD lambda$new$0 (JLnet/minecraft/world/level/TickNextTickData;)Lnet/minecraft/world/level/ChunkTickList$ScheduledTick;
 		ARG 2 data
 	CLASS ScheduledTick

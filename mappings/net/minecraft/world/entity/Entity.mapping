@@ -30,6 +30,10 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 1 event
 		ARG 2 entity
 		ARG 3 pos
+	METHOD getBlockExplosionResistance (Lnet/minecraft/world/level/Explosion;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/material/FluidState;F)F
+		ARG 1 explosion
+		ARG 2 level
+		ARG 6 resistance
 	METHOD getDimensions (Lnet/minecraft/world/entity/Pose;)Lnet/minecraft/world/entity/EntityDimensions;
 		ARG 1 pose
 	METHOD handleEntityEvent (B)V
@@ -141,6 +145,9 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 1 xRot
 	METHOD setYRot (F)V
 		ARG 1 yRot
+	METHOD shouldBlockExplode (Lnet/minecraft/world/level/Explosion;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;F)Z
+		ARG 1 explosion
+		ARG 2 level
 	METHOD shouldRenderAtSqrDistance (D)Z
 		ARG 1 distance
 	METHOD spawnAtLocation (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity;

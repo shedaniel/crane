@@ -1,6 +1,31 @@
 CLASS net/minecraft/commands/arguments/ScoreHolderArgument
 	METHOD <init> (Z)V
 		ARG 1 multiple
+	METHOD getName (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 context
+		ARG 1 argument
+	METHOD getNames (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+		ARG 1 argument
+	METHOD getNames (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		ARG 0 context
+		ARG 1 argument
+		ARG 2 names
+	METHOD getNamesWithDefaultWildcard (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+		ARG 1 argument
+	METHOD lambda$parse$2 (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		ARG 0 commandSource
+		ARG 1 names
+	METHOD lambda$parse$3 (Ljava/util/Collection;Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		ARG 1 commandSource
+		ARG 2 names
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+		ARG 1 reader
+	CLASS Result
+		METHOD getNames (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
+			ARG 1 commandSource
+			ARG 2 names
 	CLASS SelectorResult
 		METHOD <init> (Lnet/minecraft/commands/arguments/selector/EntitySelector;)V
 			ARG 1 selector

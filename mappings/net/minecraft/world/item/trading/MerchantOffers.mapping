@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/item/trading/MerchantOffers
+	METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 tag
+	METHOD createFromStream (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/trading/MerchantOffers;
+		ARG 0 buf
+	METHOD getRecipeFor (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;I)Lnet/minecraft/world/item/trading/MerchantOffer;
+		ARG 3 index
+	METHOD writeToStream (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

@@ -4,5 +4,7 @@ CLASS net/minecraft/util/random/WeightedEntry
 			ARG 1 data
 			ARG 2 weight
 	CLASS IntrusiveBase
+		METHOD <init> (I)V
+			ARG 1 weight
 		METHOD <init> (Lnet/minecraft/util/random/Weight;)V
 			ARG 1 weight

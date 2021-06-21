@@ -1,6 +1,6 @@
 CLASS net/minecraft/network/protocol/game/ClientboundMapItemDataPacket
 	METHOD <init> (IBZLjava/util/Collection;Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData$MapPatch;)V
-		ARG 1 mapid
+		ARG 1 mapId
 		ARG 2 scale
 		ARG 3 locked
 		ARG 4 decorations

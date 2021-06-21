@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/WritableBookItem
+	METHOD makeSureTagIsValid (Lnet/minecraft/nbt/CompoundTag;)Z
+		ARG 0 tag

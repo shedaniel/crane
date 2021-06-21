@@ -1,4 +1,26 @@
 CLASS net/minecraft/world/entity/item/ItemEntity
+	METHOD <init> (Lnet/minecraft/world/entity/item/ItemEntity;)V
+		ARG 1 itemEntity
+	METHOD <init> (Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 stack
+	METHOD <init> (Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 stack
+		ARG 9 dx
+		ARG 11 dy
+		ARG 13 dz
+	METHOD areMergable (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 first
+		ARG 1 second
+	METHOD lambda$tick$0 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
 	METHOD setItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
 	METHOD setOwner (Ljava/util/UUID;)V
@@ -7,3 +29,5 @@ CLASS net/minecraft/world/entity/item/ItemEntity
 		ARG 1 pickupDelay
 	METHOD setThrower (Ljava/util/UUID;)V
 		ARG 1 thrower
+	METHOD tryToMerge (Lnet/minecraft/world/entity/item/ItemEntity;)V
+		ARG 1 other

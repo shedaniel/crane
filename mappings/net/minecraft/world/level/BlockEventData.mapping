@@ -4,3 +4,5 @@ CLASS net/minecraft/world/level/BlockEventData
 		ARG 2 block
 		ARG 3 paramA
 		ARG 4 paramB
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other

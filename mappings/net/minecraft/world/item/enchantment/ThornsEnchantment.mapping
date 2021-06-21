@@ -1,3 +1,9 @@
 CLASS net/minecraft/world/item/enchantment/ThornsEnchantment
+	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$Rarity;[Lnet/minecraft/world/entity/EquipmentSlot;)V
+		ARG 1 rarity
+		ARG 2 slot
 	METHOD canEnchant (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
+	METHOD getDamage (ILjava/util/Random;)I
+		ARG 0 damage
+		ARG 1 random

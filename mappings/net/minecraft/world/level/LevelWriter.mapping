@@ -5,6 +5,7 @@ CLASS net/minecraft/world/level/LevelWriter
 		ARG 1 pos
 	METHOD destroyBlock (Lnet/minecraft/core/BlockPos;ZLnet/minecraft/world/entity/Entity;)Z
 		ARG 1 pos
+		ARG 3 entity
 	METHOD destroyBlock (Lnet/minecraft/core/BlockPos;ZLnet/minecraft/world/entity/Entity;I)Z
 		ARG 1 pos
 		ARG 3 entity

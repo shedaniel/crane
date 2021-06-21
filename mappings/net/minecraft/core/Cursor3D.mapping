@@ -1,5 +1,8 @@
 CLASS net/minecraft/core/Cursor3D
 	METHOD <init> (IIIIII)V
-		ARG 1 originX
-		ARG 2 originY
-		ARG 3 originZ
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2

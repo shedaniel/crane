@@ -7,8 +7,45 @@ CLASS net/minecraft/core/Direction
 		ARG 7 axisDirection
 		ARG 8 axis
 		ARG 9 normal
+	METHOD byName (Ljava/lang/String;)Lnet/minecraft/core/Direction;
+		ARG 0 name
+	METHOD from2DDataValue (I)Lnet/minecraft/core/Direction;
+		ARG 0 value
+	METHOD from3DDataValue (I)Lnet/minecraft/core/Direction;
+		ARG 0 value
+	METHOD fromAxisAndDirection (Lnet/minecraft/core/Direction$Axis;Lnet/minecraft/core/Direction$AxisDirection;)Lnet/minecraft/core/Direction;
+		ARG 0 axis
+		ARG 1 direction
+	METHOD fromNormal (III)Lnet/minecraft/core/Direction;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
 	METHOD fromNormal (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Direction;
 		ARG 0 pos
+	METHOD fromYRot (D)Lnet/minecraft/core/Direction;
+		ARG 0 yRot
+	METHOD get (Lnet/minecraft/core/Direction$AxisDirection;Lnet/minecraft/core/Direction$Axis;)Lnet/minecraft/core/Direction;
+		ARG 0 direction
+		ARG 1 axis
+	METHOD getClockWise (Lnet/minecraft/core/Direction$Axis;)Lnet/minecraft/core/Direction;
+		ARG 1 axis
+	METHOD getCounterClockWise (Lnet/minecraft/core/Direction$Axis;)Lnet/minecraft/core/Direction;
+		ARG 1 axis
+	METHOD getFacingAxis (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/Direction$Axis;)Lnet/minecraft/core/Direction;
+		ARG 0 entity
+		ARG 1 axis
+	METHOD getNearest (DDD)Lnet/minecraft/core/Direction;
+		ARG 0 x
+		ARG 2 y
+		ARG 4 z
+	METHOD getNearest (FFF)Lnet/minecraft/core/Direction;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD getRandom (Ljava/util/Random;)Lnet/minecraft/core/Direction;
+		ARG 0 random
+	METHOD orderedByNearest (Lnet/minecraft/world/entity/Entity;)[Lnet/minecraft/core/Direction;
+		ARG 0 entity
 	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/core/Direction;
 		ARG 0 name
 	CLASS Axis

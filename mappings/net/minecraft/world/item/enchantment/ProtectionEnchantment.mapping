@@ -1,7 +1,17 @@
 CLASS net/minecraft/world/item/enchantment/ProtectionEnchantment
 	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$Rarity;Lnet/minecraft/world/item/enchantment/ProtectionEnchantment$Type;[Lnet/minecraft/world/entity/EquipmentSlot;)V
+		ARG 1 rarity
 		ARG 2 type
+		ARG 3 slot
+	METHOD getExplosionKnockbackAfterDampener (Lnet/minecraft/world/entity/LivingEntity;D)D
+		ARG 0 entity
+		ARG 1 blast
+	METHOD getFireAfterDampener (Lnet/minecraft/world/entity/LivingEntity;I)I
+		ARG 0 entity
+		ARG 1 fire
 	CLASS Type
 		METHOD <init> (Ljava/lang/String;III)V
 			ARG 3 minCost
 			ARG 4 levelCost
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/item/enchantment/ProtectionEnchantment$Type;
+			ARG 0 name

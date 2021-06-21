@@ -8,6 +8,11 @@ CLASS net/minecraft/world/level/CollisionSpliterator
 		ARG 2 source
 		ARG 3 box
 		ARG 4 predicate
+	METHOD collisionCheck (Ljava/util/function/Consumer;)Z
+		ARG 1 consumer
+	METHOD getChunk (II)Lnet/minecraft/world/level/BlockGetter;
+		ARG 1 start
+		ARG 2 end
 	METHOD isBoxFullyWithinWorldBorder (Lnet/minecraft/world/level/border/WorldBorder;Lnet/minecraft/world/phys/AABB;)Z
 		ARG 0 border
 		ARG 1 box
@@ -20,3 +25,7 @@ CLASS net/minecraft/world/level/CollisionSpliterator
 	METHOD lambda$new$0 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)Z
 		ARG 0 state
 		ARG 1 pos
+	METHOD tryAdvance (Ljava/util/function/Consumer;)Z
+		ARG 1 consumer
+	METHOD worldBorderCheck (Ljava/util/function/Consumer;)Z
+		ARG 1 consumer

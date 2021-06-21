@@ -8,6 +8,10 @@ CLASS net/minecraft/world/entity/player/Player
 		ARG 1 stack
 	METHOD attack (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
+	METHOD awardStat (Lnet/minecraft/stats/Stat;)V
+		ARG 1 stat
+	METHOD awardStat (Lnet/minecraft/stats/Stat;I)V
+		ARG 1 stat
 	METHOD blockActionRestricted (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/GameType;)Z
 		ARG 1 level
 		ARG 2 pos
@@ -28,6 +32,8 @@ CLASS net/minecraft/world/entity/player/Player
 	METHOD openItemGui (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/InteractionHand;)V
 		ARG 1 stack
 		ARG 2 hand
+	METHOD resetStat (Lnet/minecraft/stats/Stat;)V
+		ARG 1 stat
 	METHOD setReducedDebugInfo (Z)V
 		ARG 1 reducedDebugInfo
 	METHOD shouldRemoveSoulSpeed (Lnet/minecraft/world/level/block/state/BlockState;)Z

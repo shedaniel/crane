@@ -38,6 +38,10 @@ CLASS net/minecraft/world/level/LevelReader
 	METHOD getMaxLocalRawBrightness (Lnet/minecraft/core/BlockPos;I)I
 		ARG 1 pos
 		ARG 2 skyDarken
+	METHOD getUncachedNoiseBiome (III)Lnet/minecraft/world/level/biome/Biome;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD hasChunk (II)Z
 		ARG 1 x
 		ARG 2 z
