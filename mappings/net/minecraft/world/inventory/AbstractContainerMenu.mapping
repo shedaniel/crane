@@ -48,10 +48,13 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 		ARG 3 stackSize
 	METHOD getQuickcraftHeader (I)I
 		COMMENT Gets the header of the current "quick craft" (drag) operation.
+		COMMENT This is dependent on the state of the mouse button used for the operation.
 		COMMENT
-		COMMENT @param state The "state" of the current quick craft, where:
-		COMMENT              {@code 0 = start, 1 = continue, 2 = end}
-		COMMENT @return Header of the current quick craft operation
+		COMMENT @param state The state of the mouse button, where
+		COMMENT              {@code 0 = click, 1 = hold, 2 = release}
+		COMMENT @return Status header for the current quick craft operation
+		COMMENT
+		COMMENT @see #quickcraftStatus
 		ARG 0 state
 	METHOD getQuickcraftMask (II)I
 		ARG 0 state
