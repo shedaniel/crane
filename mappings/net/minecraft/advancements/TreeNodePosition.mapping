@@ -6,7 +6,23 @@ CLASS net/minecraft/advancements/TreeNodePosition
 		ARG 3 previousSibling
 		ARG 4 childIndex
 		ARG 5 x
+	METHOD addChild (Lnet/minecraft/advancements/Advancement;Lnet/minecraft/advancements/TreeNodePosition;)Lnet/minecraft/advancements/TreeNodePosition;
+		ARG 1 advancement
+		ARG 2 previous
 	METHOD apportion (Lnet/minecraft/advancements/TreeNodePosition;)Lnet/minecraft/advancements/TreeNodePosition;
 		ARG 0 ancestor
+		ARG 1 lastSibling
+	METHOD getAncestor (Lnet/minecraft/advancements/TreeNodePosition;Lnet/minecraft/advancements/TreeNodePosition;)Lnet/minecraft/advancements/TreeNodePosition;
+		ARG 1 self
+		ARG 2 other
+	METHOD moveSubtree (Lnet/minecraft/advancements/TreeNodePosition;F)V
+		ARG 1 subtree
+		ARG 2 yDistance
+	METHOD run (Lnet/minecraft/advancements/Advancement;)V
+		ARG 0 root
 	METHOD secondWalk (FIF)F
+		ARG 1 dy
 		ARG 2 x
+		ARG 3 minY
+	METHOD thirdWalk (F)V
+		ARG 1 dy

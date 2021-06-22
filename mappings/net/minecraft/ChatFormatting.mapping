@@ -1,7 +1,35 @@
 CLASS net/minecraft/ChatFormatting
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;CILjava/lang/Integer;)V
+		ARG 3 name
+		ARG 4 colorCode
+		ARG 5 id
+		ARG 6 color
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;CZ)V
+		ARG 3 name
+		ARG 4 colorCode
+		ARG 5 isFormat
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;CZILjava/lang/Integer;)V
 		ARG 3 name
 		ARG 4 code
 		ARG 5 isFormat
 		ARG 6 id
 		ARG 7 color
+	METHOD cleanName (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 name
+	METHOD getByCode (C)Lnet/minecraft/ChatFormatting;
+		ARG 0 colorCode
+	METHOD getById (I)Lnet/minecraft/ChatFormatting;
+		ARG 0 id
+	METHOD getByName (Ljava/lang/String;)Lnet/minecraft/ChatFormatting;
+		ARG 0 name
+	METHOD getNames (ZZ)Ljava/util/Collection;
+		ARG 0 includeColors
+		ARG 1 includeFormatting
+	METHOD lambda$static$0 (Lnet/minecraft/ChatFormatting;)Ljava/lang/String;
+		ARG 0 f
+	METHOD lambda$static$1 (Lnet/minecraft/ChatFormatting;)Lnet/minecraft/ChatFormatting;
+		ARG 0 f
+	METHOD stripFormatting (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 input
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/ChatFormatting;
+		ARG 0 name

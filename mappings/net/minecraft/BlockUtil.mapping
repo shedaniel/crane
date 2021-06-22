@@ -1,4 +1,24 @@
 CLASS net/minecraft/BlockUtil
+	METHOD getLargestRectangleAround (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction$Axis;ILnet/minecraft/core/Direction$Axis;ILjava/util/function/Predicate;)Lnet/minecraft/BlockUtil$FoundRectangle;
+		ARG 0 pos
+		ARG 1 axis1
+		ARG 2 axis1Size
+		ARG 3 axis2
+		ARG 4 axis2Size
+		ARG 5 filter
+	METHOD getLimit (Ljava/util/function/Predicate;Lnet/minecraft/core/BlockPos$MutableBlockPos;Lnet/minecraft/core/Direction;I)I
+		ARG 0 predicate
+		ARG 1 pos
+		ARG 2 direction
+		ARG 3 max
+	METHOD getMaxRectangleLocation ([I)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 heights
+	METHOD getTopConnectedBlock (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/Block;)Ljava/util/Optional;
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 innerBlock
+		ARG 3 dir
+		ARG 4 outerBlock
 	CLASS IntBounds
 		METHOD <init> (II)V
 			ARG 1 min

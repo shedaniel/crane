@@ -19,17 +19,57 @@ CLASS net/minecraft/advancements/Advancement
 			ARG 3 rewards
 			ARG 4 criteria
 			ARG 5 requirements
+		METHOD addCriterion (Ljava/lang/String;Lnet/minecraft/advancements/Criterion;)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 1 key
+			ARG 2 criterion
+		METHOD addCriterion (Ljava/lang/String;Lnet/minecraft/advancements/CriterionTriggerInstance;)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 1 key
+			ARG 2 trigger
+		METHOD build (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/Advancement;
+			ARG 1 id
+		METHOD canBuild (Ljava/util/function/Function;)Z
+			ARG 1 parentGetter
 		METHOD display (Lnet/minecraft/advancements/DisplayInfo;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 display
+		METHOD display (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/advancements/FrameType;ZZZ)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 1 stack
+			ARG 2 title
+			ARG 3 subtitle
+			ARG 4 background
+			ARG 5 frame
+			ARG 6 toast
+			ARG 7 printInChat
+			ARG 8 secret
+		METHOD display (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/advancements/FrameType;ZZZ)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 1 item
+			ARG 2 title
+			ARG 3 subtitle
+			ARG 4 background
+			ARG 5 frame
+			ARG 6 toast
+			ARG 7 printInChat
+			ARG 8 secret
+		METHOD fromJson (Lcom/google/gson/JsonObject;Lnet/minecraft/advancements/critereon/DeserializationContext;)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 0 json
+			ARG 1 ctx
+		METHOD fromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 0 buf
+		METHOD lambda$build$0 (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/Advancement;
+			ARG 0 rl
 		METHOD parent (Lnet/minecraft/advancements/Advancement;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 parent
 		METHOD parent (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 parentId
 		METHOD requirements (Lnet/minecraft/advancements/RequirementsStrategy;)Lnet/minecraft/advancements/Advancement$Builder;
-			ARG 1 requirementsStrategy
+			ARG 1 strategy
 		METHOD requirements ([[Ljava/lang/String;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 requirements
 		METHOD rewards (Lnet/minecraft/advancements/AdvancementRewards$Builder;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 builder
 		METHOD rewards (Lnet/minecraft/advancements/AdvancementRewards;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 rewards
+		METHOD save (Ljava/util/function/Consumer;Ljava/lang/String;)Lnet/minecraft/advancements/Advancement;
+			ARG 1 consumer
+			ARG 2 id
+		METHOD serializeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

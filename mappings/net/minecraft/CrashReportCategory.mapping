@@ -34,6 +34,9 @@ CLASS net/minecraft/CrashReportCategory
 		ARG 2 error
 	METHOD trimStacktrace (I)V
 		ARG 1 trimLength
+	METHOD validateStackTrace (Ljava/lang/StackTraceElement;Ljava/lang/StackTraceElement;)Z
+		ARG 1 previousElement
+		ARG 2 nextElement
 	CLASS Entry
 		METHOD <init> (Ljava/lang/String;Ljava/lang/Object;)V
 			ARG 1 key
