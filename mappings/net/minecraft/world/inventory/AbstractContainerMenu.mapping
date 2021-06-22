@@ -12,6 +12,13 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 		ARG 1 listener
 	METHOD canDragTo (Lnet/minecraft/world/inventory/Slot;)Z
 		ARG 1 slot
+	METHOD canItemQuickReplace (Lnet/minecraft/world/inventory/Slot;Lnet/minecraft/world/item/ItemStack;Z)Z
+		ARG 0 slot
+		ARG 1 stack
+		ARG 2 respectStackSize
+	METHOD canTakeItemForPickAll (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/inventory/Slot;)Z
+		ARG 1 stack
+		ARG 2 slot
 	METHOD checkContainerDataCount (Lnet/minecraft/world/inventory/ContainerData;I)V
 		ARG 0 data
 		ARG 1 expectedSize
@@ -23,6 +30,7 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 		ARG 2 container
 	METHOD clickMenuButton (Lnet/minecraft/world/entity/player/Player;I)Z
 		ARG 1 player
+		ARG 2 button
 	METHOD clicked (IILnet/minecraft/world/inventory/ClickType;Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 slotNum
 		ARG 2 button
@@ -35,18 +43,63 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 		ARG 4 player
 	METHOD getQuickCraftSlotCount (Ljava/util/Set;ILnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 slots
+		ARG 1 type
 		ARG 2 stack
+		ARG 3 stackSize
+	METHOD getQuickcraftHeader (I)I
+		COMMENT Gets the header of the current "quick craft" (drag) operation.
+		COMMENT
+		COMMENT @param state The "state" of the current quick craft, where:
+		COMMENT              {@code 0 = start, 1 = continue, 2 = end}
+		COMMENT @return Header of the current quick craft operation
+		ARG 0 state
+	METHOD getQuickcraftMask (II)I
+		ARG 0 state
+		ARG 1 button
+	METHOD getQuickcraftType (I)I
+		COMMENT Gets the type of the current "quick craft" (drag) operation.
+		COMMENT
+		COMMENT @param button The active mouse button used for the quick craft
+		COMMENT @return Type of the current quick craft operation
+		COMMENT
+		COMMENT @see #getQuickCraftSlotCount(Set, int, ItemStack, int)
+		ARG 0 button
 	METHOD getRedstoneSignalFromBlockEntity (Lnet/minecraft/world/level/block/entity/BlockEntity;)I
-		ARG 0 blockEntity
+		ARG 0 be
 	METHOD getRedstoneSignalFromContainer (Lnet/minecraft/world/Container;)I
 		ARG 0 container
 	METHOD getSlot (I)Lnet/minecraft/world/inventory/Slot;
 		ARG 1 index
+	METHOD isValidQuickcraftType (ILnet/minecraft/world/entity/player/Player;)Z
+		ARG 0 button
+		ARG 1 player
+	METHOD lambda$doClick$3 (Lnet/minecraft/world/inventory/Slot;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 3 stack
+	METHOD lambda$doClick$4 (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/inventory/Slot;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 3 stack
 	METHOD lambda$stillValid$0 (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Ljava/lang/Boolean;
 		ARG 2 l
 		ARG 3 pos
 	METHOD moveItemStackTo (Lnet/minecraft/world/item/ItemStack;IIZ)Z
+		COMMENT Attempts to move the provided ItemStack to the first available slot
+		COMMENT in the container between the indices {@code start} (inclusive) and
+		COMMENT {@code end} (exclusive). If possible, it will always try to combine
+		COMMENT the input stack with already existing stacks in the container.
+		COMMENT <p>
+		COMMENT Caution: The base implementation of this method will <b>not</b> verify
+		COMMENT whether the item can actually be inserted into the current slot,
+		COMMENT so you will need to validate this yourself when using this method!
+		COMMENT
+		COMMENT @param stack The item stack to be moved
+		COMMENT @param start The minimum slot index the stack should be moved to
+		COMMENT @param end The maximum slot index the stack should be moved to
+		COMMENT @param reverse If {@code true}, try merging into the slot with the highest index first
+		COMMENT
+		COMMENT @return Whether the move was successful
 		ARG 1 stack
+		ARG 2 start
+		ARG 3 end
+		ARG 4 reverse
 	METHOD quickMoveStack (Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 player
 		ARG 2 index
