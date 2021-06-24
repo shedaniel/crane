@@ -1,0 +1,65 @@
+CLASS net/minecraft/server/players/OldUsersConverter
+	METHOD areOldPlayersConverted (Lnet/minecraft/server/MinecraftServer;)Z
+		ARG 0 server
+	METHOD convertIpBanlist (Lnet/minecraft/server/MinecraftServer;)Z
+		ARG 0 server
+	METHOD convertMobOwnerIfNecessary (Lnet/minecraft/server/MinecraftServer;Ljava/lang/String;)Ljava/util/UUID;
+		ARG 0 server
+	METHOD convertOpsList (Lnet/minecraft/server/MinecraftServer;)Z
+		ARG 0 server
+	METHOD convertPlayers (Lnet/minecraft/server/dedicated/DedicatedServer;)Z
+		ARG 0 server
+	METHOD convertUserBanlist (Lnet/minecraft/server/MinecraftServer;)Z
+		ARG 0 server
+	METHOD convertWhiteList (Lnet/minecraft/server/MinecraftServer;)Z
+		ARG 0 server
+	METHOD ensureDirectoryExists (Ljava/io/File;)V
+		ARG 0 directory
+	METHOD getWorldPlayersDirectory (Lnet/minecraft/server/MinecraftServer;)Ljava/io/File;
+		ARG 0 server
+	METHOD lookupPlayers (Lnet/minecraft/server/MinecraftServer;Ljava/util/Collection;Lcom/mojang/authlib/ProfileLookupCallback;)V
+		ARG 0 server
+		ARG 2 callback
+	METHOD parseDate (Ljava/lang/String;Ljava/util/Date;)Ljava/util/Date;
+		ARG 0 value
+		ARG 1 defaultDate
+	METHOD renameOldFile (Ljava/io/File;)V
+		ARG 0 file
+	METHOD serverReadyAfterUserconversion (Lnet/minecraft/server/MinecraftServer;)Z
+		ARG 0 server
+	CLASS 1
+		METHOD onProfileLookupFailed (Lcom/mojang/authlib/GameProfile;Ljava/lang/Exception;)V
+			ARG 1 profile
+			ARG 2 exception
+		METHOD onProfileLookupSucceeded (Lcom/mojang/authlib/GameProfile;)V
+			ARG 1 profile
+	CLASS 2
+		METHOD onProfileLookupFailed (Lcom/mojang/authlib/GameProfile;Ljava/lang/Exception;)V
+			ARG 1 profile
+			ARG 2 exception
+		METHOD onProfileLookupSucceeded (Lcom/mojang/authlib/GameProfile;)V
+			ARG 1 profile
+	CLASS 3
+		METHOD onProfileLookupFailed (Lcom/mojang/authlib/GameProfile;Ljava/lang/Exception;)V
+			ARG 1 profile
+			ARG 2 exception
+		METHOD onProfileLookupSucceeded (Lcom/mojang/authlib/GameProfile;)V
+			ARG 1 profile
+	CLASS 4
+		METHOD onProfileLookupFailed (Lcom/mojang/authlib/GameProfile;Ljava/lang/Exception;)V
+			ARG 1 profile
+			ARG 2 exception
+		METHOD onProfileLookupSucceeded (Lcom/mojang/authlib/GameProfile;)V
+			ARG 1 profile
+	CLASS 5
+		METHOD getFileNameForProfile (Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+			ARG 1 profile
+		METHOD movePlayerFile (Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)V
+			ARG 1 targetDirectory
+			ARG 2 from
+			ARG 3 to
+		METHOD onProfileLookupFailed (Lcom/mojang/authlib/GameProfile;Ljava/lang/Exception;)V
+			ARG 1 profile
+			ARG 2 exception
+		METHOD onProfileLookupSucceeded (Lcom/mojang/authlib/GameProfile;)V
+			ARG 1 profile

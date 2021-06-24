@@ -4,3 +4,5 @@ CLASS net/minecraft/client/resources/LegacyPackResourcesAdapter
 		ARG 2 patches
 	METHOD map (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 1 location
+	METHOD toMetaLocation (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 location

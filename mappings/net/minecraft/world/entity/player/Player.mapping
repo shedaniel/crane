@@ -18,6 +18,14 @@ CLASS net/minecraft/world/entity/player/Player
 		ARG 3 gameType
 	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
+	METHOD crit (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity
+	METHOD drop (Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/entity/item/ItemEntity;
+		ARG 1 stack
+		ARG 2 setThrower
+	METHOD drop (Lnet/minecraft/world/item/ItemStack;ZZ)Lnet/minecraft/world/entity/item/ItemEntity;
+		ARG 1 stack
+		ARG 3 setThrower
 	METHOD freeAt (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
 	METHOD getDestroySpeed (Lnet/minecraft/world/level/block/state/BlockState;)F
@@ -29,9 +37,16 @@ CLASS net/minecraft/world/entity/player/Player
 	METHOD interactOn (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;
 		ARG 1 entity
 		ARG 2 hand
+	METHOD magicCrit (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity
 	METHOD openItemGui (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/InteractionHand;)V
 		ARG 1 stack
 		ARG 2 hand
+	METHOD playNotifySound (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 pitch
 	METHOD resetStat (Lnet/minecraft/stats/Stat;)V
 		ARG 1 stat
 	METHOD setReducedDebugInfo (Z)V

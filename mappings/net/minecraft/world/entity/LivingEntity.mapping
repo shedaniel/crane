@@ -34,6 +34,13 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 5 lerpZ
 	METHOD onChangedBlock (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
+	METHOD onEffectAdded (Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 effect
+		ARG 2 entity
+	METHOD onEffectRemoved (Lnet/minecraft/world/effect/MobEffectInstance;)V
+		ARG 1 effect
+	METHOD onEffectUpdated (Lnet/minecraft/world/effect/MobEffectInstance;ZLnet/minecraft/world/entity/Entity;)V
+		ARG 1 effect
 	METHOD playHurtSound (Lnet/minecraft/world/damagesource/DamageSource;)V
 		ARG 1 source
 	METHOD setAbsorptionAmount (F)V

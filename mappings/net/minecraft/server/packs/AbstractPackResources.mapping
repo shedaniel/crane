@@ -1,3 +1,10 @@
 CLASS net/minecraft/server/packs/AbstractPackResources
 	METHOD <init> (Ljava/io/File;)V
 		ARG 1 file
+	METHOD getPathFromLocation (Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/String;
+		ARG 0 packType
+		ARG 1 location
+	METHOD getResource (Ljava/lang/String;)Ljava/io/InputStream;
+		ARG 1 location
+	METHOD hasResource (Ljava/lang/String;)Z
+		ARG 1 location

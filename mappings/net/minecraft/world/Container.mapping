@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/Container
+	METHOD countItem (Lnet/minecraft/world/item/Item;)I
+		ARG 1 item
+	METHOD getItem (I)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 index
+	METHOD hasAnyOf (Ljava/util/Set;)Z
+		ARG 1 items
+	METHOD setItem (ILnet/minecraft/world/item/ItemStack;)V
+		ARG 1 index
+		ARG 2 stack
+	METHOD startOpen (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player
+	METHOD stillValid (Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 player
+	METHOD stopOpen (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player

@@ -1,0 +1,10 @@
+CLASS net/minecraft/server/players/SleepStatus
+	METHOD areEnoughDeepSleeping (ILjava/util/List;)Z
+		ARG 1 percentageNeeded
+		ARG 2 players
+	METHOD areEnoughSleeping (I)Z
+		ARG 1 percentageNeeded
+	METHOD sleepersNeeded (I)I
+		ARG 1 percentage
+	METHOD update (Ljava/util/List;)Z
+		ARG 1 players

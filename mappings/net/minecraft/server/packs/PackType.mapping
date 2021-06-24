@@ -2,3 +2,7 @@ CLASS net/minecraft/server/packs/PackType
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lcom/mojang/bridge/game/PackType;)V
 		ARG 3 directory
 		ARG 4 bridgeType
+	METHOD getVersion (Lcom/mojang/bridge/game/GameVersion;)I
+		ARG 1 version
+	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/server/packs/PackType;
+		ARG 0 name

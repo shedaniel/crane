@@ -1,3 +1,19 @@
 CLASS net/minecraft/server/players/StoredUserList
 	METHOD <init> (Ljava/io/File;)V
 		ARG 1 file
+	METHOD add (Lnet/minecraft/server/players/StoredUserEntry;)V
+		ARG 1 entry
+	METHOD contains (Ljava/lang/Object;)Z
+		ARG 1 user
+	METHOD createEntry (Lcom/google/gson/JsonObject;)Lnet/minecraft/server/players/StoredUserEntry;
+		ARG 1 json
+	METHOD get (Ljava/lang/Object;)Lnet/minecraft/server/players/StoredUserEntry;
+		ARG 1 user
+	METHOD getKeyForUser (Ljava/lang/Object;)Ljava/lang/String;
+		ARG 1 user
+	METHOD lambda$save$0 (Lnet/minecraft/server/players/StoredUserEntry;)Lcom/google/gson/JsonObject;
+		ARG 0 entry
+	METHOD remove (Ljava/lang/Object;)V
+		ARG 1 user
+	METHOD remove (Lnet/minecraft/server/players/StoredUserEntry;)V
+		ARG 1 entry

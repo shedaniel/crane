@@ -1,4 +1,18 @@
 CLASS net/minecraft/world/level/border/BorderChangeListener
+	METHOD onBorderCenterSet (Lnet/minecraft/world/level/border/WorldBorder;DD)V
+		ARG 1 border
+	METHOD onBorderSetDamagePerBlock (Lnet/minecraft/world/level/border/WorldBorder;D)V
+		ARG 1 border
+	METHOD onBorderSetDamageSafeZOne (Lnet/minecraft/world/level/border/WorldBorder;D)V
+		ARG 1 border
+	METHOD onBorderSetWarningBlocks (Lnet/minecraft/world/level/border/WorldBorder;I)V
+		ARG 1 border
+	METHOD onBorderSetWarningTime (Lnet/minecraft/world/level/border/WorldBorder;I)V
+		ARG 1 border
+	METHOD onBorderSizeLerping (Lnet/minecraft/world/level/border/WorldBorder;DDJ)V
+		ARG 1 border
+	METHOD onBorderSizeSet (Lnet/minecraft/world/level/border/WorldBorder;D)V
+		ARG 1 border
 	CLASS DelegateBorderChangeListener
 		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;)V
 			ARG 1 worldBorder

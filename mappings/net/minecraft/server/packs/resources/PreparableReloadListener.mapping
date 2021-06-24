@@ -1,3 +1,11 @@
 CLASS net/minecraft/server/packs/resources/PreparableReloadListener
 	METHOD reload (Lnet/minecraft/server/packs/resources/PreparableReloadListener$PreparationBarrier;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;Lnet/minecraft/util/profiling/ProfilerFiller;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 barrier
 		ARG 2 resourceManager
+		ARG 3 preparationProfiler
+		ARG 4 reloadProfiler
+		ARG 5 preparationExecutor
+		ARG 6 reloadExecutor
+	CLASS PreparationBarrier
+		METHOD wait (Ljava/lang/Object;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 value

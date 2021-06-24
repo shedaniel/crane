@@ -1,3 +1,33 @@
 CLASS net/minecraft/client/renderer/texture/TextureManager
 	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;)V
 		ARG 1 resourceManager
+	METHOD _bind (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 location
+	METHOD bindForSetup (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 location
+	METHOD execute (Ljava/lang/Runnable;)V
+		ARG 0 runnable
+	METHOD getTexture (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/texture/AbstractTexture;
+		ARG 1 location
+	METHOD getTexture (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/texture/AbstractTexture;)Lnet/minecraft/client/renderer/texture/AbstractTexture;
+		ARG 1 location
+		ARG 2 defaultTexture
+	METHOD lambda$reload$5 (Ljava/lang/Runnable;)V
+		ARG 0 task
+	METHOD loadTexture (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/texture/AbstractTexture;)Lnet/minecraft/client/renderer/texture/AbstractTexture;
+		ARG 1 location
+		ARG 2 texture
+	METHOD preload (Lnet/minecraft/resources/ResourceLocation;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 location
+		ARG 2 executor
+	METHOD register (Ljava/lang/String;Lnet/minecraft/client/renderer/texture/DynamicTexture;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 prefix
+		ARG 2 texture
+	METHOD register (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/texture/AbstractTexture;)V
+		ARG 1 location
+		ARG 2 texture
+	METHOD release (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 location
+	METHOD safeClose (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/texture/AbstractTexture;)V
+		ARG 1 location
+		ARG 2 texture

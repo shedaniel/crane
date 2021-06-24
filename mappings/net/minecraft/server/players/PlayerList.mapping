@@ -7,11 +7,27 @@ CLASS net/minecraft/server/players/PlayerList
 	METHOD canPlayerLogin (Ljava/net/SocketAddress;Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/network/chat/Component;
 		ARG 1 address
 		ARG 2 gameProfile
+	METHOD getPlayerForLogin (Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/server/level/ServerPlayer;
+		ARG 1 profile
+	METHOD load (Lnet/minecraft/server/level/ServerPlayer;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 player
+	METHOD placeNewPlayer (Lnet/minecraft/network/Connection;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 connection
+		ARG 2 player
+	METHOD remove (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
+	METHOD respawn (Lnet/minecraft/server/level/ServerPlayer;Z)Lnet/minecraft/server/level/ServerPlayer;
+		ARG 1 player
 	METHOD save (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 serverPlayer
 	METHOD setAllowCheatsForAllPlayers (Z)V
 		ARG 1 allowCheatsForAllPlayers
+	METHOD setLevel (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level
 	METHOD setUsingWhiteList (Z)V
 		ARG 1 doWhiteList
 	METHOD setViewDistance (I)V
 		ARG 1 viewDistance
+	METHOD updateEntireScoreboard (Lnet/minecraft/server/ServerScoreboard;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 scoreboard
+		ARG 2 player

@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/packs/metadata/MetadataSectionSerializer
+	METHOD fromJson (Lcom/google/gson/JsonObject;)Ljava/lang/Object;
+		ARG 1 json

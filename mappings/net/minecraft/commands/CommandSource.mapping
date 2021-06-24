@@ -1,4 +1,4 @@
 CLASS net/minecraft/commands/CommandSource
 	METHOD sendMessage (Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
 		ARG 1 message
-		ARG 2 uuid
+		ARG 2 sender

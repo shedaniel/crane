@@ -1,14 +1,31 @@
 CLASS net/minecraft/server/level/ServerPlayer
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 server
+	METHOD acceptsChat (Lnet/minecraft/network/chat/ChatType;)Z
+		ARG 1 chatType
 	METHOD isReachableBedBlock (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
 	METHOD onChangedBlock (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
 	METHOD onInsideBlock (Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 state
+	METHOD restoreFrom (Lnet/minecraft/server/level/ServerPlayer;Z)V
+		ARG 1 other
+	METHOD sendMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/ChatType;Ljava/util/UUID;)V
+		ARG 1 message
+		ARG 2 chatType
+		ARG 3 sender
+	METHOD sendTexturePack (Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/network/chat/Component;)V
+		ARG 1 url
+		ARG 2 hash
+		ARG 3 required
+		ARG 4 prompt
+	METHOD setCamera (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 camera
 	METHOD setExperienceLevels (I)V
 		ARG 1 experienceLevel
+	METHOD setGameMode (Lnet/minecraft/world/level/GameType;)Z
+		ARG 1 gameMode
 	METHOD setLastSectionPos (Lnet/minecraft/core/SectionPos;)V
 		ARG 1 lastSectionPos
 	METHOD setLevel (Lnet/minecraft/server/level/ServerLevel;)V
@@ -28,5 +45,18 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 1 pos
 	METHOD swing (Lnet/minecraft/world/InteractionHand;)V
 		ARG 1 hand
+	METHOD teleportTo (Lnet/minecraft/server/level/ServerLevel;DDDFF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 yRot
+		ARG 9 xRot
+	METHOD trackChunk (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/protocol/Packet;)V
+		ARG 1 chunkPos
+	METHOD untrackChunk (Lnet/minecraft/world/level/ChunkPos;)V
+		ARG 1 chunkPos
+	METHOD updateOptions (Lnet/minecraft/network/protocol/game/ServerboundClientInformationPacket;)V
+		ARG 1 packet
 	METHOD updateUsingItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack

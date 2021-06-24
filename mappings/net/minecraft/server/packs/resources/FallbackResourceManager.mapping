@@ -2,3 +2,14 @@ CLASS net/minecraft/server/packs/resources/FallbackResourceManager
 	METHOD <init> (Lnet/minecraft/server/packs/PackType;Ljava/lang/String;)V
 		ARG 1 type
 		ARG 2 namespace
+	METHOD add (Lnet/minecraft/server/packs/PackResources;)V
+		ARG 1 pack
+	METHOD getMetadataLocation (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 location
+	METHOD getWrappedResource (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/packs/PackResources;)Ljava/io/InputStream;
+		ARG 1 location
+		ARG 2 pack
+	METHOD isValidLocation (Lnet/minecraft/resources/ResourceLocation;)Z
+		ARG 1 location
+	METHOD validateLocation (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 location

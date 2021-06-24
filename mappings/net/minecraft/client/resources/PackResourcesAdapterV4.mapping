@@ -1,5 +1,7 @@
 CLASS net/minecraft/client/resources/PackResourcesAdapterV4
 	METHOD <init> (Lnet/minecraft/server/packs/PackResources;)V
 		ARG 1 pack
+	METHOD fixSingleChest (Ljava/io/InputStream;)Ljava/io/InputStream;
+		ARG 0 stream
 	METHOD lambda$static$0 (Ljava/util/HashMap;)V
 		ARG 0 map

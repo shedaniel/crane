@@ -1,9 +1,7 @@
-CLASS net/minecraft/server/players/ServerOpListEntry
+CLASS net/minecraft/server/players/UserWhiteListEntry
 	METHOD <init> (Lcom/google/gson/JsonObject;)V
 		ARG 1 json
-	METHOD <init> (Lcom/mojang/authlib/GameProfile;IZ)V
+	METHOD <init> (Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 profile
-		ARG 2 level
-		ARG 3 bypassesPlayerLimit
 	METHOD createGameProfile (Lcom/google/gson/JsonObject;)Lcom/mojang/authlib/GameProfile;
 		ARG 0 json
