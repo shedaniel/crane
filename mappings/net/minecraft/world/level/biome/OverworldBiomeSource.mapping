@@ -3,3 +3,4 @@ CLASS net/minecraft/world/level/biome/OverworldBiomeSource
 		ARG 1 seed
 		ARG 3 legacyBiomeInitLayer
 		ARG 4 largeBiomes
+		ARG 5 biomes

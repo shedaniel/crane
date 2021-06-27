@@ -1,3 +1,8 @@
 CLASS net/minecraft/world/phys/HitResult
 	METHOD <init> (Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 location
+	METHOD distanceTo (Lnet/minecraft/world/entity/Entity;)D
+		ARG 1 entity
+	CLASS Type
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/phys/HitResult$Type;
+			ARG 0 name

@@ -2,3 +2,10 @@ CLASS net/minecraft/world/level/levelgen/feature/ConfiguredFeature
 	METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/Feature;Lnet/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration;)V
 		ARG 1 feature
 		ARG 2 config
+	METHOD place (Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/chunk/ChunkGenerator;Ljava/util/Random;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 chunkGenerator
+		ARG 3 random
+		ARG 4 pos
+	METHOD weighted (F)Lnet/minecraft/world/level/levelgen/feature/WeightedConfiguredFeature;
+		ARG 1 chance

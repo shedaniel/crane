@@ -1,8 +1,20 @@
 CLASS net/minecraft/world/phys/BlockHitResult
+	METHOD <init> (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 location
+		ARG 2 direction
+		ARG 3 blockPos
+		ARG 4 inside
 	METHOD <init> (ZLnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/core/BlockPos;Z)V
 		ARG 1 miss
+		ARG 2 location
 		ARG 3 direction
 		ARG 4 blockPos
 		ARG 5 inside
+	METHOD miss (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/BlockHitResult;
+		ARG 0 location
+		ARG 1 direction
+		ARG 2 blockPos
+	METHOD withDirection (Lnet/minecraft/core/Direction;)Lnet/minecraft/world/phys/BlockHitResult;
+		ARG 1 direction
 	METHOD withPosition (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/BlockHitResult;
 		ARG 1 pos

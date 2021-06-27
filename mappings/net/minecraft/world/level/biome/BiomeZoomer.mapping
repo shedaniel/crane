@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/biome/BiomeZoomer
+	METHOD getBiome (JIIILnet/minecraft/world/level/biome/BiomeManager$NoiseBiomeSource;)Lnet/minecraft/world/level/biome/Biome;
+		ARG 6 source

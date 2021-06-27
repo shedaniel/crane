@@ -5,3 +5,4 @@ CLASS net/minecraft/world/level/levelgen/feature/featuresize/ThreeLayersFeatureS
 		ARG 3 lowerSize
 		ARG 4 middleSize
 		ARG 5 upperSize
+		ARG 6 minClippedHeight

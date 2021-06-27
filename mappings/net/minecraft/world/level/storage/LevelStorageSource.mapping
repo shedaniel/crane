@@ -3,6 +3,18 @@ CLASS net/minecraft/world/level/storage/LevelStorageSource
 		ARG 1 baseDir
 		ARG 2 backupDir
 		ARG 3 fixerUpper
+	METHOD getLevelData (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/world/level/DataPackConfig;)Ljava/util/function/BiFunction;
+		ARG 0 dynamicOps
+		ARG 1 dataPackConfig
+	METHOD lambda$getLevelData$4 (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/world/level/DataPackConfig;Ljava/io/File;Lcom/mojang/datafixers/DataFixer;)Lnet/minecraft/world/level/storage/PrimaryLevelData;
+		ARG 2 file
+		ARG 3 dataFixer
+	METHOD readDataPackConfig (Lcom/mojang/serialization/Dynamic;)Lnet/minecraft/world/level/DataPackConfig;
+		ARG 0 dynamic
+	METHOD readWorldGenSettings (Lcom/mojang/serialization/Dynamic;Lcom/mojang/datafixers/DataFixer;I)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 dynamic
+		ARG 1 dataFixer
+		ARG 2 previousVersion
 	CLASS LevelStorageAccess
 		METHOD <init> (Lnet/minecraft/world/level/storage/LevelStorageSource;Ljava/lang/String;)V
 			ARG 2 levelId

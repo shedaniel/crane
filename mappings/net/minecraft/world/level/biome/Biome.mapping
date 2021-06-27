@@ -7,12 +7,23 @@ CLASS net/minecraft/world/level/biome/Biome
 		ARG 5 specialEffects
 		ARG 6 generationSettings
 		ARG 7 mobSettings
+	METHOD generate (Lnet/minecraft/world/level/StructureFeatureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/server/level/WorldGenRegion;JLnet/minecraft/world/level/levelgen/WorldgenRandom;Lnet/minecraft/core/BlockPos;)V
+		ARG 2 chunkGenerator
 	METHOD getHeightAdjustedTemperature (Lnet/minecraft/core/BlockPos;)F
 		ARG 1 pos
 	METHOD getTemperature (Lnet/minecraft/core/BlockPos;)F
 		ARG 1 pos
 	METHOD isColdEnoughToSnow (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
+	METHOD shouldFreeze (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
+	METHOD shouldFreeze (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Z)Z
+		ARG 1 level
+		ARG 2 pos
+	METHOD shouldSnow (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
 	CLASS BiomeBuilder
 		METHOD biomeCategory (Lnet/minecraft/world/level/biome/Biome$BiomeCategory;)Lnet/minecraft/world/level/biome/Biome$BiomeBuilder;
 			ARG 1 biomeCategory

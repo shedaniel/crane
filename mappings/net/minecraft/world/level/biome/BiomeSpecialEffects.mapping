@@ -13,8 +13,30 @@ CLASS net/minecraft/world/level/biome/BiomeSpecialEffects
 		ARG 11 ambientAdditionsSettings
 		ARG 12 backgroundMusic
 	CLASS Builder
+		METHOD ambientAdditionsSound (Lnet/minecraft/world/level/biome/AmbientAdditionsSettings;)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 ambientAdditionsSound
+		METHOD ambientLoopSound (Lnet/minecraft/sounds/SoundEvent;)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 ambientLoopSound
+		METHOD ambientMoodSound (Lnet/minecraft/world/level/biome/AmbientMoodSettings;)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 ambientMoodSound
+		METHOD ambientParticle (Lnet/minecraft/world/level/biome/AmbientParticleSettings;)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 ambientParticle
+		METHOD backgroundMusic (Lnet/minecraft/sounds/Music;)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 backgroundMusic
+		METHOD fogColor (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 fogColor
+		METHOD foliageColorOverride (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 foliageColorOverride
 		METHOD grassColorModifier (Lnet/minecraft/world/level/biome/BiomeSpecialEffects$GrassColorModifier;)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
 			ARG 1 grassColorModifier
+		METHOD grassColorOverride (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 grassColorOverride
+		METHOD skyColor (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 skyColor
+		METHOD waterColor (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 waterColor
+		METHOD waterFogColor (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 waterFogColor
 	CLASS GrassColorModifier
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 			ARG 3 name
