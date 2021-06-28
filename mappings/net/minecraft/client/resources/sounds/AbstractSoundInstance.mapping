@@ -2,3 +2,6 @@ CLASS net/minecraft/client/resources/sounds/AbstractSoundInstance
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/sounds/SoundSource;)V
 		ARG 1 location
 		ARG 2 source
+	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
+		ARG 1 location
+		ARG 2 source

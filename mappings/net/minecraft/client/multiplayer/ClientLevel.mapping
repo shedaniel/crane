@@ -9,12 +9,54 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 		ARG 7 levelRenderer
 		ARG 8 isDebug
 		ARG 9 seed
+	METHOD addEntity (ILnet/minecraft/world/entity/Entity;)V
+		ARG 1 id
+		ARG 2 entity
+	METHOD addPlayer (ILnet/minecraft/client/player/AbstractClientPlayer;)V
+		ARG 1 id
+		ARG 2 player
 	METHOD lambda$new$0 (Lit/unimi/dsi/fastutil/objects/Object2ObjectArrayMap;)V
 		ARG 0 map
+	METHOD lambda$tickEntities$1 (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity
+	METHOD onChunkLoaded (Lnet/minecraft/world/level/ChunkPos;)V
+		ARG 1 chunkPos
+	METHOD playLocalSound (Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFZ)V
+		ARG 1 pos
+		ARG 2 sound
+		ARG 3 source
+		ARG 4 volume
+		ARG 5 pitch
+	METHOD putNonPlayerEntity (ILnet/minecraft/world/entity/Entity;)V
+		ARG 1 id
+		ARG 2 entity
+	METHOD removeEntity (ILnet/minecraft/world/entity/Entity$RemovalReason;)V
+		ARG 1 id
+		ARG 2 reason
+	METHOD setDayTime (J)V
+		ARG 1 dayTime
+	METHOD setGameTime (J)V
+		ARG 1 gameTime
+	METHOD setKnownState (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 pos
+		ARG 2 state
 	METHOD setScoreboard (Lnet/minecraft/world/scores/Scoreboard;)V
 		ARG 1 scoreboard
 	METHOD setSkyFlashTime (I)V
 		ARG 1 skyFlashTime
+	METHOD spawnFluidParticle (DDDDDLnet/minecraft/core/particles/ParticleOptions;)V
+		ARG 11 particle
+	METHOD spawnParticle (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/world/phys/shapes/VoxelShape;D)V
+		ARG 1 pos
+		ARG 2 particle
+	METHOD tickNonPassenger (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity
+	METHOD trySpawnDripParticles (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/particles/ParticleOptions;Z)V
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 particle
+	METHOD unload (Lnet/minecraft/world/level/chunk/LevelChunk;)V
+		ARG 1 chunk
 	CLASS ClientLevelData
 		METHOD <init> (Lnet/minecraft/world/Difficulty;ZZ)V
 			ARG 1 difficulty

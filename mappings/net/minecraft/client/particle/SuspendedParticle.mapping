@@ -1,4 +1,19 @@
 CLASS net/minecraft/client/particle/SuspendedParticle
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/particle/SpriteSet;DDD)V
+		ARG 1 level
+		ARG 2 sprites
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/particle/SpriteSet;DDDDDD)V
+		ARG 1 level
+		ARG 2 sprites
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 xd
+		ARG 11 yd
+		ARG 13 zd
 	CLASS UnderwaterProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite

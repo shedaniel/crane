@@ -3,3 +3,7 @@ CLASS com/mojang/realmsclient/dto/UploadInfo
 		ARG 1 worldClosed
 		ARG 2 token
 		ARG 3 uploadEndpoint
+	METHOD createRequest (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 token
+	METHOD parse (Ljava/lang/String;)Lcom/mojang/realmsclient/dto/UploadInfo;
+		ARG 0 json

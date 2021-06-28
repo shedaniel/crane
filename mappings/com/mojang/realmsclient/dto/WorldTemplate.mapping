@@ -1,0 +1,6 @@
+CLASS com/mojang/realmsclient/dto/WorldTemplate
+	METHOD parse (Lcom/google/gson/JsonObject;)Lcom/mojang/realmsclient/dto/WorldTemplate;
+		ARG 0 json
+	CLASS WorldTemplateType
+		METHOD valueOf (Ljava/lang/String;)Lcom/mojang/realmsclient/dto/WorldTemplate$WorldTemplateType;
+			ARG 0 name

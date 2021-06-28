@@ -1,5 +1,6 @@
 CLASS net/minecraft/client/renderer/EffectInstance
 	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/lang/String;)V
+		ARG 1 resourceManager
 		ARG 2 name
 	METHOD apply ()V
 		ARG 0 lastAppliedEffect

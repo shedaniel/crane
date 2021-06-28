@@ -9,12 +9,30 @@ CLASS net/minecraft/world/level/Level
 		ARG 7 seed
 	METHOD addAlwaysVisibleParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
 		ARG 1 particle
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
 	METHOD addAlwaysVisibleParticle (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V
 		ARG 1 particle
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 xd
+		ARG 11 yd
+		ARG 13 zd
 	METHOD addBlockEntityTicker (Lnet/minecraft/world/level/block/entity/TickingBlockEntity;)V
 		ARG 1 ticker
 	METHOD addParticle (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V
 		ARG 1 particle
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 xd
+		ARG 11 yd
+		ARG 13 zd
 	METHOD blockEntityChanged (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
 	METHOD blockEvent (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;II)V
@@ -112,6 +130,8 @@ CLASS net/minecraft/world/level/Level
 		ARG 5 z
 		ARG 7 sound
 		ARG 8 source
+		ARG 9 volume
+		ARG 10 pitch
 	METHOD playSound (Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
 		ARG 1 player
 		ARG 2 x

@@ -1,3 +1,11 @@
 CLASS net/minecraft/client/renderer/blockentity/BannerRenderer
 	METHOD <init> (Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context;)V
 		ARG 1 context
+	METHOD renderPatterns (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/resources/model/Material;ZLjava/util/List;)V
+		ARG 0 poses
+	METHOD renderPatterns (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/resources/model/Material;ZLjava/util/List;Z)V
+		ARG 0 poses
+		ARG 1 buffers
+		ARG 4 part
+		ARG 5 material
+		ARG 6 banner

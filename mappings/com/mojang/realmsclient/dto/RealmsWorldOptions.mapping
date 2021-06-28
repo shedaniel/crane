@@ -10,5 +10,11 @@ CLASS com/mojang/realmsclient/dto/RealmsWorldOptions
 		ARG 8 gameMode
 		ARG 9 forceGameMode
 		ARG 10 slotName
+	METHOD getDefaultSlotName (I)Ljava/lang/String;
+		ARG 1 slotId
+	METHOD getSlotName (I)Ljava/lang/String;
+		ARG 1 slotId
+	METHOD parse (Lcom/google/gson/JsonObject;)Lcom/mojang/realmsclient/dto/RealmsWorldOptions;
+		ARG 0 json
 	METHOD setEmpty (Z)V
 		ARG 1 empty

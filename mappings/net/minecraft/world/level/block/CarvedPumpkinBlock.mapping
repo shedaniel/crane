@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/block/CarvedPumpkinBlock
+	METHOD canSpawnGolem (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
+	METHOD trySpawnGolem (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 pos

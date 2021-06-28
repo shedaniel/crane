@@ -3,3 +3,7 @@ CLASS net/minecraft/world/level/block/AbstractFurnaceBlock
 		ARG 1 state
 	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
+	METHOD openContainer (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 player

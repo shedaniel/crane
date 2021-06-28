@@ -1,8 +1,91 @@
 CLASS com/mojang/realmsclient/RealmsMainScreen
 	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;)V
 		ARG 1 lastScreen
+	METHOD configureClicked (Lcom/mojang/realmsclient/dto/RealmsServer;)V
+		ARG 1 server
+	METHOD drawClose (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 mouseX
+		ARG 5 mouseY
+	METHOD drawConfigure (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 mouseX
+		ARG 5 mouseY
+	METHOD drawExpired (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 mouseX
+		ARG 5 mouseY
+	METHOD drawExpiring (Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 mouseX
+		ARG 5 mouseY
+		ARG 6 expiresInDays
+	METHOD drawInvitationPendingIcon (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIZZ)V
+		ARG 1 poses
+	METHOD drawLeave (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 mouseX
+		ARG 5 mouseY
+	METHOD drawOpen (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 mouseX
+		ARG 5 mouseY
+	METHOD drawPopup (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+		ARG 1 poses
+	METHOD drawRealmsLogo (Lcom/mojang/blaze3d/vertex/PoseStack;II)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+	METHOD isSelfOwnedNonExpiredServer (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
+		ARG 1 server
+	METHOD isSelfOwnedServer (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
+		ARG 1 server
+	METHOD leaveClicked (Lcom/mojang/realmsclient/dto/RealmsServer;)V
+		ARG 1 server
+	METHOD pendingButtonPress (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD play (Lcom/mojang/realmsclient/dto/RealmsServer;Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 server
+		ARG 2 screen
+	METHOD removeServer (Lcom/mojang/realmsclient/dto/RealmsServer;)V
+		ARG 1 server
+	METHOD renderLocal (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
+	METHOD renderMoreInfo (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIZ)V
+		ARG 1 poses
+		ARG 2 mouseX
+		ARG 3 mouseY
+		ARG 4 x
+		ARG 5 y
+	METHOD renderMousehoverTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V
+		ARG 1 poses
+		ARG 2 tooltip
+	METHOD renderNews (Lcom/mojang/blaze3d/vertex/PoseStack;IIZIIZZ)V
+		ARG 1 poses
+		ARG 2 mouseX
+		ARG 3 mouseY
+		ARG 5 x
+		ARG 6 y
+	METHOD renderStage (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
 	METHOD setCreatedTrial (Z)V
 		ARG 1 createdTrial
+	METHOD setTooltip (Ljava/lang/Iterable;)V
+		ARG 1 tooltip
+	METHOD setTooltip ([Lnet/minecraft/network/chat/Component;)V
+		ARG 1 tooltips
 	METHOD shouldConfigureButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
 		ARG 1 server
 	METHOD shouldLeaveButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
@@ -13,6 +96,25 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 1 server
 	METHOD updateButtonStates (Lcom/mojang/realmsclient/dto/RealmsServer;)V
 		ARG 1 server
+	METHOD updateTeaserImages (Lnet/minecraft/server/packs/resources/ResourceManager;)V
+		ARG 0 resourceManager
 	CLASS ServerEntry
 		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
 			ARG 2 serverData
+		METHOD renderLegacy (Lcom/mojang/realmsclient/dto/RealmsServer;Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
+			ARG 1 server
+			ARG 2 poses
+			ARG 3 x
+			ARG 4 y
+			ARG 5 mouseX
+			ARG 6 mouseY
+		METHOD renderMcoServerItem (Lcom/mojang/realmsclient/dto/RealmsServer;Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
+			ARG 1 server
+			ARG 2 poses
+			ARG 3 x
+			ARG 4 y
+			ARG 5 mouseX
+			ARG 6 mouseY
+	CLASS HoveredElement
+		METHOD valueOf (Ljava/lang/String;)Lcom/mojang/realmsclient/RealmsMainScreen$HoveredElement;
+			ARG 0 name

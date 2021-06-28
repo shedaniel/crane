@@ -20,8 +20,17 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 1 vertexConsumer
 	METHOD addParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
 		ARG 1 particle
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 dx
+		ARG 10 dy
+		ARG 12 dz
 	METHOD addParticle (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V
 		ARG 1 particle
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
 	METHOD addParticle (Lnet/minecraft/core/particles/ParticleOptions;ZZDDDDDD)V
 		ARG 1 particle
 		ARG 4 x
@@ -29,11 +38,20 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 8 z
 	METHOD addParticleInternal (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)Lnet/minecraft/client/particle/Particle;
 		ARG 1 particle
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 dx
+		ARG 11 dy
+		ARG 13 dz
 	METHOD addParticleInternal (Lnet/minecraft/core/particles/ParticleOptions;ZZDDDDDD)Lnet/minecraft/client/particle/Particle;
 		ARG 1 particle
 		ARG 4 x
 		ARG 6 y
 		ARG 8 z
+		ARG 10 dx
+		ARG 12 dy
+		ARG 14 dz
 	METHOD buildClouds (Lcom/mojang/blaze3d/vertex/BufferBuilder;DDDLnet/minecraft/world/phys/Vec3;)V
 		ARG 1 builder
 	METHOD checkPoseStack (Lcom/mojang/blaze3d/vertex/PoseStack;)V

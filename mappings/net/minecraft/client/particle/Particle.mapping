@@ -12,10 +12,18 @@ CLASS net/minecraft/client/particle/Particle
 		ARG 8 xd
 		ARG 10 yd
 		ARG 12 zd
+	METHOD getLightColor (F)I
+		ARG 1 delta
+	METHOD move (DDD)V
+		ARG 1 xd
+		ARG 3 yd
+		ARG 5 zd
 	METHOD render (Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/client/Camera;F)V
 		ARG 1 vertexComsumer
 		ARG 2 camera
 		ARG 3 delta
+	METHOD scale (F)Lnet/minecraft/client/particle/Particle;
+		ARG 1 multiplier
 	METHOD setAlpha (F)V
 		ARG 1 alpha
 	METHOD setBoundingBox (Lnet/minecraft/world/phys/AABB;)V

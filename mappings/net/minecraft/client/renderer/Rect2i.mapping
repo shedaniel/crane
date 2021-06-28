@@ -4,6 +4,11 @@ CLASS net/minecraft/client/renderer/Rect2i
 		ARG 2 yPos
 		ARG 3 width
 		ARG 4 height
+	METHOD contains (II)Z
+		ARG 1 x
+		ARG 2 y
+	METHOD intersect (Lnet/minecraft/client/renderer/Rect2i;)Lnet/minecraft/client/renderer/Rect2i;
+		ARG 1 other
 	METHOD setHeight (I)V
 		ARG 1 height
 	METHOD setPosition (II)V

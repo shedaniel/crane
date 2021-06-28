@@ -1,3 +1,17 @@
 CLASS net/minecraft/client/multiplayer/ServerList
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD add (Lnet/minecraft/client/multiplayer/ServerData;)V
+		ARG 1 data
+	METHOD get (I)Lnet/minecraft/client/multiplayer/ServerData;
+		ARG 1 index
+	METHOD remove (Lnet/minecraft/client/multiplayer/ServerData;)V
+		ARG 1 data
+	METHOD replace (ILnet/minecraft/client/multiplayer/ServerData;)V
+		ARG 1 index
+		ARG 2 data
+	METHOD saveSingleServer (Lnet/minecraft/client/multiplayer/ServerData;)V
+		ARG 0 data
+	METHOD swap (II)V
+		ARG 1 first
+		ARG 2 second

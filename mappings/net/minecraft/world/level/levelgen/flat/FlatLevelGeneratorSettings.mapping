@@ -1,10 +1,26 @@
 CLASS net/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings
+	METHOD <init> (Lnet/minecraft/core/Registry;Lnet/minecraft/world/level/levelgen/StructureSettings;Ljava/util/List;ZZLjava/util/Optional;)V
+		ARG 1 biomes
+		ARG 2 structureSettings
+		ARG 3 layersInfo
+		ARG 4 addLake
+		ARG 5 decoration
+		ARG 6 biome
 	METHOD <init> (Lnet/minecraft/world/level/levelgen/StructureSettings;Lnet/minecraft/core/Registry;)V
 		ARG 1 structureSettings
 		ARG 2 biomes
+	METHOD getDefault (Lnet/minecraft/core/Registry;)Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;
+		ARG 0 biomes
 	METHOD lambda$static$4 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD lambda$static$5 (Ljava/util/HashMap;)V
 		ARG 0 map
+	METHOD lambda$updateLayers$8 (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
 	METHOD setBiome (Ljava/util/function/Supplier;)V
 		ARG 1 biome
+	METHOD withLayers (Ljava/util/List;Lnet/minecraft/world/level/levelgen/StructureSettings;)Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;
+		ARG 1 layersInfo
+		ARG 2 structureSettings
+	METHOD withStructureSettings (Lnet/minecraft/world/level/levelgen/StructureSettings;)Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;
+		ARG 1 structureSettings

@@ -3,8 +3,31 @@ CLASS net/minecraft/client/renderer/blockentity/BlockEntityRenderDispatcher
 		ARG 1 font
 		ARG 2 entityModelSet
 		ARG 3 blockRenderDispatcher
+	METHOD getRenderer (Lnet/minecraft/world/level/block/entity/BlockEntity;)Lnet/minecraft/client/renderer/blockentity/BlockEntityRenderer;
+		ARG 1 blockEntity
 	METHOD prepare (Lnet/minecraft/world/level/Level;Lnet/minecraft/client/Camera;Lnet/minecraft/world/phys/HitResult;)V
+		ARG 1 level
 		ARG 2 camera
 		ARG 3 cameraHitResult
+	METHOD render (Lnet/minecraft/world/level/block/entity/BlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V
+		ARG 1 blockEntity
+		ARG 2 delta
+		ARG 3 poses
+		ARG 4 buffers
+	METHOD renderItem (Lnet/minecraft/world/level/block/entity/BlockEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)Z
+		ARG 1 blockEntity
+		ARG 2 poses
+		ARG 3 buffers
+		ARG 4 light
+		ARG 5 overlay
 	METHOD setLevel (Lnet/minecraft/world/level/Level;)V
 		ARG 1 level
+	METHOD setupAndRender (Lnet/minecraft/client/renderer/blockentity/BlockEntityRenderer;Lnet/minecraft/world/level/block/entity/BlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V
+		ARG 0 renderer
+		ARG 1 blockEntity
+		ARG 2 delta
+		ARG 3 poses
+		ARG 4 buffers
+	METHOD tryRender (Lnet/minecraft/world/level/block/entity/BlockEntity;Ljava/lang/Runnable;)V
+		ARG 0 blockEntity
+		ARG 1 task

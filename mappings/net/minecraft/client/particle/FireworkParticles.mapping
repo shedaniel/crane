@@ -1,13 +1,46 @@
 CLASS net/minecraft/client/particle/FireworkParticles
 	CLASS Starter
 		METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/client/particle/ParticleEngine;Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 level
+			ARG 2 x
+			ARG 4 y
+			ARG 6 z
 			ARG 8 xd
+			ARG 10 yd
+			ARG 12 zd
+			ARG 14 engine
+			ARG 15 tag
+		METHOD createParticle (DDDDDD[I[IZZ)V
+			ARG 1 x
+			ARG 3 y
+			ARG 5 z
+			ARG 7 xd
+			ARG 9 yd
+			ARG 11 zd
+			ARG 13 colors
+			ARG 14 fadeColors
+			ARG 15 trail
+			ARG 16 flicker
+		METHOD createParticleBall (DI[I[IZZ)V
+			ARG 3 radius
+			ARG 4 colors
+			ARG 5 fadeColors
+			ARG 6 trail
+			ARG 7 flicker
 	CLASS FlashProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
 	CLASS SparkParticle
 		METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/client/particle/ParticleEngine;Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 level
+			ARG 2 x
+			ARG 4 y
+			ARG 6 z
 			ARG 8 xd
+			ARG 10 yd
+			ARG 12 zd
+			ARG 14 engine
+			ARG 15 sprites
 		METHOD setFlicker (Z)V
 			ARG 1 flicker
 		METHOD setTrail (Z)V

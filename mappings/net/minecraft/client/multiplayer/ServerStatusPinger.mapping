@@ -1,0 +1,24 @@
+CLASS net/minecraft/client/multiplayer/ServerStatusPinger
+	METHOD formatPlayerCount (II)Lnet/minecraft/network/chat/Component;
+		ARG 0 currentPlayers
+		ARG 1 maxPlayers
+	METHOD onPingFailed (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/multiplayer/ServerData;)V
+		ARG 1 serverName
+		ARG 2 data
+	METHOD pingLegacyServer (Ljava/net/InetSocketAddress;Lnet/minecraft/client/multiplayer/ServerData;)V
+		ARG 1 address
+		ARG 2 data
+	METHOD pingServer (Lnet/minecraft/client/multiplayer/ServerData;Ljava/lang/Runnable;)V
+		ARG 1 data
+	CLASS 2
+		METHOD initChannel (Lio/netty/channel/Channel;)V
+			ARG 1 channel
+		CLASS 1
+			METHOD channelActive (Lio/netty/channel/ChannelHandlerContext;)V
+				ARG 1 ctx
+			METHOD channelRead0 (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
+				ARG 1 ctx
+				ARG 2 buf
+			METHOD exceptionCaught (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Throwable;)V
+				ARG 1 ctx
+				ARG 2 throwable

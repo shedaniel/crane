@@ -2,6 +2,9 @@ CLASS net/minecraft/world/scores/PlayerTeam
 	METHOD <init> (Lnet/minecraft/world/scores/Scoreboard;Ljava/lang/String;)V
 		ARG 1 scoreboard
 		ARG 2 name
+	METHOD formatNameForTeam (Lnet/minecraft/world/scores/Team;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 0 team
+		ARG 1 name
 	METHOD setAllowFriendlyFire (Z)V
 		ARG 1 allowFriendlyFire
 	METHOD setCollisionRule (Lnet/minecraft/world/scores/Team$CollisionRule;)V
@@ -14,5 +17,11 @@ CLASS net/minecraft/world/scores/PlayerTeam
 		ARG 1 displayName
 	METHOD setNameTagVisibility (Lnet/minecraft/world/scores/Team$Visibility;)V
 		ARG 1 nameTagVisibility
+	METHOD setPlayerPrefix (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 playerPrefix
+	METHOD setPlayerSuffix (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 playerSuffix
 	METHOD setSeeFriendlyInvisibles (Z)V
 		ARG 1 seeFriendlyInvisibles
+	METHOD unpackOptions (I)V
+		ARG 1 options

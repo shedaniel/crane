@@ -13,6 +13,8 @@ CLASS com/mojang/math/Matrix4f
 		ARG 0 x
 		ARG 1 y
 		ARG 2 z
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
 	METHOD load (Lcom/mojang/math/Matrix4f;)V
 		ARG 1 matrix
 	METHOD load (Ljava/nio/FloatBuffer;)V

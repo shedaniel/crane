@@ -15,5 +15,6 @@ CLASS net/minecraft/world/phys/Vec3
 		ARG 0 color
 	METHOD upFromBottomCenterOf (Lnet/minecraft/core/Vec3i;D)Lnet/minecraft/world/phys/Vec3;
 		ARG 0 vec
+		ARG 1 yOffset
 	METHOD vectorTo (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
 		ARG 1 vec

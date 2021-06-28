@@ -1,6 +1,12 @@
 CLASS net/minecraft/world/level/LevelAccessor
 	METHOD addParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
 		ARG 1 particle
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
 	METHOD blockUpdated (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;)V
 		ARG 1 pos
 		ARG 2 block
@@ -30,3 +36,5 @@ CLASS net/minecraft/world/level/LevelAccessor
 		ARG 2 pos
 		ARG 3 sound
 		ARG 4 source
+		ARG 5 volume
+		ARG 6 pitch

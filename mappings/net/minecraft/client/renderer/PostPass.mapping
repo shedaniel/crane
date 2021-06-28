@@ -1,6 +1,15 @@
 CLASS net/minecraft/client/renderer/PostPass
 	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/lang/String;Lcom/mojang/blaze3d/pipeline/RenderTarget;Lcom/mojang/blaze3d/pipeline/RenderTarget;)V
+		ARG 1 resourceManager
+		ARG 2 name
 		ARG 3 inTarget
 		ARG 4 outTarget
+	METHOD addAuxAsset (Ljava/lang/String;Ljava/util/function/IntSupplier;II)V
+		ARG 1 name
+		ARG 2 asseets
+		ARG 3 width
+		ARG 4 height
+	METHOD process (F)V
+		ARG 1 time
 	METHOD setOrthoMatrix (Lcom/mojang/math/Matrix4f;)V
 		ARG 1 shaderOrthoMatrix

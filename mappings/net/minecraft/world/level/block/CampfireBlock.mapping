@@ -2,8 +2,14 @@ CLASS net/minecraft/world/level/block/CampfireBlock
 	METHOD <init> (ZILnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 spawnParticles
 		ARG 2 fireDamage
+		ARG 3 properties
 	METHOD canLight (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
+	METHOD dowse (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 0 entity
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state
 	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
 		ARG 1 state
 	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
@@ -12,3 +18,10 @@ CLASS net/minecraft/world/level/block/CampfireBlock
 		ARG 0 state
 	METHOD isSmokeSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
+	METHOD isSmokeyPos (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 level
+		ARG 1 pos
+	METHOD makeParticles (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;ZZ)V
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 signal

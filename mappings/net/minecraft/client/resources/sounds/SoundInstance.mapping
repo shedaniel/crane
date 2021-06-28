@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/resources/sounds/SoundInstance
+	METHOD resolve (Lnet/minecraft/client/sounds/SoundManager;)Lnet/minecraft/client/sounds/WeighedSoundEvents;
+		ARG 1 soundManager

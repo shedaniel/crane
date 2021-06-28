@@ -10,3 +10,10 @@ CLASS net/minecraft/world/level/levelgen/structure/BoundingBox
 		ARG 1 pos
 	METHOD encapsulate (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/levelgen/structure/BoundingBox;
 		ARG 1 pos
+	METHOD encapsulate (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;)Lnet/minecraft/world/level/levelgen/structure/BoundingBox;
+		ARG 1 box
+	METHOD fromCorners (Lnet/minecraft/core/Vec3i;Lnet/minecraft/core/Vec3i;)Lnet/minecraft/world/level/levelgen/structure/BoundingBox;
+		ARG 0 start
+		ARG 1 end
+	METHOD intersects (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;)Z
+		ARG 1 other

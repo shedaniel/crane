@@ -1,6 +1,7 @@
 CLASS net/minecraft/client/Minecraft
 	METHOD <init> (Lnet/minecraft/client/main/GameConfig;)V
 		ARG 0 instance
+		ARG 1 gameConfig
 	METHOD archiveProfilingReport (Lnet/minecraft/SystemReport;Ljava/util/List;)Ljava/nio/file/Path;
 		ARG 1 systemReport
 		ARG 2 paths
