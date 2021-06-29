@@ -1,3 +1,23 @@
 CLASS net/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer
 	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)V
 		ARG 1 conditions
+	METHOD canRun (Lnet/minecraft/world/level/storage/loot/LootContext;)Z
+		ARG 1 ctx
+	METHOD validate (Lnet/minecraft/world/level/storage/loot/ValidationContext;)V
+		ARG 1 ctx
+	CLASS Builder
+		METHOD append (Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/EntryGroup$Builder;
+			ARG 1 entry
+		METHOD otherwise (Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/AlternativesEntry$Builder;
+			ARG 1 alternative
+		METHOD then (Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/SequentialEntry$Builder;
+			ARG 1 other
+	CLASS Serializer
+		METHOD deserializeCustom (Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer;
+			ARG 1 json
+			ARG 2 ctx
+			ARG 3 conditions
+		METHOD serializeCustom (Lcom/google/gson/JsonObject;Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer;Lcom/google/gson/JsonSerializationContext;)V
+			ARG 1 json
+			ARG 2 entry
+			ARG 3 ctx

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/loot/LootContextUser
+	METHOD validate (Lnet/minecraft/world/level/storage/loot/ValidationContext;)V
+		ARG 1 ctx

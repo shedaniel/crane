@@ -1,3 +1,4 @@
 CLASS net/minecraft/world/level/block/TorchBlock
 	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/core/particles/ParticleOptions;)V
+		ARG 1 properties
 		ARG 2 flameParticle

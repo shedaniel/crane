@@ -1,3 +1,11 @@
 CLASS net/minecraft/world/level/storage/loot/LootTables
 	METHOD <init> (Lnet/minecraft/world/level/storage/loot/PredicateManager;)V
 		ARG 1 predicateManager
+	METHOD get (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/level/storage/loot/LootTable;
+		ARG 1 location
+	METHOD serialize (Lnet/minecraft/world/level/storage/loot/LootTable;)Lcom/google/gson/JsonElement;
+		ARG 0 lootTable
+	METHOD validate (Lnet/minecraft/world/level/storage/loot/ValidationContext;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/LootTable;)V
+		ARG 0 ctx
+		ARG 1 location
+		ARG 2 lootTable

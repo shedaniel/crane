@@ -6,21 +6,68 @@ CLASS net/minecraft/nbt/NbtOps
 		ARG 1 value
 	METHOD createByte (B)Ljava/lang/Object;
 		ARG 1 value
+	METHOD createByteList (Ljava/nio/ByteBuffer;)Ljava/lang/Object;
+		ARG 1 buf
 	METHOD createDouble (D)Ljava/lang/Object;
 		ARG 1 value
 	METHOD createFloat (F)Ljava/lang/Object;
 		ARG 1 value
 	METHOD createInt (I)Ljava/lang/Object;
 		ARG 1 value
+	METHOD createIntList (Ljava/util/stream/IntStream;)Ljava/lang/Object;
+		ARG 1 stream
+	METHOD createList (Ljava/util/stream/Stream;)Ljava/lang/Object;
+		ARG 1 stream
 	METHOD createLong (J)Ljava/lang/Object;
 		ARG 1 value
+	METHOD createLongList (Ljava/util/stream/LongStream;)Ljava/lang/Object;
+		ARG 1 stream
+	METHOD createMap (Ljava/util/stream/Stream;)Ljava/lang/Object;
+		ARG 1 pairs
 	METHOD createNumeric (Ljava/lang/Number;)Ljava/lang/Object;
 		ARG 1 value
 	METHOD createShort (S)Ljava/lang/Object;
 		ARG 1 value
 	METHOD createString (Ljava/lang/String;)Ljava/lang/Object;
 		ARG 1 value
+	METHOD fillMany (Lnet/minecraft/nbt/CollectionTag;Lnet/minecraft/nbt/Tag;Ljava/util/List;)V
+		ARG 0 collectionTag
+		ARG 1 copyFrom
+		ARG 2 toFill
+	METHOD fillOne (Lnet/minecraft/nbt/CollectionTag;Lnet/minecraft/nbt/Tag;Lnet/minecraft/nbt/Tag;)V
+		ARG 0 collectionTag
+		ARG 1 copyFrom
+		ARG 2 toFill
+	METHOD getByteBuffer (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 tag
+	METHOD getIntStream (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 tag
+	METHOD getList (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 tag
+	METHOD getLongStream (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 tag
+	METHOD getMap (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 tag
+	METHOD getMapEntries (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 tag
+	METHOD getMapValues (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 tag
 	METHOD getNumberValue (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 tag
+	METHOD getStream (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 		ARG 1 tag
 	METHOD getStringValue (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 		ARG 1 tag
+	METHOD remove (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+		ARG 1 tag
+		ARG 2 key
+	CLASS 1
+		METHOD get (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 tag
+		METHOD get (Ljava/lang/String;)Ljava/lang/Object;
+			ARG 1 key
+	CLASS NbtRecordBuilder
+		METHOD append (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 key
+			ARG 2 value
+			ARG 3 tag

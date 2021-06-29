@@ -1,7 +1,37 @@
 CLASS net/minecraft/world/level/block/entity/AbstractFurnaceBlockEntity
 	METHOD <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/item/crafting/RecipeType;)V
+		ARG 1 type
+		ARG 2 pos
+		ARG 3 state
 		ARG 4 recipeType
+	METHOD add (Ljava/util/Map;Lnet/minecraft/tags/Tag;I)V
+		ARG 0 map
+		ARG 1 tag
+		ARG 2 burnTime
+	METHOD add (Ljava/util/Map;Lnet/minecraft/world/level/ItemLike;I)V
+		ARG 0 map
+		ARG 1 item
+		ARG 2 burnTime
+	METHOD burn (Lnet/minecraft/world/item/crafting/Recipe;Lnet/minecraft/core/NonNullList;I)Z
+		ARG 0 recipe
+		ARG 1 stacks
+		ARG 2 count
+	METHOD canBurn (Lnet/minecraft/world/item/crafting/Recipe;Lnet/minecraft/core/NonNullList;I)Z
+		ARG 0 recipe
+		ARG 1 stacks
+		ARG 2 count
 	METHOD getBurnDuration (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 1 stack
+	METHOD getTotalCookTime (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/crafting/RecipeType;Lnet/minecraft/world/Container;)I
+		ARG 0 level
+		ARG 1 recipeType
+		ARG 2 container
 	METHOD isFuel (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
+	METHOD isNeverAFurnaceFuel (Lnet/minecraft/world/item/Item;)Z
+		ARG 0 item
+	METHOD serverTick (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/AbstractFurnaceBlockEntity;)V
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 blockEntity

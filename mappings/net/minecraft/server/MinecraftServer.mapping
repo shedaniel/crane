@@ -27,6 +27,8 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 0 packRepository
 	METHOD getSpawnRadius (Lnet/minecraft/server/level/ServerLevel;)I
 		ARG 1 level
+	METHOD halt (Z)V
+		ARG 1 shutdown
 	METHOD isSingleplayerOwner (Lcom/mojang/authlib/GameProfile;)Z
 		ARG 1 gameProfile
 	METHOD isUnderSpawnProtection (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;)Z

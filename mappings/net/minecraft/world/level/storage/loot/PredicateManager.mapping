@@ -1,4 +1,11 @@
 CLASS net/minecraft/world/level/storage/loot/PredicateManager
+	METHOD get (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;
+		ARG 1 location
+	METHOD lambda$apply$2 (Lnet/minecraft/world/level/storage/loot/ValidationContext;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)V
+		ARG 1 location
+		ARG 2 condition
 	CLASS CompositePredicate
 		METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)V
 			ARG 1 terms
+		METHOD test (Ljava/lang/Object;)Z
+			ARG 1 ctx

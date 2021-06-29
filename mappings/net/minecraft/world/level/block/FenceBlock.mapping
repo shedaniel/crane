@@ -1,3 +1,6 @@
 CLASS net/minecraft/world/level/block/FenceBlock
+	METHOD connectsTo (Lnet/minecraft/world/level/block/state/BlockState;ZLnet/minecraft/core/Direction;)Z
+		ARG 1 state
+		ARG 3 direction
 	METHOD isSameFence (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state

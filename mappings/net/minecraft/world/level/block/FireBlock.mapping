@@ -3,7 +3,33 @@ CLASS net/minecraft/world/level/block/FireBlock
 		ARG 0 state
 	METHOD canBurn (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
+	METHOD checkBurnOut (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;ILjava/util/Random;I)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 4 random
 	METHOD getBurnOdd (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 1 state
+	METHOD getFireOdds (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)I
+		ARG 1 level
+		ARG 2 pos
+	METHOD getFireTickDelay (Ljava/util/Random;)I
+		ARG 0 random
 	METHOD getFlameOdds (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 1 state
+	METHOD getStateForPlacement (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 level
+		ARG 2 pos
+	METHOD getStateWithAge (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;I)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 age
+	METHOD isNearRain (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
+	METHOD isValidFireLocation (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
+	METHOD setFlammable (Lnet/minecraft/world/level/block/Block;II)V
+		ARG 1 block
+		ARG 2 flameOdds
+		ARG 3 burnOdds

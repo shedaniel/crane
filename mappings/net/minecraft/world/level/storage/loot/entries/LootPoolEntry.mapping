@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/loot/entries/LootPoolEntry
+	METHOD createItemStack (Ljava/util/function/Consumer;Lnet/minecraft/world/level/storage/loot/LootContext;)V
+		ARG 2 ctx

@@ -1,4 +1,14 @@
 CLASS com/mojang/blaze3d/audio/Library
+	METHOD acquireChannel (Lcom/mojang/blaze3d/audio/Library$Pool;)Lcom/mojang/blaze3d/audio/Channel;
+		ARG 1 pool
+	METHOD releaseChannel (Lcom/mojang/blaze3d/audio/Channel;)V
+		ARG 1 channel
+	CLASS Pool
+		METHOD valueOf (Ljava/lang/String;)Lcom/mojang/blaze3d/audio/Library$Pool;
+			ARG 0 name
+	CLASS ChannelPool
+		METHOD release (Lcom/mojang/blaze3d/audio/Channel;)Z
+			ARG 1 channel
 	CLASS CountingChannelPool
 		METHOD <init> (I)V
 			ARG 1 limit

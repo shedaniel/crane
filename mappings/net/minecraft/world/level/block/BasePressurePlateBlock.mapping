@@ -1,7 +1,28 @@
 CLASS net/minecraft/world/level/block/BasePressurePlateBlock
+	METHOD checkPressed (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)V
+		ARG 1 entity
+		ARG 2 level
+		ARG 3 pos
+		ARG 4 state
+		ARG 5 signal
 	METHOD getPistonPushReaction (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/PushReaction;
 		ARG 1 state
 	METHOD getSignalForState (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 1 state
+	METHOD getSignalStrength (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)I
+		ARG 1 level
+		ARG 2 pos
 	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
+	METHOD playOffSound (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 pos
+	METHOD playOnSound (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 pos
+	METHOD setSignalForState (Lnet/minecraft/world/level/block/state/BlockState;I)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 state
+		ARG 2 signal
+	METHOD updateNeighbours (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 pos

@@ -2,12 +2,25 @@ CLASS net/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer
 	METHOD <init> (II[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;[Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)V
 		ARG 1 weight
 		ARG 2 quality
+		ARG 3 conditions
 		ARG 4 functions
+	METHOD createItemStack (Ljava/util/function/Consumer;Lnet/minecraft/world/level/storage/loot/LootContext;)V
+		ARG 2 ctx
+	METHOD simpleBuilder (Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$EntryConstructor;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+		ARG 0 constructor
 	CLASS Builder
 		METHOD setQuality (I)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
 			ARG 1 quality
 		METHOD setWeight (I)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
 			ARG 1 weight
+	CLASS Serializer
+		METHOD deserialize (Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;II[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;[Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer;
+			ARG 1 json
+			ARG 2 ctx
+			ARG 3 weight
+			ARG 4 quality
+			ARG 5 conditions
+			ARG 6 functions
 	CLASS DummyBuilder
 		METHOD <init> (Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$EntryConstructor;)V
 			ARG 1 constructor

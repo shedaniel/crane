@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/Container
+	METHOD canPlaceItem (ILnet/minecraft/world/item/ItemStack;)Z
+		ARG 2 stack
 	METHOD countItem (Lnet/minecraft/world/item/Item;)I
 		ARG 1 item
 	METHOD getItem (I)Lnet/minecraft/world/item/ItemStack;

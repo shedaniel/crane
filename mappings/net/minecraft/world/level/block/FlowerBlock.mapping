@@ -2,3 +2,4 @@ CLASS net/minecraft/world/level/block/FlowerBlock
 	METHOD <init> (Lnet/minecraft/world/effect/MobEffect;ILnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 suspiciousStewEffect
 		ARG 2 effectDuration
+		ARG 3 properties

@@ -7,3 +7,21 @@ CLASS net/minecraft/world/level/storage/loot/ValidationContext
 		ARG 5 visitedConditions
 		ARG 6 tableResolver
 		ARG 7 visitedTables
+	METHOD <init> (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParamSet;Ljava/util/function/Function;Ljava/util/function/Function;)V
+		ARG 1 params
+		ARG 2 conditionResolver
+		ARG 3 tableResolver
+	METHOD hasVisitedCondition (Lnet/minecraft/resources/ResourceLocation;)Z
+		ARG 1 location
+	METHOD hasVisitedTable (Lnet/minecraft/resources/ResourceLocation;)Z
+		ARG 1 location
+	METHOD reportProblem (Ljava/lang/String;)V
+		ARG 1 problem
+	METHOD resolveCondition (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;
+		ARG 1 location
+	METHOD resolveLootTable (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/level/storage/loot/LootTable;
+		ARG 1 location
+	METHOD setParams (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParamSet;)Lnet/minecraft/world/level/storage/loot/ValidationContext;
+		ARG 1 params
+	METHOD validateUser (Lnet/minecraft/world/level/storage/loot/LootContextUser;)V
+		ARG 1 user

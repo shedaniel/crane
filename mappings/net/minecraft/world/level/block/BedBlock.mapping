@@ -2,13 +2,41 @@ CLASS net/minecraft/world/level/block/BedBlock
 	METHOD <init> (Lnet/minecraft/world/item/DyeColor;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 color
 		ARG 2 properties
+	METHOD bounceUp (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity
+	METHOD canSetSpawn (Lnet/minecraft/world/level/Level;)Z
+		ARG 0 level
+	METHOD findBunkBedStandUpPosition (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/CollisionGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;)Ljava/util/Optional;
+		ARG 0 entityType
+		ARG 1 level
+		ARG 2 pos
+	METHOD findStandUpPosition (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/CollisionGetter;Lnet/minecraft/core/BlockPos;F)Ljava/util/Optional;
+		ARG 0 entityType
+		ARG 1 level
+		ARG 2 pos
+	METHOD findStandUpPositionAtOffset (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/CollisionGetter;Lnet/minecraft/core/BlockPos;[[IZ)Ljava/util/Optional;
+		ARG 0 entityType
+		ARG 1 level
+		ARG 2 pos
+	METHOD getBedOrientation (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Direction;
+		ARG 0 level
+		ARG 1 pos
 	METHOD getBlockType (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/DoubleBlockCombiner$BlockType;
 		ARG 0 state
 	METHOD getConnectedDirection (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/core/Direction;
 		ARG 0 state
+	METHOD getNeighbourDirection (Lnet/minecraft/world/level/block/state/properties/BedPart;Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Direction;
+		ARG 0 part
+		ARG 1 direction
 	METHOD getPistonPushReaction (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/PushReaction;
 		ARG 1 state
 	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
 		ARG 1 state
+	METHOD isBunkBed (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 level
+		ARG 1 pos
+	METHOD kickVillagerOutOfBed (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
 	METHOD lambda$use$0 (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/player/Player$BedSleepingProblem;)V
 		ARG 1 problem

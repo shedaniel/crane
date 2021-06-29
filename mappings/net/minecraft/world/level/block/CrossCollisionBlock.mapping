@@ -1,5 +1,9 @@
 CLASS net/minecraft/world/level/block/CrossCollisionBlock
+	METHOD <init> (FFFFFLnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 6 properties
 	METHOD getAABBIndex (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 1 state
 	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
 		ARG 1 state
+	METHOD indexFor (Lnet/minecraft/core/Direction;)I
+		ARG 0 direction

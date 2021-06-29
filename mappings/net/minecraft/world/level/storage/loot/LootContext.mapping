@@ -5,14 +5,70 @@ CLASS net/minecraft/world/level/storage/loot/LootContext
 		ARG 3 level
 		ARG 4 lootTables
 		ARG 5 conditions
+		ARG 6 params
+		ARG 7 dynamicDrops
+	METHOD addDynamicDrops (Lnet/minecraft/resources/ResourceLocation;Ljava/util/function/Consumer;)V
+		ARG 1 location
+	METHOD addVisitedCondition (Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)Z
+		ARG 1 condition
+	METHOD addVisitedTable (Lnet/minecraft/world/level/storage/loot/LootTable;)Z
+		ARG 1 table
+	METHOD getCondition (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;
+		ARG 1 conditionLocation
+	METHOD getLootTable (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/level/storage/loot/LootTable;
+		ARG 1 tableLocation
+	METHOD getParam (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)Ljava/lang/Object;
+		ARG 1 param
+	METHOD getParamOrNull (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)Ljava/lang/Object;
+		ARG 1 param
+	METHOD hasParam (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)Z
+		ARG 1 param
+	METHOD removeVisitedCondition (Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)V
+		ARG 1 condition
+	METHOD removeVisitedTable (Lnet/minecraft/world/level/storage/loot/LootTable;)V
+		ARG 1 table
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/server/level/ServerLevel;)V
 			ARG 1 level
+		METHOD create (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParamSet;)Lnet/minecraft/world/level/storage/loot/LootContext;
+			ARG 1 params
+		METHOD getOptionalParameter (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)Ljava/lang/Object;
+			ARG 1 param
+		METHOD getParameter (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)Ljava/lang/Object;
+			ARG 1 param
+		METHOD withDynamicDrop (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/LootContext$DynamicDrop;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 location
+			ARG 2 dynamicDrop
 		METHOD withLuck (F)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
 			ARG 1 luck
+		METHOD withOptionalParameter (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;Ljava/lang/Object;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 param
+			ARG 2 value
+		METHOD withOptionalRandomSeed (J)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 seed
+		METHOD withOptionalRandomSeed (JLjava/util/Random;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 seed
+			ARG 3 random
+		METHOD withParameter (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;Ljava/lang/Object;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 param
+			ARG 2 value
 		METHOD withRandom (Ljava/util/Random;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
 			ARG 1 random
+	CLASS DynamicDrop
+		METHOD add (Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)V
+			ARG 1 ctx
+			ARG 2 sink
 	CLASS EntityTarget
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)V
 			ARG 3 name
 			ARG 4 param
+		METHOD getByName (Ljava/lang/String;)Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;
+			ARG 0 name
+		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;
+			ARG 0 name
+		CLASS Serializer
+			METHOD read (Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
+				ARG 1 reader
+			METHOD write (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
+				ARG 1 writer
+				ARG 2 target

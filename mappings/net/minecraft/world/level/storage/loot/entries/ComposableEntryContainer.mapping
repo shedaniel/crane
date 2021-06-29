@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/storage/loot/entries/ComposableEntryContainer
+	METHOD and (Lnet/minecraft/world/level/storage/loot/entries/ComposableEntryContainer;)Lnet/minecraft/world/level/storage/loot/entries/ComposableEntryContainer;
+		ARG 1 container
+	METHOD expand (Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
+		ARG 1 ctx
+	METHOD lambda$and$2 (Lnet/minecraft/world/level/storage/loot/entries/ComposableEntryContainer;Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
+		ARG 2 ctx
+	METHOD lambda$or$3 (Lnet/minecraft/world/level/storage/loot/entries/ComposableEntryContainer;Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
+		ARG 2 ctx
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
+		ARG 0 ctx
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
+		ARG 0 ctx
+	METHOD or (Lnet/minecraft/world/level/storage/loot/entries/ComposableEntryContainer;)Lnet/minecraft/world/level/storage/loot/entries/ComposableEntryContainer;
+		ARG 1 container

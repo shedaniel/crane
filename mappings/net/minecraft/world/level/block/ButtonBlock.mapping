@@ -2,5 +2,24 @@ CLASS net/minecraft/world/level/block/ButtonBlock
 	METHOD <init> (ZLnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 sensitive
 		ARG 2 properties
+	METHOD checkPressed (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 state
+		ARG 2 level
+		ARG 3 pos
+	METHOD getSound (Z)Lnet/minecraft/sounds/SoundEvent;
+		ARG 1 on
 	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
+	METHOD playSound (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 player
+		ARG 2 level
+		ARG 3 pos
+		ARG 4 on
+	METHOD press (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 state
+		ARG 2 level
+		ARG 3 pos
+	METHOD updateNeighbours (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 state
+		ARG 2 level
+		ARG 3 pos

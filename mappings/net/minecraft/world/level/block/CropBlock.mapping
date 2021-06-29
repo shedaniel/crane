@@ -1,6 +1,18 @@
 CLASS net/minecraft/world/level/block/CropBlock
 	METHOD getAge (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 1 state
+	METHOD getBonemealAgeIncrease (Lnet/minecraft/world/level/Level;)I
+		ARG 1 level
+	METHOD getGrowthSpeed (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)F
+		ARG 0 block
+		ARG 1 level
+		ARG 2 pos
+	METHOD getStateForAge (I)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 age
+	METHOD growCrops (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state
 	METHOD isMaxAge (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
 	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z

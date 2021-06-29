@@ -1,3 +1,8 @@
 CLASS net/minecraft/world/level/storage/loot/entries/CompositeEntryBase
 	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer;[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)V
 		ARG 1 children
+		ARG 2 conditions
+	CLASS CompositeEntryConstructor
+		METHOD create ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer;[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)Lnet/minecraft/world/level/storage/loot/entries/CompositeEntryBase;
+			ARG 1 children
+			ARG 2 conditions

@@ -1,3 +1,6 @@
 CLASS net/minecraft/world/level/block/FenceGateBlock
+	METHOD connectsToDirection (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;)Z
+		ARG 0 state
+		ARG 1 direction
 	METHOD isWall (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
