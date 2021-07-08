@@ -24,5 +24,3 @@ CLASS net/minecraft/server/packs/VanillaPackResources
 		ARG 1 path
 	METHOD lambda$getResources$2 (Ljava/lang/String;Ljava/nio/file/Path;Ljava/nio/file/Path;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 2 path
-	METHOD lambda$static$0 (Ljava/util/HashMap;)V
-		ARG 0 map

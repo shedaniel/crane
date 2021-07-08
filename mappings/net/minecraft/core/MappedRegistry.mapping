@@ -1,6 +1,4 @@
 CLASS net/minecraft/core/MappedRegistry
-	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;)V
-		ARG 2 elementsLifecycle
 	METHOD registerMapping (ILnet/minecraft/resources/ResourceKey;Ljava/lang/Object;Lcom/mojang/serialization/Lifecycle;Z)Ljava/lang/Object;
 		ARG 1 id
 		ARG 2 key

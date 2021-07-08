@@ -1,5 +1,3 @@
 CLASS net/minecraft/world/level/block/state/predicate/BlockMaterialPredicate
 	METHOD <init> (Lnet/minecraft/world/level/material/Material;)V
 		ARG 1 material
-	METHOD test (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

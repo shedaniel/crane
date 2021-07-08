@@ -1,8 +1,4 @@
 CLASS net/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape
-	METHOD <init> (III)V
-		ARG 1 xMin
-		ARG 2 yMin
-		ARG 3 zMin
 	METHOD withFilledBounds (IIIIIIIII)Lnet/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape;
 		ARG 3 xMin
 		ARG 4 yMin

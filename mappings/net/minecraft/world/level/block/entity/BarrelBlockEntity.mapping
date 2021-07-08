@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/block/entity/BarrelBlockEntity
-	METHOD setItems (Lnet/minecraft/core/NonNullList;)V
-		ARG 1 items

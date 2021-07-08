@@ -42,8 +42,6 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 		ARG 2 state
 	METHOD setScoreboard (Lnet/minecraft/world/scores/Scoreboard;)V
 		ARG 1 scoreboard
-	METHOD setSkyFlashTime (I)V
-		ARG 1 skyFlashTime
 	METHOD spawnFluidParticle (DDDDDLnet/minecraft/core/particles/ParticleOptions;)V
 		ARG 11 particle
 	METHOD spawnParticle (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/world/phys/shapes/VoxelShape;D)V
@@ -70,18 +68,6 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 			ARG 1 difficultyLocked
 		METHOD setGameTime (J)V
 			ARG 1 gameTime
-		METHOD setRaining (Z)V
-			ARG 1 raining
-		METHOD setSpawn (Lnet/minecraft/core/BlockPos;F)V
-			ARG 2 spawnAngle
-		METHOD setSpawnAngle (F)V
-			ARG 1 spawnAngle
-		METHOD setXSpawn (I)V
-			ARG 1 xSpawn
-		METHOD setYSpawn (I)V
-			ARG 1 ySpawn
-		METHOD setZSpawn (I)V
-			ARG 1 zSpawn
 	CLASS MarkerParticleStatus
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/world/level/block/Block;Lnet/minecraft/core/particles/ParticleOptions;)V
 			ARG 3 block

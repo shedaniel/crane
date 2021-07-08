@@ -5,10 +5,6 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 1 chatType
 	METHOD isReachableBedBlock (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
-	METHOD onChangedBlock (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
-	METHOD onInsideBlock (Lnet/minecraft/world/level/block/state/BlockState;)V
-		ARG 1 state
 	METHOD restoreFrom (Lnet/minecraft/server/level/ServerPlayer;Z)V
 		ARG 1 other
 	METHOD sendMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/ChatType;Ljava/util/UUID;)V
@@ -39,12 +35,6 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 2 respawnPosition
 		ARG 3 respawnAngle
 		ARG 4 respawnForced
-	METHOD startSleepInBed (Lnet/minecraft/core/BlockPos;)Lcom/mojang/datafixers/util/Either;
-		ARG 1 pos
-	METHOD startSleeping (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
-	METHOD swing (Lnet/minecraft/world/InteractionHand;)V
-		ARG 1 hand
 	METHOD teleportTo (Lnet/minecraft/server/level/ServerLevel;DDDFF)V
 		ARG 1 level
 		ARG 2 x
@@ -58,5 +48,3 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 1 chunkPos
 	METHOD updateOptions (Lnet/minecraft/network/protocol/game/ServerboundClientInformationPacket;)V
 		ARG 1 packet
-	METHOD updateUsingItem (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack

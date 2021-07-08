@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/entity/ai/behavior/GiveGiftToHero
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/Villager;J)V
-		ARG 3 timeSinceStart

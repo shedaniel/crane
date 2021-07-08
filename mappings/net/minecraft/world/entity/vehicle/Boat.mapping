@@ -2,12 +2,6 @@ CLASS net/minecraft/world/entity/vehicle/Boat
 	METHOD <init> (Lnet/minecraft/world/level/Level;DDD)V
 		ARG 2 xo
 		ARG 4 yo
-	METHOD lerpTo (DDDFFIZ)V
-		ARG 1 lerpX
-		ARG 3 lerpY
-		ARG 5 lerpZ
-	METHOD onAboveBubbleCol (Z)V
-		ARG 1 bubbleColumnDirectionIsDown
 	METHOD setInput (ZZZZ)V
 		ARG 1 inputLeft
 		ARG 2 inputRight

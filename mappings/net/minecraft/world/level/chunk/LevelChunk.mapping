@@ -19,19 +19,7 @@ CLASS net/minecraft/world/level/chunk/LevelChunk
 		ARG 10 postLoad
 	METHOD createBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
 		ARG 1 pos
-	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
-		ARG 1 pos
-	METHOD getBlockEntityNbt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
-		ARG 1 pos
-	METHOD getBlockEntityNbtForSaving (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
-		ARG 1 pos
-	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 1 pos
-	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 pos
 	METHOD isTicking (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
-	METHOD removeBlockEntity (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
 	METHOD removeBlockEntityTicker (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
@@ -39,14 +27,8 @@ CLASS net/minecraft/world/level/chunk/LevelChunk
 		ARG 1 biomes
 	METHOD setFullStatus (Ljava/util/function/Supplier;)V
 		ARG 1 fullStatus
-	METHOD setInhabitedTime (J)V
-		ARG 1 inhabitedTime
-	METHOD setLightCorrect (Z)V
-		ARG 1 isLightCorrect
 	METHOD setLoaded (Z)V
 		ARG 1 loaded
-	METHOD setUnsaved (Z)V
-		ARG 1 unsaved
 	CLASS BoundTickingBlockEntity
 		METHOD <init> (Lnet/minecraft/world/level/chunk/LevelChunk;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/level/block/entity/BlockEntityTicker;)V
 			ARG 2 blockEntity

@@ -10,10 +10,6 @@ CLASS net/minecraft/world/level/block/CampfireBlock
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 state
-	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 state
-	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
-		ARG 1 state
 	METHOD isLitCampfire (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
 	METHOD isSmokeSource (Lnet/minecraft/world/level/block/state/BlockState;)Z

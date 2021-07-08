@@ -5,5 +5,3 @@ CLASS net/minecraft/world/level/block/GrowingPlantHeadBlock
 		ARG 1 state
 	METHOD getBlocksToGrowWhenBonemealed (Ljava/util/Random;)I
 		ARG 1 random
-	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

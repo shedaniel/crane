@@ -65,20 +65,12 @@ CLASS net/minecraft/world/level/Level
 		ARG 1 crashReport
 	METHOD getBestNeighborSignal (Lnet/minecraft/core/BlockPos;)I
 		ARG 1 pos
-	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
-		ARG 1 pos
-	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 1 pos
 	METHOD getChunkAt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/chunk/LevelChunk;
-		ARG 1 pos
-	METHOD getCurrentDifficultyAt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/DifficultyInstance;
 		ARG 1 pos
 	METHOD getDirectSignalTo (Lnet/minecraft/core/BlockPos;)I
 		ARG 1 pos
 	METHOD getEntity (I)Lnet/minecraft/world/entity/Entity;
 		ARG 1 id
-	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 pos
 	METHOD getSignal (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)I
 		ARG 1 pos
 		ARG 2 direction

@@ -13,9 +13,3 @@ CLASS net/minecraft/client/renderer/OutlineBufferSource
 			ARG 3 green
 			ARG 4 blue
 			ARG 5 alpha
-		METHOD uv (FF)Lcom/mojang/blaze3d/vertex/VertexConsumer;
-			ARG 1 u
-			ARG 2 v
-		METHOD vertex (DDD)Lcom/mojang/blaze3d/vertex/VertexConsumer;
-			ARG 1 x
-			ARG 3 y

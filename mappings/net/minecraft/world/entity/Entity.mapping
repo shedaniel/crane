@@ -108,8 +108,6 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 1 invulnerable
 	METHOD setIsInPowderSnow (Z)V
 		ARG 1 isInPowderSnow
-	METHOD setLevelCallback (Lnet/minecraft/world/level/entity/EntityInLevelCallback;)V
-		ARG 1 levelCallback
 	METHOD setOnGround (Z)V
 		ARG 1 onGround
 	METHOD setPacketCoordinates (DDD)V
@@ -128,8 +126,6 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 1 pose
 	METHOD setRemainingFireTicks (I)V
 		ARG 1 remainingFireTicks
-	METHOD setRemoved (Lnet/minecraft/world/entity/Entity$RemovalReason;)V
-		ARG 1 removalReason
 	METHOD setRot (FF)V
 		ARG 1 yRot
 		ARG 2 xRot

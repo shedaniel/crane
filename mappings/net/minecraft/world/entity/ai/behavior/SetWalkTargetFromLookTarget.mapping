@@ -1,4 +1,1 @@
 CLASS net/minecraft/world/entity/ai/behavior/SetWalkTargetFromLookTarget
-	METHOD <init> (Ljava/util/function/Function;I)V
-		ARG 1 speedModifier
-		ARG 2 closeEnoughDistance

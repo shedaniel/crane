@@ -15,5 +15,3 @@ CLASS net/minecraft/world/level/block/CropBlock
 		ARG 3 state
 	METHOD isMaxAge (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
-	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

@@ -5,8 +5,6 @@ CLASS net/minecraft/world/entity/ai/behavior/LongJumpToRandomPos
 		ARG 3 maxLongJumpWidth
 		ARG 4 maxJumpVelocity
 		ARG 5 getJumpSound
-	METHOD tick (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Mob;J)V
-		ARG 3 prepareJumpStart
 	CLASS PossibleJump
 		METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/Vec3;I)V
 			ARG 1 jumpTarget

@@ -1,8 +1,4 @@
 CLASS net/minecraft/world/level/block/LightningRodBlock
-	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 state
-	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	METHOD onLightningStrike (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
 		ARG 1 state
 		ARG 2 level

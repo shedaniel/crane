@@ -3,8 +3,6 @@ CLASS net/minecraft/world/level/block/TripWireHookBlock
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 state
-	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	METHOD notifyNeighbors (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)V
 		ARG 1 level
 		ARG 2 pos

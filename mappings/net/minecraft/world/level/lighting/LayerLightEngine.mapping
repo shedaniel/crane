@@ -3,7 +3,3 @@ CLASS net/minecraft/world/level/lighting/LayerLightEngine
 		ARG 1 chunkSource
 		ARG 2 layer
 		ARG 3 storage
-	METHOD checkBlock (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
-	METHOD getLightValue (Lnet/minecraft/core/BlockPos;)I
-		ARG 1 pos

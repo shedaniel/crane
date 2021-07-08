@@ -1,12 +1,8 @@
 CLASS net/minecraft/world/entity/decoration/ArmorStand
-	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
 	METHOD setBodyPose (Lnet/minecraft/core/Rotations;)V
 		ARG 1 bodyPose
 	METHOD setHeadPose (Lnet/minecraft/core/Rotations;)V
 		ARG 1 headPose
-	METHOD setInvisible (Z)V
-		ARG 1 invisible
 	METHOD setLeftArmPose (Lnet/minecraft/core/Rotations;)V
 		ARG 1 leftArmPose
 	METHOD setLeftLegPose (Lnet/minecraft/core/Rotations;)V

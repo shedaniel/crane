@@ -1,7 +1,3 @@
 CLASS net/minecraft/world/item/EnchantedBookItem
 	METHOD getEnchantments (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/nbt/ListTag;
 		ARG 0 stack
-	METHOD isEnchantable (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD isFoil (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack

@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/block/entity/SmokerBlockEntity
-	METHOD getBurnDuration (Lnet/minecraft/world/item/ItemStack;)I
-		ARG 1 stack

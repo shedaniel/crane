@@ -23,15 +23,6 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 1 hand
 	METHOD getProjectile (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 stack
-	METHOD hurt (Lnet/minecraft/world/damagesource/DamageSource;F)Z
-		ARG 1 lastDamageSource
-		ARG 2 lastHurt
-	METHOD lerpHeadTo (FI)V
-		ARG 2 lerpHeadSteps
-	METHOD lerpTo (DDDFFIZ)V
-		ARG 1 lerpX
-		ARG 3 lerpY
-		ARG 5 lerpZ
 	METHOD onChangedBlock (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
 	METHOD onEffectAdded (Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)V
@@ -61,10 +52,6 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 1 pos
 	METHOD setSpeed (F)V
 		ARG 1 speed
-	METHOD setYBodyRot (F)V
-		ARG 1 yBodyRot
-	METHOD setYHeadRot (F)V
-		ARG 1 yHeadRot
 	METHOD shouldRemoveSoulSpeed (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
 	METHOD startAutoSpinAttack (I)V

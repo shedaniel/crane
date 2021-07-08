@@ -6,9 +6,6 @@ CLASS net/minecraft/server/level/ServerChunkCache
 		ARG 1 pos
 	METHOD getChunkDebugData (Lnet/minecraft/world/level/ChunkPos;)Ljava/lang/String;
 		ARG 1 chunkPos
-	METHOD setSpawnSettings (ZZ)V
-		ARG 1 spawnEnemies
-		ARG 2 spawnFriendlies
 	CLASS MainThreadExecutor
 		METHOD <init> (Lnet/minecraft/server/level/ServerChunkCache;Lnet/minecraft/world/level/Level;)V
 			ARG 2 level

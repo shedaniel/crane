@@ -56,8 +56,6 @@ CLASS net/minecraft/client/Minecraft
 		ARG 1 overlay
 	METHOD setScreen (Lnet/minecraft/client/gui/screens/Screen;)V
 		ARG 1 screen
-	METHOD setWindowActive (Z)V
-		ARG 1 windowActive
 	METHOD updateLevelInEngines (Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 level
 	METHOD updateScreenAndTick (Lnet/minecraft/client/gui/screens/Screen;)V

@@ -10,8 +10,5 @@ CLASS net/minecraft/client/server/IntegratedServer
 		ARG 8 sessionService
 		ARG 9 profileRepository
 		ARG 10 gameProfileCache
-	METHOD publishServer (Lnet/minecraft/world/level/GameType;ZI)Z
-		ARG 1 publishedGameType
-		ARG 3 publishedPort
 	METHOD setUUID (Ljava/util/UUID;)V
 		ARG 1 uuid

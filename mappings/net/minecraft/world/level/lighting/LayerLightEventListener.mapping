@@ -1,8 +1,3 @@
 CLASS net/minecraft/world/level/lighting/LayerLightEventListener
 	METHOD getLightValue (Lnet/minecraft/core/BlockPos;)I
 		ARG 1 pos
-	CLASS DummyLightLayerEventListener
-		METHOD checkBlock (Lnet/minecraft/core/BlockPos;)V
-			ARG 1 pos
-		METHOD getLightValue (Lnet/minecraft/core/BlockPos;)I
-			ARG 1 pos

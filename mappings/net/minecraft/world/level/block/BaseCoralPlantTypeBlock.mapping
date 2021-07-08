@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/level/block/BaseCoralPlantTypeBlock
-	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 state
 	METHOD scanForWater (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Z
 		ARG 0 state
 		ARG 1 level

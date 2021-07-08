@@ -1,8 +1,4 @@
 CLASS net/minecraft/world/entity/animal/axolotl/Axolotl
-	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD saveToBucketTag (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
 	CLASS Variant
 		METHOD <init> (Ljava/lang/String;IILjava/lang/String;Z)V
 			ARG 3 id
@@ -14,6 +10,3 @@ CLASS net/minecraft/world/entity/animal/axolotl/Axolotl
 	CLASS AxolotlMoveControl
 		METHOD <init> (Lnet/minecraft/world/entity/animal/axolotl/Axolotl;)V
 			ARG 1 axolotl
-	CLASS AxolotlPathNavigation
-		METHOD isStableDestination (Lnet/minecraft/core/BlockPos;)Z
-			ARG 1 pos

@@ -1,10 +1,3 @@
 CLASS com/mojang/blaze3d/vertex/SheetedDecalTextureGenerator
 	METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexConsumer;Lcom/mojang/math/Matrix4f;Lcom/mojang/math/Matrix3f;)V
 		ARG 1 delegate
-	METHOD normal (FFF)Lcom/mojang/blaze3d/vertex/VertexConsumer;
-		ARG 1 nx
-		ARG 2 ny
-		ARG 3 nz
-	METHOD overlayCoords (II)Lcom/mojang/blaze3d/vertex/VertexConsumer;
-		ARG 1 overlayU
-		ARG 2 overlayV

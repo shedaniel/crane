@@ -1,8 +1,6 @@
 CLASS net/minecraft/world/level/block/TargetBlock
 	METHOD getRedstoneStrength (Lnet/minecraft/world/phys/BlockHitResult;Lnet/minecraft/world/phys/Vec3;)I
 		ARG 0 hitResult
-	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	METHOD setOutputPower (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/level/block/state/BlockState;ILnet/minecraft/core/BlockPos;I)V
 		ARG 0 level
 		ARG 1 state

@@ -1,7 +1,1 @@
 CLASS net/minecraft/network/protocol/game/ServerboundContainerClickPacket
-	METHOD <init> (IIILnet/minecraft/world/inventory/ClickType;Lnet/minecraft/world/item/ItemStack;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;)V
-		ARG 1 containerId
-		ARG 2 slotNum
-		ARG 3 buttonNum
-		ARG 4 clickType
-		ARG 5 carriedItem

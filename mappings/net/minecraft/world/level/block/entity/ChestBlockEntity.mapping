@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/block/entity/ChestBlockEntity
-	METHOD setItems (Lnet/minecraft/core/NonNullList;)V
-		ARG 1 items

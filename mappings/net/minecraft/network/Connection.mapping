@@ -39,8 +39,6 @@ CLASS net/minecraft/network/Connection
 		ARG 1 listener
 	METHOD setProtocol (Lnet/minecraft/network/ConnectionProtocol;)V
 		ARG 1 protocol
-	METHOD setupCompression (I)V
-		ARG 1 threshold
 	CLASS 1
 		METHOD initChannel (Lio/netty/channel/Channel;)V
 			ARG 1 channel

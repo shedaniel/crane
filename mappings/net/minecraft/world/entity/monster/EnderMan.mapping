@@ -1,10 +1,6 @@
 CLASS net/minecraft/world/entity/monster/EnderMan
 	METHOD setCarriedBlock (Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 state
-	METHOD setPersistentAngerTarget (Ljava/util/UUID;)V
-		ARG 1 persistentAngerTarget
-	METHOD setRemainingPersistentAngerTime (I)V
-		ARG 1 remainingPersistentAngerTime
 	CLASS EndermanTakeBlockGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;)V
 			ARG 1 enderman

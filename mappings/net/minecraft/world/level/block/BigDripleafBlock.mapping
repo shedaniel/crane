@@ -10,8 +10,6 @@ CLASS net/minecraft/world/level/block/BigDripleafBlock
 		ARG 2 state
 	METHOD canReplace (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
-	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
-		ARG 1 state
 	METHOD lambda$static$0 (Lit/unimi/dsi/fastutil/objects/Object2IntArrayMap;)V
 		ARG 0 map
 	METHOD place (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/material/FluidState;Lnet/minecraft/core/Direction;)Z

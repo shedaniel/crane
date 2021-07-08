@@ -1,5 +1,1 @@
 CLASS net/minecraft/world/entity/ai/navigation/WallClimberNavigation
-	METHOD createPath (Lnet/minecraft/core/BlockPos;I)Lnet/minecraft/world/level/pathfinder/Path;
-		ARG 1 pathToPosition
-	METHOD moveTo (Lnet/minecraft/world/entity/Entity;D)Z
-		ARG 2 speedModifier

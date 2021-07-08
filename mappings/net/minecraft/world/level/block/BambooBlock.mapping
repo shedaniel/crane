@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/block/BambooBlock
-	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

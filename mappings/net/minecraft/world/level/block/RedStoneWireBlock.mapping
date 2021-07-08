@@ -7,7 +7,5 @@ CLASS net/minecraft/world/level/block/RedStoneWireBlock
 		ARG 0 state
 	METHOD isDot (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
-	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	METHOD shouldConnectTo (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state

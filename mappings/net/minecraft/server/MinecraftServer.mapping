@@ -87,6 +87,3 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 haveTime
 	METHOD tickServer (Ljava/util/function/BooleanSupplier;)V
 		ARG 1 haveTime
-	CLASS a
-		METHOD <init> (JI)V
-			ARG 1 a

@@ -51,10 +51,3 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 0 textureMatrix
 	METHOD setupShaderLights (Lnet/minecraft/client/renderer/ShaderInstance;)V
 		ARG 0 shader
-	CLASS a
-		METHOD <init> (IILcom/mojang/blaze3d/systems/RenderSystem$a$a;)V
-			ARG 1 a
-			ARG 2 b
-			ARG 3 c
-		METHOD a (I)V
-			ARG 1 f

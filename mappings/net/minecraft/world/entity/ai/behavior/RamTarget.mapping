@@ -1,8 +1,1 @@
 CLASS net/minecraft/world/entity/ai/behavior/RamTarget
-	METHOD <init> (Ljava/util/function/Function;Lnet/minecraft/world/entity/ai/targeting/TargetingConditions;Ljava/util/function/ToIntFunction;FLjava/util/function/ToDoubleFunction;Ljava/util/function/Function;)V
-		ARG 1 getTimeBetweenRams
-		ARG 2 ramTargeting
-		ARG 3 getDamage
-		ARG 4 speed
-		ARG 5 getKnockbackForce
-		ARG 6 getImpactSound

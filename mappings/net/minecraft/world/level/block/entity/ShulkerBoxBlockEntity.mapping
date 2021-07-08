@@ -8,15 +8,11 @@ CLASS net/minecraft/world/level/block/entity/ShulkerBoxBlockEntity
 		ARG 3 state
 	METHOD getBoundingBox (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/phys/AABB;
 		ARG 1 state
-	METHOD setItems (Lnet/minecraft/core/NonNullList;)V
-		ARG 1 itemStacks
 	METHOD tick (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/ShulkerBoxBlockEntity;)V
 		ARG 0 level
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 blockEntity
-	METHOD triggerEvent (II)Z
-		ARG 2 openCount
 	METHOD updateAnimation (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 level
 		ARG 2 pos

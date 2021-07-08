@@ -20,5 +20,3 @@ CLASS net/minecraft/util/profiling/metrics/MetricSampler
 	CLASS ValueIncreasedByPercentage
 		METHOD <init> (F)V
 			ARG 1 percentageIncreaseThreshold
-		METHOD test (D)Z
-			ARG 1 previousValue

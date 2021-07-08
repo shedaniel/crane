@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/item/ShearsItem
-	METHOD isCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

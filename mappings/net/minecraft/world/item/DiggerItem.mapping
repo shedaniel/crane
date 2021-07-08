@@ -5,8 +5,6 @@ CLASS net/minecraft/world/item/DiggerItem
 		ARG 3 tier
 		ARG 4 blocks
 		ARG 5 properties
-	METHOD isCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	METHOD lambda$hurtEnemy$0 (Lnet/minecraft/world/entity/LivingEntity;)V
 		ARG 0 entity
 	METHOD lambda$mineBlock$1 (Lnet/minecraft/world/entity/LivingEntity;)V

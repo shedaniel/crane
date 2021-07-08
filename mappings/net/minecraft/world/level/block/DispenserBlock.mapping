@@ -6,10 +6,6 @@ CLASS net/minecraft/world/level/block/DispenserBlock
 		ARG 1 stack
 	METHOD getDispensePosition (Lnet/minecraft/core/BlockSource;)Lnet/minecraft/core/Position;
 		ARG 0 source
-	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
-		ARG 1 state
-	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state
 	METHOD registerBehavior (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/core/dispenser/DispenseItemBehavior;)V
 		ARG 0 item
 		ARG 1 behavior

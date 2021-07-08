@@ -52,8 +52,6 @@ CLASS net/minecraft/world/item/enchantment/EnchantmentHelper
 	METHOD lambda$getDamageProtection$2 (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/item/enchantment/Enchantment;I)V
 		ARG 2 enchantment
 		ARG 3 level
-	METHOD lambda$runIterationOnItem$1 (Lnet/minecraft/world/item/enchantment/EnchantmentHelper$EnchantmentVisitor;ILnet/minecraft/world/item/enchantment/Enchantment;)V
-		ARG 2 enchantment
 	METHOD runIterationOnInventory (Lnet/minecraft/world/item/enchantment/EnchantmentHelper$EnchantmentVisitor;Ljava/lang/Iterable;)V
 		ARG 0 visitor
 		ARG 1 stacks

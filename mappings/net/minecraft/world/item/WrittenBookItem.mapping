@@ -1,12 +1,8 @@
 CLASS net/minecraft/world/item/WrittenBookItem
 	METHOD getGeneration (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 stack
-	METHOD getName (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;
-		ARG 1 stack
 	METHOD getPageCount (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 stack
-	METHOD isFoil (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
 	METHOD makeSureTagIsValid (Lnet/minecraft/nbt/CompoundTag;)Z
 		ARG 0 tag
 	METHOD resolveBookComponents (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/entity/player/Player;)Z

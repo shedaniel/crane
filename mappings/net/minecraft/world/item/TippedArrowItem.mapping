@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/item/TippedArrowItem
-	METHOD getDescriptionId (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
-		ARG 1 stack
