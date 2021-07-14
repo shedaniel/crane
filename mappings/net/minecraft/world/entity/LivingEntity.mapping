@@ -9,14 +9,10 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 1 stack
 	METHOD dropFromLootTable (Lnet/minecraft/world/damagesource/DamageSource;Z)V
 		ARG 1 souce
-	METHOD equipEventAndSound (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
 	METHOD getDrinkingSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent;
 		ARG 1 stack
 	METHOD getEatingSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent;
 		ARG 1 stack
-	METHOD getEquipmentSlotForItem (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/EquipmentSlot;
-		ARG 0 stack
 	METHOD getExperienceReward (Lnet/minecraft/world/entity/player/Player;)I
 		ARG 1 player
 	METHOD getItemInHand (Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
@@ -25,19 +21,12 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 1 stack
 	METHOD onChangedBlock (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
-	METHOD onEffectAdded (Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)V
-		ARG 1 effect
-		ARG 2 entity
 	METHOD onEffectRemoved (Lnet/minecraft/world/effect/MobEffectInstance;)V
-		ARG 1 effect
-	METHOD onEffectUpdated (Lnet/minecraft/world/effect/MobEffectInstance;ZLnet/minecraft/world/entity/Entity;)V
 		ARG 1 effect
 	METHOD playHurtSound (Lnet/minecraft/world/damagesource/DamageSource;)V
 		ARG 1 source
 	METHOD setAbsorptionAmount (F)V
 		ARG 1 absorptionAmount
-	METHOD setDiscardFriction (Z)V
-		ARG 1 discardFriction
 	METHOD setJumping (Z)V
 		ARG 1 jumping
 	METHOD setLastHurtByMob (Lnet/minecraft/world/entity/LivingEntity;)V
@@ -64,7 +53,3 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 1 hand
 	METHOD swing (Lnet/minecraft/world/InteractionHand;Z)V
 		ARG 1 swingingArm
-	METHOD updateUsingItem (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
-	METHOD verifyEquippedItem (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack

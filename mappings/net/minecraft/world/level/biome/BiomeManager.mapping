@@ -15,8 +15,6 @@ CLASS net/minecraft/world/level/biome/BiomeManager
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD getPrimaryBiomeAtChunk (Lnet/minecraft/world/level/ChunkPos;)Lnet/minecraft/world/level/biome/Biome;
-		ARG 1 chunkPos
 	METHOD obfuscateSeed (J)J
 		ARG 0 seed
 	METHOD withDifferentSource (Lnet/minecraft/world/level/biome/BiomeSource;)Lnet/minecraft/world/level/biome/BiomeManager;
@@ -26,5 +24,3 @@ CLASS net/minecraft/world/level/biome/BiomeManager
 			ARG 1 x
 			ARG 2 y
 			ARG 3 z
-		METHOD getPrimaryBiome (Lnet/minecraft/world/level/ChunkPos;)Lnet/minecraft/world/level/biome/Biome;
-			ARG 1 chunkPos

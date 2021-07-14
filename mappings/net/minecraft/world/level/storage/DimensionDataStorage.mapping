@@ -2,26 +2,10 @@ CLASS net/minecraft/world/level/storage/DimensionDataStorage
 	METHOD <init> (Ljava/io/File;Lcom/mojang/datafixers/DataFixer;)V
 		ARG 1 dataFolder
 		ARG 2 fixerUpper
-	METHOD computeIfAbsent (Ljava/util/function/Function;Ljava/util/function/Supplier;Ljava/lang/String;)Lnet/minecraft/world/level/saveddata/SavedData;
-		ARG 1 deserializer
-		ARG 2 defaultData
-		ARG 3 dataKey
-	METHOD get (Ljava/util/function/Function;Ljava/lang/String;)Lnet/minecraft/world/level/saveddata/SavedData;
-		ARG 1 deserializer
-		ARG 2 dataKey
 	METHOD getDataFile (Ljava/lang/String;)Ljava/io/File;
 		ARG 1 dataKey
 	METHOD isGzip (Ljava/io/PushbackInputStream;)Z
 		ARG 1 stream
-	METHOD lambda$save$0 (Ljava/lang/String;Lnet/minecraft/world/level/saveddata/SavedData;)V
-		ARG 1 dataKey
-		ARG 2 data
-	METHOD readSavedData (Ljava/util/function/Function;Ljava/lang/String;)Lnet/minecraft/world/level/saveddata/SavedData;
-		ARG 1 deserializer
-		ARG 2 dataKey
 	METHOD readTagFromDisk (Ljava/lang/String;I)Lnet/minecraft/nbt/CompoundTag;
 		ARG 1 dataKey
 		ARG 2 currentDataVersion
-	METHOD set (Ljava/lang/String;Lnet/minecraft/world/level/saveddata/SavedData;)V
-		ARG 1 dataKey
-		ARG 2 data

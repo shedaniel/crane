@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/block/SoulFireBlock
-	METHOD canSurviveOnBlock (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

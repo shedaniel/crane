@@ -1,6 +1,4 @@
 CLASS net/minecraft/server/level/ServerPlayerGameMode
-	METHOD <init> (Lnet/minecraft/server/level/ServerPlayer;)V
-		ARG 1 player
 	METHOD destroyBlock (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
 	METHOD handleBlockBreakAction (Lnet/minecraft/core/BlockPos;Lnet/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action;Lnet/minecraft/core/Direction;I)V

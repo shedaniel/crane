@@ -1,6 +1,1 @@
 CLASS net/minecraft/world/entity/animal/horse/TraderLlama
-	METHOD setDespawnDelay (I)V
-		ARG 1 despawnDelay
-	CLASS TraderLlamaDefendWanderingTraderGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/horse/Llama;)V
-			ARG 1 llama

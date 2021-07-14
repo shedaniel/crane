@@ -1,11 +1,1 @@
 CLASS net/minecraft/world/level/LevelHeightAccessor
-	METHOD getSectionIndex (I)I
-		ARG 1 y
-	METHOD getSectionIndexFromSectionY (I)I
-		ARG 1 coord
-	METHOD getSectionYFromSectionIndex (I)I
-		ARG 1 index
-	METHOD isOutsideBuildHeight (I)Z
-		ARG 1 y
-	METHOD isOutsideBuildHeight (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos

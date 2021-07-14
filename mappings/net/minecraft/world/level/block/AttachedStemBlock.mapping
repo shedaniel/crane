@@ -1,5 +1,1 @@
 CLASS net/minecraft/world/level/block/AttachedStemBlock
-	METHOD <init> (Lnet/minecraft/world/level/block/StemGrownBlock;Ljava/util/function/Supplier;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
-		ARG 1 fruit
-		ARG 2 seedSupplier
-		ARG 3 properties

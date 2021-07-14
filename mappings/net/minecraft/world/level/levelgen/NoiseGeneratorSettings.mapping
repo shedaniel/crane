@@ -1,16 +1,1 @@
 CLASS net/minecraft/world/level/levelgen/NoiseGeneratorSettings
-	METHOD <init> (Lnet/minecraft/world/level/levelgen/StructureSettings;Lnet/minecraft/world/level/levelgen/NoiseSettings;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;IIIIZZZZZZ)V
-		ARG 1 structureSettings
-		ARG 2 noiseSettings
-		ARG 3 defaultBlock
-		ARG 4 defaultFluid
-		ARG 5 bedrockRoofPosition
-		ARG 6 bedrockFloorPosition
-		ARG 7 seaLevel
-		ARG 8 minSurfaceLevel
-		ARG 9 disableMobGeneration
-		ARG 10 aquifersEnabled
-		ARG 11 noiseCavesEnabled
-		ARG 12 deepslateEnabled
-		ARG 13 oreVeinsEnabled
-		ARG 14 noodleCavesEnabled

@@ -2,16 +2,6 @@ CLASS net/minecraft/server/ServerFunctionLibrary
 	METHOD <init> (ILcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 1 functionCompilationLevel
 		ARG 2 dispatcher
-	METHOD lambda$reload$1 (Ljava/lang/String;)Z
-		ARG 0 path
-	METHOD lambda$reload$5 (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/concurrent/Executor;Ljava/util/Collection;)Ljava/util/concurrent/CompletionStage;
-		ARG 3 functions
-	METHOD lambda$reload$6 (Lnet/minecraft/resources/ResourceLocation;Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/commands/CommandFunction;Ljava/lang/Throwable;)Ljava/lang/Object;
-		ARG 2 function
-		ARG 3 throwable
-	METHOD lambda$reload$7 (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/resources/ResourceLocation;Ljava/util/concurrent/CompletableFuture;)V
-		ARG 1 location
-		ARG 2 future
 	METHOD readLines (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/resources/ResourceLocation;)Ljava/util/List;
 		ARG 0 resourceManager
 		ARG 1 location

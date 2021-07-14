@@ -1,17 +1,1 @@
 CLASS net/minecraft/world/level/storage/loot/functions/SetAttributesFunction
-	CLASS Modifier
-		METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;[Lnet/minecraft/world/entity/EquipmentSlot;Ljava/util/UUID;)V
-			ARG 1 name
-			ARG 2 attribute
-			ARG 3 operation
-			ARG 4 amount
-			ARG 5 slots
-			ARG 6 id
-	CLASS ModifierBuilder
-		METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)V
-			ARG 1 name
-			ARG 2 attribute
-			ARG 3 operation
-			ARG 4 amount
-		METHOD withUuid (Ljava/util/UUID;)Lnet/minecraft/world/level/storage/loot/functions/SetAttributesFunction$ModifierBuilder;
-			ARG 1 id

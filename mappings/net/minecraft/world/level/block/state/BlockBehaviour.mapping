@@ -93,10 +93,6 @@ CLASS net/minecraft/world/level/block/state/BlockBehaviour
 		ARG 4 ctx
 	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
-	METHOD isCollisionShapeFullBlock (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 state
-		ARG 2 level
-		ARG 3 pos
 	METHOD isPathfindable (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/pathfinder/PathComputationType;)Z
 		ARG 1 state
 		ARG 2 level
@@ -191,18 +187,12 @@ CLASS net/minecraft/world/level/block/state/BlockBehaviour
 		METHOD <init> (Lnet/minecraft/world/level/material/Material;Lnet/minecraft/world/level/material/MaterialColor;)V
 			ARG 1 material
 			ARG 2 color
-		METHOD color (Lnet/minecraft/world/level/material/MaterialColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
-			ARG 1 color
 		METHOD copy (Lnet/minecraft/world/level/block/state/BlockBehaviour;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
 			ARG 0 other
-		METHOD destroyTime (F)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
-			ARG 1 hardness
 		METHOD dropsLike (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
 			ARG 1 block
 		METHOD emissiveRendering (Lnet/minecraft/world/level/block/state/BlockBehaviour$StatePredicate;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
 			ARG 1 predicate
-		METHOD explosionResistance (F)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
-			ARG 1 resistance
 		METHOD friction (F)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
 			ARG 1 friction
 		METHOD hasPostProcess (Lnet/minecraft/world/level/block/state/BlockBehaviour$StatePredicate;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
@@ -217,8 +207,6 @@ CLASS net/minecraft/world/level/block/state/BlockBehaviour
 			ARG 1 predicate
 		METHOD jumpFactor (F)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
 			ARG 1 jumpFactor
-		METHOD lambda$color$7 (Lnet/minecraft/world/level/material/MaterialColor;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/MaterialColor;
-			ARG 1 state
 		METHOD lambda$new$0 (Lnet/minecraft/world/level/block/state/BlockState;)I
 			ARG 0 state
 		METHOD lambda$new$1 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/EntityType;)Z
@@ -357,9 +345,6 @@ CLASS net/minecraft/world/level/block/state/BlockBehaviour
 			ARG 1 level
 			ARG 2 pos
 			ARG 3 direction
-		METHOD getTicker (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;
-			ARG 1 level
-			ARG 2 blockEntityType
 		METHOD getVisualShape (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/shapes/CollisionContext;)Lnet/minecraft/world/phys/shapes/VoxelShape;
 			ARG 1 level
 			ARG 2 pos

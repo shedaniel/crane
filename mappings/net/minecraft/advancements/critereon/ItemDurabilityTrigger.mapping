@@ -15,9 +15,6 @@ CLASS net/minecraft/advancements/critereon/ItemDurabilityTrigger
 			ARG 0 player
 			ARG 1 predicate
 			ARG 2 bounds
-		METHOD changedDurability (Lnet/minecraft/advancements/critereon/ItemPredicate;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;)Lnet/minecraft/advancements/critereon/ItemDurabilityTrigger$TriggerInstance;
-			ARG 0 predicate
-			ARG 1 bounds
 		METHOD matches (Lnet/minecraft/world/item/ItemStack;I)Z
 			ARG 1 stack
 			ARG 2 damage

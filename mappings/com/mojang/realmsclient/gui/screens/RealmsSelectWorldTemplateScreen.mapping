@@ -1,7 +1,4 @@
 CLASS com/mojang/realmsclient/gui/screens/RealmsSelectWorldTemplateScreen
-	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/util/function/Consumer;Lcom/mojang/realmsclient/dto/RealmsServer$WorldType;Lcom/mojang/realmsclient/dto/WorldTemplatePaginatedList;)V
-		ARG 2 callback
-		ARG 3 worldType
 	METHOD setWarning ([Lnet/minecraft/network/chat/Component;)V
 		ARG 1 warning
 	CLASS Entry

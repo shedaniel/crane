@@ -1,5 +1,1 @@
 CLASS net/minecraft/gametest/framework/ReportGameListener
-	METHOD <init> (Lnet/minecraft/gametest/framework/GameTestInfo;Lnet/minecraft/gametest/framework/GameTestTicker;Lnet/minecraft/core/BlockPos;)V
-		ARG 1 originalTestInfo
-		ARG 2 testTicker
-		ARG 3 structurePos

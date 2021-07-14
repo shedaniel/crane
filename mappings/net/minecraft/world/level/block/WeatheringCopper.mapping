@@ -1,18 +1,1 @@
 CLASS net/minecraft/world/level/block/WeatheringCopper
-	METHOD getFirst (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/Block;
-		ARG 0 block
-	METHOD getFirst (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 0 state
-	METHOD getNext (Lnet/minecraft/world/level/block/Block;)Ljava/util/Optional;
-		ARG 0 block
-	METHOD getPrevious (Lnet/minecraft/world/level/block/Block;)Ljava/util/Optional;
-		ARG 0 block
-	METHOD getPrevious (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/Optional;
-		ARG 0 state
-	METHOD lambda$getNext$3 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 1 block
-	METHOD lambda$getPrevious$2 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 1 block
-	CLASS WeatherState
-		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/level/block/WeatheringCopper$WeatherState;
-			ARG 0 name

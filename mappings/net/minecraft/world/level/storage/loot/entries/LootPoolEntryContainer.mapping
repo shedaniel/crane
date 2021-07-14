@@ -6,12 +6,8 @@ CLASS net/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer
 	METHOD validate (Lnet/minecraft/world/level/storage/loot/ValidationContext;)V
 		ARG 1 ctx
 	CLASS Builder
-		METHOD append (Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/EntryGroup$Builder;
-			ARG 1 entry
 		METHOD otherwise (Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/AlternativesEntry$Builder;
 			ARG 1 alternative
-		METHOD then (Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/SequentialEntry$Builder;
-			ARG 1 other
 	CLASS Serializer
 		METHOD deserializeCustom (Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer;
 			ARG 1 json

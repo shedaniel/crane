@@ -9,13 +9,5 @@ CLASS net/minecraft/client/gui/screens/ConfirmScreen
 		ARG 3 title2
 		ARG 4 yesButton
 		ARG 5 noButton
-	METHOD addButtons (I)V
-		ARG 1 y
-	METHOD addExitButton (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$addButtons$0 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$addButtons$1 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
 	METHOD setDelay (I)V
 		ARG 1 delayTicker

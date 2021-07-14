@@ -1,14 +1,1 @@
 CLASS net/minecraft/commands/arguments/selector/EntitySelector
-	METHOD <init> (IZZLjava/util/function/Predicate;Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Ljava/util/function/Function;Lnet/minecraft/world/phys/AABB;Ljava/util/function/BiConsumer;ZLjava/lang/String;Ljava/util/UUID;Lnet/minecraft/world/entity/EntityType;Z)V
-		ARG 1 maxResults
-		ARG 2 includesEntities
-		ARG 3 worldLimited
-		ARG 4 predicate
-		ARG 5 range
-		ARG 6 position
-		ARG 7 box
-		ARG 8 order
-		ARG 9 currentEntity
-		ARG 10 playerName
-		ARG 11 entityUUID
-		ARG 13 usesSelector

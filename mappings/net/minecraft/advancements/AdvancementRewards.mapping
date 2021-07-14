@@ -13,17 +13,9 @@ CLASS net/minecraft/advancements/AdvancementRewards
 	CLASS Builder
 		METHOD addExperience (I)Lnet/minecraft/advancements/AdvancementRewards$Builder;
 			ARG 1 experience
-		METHOD addLootTable (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
-			ARG 1 lootTableId
 		METHOD addRecipe (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
 			ARG 1 recipeId
 		METHOD experience (I)Lnet/minecraft/advancements/AdvancementRewards$Builder;
 			ARG 0 experience
-		METHOD function (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
-			ARG 0 functionId
-		METHOD loot (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
-			ARG 0 lootTableId
 		METHOD recipe (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
 			ARG 0 recipeId
-		METHOD runs (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
-			ARG 1 functionId

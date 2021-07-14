@@ -7,7 +7,3 @@ CLASS net/minecraft/world/entity/projectile/FishingHook
 		ARG 1 pos
 	METHOD retrieve (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 1 stack
-	METHOD setHookedEntity (Lnet/minecraft/world/entity/Entity;)V
-		ARG 1 hookedIn
-	METHOD updateOwnerInfo (Lnet/minecraft/world/entity/projectile/FishingHook;)V
-		ARG 1 fishing

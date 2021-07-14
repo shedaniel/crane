@@ -1,11 +1,6 @@
 CLASS net/minecraft/advancements/critereon/BredAnimalsTrigger
 	METHOD lambda$trigger$0 (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/advancements/critereon/BredAnimalsTrigger$TriggerInstance;)Z
 		ARG 3 trigger
-	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/animal/Animal;Lnet/minecraft/world/entity/animal/Animal;Lnet/minecraft/world/entity/AgeableMob;)V
-		ARG 1 player
-		ARG 2 parent
-		ARG 3 partner
-		ARG 4 child
 	CLASS TriggerInstance
 		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
 			ARG 1 player

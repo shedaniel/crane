@@ -21,8 +21,6 @@ CLASS net/minecraft/world/level/biome/BiomeSource
 		ARG 4 radius
 		ARG 5 predicate
 		ARG 6 random
-	METHOD lambda$canGenerateStructure$0 (Lnet/minecraft/world/level/levelgen/feature/StructureFeature;Lnet/minecraft/world/level/biome/Biome;)Z
-		ARG 1 biome
 	METHOD lambda$canGenerateStructure$1 (Lnet/minecraft/world/level/levelgen/feature/StructureFeature;)Ljava/lang/Boolean;
 		ARG 1 feature
 	METHOD withSeed (J)Lnet/minecraft/world/level/biome/BiomeSource;

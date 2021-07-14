@@ -1,3 +1,1 @@
 CLASS net/minecraft/network/protocol/game/ClientboundPingPacket
-	METHOD <init> (I)V
-		ARG 1 id

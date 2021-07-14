@@ -30,18 +30,12 @@ CLASS net/minecraft/Util
 	METHOD findPreviousInIterable (Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 0 iterable
 		ARG 1 target
-	METHOD fixedSize (Ljava/util/List;I)Lcom/mojang/serialization/DataResult;
-		ARG 0 list
-		ARG 1 size
 	METHOD fixedSize (Ljava/util/stream/IntStream;I)Lcom/mojang/serialization/DataResult;
 		ARG 0 stream
 		ARG 1 size
 	METHOD getPropertyName (Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Object;)Ljava/lang/String;
 		ARG 0 property
 		ARG 1 value
-	METHOD getRandom (Ljava/util/List;Ljava/util/Random;)Ljava/lang/Object;
-		ARG 0 list
-		ARG 1 random
 	METHOD getRandom ([ILjava/util/Random;)I
 		ARG 0 arr
 		ARG 1 random
@@ -52,41 +46,8 @@ CLASS net/minecraft/Util
 		ARG 0 optional
 		ARG 1 consumer
 		ARG 2 runnable
-	METHOD lambda$getVmArguments$5 (Ljava/lang/String;)Z
-		ARG 0 s
-	METHOD lambda$makeExecutor$2 (Ljava/lang/String;Ljava/util/concurrent/ForkJoinPool;)Ljava/util/concurrent/ForkJoinWorkerThread;
-		ARG 1 pool
-	METHOD lambda$makeIoExecutor$3 (Ljava/lang/Runnable;)Ljava/lang/Thread;
-		ARG 0 runnable
-	METHOD lambda$prefix$13 (Ljava/util/function/Consumer;Ljava/lang/String;Ljava/lang/String;)V
-		ARG 2 suffix
-	METHOD lambda$sanitizeName$14 (Lnet/minecraft/CharPredicate;I)Ljava/lang/String;
-		ARG 1 i
-	METHOD lambda$sequence$6 (Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;
-		ARG 0 object
-		ARG 1 list
-	METHOD lambda$sequence$7 (Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 f1
-		ARG 1 f2
-	METHOD lambda$sequence$8 (Ljava/util/List;Ljava/util/List;)Ljava/util/List;
-		ARG 0 l1
-		ARG 1 l2
-	METHOD lambda$sequence$9 (Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 f1
-		ARG 1 f2
-	METHOD lambda$sequenceFailFast$10 (Ljava/util/concurrent/CompletableFuture;Ljava/util/List;ILjava/lang/Object;Ljava/lang/Throwable;)V
-		ARG 3 object
-		ARG 4 throwable
-	METHOD lambda$sequenceFailFast$11 (Ljava/util/List;[Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;)V
-		ARG 3 future
-	METHOD lambda$sequenceFailFast$12 (Ljava/util/List;Ljava/lang/Void;)Ljava/util/List;
-		ARG 1 v
-	METHOD lambda$static$0 (Ljava/nio/file/spi/FileSystemProvider;)Z
-		ARG 0 fs
 	METHOD lastOf (Ljava/util/List;)Ljava/lang/Object;
 		ARG 0 list
-	METHOD logAndPauseIfInIde (Ljava/lang/String;)V
-		ARG 0 message
 	METHOD make (Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
 		ARG 0 object
 		ARG 1 consumer
@@ -97,10 +58,6 @@ CLASS net/minecraft/Util
 		ARG 1 id
 	METHOD makeExecutor (Ljava/lang/String;)Ljava/util/concurrent/ExecutorService;
 		ARG 0 name
-	METHOD memoize (Ljava/util/function/BiFunction;)Ljava/util/function/BiFunction;
-		ARG 0 biFunction
-	METHOD memoize (Ljava/util/function/Function;)Ljava/util/function/Function;
-		ARG 0 function
 	METHOD name (Ljava/lang/Runnable;Ljava/util/function/Supplier;)Ljava/lang/Runnable;
 		ARG 0 runnable
 		ARG 1 nameSupplier
@@ -133,29 +90,15 @@ CLASS net/minecraft/Util
 		ARG 1 validator
 	METHOD sequence (Ljava/util/List;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 futures
-	METHOD sequenceFailFast (Ljava/util/List;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 futures
 	METHOD shutdownExecutor (Ljava/util/concurrent/ExecutorService;)V
 		ARG 0 service
 	METHOD throwAsRuntime (Ljava/lang/Throwable;)V
 		ARG 0 throwable
 	METHOD toStream (Ljava/util/Optional;)Ljava/util/stream/Stream;
 		ARG 0 optional
-	METHOD wrapThreadWithTaskName (Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Runnable;
-		ARG 0 threadName
-		ARG 1 runnable
 	CLASS 1
 		METHOD onTermination (Ljava/lang/Throwable;)V
 			ARG 1 throwable
-	CLASS 8
-		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
-			ARG 1 t
-	CLASS 9
-		METHOD apply (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-			ARG 1 t
-			ARG 2 u
-		METHOD lambda$apply$0 (Ljava/util/function/BiFunction;Lcom/mojang/datafixers/util/Pair;)Ljava/lang/Object;
-			ARG 1 pair
 	CLASS OS
 		METHOD getOpenUrlArguments (Ljava/net/URL;)[Ljava/lang/String;
 			ARG 1 url

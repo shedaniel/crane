@@ -1,3 +1,1 @@
 CLASS net/minecraft/gametest/framework/GlobalTestReporter
-	METHOD replaceWith (Lnet/minecraft/gametest/framework/TestReporter;)V
-		ARG 0 DELEGATE

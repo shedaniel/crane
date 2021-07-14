@@ -72,19 +72,12 @@ CLASS net/minecraft/world/item/ItemStack
 		ARG 2 entity
 		ARG 3 slotId
 		ARG 4 selected
-	METHOD is (Lnet/minecraft/tags/Tag;)Z
-		ARG 1 tag
-	METHOD is (Lnet/minecraft/world/item/Item;)Z
-		ARG 1 item
 	METHOD isCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
 	METHOD isSame (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 first
 		ARG 1 second
 	METHOD isSameIgnoreDurability (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 0 first
-		ARG 1 second
-	METHOD isSameItemSameTags (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 first
 		ARG 1 second
 	METHOD matches (Lnet/minecraft/world/item/ItemStack;)Z
@@ -102,20 +95,9 @@ CLASS net/minecraft/world/item/ItemStack
 	METHOD onCraftedBy (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;I)V
 		ARG 1 level
 		ARG 2 player
-	METHOD onDestroyed (Lnet/minecraft/world/entity/item/ItemEntity;)V
-		ARG 1 itemEntity
 	METHOD onUseTick (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;I)V
 		ARG 1 level
 		ARG 2 entity
-	METHOD overrideOtherStackedOnMe (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/inventory/Slot;Lnet/minecraft/world/inventory/ClickAction;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/SlotAccess;)Z
-		ARG 1 otherStack
-		ARG 2 slot
-		ARG 3 action
-		ARG 4 player
-	METHOD overrideStackedOnOther (Lnet/minecraft/world/inventory/Slot;Lnet/minecraft/world/inventory/ClickAction;Lnet/minecraft/world/entity/player/Player;)Z
-		ARG 1 slot
-		ARG 2 action
-		ARG 3 player
 	METHOD releaseUsing (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;I)V
 		ARG 1 level
 		ARG 2 entity

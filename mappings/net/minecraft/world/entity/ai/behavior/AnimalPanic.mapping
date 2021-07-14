@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/entity/ai/behavior/AnimalPanic
-	METHOD <init> (F)V
-		ARG 1 speedMultiplier

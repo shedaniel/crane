@@ -6,5 +6,3 @@ CLASS net/minecraft/network/protocol/game/ClientboundMerchantOffersPacket
 		ARG 4 villagerXp
 		ARG 5 showProgress
 		ARG 6 canRestock
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf

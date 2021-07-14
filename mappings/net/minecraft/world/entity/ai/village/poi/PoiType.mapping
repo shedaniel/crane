@@ -10,5 +10,3 @@ CLASS net/minecraft/world/entity/ai/village/poi/PoiType
 		ARG 5 validRange
 	METHOD forState (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/Optional;
 		ARG 0 state
-	METHOD is (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 1 state

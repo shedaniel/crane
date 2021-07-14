@@ -26,8 +26,6 @@ CLASS net/minecraft/world/level/block/Blocks
 		ARG 0 state
 		ARG 1 level
 		ARG 2 pos
-	METHOD leaves (Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/LeavesBlock;
-		ARG 0 soundType
 	METHOD litBlockEmission (I)Ljava/util/function/ToIntFunction;
 		ARG 0 light
 	METHOD log (Lnet/minecraft/world/level/material/MaterialColor;Lnet/minecraft/world/level/material/MaterialColor;)Lnet/minecraft/world/level/block/RotatedPillarBlock;

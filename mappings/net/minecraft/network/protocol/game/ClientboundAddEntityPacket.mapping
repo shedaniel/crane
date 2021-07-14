@@ -10,8 +10,6 @@ CLASS net/minecraft/network/protocol/game/ClientboundAddEntityPacket
 		ARG 11 type
 		ARG 12 data
 		ARG 13 velocity
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD <init> (Lnet/minecraft/world/entity/Entity;I)V

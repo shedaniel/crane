@@ -1,8 +1,4 @@
 CLASS net/minecraft/client/model/HumanoidModel
-	METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;)V
-		ARG 1 part
-	METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;Ljava/util/function/Function;)V
-		ARG 1 part
 	METHOD copyPropertiesTo (Lnet/minecraft/client/model/HumanoidModel;)V
 		ARG 1 model
 	METHOD getArm (Lnet/minecraft/world/entity/HumanoidArm;)Lnet/minecraft/client/model/geom/ModelPart;

@@ -15,8 +15,6 @@ CLASS net/minecraft/world/entity/player/Inventory
 		ARG 1 state
 	METHOD getSlotWithRemainingSpace (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 1 stack
-	METHOD placeItemBackInInventory (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 stack
 	METHOD removeItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
 	METHOD setPickedItem (Lnet/minecraft/world/item/ItemStack;)V

@@ -10,8 +10,6 @@ CLASS net/minecraft/network/protocol/game/ClientboundLevelParticlesPacket
 		ARG 11 zDist
 		ARG 12 maxSpeed
 		ARG 13 count
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf
 	METHOD readParticle (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/core/particles/ParticleType;)Lnet/minecraft/core/particles/ParticleOptions;
 		ARG 1 buf
 		ARG 2 type

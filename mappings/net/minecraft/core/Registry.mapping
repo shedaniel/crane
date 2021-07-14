@@ -4,8 +4,6 @@ CLASS net/minecraft/core/Registry
 		ARG 2 lifecycle
 	METHOD checkRegistry (Lnet/minecraft/core/WritableRegistry;)V
 		ARG 0 registries
-	METHOD containsKey (Lnet/minecraft/resources/ResourceKey;)Z
-		ARG 1 key
 	METHOD containsKey (Lnet/minecraft/resources/ResourceLocation;)Z
 		ARG 1 key
 	METHOD createRegistryKey (Ljava/lang/String;)Lnet/minecraft/resources/ResourceKey;
@@ -24,8 +22,6 @@ CLASS net/minecraft/core/Registry
 		ARG 1 key
 	METHOD getOrThrow (Lnet/minecraft/resources/ResourceKey;)Ljava/lang/Object;
 		ARG 1 key
-	METHOD getRandom (Ljava/util/Random;)Ljava/lang/Object;
-		ARG 1 random
 	METHOD getResourceKey (Ljava/lang/Object;)Ljava/util/Optional;
 		ARG 1 value
 	METHOD internalRegister (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/WritableRegistry;Ljava/util/function/Supplier;Lcom/mojang/serialization/Lifecycle;)Lnet/minecraft/core/WritableRegistry;
@@ -35,13 +31,6 @@ CLASS net/minecraft/core/Registry
 		ARG 3 lifecycle
 	METHOD keys (Lcom/mojang/serialization/DynamicOps;)Ljava/util/stream/Stream;
 		ARG 1 ops
-	METHOD lambda$checkRegistry$55 (Lnet/minecraft/core/WritableRegistry;Lnet/minecraft/core/WritableRegistry;)V
-		ARG 1 registry
-	METHOD lambda$keys$60 (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/Object;
-		ARG 1 key
-	METHOD lambda$static$54 (Lnet/minecraft/resources/ResourceLocation;Ljava/util/function/Supplier;)V
-		ARG 0 registryKey
-		ARG 1 loader
 	METHOD lifecycle (Ljava/lang/Object;)Lcom/mojang/serialization/Lifecycle;
 		ARG 1 value
 	METHOD register (Lnet/minecraft/core/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;

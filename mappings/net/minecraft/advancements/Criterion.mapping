@@ -11,9 +11,6 @@ CLASS net/minecraft/advancements/Criterion
 		ARG 1 context
 	METHOD criterionFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/advancements/Criterion;
 		ARG 0 buf
-	METHOD lambda$serializeToNetwork$0 (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/advancements/Criterion;)V
-		ARG 0 b
-		ARG 1 criterion
 	METHOD serializeToNetwork (Ljava/util/Map;Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 0 criteria
 		ARG 1 buf

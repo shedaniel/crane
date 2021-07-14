@@ -34,10 +34,6 @@ CLASS net/minecraft/client/particle/Particle
 		ARG 3 bCol
 	METHOD setLifetime (I)V
 		ARG 1 lifetime
-	METHOD setParticleSpeed (DDD)V
-		ARG 1 xd
-		ARG 3 yd
-		ARG 5 zd
 	METHOD setPos (DDD)V
 		ARG 1 x
 		ARG 3 y

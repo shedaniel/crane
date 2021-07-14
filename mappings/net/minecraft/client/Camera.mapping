@@ -16,11 +16,3 @@ CLASS net/minecraft/client/Camera
 		ARG 3 detached
 		ARG 4 setRotation
 		ARG 5 rot
-	CLASS NearPlane
-		METHOD <init> (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;)V
-			ARG 1 forward
-			ARG 2 left
-			ARG 3 up
-		METHOD getPointOnPlane (FF)Lnet/minecraft/world/phys/Vec3;
-			ARG 1 xScale
-			ARG 2 yScale

@@ -1,4 +1,1 @@
 CLASS net/minecraft/world/entity/ai/behavior/RunSometimes
-	METHOD <init> (Lnet/minecraft/world/entity/ai/behavior/Behavior;ZLnet/minecraft/util/valueproviders/UniformInt;)V
-		ARG 1 wrappedBehavior
-		ARG 3 interval

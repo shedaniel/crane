@@ -2,23 +2,16 @@ CLASS net/minecraft/client/Minecraft
 	METHOD <init> (Lnet/minecraft/client/main/GameConfig;)V
 		ARG 0 instance
 		ARG 1 gameConfig
-	METHOD archiveProfilingReport (Lnet/minecraft/SystemReport;Ljava/util/List;)Ljava/nio/file/Path;
-		ARG 1 systemReport
-		ARG 2 paths
 	METHOD clearLevel (Lnet/minecraft/client/gui/screens/Screen;)V
 		ARG 1 screen
 	METHOD clearResourcePacksOnError (Ljava/lang/Throwable;Lnet/minecraft/network/chat/Component;)V
 		ARG 1 throwable
 		ARG 2 component
-	METHOD constructProfiler (ZLnet/minecraft/util/profiling/SingleTickProfiler;)Lnet/minecraft/util/profiling/ProfilerFiller;
-		ARG 2 profiler
 	METHOD crash (Lnet/minecraft/CrashReport;)V
 		ARG 0 crashReport
 	METHOD createSocialInteractions (Lcom/mojang/authlib/yggdrasil/YggdrasilAuthenticationService;Lnet/minecraft/client/main/GameConfig;)Lcom/mojang/authlib/minecraft/SocialInteractionsService;
 		ARG 1 authService
 		ARG 2 gameConfig
-	METHOD debugClientMetricsStart (Ljava/util/function/Consumer;)Z
-		ARG 1 callback
 	METHOD delayCrash (Lnet/minecraft/CrashReport;)V
 		ARG 1 delayedCrash
 	METHOD displayExperimentalConfirmationDialog (Lnet/minecraft/client/Minecraft$ExperimentalDialogType;Ljava/lang/String;ZLjava/lang/Runnable;)V
@@ -35,8 +28,6 @@ CLASS net/minecraft/client/Minecraft
 		ARG 1 screen
 	METHOD isBlocked (Ljava/util/UUID;)Z
 		ARG 1 sender
-	METHOD lambda$displayExperimentalConfirmationDialog$40 (Ljava/lang/Runnable;Ljava/lang/String;Z)V
-		ARG 3 confirmed
 	METHOD makeServerStem (Lnet/minecraft/core/RegistryAccess$RegistryHolder;Ljava/util/function/Function;Lcom/mojang/datafixers/util/Function4;ZLnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;)Lnet/minecraft/client/Minecraft$ServerStem;
 		ARG 1 registryHolder
 		ARG 5 storageAccess
@@ -60,9 +51,6 @@ CLASS net/minecraft/client/Minecraft
 		ARG 1 level
 	METHOD updateScreenAndTick (Lnet/minecraft/client/gui/screens/Screen;)V
 		ARG 1 screen
-	CLASS ChatStatus
-		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;)V
-			ARG 3 message
 	CLASS ServerStem
 		METHOD <init> (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/server/ServerResources;Lnet/minecraft/world/level/storage/WorldData;)V
 			ARG 1 packRepository

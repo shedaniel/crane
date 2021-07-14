@@ -3,18 +3,12 @@ CLASS net/minecraft/util/Mth
 		ARG 0 a
 	METHOD abs (I)I
 		ARG 0 a
-	METHOD absFloor (D)I
-		ARG 0 a
 	METHOD average ([J)D
 		ARG 0 values
 	METHOD ceil (D)I
 		ARG 0 a
 	METHOD ceil (F)I
 		ARG 0 a
-	METHOD clamp (BBB)B
-		ARG 0 value
-		ARG 1 min
-		ARG 2 max
 	METHOD clamp (DDD)D
 		ARG 0 value
 		ARG 2 min
@@ -35,10 +29,6 @@ CLASS net/minecraft/util/Mth
 		ARG 0 min
 		ARG 2 max
 		ARG 4 progress
-	METHOD clampedLerp (FFF)F
-		ARG 0 min
-		ARG 1 max
-		ARG 2 progress
 	METHOD cos (F)F
 		ARG 0 a
 	METHOD equal (DD)Z
@@ -83,11 +73,7 @@ CLASS net/minecraft/util/Mth
 		ARG 0 a
 	METHOD sqrt (F)F
 		ARG 0 a
-	METHOD square (D)D
-		ARG 0 a
 	METHOD square (F)F
-		ARG 0 a
-	METHOD square (I)I
 		ARG 0 a
 	METHOD wrapDegrees (D)D
 		ARG 0 degrees

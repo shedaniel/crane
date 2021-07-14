@@ -1,4 +1,1 @@
 CLASS net/minecraft/client/gui/narration/NarratableEntry
-	CLASS NarrationPriority
-		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/gui/narration/NarratableEntry$NarrationPriority;
-			ARG 0 name

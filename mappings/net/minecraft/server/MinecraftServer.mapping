@@ -19,8 +19,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 0 storageAccess
 	METHOD createLevels (Lnet/minecraft/server/level/progress/ChunkProgressListener;)V
 		ARG 1 listener
-	METHOD fillServerSystemReport (Lnet/minecraft/SystemReport;)Lnet/minecraft/SystemReport;
-		ARG 1 report
 	METHOD getScaledTrackingDistance (I)I
 		ARG 1 distance
 	METHOD getSelectedPacks (Lnet/minecraft/server/packs/repository/PackRepository;)Lnet/minecraft/world/level/DataPackConfig;
@@ -37,8 +35,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 3 player
 	METHOD kickUnlistedPlayers (Lnet/minecraft/commands/CommandSourceStack;)V
 		ARG 1 commandSource
-	METHOD lambda$setInitialSpawn$4 (Lnet/minecraft/world/level/biome/Biome;)Z
-		ARG 0 biome
 	METHOD onServerCrash (Lnet/minecraft/CrashReport;)V
 		ARG 1 report
 	METHOD publishServer (Lnet/minecraft/world/level/GameType;ZI)Z
@@ -57,9 +53,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 allowFlight
 	METHOD setId (Ljava/lang/String;)V
 		ARG 1 serverId
-	METHOD setInitialSpawn (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/storage/ServerLevelData;ZZ)V
-		ARG 0 level
-		ARG 1 levelData
 	METHOD setLocalIp (Ljava/lang/String;)V
 		ARG 1 localIp
 	METHOD setMotd (Ljava/lang/String;)V
@@ -81,8 +74,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 singleplayerName
 	METHOD setUsesAuthentication (Z)V
 		ARG 1 onlineMode
-	METHOD startRecordingMetrics (Ljava/util/function/Consumer;Ljava/util/function/Consumer;)V
-		ARG 2 onMetricsRecordingFinished
 	METHOD tickChildren (Ljava/util/function/BooleanSupplier;)V
 		ARG 1 haveTime
 	METHOD tickServer (Ljava/util/function/BooleanSupplier;)V

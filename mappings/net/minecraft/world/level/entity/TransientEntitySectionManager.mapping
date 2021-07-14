@@ -1,7 +1,1 @@
 CLASS net/minecraft/world/level/entity/TransientEntitySectionManager
-	METHOD <init> (Ljava/lang/Class;Lnet/minecraft/world/level/entity/LevelCallback;)V
-		ARG 2 callbacks
-	CLASS Callback
-		METHOD <init> (Lnet/minecraft/world/level/entity/TransientEntitySectionManager;Lnet/minecraft/world/level/entity/EntityAccess;JLnet/minecraft/world/level/entity/EntitySection;)V
-			ARG 2 entity
-			ARG 3 currentSectionKey

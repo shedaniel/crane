@@ -10,19 +10,7 @@ CLASS net/minecraft/world/level/storage/loot/GsonAdapterFactory
 			ARG 2 elementName
 			ARG 3 typeKey
 			ARG 4 typeGetter
-		METHOD withDefaultType (Lnet/minecraft/world/level/storage/loot/SerializerType;)Lnet/minecraft/world/level/storage/loot/GsonAdapterFactory$Builder;
-			ARG 1 defaultType
-		METHOD withInlineSerializer (Lnet/minecraft/world/level/storage/loot/SerializerType;Lnet/minecraft/world/level/storage/loot/GsonAdapterFactory$InlineSerializer;)Lnet/minecraft/world/level/storage/loot/GsonAdapterFactory$Builder;
-			ARG 1 type
-			ARG 2 serializer
 	CLASS JsonAdapter
-		METHOD <init> (Lnet/minecraft/core/Registry;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/level/storage/loot/SerializerType;Lcom/mojang/datafixers/util/Pair;)V
-			ARG 1 registry
-			ARG 2 elementName
-			ARG 3 typeKey
-			ARG 4 typeGetter
-			ARG 5 defaultType
-			ARG 6 inlineType
 		METHOD deserialize (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
 			ARG 1 json
 			ARG 2 type
@@ -31,10 +19,3 @@ CLASS net/minecraft/world/level/storage/loot/GsonAdapterFactory
 			ARG 1 object
 			ARG 2 type
 			ARG 3 ctx
-	CLASS InlineSerializer
-		METHOD deserialize (Lcom/google/gson/JsonElement;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
-			ARG 1 json
-			ARG 2 ctx
-		METHOD serialize (Ljava/lang/Object;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;
-			ARG 1 object
-			ARG 2 ctx

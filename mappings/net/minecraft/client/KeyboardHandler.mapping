@@ -9,8 +9,6 @@ CLASS net/minecraft/client/KeyboardHandler
 		ARG 1 location
 		ARG 2 pos
 		ARG 3 tag
-	METHOD debugComponent (Lnet/minecraft/ChatFormatting;Lnet/minecraft/network/chat/Component;)V
-		ARG 1 formatting
 	METHOD keyPress (JIIII)V
 		ARG 1 windowId
 		ARG 3 keyCode

@@ -3,5 +3,3 @@ CLASS net/minecraft/network/protocol/game/ClientboundBlockEntityDataPacket
 		ARG 1 pos
 		ARG 2 type
 		ARG 3 tag
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf

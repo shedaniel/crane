@@ -1,9 +1,1 @@
 CLASS net/minecraft/world/level/levelgen/feature/configurations/OreConfiguration
-	METHOD <init> (Ljava/util/List;IF)V
-		ARG 1 targetStates
-		ARG 2 size
-		ARG 3 discardChanceOnAirExposure
-	CLASS TargetBlockState
-		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/RuleTest;Lnet/minecraft/world/level/block/state/BlockState;)V
-			ARG 1 target
-			ARG 2 state

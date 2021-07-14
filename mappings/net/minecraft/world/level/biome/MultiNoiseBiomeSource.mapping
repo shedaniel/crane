@@ -1,7 +1,4 @@
 CLASS net/minecraft/world/level/biome/MultiNoiseBiomeSource
-	METHOD <init> (JLjava/util/List;)V
-		ARG 1 seed
-		ARG 3 parameters
 	METHOD <init> (JLjava/util/List;Ljava/util/Optional;)V
 		ARG 1 seed
 		ARG 3 parameters
@@ -23,9 +20,6 @@ CLASS net/minecraft/world/level/biome/MultiNoiseBiomeSource
 		ARG 8 preset
 	METHOD lambda$preset$11 (Lcom/mojang/datafixers/util/Pair;)Lnet/minecraft/world/level/biome/MultiNoiseBiomeSource$PresetInstance;
 		ARG 1 pair
-	METHOD overworld (Lnet/minecraft/core/Registry;J)Lnet/minecraft/world/level/biome/MultiNoiseBiomeSource;
-		ARG 0 biomes
-		ARG 1 seed
 	METHOD stable (J)Z
 		ARG 1 seed
 	CLASS Preset
@@ -42,8 +36,5 @@ CLASS net/minecraft/world/level/biome/MultiNoiseBiomeSource
 			ARG 3 seed
 	CLASS NoiseParameters
 		METHOD <init> (ILjava/util/List;)V
-			ARG 1 firstOctave
-			ARG 2 amplitudes
-		METHOD <init> (I[D)V
 			ARG 1 firstOctave
 			ARG 2 amplitudes

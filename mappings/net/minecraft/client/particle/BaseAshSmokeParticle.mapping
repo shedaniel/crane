@@ -1,9 +1,1 @@
 CLASS net/minecraft/client/particle/BaseAshSmokeParticle
-	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDFFFDDDFLnet/minecraft/client/particle/SpriteSet;FIFZ)V
-		ARG 1 level
-		ARG 2 x
-		ARG 4 y
-		ARG 6 z
-		ARG 18 sprites
-		ARG 21 gravity
-		ARG 22 hasPhysics

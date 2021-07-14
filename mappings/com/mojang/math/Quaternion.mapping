@@ -6,12 +6,6 @@ CLASS com/mojang/math/Quaternion
 		ARG 4 r
 	METHOD <init> (Lcom/mojang/math/Quaternion;)V
 		ARG 1 quaternion
-	METHOD fromXYZ (FFF)Lcom/mojang/math/Quaternion;
-		ARG 0 x
-		ARG 1 y
-		ARG 2 z
-	METHOD fromXYZ (Lcom/mojang/math/Vector3f;)Lcom/mojang/math/Quaternion;
-		ARG 0 vector
 	METHOD set (FFFF)V
 		ARG 1 i
 		ARG 2 j

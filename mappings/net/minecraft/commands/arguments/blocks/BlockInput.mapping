@@ -9,6 +9,3 @@ CLASS net/minecraft/commands/arguments/blocks/BlockInput
 		ARG 3 flag
 	METHOD test (Ljava/lang/Object;)Z
 		ARG 1 block
-	METHOD test (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 level
-		ARG 2 pos

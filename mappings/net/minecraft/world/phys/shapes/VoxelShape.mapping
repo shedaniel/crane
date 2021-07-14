@@ -3,8 +3,6 @@ CLASS net/minecraft/world/phys/shapes/VoxelShape
 		ARG 1 shape
 	METHOD calculateFace (Lnet/minecraft/core/Direction;)Lnet/minecraft/world/phys/shapes/VoxelShape;
 		ARG 1 direction
-	METHOD closestPointTo (Lnet/minecraft/world/phys/Vec3;)Ljava/util/Optional;
-		ARG 1 vec
 	METHOD collide (Lnet/minecraft/core/Direction$Axis;Lnet/minecraft/world/phys/AABB;D)D
 		ARG 1 axis
 		ARG 2 box
@@ -21,8 +19,6 @@ CLASS net/minecraft/world/phys/shapes/VoxelShape
 	METHOD max (Lnet/minecraft/core/Direction$Axis;)D
 		ARG 1 axis
 	METHOD min (Lnet/minecraft/core/Direction$Axis;)D
-		ARG 1 axis
-	METHOD min (Lnet/minecraft/core/Direction$Axis;DD)D
 		ARG 1 axis
 	METHOD move (DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
 		ARG 1 dx

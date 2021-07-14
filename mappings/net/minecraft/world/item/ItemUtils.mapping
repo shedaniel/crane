@@ -1,12 +1,3 @@
 CLASS net/minecraft/world/item/ItemUtils
 	METHOD createFilledResult (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 player
-	METHOD lambda$onContainerDestroyed$0 (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/item/ItemEntity;Lnet/minecraft/world/item/ItemStack;)V
-		ARG 2 stack
-	METHOD onContainerDestroyed (Lnet/minecraft/world/entity/item/ItemEntity;Ljava/util/stream/Stream;)V
-		ARG 0 itemEntity
-		ARG 1 stacks
-	METHOD startUsingInstantly (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;
-		ARG 0 level
-		ARG 1 player
-		ARG 2 hand

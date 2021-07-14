@@ -6,5 +6,3 @@ CLASS net/minecraft/world/level/block/piston/PistonStructureResolver
 		ARG 4 extending
 	METHOD addBranchingBlocks (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
-	METHOD isSticky (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

@@ -75,6 +75,3 @@ CLASS net/minecraft/core/BlockPos
 		METHOD setWithOffset (Lnet/minecraft/core/Vec3i;Lnet/minecraft/core/Direction;)Lnet/minecraft/core/BlockPos$MutableBlockPos;
 			ARG 1 vec
 			ARG 2 direction
-		METHOD setWithOffset (Lnet/minecraft/core/Vec3i;Lnet/minecraft/core/Vec3i;)Lnet/minecraft/core/BlockPos$MutableBlockPos;
-			ARG 1 vec1
-			ARG 2 vec2

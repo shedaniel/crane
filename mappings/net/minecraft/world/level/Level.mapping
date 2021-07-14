@@ -23,8 +23,6 @@ CLASS net/minecraft/world/level/Level
 		ARG 9 xd
 		ARG 11 yd
 		ARG 13 zd
-	METHOD addBlockEntityTicker (Lnet/minecraft/world/level/block/entity/TickingBlockEntity;)V
-		ARG 1 ticker
 	METHOD addParticle (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V
 		ARG 1 particle
 		ARG 3 x
@@ -33,8 +31,6 @@ CLASS net/minecraft/world/level/Level
 		ARG 9 xd
 		ARG 11 yd
 		ARG 13 zd
-	METHOD blockEntityChanged (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
 	METHOD blockEvent (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;II)V
 		ARG 1 pos
 		ARG 2 block
@@ -102,10 +98,6 @@ CLASS net/minecraft/world/level/Level
 		ARG 0 height
 	METHOD isRainingAt (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
-	METHOD lambda$getEntities$1 (Lnet/minecraft/world/entity/Entity;Ljava/util/function/Predicate;Ljava/util/List;Lnet/minecraft/world/entity/Entity;)V
-		ARG 3 e
-	METHOD lambda$getEntities$2 (Ljava/util/function/Predicate;Ljava/util/List;Lnet/minecraft/world/level/entity/EntityTypeTest;Lnet/minecraft/world/entity/Entity;)V
-		ARG 3 entity
 	METHOD loadedAndEntityCanStandOn (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;)Z
 		ARG 1 pos
 		ARG 2 entity
@@ -140,17 +132,10 @@ CLASS net/minecraft/world/level/Level
 		ARG 4 source
 		ARG 5 volume
 		ARG 6 pitch
-	METHOD postGameEventInRadius (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/gameevent/GameEvent;Lnet/minecraft/core/BlockPos;I)V
-		ARG 1 entity
-		ARG 2 gameEvent
-		ARG 3 pos
-		ARG 4 radius
 	METHOD removeBlockEntity (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
 	METHOD sendPacketToServer (Lnet/minecraft/network/protocol/Packet;)V
 		ARG 1 packet
-	METHOD setBlockEntity (Lnet/minecraft/world/level/block/entity/BlockEntity;)V
-		ARG 1 blockEntity
 	METHOD setSkyFlashTime (I)V
 		ARG 1 skyFlashTime
 	METHOD setSpawnSettings (ZZ)V

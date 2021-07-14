@@ -19,8 +19,6 @@ CLASS net/minecraft/client/renderer/chunk/ChunkRenderDispatcher
 		ARG 1 bufferBuilder
 		ARG 2 vertexBuffer
 	CLASS RenderChunk
-		METHOD <init> (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher;I)V
-			ARG 2 index
 		METHOD beginLayer (Lcom/mojang/blaze3d/vertex/BufferBuilder;)V
 			ARG 1 builder
 		METHOD doesChunkExistAt (Lnet/minecraft/core/BlockPos;)Z

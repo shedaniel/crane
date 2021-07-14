@@ -1,6 +1,1 @@
 CLASS net/minecraft/world/level/storage/loot/entries/EntryGroup
-	METHOD list ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/EntryGroup$Builder;
-		ARG 0 entries
-	CLASS Builder
-		METHOD <init> ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)V
-			ARG 1 entries

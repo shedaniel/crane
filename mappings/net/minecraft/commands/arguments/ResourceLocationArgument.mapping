@@ -8,9 +8,6 @@ CLASS net/minecraft/commands/arguments/ResourceLocationArgument
 	METHOD getId (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 0 context
 		ARG 1 argument
-	METHOD getItemModifier (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
-		ARG 0 context
-		ARG 1 argument
 	METHOD getPredicate (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;
 		ARG 0 context
 		ARG 1 argument

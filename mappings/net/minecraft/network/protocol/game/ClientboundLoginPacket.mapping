@@ -15,10 +15,3 @@ CLASS net/minecraft/network/protocol/game/ClientboundLoginPacket
 		ARG 14 showDeathScreen
 		ARG 15 isDebug
 		ARG 16 isFlat
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf
-	METHOD lambda$new$0 (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/resources/ResourceKey;
-		ARG 0 b
-	METHOD lambda$write$1 (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/resources/ResourceKey;)V
-		ARG 0 b
-		ARG 1 levelKey

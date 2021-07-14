@@ -1,5 +1,1 @@
 CLASS net/minecraft/client/multiplayer/resolver/AddressCheck
-	METHOD isAllowed (Lnet/minecraft/client/multiplayer/resolver/ResolvedServerAddress;)Z
-		ARG 1 address
-	METHOD isAllowed (Lnet/minecraft/client/multiplayer/resolver/ServerAddress;)Z
-		ARG 1 address

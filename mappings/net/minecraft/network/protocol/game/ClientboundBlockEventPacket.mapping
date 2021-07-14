@@ -4,5 +4,3 @@ CLASS net/minecraft/network/protocol/game/ClientboundBlockEventPacket
 		ARG 2 block
 		ARG 3 b0
 		ARG 4 b1
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf

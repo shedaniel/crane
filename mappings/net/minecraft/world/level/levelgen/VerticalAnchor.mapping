@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/levelgen/VerticalAnchor
-	METHOD <init> (I)V
-		ARG 1 value

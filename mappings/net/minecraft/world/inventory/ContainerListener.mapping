@@ -1,8 +1,4 @@
 CLASS net/minecraft/world/inventory/ContainerListener
-	METHOD dataChanged (Lnet/minecraft/world/inventory/AbstractContainerMenu;II)V
-		ARG 1 menu
-		ARG 2 slotNum
-		ARG 3 data
 	METHOD slotChanged (Lnet/minecraft/world/inventory/AbstractContainerMenu;ILnet/minecraft/world/item/ItemStack;)V
 		ARG 1 menu
 		ARG 2 slotNum

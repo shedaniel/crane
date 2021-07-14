@@ -1,53 +1,5 @@
 CLASS com/mojang/blaze3d/systems/RenderSystem
-	METHOD _setShaderColor (FFFF)V
-		ARG 0 red
-		ARG 1 green
-		ARG 2 blue
-		ARG 3 alpha
-	METHOD _setShaderFogColor (FFFF)V
-		ARG 0 red
-		ARG 1 green
-		ARG 2 blue
-		ARG 3 alpha
-	METHOD _setShaderFogEnd (F)V
-		ARG 0 shaderFogEnd
-	METHOD _setShaderFogStart (F)V
-		ARG 0 shaderFogStart
-	METHOD _setShaderTexture (II)V
-		ARG 1 textureId
-	METHOD _setShaderTexture (ILnet/minecraft/resources/ResourceLocation;)V
-		ARG 1 texture
 	METHOD lineWidth (F)V
 		ARG 0 shaderLineWidth
 	METHOD runAsFancy (Ljava/lang/Runnable;)V
 		ARG 0 runnable
-	METHOD setProjectionMatrix (Lcom/mojang/math/Matrix4f;)V
-		ARG 0 projectionMatrix
-	METHOD setShader (Ljava/util/function/Supplier;)V
-		ARG 0 shader
-	METHOD setShaderColor (FFFF)V
-		ARG 0 red
-		ARG 1 green
-		ARG 2 blue
-		ARG 3 alpha
-	METHOD setShaderFogColor (FFF)V
-		ARG 0 red
-		ARG 1 green
-		ARG 2 blue
-	METHOD setShaderFogColor (FFFF)V
-		ARG 0 red
-		ARG 1 green
-		ARG 2 blue
-		ARG 3 alpha
-	METHOD setShaderFogEnd (F)V
-		ARG 0 shaderFogEnd
-	METHOD setShaderFogStart (F)V
-		ARG 0 shaderFogStart
-	METHOD setShaderTexture (II)V
-		ARG 1 textureId
-	METHOD setShaderTexture (ILnet/minecraft/resources/ResourceLocation;)V
-		ARG 1 texture
-	METHOD setTextureMatrix (Lcom/mojang/math/Matrix4f;)V
-		ARG 0 textureMatrix
-	METHOD setupShaderLights (Lnet/minecraft/client/renderer/ShaderInstance;)V
-		ARG 0 shader

@@ -44,18 +44,12 @@ CLASS net/minecraft/client/gui/screens/achievement/StatsScreen
 		METHOD sortByColumn (Lnet/minecraft/stats/StatType;)V
 			ARG 1 sortColumn
 		CLASS ItemRow
-			METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList;Lnet/minecraft/world/item/Item;)V
-				ARG 2 item
 			METHOD renderStat (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/stats/Stat;IIZ)V
 				ARG 1 poses
 				ARG 2 stat
 				ARG 3 x
 				ARG 4 y
 				ARG 5 brighter
-		CLASS ItemRowComparator
-			METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
-				ARG 1 first
-				ARG 2 second
 	CLASS MobsStatisticsList
 		METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen;Lnet/minecraft/client/Minecraft;)V
 			ARG 2 minecraft

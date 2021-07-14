@@ -1,6 +1,4 @@
 CLASS net/minecraft/network/protocol/game/ClientboundCooldownPacket
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/world/item/Item;I)V
 		ARG 1 item
 		ARG 2 duration

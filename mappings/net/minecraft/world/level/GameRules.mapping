@@ -77,9 +77,6 @@ CLASS net/minecraft/world/level/GameRules
 			ARG 0 value
 		METHOD safeParse (Ljava/lang/String;)I
 			ARG 0 string
-		METHOD set (ILnet/minecraft/server/MinecraftServer;)V
-			ARG 1 value
-			ARG 2 server
 		METHOD tryDeserialize (Ljava/lang/String;)Z
 			ARG 1 string
 	CLASS VisitorCaller

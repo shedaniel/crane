@@ -36,8 +36,6 @@ CLASS net/minecraft/world/item/crafting/RecipeManager
 		ARG 0 map
 	METHOD lambda$getRecipesFor$4 (Lnet/minecraft/world/item/crafting/RecipeType;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/Container;Lnet/minecraft/world/item/crafting/Recipe;)Ljava/util/stream/Stream;
 		ARG 3 recipe
-	METHOD lambda$replaceRecipes$10 (Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/Map;
-		ARG 0 type
 	METHOD lambda$replaceRecipes$11 (Ljava/util/Map;Lnet/minecraft/world/item/crafting/Recipe;)V
 		ARG 1 recipe
 	METHOD replaceRecipes (Ljava/lang/Iterable;)V

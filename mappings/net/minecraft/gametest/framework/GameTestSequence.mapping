@@ -1,8 +1,3 @@
 CLASS net/minecraft/gametest/framework/GameTestSequence
-	METHOD <init> (Lnet/minecraft/gametest/framework/GameTestInfo;)V
-		ARG 1 parent
 	METHOD tick (J)V
 		ARG 1 lastTick
-	CLASS Condition
-		METHOD trigger (J)V
-			ARG 1 triggerTime

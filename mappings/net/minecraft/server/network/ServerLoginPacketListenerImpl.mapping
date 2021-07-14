@@ -6,8 +6,6 @@ CLASS net/minecraft/server/network/ServerLoginPacketListenerImpl
 		ARG 1 profile
 	METHOD disconnect (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 disconnectReason
-	METHOD placeNewPlayer (Lnet/minecraft/server/level/ServerPlayer;)V
-		ARG 1 player
 	CLASS State
 		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/server/network/ServerLoginPacketListenerImpl$State;
 			ARG 0 name

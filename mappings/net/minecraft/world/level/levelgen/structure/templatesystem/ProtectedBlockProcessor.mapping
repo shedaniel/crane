@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/levelgen/structure/templatesystem/ProtectedBlockProcessor
-	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
-		ARG 1 cannotReplace

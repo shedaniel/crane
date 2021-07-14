@@ -1,7 +1,1 @@
 CLASS net/minecraft/world/level/block/SculkSensorBlock
-	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;I)V
-		ARG 2 listenerRange
-	METHOD canActivate (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
-	METHOD getPhase (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/properties/SculkSensorPhase;
-		ARG 0 state

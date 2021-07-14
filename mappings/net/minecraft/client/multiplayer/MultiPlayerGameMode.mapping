@@ -36,12 +36,6 @@ CLASS net/minecraft/client/multiplayer/MultiPlayerGameMode
 	METHOD handleInventoryButtonClick (II)V
 		ARG 1 containerId
 		ARG 2 buttonId
-	METHOD handleInventoryMouseClick (IIILnet/minecraft/world/inventory/ClickType;Lnet/minecraft/world/entity/player/Player;)V
-		ARG 1 containerId
-		ARG 2 slotNum
-		ARG 3 buttonNum
-		ARG 4 clickType
-		ARG 5 player
 	METHOD handlePickItem (I)V
 		ARG 1 slot
 	METHOD handlePlaceRecipe (ILnet/minecraft/world/item/crafting/Recipe;Z)V
@@ -67,9 +61,6 @@ CLASS net/minecraft/client/multiplayer/MultiPlayerGameMode
 		ARG 3 direction
 	METHOD setLocalMode (Lnet/minecraft/world/level/GameType;)V
 		ARG 1 localPlayerMode
-	METHOD setLocalMode (Lnet/minecraft/world/level/GameType;Lnet/minecraft/world/level/GameType;)V
-		ARG 1 localPlayerMode
-		ARG 2 previousLocalPlayerMode
 	METHOD startDestroyBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
 		ARG 1 destroyBlockPos
 		ARG 2 direction

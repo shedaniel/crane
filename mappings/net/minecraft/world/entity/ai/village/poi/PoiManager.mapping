@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/entity/ai/village/poi/PoiManager
-	METHOD getFreeTickets (Lnet/minecraft/core/BlockPos;)I
-		ARG 1 pos
 	METHOD getType (Lnet/minecraft/core/BlockPos;)Ljava/util/Optional;
 		ARG 1 pos
 	METHOD release (Lnet/minecraft/core/BlockPos;)Z

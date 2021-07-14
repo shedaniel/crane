@@ -1,10 +1,4 @@
 CLASS net/minecraft/world/level/storage/loot/LootPool
-	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer;[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;[Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)V
-		ARG 1 entries
-		ARG 2 conditions
-		ARG 3 functions
-		ARG 4 rolls
-		ARG 5 bonusRolls
 	METHOD addRandomItem (Ljava/util/function/Consumer;Lnet/minecraft/world/level/storage/loot/LootContext;)V
 		ARG 2 ctx
 	METHOD addRandomItems (Ljava/util/function/Consumer;Lnet/minecraft/world/level/storage/loot/LootContext;)V
@@ -16,10 +10,6 @@ CLASS net/minecraft/world/level/storage/loot/LootPool
 	CLASS Builder
 		METHOD add (Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
 			ARG 1 builder
-		METHOD setBonusRolls (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
-			ARG 1 bonusRolls
-		METHOD setRolls (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
-			ARG 1 rolls
 	CLASS Serializer
 		METHOD deserialize (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
 			ARG 1 json

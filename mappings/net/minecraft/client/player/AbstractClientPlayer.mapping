@@ -4,6 +4,3 @@ CLASS net/minecraft/client/player/AbstractClientPlayer
 		ARG 2 profile
 	METHOD getSkinLocation (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 0 id
-	METHOD registerSkinTexture (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)V
-		ARG 0 textureId
-		ARG 1 id

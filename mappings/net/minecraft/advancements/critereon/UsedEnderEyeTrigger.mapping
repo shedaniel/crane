@@ -1,4 +1,1 @@
 CLASS net/minecraft/advancements/critereon/UsedEnderEyeTrigger
-	CLASS TriggerInstance
-		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;)V
-			ARG 2 level

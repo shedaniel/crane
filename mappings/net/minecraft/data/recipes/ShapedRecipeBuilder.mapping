@@ -1,13 +1,3 @@
 CLASS net/minecraft/data/recipes/ShapedRecipeBuilder
 	METHOD <init> (Lnet/minecraft/world/level/ItemLike;I)V
 		ARG 2 count
-	CLASS Result
-		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/item/Item;ILjava/lang/String;Ljava/util/List;Ljava/util/Map;Lnet/minecraft/advancements/Advancement$Builder;Lnet/minecraft/resources/ResourceLocation;)V
-			ARG 1 id
-			ARG 2 result
-			ARG 3 count
-			ARG 4 group
-			ARG 5 pattern
-			ARG 6 key
-			ARG 7 advancement
-			ARG 8 advancementId

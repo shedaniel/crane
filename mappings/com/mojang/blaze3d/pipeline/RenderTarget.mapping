@@ -1,6 +1,4 @@
 CLASS com/mojang/blaze3d/pipeline/RenderTarget
-	METHOD <init> (Z)V
-		ARG 1 useDepth
 	METHOD createBuffers (IIZ)V
 		ARG 1 viewWidth
 		ARG 2 viewHeight

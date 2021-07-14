@@ -18,8 +18,6 @@ CLASS net/minecraft/nbt/ListTag
 		ARG 1 index
 	METHOD getList (I)Lnet/minecraft/nbt/ListTag;
 		ARG 1 index
-	METHOD getLongArray (I)[J
-		ARG 1 index
 	METHOD getShort (I)S
 		ARG 1 index
 	METHOD getString (I)Ljava/lang/String;

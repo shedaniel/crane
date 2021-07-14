@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/gameevent/EntityPositionSource
-	METHOD <init> (I)V
-		ARG 1 sourceEntityId

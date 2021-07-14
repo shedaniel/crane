@@ -1,3 +1,1 @@
 CLASS net/minecraft/client/gui/narration/NarrationSupplier
-	METHOD updateNarration (Lnet/minecraft/client/gui/narration/NarrationElementOutput;)V
-		ARG 1 output

@@ -1,6 +1,4 @@
 CLASS net/minecraft/client/renderer/blockentity/BeaconRenderer
-	METHOD <init> (Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context;)V
-		ARG 1 ctx
 	METHOD renderBeaconBeam (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;FJII[F)V
 		ARG 0 poses
 		ARG 1 buffers

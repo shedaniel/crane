@@ -1,3 +1,1 @@
 CLASS net/minecraft/client/renderer/blockentity/BellRenderer
-	METHOD <init> (Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context;)V
-		ARG 1 context

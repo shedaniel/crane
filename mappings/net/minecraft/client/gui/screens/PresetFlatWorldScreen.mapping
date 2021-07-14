@@ -36,8 +36,6 @@ CLASS net/minecraft/client/gui/screens/PresetFlatWorldScreen
 			ARG 3 settings
 	CLASS PresetsList
 		CLASS Entry
-			METHOD <init> (Lnet/minecraft/client/gui/screens/PresetFlatWorldScreen$PresetsList;Lnet/minecraft/client/gui/screens/PresetFlatWorldScreen$PresetInfo;)V
-				ARG 2 preset
 			METHOD blitSlot (Lcom/mojang/blaze3d/vertex/PoseStack;IILnet/minecraft/world/item/Item;)V
 				ARG 1 poses
 				ARG 2 x

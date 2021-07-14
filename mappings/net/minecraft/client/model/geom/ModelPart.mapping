@@ -1,15 +1,8 @@
 CLASS net/minecraft/client/model/geom/ModelPart
-	METHOD <init> (Ljava/util/List;Ljava/util/Map;)V
-		ARG 1 cubes
-		ARG 2 children
 	METHOD setPos (FFF)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD setRotation (FFF)V
-		ARG 1 xRot
-		ARG 2 yRot
-		ARG 3 zRot
 	CLASS Cube
 		METHOD <init> (IIFFFFFFFFFZFF)V
 			ARG 3 minX

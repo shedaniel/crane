@@ -12,11 +12,6 @@ CLASS net/minecraft/world/entity/animal/Fox
 	CLASS FoxGroupData
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Fox$Type;)V
 			ARG 1 type
-	CLASS FoxEatBerriesGoal
-		METHOD pickGlowBerry (Lnet/minecraft/world/level/block/state/BlockState;)V
-			ARG 1 state
-		METHOD pickSweetBerries (Lnet/minecraft/world/level/block/state/BlockState;)V
-			ARG 1 state
 	CLASS FoxFollowParentGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Fox;Lnet/minecraft/world/entity/animal/Fox;D)V
 			ARG 2 fox

@@ -1,11 +1,1 @@
 CLASS net/minecraft/network/protocol/game/ClientboundMoveEntityPacket
-	METHOD <init> (ISSSBBZZZ)V
-		ARG 1 entityId
-		ARG 2 xa
-		ARG 3 ya
-		ARG 4 za
-		ARG 5 yRot
-		ARG 6 xRot
-		ARG 7 onGround
-		ARG 8 hasRot
-		ARG 9 hasPos

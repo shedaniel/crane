@@ -1,9 +1,4 @@
 CLASS net/minecraft/world/level/storage/loot/functions/LootingEnchantFunction
-	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;I)V
-		ARG 2 value
-		ARG 3 limit
 	CLASS Builder
-		METHOD <init> (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)V
-			ARG 1 count
 		METHOD setLimit (I)Lnet/minecraft/world/level/storage/loot/functions/LootingEnchantFunction$Builder;
 			ARG 1 limit

@@ -1,6 +1,4 @@
 CLASS net/minecraft/data/models/blockstates/Condition
-	METHOD and ([Lnet/minecraft/data/models/blockstates/Condition;)Lnet/minecraft/data/models/blockstates/Condition;
-		ARG 0 conditions
 	METHOD or ([Lnet/minecraft/data/models/blockstates/Condition;)Lnet/minecraft/data/models/blockstates/Condition;
 		ARG 0 conditions
 	METHOD validate (Lnet/minecraft/world/level/block/state/StateDefinition;)V

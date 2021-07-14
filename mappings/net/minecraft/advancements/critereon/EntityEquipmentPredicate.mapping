@@ -15,7 +15,3 @@ CLASS net/minecraft/advancements/critereon/EntityEquipmentPredicate
 			ARG 1 head
 		METHOD legs (Lnet/minecraft/advancements/critereon/ItemPredicate;)Lnet/minecraft/advancements/critereon/EntityEquipmentPredicate$Builder;
 			ARG 1 legs
-		METHOD mainhand (Lnet/minecraft/advancements/critereon/ItemPredicate;)Lnet/minecraft/advancements/critereon/EntityEquipmentPredicate$Builder;
-			ARG 1 mainhand
-		METHOD offhand (Lnet/minecraft/advancements/critereon/ItemPredicate;)Lnet/minecraft/advancements/critereon/EntityEquipmentPredicate$Builder;
-			ARG 1 offhand

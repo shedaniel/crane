@@ -3,16 +3,10 @@ CLASS net/minecraft/network/chat/SubStringSource
 		ARG 1 plainText
 		ARG 2 charStyles
 		ARG 3 reverseCharModifier
-	METHOD create (Lnet/minecraft/network/chat/FormattedText;)Lnet/minecraft/network/chat/SubStringSource;
-		ARG 0 text
 	METHOD create (Lnet/minecraft/network/chat/FormattedText;Lit/unimi/dsi/fastutil/ints/Int2IntFunction;Ljava/util/function/UnaryOperator;)Lnet/minecraft/network/chat/SubStringSource;
 		ARG 0 text
 		ARG 1 reverseCharModifier
 		ARG 2 operator
-	METHOD lambda$create$0 (I)I
-		ARG 0 i
-	METHOD lambda$create$1 (Ljava/lang/String;)Ljava/lang/String;
-		ARG 0 str
 	METHOD lambda$create$3 (Ljava/lang/StringBuilder;Ljava/util/List;Lnet/minecraft/network/chat/Style;Ljava/lang/String;)Ljava/util/Optional;
 		ARG 2 style
 		ARG 3 string

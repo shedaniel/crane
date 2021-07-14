@@ -1,6 +1,4 @@
 CLASS net/minecraft/network/protocol/game/ClientboundGameEventPacket
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/network/protocol/game/ClientboundGameEventPacket$Type;F)V
 		ARG 1 event
 		ARG 2 param

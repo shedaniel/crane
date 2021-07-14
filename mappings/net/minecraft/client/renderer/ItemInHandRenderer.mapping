@@ -1,13 +1,5 @@
 CLASS net/minecraft/client/renderer/ItemInHandRenderer
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
-	METHOD isChargedCrossbow (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 0 stack
 	METHOD itemUsed (Lnet/minecraft/world/InteractionHand;)V
 		ARG 1 hand
-	CLASS HandRenderSelection
-		METHOD <init> (Ljava/lang/String;IZZ)V
-			ARG 3 renderMainHand
-			ARG 4 renderOffHand
-		METHOD onlyForHand (Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/client/renderer/ItemInHandRenderer$HandRenderSelection;
-			ARG 0 hand

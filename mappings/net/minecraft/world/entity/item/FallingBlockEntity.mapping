@@ -2,8 +2,5 @@ CLASS net/minecraft/world/entity/item/FallingBlockEntity
 	METHOD <init> (Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 2 xo
 		ARG 4 yo
-	METHOD setHurtsEntities (FI)V
-		ARG 1 fallDamagePerDistance
-		ARG 2 fallDamageMax
 	METHOD setStartPos (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos

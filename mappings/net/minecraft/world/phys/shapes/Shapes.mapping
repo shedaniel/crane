@@ -16,13 +16,6 @@ CLASS net/minecraft/world/phys/shapes/Shapes
 		ARG 0 box
 		ARG 4 ctx
 		ARG 6 shapes
-	METHOD create (DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
-		ARG 0 x1
-		ARG 2 y1
-		ARG 4 z1
-		ARG 6 x2
-		ARG 8 y2
-		ARG 10 z2
 	METHOD create (Lnet/minecraft/world/phys/AABB;)Lnet/minecraft/world/phys/shapes/VoxelShape;
 		ARG 0 box
 	METHOD join (Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Lnet/minecraft/world/phys/shapes/VoxelShape;

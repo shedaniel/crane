@@ -24,8 +24,6 @@ CLASS net/minecraft/network/chat/Style
 		ARG 1 bold
 	METHOD withClickEvent (Lnet/minecraft/network/chat/ClickEvent;)Lnet/minecraft/network/chat/Style;
 		ARG 1 clickEvent
-	METHOD withColor (I)Lnet/minecraft/network/chat/Style;
-		ARG 1 rgb
 	METHOD withColor (Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/Style;
 		ARG 1 formatting
 	METHOD withColor (Lnet/minecraft/network/chat/TextColor;)Lnet/minecraft/network/chat/Style;
@@ -38,10 +36,6 @@ CLASS net/minecraft/network/chat/Style
 		ARG 1 insertion
 	METHOD withItalic (Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Style;
 		ARG 1 italic
-	METHOD withObfuscated (Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Style;
-		ARG 1 obfuscated
-	METHOD withStrikethrough (Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Style;
-		ARG 1 strikethrough
 	METHOD withUnderlined (Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Style;
 		ARG 1 underlined
 	CLASS Serializer

@@ -1,11 +1,6 @@
 CLASS net/minecraft/world/level/levelgen/surfacebuilders/SurfaceBuilder
 	METHOD <init> (Lcom/mojang/serialization/Codec;)V
 		ARG 1 codec
-	METHOD apply (Ljava/util/Random;Lnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/biome/Biome;IIIDLnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;IIJLnet/minecraft/world/level/levelgen/surfacebuilders/SurfaceBuilderConfiguration;)V
-		ARG 1 random
-		ARG 2 level
-		ARG 3 biome
-		ARG 15 config
 	METHOD configured (Lnet/minecraft/world/level/levelgen/surfacebuilders/SurfaceBuilderConfiguration;)Lnet/minecraft/world/level/levelgen/surfacebuilders/ConfiguredSurfaceBuilder;
 		ARG 1 config
 	METHOD register (Ljava/lang/String;Lnet/minecraft/world/level/levelgen/surfacebuilders/SurfaceBuilder;)Lnet/minecraft/world/level/levelgen/surfacebuilders/SurfaceBuilder;

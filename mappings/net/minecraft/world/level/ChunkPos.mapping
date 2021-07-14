@@ -9,22 +9,10 @@ CLASS net/minecraft/world/level/ChunkPos
 	METHOD asLong (II)J
 		ARG 0 x
 		ARG 1 z
-	METHOD asLong (Lnet/minecraft/core/BlockPos;)J
-		ARG 0 pos
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
-	METHOD getBlockAt (III)Lnet/minecraft/core/BlockPos;
-		ARG 1 xOffset
-		ARG 2 y
-		ARG 3 zOffset
-	METHOD getBlockX (I)I
-		ARG 1 xOffset
-	METHOD getBlockZ (I)I
-		ARG 1 zOffset
 	METHOD getChessboardDistance (Lnet/minecraft/world/level/ChunkPos;)I
 		ARG 1 chunkPos
-	METHOD getMiddleBlockPosition (I)Lnet/minecraft/core/BlockPos;
-		ARG 1 y
 	METHOD getX (J)I
 		ARG 0 l
 	METHOD getZ (J)I

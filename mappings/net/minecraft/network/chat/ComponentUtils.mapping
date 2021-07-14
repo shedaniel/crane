@@ -4,20 +4,6 @@ CLASS net/minecraft/network/chat/ComponentUtils
 		ARG 1 formatter
 	METHOD formatList (Ljava/util/Collection;)Lnet/minecraft/network/chat/Component;
 		ARG 0 collection
-	METHOD formatList (Ljava/util/Collection;Ljava/util/Optional;Ljava/util/function/Function;)Lnet/minecraft/network/chat/MutableComponent;
-		ARG 0 collection
-		ARG 1 separator
-		ARG 2 formatter
-	METHOD formatList (Ljava/util/Collection;Ljava/util/function/Function;)Lnet/minecraft/network/chat/Component;
-		ARG 0 collection
-		ARG 1 formatter
-	METHOD formatList (Ljava/util/Collection;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;
-		ARG 0 collection
-		ARG 1 separator
-	METHOD formatList (Ljava/util/Collection;Lnet/minecraft/network/chat/Component;Ljava/util/function/Function;)Lnet/minecraft/network/chat/MutableComponent;
-		ARG 0 collection
-		ARG 1 separator
-		ARG 2 formatter
 	METHOD fromMessage (Lcom/mojang/brigadier/Message;)Lnet/minecraft/network/chat/Component;
 		ARG 0 message
 	METHOD getDisplayName (Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/network/chat/Component;
@@ -28,10 +14,6 @@ CLASS net/minecraft/network/chat/ComponentUtils
 	METHOD resolveStyle (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/network/chat/Style;Lnet/minecraft/world/entity/Entity;I)Lnet/minecraft/network/chat/Style;
 		ARG 0 commandStack
 		ARG 1 style
-		ARG 2 entity
-	METHOD updateForEntity (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Optional;Lnet/minecraft/world/entity/Entity;I)Ljava/util/Optional;
-		ARG 0 commandStack
-		ARG 1 component
 		ARG 2 entity
 	METHOD updateForEntity (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/entity/Entity;I)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 0 commandStack

@@ -1,4 +1,1 @@
 CLASS net/minecraft/client/renderer/blockentity/SignRenderer
-	CLASS SignModel
-		METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;)V
-			ARG 1 root

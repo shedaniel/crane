@@ -1,7 +1,1 @@
 CLASS net/minecraft/world/level/storage/loot/functions/SetBannerPatternFunction
-	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Ljava/util/List;Z)V
-		ARG 2 patterns
-		ARG 3 append
-	CLASS Builder
-		METHOD <init> (Z)V
-			ARG 1 append

@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/levelgen/feature/stateproviders/WeightedStateProvider
-	METHOD <init> (Lnet/minecraft/util/random/SimpleWeightedRandomList;)V
-		ARG 1 weightedList

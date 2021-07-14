@@ -1,5 +1,3 @@
 CLASS net/minecraft/nbt/Tag
-	METHOD accept (Lnet/minecraft/nbt/TagVisitor;)V
-		ARG 1 visitor
 	METHOD write (Ljava/io/DataOutput;)V
 		ARG 1 output

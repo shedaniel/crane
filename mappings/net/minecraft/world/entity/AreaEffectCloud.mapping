@@ -6,12 +6,8 @@ CLASS net/minecraft/world/entity/AreaEffectCloud
 		ARG 6 z
 	METHOD addEffect (Lnet/minecraft/world/effect/MobEffectInstance;)V
 		ARG 1 effect
-	METHOD lambda$tick$0 (Ljava/util/Map$Entry;)Z
-		ARG 1 entry
 	METHOD setDuration (I)V
 		ARG 1 duration
-	METHOD setDurationOnUse (I)V
-		ARG 1 radiusPerTick
 	METHOD setFixedColor (I)V
 		ARG 1 color
 	METHOD setOwner (Lnet/minecraft/world/entity/LivingEntity;)V

@@ -1,11 +1,3 @@
 CLASS net/minecraft/server/network/ServerConnectionListener
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
-	CLASS LatencySimulator
-		METHOD <init> (II)V
-			ARG 1 delay
-			ARG 2 jitter
-		CLASS DelayedMessage
-			METHOD <init> (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
-				ARG 1 ctx
-				ARG 2 msg

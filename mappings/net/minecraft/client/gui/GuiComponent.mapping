@@ -66,13 +66,6 @@ CLASS net/minecraft/client/gui/GuiComponent
 		ARG 3 centeredX
 		ARG 4 y
 		ARG 5 color
-	METHOD drawCenteredString (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/util/FormattedCharSequence;III)V
-		ARG 0 poses
-		ARG 1 font
-		ARG 2 text
-		ARG 3 centeredX
-		ARG 4 y
-		ARG 5 color
 	METHOD drawString (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Ljava/lang/String;III)V
 		ARG 0 poses
 		ARG 1 font
@@ -81,13 +74,6 @@ CLASS net/minecraft/client/gui/GuiComponent
 		ARG 4 y
 		ARG 5 color
 	METHOD drawString (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/network/chat/Component;III)V
-		ARG 0 poses
-		ARG 1 font
-		ARG 2 text
-		ARG 3 x
-		ARG 4 y
-		ARG 5 color
-	METHOD drawString (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/util/FormattedCharSequence;III)V
 		ARG 0 poses
 		ARG 1 font
 		ARG 2 text
@@ -109,15 +95,6 @@ CLASS net/minecraft/client/gui/GuiComponent
 		ARG 5 y2
 		ARG 6 color1
 		ARG 7 color2
-	METHOD fillGradient (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIII)V
-		ARG 0 poses
-		ARG 1 x1
-		ARG 2 y1
-		ARG 3 x2
-		ARG 4 y2
-		ARG 5 color1
-		ARG 6 color2
-		ARG 7 blitOffset
 	METHOD fillGradient (Lcom/mojang/math/Matrix4f;Lcom/mojang/blaze3d/vertex/BufferBuilder;IIIIIII)V
 		ARG 0 pose
 		ARG 1 builder

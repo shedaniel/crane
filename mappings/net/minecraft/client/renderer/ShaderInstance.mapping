@@ -1,6 +1,1 @@
 CLASS net/minecraft/client/renderer/ShaderInstance
-	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceProvider;Ljava/lang/String;Lcom/mojang/blaze3d/vertex/VertexFormat;)V
-		ARG 2 name
-		ARG 3 vertexFormat
-	METHOD apply ()V
-		ARG 0 lastAppliedShader

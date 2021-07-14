@@ -1,6 +1,1 @@
 CLASS net/minecraft/world/item/DispensibleContainerItem
-	METHOD emptyContents (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/BlockHitResult;)Z
-		ARG 1 player
-		ARG 2 level
-		ARG 3 pos
-		ARG 4 hitResult

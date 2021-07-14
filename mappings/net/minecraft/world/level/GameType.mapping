@@ -12,10 +12,6 @@ CLASS net/minecraft/world/level/GameType
 	METHOD byName (Ljava/lang/String;Lnet/minecraft/world/level/GameType;)Lnet/minecraft/world/level/GameType;
 		ARG 0 name
 		ARG 1 fallback
-	METHOD byNullableId (I)Lnet/minecraft/world/level/GameType;
-		ARG 0 id
-	METHOD getNullableId (Lnet/minecraft/world/level/GameType;)I
-		ARG 0 gameType
 	METHOD updatePlayerAbilities (Lnet/minecraft/world/entity/player/Abilities;)V
 		ARG 1 abilities
 	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/world/level/GameType;

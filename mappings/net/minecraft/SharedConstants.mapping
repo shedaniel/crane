@@ -3,5 +3,3 @@ CLASS net/minecraft/SharedConstants
 		ARG 0 text
 	METHOD isAllowedChatCharacter (C)Z
 		ARG 0 character
-	METHOD setVersion (Lcom/mojang/bridge/game/GameVersion;)V
-		ARG 0 version

@@ -76,11 +76,6 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 2 eventId
 		ARG 3 pos
 		ARG 4 data
-	METHOD renderChunkLayer (Lnet/minecraft/client/renderer/RenderType;Lcom/mojang/blaze3d/vertex/PoseStack;DDDLcom/mojang/math/Matrix4f;)V
-		ARG 3 xTransparentOld
-		ARG 5 yTransparentOld
-		ARG 7 zTransparentOld
-		ARG 9 projectionMatrix
 	METHOD renderDebug (Lnet/minecraft/client/Camera;)V
 		ARG 1 camera
 	METHOD renderEndSky (Lcom/mojang/blaze3d/vertex/PoseStack;)V
@@ -124,14 +119,6 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 0 poses
 		ARG 1 vertexConsumer
 		ARG 2 box
-	METHOD renderLineBox (Lcom/mojang/blaze3d/vertex/VertexConsumer;DDDDDDFFFF)V
-		ARG 0 vertexConsumer
-		ARG 1 x1
-		ARG 3 y1
-		ARG 5 z1
-		ARG 7 x2
-		ARG 9 y2
-		ARG 11 z2
 	METHOD renderShape (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/phys/shapes/VoxelShape;DDDFFFF)V
 		ARG 0 poses
 		ARG 1 vertexConsumer
@@ -140,15 +127,10 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 10 green
 		ARG 11 blue
 		ARG 12 alpha
-	METHOD renderSky (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/math/Matrix4f;FLjava/lang/Runnable;)V
-		ARG 1 poses
-		ARG 2 projectionMatrix
 	METHOD renderVoxelShape (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/phys/shapes/VoxelShape;DDDFFFF)V
 		ARG 0 poses
 		ARG 1 vertexConsumer
 		ARG 2 shape
-	METHOD renderWorldBorder (Lnet/minecraft/client/Camera;)V
-		ARG 1 camera
 	METHOD setBlockDirty (Lnet/minecraft/core/BlockPos;Z)V
 		ARG 1 pos
 	METHOD setLevel (Lnet/minecraft/client/multiplayer/ClientLevel;)V
@@ -156,11 +138,3 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 	METHOD updateGlobalBlockEntities (Ljava/util/Collection;Ljava/util/Collection;)V
 		ARG 1 toRemove
 		ARG 2 toAdd
-	CLASS RenderInfoMap
-		METHOD <init> (I)V
-			ARG 1 length
-	CLASS RenderChunkInfo
-		METHOD <init> (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$RenderChunk;Lnet/minecraft/core/Direction;I)V
-			ARG 1 chunk
-			ARG 2 direction
-			ARG 3 step

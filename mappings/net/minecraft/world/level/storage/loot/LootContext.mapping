@@ -17,8 +17,6 @@ CLASS net/minecraft/world/level/storage/loot/LootContext
 		ARG 1 conditionLocation
 	METHOD getLootTable (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/level/storage/loot/LootTable;
 		ARG 1 tableLocation
-	METHOD getParam (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)Ljava/lang/Object;
-		ARG 1 param
 	METHOD getParamOrNull (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)Ljava/lang/Object;
 		ARG 1 param
 	METHOD hasParam (Lnet/minecraft/world/level/storage/loot/parameters/LootContextParam;)Z

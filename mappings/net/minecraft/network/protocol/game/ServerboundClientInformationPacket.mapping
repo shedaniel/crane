@@ -1,9 +1,1 @@
 CLASS net/minecraft/network/protocol/game/ServerboundClientInformationPacket
-	METHOD <init> (Ljava/lang/String;ILnet/minecraft/world/entity/player/ChatVisiblity;ZILnet/minecraft/world/entity/HumanoidArm;Z)V
-		ARG 1 language
-		ARG 2 viewDistance
-		ARG 3 chatVisibility
-		ARG 4 chatColors
-		ARG 5 modelCustomisation
-		ARG 6 mainHand
-		ARG 7 textFilteringEnabled

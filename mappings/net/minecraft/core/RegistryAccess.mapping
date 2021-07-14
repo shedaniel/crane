@@ -7,15 +7,6 @@ CLASS net/minecraft/core/RegistryAccess
 	METHOD copyBuiltin (Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/resources/ResourceKey;)V
 		ARG 0 registryHolder
 		ARG 1 registryId
-	METHOD lambda$readRegistry$6 (Lcom/mojang/serialization/DataResult$PartialResult;)V
-		ARG 0 partialResult
-	METHOD load (Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/resources/RegistryReadOps;)V
-		ARG 0 registryAccess
-		ARG 1 ops
-	METHOD ownedRegistry (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
-		ARG 1 registryId
-	METHOD ownedRegistryOrThrow (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/WritableRegistry;
-		ARG 1 registryId
 	METHOD put (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)V
 		ARG 0 builder
 		ARG 1 registryId
@@ -25,13 +16,7 @@ CLASS net/minecraft/core/RegistryAccess
 		ARG 1 registryId
 		ARG 2 codec
 		ARG 3 networkCodec
-	METHOD readRegistry (Lnet/minecraft/resources/RegistryReadOps;Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/core/RegistryAccess$RegistryData;)V
-		ARG 0 ops
-		ARG 1 registryAccess
-		ARG 2 data
 	METHOD registry (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
-		ARG 1 registryId
-	METHOD registryOrThrow (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Registry;
 		ARG 1 registryId
 	CLASS RegistryData
 		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V
@@ -48,6 +33,4 @@ CLASS net/minecraft/core/RegistryAccess
 		METHOD lambda$getNetworkCodec$5 (Lnet/minecraft/core/RegistryAccess$RegistryData;)Lcom/mojang/serialization/Codec;
 			ARG 0 data
 		METHOD lambda$makeNetworkCodec$0 (Lnet/minecraft/core/MappedRegistry;)Lcom/mojang/serialization/DataResult;
-			ARG 0 registry
-		METHOD lambda$ownedRegistry$7 (Lnet/minecraft/core/MappedRegistry;)Lnet/minecraft/core/WritableRegistry;
 			ARG 0 registry

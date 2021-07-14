@@ -3,18 +3,3 @@ CLASS net/minecraft/client/gui/screens/inventory/CartographyTableScreen
 		ARG 1 menu
 		ARG 2 inventory
 		ARG 3 title
-	METHOD renderMap (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/Integer;Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;IIF)V
-		ARG 1 poses
-		ARG 2 mapId
-		ARG 3 data
-		ARG 4 x
-		ARG 5 y
-		ARG 6 scale
-	METHOD renderResultingMap (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/Integer;Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;ZZZZ)V
-		ARG 1 poses
-		ARG 2 mapId
-		ARG 3 data
-		ARG 4 isMap
-		ARG 5 isPaper
-		ARG 6 isGlassPane
-		ARG 7 isNotUpgradable

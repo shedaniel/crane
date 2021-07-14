@@ -9,8 +9,6 @@ CLASS net/minecraft/client/gui/screens/social/PlayerEntry
 		ARG 1 message
 	METHOD lambda$new$0 (Lnet/minecraft/client/gui/screens/social/PlayerSocialManager;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/client/gui/components/Button;)V
 		ARG 4 button
-	METHOD lambda$new$1 (Lnet/minecraft/client/gui/screens/social/PlayerSocialManager;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/client/gui/components/Button;)V
-		ARG 4 button
 	METHOD onHiddenOrShown (ZLnet/minecraft/network/chat/Component;)V
 		ARG 1 hidden
 		ARG 2 message

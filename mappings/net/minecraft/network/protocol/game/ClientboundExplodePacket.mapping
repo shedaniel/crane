@@ -6,10 +6,3 @@ CLASS net/minecraft/network/protocol/game/ClientboundExplodePacket
 		ARG 7 power
 		ARG 8 toBlow
 		ARG 9 knockback
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf
-	METHOD lambda$new$0 (IIILnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/core/BlockPos;
-		ARG 3 b
-	METHOD lambda$write$1 (IIILnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/core/BlockPos;)V
-		ARG 3 b
-		ARG 4 pos

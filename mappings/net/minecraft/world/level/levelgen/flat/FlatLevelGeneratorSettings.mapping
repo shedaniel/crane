@@ -15,8 +15,6 @@ CLASS net/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings
 		ARG 0 instance
 	METHOD lambda$static$5 (Ljava/util/HashMap;)V
 		ARG 0 map
-	METHOD lambda$updateLayers$8 (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state
 	METHOD setBiome (Ljava/util/function/Supplier;)V
 		ARG 1 biome
 	METHOD withLayers (Ljava/util/List;Lnet/minecraft/world/level/levelgen/StructureSettings;)Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;

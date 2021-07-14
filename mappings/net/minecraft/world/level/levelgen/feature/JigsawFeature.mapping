@@ -4,6 +4,3 @@ CLASS net/minecraft/world/level/levelgen/feature/JigsawFeature
 		ARG 2 startY
 		ARG 3 doExpansionHack
 		ARG 4 projectStartToHeightmap
-	CLASS FeatureStart
-		METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/JigsawFeature;Lnet/minecraft/world/level/ChunkPos;IJ)V
-			ARG 1 feature

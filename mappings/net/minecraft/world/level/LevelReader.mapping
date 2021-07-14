@@ -45,16 +45,8 @@ CLASS net/minecraft/world/level/LevelReader
 	METHOD hasChunk (II)Z
 		ARG 1 x
 		ARG 2 z
-	METHOD hasChunkAt (II)Z
-		ARG 1 x
-		ARG 2 z
 	METHOD hasChunkAt (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
-	METHOD hasChunksAt (IIII)Z
-		ARG 1 minX
-		ARG 2 minZ
-		ARG 3 maxX
-		ARG 4 maxZ
 	METHOD hasChunksAt (IIIIII)Z
 		ARG 1 minX
 		ARG 2 minY

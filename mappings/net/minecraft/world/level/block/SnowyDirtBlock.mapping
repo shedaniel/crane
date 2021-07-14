@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/block/SnowyDirtBlock
-	METHOD isSnowySetting (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

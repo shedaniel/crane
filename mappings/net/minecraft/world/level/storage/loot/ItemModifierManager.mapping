@@ -1,18 +1,1 @@
 CLASS net/minecraft/world/level/storage/loot/ItemModifierManager
-	METHOD <init> (Lnet/minecraft/world/level/storage/loot/PredicateManager;Lnet/minecraft/world/level/storage/loot/LootTables;)V
-		ARG 1 predicateManager
-		ARG 2 lootTables
-	METHOD get (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
-		ARG 1 location
-	METHOD get (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
-		ARG 1 location
-		ARG 2 function
-	METHOD lambda$apply$0 (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonElement;)V
-		ARG 1 location
-		ARG 2 json
-	CLASS FunctionSequence
-		METHOD <init> ([Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)V
-			ARG 1 functions
-		METHOD apply (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-			ARG 1 stack
-			ARG 2 ctx

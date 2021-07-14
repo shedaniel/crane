@@ -9,9 +9,6 @@ CLASS net/minecraft/client/renderer/RenderStateShard
 	CLASS LineStateShard
 		METHOD <init> (Ljava/util/OptionalDouble;)V
 			ARG 1 width
-	CLASS ShaderStateShard
-		METHOD <init> (Ljava/util/function/Supplier;)V
-			ARG 1 shader
 	CLASS BooleanStateShard
 		METHOD <init> (Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;Z)V
 			ARG 1 name
@@ -37,10 +34,6 @@ CLASS net/minecraft/client/renderer/RenderStateShard
 		METHOD <init> (ZZ)V
 			ARG 1 writeColor
 			ARG 2 writeDepth
-	CLASS EmptyTextureStateShard
-		METHOD <init> (Ljava/lang/Runnable;Ljava/lang/Runnable;)V
-			ARG 1 setupState
-			ARG 2 clearState
 	CLASS OffsetTexturingStateShard
 		METHOD <init> (FF)V
 			ARG 1 x

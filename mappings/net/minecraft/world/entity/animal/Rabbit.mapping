@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/entity/animal/Rabbit
-	METHOD isTemptingItem (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 0 stack
 	CLASS RaidGardenGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;)V
 			ARG 1 rabbit

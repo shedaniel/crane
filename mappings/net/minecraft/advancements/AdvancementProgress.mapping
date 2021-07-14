@@ -1,6 +1,4 @@
 CLASS net/minecraft/advancements/AdvancementProgress
-	METHOD <init> (Ljava/util/Map;)V
-		ARG 1 criteria
 	METHOD compareTo (Ljava/lang/Object;)I
 		ARG 1 other
 	METHOD fromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/advancements/AdvancementProgress;
@@ -9,9 +7,6 @@ CLASS net/minecraft/advancements/AdvancementProgress
 		ARG 1 criterion
 	METHOD grantProgress (Ljava/lang/String;)Z
 		ARG 1 criterion
-	METHOD lambda$serializeToNetwork$1 (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/advancements/CriterionProgress;)V
-		ARG 0 buf1
-		ARG 1 progress
 	METHOD lambda$update$0 (Ljava/util/Set;Ljava/util/Map$Entry;)Z
 		ARG 1 entry
 	METHOD revokeProgress (Ljava/lang/String;)Z

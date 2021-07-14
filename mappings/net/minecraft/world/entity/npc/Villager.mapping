@@ -1,8 +1,6 @@
 CLASS net/minecraft/world/entity/npc/Villager
 	METHOD gossip (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/Villager;J)V
 		ARG 3 lastGossipTime
-	METHOD setChasing (Z)V
-		ARG 1 chasing
 	METHOD setOffers (Lnet/minecraft/world/item/trading/MerchantOffers;)V
 		ARG 1 offers
 	METHOD setVillagerXp (I)V

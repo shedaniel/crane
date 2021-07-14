@@ -1,7 +1,4 @@
 CLASS net/minecraft/client/tutorial/Tutorial
-	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/Options;)V
-		ARG 1 minecraft
-		ARG 2 options
 	METHOD addTimedToast (Lnet/minecraft/client/gui/components/toasts/TutorialToast;I)V
 		ARG 1 toast
 	METHOD key (Ljava/lang/String;)Lnet/minecraft/network/chat/Component;

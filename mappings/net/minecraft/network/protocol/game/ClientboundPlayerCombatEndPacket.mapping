@@ -1,4 +1,1 @@
 CLASS net/minecraft/network/protocol/game/ClientboundPlayerCombatEndPacket
-	METHOD <init> (II)V
-		ARG 1 killerId
-		ARG 2 duration

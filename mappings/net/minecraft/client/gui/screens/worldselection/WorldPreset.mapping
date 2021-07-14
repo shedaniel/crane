@@ -15,15 +15,9 @@ CLASS net/minecraft/client/gui/screens/worldselection/WorldPreset
 		ARG 1 biomeRegistry
 		ARG 2 noiseGeneratorRegistry
 		ARG 3 seed
-	METHOD isVisibleByDefault (Lnet/minecraft/client/gui/screens/worldselection/WorldPreset;)Z
-		ARG 0 preset
-	METHOD lambda$static$0 (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/world/level/levelgen/WorldGenSettings;Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)V
-		ARG 2 generatorSettings
 	METHOD lambda$static$1 (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/world/level/levelgen/WorldGenSettings;)Lnet/minecraft/client/gui/screens/Screen;
 		ARG 0 screen
 		ARG 1 settings
-	METHOD lambda$static$2 (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/world/level/levelgen/WorldGenSettings;Lnet/minecraft/world/level/biome/Biome;)V
-		ARG 2 biome
 	METHOD lambda$static$3 (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Lnet/minecraft/world/level/levelgen/WorldGenSettings;)Lnet/minecraft/client/gui/screens/Screen;
 		ARG 0 screen
 		ARG 1 settings

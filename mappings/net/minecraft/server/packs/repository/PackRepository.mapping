@@ -1,7 +1,4 @@
 CLASS net/minecraft/server/packs/repository/PackRepository
-	METHOD <init> (Lnet/minecraft/server/packs/PackType;[Lnet/minecraft/server/packs/repository/RepositorySource;)V
-		ARG 1 packType
-		ARG 2 sources
 	METHOD <init> (Lnet/minecraft/server/packs/repository/Pack$PackConstructor;[Lnet/minecraft/server/packs/repository/RepositorySource;)V
 		ARG 1 constructor
 		ARG 2 sources
@@ -11,16 +8,6 @@ CLASS net/minecraft/server/packs/repository/PackRepository
 		ARG 1 id
 	METHOD isAvailable (Ljava/lang/String;)Z
 		ARG 1 id
-	METHOD lambda$discoverAvailable$1 (Ljava/util/Map;Lnet/minecraft/server/packs/repository/Pack;)V
-		ARG 1 pack
-	METHOD lambda$new$0 (Lnet/minecraft/server/packs/PackType;Ljava/lang/String;Lnet/minecraft/network/chat/Component;ZLjava/util/function/Supplier;Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;Lnet/minecraft/server/packs/repository/Pack$Position;Lnet/minecraft/server/packs/repository/PackSource;)Lnet/minecraft/server/packs/repository/Pack;
-		ARG 1 id
-		ARG 2 title
-		ARG 3 required
-		ARG 4 supplier
-		ARG 5 packMetadata
-		ARG 6 defaultPosition
-		ARG 7 packSource
 	METHOD rebuildSelected (Ljava/util/Collection;)Ljava/util/List;
 		ARG 1 selected
 	METHOD setSelected (Ljava/util/Collection;)V

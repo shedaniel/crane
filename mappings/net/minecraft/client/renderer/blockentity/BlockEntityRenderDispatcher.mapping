@@ -1,14 +1,6 @@
 CLASS net/minecraft/client/renderer/blockentity/BlockEntityRenderDispatcher
-	METHOD <init> (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/model/geom/EntityModelSet;Ljava/util/function/Supplier;)V
-		ARG 1 font
-		ARG 2 entityModelSet
-		ARG 3 blockRenderDispatcher
 	METHOD getRenderer (Lnet/minecraft/world/level/block/entity/BlockEntity;)Lnet/minecraft/client/renderer/blockentity/BlockEntityRenderer;
 		ARG 1 blockEntity
-	METHOD prepare (Lnet/minecraft/world/level/Level;Lnet/minecraft/client/Camera;Lnet/minecraft/world/phys/HitResult;)V
-		ARG 1 level
-		ARG 2 camera
-		ARG 3 cameraHitResult
 	METHOD render (Lnet/minecraft/world/level/block/entity/BlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V
 		ARG 1 blockEntity
 		ARG 2 delta

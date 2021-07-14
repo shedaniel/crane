@@ -1,6 +1,4 @@
 CLASS com/mojang/realmsclient/KeyCombo
-	METHOD <init> ([C)V
-		ARG 1 chars
 	METHOD <init> ([CLjava/lang/Runnable;)V
 		ARG 1 chars
 		ARG 2 onCompletion

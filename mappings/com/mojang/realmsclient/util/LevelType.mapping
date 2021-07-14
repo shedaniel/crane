@@ -1,6 +1,1 @@
 CLASS com/mojang/realmsclient/util/LevelType
-	METHOD <init> (Ljava/lang/String;IILnet/minecraft/network/chat/Component;)V
-		ARG 3 index
-		ARG 4 name
-	METHOD valueOf (Ljava/lang/String;)Lcom/mojang/realmsclient/util/LevelType;
-		ARG 0 name

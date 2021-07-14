@@ -1,16 +1,4 @@
 CLASS net/minecraft/advancements/critereon/EffectsChangedTrigger
-	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/Entity;)V
-		ARG 1 player
-		ARG 2 entity
 	CLASS TriggerInstance
-		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/MobEffectsPredicate;Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;)V
-			ARG 1 player
-			ARG 2 effects
-			ARG 3 source
-		METHOD gotEffectsFrom (Lnet/minecraft/advancements/critereon/EntityPredicate;)Lnet/minecraft/advancements/critereon/EffectsChangedTrigger$TriggerInstance;
-			ARG 0 predicate
 		METHOD hasEffects (Lnet/minecraft/advancements/critereon/MobEffectsPredicate;)Lnet/minecraft/advancements/critereon/EffectsChangedTrigger$TriggerInstance;
 			ARG 0 predicate
-		METHOD matches (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/storage/loot/LootContext;)Z
-			ARG 1 player
-			ARG 2 ctx

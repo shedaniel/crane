@@ -11,8 +11,6 @@ CLASS net/minecraft/world/item/crafting/Ingredient
 		ARG 0 value
 	METHOD lambda$of$3 (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
-	METHOD lambda$valueFromJson$5 (Lnet/minecraft/resources/ResourceLocation;)Lcom/google/gson/JsonSyntaxException;
-		ARG 0 location
 	METHOD of (Ljava/util/stream/Stream;)Lnet/minecraft/world/item/crafting/Ingredient;
 		ARG 0 stacks
 	METHOD of (Lnet/minecraft/tags/Tag;)Lnet/minecraft/world/item/crafting/Ingredient;

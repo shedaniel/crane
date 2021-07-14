@@ -1,6 +1,1 @@
 CLASS net/minecraft/server/commands/DebugCommand
-	CLASS Tracer
-		METHOD <init> (Ljava/io/PrintWriter;)V
-			ARG 1 output
-		METHOD indentAndSave (I)V
-			ARG 1 lastIndent

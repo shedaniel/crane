@@ -1,7 +1,1 @@
 CLASS net/minecraft/network/protocol/game/ServerboundMovePlayerPacket
-	METHOD <init> (DDDFFZZZ)V
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
-		ARG 7 yRot
-		ARG 8 xRot

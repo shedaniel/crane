@@ -1,16 +1,3 @@
 CLASS net/minecraft/world/level/levelgen/feature/configurations/DiskConfiguration
-	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/util/valueproviders/IntProvider;ILjava/util/List;)V
-		ARG 1 state
-		ARG 2 radius
-		ARG 3 halfHeight
-		ARG 4 targets
-	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/configurations/DiskConfiguration;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 0 config
-	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/feature/configurations/DiskConfiguration;)Lnet/minecraft/util/valueproviders/IntProvider;
-		ARG 0 config
-	METHOD lambda$static$2 (Lnet/minecraft/world/level/levelgen/feature/configurations/DiskConfiguration;)Ljava/lang/Integer;
-		ARG 0 config
-	METHOD lambda$static$3 (Lnet/minecraft/world/level/levelgen/feature/configurations/DiskConfiguration;)Ljava/util/List;
-		ARG 0 config
 	METHOD lambda$static$4 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

@@ -1,8 +1,4 @@
 CLASS net/minecraft/world/level/chunk/LevelChunk
-	METHOD <init> (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/chunk/ProtoChunk;Ljava/util/function/Consumer;)V
-		ARG 1 leel
-		ARG 2 chunk
-		ARG 3 postLoad
 	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;)V
 		ARG 1 level
 		ARG 2 chunkPos
@@ -19,22 +15,7 @@ CLASS net/minecraft/world/level/chunk/LevelChunk
 		ARG 10 postLoad
 	METHOD createBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
 		ARG 1 pos
-	METHOD isTicking (Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 pos
-	METHOD removeBlockEntityTicker (Lnet/minecraft/core/BlockPos;)V
-		ARG 1 pos
-	METHOD replaceWithPacketData (Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/nbt/CompoundTag;Ljava/util/BitSet;)V
-		ARG 1 biomes
 	METHOD setFullStatus (Ljava/util/function/Supplier;)V
 		ARG 1 fullStatus
 	METHOD setLoaded (Z)V
 		ARG 1 loaded
-	CLASS BoundTickingBlockEntity
-		METHOD <init> (Lnet/minecraft/world/level/chunk/LevelChunk;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/level/block/entity/BlockEntityTicker;)V
-			ARG 2 blockEntity
-			ARG 3 ticker
-	CLASS RebindableTickingBlockEntityWrapper
-		METHOD <init> (Lnet/minecraft/world/level/chunk/LevelChunk;Lnet/minecraft/world/level/block/entity/TickingBlockEntity;)V
-			ARG 2 ticker
-		METHOD rebind (Lnet/minecraft/world/level/block/entity/TickingBlockEntity;)V
-			ARG 1 ticker

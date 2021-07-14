@@ -20,9 +20,6 @@ CLASS net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen
 		ARG 3 mouseY
 	METHOD isCreativeSlot (Lnet/minecraft/world/inventory/Slot;)Z
 		ARG 1 slot
-	METHOD lambda$renderTooltip$3 (Lnet/minecraft/world/item/ItemStack;Ljava/util/List;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/tags/Tag;)V
-		ARG 2 location
-		ARG 3 tag
 	METHOD lambda$updateVisibleTags$0 (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z
 		ARG 1 location
 	METHOD lambda$updateVisibleTags$1 (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z

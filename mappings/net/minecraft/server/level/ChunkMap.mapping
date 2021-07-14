@@ -1,12 +1,4 @@
 CLASS net/minecraft/server/level/ChunkMap
-	METHOD <init> (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureManager;Ljava/util/concurrent/Executor;Lnet/minecraft/util/thread/BlockableEventLoop;Lnet/minecraft/world/level/chunk/LightChunkGetter;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/server/level/progress/ChunkProgressListener;Lnet/minecraft/world/level/entity/ChunkStatusUpdateListener;Ljava/util/function/Supplier;IZ)V
-		ARG 1 level
-		ARG 4 structureManager
-		ARG 6 mainThreadExecutor
-		ARG 8 generator
-		ARG 9 progressListener
-		ARG 10 chunkStatusListener
-		ARG 11 overworldDataStorage
 	METHOD processUnloads (Ljava/util/function/BooleanSupplier;)V
 		ARG 1 haveTime
 	METHOD tick (Ljava/util/function/BooleanSupplier;)V

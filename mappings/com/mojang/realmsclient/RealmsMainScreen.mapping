@@ -80,10 +80,6 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 6 y
 	METHOD renderStage (Lcom/mojang/blaze3d/vertex/PoseStack;)V
 		ARG 1 poses
-	METHOD setCreatedTrial (Z)V
-		ARG 1 createdTrial
-	METHOD setTooltip (Ljava/lang/Iterable;)V
-		ARG 1 tooltip
 	METHOD setTooltip ([Lnet/minecraft/network/chat/Component;)V
 		ARG 1 tooltips
 	METHOD shouldConfigureButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z

@@ -3,5 +3,3 @@ CLASS net/minecraft/network/protocol/game/ClientboundBlockDestructionPacket
 		ARG 1 id
 		ARG 2 pos
 		ARG 3 progress
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf

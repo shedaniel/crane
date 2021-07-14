@@ -1,3 +1,1 @@
 CLASS net/minecraft/world/level/gameevent/EuclideanGameEventDispatcher
-	METHOD <init> (Lnet/minecraft/world/level/Level;)V
-		ARG 1 level

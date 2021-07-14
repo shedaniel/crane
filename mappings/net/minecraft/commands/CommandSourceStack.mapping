@@ -59,5 +59,3 @@ CLASS net/minecraft/commands/CommandSourceStack
 		ARG 1 pos
 	METHOD withRotation (Lnet/minecraft/world/phys/Vec2;)Lnet/minecraft/commands/CommandSourceStack;
 		ARG 1 rotation
-	METHOD withSource (Lnet/minecraft/commands/CommandSource;)Lnet/minecraft/commands/CommandSourceStack;
-		ARG 1 source

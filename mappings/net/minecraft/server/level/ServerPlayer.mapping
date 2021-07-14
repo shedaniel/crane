@@ -1,8 +1,4 @@
 CLASS net/minecraft/server/level/ServerPlayer
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/authlib/GameProfile;)V
-		ARG 1 server
-	METHOD acceptsChat (Lnet/minecraft/network/chat/ChatType;)Z
-		ARG 1 chatType
 	METHOD isReachableBedBlock (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
 	METHOD restoreFrom (Lnet/minecraft/server/level/ServerPlayer;Z)V
@@ -11,21 +7,12 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 1 message
 		ARG 2 chatType
 		ARG 3 sender
-	METHOD sendTexturePack (Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/network/chat/Component;)V
-		ARG 1 url
-		ARG 2 hash
-		ARG 3 required
-		ARG 4 prompt
 	METHOD setCamera (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 camera
 	METHOD setExperienceLevels (I)V
 		ARG 1 experienceLevel
-	METHOD setGameMode (Lnet/minecraft/world/level/GameType;)Z
-		ARG 1 gameMode
 	METHOD setLastSectionPos (Lnet/minecraft/core/SectionPos;)V
 		ARG 1 lastSectionPos
-	METHOD setLevel (Lnet/minecraft/server/level/ServerLevel;)V
-		ARG 1 level
 	METHOD setPlayerInput (FFZZ)V
 		ARG 1 xxa
 		ARG 2 zza

@@ -23,5 +23,3 @@ CLASS net/minecraft/world/level/block/entity/StructureBlockEntity
 		ARG 1 structureName
 	METHOD setStructurePos (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 structurePos
-	METHOD setStructureSize (Lnet/minecraft/core/Vec3i;)V
-		ARG 1 structureSize

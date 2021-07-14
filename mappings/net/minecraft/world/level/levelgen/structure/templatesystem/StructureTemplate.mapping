@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate
-	METHOD fillFromWorld (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Vec3i;ZLnet/minecraft/world/level/block/Block;)V
-		ARG 3 size
 	METHOD setAuthor (Ljava/lang/String;)V
 		ARG 1 author
 	CLASS Palette

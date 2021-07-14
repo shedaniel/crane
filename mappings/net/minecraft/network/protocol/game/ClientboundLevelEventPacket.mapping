@@ -4,5 +4,3 @@ CLASS net/minecraft/network/protocol/game/ClientboundLevelEventPacket
 		ARG 2 pos
 		ARG 3 data
 		ARG 4 globalEvent
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf

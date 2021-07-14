@@ -14,8 +14,6 @@ CLASS net/minecraft/client/gui/font/FontSet
 		ARG 1 c
 	METHOD lambda$getGlyphInfo$3 (I)Lcom/mojang/blaze3d/font/GlyphInfo;
 		ARG 1 c
-	METHOD lambda$reload$1 (I)Lit/unimi/dsi/fastutil/ints/IntList;
-		ARG 0 glyphs
 	METHOD lambda$reload$2 (Ljava/util/List;Ljava/util/Set;I)V
 		ARG 3 glyph
 	METHOD reload (Ljava/util/List;)V

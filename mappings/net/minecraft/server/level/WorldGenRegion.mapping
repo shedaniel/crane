@@ -1,10 +1,3 @@
 CLASS net/minecraft/server/level/WorldGenRegion
-	METHOD <init> (Lnet/minecraft/server/level/ServerLevel;Ljava/util/List;Lnet/minecraft/world/level/chunk/ChunkStatus;I)V
-		ARG 1 level
-		ARG 2 cache
-		ARG 3 generatingStatus
-		ARG 4 writeRadiusCutoff
 	METHOD markPosForPostprocessing (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
-	METHOD setCurrentlyGenerating (Ljava/util/function/Supplier;)V
-		ARG 1 currentlyGenerating

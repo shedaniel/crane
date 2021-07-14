@@ -14,7 +14,5 @@ CLASS net/minecraft/resources/RegistryDataPackCodec
 		ARG 1 registry
 		ARG 2 ops
 		ARG 3 element
-	METHOD lambda$decode$0 (Lcom/mojang/datafixers/util/Pair;Lnet/minecraft/core/MappedRegistry;)Lcom/mojang/datafixers/util/Pair;
-		ARG 1 registry
 	METHOD lambda$decode$1 (Lcom/mojang/serialization/DynamicOps;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/serialization/DataResult;
 		ARG 2 pair

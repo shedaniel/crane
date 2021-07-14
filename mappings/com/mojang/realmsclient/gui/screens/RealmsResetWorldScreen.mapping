@@ -1,9 +1,4 @@
 CLASS com/mojang/realmsclient/gui/screens/RealmsResetWorldScreen
-	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lcom/mojang/realmsclient/dto/RealmsServer;Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
-		ARG 1 lastScreen
-		ARG 2 serverData
-		ARG 4 resetWorldRunnable
-		ARG 5 callback
 	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lcom/mojang/realmsclient/dto/RealmsServer;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;ILnet/minecraft/network/chat/Component;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 		ARG 4 subtitle
 		ARG 5 subtitleColor

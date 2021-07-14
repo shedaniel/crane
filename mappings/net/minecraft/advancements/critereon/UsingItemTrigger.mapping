@@ -1,6 +1,1 @@
 CLASS net/minecraft/advancements/critereon/UsingItemTrigger
-	CLASS TriggerInstance
-		METHOD <init> (Lnet/minecraft/advancements/critereon/EntityPredicate$Composite;Lnet/minecraft/advancements/critereon/ItemPredicate;)V
-			ARG 2 item
-		METHOD matches (Lnet/minecraft/world/item/ItemStack;)Z
-			ARG 1 stack

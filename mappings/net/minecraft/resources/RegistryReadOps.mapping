@@ -1,9 +1,4 @@
 CLASS net/minecraft/resources/RegistryReadOps
-	METHOD <init> (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/resources/RegistryReadOps$ResourceAccess;Lnet/minecraft/core/RegistryAccess;Ljava/util/IdentityHashMap;)V
-		ARG 1 ops
-		ARG 2 resources
-		ARG 3 registryAccess
-		ARG 4 readCache
 	METHOD decodeElement (Ljava/lang/Object;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;Z)Lcom/mojang/serialization/DataResult;
 		ARG 2 registryId
 		ARG 3 codec

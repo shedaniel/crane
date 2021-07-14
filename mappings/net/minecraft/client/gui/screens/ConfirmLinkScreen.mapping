@@ -3,9 +3,3 @@ CLASS net/minecraft/client/gui/screens/ConfirmLinkScreen
 		ARG 1 callback
 		ARG 2 url
 		ARG 3 trusted
-	METHOD lambda$addButtons$0 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$addButtons$1 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$addButtons$2 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button

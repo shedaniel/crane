@@ -1,12 +1,1 @@
 CLASS net/minecraft/advancements/critereon/LighthingBoltPredicate
-	METHOD <init> (Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;Lnet/minecraft/advancements/critereon/EntityPredicate;)V
-		ARG 1 blocksSetOnFire
-		ARG 2 entityStruck
-	METHOD blockSetOnFire (Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;)Lnet/minecraft/advancements/critereon/LighthingBoltPredicate;
-		ARG 0 blocksCount
-	METHOD fromJson (Lcom/google/gson/JsonElement;)Lnet/minecraft/advancements/critereon/LighthingBoltPredicate;
-		ARG 0 json
-	METHOD matches (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/phys/Vec3;)Z
-		ARG 1 lightningBolt
-		ARG 2 level
-		ARG 3 pos

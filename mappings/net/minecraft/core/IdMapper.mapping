@@ -6,5 +6,3 @@ CLASS net/minecraft/core/IdMapper
 	METHOD addMapping (Ljava/lang/Object;I)V
 		ARG 1 value
 		ARG 2 id
-	METHOD contains (I)Z
-		ARG 1 id

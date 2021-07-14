@@ -1,3 +1,1 @@
 CLASS net/minecraft/client/renderer/entity/AbstractHorseRenderer
-	METHOD <init> (Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/minecraft/client/model/HorseModel;F)V
-		ARG 3 scale

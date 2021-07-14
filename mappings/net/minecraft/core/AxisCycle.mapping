@@ -1,6 +1,4 @@
 CLASS net/minecraft/core/AxisCycle
-	METHOD cycle (DDDLnet/minecraft/core/Direction$Axis;)D
-		ARG 7 axis
 	METHOD cycle (IIILnet/minecraft/core/Direction$Axis;)I
 		ARG 4 axis
 	METHOD cycle (Lnet/minecraft/core/Direction$Axis;)Lnet/minecraft/core/Direction$Axis;

@@ -9,9 +9,6 @@ CLASS net/minecraft/world/level/BlockGetter
 		ARG 5 state
 	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
 		ARG 1 pos
-	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Ljava/util/Optional;
-		ARG 1 pos
-		ARG 2 type
 	METHOD getBlockFloorHeight (Lnet/minecraft/core/BlockPos;)D
 		ARG 1 pos
 	METHOD getBlockFloorHeight (Lnet/minecraft/world/phys/shapes/VoxelShape;Ljava/util/function/Supplier;)D
@@ -25,21 +22,3 @@ CLASS net/minecraft/world/level/BlockGetter
 		ARG 1 pos
 	METHOD getLightEmission (Lnet/minecraft/core/BlockPos;)I
 		ARG 1 pos
-	METHOD isBlockInLine (Lnet/minecraft/world/level/ClipBlockStateContext;)Lnet/minecraft/world/phys/BlockHitResult;
-		ARG 1 ctx
-	METHOD lambda$clip$2 (Lnet/minecraft/world/level/ClipContext;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/BlockHitResult;
-		ARG 1 context
-		ARG 2 pos
-	METHOD lambda$clip$3 (Lnet/minecraft/world/level/ClipContext;)Lnet/minecraft/world/phys/BlockHitResult;
-		ARG 0 context
-	METHOD lambda$isBlockInLine$0 (Lnet/minecraft/world/level/ClipBlockStateContext;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/BlockHitResult;
-		ARG 1 context
-		ARG 2 pos
-	METHOD lambda$isBlockInLine$1 (Lnet/minecraft/world/level/ClipBlockStateContext;)Lnet/minecraft/world/phys/BlockHitResult;
-		ARG 0 context
-	METHOD traverseBlocks (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Ljava/lang/Object;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Ljava/lang/Object;
-		ARG 0 start
-		ARG 1 end
-		ARG 2 context
-		ARG 3 onHit
-		ARG 4 onMiss

@@ -8,9 +8,6 @@ CLASS net/minecraft/world/level/border/WorldBorder
 		ARG 3 z
 	METHOD getDistanceToBorder (Lnet/minecraft/world/entity/Entity;)D
 		ARG 1 entity
-	METHOD isWithinBounds (DD)Z
-		ARG 1 x
-		ARG 3 z
 	METHOD isWithinBounds (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
 	METHOD isWithinBounds (Lnet/minecraft/world/level/ChunkPos;)Z
@@ -21,8 +18,6 @@ CLASS net/minecraft/world/level/border/WorldBorder
 		ARG 1 oldSize
 		ARG 3 newSize
 		ARG 5 duration
-	METHOD removeListener (Lnet/minecraft/world/level/border/BorderChangeListener;)V
-		ARG 1 listener
 	METHOD setAbsoluteMaxSize (I)V
 		ARG 1 absoluteMaxSize
 	METHOD setCenter (DD)V

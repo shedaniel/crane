@@ -1,9 +1,1 @@
 CLASS net/minecraft/util/profiling/metrics/profiling/ActiveMetricsRecorder
-	METHOD <init> (Lnet/minecraft/util/profiling/metrics/MetricsSamplerProvider;Ljava/util/function/LongSupplier;Ljava/util/concurrent/Executor;Lnet/minecraft/util/profiling/metrics/storage/MetricsPersister;Ljava/util/function/Consumer;Ljava/util/function/Consumer;)V
-		ARG 1 metricsSamplerProvider
-		ARG 2 wallTimeSource
-		ARG 3 ioExecutor
-		ARG 4 metricsPersister
-		ARG 5 onProfilingEnd
-	METHOD registerGlobalCompletionCallback (Ljava/util/function/Consumer;)V
-		ARG 0 globalOnReportFinished

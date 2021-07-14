@@ -20,7 +20,5 @@ CLASS net/minecraft/resources/RegistryFileCodec
 	METHOD homogeneousList (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 		ARG 0 registryKey
 		ARG 1 elementCodec
-	METHOD lambda$decode$6 (Ljava/lang/Object;)Ljava/util/function/Supplier;
-		ARG 0 element
 	METHOD lambda$decode$7 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
 		ARG 0 pair

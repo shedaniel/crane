@@ -1,5 +1,1 @@
 CLASS net/minecraft/world/level/levelgen/carver/CaveCarverConfiguration
-	METHOD <init> (FLnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;Lnet/minecraft/util/valueproviders/FloatProvider;Lnet/minecraft/world/level/levelgen/VerticalAnchor;ZLnet/minecraft/world/level/levelgen/carver/CarverDebugSettings;Lnet/minecraft/util/valueproviders/FloatProvider;Lnet/minecraft/util/valueproviders/FloatProvider;Lnet/minecraft/util/valueproviders/FloatProvider;)V
-		ARG 7 horizontalRadiusMultiplier
-		ARG 8 verticalRadiusMultiplier
-		ARG 9 floorLevel
