@@ -1,5 +1,31 @@
 CLASS net/minecraft/world/level/block/ChestBlock
+	METHOD candidatePartnerFacing (Lnet/minecraft/world/item/context/BlockPlaceContext;Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Direction;
+		ARG 1 ctx
+		ARG 2 direction
 	METHOD getBlockType (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/DoubleBlockCombiner$BlockType;
 		ARG 0 state
 	METHOD getConnectedDirection (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/core/Direction;
 		ARG 0 state
+	METHOD getContainer (Lnet/minecraft/world/level/block/ChestBlock;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Z)Lnet/minecraft/world/Container;
+		ARG 0 block
+		ARG 1 state
+		ARG 2 level
+		ARG 3 pos
+		ARG 4 alwaysCombine
+	METHOD isBlockedChestByBlock (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 level
+		ARG 1 pos
+	METHOD isCatSittingOnChest (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 level
+		ARG 1 pos
+	METHOD isChestBlockedAt (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 level
+		ARG 1 pos
+	METHOD lambda$combine$0 (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 levelAccessor
+		ARG 1 blockPos
+	METHOD opennessCombiner (Lnet/minecraft/world/level/block/entity/LidBlockEntity;)Lnet/minecraft/world/level/block/DoubleBlockCombiner$Combiner;
+		ARG 0 blockEntity
+	CLASS 3
+		METHOD lambda$acceptDouble$0 (Lnet/minecraft/world/level/block/entity/ChestBlockEntity;Lnet/minecraft/world/level/block/entity/ChestBlockEntity;F)F
+			ARG 2 delta

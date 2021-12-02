@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/renderer/blockentity/ChestRenderer
+	METHOD <init> (Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context;)V
+		ARG 1 ctx
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;FII)V
+		ARG 1 poses
+		ARG 2 vertexConsumer
+		ARG 3 lid
+		ARG 4 lock
+		ARG 5 bottom
+		ARG 6 delta
+		ARG 7 light
+		ARG 8 overlay
