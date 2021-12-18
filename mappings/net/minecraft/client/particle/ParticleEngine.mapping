@@ -12,9 +12,9 @@ CLASS net/minecraft/client/particle/ParticleEngine
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
-		ARG 8 dx
-		ARG 10 dy
-		ARG 12 dz
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
 	METHOD createTrackingEmitter (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/particles/ParticleOptions;)V
 		ARG 1 entity
 		ARG 2 particleType
@@ -50,9 +50,9 @@ CLASS net/minecraft/client/particle/ParticleEngine
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
-		ARG 8 dx
-		ARG 10 dy
-		ARG 12 dz
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
 	METHOD register (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;)V
 		ARG 1 particleType
 		ARG 2 registration

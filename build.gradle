@@ -9,12 +9,12 @@ plugins {
     id "maven-publish"
 }
 
-group "dev.architectury"
+group "me.shedaniel.crane"
 version "$minecraft_version+build.${System.getenv("GITHUB_RUN_NUMBER") ?: "9999"}"
 
 repositories {
     mavenCentral()
-    maven { url "https://maven.architectury.dev" }
+    maven { url "https://maven.shedaniel.me" }
     maven { url "https://maven.fabricmc.net" }
 }
 

@@ -28,7 +28,12 @@ CLASS net/minecraft/server/level/ServerLevel
 	METHOD findLightningTargetAround (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;
 		ARG 1 pos
 	METHOD findNearestBiome (Lnet/minecraft/world/level/biome/Biome;Lnet/minecraft/core/BlockPos;II)Lnet/minecraft/core/BlockPos;
+		ARG 1 biome
 		ARG 2 pos
+		ARG 3 radius
+		ARG 4 interval
+	METHOD findNearestMapFeature (Lnet/minecraft/world/level/levelgen/feature/StructureFeature;Lnet/minecraft/core/BlockPos;IZ)Lnet/minecraft/core/BlockPos;
+		ARG 1 structure
 	METHOD getEntity (Ljava/util/UUID;)Lnet/minecraft/world/entity/Entity;
 		ARG 1 uuid
 	METHOD getEntityOrPart (I)Lnet/minecraft/world/entity/Entity;
@@ -82,6 +87,7 @@ CLASS net/minecraft/server/level/ServerLevel
 		ARG 17 maxSpeed
 	METHOD sendParticles (Lnet/minecraft/server/level/ServerPlayer;ZDDDLnet/minecraft/network/protocol/Packet;)Z
 		ARG 1 player
+		ARG 2 furtherDistanceCheck
 		ARG 3 x
 		ARG 5 y
 		ARG 7 z

@@ -1,3 +1,9 @@
 CLASS net/minecraft/world/level/lighting/LightEventListener
 	METHOD checkBlock (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
+	METHOD enableLightSources (Lnet/minecraft/world/level/ChunkPos;Z)V
+		ARG 1 pos
+	METHOD updateSectionStatus (Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 pos
+	METHOD updateSectionStatus (Lnet/minecraft/core/SectionPos;Z)V
+		ARG 1 pos

@@ -12,11 +12,34 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 	METHOD addEntity (ILnet/minecraft/world/entity/Entity;)V
 		ARG 1 id
 		ARG 2 entity
+	METHOD addMapData (Ljava/util/Map;)V
+		ARG 1 mapData
 	METHOD addPlayer (ILnet/minecraft/client/player/AbstractClientPlayer;)V
 		ARG 1 id
 		ARG 2 player
+	METHOD animateTick (III)V
+		ARG 1 x
+		ARG 2 y
+	METHOD calculateBlockTint (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/ColorResolver;)I
+		ARG 1 pos
+		ARG 2 colorResolver
+	METHOD doAnimateTick (IIIILjava/util/Random;Lnet/minecraft/client/multiplayer/ClientLevel$MarkerParticleStatus;Lnet/minecraft/core/BlockPos$MutableBlockPos;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 5 random
+		ARG 6 status
+		ARG 7 pos
+	METHOD lambda$clearTintCaches$4 (Lnet/minecraft/world/level/ColorResolver;Lnet/minecraft/client/color/block/BlockTintCache;)V
+		ARG 0 colorResolver
+		ARG 1 cache
+	METHOD lambda$doAnimateTick$5 (Lnet/minecraft/core/BlockPos$MutableBlockPos;Lnet/minecraft/world/level/biome/AmbientParticleSettings;)V
+		ARG 2 particle
 	METHOD lambda$new$0 (Lit/unimi/dsi/fastutil/objects/Object2ObjectArrayMap;)V
 		ARG 0 map
+	METHOD lambda$onChunkLoaded$3 (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/ColorResolver;Lnet/minecraft/client/color/block/BlockTintCache;)V
+		ARG 1 colorResolver
+		ARG 2 cache
 	METHOD lambda$tickEntities$1 (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD onChunkLoaded (Lnet/minecraft/world/level/ChunkPos;)V
@@ -27,6 +50,7 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 		ARG 3 source
 		ARG 4 volume
 		ARG 5 pitch
+		ARG 6 spatial
 	METHOD putNonPlayerEntity (ILnet/minecraft/world/entity/Entity;)V
 		ARG 1 id
 		ARG 2 entity
@@ -35,6 +59,9 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 		ARG 2 reason
 	METHOD setDayTime (J)V
 		ARG 1 dayTime
+	METHOD setDefaultSpawnPos (Lnet/minecraft/core/BlockPos;F)V
+		ARG 1 pos
+		ARG 2 spawnAngle
 	METHOD setGameTime (J)V
 		ARG 1 gameTime
 	METHOD setKnownState (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
@@ -42,17 +69,31 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 		ARG 2 state
 	METHOD setScoreboard (Lnet/minecraft/world/scores/Scoreboard;)V
 		ARG 1 scoreboard
+	METHOD setSectionDirtyWithNeighbors (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD spawnFluidParticle (DDDDDLnet/minecraft/core/particles/ParticleOptions;)V
+		ARG 1 x1
+		ARG 3 x2
+		ARG 5 z1
+		ARG 7 z2
+		ARG 9 y
 		ARG 11 particle
 	METHOD spawnParticle (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/world/phys/shapes/VoxelShape;D)V
 		ARG 1 pos
 		ARG 2 particle
+		ARG 3 shape
+		ARG 4 y
+	METHOD tick (Ljava/util/function/BooleanSupplier;)V
+		ARG 1 haveTime
 	METHOD tickNonPassenger (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD trySpawnDripParticles (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/particles/ParticleOptions;Z)V
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 particle
+		ARG 4 spawnFluidParticle
 	METHOD unload (Lnet/minecraft/world/level/chunk/LevelChunk;)V
 		ARG 1 chunk
 	CLASS ClientLevelData
@@ -60,6 +101,8 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 			ARG 1 difficulty
 			ARG 2 hardcore
 			ARG 3 isFlat
+		METHOD getHorizonHeight (Lnet/minecraft/world/level/LevelHeightAccessor;)D
+			ARG 1 level
 		METHOD setDayTime (J)V
 			ARG 1 dayTime
 		METHOD setDifficulty (Lnet/minecraft/world/Difficulty;)V

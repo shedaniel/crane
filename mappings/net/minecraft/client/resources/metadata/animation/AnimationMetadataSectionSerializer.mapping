@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/resources/metadata/animation/AnimationMetadataSectionSerializer
+	METHOD getFrame (ILcom/google/gson/JsonElement;)Lnet/minecraft/client/resources/metadata/animation/AnimationFrame;
+		ARG 1 index
+		ARG 2 json

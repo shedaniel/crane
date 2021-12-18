@@ -23,37 +23,54 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
-		ARG 8 dx
-		ARG 10 dy
-		ARG 12 dz
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
 	METHOD addParticle (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V
 		ARG 1 particle
+		ARG 2 overrideLimiter
 		ARG 3 x
 		ARG 5 y
 		ARG 7 z
+		ARG 9 xd
+		ARG 11 yd
+		ARG 13 zd
 	METHOD addParticle (Lnet/minecraft/core/particles/ParticleOptions;ZZDDDDDD)V
 		ARG 1 particle
+		ARG 2 overrideLimiter
+		ARG 3 alwaysVisible
 		ARG 4 x
 		ARG 6 y
 		ARG 8 z
+		ARG 10 xd
+		ARG 12 yd
+		ARG 14 zd
 	METHOD addParticleInternal (Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)Lnet/minecraft/client/particle/Particle;
 		ARG 1 particle
+		ARG 2 overrideLimiter
 		ARG 3 x
 		ARG 5 y
 		ARG 7 z
-		ARG 9 dx
-		ARG 11 dy
-		ARG 13 dz
+		ARG 9 xd
+		ARG 11 yd
+		ARG 13 zd
 	METHOD addParticleInternal (Lnet/minecraft/core/particles/ParticleOptions;ZZDDDDDD)Lnet/minecraft/client/particle/Particle;
 		ARG 1 particle
+		ARG 2 overrideLimiter
+		ARG 3 alwaysVisible
 		ARG 4 x
 		ARG 6 y
 		ARG 8 z
-		ARG 10 dx
-		ARG 12 dy
-		ARG 14 dz
+		ARG 10 xd
+		ARG 12 yd
+		ARG 14 zd
+	METHOD blockChanged (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V
+		ARG 1 level
+		ARG 2 pos
 	METHOD buildClouds (Lcom/mojang/blaze3d/vertex/BufferBuilder;DDDLnet/minecraft/world/phys/Vec3;)V
 		ARG 1 builder
+	METHOD calculateParticleLevel (Z)Lnet/minecraft/client/ParticleStatus;
+		ARG 1 alwaysVisible
 	METHOD checkPoseStack (Lcom/mojang/blaze3d/vertex/PoseStack;)V
 		ARG 1 poses
 	METHOD destroyBlockProgress (ILnet/minecraft/core/BlockPos;I)V
@@ -76,6 +93,12 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 2 eventId
 		ARG 3 pos
 		ARG 4 data
+	METHOD notifyNearbyEntities (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 level
+		ARG 2 pos
+	METHOD playStreamingMusic (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 soundEvent
+		ARG 2 pos
 	METHOD renderChunkLayer (Lnet/minecraft/client/renderer/RenderType;Lcom/mojang/blaze3d/vertex/PoseStack;DDDLcom/mojang/math/Matrix4f;)V
 		ARG 3 xTransparentOld
 		ARG 5 yTransparentOld
@@ -149,18 +172,49 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 2 shape
 	METHOD renderWorldBorder (Lnet/minecraft/client/Camera;)V
 		ARG 1 camera
+	METHOD setBlockDirty (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 pos
 	METHOD setBlockDirty (Lnet/minecraft/core/BlockPos;Z)V
 		ARG 1 pos
+		ARG 2 dirty
+	METHOD setBlocksDirty (IIIIII)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2
 	METHOD setLevel (Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 level
+	METHOD setSectionDirty (IIIZ)V
+		ARG 4 dirty
+	METHOD setSectionDirtyWithNeighbors (III)V
+		ARG 1 y
+		ARG 2 z
+		ARG 3 x
 	METHOD updateGlobalBlockEntities (Ljava/util/Collection;Ljava/util/Collection;)V
 		ARG 1 toRemove
 		ARG 2 toAdd
 	CLASS RenderInfoMap
 		METHOD <init> (I)V
 			ARG 1 length
+		METHOD get (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$RenderChunk;)Lnet/minecraft/client/renderer/LevelRenderer$RenderChunkInfo;
+			ARG 1 chunk
+		METHOD put (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$RenderChunk;Lnet/minecraft/client/renderer/LevelRenderer$RenderChunkInfo;)V
+			ARG 1 chunk
+			ARG 2 info
 	CLASS RenderChunkInfo
 		METHOD <init> (Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$RenderChunk;Lnet/minecraft/core/Direction;I)V
 			ARG 1 chunk
 			ARG 2 direction
 			ARG 3 step
+		METHOD addSourceDirection (Lnet/minecraft/core/Direction;)V
+			ARG 1 direction
+		METHOD hasDirection (Lnet/minecraft/core/Direction;)Z
+			ARG 1 direction
+		METHOD setDirections (BLnet/minecraft/core/Direction;)V
+			ARG 2 direction
+	CLASS TransparencyShaderException
+		METHOD <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+			ARG 1 message
+			ARG 2 cause

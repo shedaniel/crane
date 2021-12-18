@@ -1,6 +1,7 @@
 CLASS net/minecraft/world/level/storage/WritableLevelData
 	METHOD setSpawn (Lnet/minecraft/core/BlockPos;F)V
 		ARG 1 spawnPos
+		ARG 2 spawnAngle
 	METHOD setSpawnAngle (F)V
 		ARG 1 spawnAngle
 	METHOD setXSpawn (I)V
