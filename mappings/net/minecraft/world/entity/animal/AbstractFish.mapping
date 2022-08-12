@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/entity/animal/AbstractFish
+	METHOD saveToBucketTag (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
 	CLASS FishSwimGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/AbstractFish;)V
 			ARG 1 fish

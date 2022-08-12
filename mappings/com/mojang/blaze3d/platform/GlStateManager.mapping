@@ -1,9 +1,17 @@
 CLASS com/mojang/blaze3d/platform/GlStateManager
 	METHOD _glUseProgram (I)V
 		ARG 0 program
+	CLASS LogicOp
+		METHOD <init> (Ljava/lang/String;II)V
+			ARG 3 value
 	CLASS DestFactor
 		METHOD <init> (Ljava/lang/String;II)V
 			ARG 3 value
+	CLASS BooleanState
+		METHOD <init> (I)V
+			ARG 1 state
+		METHOD setEnabled (Z)V
+			ARG 1 enabled
 	CLASS SourceFactor
 		METHOD <init> (Ljava/lang/String;II)V
 			ARG 3 value

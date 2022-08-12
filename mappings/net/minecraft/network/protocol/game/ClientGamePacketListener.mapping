@@ -3,23 +3,15 @@ CLASS net/minecraft/network/protocol/game/ClientGamePacketListener
 		ARG 1 packet
 	METHOD handleAddExperienceOrb (Lnet/minecraft/network/protocol/game/ClientboundAddExperienceOrbPacket;)V
 		ARG 1 packet
-	METHOD handleAddMob (Lnet/minecraft/network/protocol/game/ClientboundAddMobPacket;)V
-		ARG 1 packet
 	METHOD handleAddObjective (Lnet/minecraft/network/protocol/game/ClientboundSetObjectivePacket;)V
 		ARG 1 packet
 	METHOD handleAddOrRemoveRecipes (Lnet/minecraft/network/protocol/game/ClientboundRecipePacket;)V
 		ARG 1 packet
-	METHOD handleAddPainting (Lnet/minecraft/network/protocol/game/ClientboundAddPaintingPacket;)V
-		ARG 1 packet
 	METHOD handleAddPlayer (Lnet/minecraft/network/protocol/game/ClientboundAddPlayerPacket;)V
-		ARG 1 packet
-	METHOD handleAddVibrationSignal (Lnet/minecraft/network/protocol/game/ClientboundAddVibrationSignalPacket;)V
 		ARG 1 packet
 	METHOD handleAnimate (Lnet/minecraft/network/protocol/game/ClientboundAnimatePacket;)V
 		ARG 1 packet
 	METHOD handleAwardStats (Lnet/minecraft/network/protocol/game/ClientboundAwardStatsPacket;)V
-		ARG 1 packet
-	METHOD handleBlockBreakAck (Lnet/minecraft/network/protocol/game/ClientboundBlockBreakAckPacket;)V
 		ARG 1 packet
 	METHOD handleBlockDestruction (Lnet/minecraft/network/protocol/game/ClientboundBlockDestructionPacket;)V
 		ARG 1 packet
@@ -32,8 +24,6 @@ CLASS net/minecraft/network/protocol/game/ClientGamePacketListener
 	METHOD handleBossUpdate (Lnet/minecraft/network/protocol/game/ClientboundBossEventPacket;)V
 		ARG 1 packet
 	METHOD handleChangeDifficulty (Lnet/minecraft/network/protocol/game/ClientboundChangeDifficultyPacket;)V
-		ARG 1 packet
-	METHOD handleChat (Lnet/minecraft/network/protocol/game/ClientboundChatPacket;)V
 		ARG 1 packet
 	METHOD handleChunkBlocksUpdate (Lnet/minecraft/network/protocol/game/ClientboundSectionBlocksUpdatePacket;)V
 		ARG 1 packet
@@ -73,11 +63,7 @@ CLASS net/minecraft/network/protocol/game/ClientGamePacketListener
 		ARG 1 packet
 	METHOD handleKeepAlive (Lnet/minecraft/network/protocol/game/ClientboundKeepAlivePacket;)V
 		ARG 1 packet
-	METHOD handleLevelChunk (Lnet/minecraft/network/protocol/game/ClientboundLevelChunkPacket;)V
-		ARG 1 packet
 	METHOD handleLevelEvent (Lnet/minecraft/network/protocol/game/ClientboundLevelEventPacket;)V
-		ARG 1 packet
-	METHOD handleLightUpdatePacked (Lnet/minecraft/network/protocol/game/ClientboundLightUpdatePacket;)V
 		ARG 1 packet
 	METHOD handleLogin (Lnet/minecraft/network/protocol/game/ClientboundLoginPacket;)V
 		ARG 1 packet

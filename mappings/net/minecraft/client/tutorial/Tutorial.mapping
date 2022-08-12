@@ -10,6 +10,7 @@ CLASS net/minecraft/client/tutorial/Tutorial
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 state
+		ARG 4 progress
 	METHOD onGetItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 state
 	METHOD onInput (Lnet/minecraft/client/player/Input;)V

@@ -6,3 +6,7 @@ CLASS net/minecraft/network/protocol/game/ClientboundPlayerLookAtPacket
 	METHOD <init> (Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;)V
 		ARG 1 fromAnchor
 		ARG 3 toAnchor
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

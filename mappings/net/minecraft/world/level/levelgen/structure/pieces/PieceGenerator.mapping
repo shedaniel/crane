@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/structure/pieces/PieceGenerator
+	CLASS Context
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/LevelHeightAccessor;Lnet/minecraft/world/level/levelgen/WorldgenRandom;J)V
+			ARG 1 config
+			ARG 2 chunkGenerator
+			ARG 3 structureTemplateManager
+			ARG 4 chunkPos
+			ARG 5 heightAccessor
+			ARG 6 random
+			ARG 7 seed

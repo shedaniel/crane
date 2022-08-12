@@ -2,5 +2,3 @@ CLASS net/minecraft/server/packs/resources/SimpleJsonResourceReloadListener
 	METHOD <init> (Lcom/google/gson/Gson;Ljava/lang/String;)V
 		ARG 1 gson
 		ARG 2 directory
-	METHOD lambda$prepare$0 (Ljava/lang/String;)Z
-		ARG 0 path

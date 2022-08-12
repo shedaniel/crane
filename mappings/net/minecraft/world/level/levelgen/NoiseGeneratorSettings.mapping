@@ -1,16 +1,13 @@
 CLASS net/minecraft/world/level/levelgen/NoiseGeneratorSettings
-	METHOD <init> (Lnet/minecraft/world/level/levelgen/StructureSettings;Lnet/minecraft/world/level/levelgen/NoiseSettings;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;IIIIZZZZZZ)V
-		ARG 1 structureSettings
-		ARG 2 noiseSettings
-		ARG 3 defaultBlock
-		ARG 4 defaultFluid
-		ARG 5 bedrockRoofPosition
-		ARG 6 bedrockFloorPosition
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseSettings;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/levelgen/NoiseRouter;Lnet/minecraft/world/level/levelgen/SurfaceRules$RuleSource;Ljava/util/List;IZZZZ)V
+		ARG 1 noiseSettings
+		ARG 2 defaultBlock
+		ARG 3 defaultFluid
+		ARG 4 noiseRouter
+		ARG 5 surfaceRule
+		ARG 6 spawnTarget
 		ARG 7 seaLevel
-		ARG 8 minSurfaceLevel
-		ARG 9 disableMobGeneration
-		ARG 10 aquifersEnabled
-		ARG 11 noiseCavesEnabled
-		ARG 12 deepslateEnabled
-		ARG 13 oreVeinsEnabled
-		ARG 14 noodleCavesEnabled
+		ARG 8 disableMobGeneration
+		ARG 9 aquifersEnabled
+		ARG 10 oreVeinsEnabled
+		ARG 11 useLegacyRandomSource

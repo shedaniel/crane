@@ -1,0 +1,4 @@
+CLASS net/minecraft/tags/TagFile
+	METHOD <init> (Ljava/util/List;Z)V
+		ARG 1 entries
+		ARG 2 replace

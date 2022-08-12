@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/animation/AnimationDefinition
+	METHOD <init> (FZLjava/util/Map;)V
+		ARG 1 lengthInSeconds
+		ARG 2 looping
+		ARG 3 boneAnimations
+	CLASS Builder
+		METHOD <init> (F)V
+			ARG 1 length

@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/gui/components/PlainTextButton
+	METHOD <init> (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/client/gui/Font;)V
+		ARG 5 message
+		ARG 7 font

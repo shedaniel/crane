@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/feature/structures/SinglePoolElement
-	METHOD <init> (Lcom/mojang/datafixers/util/Either;Ljava/util/function/Supplier;Lnet/minecraft/world/level/levelgen/feature/structures/StructureTemplatePool$Projection;)V
-		ARG 1 template
-		ARG 2 processors

@@ -1,43 +1,16 @@
 CLASS net/minecraft/client/gui/screens/PresetFlatWorldScreen
 	METHOD <init> (Lnet/minecraft/client/gui/screens/CreateFlatWorldScreen;)V
 		ARG 1 parent
-	METHOD fromString (Lnet/minecraft/core/Registry;Ljava/lang/String;Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;
-		ARG 0 biomeRegistry
-		ARG 1 delimiter
-		ARG 2 settings
 	METHOD getLayerInfoFromString (Ljava/lang/String;I)Lnet/minecraft/world/level/levelgen/flat/FlatLayerInfo;
 		ARG 0 string
 	METHOD getLayersInfoFromString (Ljava/lang/String;)Ljava/util/List;
 		ARG 0 string
-	METHOD lambda$init$2 (Lnet/minecraft/core/Registry;Lnet/minecraft/client/gui/components/Button;)V
-		ARG 2 button
 	METHOD lambda$init$3 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
-	METHOD lambda$preset$5 (Ljava/util/List;ZZZ[Lnet/minecraft/world/level/levelgen/flat/FlatLayerInfo;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/Registry;)Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;
-		ARG 6 biomeRegistry
-	METHOD preset (Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/resources/ResourceKey;Ljava/util/List;ZZZ[Lnet/minecraft/world/level/levelgen/flat/FlatLayerInfo;)V
-		ARG 0 name
-		ARG 1 item
-		ARG 2 biomeKey
-		ARG 3 features
-		ARG 4 addStronghold
-		ARG 5 addDecoration
-		ARG 6 addLakes
-		ARG 7 layers
-	METHOD save (Lnet/minecraft/core/Registry;Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)Ljava/lang/String;
-		ARG 0 biomeRegistry
-		ARG 1 settings
 	METHOD updateButtonValidity (Z)V
 		ARG 1 active
-	CLASS PresetInfo
-		METHOD <init> (Lnet/minecraft/world/item/Item;Lnet/minecraft/network/chat/Component;Ljava/util/function/Function;)V
-			ARG 1 icon
-			ARG 2 name
-			ARG 3 settings
 	CLASS PresetsList
 		CLASS Entry
-			METHOD <init> (Lnet/minecraft/client/gui/screens/PresetFlatWorldScreen$PresetsList;Lnet/minecraft/client/gui/screens/PresetFlatWorldScreen$PresetInfo;)V
-				ARG 2 preset
 			METHOD blitSlot (Lcom/mojang/blaze3d/vertex/PoseStack;IILnet/minecraft/world/item/Item;)V
 				ARG 1 poses
 				ARG 2 x

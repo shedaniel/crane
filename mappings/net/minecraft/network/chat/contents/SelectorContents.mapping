@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/chat/contents/SelectorContents
+	METHOD <init> (Ljava/lang/String;Ljava/util/Optional;)V
+		ARG 1 pattern
+		ARG 2 separator

@@ -1,9 +1,6 @@
 CLASS net/minecraft/commands/arguments/item/ItemPredicateArgument
-	CLASS TagPredicate
-		METHOD <init> (Lnet/minecraft/tags/Tag;Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 tag
-			ARG 2 nbt
-	CLASS ItemPredicate
-		METHOD <init> (Lnet/minecraft/world/item/Item;Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 item
-			ARG 2 nbt
+	METHOD getItemPredicate (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/function/Predicate;
+		ARG 0 context
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder

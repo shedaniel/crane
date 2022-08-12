@@ -1,1 +1,8 @@
 CLASS net/minecraft/network/protocol/game/ServerboundEditBookPacket
+	METHOD <init> (ILjava/util/List;Ljava/util/Optional;)V
+		ARG 1 slot
+		ARG 3 title
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

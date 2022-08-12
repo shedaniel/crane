@@ -3,7 +3,3 @@ CLASS net/minecraft/client/gui/screens/inventory/LoomScreen
 		ARG 1 menu
 		ARG 2 inventory
 		ARG 3 title
-	METHOD renderPattern (III)V
-		ARG 1 bannerPatternIndex
-		ARG 2 x
-		ARG 3 y

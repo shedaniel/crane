@@ -1,0 +1,8 @@
+CLASS net/minecraft/util/profiling/jfr/stats/ThreadAllocationStat
+	METHOD <init> (Ljava/time/Instant;Ljava/lang/String;J)V
+		ARG 1 timestamp
+		ARG 2 threadName
+		ARG 3 totalBytes
+	CLASS Summary
+		METHOD <init> (Ljava/util/Map;)V
+			ARG 1 allocationsPerSecondByThread

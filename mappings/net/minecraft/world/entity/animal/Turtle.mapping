@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/entity/animal/Turtle
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD setHomePos (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
 	METHOD setTravelPos (Lnet/minecraft/core/BlockPos;)V
@@ -23,6 +25,9 @@ CLASS net/minecraft/world/entity/animal/Turtle
 	CLASS TurtleGoToWaterGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;D)V
 			ARG 1 turtle
+	CLASS TurtlePathNavigation
+		METHOD isStableDestination (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 pos
 	CLASS TurtleRandomStrollGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Turtle;DI)V
 			ARG 1 turtle

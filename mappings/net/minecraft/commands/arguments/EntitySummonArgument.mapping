@@ -1,0 +1,3 @@
+CLASS net/minecraft/commands/arguments/EntitySummonArgument
+	METHOD getSummonableEntity (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 context

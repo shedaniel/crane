@@ -4,5 +4,12 @@ CLASS net/minecraft/world/entity/vehicle/AbstractMinecart
 		ARG 5 yo
 	METHOD isRedstoneConductor (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
+	METHOD lerpMotion (DDD)V
+		ARG 1 lxd
+		ARG 3 lyd
+	METHOD lerpTo (DDDFFIZ)V
+		ARG 1 lx
+		ARG 3 ly
+		ARG 5 lz
 	METHOD setDisplayBlockState (Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 state

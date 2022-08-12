@@ -29,8 +29,6 @@ CLASS net/minecraft/core/BlockPos
 	METHOD offset (JLnet/minecraft/core/Direction;)J
 		ARG 0 pos
 		ARG 2 direction
-	METHOD randomBetweenClosed (Ljava/util/Random;IIIIIII)Ljava/lang/Iterable;
-		ARG 0 random
 	METHOD relative (Lnet/minecraft/core/Direction;)Lnet/minecraft/core/BlockPos;
 		ARG 1 direction
 	METHOD rotate (Lnet/minecraft/world/level/block/Rotation;)Lnet/minecraft/core/BlockPos;

@@ -1,0 +1,8 @@
+CLASS net/minecraft/commands/synchronization/ArgumentTypeInfo
+	METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;
+		ARG 1 buf
+	METHOD serializeToJson (Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;Lcom/google/gson/JsonObject;)V
+		ARG 1 template
+		ARG 2 json
+	METHOD serializeToNetwork (Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 2 buf

@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/blockpredicates/MatchingFluidsPredicate
+	METHOD <init> (Lnet/minecraft/core/Vec3i;Lnet/minecraft/core/HolderSet;)V
+		ARG 2 fluids
+	METHOD test (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

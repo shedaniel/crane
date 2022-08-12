@@ -3,3 +3,6 @@ CLASS net/minecraft/commands/synchronization/SuggestionProviders
 		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lcom/mojang/brigadier/suggestion/SuggestionProvider;)V
 			ARG 1 name
 			ARG 2 delegate
+		METHOD getSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 context
+			ARG 2 builder

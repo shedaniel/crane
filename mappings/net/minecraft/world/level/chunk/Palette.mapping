@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/chunk/Palette
+	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

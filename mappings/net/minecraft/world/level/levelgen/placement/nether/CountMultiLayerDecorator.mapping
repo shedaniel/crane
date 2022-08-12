@@ -1,8 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/placement/nether/CountMultiLayerDecorator
-	METHOD findOnGroundYPosition (Lnet/minecraft/world/level/levelgen/placement/DecorationContext;IIII)I
-		ARG 0 context
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD isEmpty (Lnet/minecraft/world/level/block/state/BlockState;)Z
-		ARG 0 state

@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/datafix/fixes/ItemStackTagFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;Ljava/util/function/Predicate;)V
+		ARG 2 name
+		ARG 3 idFilter

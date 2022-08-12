@@ -2,3 +2,5 @@ CLASS net/minecraft/world/effect/MobEffect
 	METHOD <init> (Lnet/minecraft/world/effect/MobEffectCategory;I)V
 		ARG 1 category
 		ARG 2 color
+	METHOD setFactorDataFactory (Ljava/util/function/Supplier;)Lnet/minecraft/world/effect/MobEffect;
+		ARG 1 factorDataFactory

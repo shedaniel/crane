@@ -2,3 +2,7 @@ CLASS net/minecraft/world/item/crafting/SimpleCookingSerializer
 	METHOD <init> (Lnet/minecraft/world/item/crafting/SimpleCookingSerializer$CookieBaker;I)V
 		ARG 1 factory
 		ARG 2 defaultCookingTime
+	METHOD fromNetwork (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/AbstractCookingRecipe;
+		ARG 2 buf
+	METHOD toNetwork (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/AbstractCookingRecipe;)V
+		ARG 1 buf

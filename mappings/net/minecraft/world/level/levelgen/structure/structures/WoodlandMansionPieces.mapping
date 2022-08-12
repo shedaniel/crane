@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces
+	CLASS SimpleGrid
+		METHOD <init> (III)V
+			ARG 1 width
+			ARG 2 height
+			ARG 3 valueIfOutside
+	CLASS MansionGrid
+		METHOD <init> (Lnet/minecraft/util/RandomSource;)V
+			ARG 1 random
+	CLASS MansionPiecePlacer
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/util/RandomSource;)V
+			ARG 1 structureTemplateManager
+			ARG 2 random
+		METHOD createMansion (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;Ljava/util/List;Lnet/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$MansionGrid;)V
+			ARG 1 position
+			ARG 2 rotation

@@ -1,10 +1,10 @@
 CLASS net/minecraft/advancements/critereon/LocationPredicate
-	METHOD <init> (Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/levelgen/feature/StructureFeature;Lnet/minecraft/resources/ResourceKey;Ljava/lang/Boolean;Lnet/minecraft/advancements/critereon/LightPredicate;Lnet/minecraft/advancements/critereon/BlockPredicate;Lnet/minecraft/advancements/critereon/FluidPredicate;)V
+	METHOD <init> (Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceKey;Ljava/lang/Boolean;Lnet/minecraft/advancements/critereon/LightPredicate;Lnet/minecraft/advancements/critereon/BlockPredicate;Lnet/minecraft/advancements/critereon/FluidPredicate;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 biome
-		ARG 5 feature
+		ARG 5 structure
 		ARG 6 dimension
 		ARG 7 smokey
 		ARG 8 light
@@ -16,8 +16,6 @@ CLASS net/minecraft/advancements/critereon/LocationPredicate
 		ARG 0 biomeKey
 	METHOD inDimension (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/advancements/critereon/LocationPredicate;
 		ARG 0 levelKey
-	METHOD inFeature (Lnet/minecraft/world/level/levelgen/feature/StructureFeature;)Lnet/minecraft/advancements/critereon/LocationPredicate;
-		ARG 0 feature
 	METHOD lambda$serializeToJson$0 (Lcom/google/gson/JsonObject;Lcom/google/gson/JsonElement;)V
 		ARG 1 json
 	METHOD matches (Lnet/minecraft/server/level/ServerLevel;DDD)Z
@@ -32,14 +30,14 @@ CLASS net/minecraft/advancements/critereon/LocationPredicate
 			ARG 1 block
 		METHOD setDimension (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/advancements/critereon/LocationPredicate$Builder;
 			ARG 1 dimension
-		METHOD setFeature (Lnet/minecraft/world/level/levelgen/feature/StructureFeature;)Lnet/minecraft/advancements/critereon/LocationPredicate$Builder;
-			ARG 1 feature
 		METHOD setFluid (Lnet/minecraft/advancements/critereon/FluidPredicate;)Lnet/minecraft/advancements/critereon/LocationPredicate$Builder;
 			ARG 1 fluid
 		METHOD setLight (Lnet/minecraft/advancements/critereon/LightPredicate;)Lnet/minecraft/advancements/critereon/LocationPredicate$Builder;
 			ARG 1 light
 		METHOD setSmokey (Ljava/lang/Boolean;)Lnet/minecraft/advancements/critereon/LocationPredicate$Builder;
 			ARG 1 smokey
+		METHOD setStructure (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/advancements/critereon/LocationPredicate$Builder;
+			ARG 1 structure
 		METHOD setX (Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;)Lnet/minecraft/advancements/critereon/LocationPredicate$Builder;
 			ARG 1 x
 		METHOD setY (Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;)Lnet/minecraft/advancements/critereon/LocationPredicate$Builder;

@@ -1,5 +1,8 @@
 CLASS net/minecraft/world/level/chunk/LevelChunkSection
-	METHOD <init> (ISSS)V
-		ARG 2 nonEmptyBlockCount
-		ARG 3 tickingBlockCount
-		ARG 4 tickingFluidCount
+	METHOD <init> (ILnet/minecraft/world/level/chunk/PalettedContainer;Lnet/minecraft/world/level/chunk/PalettedContainerRO;)V
+		ARG 2 states
+		ARG 3 biomes
+	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

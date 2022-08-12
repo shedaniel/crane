@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/item/CompassItemPropertyFunction
+	METHOD <init> (Lnet/minecraft/client/renderer/item/CompassItemPropertyFunction$CompassTarget;)V
+		ARG 1 compassTarget
+	CLASS CompassWobble
+		METHOD update (JD)V
+			ARG 1 lastUpdateTick

@@ -6,3 +6,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundBlockEventPacket
 		ARG 4 b1
 	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/player/ProfileKeyPair
+	METHOD <init> (Ljava/security/PrivateKey;Lnet/minecraft/world/entity/player/ProfilePublicKey;Ljava/time/Instant;)V
+		ARG 1 privateKey
+		ARG 2 publicKey
+		ARG 3 refreshedAfter

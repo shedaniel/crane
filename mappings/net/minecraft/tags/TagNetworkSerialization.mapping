@@ -1,0 +1,8 @@
+CLASS net/minecraft/tags/TagNetworkSerialization
+	CLASS NetworkPayload
+		METHOD <init> (Ljava/util/Map;)V
+			ARG 1 tags
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/tags/TagNetworkSerialization$NetworkPayload;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

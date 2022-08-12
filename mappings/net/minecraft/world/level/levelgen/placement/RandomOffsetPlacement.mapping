@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/placement/RandomOffsetPlacement
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;)V
+		ARG 1 xzSpread
+		ARG 2 ySpread

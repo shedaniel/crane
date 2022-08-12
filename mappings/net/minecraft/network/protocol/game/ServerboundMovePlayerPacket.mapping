@@ -5,3 +5,23 @@ CLASS net/minecraft/network/protocol/game/ServerboundMovePlayerPacket
 		ARG 5 z
 		ARG 7 yRot
 		ARG 8 xRot
+	CLASS Pos
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ServerboundMovePlayerPacket$Pos;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
+	CLASS Rot
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ServerboundMovePlayerPacket$Rot;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
+	CLASS PosRot
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ServerboundMovePlayerPacket$PosRot;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
+	CLASS StatusOnly
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ServerboundMovePlayerPacket$StatusOnly;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

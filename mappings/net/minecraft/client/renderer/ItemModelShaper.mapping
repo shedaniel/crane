@@ -3,5 +3,3 @@ CLASS net/minecraft/client/renderer/ItemModelShaper
 		ARG 1 modelManager
 	METHOD getItemModel (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/client/resources/model/BakedModel;
 		ARG 1 stack
-	METHOD getParticleIcon (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;
-		ARG 1 stack

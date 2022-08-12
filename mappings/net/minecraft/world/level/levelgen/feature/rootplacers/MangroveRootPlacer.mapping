@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/levelgen/feature/rootplacers/MangroveRootPlacer
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;Ljava/util/Optional;Lnet/minecraft/world/level/levelgen/feature/rootplacers/MangroveRootPlacement;)V
+		ARG 4 mangroveRootPlacement

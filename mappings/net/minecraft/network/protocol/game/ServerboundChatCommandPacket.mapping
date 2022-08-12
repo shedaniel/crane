@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/protocol/game/ServerboundChatCommandPacket
+	METHOD <init> (Ljava/lang/String;Ljava/time/Instant;Lnet/minecraft/commands/arguments/ArgumentSignatures;Z)V
+		ARG 1 command
+		ARG 2 timeStamp
+		ARG 3 argumentSignatures
+		ARG 4 signedPreview
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

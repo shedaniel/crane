@@ -1,5 +1,0 @@
-CLASS net/minecraft/network/protocol/game/ClientboundAddPaintingPacket
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf
-	METHOD <init> (Lnet/minecraft/world/entity/decoration/Painting;)V
-		ARG 1 painting

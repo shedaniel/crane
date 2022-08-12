@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/profiling/jfr/event/PacketEvent
+	METHOD <init> (IILjava/net/SocketAddress;I)V
+		ARG 1 protocolId
+		ARG 2 packetId
+		ARG 4 bytes

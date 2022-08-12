@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/gui/screens/worldselection/WorldCreationContext
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/WorldGenSettings;Lcom/mojang/serialization/Lifecycle;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/server/ReloadableServerResources;)V
+		ARG 1 worldGenSettings
+		ARG 2 worldSettingsStability
+		ARG 3 registryAccess
+		ARG 4 dataPackResources

@@ -1,0 +1,4 @@
+CLASS net/minecraft/resources/HolderSetCodec
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;Z)V
+		ARG 1 registryKey
+		ARG 2 elementCodec

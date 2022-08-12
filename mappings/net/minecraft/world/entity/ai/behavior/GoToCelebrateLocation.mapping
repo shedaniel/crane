@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/GoToCelebrateLocation
-	METHOD <init> (IF)V
-		ARG 1 closeEnoughDist
-		ARG 2 speedModifier

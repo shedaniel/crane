@@ -5,8 +5,10 @@ CLASS net/minecraft/world/level/block/BeehiveBlock
 	METHOD dropHoneycomb (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
 		ARG 0 level
 		ARG 1 pos
-	METHOD getRandomOffset (Ljava/util/Random;)Lnet/minecraft/core/Direction;
-		ARG 0 random
+	METHOD getRenderShape (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;
+		ARG 1 state
+	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	METHOD hiveContainsBees (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 level
 		ARG 2 pos

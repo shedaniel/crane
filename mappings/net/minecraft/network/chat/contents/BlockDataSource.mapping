@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/chat/contents/BlockDataSource
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/commands/arguments/coordinates/Coordinates;)V
+		ARG 1 posPattern
+		ARG 2 compiledPos

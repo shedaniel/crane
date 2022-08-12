@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/PeriodicNotificationManager
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lit/unimi/dsi/fastutil/objects/Object2BooleanFunction;)V
+		ARG 1 notifications
+		ARG 2 selector
+	CLASS Notification
+		METHOD <init> (JJLjava/lang/String;Ljava/lang/String;)V
+			ARG 3 period
+	CLASS NotificationTask
+		METHOD <init> (Ljava/util/List;JJ)V
+			ARG 1 notifications

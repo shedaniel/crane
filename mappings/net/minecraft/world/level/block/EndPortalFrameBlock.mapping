@@ -1,1 +1,5 @@
 CLASS net/minecraft/world/level/block/EndPortalFrameBlock
+	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD useShapeForLightOcclusion (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/RuinedPortalStructure
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/Structure$StructureSettings;Ljava/util/List;)V
+		ARG 2 setups
+	CLASS Setup
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/structures/RuinedPortalPiece$VerticalPlacement;FFZZZZF)V
+			ARG 1 placement
+			ARG 2 airPocketProbability
+			ARG 3 mossiness
+			ARG 4 overgrown
+			ARG 5 vines
+			ARG 6 canBeCold
+			ARG 7 replaceWithBlackstone
+			ARG 8 weight

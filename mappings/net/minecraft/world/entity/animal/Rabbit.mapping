@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/entity/animal/Rabbit
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD isTemptingItem (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
 	CLASS RaidGardenGoal
@@ -11,8 +13,8 @@ CLASS net/minecraft/world/entity/animal/Rabbit
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;D)V
 			ARG 1 rabbit
 	CLASS RabbitJumpControl
-		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;Lnet/minecraft/world/entity/animal/Rabbit;)V
-			ARG 2 rabbit
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit;)V
+			ARG 1 rabbit
 		METHOD setCanJump (Z)V
 			ARG 1 canJump
 	CLASS RabbitMoveControl

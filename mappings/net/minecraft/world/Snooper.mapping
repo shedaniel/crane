@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/Snooper
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/SnooperPopulator;J)V
-		ARG 2 populator
-		ARG 3 startupTime

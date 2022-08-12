@@ -1,14 +1,14 @@
 CLASS net/minecraft/client/server/IntegratedServer
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/client/Minecraft;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/server/ServerResources;Lnet/minecraft/world/level/storage/WorldData;Lcom/mojang/authlib/minecraft/MinecraftSessionService;Lcom/mojang/authlib/GameProfileRepository;Lnet/minecraft/server/players/GameProfileCache;Lnet/minecraft/server/level/progress/ChunkProgressListenerFactory;)V
-		ARG 1 thread
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/server/WorldStem;Lnet/minecraft/server/Services;Lnet/minecraft/server/level/progress/ChunkProgressListenerFactory;)V
+		ARG 1 serverThread
 		ARG 2 minecraft
-		ARG 3 registryHolder
-		ARG 4 storageAccess
-		ARG 5 repositiories
-		ARG 6 serverResources
-		ARG 7 worldData
-		ARG 8 sessionService
-		ARG 9 profileRepository
-		ARG 10 gameProfileCache
+		ARG 3 storageSource
+		ARG 4 packRepository
+		ARG 5 worldStem
+		ARG 6 services
+		ARG 7 progressListenerFactory
+	METHOD publishServer (Lnet/minecraft/world/level/GameType;ZI)Z
+		ARG 1 publishedGameType
+		ARG 3 publishedPort
 	METHOD setUUID (Ljava/util/UUID;)V
 		ARG 1 uuid

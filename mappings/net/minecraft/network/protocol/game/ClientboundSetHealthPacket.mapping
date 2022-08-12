@@ -3,3 +3,7 @@ CLASS net/minecraft/network/protocol/game/ClientboundSetHealthPacket
 		ARG 1 health
 		ARG 2 food
 		ARG 3 saturation
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

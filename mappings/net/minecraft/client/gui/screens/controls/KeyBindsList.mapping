@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/gui/screens/controls/KeyBindsList
+	METHOD <init> (Lnet/minecraft/client/gui/screens/controls/KeyBindsScreen;Lnet/minecraft/client/Minecraft;)V
+		ARG 1 keyBindsScreen
+	CLASS KeyEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/controls/KeyBindsList;Lnet/minecraft/client/KeyMapping;Lnet/minecraft/network/chat/Component;)V
+			ARG 2 key
+			ARG 3 name
+	CLASS CategoryEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/controls/KeyBindsList;Lnet/minecraft/network/chat/Component;)V
+			ARG 2 name

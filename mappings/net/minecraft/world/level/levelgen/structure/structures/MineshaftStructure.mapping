@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/MineshaftStructure
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/Structure$StructureSettings;Lnet/minecraft/world/level/levelgen/structure/structures/MineshaftStructure$Type;)V
+		ARG 2 type
+	CLASS Type
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;)V
+			ARG 3 name

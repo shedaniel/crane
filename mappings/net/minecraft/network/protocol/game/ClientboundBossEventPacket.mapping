@@ -18,6 +18,8 @@ CLASS net/minecraft/network/protocol/game/ClientboundBossEventPacket
 		ARG 0 event
 	METHOD dispatch (Lnet/minecraft/network/protocol/game/ClientboundBossEventPacket$Handler;)V
 		ARG 1 handler
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	CLASS Handler
 		METHOD add (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;FLnet/minecraft/world/BossEvent$BossBarColor;Lnet/minecraft/world/BossEvent$BossBarOverlay;ZZZ)V
 			ARG 1 uuid
@@ -56,6 +58,8 @@ CLASS net/minecraft/network/protocol/game/ClientboundBossEventPacket
 			ARG 1 buf
 		METHOD <init> (Lnet/minecraft/world/BossEvent;)V
 			ARG 1 event
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
 	CLASS OperationType
 		METHOD <init> (Ljava/lang/String;ILjava/util/function/Function;)V
 			ARG 3 reader
@@ -68,16 +72,22 @@ CLASS net/minecraft/network/protocol/game/ClientboundBossEventPacket
 			ARG 1 buf
 		METHOD <init> (Lnet/minecraft/network/chat/Component;)V
 			ARG 1 name
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
 	CLASS UpdateStyleOperation
 		METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
 			ARG 1 buf
 		METHOD <init> (Lnet/minecraft/world/BossEvent$BossBarColor;Lnet/minecraft/world/BossEvent$BossBarOverlay;)V
 			ARG 1 color
 			ARG 2 overlay
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
 	CLASS UpdateProgressOperation
 		METHOD <init> (F)V
 			ARG 1 progress
 		METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
 			ARG 1 buf
 	CLASS UpdatePropertiesOperation
 		METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
@@ -86,3 +96,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundBossEventPacket
 			ARG 1 darkenScreen
 			ARG 2 playMusic
 			ARG 3 createWorldFog
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

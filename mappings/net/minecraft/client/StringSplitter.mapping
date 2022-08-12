@@ -100,6 +100,8 @@ CLASS net/minecraft/client/StringSplitter
 	CLASS LineBreakFinder
 		METHOD <init> (Lnet/minecraft/client/StringSplitter;F)V
 			ARG 2 maxWidth
+		METHOD accept (ILnet/minecraft/network/chat/Style;I)Z
+			ARG 2 lastSpaceStyle
 		METHOD addToOffset (I)V
 			ARG 1 offset
 		METHOD finishIteration (ILnet/minecraft/network/chat/Style;)Z

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces
+	CLASS OceanRuinPiece
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;FLnet/minecraft/world/level/levelgen/structure/structures/OceanRuinStructure$Type;Z)V
+			ARG 5 integrity
+			ARG 6 biomeType
+			ARG 7 isLarge

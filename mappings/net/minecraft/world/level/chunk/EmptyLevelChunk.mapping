@@ -1,1 +1,11 @@
 CLASS net/minecraft/world/level/chunk/EmptyLevelChunk
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/Holder;)V
+		ARG 3 biome
+	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 pos
+	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 pos
+	METHOD getLightEmission (Lnet/minecraft/core/BlockPos;)I
+		ARG 1 pos
+	METHOD removeBlockEntity (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos

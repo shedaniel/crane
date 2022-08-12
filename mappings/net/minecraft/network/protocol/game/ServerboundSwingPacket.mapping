@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ServerboundSwingPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/world/InteractionHand;)V
 		ARG 1 hand
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

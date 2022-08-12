@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/block/MultifaceSpreader
+	METHOD <init> (Lnet/minecraft/world/level/block/MultifaceSpreader$SpreadConfig;)V
+		ARG 1 config
+	CLASS SpreadPos
+		METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)V
+			ARG 1 pos
+			ARG 2 face
+	CLASS SpreadConfig
+		METHOD isOtherBlockValidAsSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+			ARG 1 state
+	CLASS DefaultSpreaderConfig
+		METHOD <init> (Lnet/minecraft/world/level/block/MultifaceBlock;)V
+			ARG 1 block

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces
+	CLASS RoomDefinition
+		METHOD <init> (I)V
+			ARG 1 index
+		METHOD findSource (I)Z
+			ARG 1 scanIndex
+	CLASS OceanMonumentPiece
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;ILnet/minecraft/core/Direction;Lnet/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$RoomDefinition;III)V
+			ARG 4 roomDefinition

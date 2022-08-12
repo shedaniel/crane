@@ -1,11 +1,11 @@
 buildscript {
     dependencies {
-        classpath "dev.architectury:crane-plugin-bootstrapper:$crane_plugin_version"
+        classpath "me.shedaniel.crane:crane-plugin-bootstrapper:$crane_plugin_version"
     }
 }
 
 plugins {
-    id "dev.architectury.crane-plugin" version "$crane_plugin_version"
+    id "me.shedaniel.crane.crane-plugin" version "$crane_plugin_version"
     id "maven-publish"
 }
 
@@ -28,6 +28,9 @@ tasks.suggestMappings {
     autoMap("net/minecraft/world/item/ItemStack", "stack")
     autoMap("net/minecraft/world/InteractionHand", "hand")
     autoMap("net/minecraft/world/phys/AABB", "box")
+    autoPropose("com/mojang/brigadier/suggestion/SuggestionsBuilder", "builder")
+    autoPropose("com/mojang/brigadier/context/CommandContext", "context")
+    autoPropose("net/minecraft/network/FriendlyByteBuf", "buf")
 }
 
 tasks.run.apply {

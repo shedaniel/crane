@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/feature/configurations/NetherForestVegetationConfig
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;II)V
+		ARG 2 spreadWidth
+		ARG 3 spreadHeight

@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/game/VecDeltaCodec
+	METHOD setBase (Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 base

@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/profiling/jfr/JfrProfiler
+	METHOD onServerTick (F)V
+		ARG 1 currentAverageTickTime

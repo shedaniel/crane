@@ -6,3 +6,7 @@ CLASS net/minecraft/network/protocol/game/ServerboundSetCommandBlockPacket
 		ARG 4 trackOutput
 		ARG 5 conditional
 		ARG 6 automatic
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

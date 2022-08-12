@@ -1,5 +1,6 @@
 CLASS net/minecraft/client/renderer/entity/layers/CustomHeadLayer
-	METHOD <init> (Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/geom/EntityModelSet;FFF)V
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/geom/EntityModelSet;FFFLnet/minecraft/client/renderer/ItemInHandRenderer;)V
 		ARG 3 scaleX
 		ARG 4 scaleY
 		ARG 5 scaleZ
+		ARG 6 itemInHandRenderer

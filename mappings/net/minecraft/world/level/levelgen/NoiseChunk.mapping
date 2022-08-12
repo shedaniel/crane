@@ -1,0 +1,23 @@
+CLASS net/minecraft/world/level/levelgen/NoiseChunk
+	METHOD <init> (ILnet/minecraft/world/level/levelgen/RandomState;IILnet/minecraft/world/level/levelgen/NoiseSettings;Lnet/minecraft/world/level/levelgen/DensityFunctions$BeardifierOrMarker;Lnet/minecraft/world/level/levelgen/NoiseGeneratorSettings;Lnet/minecraft/world/level/levelgen/Aquifer$FluidPicker;Lnet/minecraft/world/level/levelgen/blending/Blender;)V
+		ARG 1 cellCountXZ
+		ARG 5 noiseSettings
+		ARG 6 beardifier
+		ARG 9 blender
+	METHOD forIndex (I)Lnet/minecraft/world/level/levelgen/NoiseChunk;
+		ARG 1 arrayIndex
+	CLASS Cache2D
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction;)V
+			ARG 1 function
+	CLASS CacheOnce
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseChunk;Lnet/minecraft/world/level/levelgen/DensityFunction;)V
+			ARG 2 function
+	CLASS FlatCache
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseChunk;Lnet/minecraft/world/level/levelgen/DensityFunction;Z)V
+			ARG 2 noiseFiller
+	CLASS CacheAllInCell
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseChunk;Lnet/minecraft/world/level/levelgen/DensityFunction;)V
+			ARG 2 noiseFiller
+	CLASS NoiseInterpolator
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseChunk;Lnet/minecraft/world/level/levelgen/DensityFunction;)V
+			ARG 2 noiseFiller

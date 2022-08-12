@@ -1,0 +1,11 @@
+CLASS net/minecraft/resources/RegistryResourceAccess
+	CLASS ParsedEntry
+		METHOD <init> (Ljava/lang/Object;Ljava/util/OptionalInt;)V
+			ARG 1 value
+			ARG 2 fixedId
+	CLASS InMemoryStorage
+		CLASS Entry
+			METHOD <init> (Lcom/google/gson/JsonElement;ILcom/mojang/serialization/Lifecycle;)V
+				ARG 1 data
+				ARG 2 id
+				ARG 3 lifecycle

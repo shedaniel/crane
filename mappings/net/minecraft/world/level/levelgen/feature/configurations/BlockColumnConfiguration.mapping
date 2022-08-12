@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/feature/configurations/BlockColumnConfiguration
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;Z)V
+		ARG 1 layers
+		ARG 2 direction
+		ARG 3 allowedPlacement
+		ARG 4 prioritizeTip
+	CLASS Layer
+		METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;)V
+			ARG 1 height
+			ARG 2 state

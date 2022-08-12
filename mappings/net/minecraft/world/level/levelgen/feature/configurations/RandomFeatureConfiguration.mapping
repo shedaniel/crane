@@ -1,4 +1,4 @@
 CLASS net/minecraft/world/level/levelgen/feature/configurations/RandomFeatureConfiguration
-	METHOD <init> (Ljava/util/List;Ljava/util/function/Supplier;)V
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/core/Holder;)V
 		ARG 1 features
 		ARG 2 defaultFeature

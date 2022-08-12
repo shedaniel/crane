@@ -5,6 +5,8 @@ CLASS net/minecraft/world/item/BlockItem
 	METHOD canPlace (Lnet/minecraft/world/item/context/BlockPlaceContext;Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 ctx
 		ARG 2 state
+	METHOD getBlockEntityData (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 0 stack
 	METHOD getPlaceSound (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/sounds/SoundEvent;
 		ARG 1 state
 	METHOD getPlacementState (Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;

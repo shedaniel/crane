@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/level/block/LeverBlock
+	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	METHOD makeParticle (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;F)V
 		ARG 0 state
 		ARG 1 level

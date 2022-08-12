@@ -1,7 +1,5 @@
 CLASS net/minecraft/client/resources/sounds/AbstractSoundInstance
-	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/sounds/SoundSource;)V
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/sounds/SoundSource;Lnet/minecraft/util/RandomSource;)V
 		ARG 1 location
 		ARG 2 source
-	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
-		ARG 1 location
-		ARG 2 source
+		ARG 3 random

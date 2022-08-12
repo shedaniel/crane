@@ -2,3 +2,7 @@ CLASS net/minecraft/network/protocol/game/ServerboundBlockEntityTagQuery
 	METHOD <init> (ILnet/minecraft/core/BlockPos;)V
 		ARG 1 transactionId
 		ARG 2 pos
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

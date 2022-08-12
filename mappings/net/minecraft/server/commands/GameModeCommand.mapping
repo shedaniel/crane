@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/commands/GameModeCommand
+	METHOD setMode (Lcom/mojang/brigadier/context/CommandContext;Ljava/util/Collection;Lnet/minecraft/world/level/GameType;)I
+		ARG 0 context

@@ -1,14 +1,9 @@
 CLASS net/minecraft/client/multiplayer/ClientLevel
-	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientPacketListener;Lnet/minecraft/client/multiplayer/ClientLevel$ClientLevelData;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/dimension/DimensionType;ILjava/util/function/Supplier;Lnet/minecraft/client/renderer/LevelRenderer;ZJ)V
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientPacketListener;Lnet/minecraft/client/multiplayer/ClientLevel$ClientLevelData;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/Holder;IILjava/util/function/Supplier;Lnet/minecraft/client/renderer/LevelRenderer;ZJ)V
 		ARG 1 connection
 		ARG 2 clientLevelData
-		ARG 3 dimension
-		ARG 4 dimensionType
-		ARG 5 storageRange
-		ARG 6 profiler
-		ARG 7 levelRenderer
-		ARG 8 isDebug
-		ARG 9 seed
+		ARG 6 serverSimulationDistance
+		ARG 8 levelRenderer
 	METHOD addEntity (ILnet/minecraft/world/entity/Entity;)V
 		ARG 1 id
 		ARG 2 entity
@@ -23,25 +18,6 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 	METHOD calculateBlockTint (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/ColorResolver;)I
 		ARG 1 pos
 		ARG 2 colorResolver
-	METHOD doAnimateTick (IIIILjava/util/Random;Lnet/minecraft/client/multiplayer/ClientLevel$MarkerParticleStatus;Lnet/minecraft/core/BlockPos$MutableBlockPos;)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-		ARG 5 random
-		ARG 6 status
-		ARG 7 pos
-	METHOD lambda$clearTintCaches$4 (Lnet/minecraft/world/level/ColorResolver;Lnet/minecraft/client/color/block/BlockTintCache;)V
-		ARG 0 colorResolver
-		ARG 1 cache
-	METHOD lambda$doAnimateTick$5 (Lnet/minecraft/core/BlockPos$MutableBlockPos;Lnet/minecraft/world/level/biome/AmbientParticleSettings;)V
-		ARG 2 particle
-	METHOD lambda$new$0 (Lit/unimi/dsi/fastutil/objects/Object2ObjectArrayMap;)V
-		ARG 0 map
-	METHOD lambda$onChunkLoaded$3 (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/ColorResolver;Lnet/minecraft/client/color/block/BlockTintCache;)V
-		ARG 1 colorResolver
-		ARG 2 cache
-	METHOD lambda$tickEntities$1 (Lnet/minecraft/world/entity/Entity;)V
-		ARG 1 entity
 	METHOD onChunkLoaded (Lnet/minecraft/world/level/ChunkPos;)V
 		ARG 1 chunkPos
 	METHOD playLocalSound (Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFZ)V
@@ -64,15 +40,16 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 		ARG 2 spawnAngle
 	METHOD setGameTime (J)V
 		ARG 1 gameTime
-	METHOD setKnownState (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
-		ARG 1 pos
-		ARG 2 state
 	METHOD setScoreboard (Lnet/minecraft/world/scores/Scoreboard;)V
 		ARG 1 scoreboard
 	METHOD setSectionDirtyWithNeighbors (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD setServerSimulationDistance (I)V
+		ARG 1 serverSimulationDistance
+	METHOD setSkyFlashTime (I)V
+		ARG 1 skyFlashTime
 	METHOD spawnFluidParticle (DDDDDLnet/minecraft/core/particles/ParticleOptions;)V
 		ARG 1 x1
 		ARG 3 x2
@@ -111,7 +88,15 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 			ARG 1 difficultyLocked
 		METHOD setGameTime (J)V
 			ARG 1 gameTime
-	CLASS MarkerParticleStatus
-		METHOD <init> (Ljava/lang/String;ILnet/minecraft/world/level/block/Block;Lnet/minecraft/core/particles/ParticleOptions;)V
-			ARG 3 block
-			ARG 4 particle
+		METHOD setRaining (Z)V
+			ARG 1 raining
+		METHOD setSpawn (Lnet/minecraft/core/BlockPos;F)V
+			ARG 2 spawnAngle
+		METHOD setSpawnAngle (F)V
+			ARG 1 spawnAngle
+		METHOD setXSpawn (I)V
+			ARG 1 xSpawn
+		METHOD setYSpawn (I)V
+			ARG 1 ySpawn
+		METHOD setZSpawn (I)V
+			ARG 1 zSpawn

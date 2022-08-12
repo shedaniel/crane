@@ -6,3 +6,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundEntityEventPacket
 		ARG 2 eventId
 	METHOD getEntity (Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
 		ARG 1 level
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

@@ -3,6 +3,13 @@ CLASS net/minecraft/network/protocol/game/ServerboundInteractPacket
 		ARG 1 entityId
 		ARG 2 usingSecondaryAction
 		ARG 3 action
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	CLASS Action
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
 	CLASS Handler
 		METHOD onInteraction (Lnet/minecraft/world/InteractionHand;)V
 			ARG 1 hand
@@ -10,9 +17,17 @@ CLASS net/minecraft/network/protocol/game/ServerboundInteractPacket
 		METHOD <init> (Ljava/lang/String;ILjava/util/function/Function;)V
 			ARG 3 reader
 	CLASS InteractionAction
+		METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
 		METHOD <init> (Lnet/minecraft/world/InteractionHand;)V
 			ARG 1 hand
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
 	CLASS InteractionAtLocationAction
+		METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
 		METHOD <init> (Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/Vec3;)V
 			ARG 1 hand
 			ARG 2 location
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

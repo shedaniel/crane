@@ -1,0 +1,7 @@
+CLASS net/minecraft/commands/CommandSigningContext
+	CLASS SignedArguments
+		METHOD <init> (Ljava/util/UUID;Ljava/time/Instant;Lnet/minecraft/commands/arguments/ArgumentSignatures;Z)V
+			ARG 1 sender
+			ARG 2 timeStamp
+			ARG 3 argumentSignatures
+			ARG 4 signedPreview

@@ -1,6 +1,4 @@
 CLASS net/minecraft/commands/Commands
-	METHOD <init> (Lnet/minecraft/commands/Commands$CommandSelection;)V
-		ARG 1 selection
 	METHOD argument (Ljava/lang/String;Lcom/mojang/brigadier/arguments/ArgumentType;)Lcom/mojang/brigadier/builder/RequiredArgumentBuilder;
 		ARG 0 argumentName
 		ARG 1 type
@@ -12,10 +10,6 @@ CLASS net/minecraft/commands/Commands
 		ARG 0 parse
 	METHOD lambda$createValidator$6 (Lnet/minecraft/commands/Commands$ParseFunction;Ljava/lang/String;)Z
 		ARG 1 string
-	METHOD lambda$validate$7 (Lcom/mojang/brigadier/arguments/ArgumentType;)Z
-		ARG 0 type
-	METHOD lambda$validate$8 (Lcom/mojang/brigadier/arguments/ArgumentType;)Ljava/lang/String;
-		ARG 0 type
 	METHOD literal (Ljava/lang/String;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
 		ARG 0 command
 	METHOD performCommand (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;)I

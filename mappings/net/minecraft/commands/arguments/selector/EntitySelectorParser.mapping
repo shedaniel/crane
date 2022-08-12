@@ -2,6 +2,10 @@ CLASS net/minecraft/commands/arguments/selector/EntitySelectorParser
 	METHOD <init> (Lcom/mojang/brigadier/StringReader;Z)V
 		ARG 1 reader
 		ARG 2 allowSelectors
+	METHOD fillSelectorSuggestions (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)V
+		ARG 0 builder
+	METHOD fillSuggestions (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder
 	METHOD limitToType (Lnet/minecraft/world/entity/EntityType;)V
 		ARG 1 type
 	METHOD setDistance (Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;)V
@@ -40,3 +44,19 @@ CLASS net/minecraft/commands/arguments/selector/EntitySelectorParser
 		ARG 1 isSorted
 	METHOD setSuggestions (Ljava/util/function/BiFunction;)V
 		ARG 1 suggestions
+	METHOD suggestEquals (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder
+	METHOD suggestName (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder
+	METHOD suggestNameOrSelector (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder
+	METHOD suggestOpenOptions (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder
+	METHOD suggestOptionsKey (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder
+	METHOD suggestOptionsKeyOrClose (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder
+	METHOD suggestOptionsNextOrClose (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder
+	METHOD suggestSelector (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder

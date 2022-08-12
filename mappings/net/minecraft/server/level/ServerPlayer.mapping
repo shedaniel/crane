@@ -1,16 +1,14 @@
 CLASS net/minecraft/server/level/ServerPlayer
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/authlib/GameProfile;)V
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/world/entity/player/ProfilePublicKey;)V
 		ARG 1 server
-	METHOD acceptsChat (Lnet/minecraft/network/chat/ChatType;)Z
-		ARG 1 chatType
 	METHOD isReachableBedBlock (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
+	METHOD onChangedBlock (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD onInsideBlock (Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 state
 	METHOD restoreFrom (Lnet/minecraft/server/level/ServerPlayer;Z)V
 		ARG 1 other
-	METHOD sendMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/ChatType;Ljava/util/UUID;)V
-		ARG 1 message
-		ARG 2 chatType
-		ARG 3 sender
 	METHOD sendTexturePack (Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/network/chat/Component;)V
 		ARG 1 url
 		ARG 2 hash
@@ -35,6 +33,12 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 2 respawnPosition
 		ARG 3 respawnAngle
 		ARG 4 respawnForced
+	METHOD startSleepInBed (Lnet/minecraft/core/BlockPos;)Lcom/mojang/datafixers/util/Either;
+		ARG 1 pos
+	METHOD startSleeping (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD swing (Lnet/minecraft/world/InteractionHand;)V
+		ARG 1 hand
 	METHOD teleportTo (Lnet/minecraft/server/level/ServerLevel;DDDFF)V
 		ARG 1 level
 		ARG 2 x
@@ -42,9 +46,9 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 6 z
 		ARG 8 yRot
 		ARG 9 xRot
-	METHOD trackChunk (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/protocol/Packet;)V
-		ARG 1 chunkPos
 	METHOD untrackChunk (Lnet/minecraft/world/level/ChunkPos;)V
 		ARG 1 chunkPos
 	METHOD updateOptions (Lnet/minecraft/network/protocol/game/ServerboundClientInformationPacket;)V
 		ARG 1 packet
+	METHOD updateUsingItem (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack

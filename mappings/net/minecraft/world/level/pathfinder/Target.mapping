@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/level/pathfinder/Target
+	METHOD createFromStream (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/level/pathfinder/Target;
+		ARG 0 buf
 	METHOD updateBest (FLnet/minecraft/world/level/pathfinder/Node;)V
 		ARG 1 bestHeuristic
 		ARG 2 bestNode

@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/FastBufferedInputStream
+	METHOD <init> (Ljava/io/InputStream;I)V
+		ARG 1 in

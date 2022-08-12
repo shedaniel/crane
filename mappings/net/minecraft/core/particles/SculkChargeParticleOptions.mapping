@@ -1,0 +1,5 @@
+CLASS net/minecraft/core/particles/SculkChargeParticleOptions
+	METHOD <init> (F)V
+		ARG 1 roll
+	METHOD writeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

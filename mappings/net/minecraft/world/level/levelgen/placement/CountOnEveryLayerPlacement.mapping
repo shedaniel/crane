@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/placement/CountOnEveryLayerPlacement
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;)V
+		ARG 1 count
+	METHOD isEmpty (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

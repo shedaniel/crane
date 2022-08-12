@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/gameevent/DynamicGameEventListener
+	METHOD <init> (Lnet/minecraft/world/level/gameevent/GameEventListener;)V
+		ARG 1 listener
+	METHOD updateListener (Lnet/minecraft/world/level/gameevent/GameEventListener;Lnet/minecraft/world/level/Level;)V
+		ARG 1 listener

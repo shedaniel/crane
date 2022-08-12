@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/ticks/ScheduledTick
+	METHOD <init> (Ljava/lang/Object;Lnet/minecraft/core/BlockPos;JLnet/minecraft/world/ticks/TickPriority;J)V
+		ARG 1 type
+		ARG 2 pos
+		ARG 3 triggerTick
+		ARG 5 priority

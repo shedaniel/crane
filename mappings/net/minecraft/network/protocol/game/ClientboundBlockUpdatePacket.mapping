@@ -7,3 +7,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundBlockUpdatePacket
 	METHOD <init> (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)V
 		ARG 1 level
 		ARG 2 pos
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

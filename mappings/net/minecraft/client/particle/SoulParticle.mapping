@@ -11,3 +11,6 @@ CLASS net/minecraft/client/particle/SoulParticle
 	CLASS Provider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
+	CLASS EmissiveProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite

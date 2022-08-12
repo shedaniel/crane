@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ClientboundSetObjectivePacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/world/scores/Objective;I)V
 		ARG 2 method
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

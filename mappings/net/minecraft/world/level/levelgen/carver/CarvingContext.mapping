@@ -1,1 +1,6 @@
 CLASS net/minecraft/world/level/levelgen/carver/CarvingContext
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/LevelHeightAccessor;Lnet/minecraft/world/level/levelgen/NoiseChunk;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/levelgen/SurfaceRules$RuleSource;)V
+		ARG 2 registryAccess
+		ARG 4 noiseChunk
+		ARG 5 randomState
+		ARG 6 surfaceRule

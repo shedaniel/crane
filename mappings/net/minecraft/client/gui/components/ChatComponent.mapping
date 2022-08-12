@@ -15,5 +15,3 @@ CLASS net/minecraft/client/gui/components/ChatComponent
 		ARG 1 message
 	METHOD removeById (I)V
 		ARG 1 id
-	METHOD scrollChat (D)V
-		ARG 1 offset

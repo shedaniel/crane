@@ -1,4 +1,6 @@
 CLASS net/minecraft/commands/arguments/selector/options/EntitySelectorOptions
+	METHOD suggestNames (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)V
+		ARG 1 builder
 	CLASS Option
 		METHOD <init> (Lnet/minecraft/commands/arguments/selector/options/EntitySelectorOptions$Modifier;Ljava/util/function/Predicate;Lnet/minecraft/network/chat/Component;)V
 			ARG 1 modifier

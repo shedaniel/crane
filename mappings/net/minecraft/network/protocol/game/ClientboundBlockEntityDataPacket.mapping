@@ -1,7 +1,8 @@
 CLASS net/minecraft/network/protocol/game/ClientboundBlockEntityDataPacket
-	METHOD <init> (Lnet/minecraft/core/BlockPos;ILnet/minecraft/nbt/CompoundTag;)V
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/nbt/CompoundTag;)V
 		ARG 1 pos
 		ARG 2 type
-		ARG 3 tag
 	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf

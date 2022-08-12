@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/structure/SinglePieceStructure
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/SinglePieceStructure$PieceConstructor;IILnet/minecraft/world/level/levelgen/structure/Structure$StructureSettings;)V
+		ARG 1 constructor
+		ARG 2 width
+		ARG 3 depth

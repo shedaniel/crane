@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/levelgen/structure/placement/StructurePlacement
+	METHOD <init> (Lnet/minecraft/core/Vec3i;Lnet/minecraft/world/level/levelgen/structure/placement/StructurePlacement$FrequencyReductionMethod;FILjava/util/Optional;)V
+		ARG 1 locateOffset
+		ARG 2 frequencyReductionMethod
+		ARG 3 frequency
+		ARG 4 salt
+		ARG 5 exclusionZone
+	CLASS ExclusionZone
+		METHOD <init> (Lnet/minecraft/core/Holder;I)V
+			ARG 1 otherSet
+			ARG 2 chunkCount
+	CLASS FrequencyReductionMethod
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/levelgen/structure/placement/StructurePlacement$FrequencyReducer;)V
+			ARG 3 name
+			ARG 4 reducer

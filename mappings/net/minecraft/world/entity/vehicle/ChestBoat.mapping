@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/vehicle/ChestBoat
+	METHOD <init> (Lnet/minecraft/world/level/Level;DDD)V
+		ARG 2 xo
+		ARG 4 yo
+	METHOD setLootTable (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 lootTable
+	METHOD setLootTableSeed (J)V
+		ARG 1 lootTableSeed

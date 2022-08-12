@@ -5,11 +5,15 @@ CLASS net/minecraft/world/level/block/BasePressurePlateBlock
 		ARG 3 pos
 		ARG 4 state
 		ARG 5 signal
+	METHOD getPistonPushReaction (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/PushReaction;
+		ARG 1 state
 	METHOD getSignalForState (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 1 state
 	METHOD getSignalStrength (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)I
 		ARG 1 level
 		ARG 2 pos
+	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	METHOD playOffSound (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)V
 		ARG 1 level
 		ARG 2 pos

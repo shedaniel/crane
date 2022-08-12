@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/placement/PlacedFeature
+	METHOD <init> (Lnet/minecraft/core/Holder;Ljava/util/List;)V
+		ARG 1 feature
+		ARG 2 placement
+	CLASS test
+		METHOD <init> (I)V
+			ARG 1 a

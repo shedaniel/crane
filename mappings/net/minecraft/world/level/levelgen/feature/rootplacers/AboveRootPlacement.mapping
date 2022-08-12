@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/feature/rootplacers/AboveRootPlacement
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;F)V
+		ARG 1 aboveRootProvider
+		ARG 2 aboveRootPlacementChance

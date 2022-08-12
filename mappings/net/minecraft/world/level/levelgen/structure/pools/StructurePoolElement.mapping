@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/structure/pools/StructurePoolElement
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection;)V
+		ARG 1 projection
+	METHOD setProjection (Lnet/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection;)Lnet/minecraft/world/level/levelgen/structure/pools/StructurePoolElement;
+		ARG 1 projection

@@ -4,3 +4,7 @@ CLASS net/minecraft/network/protocol/game/ServerboundPlayerInputPacket
 		ARG 2 zza
 		ARG 3 isJumping
 		ARG 4 isShiftKeyDown
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

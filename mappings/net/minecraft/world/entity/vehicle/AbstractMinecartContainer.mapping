@@ -1,4 +1,8 @@
 CLASS net/minecraft/world/entity/vehicle/AbstractMinecartContainer
+	METHOD setLootTable (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 lootTable
 	METHOD setLootTable (Lnet/minecraft/resources/ResourceLocation;J)V
 		ARG 1 lootTable
 		ARG 2 lootTableSeed
+	METHOD setLootTableSeed (J)V
+		ARG 1 lootTableSeed

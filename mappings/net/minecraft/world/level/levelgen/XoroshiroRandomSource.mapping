@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/XoroshiroRandomSource
+	CLASS XoroshiroPositionalRandomFactory
+		METHOD <init> (JJ)V
+			ARG 1 seedLo

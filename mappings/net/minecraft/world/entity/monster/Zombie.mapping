@@ -1,8 +1,12 @@
 CLASS net/minecraft/world/entity/monster/Zombie
+	METHOD canHoldItem (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD setCanBreakDoors (Z)V
 		ARG 1 canBreakDoors
 	METHOD startUnderWaterConversion (I)V
 		ARG 1 conversionTime
+	METHOD wantsToPickUp (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	CLASS ZombieGroupData
 		METHOD <init> (ZZ)V
 			ARG 1 isBaby

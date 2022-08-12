@@ -1,12 +1,4 @@
 CLASS net/minecraft/core/MappedRegistry
-	METHOD registerMapping (ILnet/minecraft/resources/ResourceKey;Ljava/lang/Object;Lcom/mojang/serialization/Lifecycle;Z)Ljava/lang/Object;
-		ARG 1 id
-		ARG 2 key
-		ARG 3 value
-		ARG 4 lifecycle
-		ARG 5 logDuplicateKeys
-	CLASS RegistryEntry
-		METHOD <init> (Lnet/minecraft/resources/ResourceKey;ILjava/lang/Object;)V
-			ARG 1 key
-			ARG 2 id
-			ARG 3 value
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;Ljava/util/function/Function;)V
+		ARG 2 elementsLifecycle
+		ARG 3 customHolderProvider

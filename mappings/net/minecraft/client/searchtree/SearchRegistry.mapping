@@ -1,0 +1,16 @@
+CLASS net/minecraft/client/searchtree/SearchRegistry
+	METHOD getSupplier (Lnet/minecraft/client/searchtree/SearchRegistry$Key;)Lnet/minecraft/client/searchtree/SearchRegistry$TreeEntry;
+		ARG 1 key
+	METHOD getTree (Lnet/minecraft/client/searchtree/SearchRegistry$Key;)Lnet/minecraft/client/searchtree/SearchTree;
+		ARG 1 key
+	METHOD populate (Lnet/minecraft/client/searchtree/SearchRegistry$Key;Ljava/util/List;)V
+		ARG 1 key
+		ARG 2 contents
+	METHOD register (Lnet/minecraft/client/searchtree/SearchRegistry$Key;Lnet/minecraft/client/searchtree/SearchRegistry$TreeBuilderSupplier;)V
+		ARG 1 key
+		ARG 2 factory
+	CLASS TreeEntry
+		METHOD <init> (Lnet/minecraft/client/searchtree/SearchRegistry$TreeBuilderSupplier;)V
+			ARG 1 factory
+		METHOD populate (Ljava/util/List;)V
+			ARG 1 contents

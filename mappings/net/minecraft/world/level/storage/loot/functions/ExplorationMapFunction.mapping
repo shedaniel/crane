@@ -1,12 +1,12 @@
 CLASS net/minecraft/world/level/storage/loot/functions/ExplorationMapFunction
-	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/world/level/levelgen/feature/StructureFeature;Lnet/minecraft/world/level/saveddata/maps/MapDecoration$Type;BIZ)V
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/tags/TagKey;Lnet/minecraft/world/level/saveddata/maps/MapDecoration$Type;BIZ)V
 		ARG 2 destination
 		ARG 3 mapDecoration
 		ARG 4 zoom
 		ARG 5 searchRadius
 		ARG 6 skipKnownStructures
 	CLASS Builder
-		METHOD setDestination (Lnet/minecraft/world/level/levelgen/feature/StructureFeature;)Lnet/minecraft/world/level/storage/loot/functions/ExplorationMapFunction$Builder;
+		METHOD setDestination (Lnet/minecraft/tags/TagKey;)Lnet/minecraft/world/level/storage/loot/functions/ExplorationMapFunction$Builder;
 			ARG 1 destination
 		METHOD setMapDecoration (Lnet/minecraft/world/level/saveddata/maps/MapDecoration$Type;)Lnet/minecraft/world/level/storage/loot/functions/ExplorationMapFunction$Builder;
 			ARG 1 mapDecoration

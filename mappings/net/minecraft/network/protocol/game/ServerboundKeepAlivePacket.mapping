@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ServerboundKeepAlivePacket
 	METHOD <init> (J)V
 		ARG 1 id
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

@@ -3,10 +3,14 @@ CLASS net/minecraft/world/entity/animal/Bee
 		ARG 1 pos
 	METHOD isFlowerValid (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD isTooFarAway (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
 	METHOD pathfindRandomlyTowards (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
+	METHOD setPersistentAngerTarget (Ljava/util/UUID;)V
+		ARG 1 persistentAngerTarget
 	METHOD setSavedFlowerPos (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 savedFlowerPos
 	METHOD setStayOutOfHiveCountdown (I)V

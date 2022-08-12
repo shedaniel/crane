@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/profiling/jfr/stats/CpuLoadStat
+	METHOD <init> (DDD)V
+		ARG 1 jvm
+		ARG 3 userJvm

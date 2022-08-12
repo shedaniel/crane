@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/commands/TriggerCommand
+	METHOD suggestObjectives (Lnet/minecraft/commands/CommandSourceStack;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 builder

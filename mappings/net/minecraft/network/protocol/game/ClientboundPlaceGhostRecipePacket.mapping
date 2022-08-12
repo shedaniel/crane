@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ClientboundPlaceGhostRecipePacket
 	METHOD <init> (ILnet/minecraft/world/item/crafting/Recipe;)V
 		ARG 1 containerId
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

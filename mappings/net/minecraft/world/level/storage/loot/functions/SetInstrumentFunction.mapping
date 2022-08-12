@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetInstrumentFunction
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/tags/TagKey;)V
+		ARG 2 options

@@ -1,4 +1,8 @@
 CLASS net/minecraft/world/entity/animal/Panda
+	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD isFoodOrCake (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
 	CLASS Gene
@@ -13,8 +17,8 @@ CLASS net/minecraft/world/entity/animal/Panda
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;Ljava/lang/Class;FDD)V
 			ARG 1 panda
 	CLASS PandaBreedGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;Lnet/minecraft/world/entity/animal/Panda;D)V
-			ARG 2 panda
+		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;D)V
+			ARG 1 panda
 	CLASS PandaPanicGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Panda;D)V
 			ARG 1 panda

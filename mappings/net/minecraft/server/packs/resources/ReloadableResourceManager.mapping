@@ -1,4 +1,6 @@
 CLASS net/minecraft/server/packs/resources/ReloadableResourceManager
+	METHOD <init> (Lnet/minecraft/server/packs/PackType;)V
+		ARG 1 type
 	METHOD createReload (Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Ljava/util/concurrent/CompletableFuture;Ljava/util/List;)Lnet/minecraft/server/packs/resources/ReloadInstance;
 		ARG 1 preparationExecutor
 		ARG 2 reloadExecutor
@@ -6,8 +8,3 @@ CLASS net/minecraft/server/packs/resources/ReloadableResourceManager
 		ARG 4 packs
 	METHOD registerReloadListener (Lnet/minecraft/server/packs/resources/PreparableReloadListener;)V
 		ARG 1 listener
-	METHOD reload (Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Ljava/util/List;Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 preparationExecutor
-		ARG 2 reloadExecutor
-		ARG 3 packs
-		ARG 4 afterPreparation

@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/FogRenderer
+	METHOD setupFog (Lnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/FogRenderer$FogMode;FZF)V
+		ARG 2 end
+	CLASS FogData
+		METHOD <init> (Lnet/minecraft/client/renderer/FogRenderer$FogMode;)V
+			ARG 1 mode

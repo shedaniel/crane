@@ -3,3 +3,8 @@ CLASS net/minecraft/world/entity/ai/behavior/RandomStroll
 		ARG 1 speedModifier
 		ARG 2 maxHorizontalDistance
 		ARG 3 maxVerticalDistance
+	METHOD <init> (FIIZ)V
+		ARG 1 speedModifier
+		ARG 2 maxHorizontalDistance
+		ARG 3 maxVerticalDistance
+		ARG 4 mayStrollFromWater

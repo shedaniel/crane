@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/RandomSupport
+	CLASS Seed128bit
+		METHOD <init> (JJ)V
+			ARG 1 seedLo

@@ -1,0 +1,7 @@
+CLASS net/minecraft/util/profiling/jfr/stats/ChunkGenStat
+	METHOD <init> (Ljava/time/Duration;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/server/level/ColumnPos;Lnet/minecraft/world/level/chunk/ChunkStatus;Ljava/lang/String;)V
+		ARG 1 duration
+		ARG 2 chunkPos
+		ARG 3 worldPos
+		ARG 4 status
+		ARG 5 level

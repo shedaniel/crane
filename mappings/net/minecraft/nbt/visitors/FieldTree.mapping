@@ -1,0 +1,5 @@
+CLASS net/minecraft/nbt/visitors/FieldTree
+	METHOD <init> (ILjava/util/Map;Ljava/util/Map;)V
+		ARG 1 depth
+		ARG 2 selectedFields
+		ARG 3 fieldsToRecurse

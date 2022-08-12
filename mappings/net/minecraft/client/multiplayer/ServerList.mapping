@@ -1,8 +1,6 @@
 CLASS net/minecraft/client/multiplayer/ServerList
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
-	METHOD add (Lnet/minecraft/client/multiplayer/ServerData;)V
-		ARG 1 data
 	METHOD get (I)Lnet/minecraft/client/multiplayer/ServerData;
 		ARG 1 index
 	METHOD remove (Lnet/minecraft/client/multiplayer/ServerData;)V

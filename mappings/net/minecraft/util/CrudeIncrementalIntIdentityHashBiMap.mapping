@@ -1,0 +1,7 @@
+CLASS net/minecraft/util/CrudeIncrementalIntIdentityHashBiMap
+	METHOD <init> ([Ljava/lang/Object;[I[Ljava/lang/Object;II)V
+		ARG 1 keys
+		ARG 2 values
+		ARG 3 byId
+		ARG 4 nextId
+		ARG 5 size

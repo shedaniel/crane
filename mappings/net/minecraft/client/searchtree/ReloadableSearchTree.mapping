@@ -1,6 +1,0 @@
-CLASS net/minecraft/client/searchtree/ReloadableSearchTree
-	METHOD <init> (Ljava/util/function/Function;Ljava/util/function/Function;)V
-		ARG 1 filler
-	CLASS MergingUniqueIterator
-		METHOD <init> (Ljava/util/Iterator;Ljava/util/Iterator;Ljava/util/Comparator;)V
-			ARG 3 orderT

@@ -1,0 +1,8 @@
+CLASS net/minecraft/network/protocol/game/ServerboundChatPreviewPacket
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 queryId
+		ARG 2 query
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

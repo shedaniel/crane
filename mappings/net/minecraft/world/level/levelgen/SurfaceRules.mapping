@@ -1,0 +1,79 @@
+CLASS net/minecraft/world/level/levelgen/SurfaceRules
+	METHOD state (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/levelgen/SurfaceRules$RuleSource;
+		ARG 0 state
+	CLASS Context
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/SurfaceSystem;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/levelgen/NoiseChunk;Ljava/util/function/Function;Lnet/minecraft/core/Registry;Lnet/minecraft/world/level/levelgen/WorldGenerationContext;)V
+			ARG 1 system
+			ARG 2 randomState
+			ARG 3 chunk
+			ARG 4 noiseChunk
+			ARG 5 biomeGetter
+			ARG 7 context
+		METHOD updateXZ (II)V
+			ARG 1 blockX
+			ARG 2 blockZ
+		METHOD updateY (IIIIII)V
+			ARG 1 stoneDepthAbove
+			ARG 2 stoneDepthBelow
+			ARG 3 waterHeight
+			ARG 5 blockY
+	CLASS TestRule
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/SurfaceRules$Condition;Lnet/minecraft/world/level/levelgen/SurfaceRules$SurfaceRule;)V
+			ARG 1 condition
+			ARG 2 followup
+	CLASS StateRule
+		METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;)V
+			ARG 1 state
+	CLASS NotCondition
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/SurfaceRules$Condition;)V
+			ARG 1 target
+	CLASS SequenceRule
+		METHOD <init> (Ljava/util/List;)V
+			ARG 1 rules
+	CLASS LazyCondition
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/SurfaceRules$Context;)V
+			ARG 1 context
+	CLASS TestRuleSource
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/SurfaceRules$ConditionSource;Lnet/minecraft/world/level/levelgen/SurfaceRules$RuleSource;)V
+			ARG 1 ifTrue
+			ARG 2 thenRun
+	CLASS BlockRuleSource
+		METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;)V
+			ARG 1 state
+		METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/levelgen/SurfaceRules$StateRule;)V
+			ARG 1 resultState
+			ARG 2 rule
+	CLASS StoneDepthCheck
+		METHOD <init> (IZILnet/minecraft/world/level/levelgen/placement/CaveSurface;)V
+			ARG 1 offset
+			ARG 2 addSurfaceDepth
+			ARG 3 secondaryDepthRange
+			ARG 4 surfaceType
+	CLASS YConditionSource
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/VerticalAnchor;IZ)V
+			ARG 1 anchor
+			ARG 2 surfaceDepthMultiplier
+			ARG 3 addStoneDepth
+	CLASS NotConditionSource
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/SurfaceRules$ConditionSource;)V
+			ARG 1 target
+	CLASS SequenceRuleSource
+		METHOD <init> (Ljava/util/List;)V
+			ARG 1 sequence
+	CLASS BiomeConditionSource
+		METHOD <init> (Ljava/util/List;)V
+			ARG 1 biomes
+	CLASS WaterConditionSource
+		METHOD <init> (IIZ)V
+			ARG 1 offset
+			ARG 2 surfaceDepthMultiplier
+			ARG 3 addStoneDepth
+	CLASS NoiseThresholdConditionSource
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;DD)V
+			ARG 1 noise
+			ARG 2 minThreshold
+	CLASS VerticalGradientConditionSource
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/levelgen/VerticalAnchor;Lnet/minecraft/world/level/levelgen/VerticalAnchor;)V
+			ARG 1 randomName
+			ARG 2 trueAtAndBelow
+			ARG 3 falseAtAndAbove

@@ -20,9 +20,6 @@ CLASS net/minecraft/world/item/ItemStack
 	METHOD appendEnchantmentNames (Ljava/util/List;Lnet/minecraft/nbt/ListTag;)V
 		ARG 0 lines
 		ARG 1 tag
-	METHOD areSameBlocks (Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
-		ARG 0 first
-		ARG 1 second
 	METHOD enchant (Lnet/minecraft/world/item/enchantment/Enchantment;I)V
 		ARG 1 enchantment
 		ARG 2 level
@@ -44,18 +41,8 @@ CLASS net/minecraft/world/item/ItemStack
 		ARG 2 tooltipFlag
 	METHOD grow (I)V
 		ARG 1 count
-	METHOD hasAdventureModeBreakTagForBlock (Lnet/minecraft/tags/TagContainer;Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
-		ARG 1 tagContainer
-		ARG 2 block
-	METHOD hasAdventureModePlaceTagForBlock (Lnet/minecraft/tags/TagContainer;Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
-		ARG 1 tagContainer
-		ARG 2 block
 	METHOD hideTooltipPart (Lnet/minecraft/world/item/ItemStack$TooltipPart;)V
 		ARG 1 tooltipPart
-	METHOD hurt (ILjava/util/Random;Lnet/minecraft/server/level/ServerPlayer;)Z
-		ARG 1 damage
-		ARG 2 random
-		ARG 3 player
 	METHOD hurtAndBreak (ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V
 		ARG 1 damage
 		ARG 2 entity
@@ -72,8 +59,6 @@ CLASS net/minecraft/world/item/ItemStack
 		ARG 2 entity
 		ARG 3 slotId
 		ARG 4 selected
-	METHOD is (Lnet/minecraft/tags/Tag;)Z
-		ARG 1 tag
 	METHOD is (Lnet/minecraft/world/item/Item;)Z
 		ARG 1 item
 	METHOD isCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z

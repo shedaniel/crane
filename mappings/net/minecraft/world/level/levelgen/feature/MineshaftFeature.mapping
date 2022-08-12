@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/feature/MineshaftFeature
-	CLASS Type
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;)V
-			ARG 3 name

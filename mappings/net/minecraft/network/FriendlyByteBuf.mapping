@@ -15,25 +15,13 @@ CLASS net/minecraft/network/FriendlyByteBuf
 		ARG 1 order
 	METHOD readByteArray (I)[B
 		ARG 1 allowedSize
-	METHOD readCollection (Ljava/util/function/IntFunction;Ljava/util/function/Function;)Ljava/util/Collection;
-		ARG 1 constructor
-		ARG 2 deserializer
 	METHOD readEnum (Ljava/lang/Class;)Ljava/lang/Enum;
 		ARG 1 clazz
-	METHOD readList (Ljava/util/function/Function;)Ljava/util/List;
-		ARG 1 deserializer
 	METHOD readLongArray ([J)[J
 		ARG 1 array
 	METHOD readLongArray ([JI)[J
 		ARG 1 array
 		ARG 2 allowedSize
-	METHOD readMap (Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/Map;
-		ARG 1 keyDeserializer
-		ARG 2 valueDeserializer
-	METHOD readMap (Ljava/util/function/IntFunction;Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/Map;
-		ARG 1 constructor
-		ARG 2 keyDeserializer
-		ARG 3 valueDeserializer
 	METHOD readNbt (Lnet/minecraft/nbt/NbtAccounter;)Lnet/minecraft/nbt/CompoundTag;
 		ARG 1 nbtAccounter
 	METHOD readUtf (I)Ljava/lang/String;
@@ -64,9 +52,6 @@ CLASS net/minecraft/network/FriendlyByteBuf
 		ARG 1 array
 	METHOD writeChunkPos (Lnet/minecraft/world/level/ChunkPos;)Lnet/minecraft/network/FriendlyByteBuf;
 		ARG 1 pos
-	METHOD writeCollection (Ljava/util/Collection;Ljava/util/function/BiConsumer;)V
-		ARG 1 collection
-		ARG 2 serializer
 	METHOD writeComponent (Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/FriendlyByteBuf;
 		ARG 1 component
 	METHOD writeDate (Ljava/util/Date;)Lnet/minecraft/network/FriendlyByteBuf;
@@ -79,10 +64,6 @@ CLASS net/minecraft/network/FriendlyByteBuf
 		ARG 1 stack
 	METHOD writeLongArray ([J)Lnet/minecraft/network/FriendlyByteBuf;
 		ARG 1 array
-	METHOD writeMap (Ljava/util/Map;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)V
-		ARG 1 map
-		ARG 2 keySerializer
-		ARG 3 valueSerializer
 	METHOD writeNbt (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/network/FriendlyByteBuf;
 		ARG 1 tag
 	METHOD writeResourceLocation (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/network/FriendlyByteBuf;

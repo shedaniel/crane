@@ -1,1 +1,5 @@
 CLASS net/minecraft/world/level/block/LavaCauldronBlock
+	METHOD getContentHeight (Lnet/minecraft/world/level/block/state/BlockState;)D
+		ARG 1 state
+	METHOD isFull (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

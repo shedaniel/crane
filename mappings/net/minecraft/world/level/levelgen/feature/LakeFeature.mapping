@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/feature/LakeFeature
+	METHOD canReplaceBlock (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	CLASS Configuration
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;)V
+			ARG 1 fluid
+			ARG 2 barrier

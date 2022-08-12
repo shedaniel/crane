@@ -3,6 +3,8 @@ CLASS net/minecraft/world/level/lighting/LevelLightEngine
 		ARG 1 level
 		ARG 2 blockEngineEnabled
 		ARG 3 skyEngineEnabled
+	METHOD checkBlock (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
 	METHOD getDebugData (Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/SectionPos;)Ljava/lang/String;
 		ARG 1 lightLayer
 		ARG 2 pos

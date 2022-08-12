@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/storage/DataVersion
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 version
+		ARG 2 series

@@ -1,0 +1,3 @@
+CLASS net/minecraft/resources/RegistryFixedCodec
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;)V
+		ARG 1 registryKey

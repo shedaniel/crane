@@ -1,0 +1,28 @@
+CLASS net/minecraft/commands/arguments/ResourceKeyArgument
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;)V
+		ARG 1 registryKey
+	METHOD getAttribute (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/world/entity/ai/attributes/Attribute;
+		ARG 0 context
+	METHOD getConfiguredFeature (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder;
+		ARG 0 context
+	METHOD getRegistry (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Registry;
+		ARG 0 context
+	METHOD getRegistryKeyType (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;)Lnet/minecraft/core/Holder;
+		ARG 0 context
+	METHOD getRegistryType (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 context
+	METHOD getStructure (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder;
+		ARG 0 context
+	METHOD getStructureTemplatePool (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder;
+		ARG 0 context
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
+	CLASS Info
+		METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/arguments/ResourceKeyArgument$Info$Template;
+			ARG 1 buf
+		METHOD serializeToNetwork (Lnet/minecraft/commands/arguments/ResourceKeyArgument$Info$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 2 buf
+		CLASS Template
+			METHOD <init> (Lnet/minecraft/commands/arguments/ResourceKeyArgument$Info;Lnet/minecraft/resources/ResourceKey;)V
+				ARG 2 registryKey

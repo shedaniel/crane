@@ -14,8 +14,8 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 5 pixels
 	METHOD _upload (IIIIIIIZZZZ)V
 		ARG 1 level
-		ARG 2 xoffset
-		ARG 3 yoffset
+		ARG 2 xOffset
+		ARG 3 yOffset
 		ARG 4 skipPixels
 		ARG 5 skipRows
 		ARG 6 width
@@ -87,8 +87,8 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 3 rgba
 	METHOD upload (IIIIIIIZZ)V
 		ARG 1 level
-		ARG 2 xoffset
-		ARG 3 yoffset
+		ARG 2 xOffset
+		ARG 3 yOffset
 		ARG 4 skipPixels
 		ARG 5 skipRows
 		ARG 6 width
@@ -97,8 +97,8 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 9 closing
 	METHOD upload (IIIIIIIZZZZ)V
 		ARG 1 level
-		ARG 2 xoffset
-		ARG 3 yoffset
+		ARG 2 xOffset
+		ARG 3 yOffset
 		ARG 4 skipPixels
 		ARG 5 skipRows
 		ARG 6 width
@@ -109,8 +109,8 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 11 closing
 	METHOD upload (IIIZ)V
 		ARG 1 level
-		ARG 2 xoffset
-		ARG 3 yoffset
+		ARG 2 xOffset
+		ARG 3 yOffset
 		ARG 4 closing
 	METHOD writeToFile (Ljava/io/File;)V
 		ARG 1 file

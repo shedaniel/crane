@@ -3,3 +3,7 @@ CLASS net/minecraft/network/protocol/game/ServerboundJigsawGeneratePacket
 		ARG 1 pos
 		ARG 2 levels
 		ARG 3 keepJigsaws
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

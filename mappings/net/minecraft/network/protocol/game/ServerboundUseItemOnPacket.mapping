@@ -1,4 +1,9 @@
 CLASS net/minecraft/network/protocol/game/ServerboundUseItemOnPacket
-	METHOD <init> (Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)V
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;I)V
 		ARG 1 hand
 		ARG 2 blockHit
+		ARG 3 sequence
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

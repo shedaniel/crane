@@ -1,4 +1,9 @@
 CLASS net/minecraft/commands/arguments/GameProfileArgument
+	METHOD getGameProfiles (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
 	CLASS SelectorResult
 		METHOD <init> (Lnet/minecraft/commands/arguments/selector/EntitySelector;)V
 			ARG 1 selector

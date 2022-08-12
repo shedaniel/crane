@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetPotionFunction
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/world/item/alchemy/Potion;)V
+		ARG 2 potion

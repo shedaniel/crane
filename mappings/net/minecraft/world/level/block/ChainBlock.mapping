@@ -1,1 +1,3 @@
 CLASS net/minecraft/world/level/block/ChainBlock
+	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 state

@@ -2,3 +2,27 @@ CLASS net/minecraft/commands/arguments/EntityArgument
 	METHOD <init> (ZZ)V
 		ARG 1 single
 		ARG 2 playersOnly
+	METHOD getEntities (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+	METHOD getEntity (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/world/entity/Entity;
+		ARG 0 context
+	METHOD getOptionalEntities (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+	METHOD getOptionalPlayers (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+	METHOD getPlayer (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/server/level/ServerPlayer;
+		ARG 0 context
+	METHOD getPlayers (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
+	CLASS Info
+		METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/arguments/EntityArgument$Info$Template;
+			ARG 1 buf
+		METHOD serializeToNetwork (Lnet/minecraft/commands/arguments/EntityArgument$Info$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 2 buf
+		CLASS Template
+			METHOD <init> (Lnet/minecraft/commands/arguments/EntityArgument$Info;ZZ)V
+				ARG 2 single
+				ARG 3 playersOnly

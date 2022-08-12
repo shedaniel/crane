@@ -1,8 +1,0 @@
-CLASS net/minecraft/data/DataProvider
-	METHOD run (Lnet/minecraft/data/HashCache;)V
-		ARG 1 cache
-	METHOD save (Lcom/google/gson/Gson;Lnet/minecraft/data/HashCache;Lcom/google/gson/JsonElement;Ljava/nio/file/Path;)V
-		ARG 0 gson
-		ARG 1 cache
-		ARG 2 element
-		ARG 3 path

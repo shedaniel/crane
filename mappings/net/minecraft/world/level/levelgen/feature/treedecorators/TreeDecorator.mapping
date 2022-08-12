@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/levelgen/feature/treedecorators/TreeDecorator
+	CLASS Context
+		METHOD <init> (Lnet/minecraft/world/level/LevelSimulatedReader;Ljava/util/function/BiConsumer;Lnet/minecraft/util/RandomSource;Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;)V
+			ARG 1 level
+			ARG 2 decorationSetter
+			ARG 3 random
+		METHOD isAir (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 pos

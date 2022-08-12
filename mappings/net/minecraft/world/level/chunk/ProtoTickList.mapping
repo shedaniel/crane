@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/level/chunk/ProtoTickList
-	METHOD <init> (Ljava/util/function/Predicate;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/nbt/ListTag;Lnet/minecraft/world/level/LevelHeightAccessor;)V
-		ARG 1 ignore
-		ARG 2 chunkPos
-		ARG 4 levelHeightAccessor

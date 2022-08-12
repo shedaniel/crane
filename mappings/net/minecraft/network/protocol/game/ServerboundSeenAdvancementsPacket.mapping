@@ -1,4 +1,8 @@
 CLASS net/minecraft/network/protocol/game/ServerboundSeenAdvancementsPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/network/protocol/game/ServerboundSeenAdvancementsPacket$Action;Lnet/minecraft/resources/ResourceLocation;)V
 		ARG 1 action
 		ARG 2 tab
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

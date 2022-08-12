@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/level/chunk/ChunkBiomeContainer
-	METHOD <init> (Lnet/minecraft/core/IdMap;Lnet/minecraft/world/level/LevelHeightAccessor;[Lnet/minecraft/world/level/biome/Biome;)V
-		ARG 1 biomeRegistry
-		ARG 3 biomes

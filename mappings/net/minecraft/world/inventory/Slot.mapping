@@ -10,6 +10,8 @@ CLASS net/minecraft/world/inventory/Slot
 		ARG 1 stack
 	METHOD getMaxStackSize (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 1 stack
+	METHOD initialize (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
 	METHOD mayPickup (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 player
 	METHOD mayPlace (Lnet/minecraft/world/item/ItemStack;)Z

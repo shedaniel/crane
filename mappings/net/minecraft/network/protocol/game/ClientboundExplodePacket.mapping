@@ -13,3 +13,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundExplodePacket
 	METHOD lambda$write$1 (IIILnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/core/BlockPos;)V
 		ARG 3 b
 		ARG 4 pos
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

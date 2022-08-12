@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/levelgen/structure/StructureSet
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/world/level/levelgen/structure/placement/StructurePlacement;)V
+		ARG 1 structures
+		ARG 2 placement
+	CLASS StructureSelectionEntry
+		METHOD <init> (Lnet/minecraft/core/Holder;I)V
+			ARG 1 structure
+			ARG 2 weight

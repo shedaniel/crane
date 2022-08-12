@@ -1,4 +1,0 @@
-CLASS net/minecraft/util/WeighedRandom
-	CLASS WeighedRandomItem
-		METHOD <init> (I)V
-			ARG 1 weight

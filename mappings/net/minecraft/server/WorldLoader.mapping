@@ -1,0 +1,11 @@
+CLASS net/minecraft/server/WorldLoader
+	CLASS InitConfig
+		METHOD <init> (Lnet/minecraft/server/WorldLoader$PackConfig;Lnet/minecraft/commands/Commands$CommandSelection;I)V
+			ARG 1 packConfig
+			ARG 2 commandSelection
+			ARG 3 functionCompilationLevel
+	CLASS PackConfig
+		METHOD <init> (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/world/level/DataPackConfig;Z)V
+			ARG 1 packRepository
+			ARG 2 initialDataPacks
+			ARG 3 safeMode

@@ -1,1 +1,3 @@
 CLASS net/minecraft/world/entity/monster/Monster
+	METHOD getProjectile (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 stack

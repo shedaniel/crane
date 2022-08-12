@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ClientboundUpdateAdvancementsPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (ZLjava/util/Collection;Ljava/util/Set;Ljava/util/Map;)V
 		ARG 1 reset
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

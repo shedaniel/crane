@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/gameevent/PositionSourceType
+	METHOD fromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/level/gameevent/PositionSource;
+		ARG 0 buf
+	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/level/gameevent/PositionSource;
+		ARG 1 buf
+	METHOD toNetwork (Lnet/minecraft/world/level/gameevent/PositionSource;Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/level/gameevent/PositionSource;)V
+		ARG 1 buf

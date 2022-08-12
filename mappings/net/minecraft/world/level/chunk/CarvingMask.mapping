@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/chunk/CarvingMask
+	METHOD <init> (II)V
+		ARG 2 minY
+	METHOD <init> ([JI)V
+		ARG 2 minY
+	METHOD setAdditionalMask (Lnet/minecraft/world/level/chunk/CarvingMask$Mask;)V
+		ARG 1 additionalMask

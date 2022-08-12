@@ -30,8 +30,6 @@ CLASS net/minecraft/world/item/MapItem
 	METHOD getSavedData (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;
 		ARG 0 state
 		ARG 1 level
-	METHOD isLand ([Lnet/minecraft/world/level/biome/Biome;III)Z
-		ARG 0 biomes
 	METHOD lockMap (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 0 level
 		ARG 1 state

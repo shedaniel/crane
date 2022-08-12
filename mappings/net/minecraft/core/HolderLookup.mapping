@@ -1,0 +1,4 @@
+CLASS net/minecraft/core/HolderLookup
+	CLASS RegistryLookup
+		METHOD <init> (Lnet/minecraft/core/Registry;)V
+			ARG 1 registry

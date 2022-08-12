@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/level/levelgen/NoiseRouter
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;)V
+		ARG 1 barrierNoise
+		ARG 2 fluidLevelFloodednessNoise
+		ARG 3 fluidLevelSpreadNoise
+		ARG 4 lavaNoise
+		ARG 5 temperature
+		ARG 6 vegetation
+		ARG 7 continents
+		ARG 8 erosion
+		ARG 9 depth
+		ARG 10 ridges
+		ARG 11 initialDensityWithoutJaggedness
+		ARG 12 finalDensity
+		ARG 13 veinToggle
+		ARG 14 veinRidged
+		ARG 15 veinGap

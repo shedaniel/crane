@@ -1,6 +1,6 @@
 CLASS net/minecraft/world/level/levelgen/structure/PoolElementStructurePiece
-	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureManager;Lnet/minecraft/world/level/levelgen/feature/structures/StructurePoolElement;Lnet/minecraft/core/BlockPos;ILnet/minecraft/world/level/block/Rotation;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;)V
-		ARG 1 structureManager
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/world/level/levelgen/structure/pools/StructurePoolElement;Lnet/minecraft/core/BlockPos;ILnet/minecraft/world/level/block/Rotation;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;)V
+		ARG 1 structureTemplateManager
 		ARG 2 element
 		ARG 3 position
 		ARG 4 groundLevelDelta

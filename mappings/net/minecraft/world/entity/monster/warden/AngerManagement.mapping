@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/monster/warden/AngerManagement
+	METHOD <init> (Ljava/util/function/Predicate;Ljava/util/List;)V
+		ARG 1 filter
+	CLASS Sorter
+		METHOD <init> (Lnet/minecraft/world/entity/monster/warden/AngerManagement;)V
+			ARG 1 angerManagement

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetContainerContents
+	METHOD <init> ([Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;Lnet/minecraft/world/level/block/entity/BlockEntityType;Ljava/util/List;)V
+		ARG 2 type
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType;)V
+			ARG 1 type

@@ -1,0 +1,7 @@
+CLASS net/minecraft/commands/arguments/RangeArgument
+	CLASS Ints
+		METHOD getRange (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;
+			ARG 0 context
+	CLASS Floats
+		METHOD getRange (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/advancements/critereon/MinMaxBounds$Doubles;
+			ARG 0 context

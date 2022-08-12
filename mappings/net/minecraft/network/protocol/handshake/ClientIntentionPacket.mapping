@@ -5,3 +5,5 @@ CLASS net/minecraft/network/protocol/handshake/ClientIntentionPacket
 		ARG 3 intention
 	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

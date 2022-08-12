@@ -1,5 +1,7 @@
 CLASS net/minecraft/world/inventory/LoomMenu
 	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/inventory/ContainerLevelAccess;)V
 		ARG 3 access
+	METHOD getSelectablePatterns (Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;
+		ARG 1 stack
 	METHOD registerUpdateListener (Ljava/lang/Runnable;)V
 		ARG 1 slotUpdateListener

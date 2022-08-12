@@ -4,3 +4,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundAnimatePacket
 	METHOD <init> (Lnet/minecraft/world/entity/Entity;I)V
 		ARG 1 entity
 		ARG 2 action
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

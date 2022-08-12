@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/StructureSettings
-	METHOD <init> (Ljava/util/Optional;Ljava/util/Map;)V
-		ARG 2 structureConfig

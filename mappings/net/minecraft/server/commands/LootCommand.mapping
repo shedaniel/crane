@@ -1,0 +1,14 @@
+CLASS net/minecraft/server/commands/LootCommand
+	METHOD drop (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/server/commands/LootCommand$DropConsumer;)I
+		ARG 0 context
+	METHOD dropBlockLoot (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/server/commands/LootCommand$DropConsumer;)I
+		ARG 0 context
+	METHOD dropChestLoot (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/commands/LootCommand$DropConsumer;)I
+		ARG 0 context
+	METHOD dropFishingLoot (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/server/commands/LootCommand$DropConsumer;)I
+		ARG 0 context
+	METHOD dropKillLoot (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/server/commands/LootCommand$DropConsumer;)I
+		ARG 0 context
+	CLASS DropConsumer
+		METHOD accept (Lcom/mojang/brigadier/context/CommandContext;Ljava/util/List;Lnet/minecraft/server/commands/LootCommand$Callback;)I
+			ARG 1 context

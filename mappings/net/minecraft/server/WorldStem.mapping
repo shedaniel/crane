@@ -1,0 +1,6 @@
+CLASS net/minecraft/server/WorldStem
+	METHOD <init> (Lnet/minecraft/server/packs/resources/CloseableResourceManager;Lnet/minecraft/server/ReloadableServerResources;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/world/level/storage/WorldData;)V
+		ARG 1 resourceManager
+		ARG 2 dataPackResources
+		ARG 3 registryAccess
+		ARG 4 worldData

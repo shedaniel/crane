@@ -1,4 +1,12 @@
 CLASS net/minecraft/network/protocol/game/ServerboundPlayerActionPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)V
 		ARG 1 action
 		ARG 3 direction
+	METHOD <init> (Lnet/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;I)V
+		ARG 1 action
+		ARG 3 direction
+		ARG 4 sequence
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

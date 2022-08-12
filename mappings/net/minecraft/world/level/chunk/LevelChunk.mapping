@@ -1,30 +1,29 @@
 CLASS net/minecraft/world/level/chunk/LevelChunk
-	METHOD <init> (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/chunk/ProtoChunk;Ljava/util/function/Consumer;)V
-		ARG 1 leel
-		ARG 2 chunk
-		ARG 3 postLoad
-	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;)V
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/UpgradeData;Lnet/minecraft/world/ticks/LevelChunkTicks;Lnet/minecraft/world/ticks/LevelChunkTicks;J[Lnet/minecraft/world/level/chunk/LevelChunkSection;Lnet/minecraft/world/level/chunk/LevelChunk$PostLoadProcessor;Lnet/minecraft/world/level/levelgen/blending/BlendingData;)V
 		ARG 1 level
-		ARG 2 chunkPos
-		ARG 3 biomes
-	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;Lnet/minecraft/world/level/chunk/UpgradeData;Lnet/minecraft/world/level/TickList;Lnet/minecraft/world/level/TickList;J[Lnet/minecraft/world/level/chunk/LevelChunkSection;Ljava/util/function/Consumer;)V
-		ARG 1 level
-		ARG 2 chunkPos
-		ARG 3 biomes
-		ARG 4 upgradeData
-		ARG 5 blockTicks
-		ARG 6 liquidTicks
-		ARG 7 inhabitedTime
-		ARG 9 sections
-		ARG 10 postLoad
+		ARG 4 blockTicks
+		ARG 5 fluidTicks
+		ARG 9 postLoad
 	METHOD createBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+		ARG 1 pos
+	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+		ARG 1 pos
+	METHOD getBlockEntityNbtForSaving (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 pos
+	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 pos
+	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
 		ARG 1 pos
 	METHOD isTicking (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
+	METHOD removeBlockEntity (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
 	METHOD removeBlockEntityTicker (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
-	METHOD replaceWithPacketData (Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/nbt/CompoundTag;Ljava/util/BitSet;)V
-		ARG 1 biomes
+	METHOD replaceWithPacketData (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/nbt/CompoundTag;Ljava/util/function/Consumer;)V
+		ARG 1 buf
+	METHOD setClientLightReady (Z)V
+		ARG 1 clientLightReady
 	METHOD setFullStatus (Ljava/util/function/Supplier;)V
 		ARG 1 fullStatus
 	METHOD setLoaded (Z)V

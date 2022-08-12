@@ -1,3 +1,3 @@
 CLASS net/minecraft/gametest/framework/GameTestServer
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/server/ServerResources;Ljava/util/Collection;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/core/Registry;Lnet/minecraft/core/Registry;)V
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/server/WorldStem;Ljava/util/Collection;Lnet/minecraft/core/BlockPos;)V
 		ARG 6 spawnPos

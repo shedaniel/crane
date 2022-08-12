@@ -1,0 +1,7 @@
+CLASS net/minecraft/resources/RegistryLoader
+	METHOD <init> (Lnet/minecraft/resources/RegistryResourceAccess;)V
+		ARG 1 resources
+	CLASS Bound
+		METHOD <init> (Lnet/minecraft/core/RegistryAccess$Writable;Lnet/minecraft/resources/RegistryLoader;)V
+			ARG 1 access
+			ARG 2 loader

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/levelgen/structure/pools/ListPoolElement
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection;)V
+		ARG 1 elements

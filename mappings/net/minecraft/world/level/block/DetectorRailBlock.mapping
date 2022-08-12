@@ -5,6 +5,10 @@ CLASS net/minecraft/world/level/block/DetectorRailBlock
 		ARG 3 state
 	METHOD getSearchBB (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/AABB;
 		ARG 1 pos
+	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	METHOD updatePowerToConnected (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V
 		ARG 1 level
 		ARG 2 pos

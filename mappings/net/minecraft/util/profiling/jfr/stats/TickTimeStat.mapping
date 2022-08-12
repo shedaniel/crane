@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/profiling/jfr/stats/TickTimeStat
+	METHOD <init> (Ljava/time/Instant;Ljava/time/Duration;)V
+		ARG 1 timestamp
+		ARG 2 currentAverage

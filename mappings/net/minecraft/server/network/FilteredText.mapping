@@ -1,0 +1,4 @@
+CLASS net/minecraft/server/network/FilteredText
+	METHOD <init> (Ljava/lang/Object;Ljava/lang/Object;)V
+		ARG 1 raw
+		ARG 2 filtered

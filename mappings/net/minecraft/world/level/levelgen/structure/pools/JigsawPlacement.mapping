@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/level/levelgen/structure/pools/JigsawPlacement
+	CLASS Placer
+		METHOD <init> (Lnet/minecraft/core/Registry;ILnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Ljava/util/List;Lnet/minecraft/util/RandomSource;)V
+			ARG 1 pools
+			ARG 2 maxDepth
+			ARG 3 chunkGenerator
+			ARG 4 structureTemplateManager
+			ARG 5 pieces
+			ARG 6 random
+	CLASS PieceState
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/PoolElementStructurePiece;Lorg/apache/commons/lang3/mutable/MutableObject;I)V
+			ARG 1 piece
+			ARG 2 free
+			ARG 3 depth

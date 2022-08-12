@@ -15,3 +15,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundLevelParticlesPacket
 	METHOD readParticle (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/core/particles/ParticleType;)Lnet/minecraft/core/particles/ParticleOptions;
 		ARG 1 buf
 		ARG 2 type
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

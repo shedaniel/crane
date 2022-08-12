@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/chat/contents/StorageDataSource
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 id

@@ -4,3 +4,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundChangeDifficultyPacket
 	METHOD <init> (Lnet/minecraft/world/Difficulty;Z)V
 		ARG 1 difficulty
 		ARG 2 locked
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

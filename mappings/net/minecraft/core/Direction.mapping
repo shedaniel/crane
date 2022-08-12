@@ -42,8 +42,6 @@ CLASS net/minecraft/core/Direction
 		ARG 0 x
 		ARG 1 y
 		ARG 2 z
-	METHOD getRandom (Ljava/util/Random;)Lnet/minecraft/core/Direction;
-		ARG 0 random
 	METHOD orderedByNearest (Lnet/minecraft/world/entity/Entity;)[Lnet/minecraft/core/Direction;
 		ARG 0 entity
 	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/core/Direction;

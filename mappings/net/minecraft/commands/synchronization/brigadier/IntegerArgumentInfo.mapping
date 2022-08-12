@@ -1,0 +1,9 @@
+CLASS net/minecraft/commands/synchronization/brigadier/IntegerArgumentInfo
+	METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/synchronization/brigadier/IntegerArgumentInfo$Template;
+		ARG 1 buf
+	METHOD serializeToNetwork (Lnet/minecraft/commands/synchronization/brigadier/IntegerArgumentInfo$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 2 buf
+	CLASS Template
+		METHOD <init> (Lnet/minecraft/commands/synchronization/brigadier/IntegerArgumentInfo;II)V
+			ARG 2 min
+			ARG 3 max

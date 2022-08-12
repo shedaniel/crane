@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/animal/frog/ShootTongue
+	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundEvent;)V
+		ARG 1 tongueSound
+		ARG 2 eatSound

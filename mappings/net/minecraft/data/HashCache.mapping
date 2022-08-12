@@ -1,19 +1,10 @@
 CLASS net/minecraft/data/HashCache
-	METHOD <init> (Ljava/nio/file/Path;Ljava/lang/String;)V
-		ARG 1 path
-	METHOD getHash (Ljava/nio/file/Path;)Ljava/lang/String;
-		ARG 1 path
-	METHOD had (Ljava/nio/file/Path;)Z
-		ARG 1 path
-	METHOD keep (Ljava/nio/file/Path;)V
-		ARG 1 path
-	METHOD lambda$new$0 (Ljava/nio/file/Path;)V
-		ARG 1 path
-	METHOD lambda$new$1 (Ljava/nio/file/Path;Ljava/lang/String;)V
-		ARG 2 line
-	METHOD lambda$removeStale$3 (Ljava/nio/file/Path;)V
-		ARG 1 path
-	METHOD lambda$walkOutputFiles$4 (Ljava/nio/file/Path;)Z
-		ARG 1 path
-	METHOD putNew (Ljava/nio/file/Path;Ljava/lang/String;)V
-		ARG 1 path
+	METHOD <init> (Ljava/nio/file/Path;Ljava/util/List;Lnet/minecraft/WorldVersion;)V
+		ARG 1 rootDir
+	CLASS CacheUpdater
+		METHOD <init> (Ljava/lang/String;Lnet/minecraft/data/HashCache$ProviderCache;)V
+			ARG 2 oldCache
+	CLASS ProviderCache
+		METHOD <init> (Ljava/lang/String;Ljava/util/Map;)V
+			ARG 1 version
+			ARG 2 data

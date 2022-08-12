@@ -1,0 +1,94 @@
+CLASS net/minecraft/world/level/levelgen/DensityFunctions
+	CLASS Ap2
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunctions$TwoArgumentSimpleFunction$Type;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;DD)V
+			ARG 1 type
+			ARG 2 argument1
+			ARG 3 argument2
+			ARG 4 minValue
+	CLASS Clamp
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction;DD)V
+			ARG 1 input
+			ARG 2 minValue
+	CLASS Noise
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction$NoiseHolder;DD)V
+			ARG 1 noise
+			ARG 2 xzScale
+	CLASS Shift
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction$NoiseHolder;)V
+			ARG 1 offsetNoise
+	CLASS Mapped
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunctions$Mapped$Type;Lnet/minecraft/world/level/levelgen/DensityFunction;DD)V
+			ARG 1 type
+			ARG 2 input
+			ARG 3 minValue
+		CLASS Type
+			METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+				ARG 3 name
+	CLASS Marker
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunctions$Marker$Type;Lnet/minecraft/world/level/levelgen/DensityFunction;)V
+			ARG 1 type
+			ARG 2 wrapped
+		CLASS Type
+			METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+				ARG 3 name
+	CLASS ShiftA
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction$NoiseHolder;)V
+			ARG 1 offsetNoise
+	CLASS ShiftB
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction$NoiseHolder;)V
+			ARG 1 offsetNoise
+	CLASS Spline
+		METHOD <init> (Lnet/minecraft/util/CubicSpline;)V
+			ARG 1 spline
+		CLASS Point
+			METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction$FunctionContext;)V
+				ARG 1 context
+		CLASS Coordinate
+			METHOD <init> (Lnet/minecraft/core/Holder;)V
+				ARG 1 function
+	CLASS Constant
+		METHOD <init> (D)V
+			ARG 1 value
+	CLASS MulOrAdd
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunctions$MulOrAdd$Type;Lnet/minecraft/world/level/levelgen/DensityFunction;DDD)V
+			ARG 1 specificType
+			ARG 2 input
+			ARG 3 minValue
+			ARG 5 maxValue
+	CLASS RangeChoice
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction;DDLnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;)V
+			ARG 1 input
+			ARG 2 minInclusive
+			ARG 4 maxExclusive
+	CLASS BlendDensity
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction;)V
+			ARG 1 input
+	CLASS HolderHolder
+		METHOD <init> (Lnet/minecraft/core/Holder;)V
+			ARG 1 function
+	CLASS ShiftedNoise
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;DDLnet/minecraft/world/level/levelgen/DensityFunction$NoiseHolder;)V
+			ARG 1 shiftX
+			ARG 2 shiftY
+			ARG 3 shiftZ
+			ARG 4 xzScale
+			ARG 6 yScale
+	CLASS YClampedGradient
+		METHOD <init> (IIDD)V
+			ARG 1 fromY
+			ARG 2 toY
+			ARG 3 fromValue
+	CLASS WeirdScaledSampler
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction$NoiseHolder;Lnet/minecraft/world/level/levelgen/DensityFunctions$WeirdScaledSampler$RarityValueMapper;)V
+			ARG 1 input
+			ARG 2 noise
+			ARG 3 rarityValueMapper
+		CLASS RarityValueMapper
+			METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lit/unimi/dsi/fastutil/doubles/Double2DoubleFunction;D)V
+				ARG 3 name
+				ARG 4 mapper
+				ARG 5 maxRarity
+	CLASS TwoArgumentSimpleFunction
+		CLASS Type
+			METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+				ARG 3 name

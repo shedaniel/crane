@@ -1,0 +1,8 @@
+CLASS net/minecraft/util/profiling/jfr/stats/TimedStatSummary
+	METHOD <init> (Lnet/minecraft/util/profiling/jfr/stats/TimedStat;Lnet/minecraft/util/profiling/jfr/stats/TimedStat;Lnet/minecraft/util/profiling/jfr/stats/TimedStat;ILjava/util/Map;Ljava/time/Duration;)V
+		ARG 1 fastest
+		ARG 2 slowest
+		ARG 3 secondSlowest
+		ARG 4 count
+		ARG 5 percentilesNanos
+		ARG 6 totalDuration

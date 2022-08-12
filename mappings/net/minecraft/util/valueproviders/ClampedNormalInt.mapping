@@ -1,0 +1,6 @@
+CLASS net/minecraft/util/valueproviders/ClampedNormalInt
+	METHOD <init> (FFII)V
+		ARG 1 mean
+		ARG 2 deviation
+		ARG 3 min_inclusive
+		ARG 4 max_inclusive

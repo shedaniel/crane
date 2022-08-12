@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/commands/BossBarCommands
+	METHOD getBossBar (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/server/bossevents/CustomBossEvent;
+		ARG 0 context

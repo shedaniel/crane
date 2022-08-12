@@ -1,0 +1,8 @@
+CLASS net/minecraft/commands/synchronization/brigadier/DoubleArgumentInfo
+	METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/synchronization/brigadier/DoubleArgumentInfo$Template;
+		ARG 1 buf
+	METHOD serializeToNetwork (Lnet/minecraft/commands/synchronization/brigadier/DoubleArgumentInfo$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 2 buf
+	CLASS Template
+		METHOD <init> (Lnet/minecraft/commands/synchronization/brigadier/DoubleArgumentInfo;DD)V
+			ARG 2 min

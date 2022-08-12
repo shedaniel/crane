@@ -1,7 +1,16 @@
 CLASS net/minecraft/world/level/block/PointedDripstoneBlock
 	METHOD canDrip (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
+	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 state
+	METHOD getPistonPushReaction (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/PushReaction;
+		ARG 1 state
 	METHOD isStalactite (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
 	METHOD isStalagmite (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
+	CLASS FluidInfo
+		METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/material/Fluid;Lnet/minecraft/world/level/block/state/BlockState;)V
+			ARG 1 pos
+			ARG 2 fluid
+			ARG 3 sourceState

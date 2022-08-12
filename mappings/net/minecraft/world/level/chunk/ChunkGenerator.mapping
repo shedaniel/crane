@@ -1,9 +1,6 @@
 CLASS net/minecraft/world/level/chunk/ChunkGenerator
-	METHOD <init> (Lnet/minecraft/world/level/biome/BiomeSource;Lnet/minecraft/world/level/biome/BiomeSource;Lnet/minecraft/world/level/levelgen/StructureSettings;J)V
-		ARG 1 biomeSource
-		ARG 2 runtimeBiomeSource
-		ARG 3 settings
-		ARG 4 strongholdSeed
-	METHOD findNearestMapFeature (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/levelgen/feature/StructureFeature;Lnet/minecraft/core/BlockPos;IZ)Lnet/minecraft/core/BlockPos;
-		ARG 1 level
-		ARG 2 structure
+	METHOD <init> (Lnet/minecraft/core/Registry;Ljava/util/Optional;Lnet/minecraft/world/level/biome/BiomeSource;Ljava/util/function/Function;)V
+		ARG 1 structureSets
+		ARG 2 structureOverrides
+		ARG 3 biomeSource
+		ARG 4 generationSettingsGetter

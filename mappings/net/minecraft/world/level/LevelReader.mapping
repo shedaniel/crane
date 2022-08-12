@@ -3,12 +3,10 @@ CLASS net/minecraft/world/level/LevelReader
 		ARG 1 pos
 	METHOD containsAnyLiquid (Lnet/minecraft/world/phys/AABB;)Z
 		ARG 1 box
-	METHOD getBiome (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/biome/Biome;
+	METHOD getBiome (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
 		ARG 1 pos
 	METHOD getBlockStatesIfLoaded (Lnet/minecraft/world/phys/AABB;)Ljava/util/stream/Stream;
 		ARG 1 box
-	METHOD getBrightness (Lnet/minecraft/core/BlockPos;)F
-		ARG 1 pos
 	METHOD getChunk (II)Lnet/minecraft/world/level/chunk/ChunkAccess;
 		ARG 1 chunkX
 		ARG 2 chunkZ
@@ -33,15 +31,15 @@ CLASS net/minecraft/world/level/LevelReader
 	METHOD getHeightmapPos (Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;
 		ARG 1 heightmap
 		ARG 2 pos
+	METHOD getLightLevelDependentMagicValue (Lnet/minecraft/core/BlockPos;)F
+		ARG 1 pos
 	METHOD getMaxLocalRawBrightness (Lnet/minecraft/core/BlockPos;)I
 		ARG 1 pos
 	METHOD getMaxLocalRawBrightness (Lnet/minecraft/core/BlockPos;I)I
 		ARG 1 pos
 		ARG 2 skyDarken
-	METHOD getUncachedNoiseBiome (III)Lnet/minecraft/world/level/biome/Biome;
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
+	METHOD getPathfindingCostFromLightLevels (Lnet/minecraft/core/BlockPos;)F
+		ARG 1 pos
 	METHOD hasChunk (II)Z
 		ARG 1 x
 		ARG 2 z

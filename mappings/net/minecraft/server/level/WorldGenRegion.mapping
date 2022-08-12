@@ -4,6 +4,16 @@ CLASS net/minecraft/server/level/WorldGenRegion
 		ARG 2 cache
 		ARG 3 generatingStatus
 		ARG 4 writeRadiusCutoff
+	METHOD ensureCanWrite (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+		ARG 1 pos
+	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 pos
+	METHOD getCurrentDifficultyAt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/DifficultyInstance;
+		ARG 1 pos
+	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 pos
 	METHOD markPosForPostprocessing (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
 	METHOD setCurrentlyGenerating (Ljava/util/function/Supplier;)V

@@ -1,0 +1,19 @@
+CLASS net/minecraft/server/commands/ExecuteCommand
+	METHOD checkIfRegions (Lcom/mojang/brigadier/context/CommandContext;Z)I
+		ARG 0 context
+	METHOD checkRegions (Lcom/mojang/brigadier/context/CommandContext;Z)Ljava/util/OptionalInt;
+		ARG 0 context
+	METHOD checkScore (Lcom/mojang/brigadier/context/CommandContext;Ljava/util/function/BiPredicate;)Z
+		ARG 0 context
+	METHOD checkScore (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;)Z
+		ARG 0 context
+	METHOD checkUnlessRegions (Lcom/mojang/brigadier/context/CommandContext;Z)I
+		ARG 0 context
+	METHOD expect (Lcom/mojang/brigadier/context/CommandContext;ZZ)Ljava/util/Collection;
+		ARG 0 context
+	CLASS CommandPredicate
+		METHOD test (Lcom/mojang/brigadier/context/CommandContext;)Z
+			ARG 1 context
+	CLASS CommandNumericPredicate
+		METHOD test (Lcom/mojang/brigadier/context/CommandContext;)I
+			ARG 1 context

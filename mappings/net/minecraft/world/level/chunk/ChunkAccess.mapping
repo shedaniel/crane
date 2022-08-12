@@ -1,4 +1,9 @@
 CLASS net/minecraft/world/level/chunk/ChunkAccess
+	METHOD <init> (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/UpgradeData;Lnet/minecraft/world/level/LevelHeightAccessor;Lnet/minecraft/core/Registry;J[Lnet/minecraft/world/level/chunk/LevelChunkSection;Lnet/minecraft/world/level/levelgen/blending/BlendingData;)V
+		ARG 1 chunkPos
+		ARG 2 upgradeData
+		ARG 3 levelHeightAccessor
+		ARG 5 inhabitedTime
 	METHOD addEntity (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD getBlockEntityNbt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
@@ -7,14 +12,10 @@ CLASS net/minecraft/world/level/chunk/ChunkAccess
 		ARG 1 pos
 	METHOD getEventDispatcher (I)Lnet/minecraft/world/level/gameevent/GameEventDispatcher;
 		ARG 1 section
-	METHOD getHeighestPosition (Lnet/minecraft/world/level/levelgen/Heightmap$Types;)Lnet/minecraft/core/BlockPos;
-		ARG 1 heightmap
 	METHOD getHeight (Lnet/minecraft/world/level/levelgen/Heightmap$Types;II)I
 		ARG 1 heightmap
 	METHOD getOrCreateHeightmapUnprimed (Lnet/minecraft/world/level/levelgen/Heightmap$Types;)Lnet/minecraft/world/level/levelgen/Heightmap;
 		ARG 1 heightmap
-	METHOD getOrCreateSection (I)Lnet/minecraft/world/level/chunk/LevelChunkSection;
-		ARG 1 index
 	METHOD isYSpaceEmpty (II)Z
 		ARG 1 minY
 		ARG 2 maxY
@@ -24,6 +25,8 @@ CLASS net/minecraft/world/level/chunk/ChunkAccess
 		ARG 1 pos
 	METHOD setAllStarts (Ljava/util/Map;)V
 		ARG 1 starts
+	METHOD setBlendingData (Lnet/minecraft/world/level/levelgen/blending/BlendingData;)V
+		ARG 1 blendingData
 	METHOD setBlockEntity (Lnet/minecraft/world/level/block/entity/BlockEntity;)V
 		ARG 1 blockEntity
 	METHOD setBlockEntityNbt (Lnet/minecraft/nbt/CompoundTag;)V
@@ -40,3 +43,7 @@ CLASS net/minecraft/world/level/chunk/ChunkAccess
 		ARG 1 lightCorrect
 	METHOD setUnsaved (Z)V
 		ARG 1 unsaved
+	CLASS TicksToSave
+		METHOD <init> (Lnet/minecraft/world/ticks/SerializableTickContainer;Lnet/minecraft/world/ticks/SerializableTickContainer;)V
+			ARG 1 blocks
+			ARG 2 fluids

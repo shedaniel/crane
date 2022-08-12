@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/entity/layers/MushroomCowMushroomLayer
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;)V
+		ARG 2 blockRenderer

@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/Cavifier
-	METHOD <init> (Lnet/minecraft/world/level/levelgen/RandomSource;I)V
-		ARG 2 minCellY

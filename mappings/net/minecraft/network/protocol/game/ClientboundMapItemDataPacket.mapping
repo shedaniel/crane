@@ -11,6 +11,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundMapItemDataPacket
 		ARG 1 data
 	METHOD lambda$new$0 (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/level/saveddata/maps/MapDecoration;
 		ARG 0 b
-	METHOD lambda$write$1 (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/level/saveddata/maps/MapDecoration;)V
-		ARG 0 b
-		ARG 1 decoration
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

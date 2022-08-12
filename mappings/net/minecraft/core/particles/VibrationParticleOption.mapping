@@ -1,3 +1,6 @@
 CLASS net/minecraft/core/particles/VibrationParticleOption
-	METHOD <init> (Lnet/minecraft/world/level/gameevent/vibrations/VibrationPath;)V
-		ARG 1 vibrationPath
+	METHOD <init> (Lnet/minecraft/world/level/gameevent/PositionSource;I)V
+		ARG 1 destination
+		ARG 2 arrivalInTicks
+	METHOD writeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

@@ -1,4 +1,4 @@
 CLASS net/minecraft/world/level/dimension/LevelStem
-	METHOD <init> (Ljava/util/function/Supplier;Lnet/minecraft/world/level/chunk/ChunkGenerator;)V
+	METHOD <init> (Lnet/minecraft/core/Holder;Lnet/minecraft/world/level/chunk/ChunkGenerator;)V
 		ARG 1 type
 		ARG 2 generator

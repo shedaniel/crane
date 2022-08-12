@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/RandomState
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseGeneratorSettings;Lnet/minecraft/core/Registry;J)V
+		ARG 2 noises
+		ARG 3 legacyLevelSeed

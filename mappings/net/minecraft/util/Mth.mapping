@@ -62,18 +62,6 @@ CLASS net/minecraft/util/Mth
 		ARG 4 max
 	METHOD lfloor (D)J
 		ARG 0 a
-	METHOD nextDouble (Ljava/util/Random;DD)D
-		ARG 0 random
-		ARG 1 min
-		ARG 3 max
-	METHOD nextFloat (Ljava/util/Random;FF)F
-		ARG 0 random
-		ARG 1 min
-		ARG 2 max
-	METHOD nextInt (Ljava/util/Random;II)I
-		ARG 0 random
-		ARG 1 min
-		ARG 2 max
 	METHOD positiveModulo (II)I
 		ARG 0 x
 		ARG 1 y

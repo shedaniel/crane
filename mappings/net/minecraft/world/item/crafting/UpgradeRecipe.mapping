@@ -8,3 +8,8 @@ CLASS net/minecraft/world/item/crafting/UpgradeRecipe
 		ARG 1 stack
 	METHOD lambda$isIncomplete$0 (Lnet/minecraft/world/item/crafting/Ingredient;)Z
 		ARG 0 ingredient
+	CLASS Serializer
+		METHOD fromNetwork (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/UpgradeRecipe;
+			ARG 2 buf
+		METHOD toNetwork (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/UpgradeRecipe;)V
+			ARG 1 buf

@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/DensityFunction
+	CLASS NoiseHolder
+		METHOD <init> (Lnet/minecraft/core/Holder;Lnet/minecraft/world/level/levelgen/synth/NormalNoise;)V
+			ARG 1 noiseData
+			ARG 2 noise
+	CLASS SinglePointContext
+		METHOD <init> (III)V
+			ARG 1 blockX
+			ARG 2 blockY
+			ARG 3 blockZ

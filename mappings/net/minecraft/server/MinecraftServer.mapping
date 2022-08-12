@@ -1,22 +1,16 @@
 CLASS net/minecraft/server/MinecraftServer
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/server/packs/repository/PackRepository;Ljava/net/Proxy;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/server/ServerResources;Lcom/mojang/authlib/minecraft/MinecraftSessionService;Lcom/mojang/authlib/GameProfileRepository;Lnet/minecraft/server/players/GameProfileCache;Lnet/minecraft/server/level/progress/ChunkProgressListenerFactory;)V
-		ARG 1 thread
-		ARG 2 registryHolder
-		ARG 3 storageAccess
-		ARG 4 worldData
-		ARG 5 packRepository
-		ARG 6 proxy
-		ARG 7 fixerUpper
-		ARG 8 resources
-		ARG 9 sessionService
-		ARG 10 profileRepository
-		ARG 11 profileC
-		ARG 12 progressListenerFactory
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/server/WorldStem;Ljava/net/Proxy;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/server/Services;Lnet/minecraft/server/level/progress/ChunkProgressListenerFactory;)V
+		ARG 1 serverThread
+		ARG 2 storageSource
+		ARG 3 packRepository
+		ARG 4 worldStem
+		ARG 5 proxy
+		ARG 6 fixerUpper
+		ARG 7 services
+		ARG 8 progressListenerFactory
 	METHOD configurePackRepository (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/world/level/DataPackConfig;Z)Lnet/minecraft/world/level/DataPackConfig;
 		ARG 0 packRepository
 		ARG 1 packConfig
-	METHOD convertFromRegionFormatIfNeeded (Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;)V
-		ARG 0 storageAccess
 	METHOD createLevels (Lnet/minecraft/server/level/progress/ChunkProgressListener;)V
 		ARG 1 listener
 	METHOD fillServerSystemReport (Lnet/minecraft/SystemReport;)Lnet/minecraft/SystemReport;
@@ -37,8 +31,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 3 player
 	METHOD kickUnlistedPlayers (Lnet/minecraft/commands/CommandSourceStack;)V
 		ARG 1 commandSource
-	METHOD lambda$setInitialSpawn$4 (Lnet/minecraft/world/level/biome/Biome;)Z
-		ARG 0 biome
 	METHOD onServerCrash (Lnet/minecraft/CrashReport;)V
 		ARG 1 report
 	METHOD publishServer (Lnet/minecraft/world/level/GameType;ZI)Z
@@ -74,11 +66,8 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 preventProxyConnections
 	METHOD setPvpAllowed (Z)V
 		ARG 1 pvp
-	METHOD setResourcePack (Ljava/lang/String;Ljava/lang/String;)V
-		ARG 1 resourcePack
-		ARG 2 resourcePackHash
-	METHOD setSingleplayerName (Ljava/lang/String;)V
-		ARG 1 singleplayerName
+	METHOD setSingleplayerProfile (Lcom/mojang/authlib/GameProfile;)V
+		ARG 1 singleplayerProfile
 	METHOD setUsesAuthentication (Z)V
 		ARG 1 onlineMode
 	METHOD startRecordingMetrics (Ljava/util/function/Consumer;Ljava/util/function/Consumer;)V
@@ -87,3 +76,16 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 haveTime
 	METHOD tickServer (Ljava/util/function/BooleanSupplier;)V
 		ARG 1 haveTime
+	CLASS TimeProfiler
+		METHOD <init> (JI)V
+			ARG 1 startNanos
+	CLASS ReloadableResources
+		METHOD <init> (Lnet/minecraft/server/packs/resources/CloseableResourceManager;Lnet/minecraft/server/ReloadableServerResources;)V
+			ARG 1 resourceManager
+			ARG 2 managers
+	CLASS ServerResourcePackInfo
+		METHOD <init> (Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/network/chat/Component;)V
+			ARG 1 url
+			ARG 2 hash
+			ARG 3 isRequired
+			ARG 4 prompt

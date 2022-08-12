@@ -1,4 +1,4 @@
 CLASS net/minecraft/world/level/storage/loot/entries/TagEntry
-	METHOD <init> (Lnet/minecraft/tags/Tag;ZII[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;[Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)V
+	METHOD <init> (Lnet/minecraft/tags/TagKey;ZII[Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;[Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)V
 		ARG 1 tag
 		ARG 2 expand

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/SurfaceSystem
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/block/state/BlockState;ILnet/minecraft/world/level/levelgen/PositionalRandomFactory;)V
+		ARG 2 defaultBlock
+		ARG 3 seaLevel
+		ARG 4 noiseRandom
+	METHOD isStone (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

@@ -3,3 +3,7 @@ CLASS net/minecraft/network/protocol/game/ClientboundTakeItemEntityPacket
 		ARG 1 itemId
 		ARG 2 playerId
 		ARG 3 amount
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

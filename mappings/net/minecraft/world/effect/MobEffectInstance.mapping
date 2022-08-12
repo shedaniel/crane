@@ -1,5 +1,5 @@
 CLASS net/minecraft/world/effect/MobEffectInstance
-	METHOD <init> (Lnet/minecraft/world/effect/MobEffect;IIZZZLnet/minecraft/world/effect/MobEffectInstance;)V
+	METHOD <init> (Lnet/minecraft/world/effect/MobEffect;IIZZZLnet/minecraft/world/effect/MobEffectInstance;Ljava/util/Optional;)V
 		ARG 1 effect
 		ARG 2 duration
 		ARG 3 amplifier
@@ -7,5 +7,15 @@ CLASS net/minecraft/world/effect/MobEffectInstance
 		ARG 5 visible
 		ARG 6 showIcon
 		ARG 7 hiddenEffect
+		ARG 8 factorData
 	METHOD setNoCounter (Z)V
 		ARG 1 noCounter
+	CLASS FactorData
+		METHOD <init> (IFFFIFZ)V
+			ARG 1 paddingDuration
+			ARG 2 factorStart
+			ARG 3 factorTarget
+			ARG 4 factorCurrent
+			ARG 5 effectChangedTimestamp
+			ARG 6 factorPreviousFrame
+			ARG 7 hadEffectLastTick

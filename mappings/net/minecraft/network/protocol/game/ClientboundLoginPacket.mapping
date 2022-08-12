@@ -1,24 +1,24 @@
 CLASS net/minecraft/network/protocol/game/ClientboundLoginPacket
-	METHOD <init> (ILnet/minecraft/world/level/GameType;Lnet/minecraft/world/level/GameType;JZLjava/util/Set;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/dimension/DimensionType;Lnet/minecraft/resources/ResourceKey;IIZZZZ)V
+	METHOD <init> (IZLnet/minecraft/world/level/GameType;Lnet/minecraft/world/level/GameType;Ljava/util/Set;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceKey;JIIIZZZZLjava/util/Optional;)V
 		ARG 1 playerId
-		ARG 2 gameType
-		ARG 3 previousGameType
-		ARG 4 seed
-		ARG 6 hardcore
-		ARG 7 levels
-		ARG 8 registryHolder
-		ARG 9 dimensionType
-		ARG 10 dimension
+		ARG 2 hardcore
+		ARG 3 gameType
+		ARG 4 previousGameType
+		ARG 5 levels
+		ARG 6 registryHolder
+		ARG 7 dimensionType
+		ARG 8 dimension
+		ARG 9 seed
 		ARG 11 maxPlayers
 		ARG 12 chunkRadius
-		ARG 13 reducedDebugInfo
-		ARG 14 showDeathScreen
-		ARG 15 isDebug
-		ARG 16 isFlat
+		ARG 13 simulationDistance
+		ARG 14 reducedDebugInfo
+		ARG 15 showDeathScreen
+		ARG 16 isDebug
+		ARG 17 isFlat
 	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
 	METHOD lambda$new$0 (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/resources/ResourceKey;
 		ARG 0 b
-	METHOD lambda$write$1 (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/resources/ResourceKey;)V
-		ARG 0 b
-		ARG 1 levelKey
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

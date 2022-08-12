@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ServerboundTeleportToEntityPacket
 	METHOD <init> (Ljava/util/UUID;)V
 		ARG 1 uuid
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

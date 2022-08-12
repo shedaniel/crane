@@ -1,0 +1,6 @@
+CLASS net/minecraft/core/particles/ParticleOptions
+	METHOD writeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	CLASS Deserializer
+		METHOD fromNetwork (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/core/particles/ParticleOptions;
+			ARG 2 buf

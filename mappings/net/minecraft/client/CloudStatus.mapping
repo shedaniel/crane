@@ -1,5 +1,6 @@
 CLASS net/minecraft/client/CloudStatus
-	METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
-		ARG 3 key
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 3 id
+		ARG 4 key
 	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/CloudStatus;
 		ARG 0 name

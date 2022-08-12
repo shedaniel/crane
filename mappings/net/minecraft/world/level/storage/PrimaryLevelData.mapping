@@ -27,3 +27,43 @@ CLASS net/minecraft/world/level/storage/PrimaryLevelData
 		ARG 27 customBossEvents
 		ARG 28 endDragonFightData
 		ARG 29 settings
+	METHOD setClearWeatherTime (I)V
+		ARG 1 clearWeatherTime
+	METHOD setCustomBossEvents (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 customBossEvents
+	METHOD setDayTime (J)V
+		ARG 1 dayTime
+	METHOD setDifficultyLocked (Z)V
+		ARG 1 difficultyLocked
+	METHOD setEndDragonFightData (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 endDragonFightData
+	METHOD setGameTime (J)V
+		ARG 1 gameTime
+	METHOD setInitialized (Z)V
+		ARG 1 initialized
+	METHOD setRainTime (I)V
+		ARG 1 rainTime
+	METHOD setRaining (Z)V
+		ARG 1 raining
+	METHOD setSpawn (Lnet/minecraft/core/BlockPos;F)V
+		ARG 2 spawnAngle
+	METHOD setSpawnAngle (F)V
+		ARG 1 spawnAngle
+	METHOD setThunderTime (I)V
+		ARG 1 thunderTime
+	METHOD setThundering (Z)V
+		ARG 1 thundering
+	METHOD setWanderingTraderId (Ljava/util/UUID;)V
+		ARG 1 wanderingTraderId
+	METHOD setWanderingTraderSpawnChance (I)V
+		ARG 1 wanderingTraderSpawnChance
+	METHOD setWanderingTraderSpawnDelay (I)V
+		ARG 1 wanderingTraderSpawnDelay
+	METHOD setWorldBorder (Lnet/minecraft/world/level/border/WorldBorder$Settings;)V
+		ARG 1 worldBorder
+	METHOD setXSpawn (I)V
+		ARG 1 xSpawn
+	METHOD setYSpawn (I)V
+		ARG 1 ySpawn
+	METHOD setZSpawn (I)V
+		ARG 1 zSpawn

@@ -1,1 +1,3 @@
 CLASS net/minecraft/world/entity/ai/navigation/WaterBoundPathNavigation
+	METHOD isStableDestination (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/Beardifier
+	METHOD <init> (Lit/unimi/dsi/fastutil/objects/ObjectListIterator;Lit/unimi/dsi/fastutil/objects/ObjectListIterator;)V
+		ARG 1 pieceIterator
+		ARG 2 junctionIterator
+	CLASS Rigid
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/levelgen/structure/TerrainAdjustment;I)V
+			ARG 1 box
+			ARG 2 terrainAdjustment
+			ARG 3 groundLevelDelta

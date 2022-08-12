@@ -1,19 +1,11 @@
 CLASS net/minecraft/world/level/levelgen/structure/StructurePiece
-	METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/StructurePieceType;ILnet/minecraft/world/level/levelgen/structure/BoundingBox;)V
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;ILnet/minecraft/world/level/levelgen/structure/BoundingBox;)V
 		ARG 1 type
 		ARG 2 genDepth
-		ARG 3 box
-	METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/StructurePieceType;Lnet/minecraft/nbt/CompoundTag;)V
-		ARG 1 type
-		ARG 2 tag
-	METHOD addAdditionalSaveData (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/nbt/CompoundTag;)V
-		ARG 1 level
-		ARG 2 tag
+		ARG 3 boundingBox
 	METHOD isReplaceableByStructures (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
-	METHOD postProcess (Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/StructureFeatureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Ljava/util/Random;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/BlockPos;)Z
-		ARG 1 level
-		ARG 4 random
-		ARG 5 box
+	METHOD setGenDepth (I)V
+		ARG 1 genDepth
 	METHOD setOrientation (Lnet/minecraft/core/Direction;)V
 		ARG 1 orientation

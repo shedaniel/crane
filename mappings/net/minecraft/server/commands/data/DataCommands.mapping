@@ -1,0 +1,9 @@
+CLASS net/minecraft/server/commands/data/DataCommands
+	METHOD manipulateData (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lnet/minecraft/server/commands/data/DataCommands$DataManipulator;Ljava/util/List;)I
+		ARG 0 context
+	CLASS DataProvider
+		METHOD access (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/server/commands/data/DataAccessor;
+			ARG 1 context
+	CLASS DataManipulator
+		METHOD modify (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/commands/arguments/NbtPathArgument$NbtPath;Ljava/util/List;)I
+			ARG 1 context

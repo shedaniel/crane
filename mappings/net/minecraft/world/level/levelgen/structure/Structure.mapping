@@ -1,0 +1,24 @@
+CLASS net/minecraft/world/level/levelgen/structure/Structure
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/Structure$StructureSettings;)V
+		ARG 1 settings
+	CLASS GenerationStub
+		METHOD <init> (Lnet/minecraft/core/BlockPos;Lcom/mojang/datafixers/util/Either;)V
+			ARG 1 position
+			ARG 2 generator
+	CLASS GenerationContext
+		METHOD <init> (Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/world/level/biome/BiomeSource;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/world/level/levelgen/WorldgenRandom;JLnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/LevelHeightAccessor;Ljava/util/function/Predicate;)V
+			ARG 1 registryAccess
+			ARG 2 chunkGenerator
+			ARG 3 biomeSource
+			ARG 4 randomState
+			ARG 5 structureTemplateManager
+			ARG 6 random
+			ARG 7 seed
+			ARG 9 chunkPos
+			ARG 10 heightAccessor
+	CLASS StructureSettings
+		METHOD <init> (Lnet/minecraft/core/HolderSet;Ljava/util/Map;Lnet/minecraft/world/level/levelgen/GenerationStep$Decoration;Lnet/minecraft/world/level/levelgen/structure/TerrainAdjustment;)V
+			ARG 1 biomes
+			ARG 2 spawnOverrides
+			ARG 3 step
+			ARG 4 terrainAdaptation

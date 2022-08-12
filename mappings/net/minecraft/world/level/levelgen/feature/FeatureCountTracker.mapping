@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/feature/FeatureCountTracker
+	CLASS LevelData
+		METHOD <init> (Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lorg/apache/commons/lang3/mutable/MutableInt;)V
+			ARG 1 featureData
+			ARG 2 chunksWithFeatures
+	CLASS FeatureData
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/ConfiguredFeature;Ljava/util/Optional;)V
+			ARG 1 feature
+			ARG 2 topFeature

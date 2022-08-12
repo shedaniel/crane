@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ServerboundClientCommandPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/network/protocol/game/ServerboundClientCommandPacket$Action;)V
 		ARG 1 action
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

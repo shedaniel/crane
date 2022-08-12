@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/game/DebugPackets
+	METHOD sendPacketToAllPlayers (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 buf
+	METHOD writeBrain (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

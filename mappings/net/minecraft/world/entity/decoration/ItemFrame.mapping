@@ -1,5 +1,9 @@
 CLASS net/minecraft/world/entity/decoration/ItemFrame
+	METHOD onItemChanged (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
 	METHOD removeFramedMap (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
+	METHOD setDirection (Lnet/minecraft/core/Direction;)V
+		ARG 1 direction
 	METHOD setItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack

@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/profiling/jfr/parse/JfrStatsResult
+	METHOD <init> (Ljava/time/Instant;Ljava/time/Instant;Ljava/time/Duration;Ljava/time/Duration;Ljava/util/List;Ljava/util/List;Lnet/minecraft/util/profiling/jfr/stats/GcHeapStat$Summary;Lnet/minecraft/util/profiling/jfr/stats/ThreadAllocationStat$Summary;Lnet/minecraft/util/profiling/jfr/stats/NetworkPacketSummary;Lnet/minecraft/util/profiling/jfr/stats/NetworkPacketSummary;Lnet/minecraft/util/profiling/jfr/stats/FileIOStat$Summary;Lnet/minecraft/util/profiling/jfr/stats/FileIOStat$Summary;Ljava/util/List;)V
+		ARG 1 recordingStarted
+		ARG 2 recordingEnded
+		ARG 3 recordingDuration
+		ARG 4 worldCreationDuration
+		ARG 5 tickTimes
+		ARG 6 cpuLoadStats
+		ARG 7 heapSummary
+		ARG 8 threadAllocationSummary
+		ARG 9 receivedPacketsSummary
+		ARG 10 sentPacketsSummary
+		ARG 11 fileWrites
+		ARG 12 fileReads
+		ARG 13 chunkGenStats

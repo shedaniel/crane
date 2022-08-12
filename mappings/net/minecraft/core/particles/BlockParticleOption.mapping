@@ -2,3 +2,5 @@ CLASS net/minecraft/core/particles/BlockParticleOption
 	METHOD <init> (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 type
 		ARG 2 state
+	METHOD writeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

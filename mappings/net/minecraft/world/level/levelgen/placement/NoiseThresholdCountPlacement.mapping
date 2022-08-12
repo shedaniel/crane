@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/placement/NoiseThresholdCountPlacement
+	METHOD <init> (DII)V
+		ARG 1 noiseLevel
+		ARG 3 belowNoise

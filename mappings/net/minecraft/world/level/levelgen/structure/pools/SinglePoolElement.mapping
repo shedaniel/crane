@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/structure/pools/SinglePoolElement
+	METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/core/Holder;Lnet/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection;)V
+		ARG 1 template
+		ARG 2 processors

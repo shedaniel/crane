@@ -1,4 +1,8 @@
 CLASS net/minecraft/network/protocol/game/ClientboundRecipePacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/network/protocol/game/ClientboundRecipePacket$State;Ljava/util/Collection;Ljava/util/Collection;Lnet/minecraft/stats/RecipeBookSettings;)V
 		ARG 1 state
 		ARG 4 bookSettings
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

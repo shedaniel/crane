@@ -5,7 +5,12 @@ CLASS net/minecraft/client/multiplayer/ClientSuggestionProvider
 	METHOD completeCustomSuggestions (ILcom/mojang/brigadier/suggestion/Suggestions;)V
 		ARG 1 suggestionsId
 		ARG 2 suggestions
+	METHOD customSuggestion (Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
 	METHOD prettyPrint (D)Ljava/lang/String;
 		ARG 0 a
 	METHOD prettyPrint (I)Ljava/lang/String;
 		ARG 0 a
+	METHOD suggestRegistryElements (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/commands/SharedSuggestionProvider$ElementSuggestionType;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/concurrent/CompletableFuture;
+		ARG 3 builder
+		ARG 4 context

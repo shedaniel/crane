@@ -1,4 +1,9 @@
 CLASS net/minecraft/commands/arguments/EntityAnchorArgument
+	METHOD getAnchor (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+		ARG 0 context
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
 	CLASS Anchor
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/function/BiFunction;)V
 			ARG 3 name

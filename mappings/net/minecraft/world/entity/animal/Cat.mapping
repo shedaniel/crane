@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/entity/animal/Cat
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	CLASS CatTemptGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Cat;DLnet/minecraft/world/item/crafting/Ingredient;Z)V
 			ARG 1 cat

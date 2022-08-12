@@ -1,3 +1,7 @@
 CLASS net/minecraft/world/item/crafting/SimpleRecipeSerializer
 	METHOD <init> (Ljava/util/function/Function;)V
 		ARG 1 constructor
+	METHOD fromNetwork (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Recipe;
+		ARG 2 buf
+	METHOD toNetwork (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/Recipe;)V
+		ARG 1 buf

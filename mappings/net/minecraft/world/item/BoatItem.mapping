@@ -1,3 +1,4 @@
 CLASS net/minecraft/world/item/BoatItem
-	METHOD <init> (Lnet/minecraft/world/entity/vehicle/Boat$Type;Lnet/minecraft/world/item/Item$Properties;)V
-		ARG 1 type
+	METHOD <init> (ZLnet/minecraft/world/entity/vehicle/Boat$Type;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 hasChest
+		ARG 2 type

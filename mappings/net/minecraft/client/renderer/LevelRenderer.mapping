@@ -1,7 +1,9 @@
 CLASS net/minecraft/client/renderer/LevelRenderer
-	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/renderer/RenderBuffers;)V
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/client/renderer/blockentity/BlockEntityRenderDispatcher;Lnet/minecraft/client/renderer/RenderBuffers;)V
 		ARG 1 minecraft
-		ARG 2 renderBuffers
+		ARG 2 entityRenderDispatcher
+		ARG 3 blockEntityRenderDispatcher
+		ARG 4 renderBuffers
 	METHOD addChainedFilledBoxVertices (Lcom/mojang/blaze3d/vertex/BufferBuilder;DDDDDDFFFF)V
 		ARG 0 builder
 		ARG 1 x1
@@ -67,8 +69,6 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 	METHOD blockChanged (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V
 		ARG 1 level
 		ARG 2 pos
-	METHOD buildClouds (Lcom/mojang/blaze3d/vertex/BufferBuilder;DDDLnet/minecraft/world/phys/Vec3;)V
-		ARG 1 builder
 	METHOD calculateParticleLevel (Z)Lnet/minecraft/client/ParticleStatus;
 		ARG 1 alwaysVisible
 	METHOD checkPoseStack (Lcom/mojang/blaze3d/vertex/PoseStack;)V
@@ -88,11 +88,8 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 1 eventId
 		ARG 2 pos
 		ARG 3 data
-	METHOD levelEvent (Lnet/minecraft/world/entity/player/Player;ILnet/minecraft/core/BlockPos;I)V
-		ARG 1 player
-		ARG 2 eventId
-		ARG 3 pos
-		ARG 4 data
+	METHOD isChunkCompiled (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
 	METHOD notifyNearbyEntities (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Z)V
 		ARG 1 level
 		ARG 2 pos
@@ -163,9 +160,6 @@ CLASS net/minecraft/client/renderer/LevelRenderer
 		ARG 10 green
 		ARG 11 blue
 		ARG 12 alpha
-	METHOD renderSky (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/math/Matrix4f;FLjava/lang/Runnable;)V
-		ARG 1 poses
-		ARG 2 projectionMatrix
 	METHOD renderVoxelShape (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/phys/shapes/VoxelShape;DDDFFFF)V
 		ARG 0 poses
 		ARG 1 vertexConsumer

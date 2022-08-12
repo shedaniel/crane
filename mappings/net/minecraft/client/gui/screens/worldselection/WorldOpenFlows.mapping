@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/gui/screens/worldselection/WorldOpenFlows
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/level/storage/LevelStorageSource;)V
+		ARG 1 minecraft
+		ARG 2 levelSource

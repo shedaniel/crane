@@ -3,7 +3,6 @@ CLASS net/minecraft/data/tags/TagsProvider
 		ARG 1 generator
 		ARG 2 registry
 	CLASS TagAppender
-		METHOD <init> (Lnet/minecraft/tags/Tag$Builder;Lnet/minecraft/core/Registry;Ljava/lang/String;)V
+		METHOD <init> (Lnet/minecraft/tags/TagBuilder;Lnet/minecraft/core/Registry;)V
 			ARG 1 builder
 			ARG 2 registry
-			ARG 3 source

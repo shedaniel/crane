@@ -1,5 +1,5 @@
 CLASS net/minecraft/world/level/levelgen/carver/CanyonCarverConfiguration
-	METHOD <init> (FLnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;Lnet/minecraft/util/valueproviders/FloatProvider;Lnet/minecraft/world/level/levelgen/VerticalAnchor;ZLnet/minecraft/world/level/levelgen/carver/CarverDebugSettings;Lnet/minecraft/util/valueproviders/FloatProvider;Lnet/minecraft/world/level/levelgen/carver/CanyonCarverConfiguration$CanyonShapeConfiguration;)V
+	METHOD <init> (FLnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;Lnet/minecraft/util/valueproviders/FloatProvider;Lnet/minecraft/world/level/levelgen/VerticalAnchor;Lnet/minecraft/world/level/levelgen/carver/CarverDebugSettings;Lnet/minecraft/core/HolderSet;Lnet/minecraft/util/valueproviders/FloatProvider;Lnet/minecraft/world/level/levelgen/carver/CanyonCarverConfiguration$CanyonShapeConfiguration;)V
 		ARG 7 verticalRotation
 		ARG 8 shape
 	CLASS CanyonShapeConfiguration

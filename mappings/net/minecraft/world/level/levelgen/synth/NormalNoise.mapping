@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/synth/NormalNoise
+	METHOD <init> (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/synth/NormalNoise$NoiseParameters;Z)V
+		ARG 2 parameters
+	CLASS NoiseParameters
+		METHOD <init> (ILit/unimi/dsi/fastutil/doubles/DoubleList;)V
+			ARG 1 firstOctave
+			ARG 2 amplitudes

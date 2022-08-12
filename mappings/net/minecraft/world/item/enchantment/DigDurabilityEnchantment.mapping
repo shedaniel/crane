@@ -2,6 +2,5 @@ CLASS net/minecraft/world/item/enchantment/DigDurabilityEnchantment
 	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$Rarity;[Lnet/minecraft/world/entity/EquipmentSlot;)V
 		ARG 1 rarity
 		ARG 2 slots
-	METHOD shouldIgnoreDurabilityDrop (Lnet/minecraft/world/item/ItemStack;ILjava/util/Random;)Z
-		ARG 0 stack
-		ARG 2 random
+	METHOD canEnchant (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack

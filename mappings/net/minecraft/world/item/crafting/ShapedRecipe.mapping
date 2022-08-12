@@ -8,3 +8,8 @@ CLASS net/minecraft/world/item/crafting/ShapedRecipe
 		ARG 6 result
 	METHOD matches (Lnet/minecraft/world/inventory/CraftingContainer;IIZ)Z
 		ARG 1 container
+	CLASS Serializer
+		METHOD fromNetwork (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/ShapedRecipe;
+			ARG 2 buf
+		METHOD toNetwork (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/ShapedRecipe;)V
+			ARG 1 buf

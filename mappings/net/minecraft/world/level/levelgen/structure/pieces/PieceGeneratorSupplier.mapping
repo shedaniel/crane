@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/levelgen/structure/pieces/PieceGeneratorSupplier
+	CLASS Context
+		METHOD <init> (Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/world/level/biome/BiomeSource;Lnet/minecraft/world/level/levelgen/RandomState;JLnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration;Lnet/minecraft/world/level/LevelHeightAccessor;Ljava/util/function/Predicate;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/core/RegistryAccess;)V
+			ARG 1 chunkGenerator
+			ARG 2 biomeSource
+			ARG 3 randomState
+			ARG 4 seed
+			ARG 6 chunkPos
+			ARG 7 config
+			ARG 8 heightAccessor
+			ARG 9 validBiome
+			ARG 10 structureTemplateManager

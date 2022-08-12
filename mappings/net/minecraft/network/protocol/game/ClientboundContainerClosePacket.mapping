@@ -3,3 +3,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundContainerClosePacket
 		ARG 1 containerId
 	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

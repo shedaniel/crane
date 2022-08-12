@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/gameevent/GameEventListenerRegistrar
-	METHOD <init> (Lnet/minecraft/world/level/gameevent/GameEventListener;)V
-		ARG 1 listener

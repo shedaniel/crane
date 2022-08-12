@@ -1,3 +1,0 @@
-CLASS net/minecraft/tags/EntityTypeTags
-	METHOD bind (Ljava/lang/String;)Lnet/minecraft/tags/Tag$Named;
-		ARG 0 location

@@ -1,4 +1,7 @@
 CLASS net/minecraft/world/level/chunk/GlobalPalette
-	METHOD <init> (Lnet/minecraft/core/IdMapper;Ljava/lang/Object;)V
+	METHOD <init> (Lnet/minecraft/core/IdMap;)V
 		ARG 1 registry
-		ARG 2 defaultValue
+	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

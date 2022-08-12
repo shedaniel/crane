@@ -1,0 +1,5 @@
+CLASS net/minecraft/nbt/visitors/FieldSelector
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/nbt/TagType;Ljava/lang/String;)V
+		ARG 1 path
+		ARG 2 type
+		ARG 3 name

@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/block/SculkVeinBlock
+	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 state
+	METHOD getPistonPushReaction (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/PushReaction;
+		ARG 1 state
+	CLASS SculkVeinSpreaderConfig
+		METHOD <init> (Lnet/minecraft/world/level/block/SculkVeinBlock;[Lnet/minecraft/world/level/block/MultifaceSpreader$SpreadType;)V
+			ARG 2 spreadTypes
+		METHOD isOtherBlockValidAsSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+			ARG 1 state

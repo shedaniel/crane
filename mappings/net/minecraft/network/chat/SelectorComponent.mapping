@@ -1,4 +1,0 @@
-CLASS net/minecraft/network/chat/SelectorComponent
-	METHOD <init> (Ljava/lang/String;Ljava/util/Optional;)V
-		ARG 1 pattern
-		ARG 2 separator

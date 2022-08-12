@@ -5,3 +5,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundSetCameraPacket
 		ARG 1 camera
 	METHOD getEntity (Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
 		ARG 1 level
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

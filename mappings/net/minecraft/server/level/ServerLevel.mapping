@@ -1,10 +1,8 @@
 CLASS net/minecraft/server/level/ServerLevel
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/world/level/storage/ServerLevelData;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/dimension/DimensionType;Lnet/minecraft/server/level/progress/ChunkProgressListener;Lnet/minecraft/world/level/chunk/ChunkGenerator;ZJLjava/util/List;Z)V
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/world/level/storage/ServerLevelData;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/dimension/LevelStem;Lnet/minecraft/server/level/progress/ChunkProgressListener;ZJLjava/util/List;Z)V
 		ARG 1 server
-		ARG 3 storageAccess
 		ARG 4 serverLevelData
-		ARG 12 customSpawners
-		ARG 13 tickTime
+		ARG 11 customSpawners
 	METHOD addDuringCommandTeleport (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 player
 	METHOD addDuringPortalTeleport (Lnet/minecraft/server/level/ServerPlayer;)V
@@ -27,13 +25,6 @@ CLASS net/minecraft/server/level/ServerLevel
 		ARG 1 pos
 	METHOD findLightningTargetAround (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;
 		ARG 1 pos
-	METHOD findNearestBiome (Lnet/minecraft/world/level/biome/Biome;Lnet/minecraft/core/BlockPos;II)Lnet/minecraft/core/BlockPos;
-		ARG 1 biome
-		ARG 2 pos
-		ARG 3 radius
-		ARG 4 interval
-	METHOD findNearestMapFeature (Lnet/minecraft/world/level/levelgen/feature/StructureFeature;Lnet/minecraft/core/BlockPos;IZ)Lnet/minecraft/core/BlockPos;
-		ARG 1 structure
 	METHOD getEntity (Ljava/util/UUID;)Lnet/minecraft/world/entity/Entity;
 		ARG 1 uuid
 	METHOD getEntityOrPart (I)Lnet/minecraft/world/entity/Entity;
@@ -42,24 +33,14 @@ CLASS net/minecraft/server/level/ServerLevel
 		ARG 1 predicate
 	METHOD getRaidAt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/entity/raid/Raid;
 		ARG 1 pos
-	METHOD isPositionEntityTicking (Lnet/minecraft/core/BlockPos;)Z
+	METHOD isNaturalSpawningAllowed (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
-	METHOD isPositionTickingWithEntitiesLoaded (Lnet/minecraft/core/BlockPos;)Z
+	METHOD isPositionEntityTicking (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
 	METHOD isRaided (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
 	METHOD isVillage (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
-	METHOD lambda$new$0 (Lnet/minecraft/world/level/block/Block;)Z
-		ARG 0 block
-	METHOD lambda$new$1 (Lnet/minecraft/world/level/material/Fluid;)Z
-		ARG 0 fluid
-	METHOD lambda$new$3 (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/raid/Raids;
-		ARG 1 data
-	METHOD lambda$sendVibrationParticle$14 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/network/protocol/game/ClientboundAddVibrationSignalPacket;Lnet/minecraft/server/level/ServerPlayer;)V
-		ARG 3 player
-	METHOD lambda$tick$5 (Lnet/minecraft/util/profiling/ProfilerFiller;Lnet/minecraft/world/entity/Entity;)V
-		ARG 2 entity
 	METHOD removePlayerImmediately (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/Entity$RemovalReason;)V
 		ARG 1 player
 		ARG 2 reason
@@ -92,8 +73,6 @@ CLASS net/minecraft/server/level/ServerLevel
 		ARG 5 y
 		ARG 7 z
 		ARG 9 packet
-	METHOD sendVibrationParticle (Lnet/minecraft/world/level/gameevent/vibrations/VibrationPath;)V
-		ARG 1 vibrationPath
 	METHOD setWeatherParameters (IIZZ)V
 		ARG 1 clearWeatherTime
 		ARG 2 rainTime

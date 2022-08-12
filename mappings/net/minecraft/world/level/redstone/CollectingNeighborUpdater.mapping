@@ -1,0 +1,28 @@
+CLASS net/minecraft/world/level/redstone/CollectingNeighborUpdater
+	METHOD <init> (Lnet/minecraft/world/level/Level;I)V
+		ARG 1 level
+		ARG 2 maxChainedNeighborUpdates
+	CLASS ShapeUpdate
+		METHOD <init> (Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;I)V
+			ARG 1 direction
+			ARG 2 state
+			ARG 3 pos
+			ARG 4 neighborPos
+			ARG 5 updateFlags
+	CLASS FullNeighborUpdate
+		METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/BlockPos;Z)V
+			ARG 1 state
+			ARG 2 pos
+			ARG 3 block
+			ARG 4 neighborPos
+			ARG 5 movedByPiston
+	CLASS MultiNeighborUpdate
+		METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/Direction;)V
+			ARG 1 sourcePos
+			ARG 2 sourceBlock
+			ARG 3 skipDirection
+	CLASS SimpleNeighborUpdate
+		METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/BlockPos;)V
+			ARG 1 pos
+			ARG 2 block
+			ARG 3 neighborPos

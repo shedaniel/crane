@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/levelgen/feature/treedecorators/AttachedToLeavesDecorator
+	METHOD <init> (FIILnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;ILjava/util/List;)V
+		ARG 1 probability
+		ARG 2 exclusionRadiusXZ
+		ARG 3 exclusionRadiusY
+		ARG 4 blockProvider
+		ARG 5 requiredEmptyBlocks
+		ARG 6 directions

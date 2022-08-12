@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/feature/configurations/TwistingVinesConfig
+	METHOD <init> (III)V
+		ARG 1 spreadWidth
+		ARG 2 spreadHeight
+		ARG 3 maxHeight

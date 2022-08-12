@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/LegacyRandomSource
+	CLASS LegacyPositionalRandomFactory
+		METHOD <init> (J)V
+			ARG 1 seed

@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/level/block/state/predicate/BlockStatePredicate
 	METHOD <init> (Lnet/minecraft/world/level/block/state/StateDefinition;)V
 		ARG 1 definition
+	METHOD test (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

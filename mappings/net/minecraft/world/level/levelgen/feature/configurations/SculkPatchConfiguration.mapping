@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/feature/configurations/SculkPatchConfiguration
+	METHOD <init> (IIIIILnet/minecraft/util/valueproviders/IntProvider;F)V
+		ARG 1 chargeCount
+		ARG 2 amountPerCharge
+		ARG 3 spreadAttempts
+		ARG 4 growthRounds
+		ARG 5 spreadRounds
+		ARG 6 extraRareGrowths
+		ARG 7 catalystChance

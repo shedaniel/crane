@@ -1,0 +1,6 @@
+CLASS net/minecraft/server/Services
+	METHOD <init> (Lcom/mojang/authlib/minecraft/MinecraftSessionService;Lnet/minecraft/util/SignatureValidator;Lcom/mojang/authlib/GameProfileRepository;Lnet/minecraft/server/players/GameProfileCache;)V
+		ARG 1 sessionService
+		ARG 2 serviceSignatureValidator
+		ARG 3 profileRepository
+		ARG 4 profileCache

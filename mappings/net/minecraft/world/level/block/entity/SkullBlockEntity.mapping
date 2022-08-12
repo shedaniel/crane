@@ -1,7 +1,5 @@
 CLASS net/minecraft/world/level/block/entity/SkullBlockEntity
 	METHOD setOwner (Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 owner
-	METHOD setProfileCache (Lnet/minecraft/server/players/GameProfileCache;)V
-		ARG 0 profileCache
-	METHOD setSessionService (Lcom/mojang/authlib/minecraft/MinecraftSessionService;)V
-		ARG 0 sessionService
+	METHOD setup (Lnet/minecraft/server/Services;Ljava/util/concurrent/Executor;)V
+		ARG 1 mainThreadExecutor

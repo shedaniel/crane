@@ -60,8 +60,6 @@ CLASS net/minecraft/client/renderer/RenderType
 		ARG 0 texture
 	METHOD itemEntityTranslucentCull (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/RenderType;
 		ARG 0 texture
-	METHOD lambda$static$9 (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/Boolean;)Lnet/minecraft/client/renderer/RenderType;
-		ARG 0 texture
 	METHOD outline (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/RenderType;
 		ARG 0 texture
 	METHOD text (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/RenderType;

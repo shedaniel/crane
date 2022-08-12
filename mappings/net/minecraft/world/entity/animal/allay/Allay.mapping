@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/animal/allay/Allay
+	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD wantsToPickUp (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack

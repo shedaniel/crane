@@ -1,0 +1,8 @@
+CLASS net/minecraft/commands/synchronization/brigadier/StringArgumentSerializer
+	METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/synchronization/brigadier/StringArgumentSerializer$Template;
+		ARG 1 buf
+	METHOD serializeToNetwork (Lnet/minecraft/commands/synchronization/brigadier/StringArgumentSerializer$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 2 buf
+	CLASS Template
+		METHOD <init> (Lnet/minecraft/commands/synchronization/brigadier/StringArgumentSerializer;Lcom/mojang/brigadier/arguments/StringArgumentType$StringType;)V
+			ARG 2 type

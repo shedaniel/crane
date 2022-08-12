@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientboundServerDataPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/lang/String;Z)V
+		ARG 3 previewsChat
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

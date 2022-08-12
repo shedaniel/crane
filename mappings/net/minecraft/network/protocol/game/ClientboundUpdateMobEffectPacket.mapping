@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ClientboundUpdateMobEffectPacket
 	METHOD <init> (ILnet/minecraft/world/effect/MobEffectInstance;)V
 		ARG 1 entityId
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/structure/StructureSpawnOverride
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/StructureSpawnOverride$BoundingBoxType;Lnet/minecraft/util/random/WeightedRandomList;)V
+		ARG 1 boundingBox
+		ARG 2 spawns
+	CLASS BoundingBoxType
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 id

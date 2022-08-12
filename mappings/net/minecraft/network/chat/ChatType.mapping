@@ -1,8 +1,16 @@
 CLASS net/minecraft/network/chat/ChatType
-	METHOD <init> (Ljava/lang/String;IBZ)V
-		ARG 3 index
-		ARG 4 interrupt
-	METHOD getForIndex (B)Lnet/minecraft/network/chat/ChatType;
-		ARG 0 index
-	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/network/chat/ChatType;
-		ARG 0 name
+	METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 chat
+		ARG 2 overlay
+		ARG 3 narration
+	CLASS Narration
+		METHOD <init> (Ljava/util/Optional;Lnet/minecraft/network/chat/ChatType$Narration$Priority;)V
+			ARG 1 decoration
+			ARG 2 priority
+		CLASS Priority
+			METHOD <init> (Ljava/lang/String;ILjava/lang/String;Z)V
+				ARG 3 name
+				ARG 4 interrupts
+	CLASS TextDisplay
+		METHOD <init> (Ljava/util/Optional;)V
+			ARG 1 decoration

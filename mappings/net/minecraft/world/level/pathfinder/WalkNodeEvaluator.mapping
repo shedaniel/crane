@@ -1,6 +1,10 @@
 CLASS net/minecraft/world/level/pathfinder/WalkNodeEvaluator
 	METHOD getFloorLevel (Lnet/minecraft/core/BlockPos;)D
 		ARG 1 pos
+	METHOD getNodeAndUpdateCostToMax (IIILnet/minecraft/world/level/pathfinder/BlockPathTypes;F)Lnet/minecraft/world/level/pathfinder/Node;
+		ARG 4 type
+	METHOD getStartNode (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/Node;
+		ARG 1 pos
 	METHOD hasCollisions (Lnet/minecraft/world/phys/AABB;)Z
 		ARG 1 box
 	METHOD hasPositiveMalus (Lnet/minecraft/core/BlockPos;)Z

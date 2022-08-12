@@ -1,9 +1,10 @@
 CLASS net/minecraft/client/multiplayer/ClientPacketListener
-	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/Connection;Lcom/mojang/authlib/GameProfile;)V
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/Connection;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/client/ClientTelemetryManager;)V
 		ARG 1 minecraft
 		ARG 2 callbackScreen
 		ARG 3 connection
 		ARG 4 localGameProfile
+		ARG 5 telemetryManager
 	METHOD getPlayerInfo (Ljava/lang/String;)Lnet/minecraft/client/multiplayer/PlayerInfo;
 		ARG 1 name
 	METHOD getPlayerInfo (Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;

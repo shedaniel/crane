@@ -4,6 +4,8 @@ CLASS net/minecraft/network/protocol/game/ClientboundGameEventPacket
 	METHOD <init> (Lnet/minecraft/network/protocol/game/ClientboundGameEventPacket$Type;F)V
 		ARG 1 event
 		ARG 2 param
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	CLASS Type
 		METHOD <init> (I)V
 			ARG 1 id

@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/commands/GameRuleCommand
+	METHOD setRule (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/world/level/GameRules$Key;)I
+		ARG 0 context

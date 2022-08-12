@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/monster/warden/WardenSpawnTracker
+	METHOD <init> (III)V
+		ARG 1 ticksSinceLastWarning
+		ARG 2 warningLevel
+		ARG 3 cooldownTicks

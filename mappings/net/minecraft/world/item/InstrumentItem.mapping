@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/item/InstrumentItem
+	METHOD <init> (Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/tags/TagKey;)V
+		ARG 2 instruments
+	METHOD getInstrument (Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;
+		ARG 1 stack
+	METHOD getUseAnimation (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/UseAnim;
+		ARG 1 stack
+	METHOD getUseDuration (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack

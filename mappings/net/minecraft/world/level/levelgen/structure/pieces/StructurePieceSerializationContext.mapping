@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/structure/pieces/StructurePieceSerializationContext
+	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;)V
+		ARG 1 resourceManager
+		ARG 2 registryAccess
+		ARG 3 structureTemplateManager

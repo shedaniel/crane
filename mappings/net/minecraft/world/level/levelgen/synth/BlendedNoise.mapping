@@ -1,5 +1,8 @@
 CLASS net/minecraft/world/level/levelgen/synth/BlendedNoise
-	METHOD <init> (Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;)V
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;DDDDD)V
 		ARG 1 minLimitNoise
 		ARG 2 maxLimitNoise
 		ARG 3 mainNoise
+		ARG 4 xzScale
+		ARG 6 yScale
+		ARG 8 xzFactor

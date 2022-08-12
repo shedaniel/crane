@@ -1,3 +1,10 @@
 CLASS net/minecraft/world/level/levelgen/VerticalAnchor
-	METHOD <init> (I)V
-		ARG 1 value
+	CLASS Absolute
+		METHOD <init> (I)V
+			ARG 1 y
+	CLASS BelowTop
+		METHOD <init> (I)V
+			ARG 1 offset
+	CLASS AboveBottom
+		METHOD <init> (I)V
+			ARG 1 offset

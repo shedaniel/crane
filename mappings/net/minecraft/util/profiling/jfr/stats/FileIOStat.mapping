@@ -1,0 +1,10 @@
+CLASS net/minecraft/util/profiling/jfr/stats/FileIOStat
+	METHOD <init> (Ljava/time/Duration;Ljava/lang/String;J)V
+		ARG 1 duration
+		ARG 2 path
+		ARG 3 bytes
+	CLASS Summary
+		METHOD <init> (JDJDLjava/time/Duration;Ljava/util/List;)V
+			ARG 1 totalBytes
+			ARG 3 bytesPerSecond
+			ARG 5 counts

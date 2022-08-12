@@ -1,0 +1,3 @@
+CLASS net/minecraft/nbt/visitors/CollectToTag
+	METHOD visitEntry (Lnet/minecraft/nbt/TagType;Ljava/lang/String;)Lnet/minecraft/nbt/StreamTagVisitor$EntryResult;
+		ARG 2 lastId

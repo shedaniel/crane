@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/levelgen/feature/rootplacers/MangroveRootPlacement
+	METHOD <init> (Lnet/minecraft/core/HolderSet;Lnet/minecraft/core/HolderSet;Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;IIF)V
+		ARG 1 canGrowThrough
+		ARG 2 muddyRootsIn
+		ARG 3 muddyRootsProvider
+		ARG 4 maxRootWidth
+		ARG 5 maxRootLength
+		ARG 6 randomSkewChance

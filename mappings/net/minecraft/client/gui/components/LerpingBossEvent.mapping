@@ -8,3 +8,5 @@ CLASS net/minecraft/client/gui/components/LerpingBossEvent
 		ARG 6 darkenScreen
 		ARG 7 playBossMusic
 		ARG 8 createWorldFog
+	METHOD setProgress (F)V
+		ARG 1 targetPercent

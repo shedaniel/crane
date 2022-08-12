@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/KeyDispatchDataCodec
+	METHOD <init> (Lcom/mojang/serialization/Codec;)V
+		ARG 1 codec

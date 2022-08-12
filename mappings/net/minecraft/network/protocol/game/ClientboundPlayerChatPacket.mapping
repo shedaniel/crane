@@ -1,0 +1,12 @@
+CLASS net/minecraft/network/protocol/game/ClientboundPlayerChatPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/util/Optional;ILnet/minecraft/network/chat/ChatSender;Ljava/time/Instant;Lnet/minecraft/util/Crypt$SaltSignaturePair;)V
+		ARG 1 signedContent
+		ARG 2 unsignedContent
+		ARG 3 typeId
+		ARG 4 sender
+		ARG 5 timeStamp
+		ARG 6 saltSignature
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

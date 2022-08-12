@@ -1,3 +1,5 @@
 CLASS net/minecraft/client/gui/components/toasts/RecipeToast
 	METHOD <init> (Lnet/minecraft/world/item/crafting/Recipe;)V
 		ARG 1 recipe
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/components/toasts/ToastComponent;J)Lnet/minecraft/client/gui/components/toasts/Toast$Visibility;
+		ARG 3 lastChanged

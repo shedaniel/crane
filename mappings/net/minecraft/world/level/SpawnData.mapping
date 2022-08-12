@@ -1,6 +1,8 @@
 CLASS net/minecraft/world/level/SpawnData
-	METHOD <init> (ILnet/minecraft/nbt/CompoundTag;)V
-		ARG 1 weight
-		ARG 2 tag
-	METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-		ARG 1 tag
+	METHOD <init> (Lnet/minecraft/nbt/CompoundTag;Ljava/util/Optional;)V
+		ARG 1 entityToSpawn
+		ARG 2 customSpawnRules
+	CLASS CustomSpawnRules
+		METHOD <init> (Lnet/minecraft/util/InclusiveRange;Lnet/minecraft/util/InclusiveRange;)V
+			ARG 1 blockLightLimit
+			ARG 2 skyLightLimit

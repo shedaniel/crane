@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/gui/chat/ClientChatPreview
+	METHOD sendOrScheduleRequest (Ljava/lang/String;)V
+		ARG 1 scheduledRequest
+	METHOD update (Ljava/lang/String;)V
+		ARG 1 lastQuery
+	CLASS Preview
+		METHOD <init> (JLjava/lang/String;Lnet/minecraft/network/chat/Component;)V
+			ARG 1 receivedTimeStamp
+			ARG 3 query

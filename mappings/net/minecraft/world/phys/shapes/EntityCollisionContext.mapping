@@ -1,10 +1,8 @@
 CLASS net/minecraft/world/phys/shapes/EntityCollisionContext
 	METHOD <init> (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
-	METHOD <init> (ZDLnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Ljava/util/function/Predicate;Ljava/util/Optional;)V
+	METHOD <init> (ZDLnet/minecraft/world/item/ItemStack;Ljava/util/function/Predicate;Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 descending
 		ARG 2 entityBottom
-		ARG 4 footItem
-		ARG 5 heldItem
-		ARG 6 canStandOnFluid
-		ARG 7 entity
+		ARG 4 heldItem
+		ARG 5 canStandOnFluid

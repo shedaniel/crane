@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/InclusiveRange
+	METHOD <init> (Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+		ARG 1 minInclusive
+		ARG 2 maxInclusive

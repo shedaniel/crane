@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/blending/Blender
+	METHOD <init> (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;)V
+		ARG 1 heightAndBiomeBlendingData
+		ARG 2 densityBlendingData
+	CLASS BlendingOutput
+		METHOD <init> (DD)V
+			ARG 1 alpha

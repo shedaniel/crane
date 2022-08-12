@@ -5,6 +5,8 @@ CLASS net/minecraft/network/protocol/status/ServerStatus
 		ARG 1 favicon
 	METHOD setPlayers (Lnet/minecraft/network/protocol/status/ServerStatus$Players;)V
 		ARG 1 players
+	METHOD setPreviewsChat (Z)V
+		ARG 1 previewsChat
 	METHOD setVersion (Lnet/minecraft/network/protocol/status/ServerStatus$Version;)V
 		ARG 1 version
 	CLASS Players

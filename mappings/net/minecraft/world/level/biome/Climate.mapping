@@ -1,0 +1,41 @@
+CLASS net/minecraft/world/level/biome/Climate
+	CLASS RTree
+		METHOD <init> (Lnet/minecraft/world/level/biome/Climate$RTree$Node;)V
+			ARG 1 root
+		CLASS Leaf
+			METHOD <init> (Lnet/minecraft/world/level/biome/Climate$ParameterPoint;Ljava/lang/Object;)V
+				ARG 2 value
+	CLASS Sampler
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;Ljava/util/List;)V
+			ARG 1 temperature
+			ARG 2 humidity
+			ARG 3 continentalness
+			ARG 4 erosion
+			ARG 5 depth
+			ARG 6 weirdness
+			ARG 7 spawnTarget
+	CLASS Parameter
+		METHOD <init> (JJ)V
+			ARG 1 min
+	CLASS SpawnFinder
+		CLASS Result
+			METHOD <init> (Lnet/minecraft/core/BlockPos;J)V
+				ARG 1 location
+				ARG 2 fitness
+	CLASS TargetPoint
+		METHOD <init> (JJJJJJ)V
+			ARG 1 temperature
+			ARG 3 humidity
+			ARG 5 continentalness
+	CLASS ParameterList
+		METHOD <init> (Ljava/util/List;)V
+			ARG 1 values
+	CLASS ParameterPoint
+		METHOD <init> (Lnet/minecraft/world/level/biome/Climate$Parameter;Lnet/minecraft/world/level/biome/Climate$Parameter;Lnet/minecraft/world/level/biome/Climate$Parameter;Lnet/minecraft/world/level/biome/Climate$Parameter;Lnet/minecraft/world/level/biome/Climate$Parameter;Lnet/minecraft/world/level/biome/Climate$Parameter;J)V
+			ARG 1 temperature
+			ARG 2 humidity
+			ARG 3 continentalness
+			ARG 4 erosion
+			ARG 5 depth
+			ARG 6 weirdness
+			ARG 7 offset

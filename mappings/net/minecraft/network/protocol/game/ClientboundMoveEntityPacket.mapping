@@ -9,3 +9,18 @@ CLASS net/minecraft/network/protocol/game/ClientboundMoveEntityPacket
 		ARG 7 onGround
 		ARG 8 hasRot
 		ARG 9 hasPos
+	CLASS Pos
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ClientboundMoveEntityPacket$Pos;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
+	CLASS Rot
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ClientboundMoveEntityPacket$Rot;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
+	CLASS PosRot
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ClientboundMoveEntityPacket$PosRot;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/StructureManager
+	METHOD <init> (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/level/levelgen/WorldGenSettings;Lnet/minecraft/world/level/levelgen/structure/StructureCheck;)V
+		ARG 1 level
+		ARG 2 worldGenSettings
+		ARG 3 structureCheck
+	METHOD getAllStructuresAt (Lnet/minecraft/core/BlockPos;)Ljava/util/Map;
+		ARG 1 pos
+	METHOD hasAnyStructureAt (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos

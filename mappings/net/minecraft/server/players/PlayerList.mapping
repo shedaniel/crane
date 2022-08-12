@@ -1,5 +1,5 @@
 CLASS net/minecraft/server/players/PlayerList
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/core/RegistryAccess$RegistryHolder;Lnet/minecraft/world/level/storage/PlayerDataStorage;I)V
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/world/level/storage/PlayerDataStorage;I)V
 		ARG 1 server
 		ARG 2 registryHolder
 		ARG 3 playerIo
@@ -7,8 +7,6 @@ CLASS net/minecraft/server/players/PlayerList
 	METHOD canPlayerLogin (Ljava/net/SocketAddress;Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/network/chat/Component;
 		ARG 1 address
 		ARG 2 gameProfile
-	METHOD getPlayerForLogin (Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/server/level/ServerPlayer;
-		ARG 1 profile
 	METHOD load (Lnet/minecraft/server/level/ServerPlayer;)Lnet/minecraft/nbt/CompoundTag;
 		ARG 1 player
 	METHOD placeNewPlayer (Lnet/minecraft/network/Connection;Lnet/minecraft/server/level/ServerPlayer;)V
@@ -22,8 +20,8 @@ CLASS net/minecraft/server/players/PlayerList
 		ARG 1 serverPlayer
 	METHOD setAllowCheatsForAllPlayers (Z)V
 		ARG 1 allowCheatsForAllPlayers
-	METHOD setLevel (Lnet/minecraft/server/level/ServerLevel;)V
-		ARG 1 level
+	METHOD setSimulationDistance (I)V
+		ARG 1 simulationDistance
 	METHOD setUsingWhiteList (Z)V
 		ARG 1 doWhiteList
 	METHOD setViewDistance (I)V

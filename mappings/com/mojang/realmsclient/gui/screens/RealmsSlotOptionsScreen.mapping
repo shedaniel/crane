@@ -4,3 +4,5 @@ CLASS com/mojang/realmsclient/gui/screens/RealmsSlotOptionsScreen
 		ARG 2 options
 		ARG 3 worldType
 		ARG 4 activeSlot
+	METHOD setWorldName (Ljava/lang/String;)V
+		ARG 1 worldName

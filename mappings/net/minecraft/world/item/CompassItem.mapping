@@ -3,8 +3,12 @@ CLASS net/minecraft/world/item/CompassItem
 		ARG 1 dimension
 		ARG 2 pos
 		ARG 3 tag
+	METHOD getDescriptionId (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
+		ARG 1 stack
 	METHOD getLodestoneDimension (Lnet/minecraft/nbt/CompoundTag;)Ljava/util/Optional;
 		ARG 0 tag
+	METHOD isFoil (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD isLodestoneCompass (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 stack
 	METHOD lambda$addLodestoneTags$0 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V

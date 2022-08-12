@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/animation/AnimationChannel
+	METHOD <init> (Lnet/minecraft/client/animation/AnimationChannel$Target;[Lnet/minecraft/client/animation/Keyframe;)V
+		ARG 1 target
+		ARG 2 keyframes

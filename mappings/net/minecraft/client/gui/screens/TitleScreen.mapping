@@ -9,12 +9,6 @@ CLASS net/minecraft/client/gui/screens/TitleScreen
 	METHOD createNormalMenuOptions (II)V
 		ARG 1 y
 		ARG 2 rowHeight
-	METHOD lambda$createDemoMenuOptions$7 (ZLnet/minecraft/client/gui/components/Button;)V
-		ARG 2 button
-	METHOD lambda$createDemoMenuOptions$8 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$createNormalMenuOptions$4 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
 	METHOD lambda$createNormalMenuOptions$5 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
 	METHOD lambda$createNormalMenuOptions$6 (Lnet/minecraft/client/gui/components/Button;)V
@@ -30,9 +24,12 @@ CLASS net/minecraft/client/gui/screens/TitleScreen
 	METHOD lambda$render$10 (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/Integer;Ljava/lang/Integer;)V
 		ARG 2 x
 		ARG 3 y
-	METHOD lambda$render$9 (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/Integer;Ljava/lang/Integer;)V
-		ARG 2 x
-		ARG 3 y
 	METHOD preloadResources (Lnet/minecraft/client/renderer/texture/TextureManager;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 textureManager
 		ARG 1 executor
+	CLASS WarningLabel
+		METHOD <init> (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/components/MultiLineLabel;II)V
+			ARG 1 font
+			ARG 2 label
+			ARG 3 x
+			ARG 4 y

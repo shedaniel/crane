@@ -1,0 +1,12 @@
+CLASS net/minecraft/server/chase/ChaseServer
+	METHOD <init> (Ljava/lang/String;ILnet/minecraft/server/players/PlayerList;I)V
+		ARG 1 serverBindAddress
+		ARG 2 serverPort
+		ARG 3 playerList
+		ARG 4 broadcastIntervalMs
+	CLASS PlayerPosition
+		METHOD <init> (Ljava/lang/String;DDDFF)V
+			ARG 1 dimensionName
+			ARG 2 x
+			ARG 4 y
+			ARG 6 z

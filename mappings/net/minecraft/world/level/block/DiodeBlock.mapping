@@ -29,6 +29,8 @@ CLASS net/minecraft/world/level/block/DiodeBlock
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 state
+	METHOD isSignalSource (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	METHOD shouldTurnOn (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 level
 		ARG 2 pos

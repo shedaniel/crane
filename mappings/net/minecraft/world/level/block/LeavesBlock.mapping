@@ -1,3 +1,9 @@
 CLASS net/minecraft/world/level/block/LeavesBlock
+	METHOD decaying (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	METHOD getDistanceAt (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 0 state
+	METHOD getFluidState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 state
+	METHOD isRandomlyTicking (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state

@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/entity/layers/SnowGolemHeadLayer
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/entity/ItemRenderer;)V
+		ARG 2 blockRenderer
+		ARG 3 itemRenderer

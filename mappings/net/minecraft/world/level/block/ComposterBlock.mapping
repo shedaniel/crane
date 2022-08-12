@@ -19,6 +19,8 @@ CLASS net/minecraft/world/level/block/ComposterBlock
 		ARG 0 level
 		ARG 1 pos
 		ARG 2 successful
+	METHOD hasAnalogOutputSignal (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
 	METHOD insertItem (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
 		ARG 0 state
 		ARG 1 level

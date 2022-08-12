@@ -1,3 +1,7 @@
 CLASS net/minecraft/network/protocol/game/ClientboundSetEntityDataPacket
 	METHOD <init> (ILnet/minecraft/network/syncher/SynchedEntityData;Z)V
 		ARG 1 id
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

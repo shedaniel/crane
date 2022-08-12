@@ -1,16 +1,25 @@
 CLASS net/minecraft/world/level/chunk/ProtoChunk
-	METHOD <init> (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/UpgradeData;[Lnet/minecraft/world/level/chunk/LevelChunkSection;Lnet/minecraft/world/level/chunk/ProtoTickList;Lnet/minecraft/world/level/chunk/ProtoTickList;Lnet/minecraft/world/level/LevelHeightAccessor;)V
-		ARG 1 chunkPos
-		ARG 2 upgradeData
+	METHOD <init> (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/UpgradeData;[Lnet/minecraft/world/level/chunk/LevelChunkSection;Lnet/minecraft/world/ticks/ProtoChunkTicks;Lnet/minecraft/world/ticks/ProtoChunkTicks;Lnet/minecraft/world/level/LevelHeightAccessor;Lnet/minecraft/core/Registry;Lnet/minecraft/world/level/levelgen/blending/BlendingData;)V
 		ARG 4 blockTicks
-		ARG 5 liquidTicks
-		ARG 6 levelHeightAccessor
+		ARG 5 fluidTicks
 	METHOD addLight (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD getBlockEntity (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+		ARG 1 pos
+	METHOD getBlockEntityNbtForSaving (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 pos
+	METHOD getBlockState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 pos
+	METHOD getFluidState (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/material/FluidState;
+		ARG 1 pos
+	METHOD markPosForPostprocessing (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
 	METHOD packOffsetCoordinates (Lnet/minecraft/core/BlockPos;)S
 		ARG 0 pos
-	METHOD setBiomes (Lnet/minecraft/world/level/chunk/ChunkBiomeContainer;)V
-		ARG 1 biomes
+	METHOD removeBlockEntity (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD setBelowZeroRetrogen (Lnet/minecraft/world/level/levelgen/BelowZeroRetrogen;)V
+		ARG 1 belowZeroRetrogen
 	METHOD setLightEngine (Lnet/minecraft/world/level/lighting/LevelLightEngine;)V
 		ARG 1 lightEngine
 	METHOD setStatus (Lnet/minecraft/world/level/chunk/ChunkStatus;)V

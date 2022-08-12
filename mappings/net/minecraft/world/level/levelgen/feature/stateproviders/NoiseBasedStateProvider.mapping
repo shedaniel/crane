@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/feature/stateproviders/NoiseBasedStateProvider
+	METHOD <init> (JLnet/minecraft/world/level/levelgen/synth/NormalNoise$NoiseParameters;F)V
+		ARG 1 seed
+		ARG 3 parameters

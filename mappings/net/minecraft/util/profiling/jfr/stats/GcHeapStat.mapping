@@ -1,0 +1,10 @@
+CLASS net/minecraft/util/profiling/jfr/stats/GcHeapStat
+	METHOD <init> (Ljava/time/Instant;JLnet/minecraft/util/profiling/jfr/stats/GcHeapStat$Timing;)V
+		ARG 1 timestamp
+		ARG 2 heapUsed
+	CLASS Summary
+		METHOD <init> (Ljava/time/Duration;Ljava/time/Duration;ID)V
+			ARG 1 duration
+			ARG 2 gcTotalDuration
+			ARG 3 totalGCs
+			ARG 4 allocationRateBytesPerSecond

@@ -1,9 +1,8 @@
 CLASS com/mojang/realmsclient/exception/RealmsServiceException
-	METHOD <init> (ILjava/lang/String;ILjava/lang/String;)V
+	METHOD <init> (ILjava/lang/String;)V
 		ARG 1 httpResultCode
-		ARG 2 httpResponseContent
-		ARG 3 errorCode
-		ARG 4 errorMsg
+		ARG 2 rawResponse
 	METHOD <init> (ILjava/lang/String;Lcom/mojang/realmsclient/client/RealmsError;)V
 		ARG 1 httpResultCode
 		ARG 2 httpResponseContent
+		ARG 3 realmsError

@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/block/SculkSpreader
+	METHOD <init> (ZLnet/minecraft/tags/TagKey;IIII)V
+		ARG 1 isWorldGeneration
+		ARG 2 replaceableBlocks
+		ARG 3 growthSpawnCost
+		ARG 4 noGrowthRadius
+		ARG 5 chargeDecayRate
+		ARG 6 additionalDecayRate
+	CLASS ChargeCursor
+		METHOD <init> (Lnet/minecraft/core/BlockPos;IIILjava/util/Optional;)V
+			ARG 1 pos
+			ARG 2 charge
+			ARG 3 decayDelay
+			ARG 4 updateDelay
+		METHOD getBlockBehaviour (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/SculkBehaviour;
+			ARG 0 state

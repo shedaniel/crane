@@ -1,4 +1,6 @@
 CLASS net/minecraft/commands/arguments/MessageArgument
+	METHOD getChatMessage (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/commands/arguments/MessageArgument$ChatMessage;
+		ARG 0 context
 	METHOD getMessage (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/network/chat/Component;
 		ARG 0 ctx
 	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
@@ -12,3 +14,9 @@ CLASS net/minecraft/commands/arguments/MessageArgument
 		METHOD <init> (Ljava/lang/String;[Lnet/minecraft/commands/arguments/MessageArgument$Part;)V
 			ARG 1 text
 			ARG 2 parts
+	CLASS ChatMessage
+		METHOD <init> (Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/MessageSignature;Z)V
+			ARG 1 plain
+			ARG 2 formatted
+			ARG 3 signature
+			ARG 4 signedPreview

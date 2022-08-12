@@ -1,6 +1,0 @@
-CLASS net/minecraft/client/searchtree/ReloadableIdSearchTree
-	METHOD <init> (Ljava/util/function/Function;)V
-		ARG 1 idGetter
-	CLASS IntersectionIterator
-		METHOD <init> (Ljava/util/Iterator;Ljava/util/Iterator;Ljava/util/Comparator;)V
-			ARG 3 orderT

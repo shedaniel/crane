@@ -13,11 +13,6 @@ CLASS net/minecraft/network/ConnectionProtocol
 		ARG 2 packet
 	METHOD getProtocolForPacket (Lnet/minecraft/network/protocol/Packet;)Lnet/minecraft/network/ConnectionProtocol;
 		ARG 0 packet
-	METHOD lambda$static$0 (Lnet/minecraft/network/ConnectionProtocol;Ljava/lang/Class;)V
-		ARG 1 packetClass
-	METHOD lambda$static$1 (Lnet/minecraft/network/ConnectionProtocol;Lnet/minecraft/network/protocol/PacketFlow;Lnet/minecraft/network/ConnectionProtocol$PacketSet;)V
-		ARG 1 flow
-		ARG 2 packetSet
 	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/network/ConnectionProtocol;
 		ARG 0 name
 	CLASS PacketSet

@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/StringRepresentable
+	CLASS EnumCodec
+		METHOD <init> ([Ljava/lang/Enum;Ljava/util/function/Function;)V
+			ARG 2 resolver

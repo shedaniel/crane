@@ -1,3 +1,13 @@
 CLASS net/minecraft/client/tutorial/TutorialStepInstance
+	METHOD onDestroyBlock (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;F)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state
+		ARG 4 progress
 	METHOD onGetItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
+	METHOD onInput (Lnet/minecraft/client/player/Input;)V
+		ARG 1 input
+	METHOD onLookAt (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/phys/HitResult;)V
+		ARG 1 level
+		ARG 2 hitResult

@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/datafix/fixes/ChunkProtoTickListFix
+	CLASS PoorMansPalettedContainer
+		METHOD <init> (Ljava/util/List;[J)V
+			ARG 1 palette
+			ARG 2 data

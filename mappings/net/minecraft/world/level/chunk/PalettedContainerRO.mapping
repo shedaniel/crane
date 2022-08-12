@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/chunk/PalettedContainerRO
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	CLASS PackedData
+		METHOD <init> (Ljava/util/List;Ljava/util/Optional;)V
+			ARG 1 paletteEntries
+			ARG 2 storage

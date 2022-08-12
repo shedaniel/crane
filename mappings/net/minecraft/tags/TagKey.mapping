@@ -1,0 +1,4 @@
+CLASS net/minecraft/tags/TagKey
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 registry
+		ARG 2 location

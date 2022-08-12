@@ -5,6 +5,10 @@ CLASS net/minecraft/network/protocol/game/ClientboundPlayerPositionPacket
 		ARG 5 z
 		ARG 7 yRot
 		ARG 8 xRot
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	CLASS RelativeArgument
 		METHOD <init> (Ljava/lang/String;II)V
 			ARG 3 bit

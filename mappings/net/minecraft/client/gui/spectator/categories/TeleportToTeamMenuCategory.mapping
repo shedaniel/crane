@@ -1,4 +1,4 @@
 CLASS net/minecraft/client/gui/spectator/categories/TeleportToTeamMenuCategory
 	CLASS TeamSelectionItem
-		METHOD <init> (Lnet/minecraft/client/gui/spectator/categories/TeleportToTeamMenuCategory;Lnet/minecraft/world/scores/PlayerTeam;)V
-			ARG 2 team
+		METHOD <init> (Lnet/minecraft/world/scores/PlayerTeam;)V
+			ARG 1 team

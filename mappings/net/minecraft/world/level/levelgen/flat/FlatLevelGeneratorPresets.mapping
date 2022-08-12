@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/levelgen/flat/FlatLevelGeneratorPresets
+	CLASS Bootstrap
+		METHOD <init> (Lnet/minecraft/core/Registry;)V
+			ARG 1 presets

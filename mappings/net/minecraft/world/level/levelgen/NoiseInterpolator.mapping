@@ -1,6 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/NoiseInterpolator
-	METHOD <init> (IIILnet/minecraft/world/level/ChunkPos;ILnet/minecraft/world/level/levelgen/NoiseInterpolator$NoiseColumnFiller;)V
-		ARG 2 cellCountY
-		ARG 3 cellCountZ
-		ARG 5 cellNoiseMinY
-		ARG 6 noiseColumnFiller

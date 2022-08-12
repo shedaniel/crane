@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/biome/FeatureSorter
+	CLASS StepFeatureData
+		METHOD <init> (Ljava/util/List;Ljava/util/function/ToIntFunction;)V
+			ARG 1 features
+			ARG 2 indexMapping

@@ -3,3 +3,14 @@ CLASS net/minecraft/util/ExtraCodecs
 		METHOD <init> (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V
 			ARG 1 first
 			ARG 2 second
+	CLASS EitherCodec
+		METHOD <init> (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V
+			ARG 1 first
+			ARG 2 second
+	CLASS LazyInitializedCodec
+		METHOD <init> (Ljava/util/function/Supplier;)V
+			ARG 1 delegate
+	CLASS TagOrElementLocation
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Z)V
+			ARG 1 id
+			ARG 2 tag

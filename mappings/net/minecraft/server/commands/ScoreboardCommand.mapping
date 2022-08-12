@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/commands/ScoreboardCommand
+	METHOD suggestTriggers (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Collection;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 2 builder

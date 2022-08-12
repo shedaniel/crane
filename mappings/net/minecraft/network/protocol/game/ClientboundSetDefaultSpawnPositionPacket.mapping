@@ -2,3 +2,7 @@ CLASS net/minecraft/network/protocol/game/ClientboundSetDefaultSpawnPositionPack
 	METHOD <init> (Lnet/minecraft/core/BlockPos;F)V
 		ARG 1 pos
 		ARG 2 angle
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

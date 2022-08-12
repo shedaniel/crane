@@ -19,8 +19,6 @@ CLASS net/minecraft/world/entity/item/ItemEntity
 	METHOD areMergable (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 first
 		ARG 1 second
-	METHOD lambda$tick$0 (Lnet/minecraft/world/entity/Entity;)Z
-		ARG 0 entity
 	METHOD setItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
 	METHOD setOwner (Ljava/util/UUID;)V

@@ -2,3 +2,7 @@ CLASS net/minecraft/core/particles/DustParticleOptionsBase
 	METHOD <init> (Lcom/mojang/math/Vector3f;F)V
 		ARG 1 color
 		ARG 2 scale
+	METHOD readVector3f (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/mojang/math/Vector3f;
+		ARG 0 buf
+	METHOD writeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

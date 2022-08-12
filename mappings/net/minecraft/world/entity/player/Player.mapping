@@ -1,9 +1,7 @@
 CLASS net/minecraft/world/entity/player/Player
-	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;FLcom/mojang/authlib/GameProfile;)V
-		ARG 1 level
-		ARG 2 pos
-		ARG 3 yRot
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;FLcom/mojang/authlib/GameProfile;Lnet/minecraft/world/entity/player/ProfilePublicKey;)V
 		ARG 4 gameProfile
+		ARG 5 profilePublicKey
 	METHOD addItem (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
 	METHOD attack (Lnet/minecraft/world/entity/Entity;)V
@@ -16,6 +14,8 @@ CLASS net/minecraft/world/entity/player/Player
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 gameType
+	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD crit (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD drop (Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/entity/item/ItemEntity;
@@ -28,6 +28,8 @@ CLASS net/minecraft/world/entity/player/Player
 		ARG 1 pos
 	METHOD getDestroySpeed (Lnet/minecraft/world/level/block/state/BlockState;)F
 		ARG 1 state
+	METHOD getProjectile (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 stack
 	METHOD hasCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
 	METHOD interactOn (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;
@@ -45,8 +47,14 @@ CLASS net/minecraft/world/entity/player/Player
 		ARG 4 pitch
 	METHOD resetStat (Lnet/minecraft/stats/Stat;)V
 		ARG 1 stat
+	METHOD setLastDeathLocation (Ljava/util/Optional;)V
+		ARG 1 lastDeathLocation
 	METHOD setReducedDebugInfo (Z)V
 		ARG 1 reducedDebugInfo
+	METHOD shouldRemoveSoulSpeed (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD startAutoSpinAttack (I)V
+		ARG 1 autoSpinAttackTicks
 	METHOD startSleepInBed (Lnet/minecraft/core/BlockPos;)Lcom/mojang/datafixers/util/Either;
 		ARG 1 pos
 	CLASS BedSleepingProblem

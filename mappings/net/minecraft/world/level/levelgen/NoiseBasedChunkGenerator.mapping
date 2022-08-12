@@ -1,11 +1,4 @@
 CLASS net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator
-	METHOD <init> (Lnet/minecraft/world/level/biome/BiomeSource;Lnet/minecraft/world/level/biome/BiomeSource;JLjava/util/function/Supplier;)V
-		ARG 3 seed
-	CLASS OreVeinNoiseSource
-		METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;Lnet/minecraft/world/level/ChunkPos;IJ)V
-			ARG 4 seed
-		METHOD prepare (D)V
-			ARG 1 factorZ
-	CLASS NoodleCaveNoiseModifier
-		METHOD prepare (D)Lnet/minecraft/world/level/levelgen/NoiseModifier;
-			ARG 1 factorZ
+	METHOD <init> (Lnet/minecraft/core/Registry;Lnet/minecraft/core/Registry;Lnet/minecraft/world/level/biome/BiomeSource;Lnet/minecraft/core/Holder;)V
+		ARG 2 noises
+		ARG 4 settings

@@ -1,4 +1,8 @@
 CLASS net/minecraft/network/protocol/game/ClientboundStopSoundPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/sounds/SoundSource;)V
 		ARG 1 name
 		ARG 2 source
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

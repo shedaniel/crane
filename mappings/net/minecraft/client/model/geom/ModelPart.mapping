@@ -2,6 +2,8 @@ CLASS net/minecraft/client/model/geom/ModelPart
 	METHOD <init> (Ljava/util/List;Ljava/util/Map;)V
 		ARG 1 cubes
 		ARG 2 children
+	METHOD setInitialPose (Lnet/minecraft/client/model/geom/PartPose;)V
+		ARG 1 initialPose
 	METHOD setPos (FFF)V
 		ARG 1 x
 		ARG 2 y

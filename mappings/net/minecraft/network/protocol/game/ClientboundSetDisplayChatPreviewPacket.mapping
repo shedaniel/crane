@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetDisplayChatPreviewPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Z)V
+		ARG 1 enabled
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

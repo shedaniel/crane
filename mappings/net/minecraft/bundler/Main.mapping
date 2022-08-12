@@ -1,0 +1,6 @@
+CLASS net/minecraft/bundler/Main
+	CLASS FileEntry
+		METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+			ARG 1 hash
+			ARG 2 id
+			ARG 3 path

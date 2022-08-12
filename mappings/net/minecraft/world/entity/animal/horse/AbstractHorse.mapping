@@ -1,6 +1,8 @@
 CLASS net/minecraft/world/entity/animal/horse/AbstractHorse
 	METHOD isArmor (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
 	METHOD setIsJumping (Z)V
 		ARG 1 isJumping
 	METHOD setTemper (I)V

@@ -7,3 +7,5 @@ CLASS net/minecraft/world/level/levelgen/feature/DripstoneUtils
 		ARG 0 state
 	METHOD isEmptyOrWaterOrLava (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 0 state
+	METHOD isNeitherEmptyNorWater (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

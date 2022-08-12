@@ -1,5 +1,0 @@
-CLASS net/minecraft/core/DefaultedRegistry
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;)V
-		ARG 1 defaultKey
-		ARG 2 key
-		ARG 3 lifecycle

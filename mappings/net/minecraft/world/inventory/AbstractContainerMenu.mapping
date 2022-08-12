@@ -73,6 +73,9 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 		ARG 0 container
 	METHOD getSlot (I)Lnet/minecraft/world/inventory/Slot;
 		ARG 1 index
+	METHOD initializeContents (ILjava/util/List;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stateId
+		ARG 3 carried
 	METHOD isValidQuickcraftType (ILnet/minecraft/world/entity/player/Player;)Z
 		ARG 0 button
 		ARG 1 player
@@ -115,6 +118,8 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 	METHOD setData (II)V
 		ARG 1 index
 		ARG 2 data
+	METHOD setItem (IILnet/minecraft/world/item/ItemStack;)V
+		ARG 2 stateId
 	METHOD setRemoteCarried (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
 	METHOD setRemoteSlot (ILnet/minecraft/world/item/ItemStack;)V

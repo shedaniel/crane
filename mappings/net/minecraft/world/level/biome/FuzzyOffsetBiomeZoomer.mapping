@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/biome/FuzzyOffsetBiomeZoomer
-	METHOD sqr (D)D
-		ARG 0 a

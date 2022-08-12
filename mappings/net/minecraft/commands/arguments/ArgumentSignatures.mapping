@@ -1,0 +1,7 @@
+CLASS net/minecraft/commands/arguments/ArgumentSignatures
+	METHOD <init> (JLjava/util/Map;)V
+		ARG 1 salt
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

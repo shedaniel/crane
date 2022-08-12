@@ -1,0 +1,7 @@
+CLASS net/minecraft/server/dedicated/DedicatedServerProperties
+	CLASS WorldGenProperties
+		METHOD <init> (Ljava/lang/String;Lcom/google/gson/JsonObject;ZLjava/lang/String;)V
+			ARG 1 levelSeed
+			ARG 2 generatorSettings
+			ARG 3 generateStructures
+			ARG 4 levelType

@@ -22,6 +22,14 @@ CLASS net/minecraft/commands/arguments/ScoreHolderArgument
 		ARG 2 names
 	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 		ARG 1 reader
+	CLASS Info
+		METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/arguments/ScoreHolderArgument$Info$Template;
+			ARG 1 buf
+		METHOD serializeToNetwork (Lnet/minecraft/commands/arguments/ScoreHolderArgument$Info$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 2 buf
+		CLASS Template
+			METHOD <init> (Lnet/minecraft/commands/arguments/ScoreHolderArgument$Info;Z)V
+				ARG 2 multiple
 	CLASS Result
 		METHOD getNames (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
 			ARG 1 commandSource

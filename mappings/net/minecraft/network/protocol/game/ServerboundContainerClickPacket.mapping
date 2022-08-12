@@ -1,1 +1,12 @@
 CLASS net/minecraft/network/protocol/game/ServerboundContainerClickPacket
+	METHOD <init> (IIIILnet/minecraft/world/inventory/ClickType;Lnet/minecraft/world/item/ItemStack;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;)V
+		ARG 1 containerId
+		ARG 2 stateId
+		ARG 3 slotNum
+		ARG 4 buttonNum
+		ARG 5 clickType
+		ARG 6 carriedItem
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

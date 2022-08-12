@@ -1,0 +1,7 @@
+CLASS net/minecraft/tags/TagEntry
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;ZZ)V
+		ARG 1 id
+		ARG 2 tag
+		ARG 3 required
+	METHOD <init> (Lnet/minecraft/util/ExtraCodecs$TagOrElementLocation;Z)V
+		ARG 2 required

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/feature/trunkplacers/UpwardsBranchingTrunkPlacer
+	METHOD <init> (IIILnet/minecraft/util/valueproviders/IntProvider;FLnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/core/HolderSet;)V
+		ARG 4 extraBranchSteps
+		ARG 5 placeBranchPerLogProbability
+		ARG 6 extraBranchLength
+		ARG 7 canGrowThrough

@@ -1,0 +1,10 @@
+CLASS net/minecraft/server/chase/ChaseClient
+	METHOD <init> (Ljava/lang/String;ILnet/minecraft/server/MinecraftServer;)V
+		ARG 1 serverHost
+		ARG 2 serverPort
+		ARG 3 server
+	CLASS TeleportTarget
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;)V
+			ARG 1 level
+			ARG 2 pos
+			ARG 3 rot

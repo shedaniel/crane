@@ -3,7 +3,7 @@ CLASS net/minecraft/server/level/ServerPlayerGameMode
 		ARG 1 player
 	METHOD destroyBlock (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
-	METHOD handleBlockBreakAction (Lnet/minecraft/core/BlockPos;Lnet/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action;Lnet/minecraft/core/Direction;I)V
+	METHOD handleBlockBreakAction (Lnet/minecraft/core/BlockPos;Lnet/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action;Lnet/minecraft/core/Direction;II)V
 		ARG 1 delayedDestroyPos
 	METHOD setGameModeForPlayer (Lnet/minecraft/world/level/GameType;Lnet/minecraft/world/level/GameType;)V
 		ARG 1 gameModeForPlayer

@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/chat/MessageSignature
+	METHOD <init> (Ljava/util/UUID;Ljava/time/Instant;Lnet/minecraft/util/Crypt$SaltSignaturePair;)V
+		ARG 1 sender
+		ARG 2 timeStamp
+		ARG 3 saltSignature

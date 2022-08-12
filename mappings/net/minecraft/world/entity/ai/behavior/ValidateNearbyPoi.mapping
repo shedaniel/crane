@@ -1,3 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/ValidateNearbyPoi
-	METHOD <init> (Lnet/minecraft/world/entity/ai/village/poi/PoiType;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)V
+	METHOD <init> (Ljava/util/function/Predicate;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)V
+		ARG 1 poiPredicate
 		ARG 2 memoryType

@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/entity/player/ProfilePublicKey
+	METHOD <init> (Lnet/minecraft/world/entity/player/ProfilePublicKey$Data;)V
+		ARG 1 data
+	CLASS Data
+		METHOD <init> (Ljava/time/Instant;Ljava/security/PublicKey;[B)V
+			ARG 1 expiresAt
+			ARG 2 key
+			ARG 3 keySignature
+		METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

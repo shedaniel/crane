@@ -3,3 +3,5 @@ CLASS net/minecraft/network/protocol/game/ClientboundAddPlayerPacket
 		ARG 1 buf
 	METHOD <init> (Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 player
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

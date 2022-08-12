@@ -1,0 +1,6 @@
+CLASS net/minecraft/core/RegistryCodecs
+	CLASS RegistryEntry
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;ILjava/lang/Object;)V
+			ARG 1 key
+			ARG 2 id
+			ARG 3 value

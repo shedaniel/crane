@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/commands/DataPackCommand
+	METHOD getPack (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Z)Lnet/minecraft/server/packs/repository/Pack;
+		ARG 0 context

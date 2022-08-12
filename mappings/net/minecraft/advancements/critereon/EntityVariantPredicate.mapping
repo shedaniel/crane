@@ -1,0 +1,4 @@
+CLASS net/minecraft/advancements/critereon/EntityVariantPredicate
+	METHOD <init> (Lnet/minecraft/core/Registry;Ljava/util/function/Function;)V
+		ARG 1 registry
+		ARG 2 getter

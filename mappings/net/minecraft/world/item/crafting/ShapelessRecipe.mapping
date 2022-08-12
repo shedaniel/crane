@@ -5,5 +5,9 @@ CLASS net/minecraft/world/item/crafting/ShapelessRecipe
 		ARG 3 result
 		ARG 4 ingredients
 	CLASS Serializer
+		METHOD fromNetwork (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/ShapelessRecipe;
+			ARG 2 buf
 		METHOD itemsFromJson (Lcom/google/gson/JsonArray;)Lnet/minecraft/core/NonNullList;
 			ARG 0 json
+		METHOD toNetwork (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/ShapelessRecipe;)V
+			ARG 1 buf

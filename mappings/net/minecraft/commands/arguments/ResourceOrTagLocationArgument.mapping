@@ -1,0 +1,22 @@
+CLASS net/minecraft/commands/arguments/ResourceOrTagLocationArgument
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;)V
+		ARG 1 registryKey
+	METHOD getRegistryType (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;)Lnet/minecraft/commands/arguments/ResourceOrTagLocationArgument$Result;
+		ARG 0 context
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
+	CLASS Info
+		METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/arguments/ResourceOrTagLocationArgument$Info$Template;
+			ARG 1 buf
+		METHOD serializeToNetwork (Lnet/minecraft/commands/arguments/ResourceOrTagLocationArgument$Info$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 2 buf
+		CLASS Template
+			METHOD <init> (Lnet/minecraft/commands/arguments/ResourceOrTagLocationArgument$Info;Lnet/minecraft/resources/ResourceKey;)V
+				ARG 2 registryKey
+	CLASS TagResult
+		METHOD <init> (Lnet/minecraft/tags/TagKey;)V
+			ARG 1 key
+	CLASS ResourceResult
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;)V
+			ARG 1 key
