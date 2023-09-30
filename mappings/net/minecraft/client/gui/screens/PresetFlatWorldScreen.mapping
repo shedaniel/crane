@@ -1,12 +1,19 @@
 CLASS net/minecraft/client/gui/screens/PresetFlatWorldScreen
 	METHOD <init> (Lnet/minecraft/client/gui/screens/CreateFlatWorldScreen;)V
 		ARG 1 parent
+	METHOD fromString (Lnet/minecraft/core/Registry;Lnet/minecraft/core/Registry;Ljava/lang/String;Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;
+		ARG 0 biomeRegistry
+		ARG 1 structureSetRegistry
+		ARG 2 delimiter
+		ARG 3 settings
 	METHOD getLayerInfoFromString (Ljava/lang/String;I)Lnet/minecraft/world/level/levelgen/flat/FlatLayerInfo;
 		ARG 0 string
 	METHOD getLayersInfoFromString (Ljava/lang/String;)Ljava/util/List;
 		ARG 0 string
 	METHOD lambda$init$3 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
+	METHOD save (Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)Ljava/lang/String;
+		ARG 0 settings
 	METHOD updateButtonValidity (Z)V
 		ARG 1 active
 	CLASS PresetsList

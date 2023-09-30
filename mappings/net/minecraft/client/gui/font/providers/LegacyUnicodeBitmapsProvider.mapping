@@ -14,3 +14,7 @@ CLASS net/minecraft/client/gui/font/providers/LegacyUnicodeBitmapsProvider
 		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)V
 			ARG 1 metadata
 			ARG 2 texturePattern
+		METHOD fromJson (Lcom/google/gson/JsonObject;)Lnet/minecraft/client/gui/font/providers/GlyphProviderBuilder;
+			ARG 0 json
+		METHOD getTemplate (Lcom/google/gson/JsonObject;)Ljava/lang/String;
+			ARG 0 json

@@ -1,6 +1,8 @@
 CLASS net/minecraft/client/gui/components/spectator/SpectatorGui
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD renderHotbar (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
 	METHOD renderPage (Lcom/mojang/blaze3d/vertex/PoseStack;FIILnet/minecraft/client/gui/spectator/categories/SpectatorPage;)V
 		ARG 1 poses
 		ARG 2 alpha

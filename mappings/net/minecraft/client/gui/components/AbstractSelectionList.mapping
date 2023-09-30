@@ -23,6 +23,10 @@ CLASS net/minecraft/client/gui/components/AbstractSelectionList
 	METHOD getEntryAtPosition (DD)Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;
 		ARG 1 mouseX
 		ARG 3 mouseY
+	METHOD getRowBottom (I)I
+		ARG 1 row
+	METHOD getRowTop (I)I
+		ARG 1 row
 	METHOD isSelectedItem (I)Z
 		ARG 1 index
 	METHOD lambda$moveSelection$0 (Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;)Z
@@ -34,6 +38,7 @@ CLASS net/minecraft/client/gui/components/AbstractSelectionList
 		ARG 2 filter
 	METHOD narrateListElementPosition (Lnet/minecraft/client/gui/narration/NarrationElementOutput;Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;)V
 		ARG 1 output
+		ARG 2 element
 	METHOD remove (I)Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;
 		ARG 1 index
 	METHOD removeEntry (Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;)Z

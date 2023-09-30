@@ -1,9 +1,27 @@
 CLASS net/minecraft/client/gui/components/OptionsList
+	METHOD addBig (Lnet/minecraft/client/OptionInstance;)I
+		ARG 1 option
+	METHOD addSmall (Lnet/minecraft/client/OptionInstance;Lnet/minecraft/client/OptionInstance;)V
+		ARG 1 option1
+		ARG 2 option2
+	METHOD addSmall ([Lnet/minecraft/client/OptionInstance;)V
+		ARG 1 options
+	METHOD findOption (Lnet/minecraft/client/OptionInstance;)Lnet/minecraft/client/gui/components/AbstractWidget;
+		ARG 1 option
 	METHOD getMouseOver (DD)Ljava/util/Optional;
 		ARG 1 mouseX
 		ARG 3 mouseY
 	CLASS Entry
 		METHOD <init> (Ljava/util/Map;)V
 			ARG 1 options
+		METHOD big (Lnet/minecraft/client/Options;ILnet/minecraft/client/OptionInstance;)Lnet/minecraft/client/gui/components/OptionsList$Entry;
+			ARG 0 options
+			ARG 1 centerX
+			ARG 2 option
 		METHOD lambda$render$0 (ILcom/mojang/blaze3d/vertex/PoseStack;IIFLnet/minecraft/client/gui/components/AbstractWidget;)V
 			ARG 5 widget
+		METHOD small (Lnet/minecraft/client/Options;ILnet/minecraft/client/OptionInstance;Lnet/minecraft/client/OptionInstance;)Lnet/minecraft/client/gui/components/OptionsList$Entry;
+			ARG 0 options
+			ARG 1 centerX
+			ARG 2 option1
+			ARG 3 option2

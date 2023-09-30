@@ -25,6 +25,11 @@ CLASS net/minecraft/client/gui/components/MultiLineLabel
 		ARG 1 t
 	METHOD lambda$create$3 (Lnet/minecraft/client/gui/Font;Lnet/minecraft/util/FormattedCharSequence;)Lnet/minecraft/client/gui/components/MultiLineLabel$TextWithWidth;
 		ARG 1 t
+	METHOD renderBackgroundCentered (Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V
+		ARG 1 poses
+		ARG 2 x
+		ARG 3 y
+		ARG 4 lineHeight
 	METHOD renderCentered (Lcom/mojang/blaze3d/vertex/PoseStack;II)I
 		ARG 1 poses
 		ARG 2 x

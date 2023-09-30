@@ -20,3 +20,5 @@ CLASS net/minecraft/client/gui/font/providers/BitmapProvider
 			ARG 4 chars
 		METHOD fromJson (Lcom/google/gson/JsonObject;)Lnet/minecraft/client/gui/font/providers/BitmapProvider$Builder;
 			ARG 0 json
+		METHOD getActualGlyphWidth (Lcom/mojang/blaze3d/platform/NativeImage;IIII)I
+			ARG 1 image

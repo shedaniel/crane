@@ -1,5 +1,10 @@
 CLASS net/minecraft/client/gui/components/CycleButton
 	METHOD <init> (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;ILjava/lang/Object;Lnet/minecraft/client/gui/components/CycleButton$ValueListSupplier;Ljava/util/function/Function;Ljava/util/function/Function;Lnet/minecraft/client/gui/components/CycleButton$OnValueChange;Lnet/minecraft/client/OptionInstance$TooltipSupplier;Z)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 message
 		ARG 6 name
 		ARG 7 index
 		ARG 8 value
@@ -40,12 +45,17 @@ CLASS net/minecraft/client/gui/components/CycleButton
 			ARG 2 y
 			ARG 3 width
 			ARG 4 height
+			ARG 5 message
 		METHOD create (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/CycleButton$OnValueChange;)Lnet/minecraft/client/gui/components/CycleButton;
 			ARG 1 x
 			ARG 2 y
 			ARG 3 width
 			ARG 4 height
+			ARG 5 message
 			ARG 6 callback
+		METHOD lambda$create$1 (Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Object;)V
+			ARG 0 button
+			ARG 1 value
 		METHOD lambda$new$0 (Ljava/lang/Object;)Ljava/util/List;
 			ARG 0 value
 		METHOD withCustomNarration (Ljava/util/function/Function;)Lnet/minecraft/client/gui/components/CycleButton$Builder;
@@ -54,6 +64,8 @@ CLASS net/minecraft/client/gui/components/CycleButton
 			ARG 1 initialValue
 		METHOD withTooltip (Lnet/minecraft/client/OptionInstance$TooltipSupplier;)Lnet/minecraft/client/gui/components/CycleButton$Builder;
 			ARG 1 tooltipSupplier
+		METHOD withValues (Ljava/util/Collection;)Lnet/minecraft/client/gui/components/CycleButton$Builder;
+			ARG 1 values
 		METHOD withValues (Ljava/util/List;Ljava/util/List;)Lnet/minecraft/client/gui/components/CycleButton$Builder;
 			ARG 1 list
 			ARG 2 altList
@@ -70,6 +82,8 @@ CLASS net/minecraft/client/gui/components/CycleButton
 			ARG 1 button
 			ARG 2 value
 	CLASS ValueListSupplier
+		METHOD create (Ljava/util/Collection;)Lnet/minecraft/client/gui/components/CycleButton$ValueListSupplier;
+			ARG 0 values
 		METHOD create (Ljava/util/function/BooleanSupplier;Ljava/util/List;Ljava/util/List;)Lnet/minecraft/client/gui/components/CycleButton$ValueListSupplier;
 			ARG 0 alternativeSupplier
 			ARG 1 list
