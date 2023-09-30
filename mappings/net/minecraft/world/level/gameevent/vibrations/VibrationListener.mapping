@@ -1,16 +1,8 @@
 CLASS net/minecraft/world/level/gameevent/vibrations/VibrationListener
-	METHOD <init> (Lnet/minecraft/world/level/gameevent/PositionSource;ILnet/minecraft/world/level/gameevent/vibrations/VibrationListener$VibrationListenerConfig;Lnet/minecraft/world/level/gameevent/vibrations/VibrationListener$ReceivingEvent;FI)V
+	METHOD <init> (Lnet/minecraft/world/level/gameevent/PositionSource;ILnet/minecraft/world/level/gameevent/vibrations/VibrationListener$VibrationListenerConfig;Lnet/minecraft/world/level/gameevent/vibrations/VibrationInfo;Lnet/minecraft/world/level/gameevent/vibrations/VibrationSelector;I)V
 		ARG 1 listenerSource
 		ARG 2 listenerRange
 		ARG 3 config
-		ARG 4 receivingEvent
-		ARG 5 receivingDistance
+		ARG 4 currentVibration
+		ARG 5 selectionStrategy
 		ARG 6 travelTimeInTicks
-	CLASS ReceivingEvent
-		METHOD <init> (Lnet/minecraft/world/level/gameevent/GameEvent;FLnet/minecraft/world/phys/Vec3;Ljava/util/UUID;Ljava/util/UUID;Lnet/minecraft/world/entity/Entity;)V
-			ARG 1 gameEvent
-			ARG 2 distance
-			ARG 3 pos
-			ARG 4 uuid
-			ARG 5 projectileOwnerUuid
-			ARG 6 entity

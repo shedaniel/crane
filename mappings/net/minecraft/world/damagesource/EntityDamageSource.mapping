@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/damagesource/EntityDamageSource
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/entity/Entity;)V
-		ARG 2 entity

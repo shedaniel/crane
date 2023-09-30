@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/navigation/FocusNavigationEvent
+	CLASS TabNavigation
+		METHOD <init> (Z)V
+			ARG 1 forward
+	CLASS ArrowNavigation
+		METHOD <init> (Lnet/minecraft/client/gui/navigation/ScreenDirection;)V
+			ARG 1 direction

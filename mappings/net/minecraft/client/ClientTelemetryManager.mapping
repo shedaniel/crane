@@ -1,9 +1,0 @@
-CLASS net/minecraft/client/ClientTelemetryManager
-	METHOD <init> (Lnet/minecraft/client/Minecraft;Lcom/mojang/authlib/minecraft/UserApiService;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/UUID;)V
-		ARG 1 minecraft
-	METHOD onServerBrandReceived (Ljava/lang/String;)V
-		ARG 1 serverBrand
-	CLASS PlayerInfo
-		METHOD <init> (Lnet/minecraft/world/level/GameType;Z)V
-			ARG 1 gameType
-			ARG 2 hardcore

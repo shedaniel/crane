@@ -1,4 +1,5 @@
 CLASS net/minecraft/core/HolderLookup
+	CLASS Delegate
+		METHOD <init> (Lnet/minecraft/core/HolderLookup;)V
+			ARG 1 parent
 	CLASS RegistryLookup
-		METHOD <init> (Lnet/minecraft/core/Registry;)V
-			ARG 1 registry

@@ -11,9 +11,6 @@ CLASS net/minecraft/client/gui/screens/WinScreen
 		ARG 1 reader
 	METHOD addPoemLines (Ljava/lang/String;)V
 		ARG 1 poem
-	METHOD lambda$render$0 (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/lang/Integer;Ljava/lang/Integer;)V
-		ARG 2 x
-		ARG 3 y
 	METHOD wrapCreditsIO (Ljava/lang/String;Lnet/minecraft/client/gui/screens/WinScreen$CreditsReader;)V
 		ARG 2 reader
 	CLASS CreditsReader

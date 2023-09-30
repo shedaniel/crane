@@ -3,5 +3,6 @@ CLASS net/minecraft/world/level/biome/BiomeGenerationSettings
 		ARG 1 carvers
 		ARG 2 features
 	CLASS Builder
-		METHOD addFeatureStepsUpTo (I)V
-			ARG 1 index
+		METHOD <init> (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/core/HolderGetter;)V
+			ARG 1 placedFeatures
+			ARG 2 worldCarvers

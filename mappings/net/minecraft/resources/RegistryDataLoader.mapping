@@ -1,0 +1,5 @@
+CLASS net/minecraft/resources/RegistryDataLoader
+	CLASS RegistryData
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)V
+			ARG 1 key
+			ARG 2 elementCodec

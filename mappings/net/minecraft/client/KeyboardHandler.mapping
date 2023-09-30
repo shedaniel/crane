@@ -17,7 +17,5 @@ CLASS net/minecraft/client/KeyboardHandler
 		ARG 4 scanCode
 	METHOD setClipboard (Ljava/lang/String;)V
 		ARG 1 clipboard
-	METHOD setSendRepeatsToGui (Z)V
-		ARG 1 sendRepeatsToGui
 	METHOD setup (J)V
 		ARG 1 windowId

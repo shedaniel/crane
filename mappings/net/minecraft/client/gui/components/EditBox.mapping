@@ -40,10 +40,10 @@ CLASS net/minecraft/client/gui/components/EditBox
 		ARG 1 isEditable
 	METHOD setFilter (Ljava/util/function/Predicate;)V
 		ARG 1 filter
-	METHOD setFocus (Z)V
-		ARG 1 focused
 	METHOD setFormatter (Ljava/util/function/BiFunction;)V
 		ARG 1 formatter
+	METHOD setHint (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 hint
 	METHOD setMaxLength (I)V
 		ARG 1 maxLength
 	METHOD setResponder (Ljava/util/function/Consumer;)V
@@ -58,5 +58,3 @@ CLASS net/minecraft/client/gui/components/EditBox
 		ARG 1 value
 	METHOD setVisible (Z)V
 		ARG 1 visible
-	METHOD setX (I)V
-		ARG 1 x

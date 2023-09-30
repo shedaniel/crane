@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/item/armortrim/TrimPattern
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/core/Holder;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 assetId
+		ARG 2 templateItem
+		ARG 3 description

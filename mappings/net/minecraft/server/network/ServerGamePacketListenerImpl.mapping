@@ -4,3 +4,5 @@ CLASS net/minecraft/server/network/ServerGamePacketListenerImpl
 		ARG 1 server
 		ARG 2 connection
 		ARG 3 player
+	METHOD resetPlayerChatState (Lnet/minecraft/network/chat/RemoteChatSession;)V
+		ARG 1 chatSession

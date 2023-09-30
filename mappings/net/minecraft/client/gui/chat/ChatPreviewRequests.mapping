@@ -1,9 +1,0 @@
-CLASS net/minecraft/client/gui/chat/ChatPreviewRequests
-	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
-		ARG 1 minecraft
-	METHOD trySendRequest (Ljava/lang/String;J)Z
-		ARG 2 lastRequestTime
-	CLASS PendingPreview
-		METHOD <init> (ILjava/lang/String;)V
-			ARG 1 id
-			ARG 2 query

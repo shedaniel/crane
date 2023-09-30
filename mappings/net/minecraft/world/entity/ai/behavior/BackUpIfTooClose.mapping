@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/BackUpIfTooClose
-	METHOD <init> (IF)V
-		ARG 1 tooCloseDistance
-		ARG 2 strafeSpeed

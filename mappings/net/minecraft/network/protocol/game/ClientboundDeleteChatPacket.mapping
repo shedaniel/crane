@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientboundDeleteChatPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/network/chat/MessageSignature$Packed;)V
+		ARG 1 messageSignature
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

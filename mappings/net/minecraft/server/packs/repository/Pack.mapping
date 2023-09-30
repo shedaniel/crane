@@ -1,47 +1,26 @@
 CLASS net/minecraft/server/packs/repository/Pack
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/network/chat/Component;ZLjava/util/function/Supplier;Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;Lnet/minecraft/server/packs/PackType;Lnet/minecraft/server/packs/repository/Pack$Position;Lnet/minecraft/server/packs/repository/PackSource;)V
-		ARG 1 id
-		ARG 2 title
-		ARG 3 required
-		ARG 4 supplier
-		ARG 5 packMetadata
-		ARG 6 packType
-		ARG 7 defaultPosition
-		ARG 8 packSource
-	METHOD <init> (Ljava/lang/String;ZLjava/util/function/Supplier;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/PackCompatibility;Lnet/minecraft/server/packs/repository/Pack$Position;ZLnet/minecraft/server/packs/repository/PackSource;)V
+	METHOD <init> (Ljava/lang/String;ZLnet/minecraft/server/packs/repository/Pack$ResourcesSupplier;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/Pack$Info;Lnet/minecraft/server/packs/repository/PackCompatibility;Lnet/minecraft/server/packs/repository/Pack$Position;ZLnet/minecraft/server/packs/repository/PackSource;)V
 		ARG 1 id
 		ARG 2 required
-		ARG 3 supplier
+		ARG 3 resources
 		ARG 4 title
-		ARG 5 description
 		ARG 6 compatibility
 		ARG 7 defaultPosition
 		ARG 8 fixedPosition
 		ARG 9 packSource
-	METHOD create (Ljava/lang/String;ZLjava/util/function/Supplier;Lnet/minecraft/server/packs/repository/Pack$PackConstructor;Lnet/minecraft/server/packs/repository/Pack$Position;Lnet/minecraft/server/packs/repository/PackSource;)Lnet/minecraft/server/packs/repository/Pack;
-		ARG 0 id
-		ARG 1 required
-		ARG 2 supplier
-		ARG 3 constructor
-		ARG 4 defaultPosition
-		ARG 5 packSource
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
 	METHOD getChatLink (Z)Lnet/minecraft/network/chat/Component;
 		ARG 1 trusted
 	METHOD lambda$getChatLink$0 (ZLnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;
 		ARG 2 style
+	CLASS Info
+		METHOD <init> (Lnet/minecraft/network/chat/Component;ILnet/minecraft/world/flag/FeatureFlagSet;)V
+			ARG 1 description
+			ARG 2 format
+			ARG 3 requestedFeatures
 	CLASS Position
 		METHOD insert (Ljava/util/List;Ljava/lang/Object;Ljava/util/function/Function;Z)I
 			ARG 4 opposite
 		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/server/packs/repository/Pack$Position;
 			ARG 0 name
-	CLASS PackConstructor
-		METHOD create (Ljava/lang/String;Lnet/minecraft/network/chat/Component;ZLjava/util/function/Supplier;Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;Lnet/minecraft/server/packs/repository/Pack$Position;Lnet/minecraft/server/packs/repository/PackSource;)Lnet/minecraft/server/packs/repository/Pack;
-			ARG 1 id
-			ARG 2 title
-			ARG 3 required
-			ARG 4 supplier
-			ARG 5 packMetadata
-			ARG 6 defaultPosition
-			ARG 7 packSource

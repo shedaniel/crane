@@ -1,7 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/SetWalkTargetFromBlockMemory
-	METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;FIII)V
-		ARG 1 memoryType
-		ARG 2 speedModifier
-		ARG 3 closeEnoughDist
-		ARG 4 tooFarDistance
-		ARG 5 tooLongUnreachableDuration

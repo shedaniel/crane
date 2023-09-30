@@ -42,6 +42,8 @@ CLASS net/minecraft/world/item/enchantment/EnchantmentHelper
 		ARG 0 stack
 	METHOD hasFrostWalker (Lnet/minecraft/world/entity/LivingEntity;)Z
 		ARG 0 entity
+	METHOD hasSilkTouch (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 stack
 	METHOD hasSoulSpeed (Lnet/minecraft/world/entity/LivingEntity;)Z
 		ARG 0 entity
 	METHOD hasVanishingCurse (Lnet/minecraft/world/item/ItemStack;)Z

@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/chat/SignedMessageLink
+	METHOD <init> (ILjava/util/UUID;Ljava/util/UUID;)V
+		ARG 1 index
+		ARG 2 sender
+		ARG 3 sessionId

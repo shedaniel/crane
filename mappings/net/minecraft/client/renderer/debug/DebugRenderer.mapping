@@ -8,65 +8,6 @@ CLASS net/minecraft/client/renderer/debug/DebugRenderer
 		ARG 3 cameraX
 		ARG 5 cameraY
 		ARG 7 cameraZ
-	METHOD renderFilledBox (DDDDDDFFFF)V
-		ARG 0 x1
-		ARG 2 y1
-		ARG 4 z1
-		ARG 6 x2
-		ARG 8 y2
-		ARG 10 z2
-		ARG 12 red
-		ARG 13 green
-		ARG 14 blue
-		ARG 15 alpha
-	METHOD renderFilledBox (Lnet/minecraft/core/BlockPos;FFFFF)V
-		ARG 0 pos
-		ARG 1 radius
-		ARG 2 red
-		ARG 3 green
-		ARG 4 blue
-		ARG 5 alpha
-	METHOD renderFilledBox (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;FFFF)V
-		ARG 0 start
-		ARG 1 end
-		ARG 2 red
-		ARG 3 green
-		ARG 4 blue
-		ARG 5 alpha
-	METHOD renderFilledBox (Lnet/minecraft/world/phys/AABB;FFFF)V
-		ARG 0 box
-		ARG 1 red
-		ARG 2 green
-		ARG 3 blue
-		ARG 4 alpha
-	METHOD renderFloatingText (Ljava/lang/String;DDDI)V
-		ARG 0 text
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
-		ARG 7 color
-	METHOD renderFloatingText (Ljava/lang/String;DDDIF)V
-		ARG 0 text
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
-		ARG 7 color
-		ARG 8 scale
-	METHOD renderFloatingText (Ljava/lang/String;DDDIFZFZ)V
-		ARG 0 text
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
-		ARG 7 color
-		ARG 8 scale
-		ARG 9 centered
-		ARG 11 disableDepth
-	METHOD renderFloatingText (Ljava/lang/String;IIII)V
-		ARG 0 text
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-		ARG 4 color
 	CLASS SimpleDebugRenderer
 		METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;DDD)V
 			ARG 1 poses

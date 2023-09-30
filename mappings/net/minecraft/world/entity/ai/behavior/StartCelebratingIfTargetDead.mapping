@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/StartCelebratingIfTargetDead
-	METHOD <init> (ILjava/util/function/BiPredicate;)V
-		ARG 1 celebrateDuration
-		ARG 2 dancePredicate

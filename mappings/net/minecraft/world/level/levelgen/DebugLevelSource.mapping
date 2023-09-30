@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/DebugLevelSource
-	METHOD <init> (Lnet/minecraft/core/Registry;Lnet/minecraft/core/Registry;)V
-		ARG 2 biomes

@@ -1,5 +1,5 @@
 CLASS net/minecraft/client/OptionInstance
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/client/OptionInstance$TooltipSupplierFactory;Lnet/minecraft/client/OptionInstance$CaptionBasedToString;Lnet/minecraft/client/OptionInstance$ValueSet;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Ljava/util/function/Consumer;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/client/OptionInstance$TooltipSupplier;Lnet/minecraft/client/OptionInstance$CaptionBasedToString;Lnet/minecraft/client/OptionInstance$ValueSet;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Ljava/util/function/Consumer;)V
 		ARG 2 tooltip
 		ARG 4 values
 		ARG 5 codec
@@ -26,11 +26,13 @@ CLASS net/minecraft/client/OptionInstance
 			ARG 2 validateValue
 			ARG 3 codec
 	CLASS ClampingLazyMaxIntRange
-		METHOD <init> (ILjava/util/function/IntSupplier;)V
+		METHOD <init> (ILjava/util/function/IntSupplier;I)V
 			ARG 1 minInclusive
 			ARG 2 maxSupplier
+			ARG 3 encodableMaxInclusive
 	CLASS OptionInstanceSliderButton
-		METHOD <init> (Lnet/minecraft/client/Options;IIIILnet/minecraft/client/OptionInstance;Lnet/minecraft/client/OptionInstance$SliderableValueSet;Lnet/minecraft/client/OptionInstance$TooltipSupplier;)V
+		METHOD <init> (Lnet/minecraft/client/Options;IIIILnet/minecraft/client/OptionInstance;Lnet/minecraft/client/OptionInstance$SliderableValueSet;Lnet/minecraft/client/OptionInstance$TooltipSupplier;Ljava/util/function/Consumer;)V
 			ARG 6 instance
 			ARG 7 values
-			ARG 8 tooltip
+			ARG 8 tooltipSupplier
+			ARG 9 onValueChanged

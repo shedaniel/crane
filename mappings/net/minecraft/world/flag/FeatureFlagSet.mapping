@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/flag/FeatureFlagSet
+	METHOD <init> (Lnet/minecraft/world/flag/FeatureFlagUniverse;J)V
+		ARG 1 universe
+		ARG 2 mask

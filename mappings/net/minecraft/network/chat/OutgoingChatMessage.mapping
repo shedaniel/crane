@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/chat/OutgoingChatMessage
+	CLASS Player
+		METHOD <init> (Lnet/minecraft/network/chat/PlayerChatMessage;)V
+			ARG 1 message
+	CLASS Disguised
+		METHOD <init> (Lnet/minecraft/network/chat/Component;)V
+			ARG 1 content

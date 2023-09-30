@@ -1,3 +1,5 @@
 CLASS net/minecraft/world/entity/ai/village/poi/PoiTypes
 	METHOD forState (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/Optional;
 		ARG 0 state
+	METHOD hasPoi (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

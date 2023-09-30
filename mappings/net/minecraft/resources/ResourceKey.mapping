@@ -2,3 +2,7 @@ CLASS net/minecraft/resources/ResourceKey
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V
 		ARG 1 registryName
 		ARG 2 location
+	CLASS InternKey
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V
+			ARG 1 registry
+			ARG 2 location

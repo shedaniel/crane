@@ -27,24 +27,6 @@ CLASS net/minecraft/client/particle/ParticleEngine
 		ARG 2 state
 	METHOD hasSpaceInParticleLimit (Lnet/minecraft/core/particles/ParticleGroup;)Z
 		ARG 1 group
-	METHOD lambda$loadParticleDescription$6 (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;
-		ARG 0 texture
-	METHOD lambda$reload$1 (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/Map;Ljava/util/concurrent/Executor;Lnet/minecraft/resources/ResourceLocation;)Ljava/util/concurrent/CompletableFuture;
-		ARG 4 particleType
-	METHOD lambda$reload$4 (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lnet/minecraft/resources/ResourceLocation;Ljava/util/List;)V
-		ARG 2 particleType
-		ARG 3 sprites
-	METHOD lambda$reload$5 (Lnet/minecraft/util/profiling/ProfilerFiller;Ljava/util/Map;Lnet/minecraft/client/renderer/texture/TextureAtlas$Preparations;)V
-		ARG 3 preparations
-	METHOD lambda$tick$7 (Lnet/minecraft/client/particle/ParticleRenderType;Ljava/util/Queue;)V
-		ARG 1 particleType
-		ARG 2 particles
-	METHOD lambda$tick$8 (Lnet/minecraft/client/particle/ParticleRenderType;)Ljava/util/Queue;
-		ARG 0 particleType
-	METHOD loadParticleDescription (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/resources/ResourceLocation;Ljava/util/Map;)V
-		ARG 1 resourceManager
-		ARG 2 particleType
-		ARG 3 textures
 	METHOD makeParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)Lnet/minecraft/client/particle/Particle;
 		ARG 1 particleType
 		ARG 2 x

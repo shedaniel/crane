@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/chat/LocalChatSession
+	METHOD <init> (Ljava/util/UUID;Lnet/minecraft/world/entity/player/ProfileKeyPair;)V
+		ARG 1 sessionId
+		ARG 2 keyPair

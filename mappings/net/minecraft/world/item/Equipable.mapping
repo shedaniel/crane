@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/Equipable
+	METHOD get (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/Equipable;
+		ARG 0 stack

@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/WorldOptions
+	METHOD <init> (JZZLjava/util/Optional;)V
+		ARG 1 seed
+		ARG 3 generateStructures
+		ARG 4 generateBonusChest

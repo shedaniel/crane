@@ -8,8 +8,6 @@ CLASS net/minecraft/world/effect/MobEffectInstance
 		ARG 6 showIcon
 		ARG 7 hiddenEffect
 		ARG 8 factorData
-	METHOD setNoCounter (Z)V
-		ARG 1 noCounter
 	CLASS FactorData
 		METHOD <init> (IFFFIFZ)V
 			ARG 1 paddingDuration

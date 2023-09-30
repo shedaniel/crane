@@ -1,4 +1,4 @@
 CLASS net/minecraft/core/MappedRegistry
-	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;Ljava/util/function/Function;)V
-		ARG 2 elementsLifecycle
-		ARG 3 customHolderProvider
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;Z)V
+		ARG 1 key
+		ARG 2 registryLifecycle

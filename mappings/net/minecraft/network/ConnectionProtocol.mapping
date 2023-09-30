@@ -8,9 +8,6 @@ CLASS net/minecraft/network/ConnectionProtocol
 		ARG 3 buf
 	METHOD getById (I)Lnet/minecraft/network/ConnectionProtocol;
 		ARG 0 id
-	METHOD getPacketId (Lnet/minecraft/network/protocol/PacketFlow;Lnet/minecraft/network/protocol/Packet;)Ljava/lang/Integer;
-		ARG 1 flow
-		ARG 2 packet
 	METHOD getProtocolForPacket (Lnet/minecraft/network/protocol/Packet;)Lnet/minecraft/network/ConnectionProtocol;
 		ARG 0 packet
 	METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/network/ConnectionProtocol;
@@ -22,8 +19,6 @@ CLASS net/minecraft/network/ConnectionProtocol
 		METHOD createPacket (ILnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/Packet;
 			ARG 1 id
 			ARG 2 buf
-		METHOD getId (Ljava/lang/Class;)Ljava/lang/Integer;
-			ARG 1 packetClass
 		METHOD lambda$new$0 (Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;)V
 			ARG 0 map
 	CLASS ProtocolBuilder

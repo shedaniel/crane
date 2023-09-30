@@ -1,5 +1,5 @@
 CLASS net/minecraft/world/entity/EntityType
-	METHOD <init> (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;ZZZZLcom/google/common/collect/ImmutableSet;Lnet/minecraft/world/entity/EntityDimensions;II)V
+	METHOD <init> (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;ZZZZLcom/google/common/collect/ImmutableSet;Lnet/minecraft/world/entity/EntityDimensions;IILnet/minecraft/world/flag/FeatureFlagSet;)V
 		ARG 1 factory
 		ARG 2 category
 		ARG 3 serialize
@@ -10,6 +10,7 @@ CLASS net/minecraft/world/entity/EntityType
 		ARG 8 dimensions
 		ARG 9 clientTrackingRange
 		ARG 10 updateInterval
+		ARG 11 requiredFeatures
 	METHOD isBlockDangerous (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
 	CLASS Builder

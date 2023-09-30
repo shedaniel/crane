@@ -1,0 +1,7 @@
+CLASS net/minecraft/server/packs/linkfs/PathContents
+	CLASS FileContents
+		METHOD <init> (Ljava/nio/file/Path;)V
+			ARG 1 contents
+	CLASS DirectoryContents
+		METHOD <init> (Ljava/util/Map;)V
+			ARG 1 children

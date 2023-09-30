@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/multiplayer/chat/ChatListener
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	CLASS Message
+		METHOD <init> (Lnet/minecraft/network/chat/MessageSignature;Ljava/util/function/BooleanSupplier;)V
+			ARG 1 signature
+			ARG 2 handler

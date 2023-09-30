@@ -1,5 +1,5 @@
 CLASS net/minecraft/sounds/Music
-	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;IIZ)V
+	METHOD <init> (Lnet/minecraft/core/Holder;IIZ)V
 		ARG 1 event
 		ARG 2 minDelay
 		ARG 3 maxDelay

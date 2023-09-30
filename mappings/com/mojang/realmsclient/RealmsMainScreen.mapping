@@ -9,12 +9,6 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 3 y
 		ARG 4 mouseX
 		ARG 5 mouseY
-	METHOD drawConfigure (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-		ARG 1 poses
-		ARG 2 x
-		ARG 3 y
-		ARG 4 mouseX
-		ARG 5 mouseY
 	METHOD drawExpired (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
 		ARG 1 poses
 		ARG 2 x
@@ -30,12 +24,6 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 6 expiresInDays
 	METHOD drawInvitationPendingIcon (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIZZ)V
 		ARG 1 poses
-	METHOD drawLeave (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
-		ARG 1 poses
-		ARG 2 x
-		ARG 3 y
-		ARG 4 mouseX
-		ARG 5 mouseY
 	METHOD drawOpen (Lcom/mojang/blaze3d/vertex/PoseStack;IIII)V
 		ARG 1 poses
 		ARG 2 x
@@ -61,9 +49,6 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 1 server
 	METHOD renderLocal (Lcom/mojang/blaze3d/vertex/PoseStack;)V
 		ARG 1 poses
-	METHOD renderMousehoverTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V
-		ARG 1 poses
-		ARG 2 tooltip
 	METHOD renderNews (Lcom/mojang/blaze3d/vertex/PoseStack;IIZIIZZ)V
 		ARG 1 poses
 		ARG 2 mouseX
@@ -74,12 +59,6 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 1 poses
 	METHOD setCreatedTrial (Z)V
 		ARG 1 createdTrial
-	METHOD setTooltip ([Lnet/minecraft/network/chat/Component;)V
-		ARG 1 tooltips
-	METHOD shouldConfigureButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
-		ARG 1 server
-	METHOD shouldLeaveButtonBeVisible (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
-		ARG 1 server
 	METHOD shouldPlayButtonBeActive (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
 		ARG 1 server
 	METHOD shouldRenewButtonBeActive (Lcom/mojang/realmsclient/dto/RealmsServer;)Z
@@ -88,6 +67,9 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 		ARG 1 server
 	METHOD updateTeaserImages (Lnet/minecraft/server/packs/resources/ResourceManager;)V
 		ARG 0 resourceManager
+	CLASS ButtonEntry
+		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lnet/minecraft/client/gui/components/Button;)V
+			ARG 2 button
 	CLASS ServerEntry
 		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
 			ARG 2 serverData
@@ -105,6 +87,8 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 			ARG 4 y
 			ARG 5 mouseX
 			ARG 6 mouseY
-	CLASS HoveredElement
-		METHOD valueOf (Ljava/lang/String;)Lcom/mojang/realmsclient/RealmsMainScreen$HoveredElement;
-			ARG 0 name
+	CLASS NotificationMessageEntry
+		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lnet/minecraft/network/chat/Component;Lcom/mojang/realmsclient/dto/RealmsNotification;)V
+			ARG 2 text
+		METHOD updateEntryWidth (I)V
+			ARG 1 lastEntryWidth

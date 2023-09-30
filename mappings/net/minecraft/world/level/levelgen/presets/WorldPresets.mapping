@@ -1,4 +1,4 @@
 CLASS net/minecraft/world/level/levelgen/presets/WorldPresets
 	CLASS Bootstrap
-		METHOD <init> (Lnet/minecraft/core/Registry;)V
-			ARG 1 presets
+		METHOD <init> (Lnet/minecraft/data/worldgen/BootstapContext;)V
+			ARG 1 context

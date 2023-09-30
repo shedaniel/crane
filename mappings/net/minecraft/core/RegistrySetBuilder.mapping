@@ -1,0 +1,29 @@
+CLASS net/minecraft/core/RegistrySetBuilder
+	CLASS BuildState
+		METHOD <init> (Lnet/minecraft/core/RegistrySetBuilder$CompositeOwner;Lnet/minecraft/core/RegistrySetBuilder$UniversalLookup;Ljava/util/Map;Ljava/util/Map;Ljava/util/List;)V
+			ARG 1 owner
+			ARG 2 lookup
+			ARG 3 registries
+			ARG 4 registeredValues
+			ARG 5 errors
+	CLASS RegistryStub
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;Lnet/minecraft/core/RegistrySetBuilder$RegistryBootstrap;)V
+			ARG 1 key
+			ARG 2 lifecycle
+			ARG 3 bootstrap
+	CLASS EmptyTagLookup
+		METHOD <init> (Lnet/minecraft/core/HolderOwner;)V
+			ARG 1 owner
+	CLASS ValueAndHolder
+		METHOD <init> (Lnet/minecraft/core/RegistrySetBuilder$RegisteredValue;Ljava/util/Optional;)V
+			ARG 1 value
+			ARG 2 holder
+	CLASS RegisteredValue
+		METHOD <init> (Ljava/lang/Object;Lcom/mojang/serialization/Lifecycle;)V
+			ARG 1 value
+			ARG 2 lifecycle
+	CLASS RegistryContents
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;Ljava/util/Map;)V
+			ARG 1 key
+			ARG 2 lifecycle
+			ARG 3 values

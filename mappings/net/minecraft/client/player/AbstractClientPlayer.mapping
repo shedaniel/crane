@@ -1,5 +1,5 @@
 CLASS net/minecraft/client/player/AbstractClientPlayer
-	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/world/entity/player/ProfilePublicKey;)V
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 clientLevel
 	METHOD getSkinLocation (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 0 id

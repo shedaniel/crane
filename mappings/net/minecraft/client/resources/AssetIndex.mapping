@@ -1,5 +1,0 @@
-CLASS net/minecraft/client/resources/AssetIndex
-	METHOD getFile (Lnet/minecraft/resources/ResourceLocation;)Ljava/io/File;
-		ARG 1 location
-	METHOD getRootFile (Ljava/lang/String;)Ljava/io/File;
-		ARG 1 fileName

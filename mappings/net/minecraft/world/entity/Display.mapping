@@ -1,0 +1,28 @@
+CLASS net/minecraft/world/entity/Display
+	CLASS ItemDisplay
+		METHOD setItemStack (Lnet/minecraft/world/item/ItemStack;)V
+			ARG 1 stack
+	CLASS TextDisplay
+		CLASS Align
+			METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+				ARG 3 name
+		CLASS CachedInfo
+			METHOD <init> (Ljava/util/List;I)V
+				ARG 1 lines
+				ARG 2 width
+		CLASS CachedLine
+			METHOD <init> (Lnet/minecraft/util/FormattedCharSequence;I)V
+				ARG 1 contents
+				ARG 2 width
+	CLASS BlockDisplay
+		METHOD setBlockState (Lnet/minecraft/world/level/block/state/BlockState;)V
+			ARG 1 state
+	CLASS Interpolator
+		METHOD <init> (Ljava/lang/Object;)V
+			ARG 1 currentValue
+		METHOD updateValue (FLjava/lang/Object;)V
+			ARG 2 currentValue
+	CLASS BillboardConstraints
+		METHOD <init> (Ljava/lang/String;IBLjava/lang/String;)V
+			ARG 3 id
+			ARG 4 name

@@ -1,5 +1,13 @@
 CLASS net/minecraft/world/entity/animal/allay/Allay
 	METHOD canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
+	METHOD isDuplicationItem (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD setJukeboxPlaying (Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 jukeboxPos
 	METHOD wantsToPickUp (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
+	CLASS JukeboxListener
+		METHOD <init> (Lnet/minecraft/world/entity/animal/allay/Allay;Lnet/minecraft/world/level/gameevent/PositionSource;I)V
+			ARG 2 listenerSource
+			ARG 3 listenerRadius

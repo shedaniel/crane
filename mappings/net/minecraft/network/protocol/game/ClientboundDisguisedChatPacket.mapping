@@ -1,0 +1,8 @@
+CLASS net/minecraft/network/protocol/game/ClientboundDisguisedChatPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/ChatType$BoundNetwork;)V
+		ARG 1 message
+		ARG 2 chatType
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

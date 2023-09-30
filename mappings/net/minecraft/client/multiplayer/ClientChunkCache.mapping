@@ -11,6 +11,8 @@ CLASS net/minecraft/client/multiplayer/ClientChunkCache
 		ARG 0 chunk
 		ARG 1 chunkX
 		ARG 2 chunkZ
+	METHOD replaceBiomes (IILnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 3 buf
 	METHOD replaceWithPacketData (IILnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/nbt/CompoundTag;Ljava/util/function/Consumer;)Lnet/minecraft/world/level/chunk/LevelChunk;
 		ARG 3 buf
 	METHOD updateViewCenter (II)V

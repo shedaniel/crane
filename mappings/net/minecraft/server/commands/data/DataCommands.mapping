@@ -1,5 +1,9 @@
 CLASS net/minecraft/server/commands/data/DataCommands
+	METHOD getSingletonSource (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/commands/data/DataCommands$DataProvider;)Ljava/util/List;
+		ARG 0 context
 	METHOD manipulateData (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lnet/minecraft/server/commands/data/DataCommands$DataManipulator;Ljava/util/List;)I
+		ARG 0 context
+	METHOD resolveSourcePath (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/commands/data/DataCommands$DataProvider;)Ljava/util/List;
 		ARG 0 context
 	CLASS DataProvider
 		METHOD access (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/server/commands/data/DataAccessor;

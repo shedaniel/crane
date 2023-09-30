@@ -1,8 +1,6 @@
 CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookTabButton
 	METHOD <init> (Lnet/minecraft/client/RecipeBookCategories;)V
 		ARG 1 categories
-	METHOD renderIcon (Lnet/minecraft/client/renderer/entity/ItemRenderer;)V
-		ARG 1 itemRenderer
 	METHOD startAnimation (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD updateVisibility (Lnet/minecraft/client/ClientRecipeBook;)Z

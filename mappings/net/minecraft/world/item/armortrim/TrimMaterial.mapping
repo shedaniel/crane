@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/item/armortrim/TrimMaterial
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/core/Holder;FLjava/util/Map;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 assetName
+		ARG 2 ingredient
+		ARG 3 itemModelIndex
+		ARG 4 overrideArmorMaterials
+		ARG 5 description

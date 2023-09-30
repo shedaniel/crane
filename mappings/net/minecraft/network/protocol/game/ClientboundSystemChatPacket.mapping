@@ -1,8 +1,8 @@
 CLASS net/minecraft/network/protocol/game/ClientboundSystemChatPacket
 	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD <init> (Lnet/minecraft/network/chat/Component;I)V
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Z)V
 		ARG 1 content
-		ARG 2 typeId
+		ARG 2 overlay
 	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf

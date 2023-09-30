@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/chat/SignedMessageChain
+	CLASS DecodeException
+		METHOD <init> (Lnet/minecraft/network/chat/Component;Z)V
+			ARG 2 shouldDisconnect

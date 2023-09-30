@@ -13,12 +13,12 @@ CLASS net/minecraft/client/model/geom/ModelPart
 		ARG 2 yRot
 		ARG 3 zRot
 	CLASS Cube
-		METHOD <init> (IIFFFFFFFFFZFF)V
+		METHOD <init> (IIFFFFFFFFFZFFLjava/util/Set;)V
 			ARG 3 minX
 			ARG 4 minY
 			ARG 5 minZ
 	CLASS Vertex
-		METHOD <init> (Lcom/mojang/math/Vector3f;FF)V
+		METHOD <init> (Lorg/joml/Vector3f;FF)V
 			ARG 1 pos
 			ARG 2 u
 			ARG 3 v

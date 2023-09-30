@@ -1,0 +1,4 @@
+CLASS net/minecraft/data/loot/BlockLootSubProvider
+	METHOD <init> (Ljava/util/Set;Lnet/minecraft/world/flag/FeatureFlagSet;)V
+		ARG 1 explosionResistant
+		ARG 2 enabledFeatures

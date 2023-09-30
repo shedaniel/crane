@@ -1,7 +1,9 @@
 CLASS net/minecraft/world/inventory/ItemCombinerMenu
 	METHOD <init> (Lnet/minecraft/world/inventory/MenuType;ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/inventory/ContainerLevelAccess;)V
 		ARG 4 access
+	METHOD canMoveIntoInputSlots (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD getSlotToQuickMoveTo (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
 	METHOD isValidBlock (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
-	METHOD shouldQuickMoveToAdditionalSlot (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack

@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/telemetry/TelemetryEventType
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Z)V
+		ARG 1 id
+		ARG 2 exportKey
+		ARG 3 properties
+		ARG 4 isOptIn
+	CLASS Builder
+		METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+			ARG 1 id
+			ARG 2 exportKey

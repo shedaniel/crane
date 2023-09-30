@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/WorldDimensions
+	METHOD <init> (Lnet/minecraft/core/Registry;)V
+		ARG 1 dimensions
+	CLASS Complete
+		METHOD <init> (Lnet/minecraft/core/Registry;Lnet/minecraft/world/level/storage/PrimaryLevelData$SpecialWorldProperty;)V
+			ARG 1 dimensions
+			ARG 2 specialWorldProperty

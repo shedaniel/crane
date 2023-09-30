@@ -21,10 +21,10 @@ CLASS net/minecraft/world/entity/item/ItemEntity
 		ARG 1 second
 	METHOD setItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
-	METHOD setOwner (Ljava/util/UUID;)V
-		ARG 1 owner
 	METHOD setPickUpDelay (I)V
 		ARG 1 pickupDelay
+	METHOD setTarget (Ljava/util/UUID;)V
+		ARG 1 target
 	METHOD setThrower (Ljava/util/UUID;)V
 		ARG 1 thrower
 	METHOD tryToMerge (Lnet/minecraft/world/entity/item/ItemEntity;)V

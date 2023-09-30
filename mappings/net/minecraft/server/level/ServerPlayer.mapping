@@ -1,5 +1,5 @@
 CLASS net/minecraft/server/level/ServerPlayer
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/world/entity/player/ProfilePublicKey;)V
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 server
 	METHOD isReachableBedBlock (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 pos
@@ -16,6 +16,8 @@ CLASS net/minecraft/server/level/ServerPlayer
 		ARG 4 prompt
 	METHOD setCamera (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 camera
+	METHOD setChatSession (Lnet/minecraft/network/chat/RemoteChatSession;)V
+		ARG 1 chatSession
 	METHOD setExperienceLevels (I)V
 		ARG 1 experienceLevel
 	METHOD setGameMode (Lnet/minecraft/world/level/GameType;)Z

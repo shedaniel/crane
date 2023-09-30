@@ -1,0 +1,5 @@
+CLASS net/minecraft/server/packs/linkfs/LinkFileSystem
+	CLASS DirectoryEntry
+		METHOD <init> (Ljava/util/Map;Ljava/util/Map;)V
+			ARG 1 children
+			ARG 2 files

@@ -1,5 +1,0 @@
-CLASS net/minecraft/server/packs/FolderPackResources
-	METHOD getFile (Ljava/lang/String;)Ljava/io/File;
-		ARG 1 location
-	METHOD validatePath (Ljava/io/File;Ljava/lang/String;)Z
-		ARG 1 location

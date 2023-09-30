@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/ai/behavior/SetEntityLookTargetSometimes
+	CLASS Ticker
+		METHOD <init> (Lnet/minecraft/util/valueproviders/UniformInt;)V
+			ARG 1 interval

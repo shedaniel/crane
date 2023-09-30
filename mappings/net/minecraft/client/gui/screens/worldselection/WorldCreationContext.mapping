@@ -1,6 +1,8 @@
 CLASS net/minecraft/client/gui/screens/worldselection/WorldCreationContext
-	METHOD <init> (Lnet/minecraft/world/level/levelgen/WorldGenSettings;Lcom/mojang/serialization/Lifecycle;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/server/ReloadableServerResources;)V
-		ARG 1 worldGenSettings
-		ARG 2 worldSettingsStability
-		ARG 3 registryAccess
-		ARG 4 dataPackResources
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/WorldOptions;Lnet/minecraft/core/Registry;Lnet/minecraft/world/level/levelgen/WorldDimensions;Lnet/minecraft/core/LayeredRegistryAccess;Lnet/minecraft/server/ReloadableServerResources;Lnet/minecraft/world/level/WorldDataConfiguration;)V
+		ARG 1 options
+		ARG 2 datapackDimensions
+		ARG 3 selectedDimensions
+		ARG 4 worldgenRegistries
+		ARG 5 dataPackResources
+		ARG 6 dataConfiguration

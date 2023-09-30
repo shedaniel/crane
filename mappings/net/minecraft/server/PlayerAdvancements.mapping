@@ -1,8 +1,8 @@
 CLASS net/minecraft/server/PlayerAdvancements
-	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/server/players/PlayerList;Lnet/minecraft/server/ServerAdvancementManager;Ljava/io/File;Lnet/minecraft/server/level/ServerPlayer;)V
+	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/server/players/PlayerList;Lnet/minecraft/server/ServerAdvancementManager;Ljava/nio/file/Path;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 dataFixer
 		ARG 2 playerList
-		ARG 4 file
+		ARG 4 playerSavePath
 		ARG 5 player
 	METHOD setPlayer (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 player

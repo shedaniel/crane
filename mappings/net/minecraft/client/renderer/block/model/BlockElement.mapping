@@ -1,5 +1,5 @@
 CLASS net/minecraft/client/renderer/block/model/BlockElement
-	METHOD <init> (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;Ljava/util/Map;Lnet/minecraft/client/renderer/block/model/BlockElementRotation;Z)V
+	METHOD <init> (Lorg/joml/Vector3f;Lorg/joml/Vector3f;Ljava/util/Map;Lnet/minecraft/client/renderer/block/model/BlockElementRotation;Z)V
 		ARG 1 from
 		ARG 2 to
 		ARG 3 faces

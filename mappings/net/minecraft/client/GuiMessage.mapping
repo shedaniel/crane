@@ -1,5 +1,12 @@
 CLASS net/minecraft/client/GuiMessage
-	METHOD <init> (ILjava/lang/Object;I)V
+	METHOD <init> (ILnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/MessageSignature;Lnet/minecraft/client/GuiMessageTag;)V
 		ARG 1 addedTime
-		ARG 2 message
-		ARG 3 id
+		ARG 2 content
+		ARG 3 signature
+		ARG 4 tag
+	CLASS Line
+		METHOD <init> (ILnet/minecraft/util/FormattedCharSequence;Lnet/minecraft/client/GuiMessageTag;Z)V
+			ARG 1 addedTime
+			ARG 2 content
+			ARG 3 tag
+			ARG 4 endOfEntry

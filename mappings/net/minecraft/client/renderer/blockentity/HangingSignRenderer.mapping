@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/blockentity/HangingSignRenderer
+	CLASS HangingSignModel
+		METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;)V
+			ARG 1 root
+		METHOD evaluateVisibleParts (Lnet/minecraft/world/level/block/state/BlockState;)V
+			ARG 1 state

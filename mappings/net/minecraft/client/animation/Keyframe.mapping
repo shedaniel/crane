@@ -1,5 +1,5 @@
 CLASS net/minecraft/client/animation/Keyframe
-	METHOD <init> (FLcom/mojang/math/Vector3f;Lnet/minecraft/client/animation/AnimationChannel$Interpolation;)V
+	METHOD <init> (FLorg/joml/Vector3f;Lnet/minecraft/client/animation/AnimationChannel$Interpolation;)V
 		ARG 1 timestamp
 		ARG 2 target
 		ARG 3 interpolation

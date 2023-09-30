@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/gui/layouts/HeaderAndFooterLayout
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;II)V
+		ARG 1 screen
+		ARG 2 headerHeight
+		ARG 3 footerHeight
+	METHOD setFooterHeight (I)V
+		ARG 1 footerHeight
+	METHOD setHeaderHeight (I)V
+		ARG 1 headerHeight

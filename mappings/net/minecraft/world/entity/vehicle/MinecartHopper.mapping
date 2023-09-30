@@ -1,5 +1,3 @@
 CLASS net/minecraft/world/entity/vehicle/MinecartHopper
-	METHOD setCooldown (I)V
-		ARG 1 cooldownTime
 	METHOD setEnabled (Z)V
 		ARG 1 enabled

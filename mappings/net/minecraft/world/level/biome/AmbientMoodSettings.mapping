@@ -1,5 +1,5 @@
 CLASS net/minecraft/world/level/biome/AmbientMoodSettings
-	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;IID)V
+	METHOD <init> (Lnet/minecraft/core/Holder;IID)V
 		ARG 1 soundEvent
 		ARG 2 tickDelay
 		ARG 3 blockSearchExtent

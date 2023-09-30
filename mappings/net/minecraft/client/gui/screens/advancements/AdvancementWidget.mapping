@@ -29,9 +29,5 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementWidget
 		ARG 2 top
 		ARG 3 mouseX
 		ARG 4 mouseY
-	METHOD render9Sprite (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIII)V
-		ARG 1 poses
-	METHOD renderRepeating (Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIII)V
-		ARG 1 poses
 	METHOD setProgress (Lnet/minecraft/advancements/AdvancementProgress;)V
 		ARG 1 progress

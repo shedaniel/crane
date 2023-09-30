@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/flag/FeatureFlag
+	METHOD <init> (Lnet/minecraft/world/flag/FeatureFlagUniverse;I)V
+		ARG 1 universe

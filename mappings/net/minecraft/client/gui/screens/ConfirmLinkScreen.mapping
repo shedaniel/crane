@@ -8,6 +8,9 @@ CLASS net/minecraft/client/gui/screens/ConfirmLinkScreen
 		ARG 2 title
 		ARG 3 url
 		ARG 4 trusted
+	METHOD <init> (Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Z)V
+		ARG 4 url
+		ARG 5 noButton
 	METHOD lambda$addButtons$0 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
 	METHOD lambda$addButtons$1 (Lnet/minecraft/client/gui/components/Button;)V

@@ -1,8 +1,4 @@
 CLASS net/minecraft/core/Vec3i
-	METHOD <init> (DDD)V
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
 	METHOD <init> (III)V
 		ARG 1 x
 		ARG 2 y
@@ -38,10 +34,6 @@ CLASS net/minecraft/core/Vec3i
 		ARG 1 multiplier
 	METHOD north (I)Lnet/minecraft/core/Vec3i;
 		ARG 1 offset
-	METHOD offset (DDD)Lnet/minecraft/core/Vec3i;
-		ARG 1 dx
-		ARG 3 dy
-		ARG 5 dz
 	METHOD offset (III)Lnet/minecraft/core/Vec3i;
 		ARG 1 dx
 		ARG 2 dy

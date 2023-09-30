@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/eventlog/JsonEventLog
+	METHOD <init> (Lcom/mojang/serialization/Codec;Ljava/nio/channels/FileChannel;)V
+		ARG 1 codec
+		ARG 2 channel

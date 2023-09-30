@@ -1,5 +1,7 @@
 CLASS net/minecraft/world/inventory/SmithingMenu
+	METHOD canMoveIntoInputSlots (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD getSlotToQuickMoveTo (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 1 stack
 	METHOD isValidBlock (Lnet/minecraft/world/level/block/state/BlockState;)Z
 		ARG 1 state
-	METHOD shouldQuickMoveToAdditionalSlot (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack

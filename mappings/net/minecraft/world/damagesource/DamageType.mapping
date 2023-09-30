@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/damagesource/DamageType
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/damagesource/DamageScaling;FLnet/minecraft/world/damagesource/DamageEffects;Lnet/minecraft/world/damagesource/DeathMessageType;)V
+		ARG 1 msgId
+		ARG 2 scaling
+		ARG 3 exhaustion
+		ARG 4 effects
+		ARG 5 deathMessageType

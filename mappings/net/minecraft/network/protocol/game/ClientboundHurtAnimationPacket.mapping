@@ -1,0 +1,8 @@
+CLASS net/minecraft/network/protocol/game/ClientboundHurtAnimationPacket
+	METHOD <init> (IF)V
+		ARG 1 id
+		ARG 2 yaw
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

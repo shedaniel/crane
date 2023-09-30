@@ -3,5 +3,10 @@ CLASS net/minecraft/client/resources/DefaultPlayerSkin
 		ARG 0 uuid
 	METHOD getSkinModelName (Ljava/util/UUID;)Ljava/lang/String;
 		ARG 0 uuid
-	METHOD isAlexDefault (Ljava/util/UUID;)Z
-		ARG 0 uuid
+	CLASS SkinType
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/resources/DefaultPlayerSkin$ModelType;)V
+			ARG 1 texture
+			ARG 2 model
+	CLASS ModelType
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 id

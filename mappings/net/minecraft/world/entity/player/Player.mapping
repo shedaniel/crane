@@ -1,9 +1,10 @@
 CLASS net/minecraft/world/entity/player/Player
-	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;FLcom/mojang/authlib/GameProfile;Lnet/minecraft/world/entity/player/ProfilePublicKey;)V
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;FLcom/mojang/authlib/GameProfile;)V
 		ARG 4 gameProfile
-		ARG 5 profilePublicKey
 	METHOD addItem (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
+	METHOD animateHurt (F)V
+		ARG 1 hurtDir
 	METHOD attack (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD awardStat (Lnet/minecraft/stats/Stat;)V

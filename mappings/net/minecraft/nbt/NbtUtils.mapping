@@ -26,8 +26,6 @@ CLASS net/minecraft/nbt/NbtUtils
 		ARG 0 tag
 	METHOD readBlockPos (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/core/BlockPos;
 		ARG 0 tag
-	METHOD readBlockState (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 0 tag
 	METHOD readGameProfile (Lnet/minecraft/nbt/CompoundTag;)Lcom/mojang/authlib/GameProfile;
 		ARG 0 tag
 	METHOD snbtToStructure (Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
@@ -40,14 +38,6 @@ CLASS net/minecraft/nbt/NbtUtils
 		ARG 0 state
 	METHOD unpackStructureTemplate (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;
 		ARG 0 tag
-	METHOD update (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/util/datafix/DataFixTypes;Lnet/minecraft/nbt/CompoundTag;I)Lnet/minecraft/nbt/CompoundTag;
-		ARG 0 dataFixer
-		ARG 1 types
-		ARG 2 tag
-	METHOD update (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/util/datafix/DataFixTypes;Lnet/minecraft/nbt/CompoundTag;II)Lnet/minecraft/nbt/CompoundTag;
-		ARG 0 dataFixer
-		ARG 1 types
-		ARG 2 tag
 	METHOD writeBlockPos (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/nbt/CompoundTag;
 		ARG 0 pos
 	METHOD writeBlockState (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/nbt/CompoundTag;

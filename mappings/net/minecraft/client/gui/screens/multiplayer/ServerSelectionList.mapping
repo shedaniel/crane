@@ -7,12 +7,6 @@ CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
 		ARG 5 y0
 		ARG 6 y1
 		ARG 7 itemHeight
-	METHOD lambda$moveSelection$2 (Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList$Entry;)Z
-		ARG 0 entry
-	METHOD lambda$refreshEntries$0 (Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList;Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;)V
-		ARG 1 entry
-	METHOD lambda$refreshEntries$1 (Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList;Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;)V
-		ARG 1 entry
 	METHOD updateNetworkServers (Ljava/util/List;)V
 		ARG 1 servers
 	METHOD updateOnlineServers (Lnet/minecraft/client/multiplayer/ServerList;)V
@@ -29,8 +23,6 @@ CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
 		METHOD swap (II)V
 			ARG 1 first
 			ARG 2 second
-		METHOD uploadServerIcon (Ljava/lang/String;)Z
-			ARG 1 base64
 	CLASS NetworkServerEntry
 		METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/server/LanServer;)V
 			ARG 1 screen

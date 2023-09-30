@@ -5,7 +5,18 @@ CLASS net/minecraft/server/WorldLoader
 			ARG 2 commandSelection
 			ARG 3 functionCompilationLevel
 	CLASS PackConfig
-		METHOD <init> (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/world/level/DataPackConfig;Z)V
+		METHOD <init> (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/world/level/WorldDataConfiguration;ZZ)V
 			ARG 1 packRepository
-			ARG 2 initialDataPacks
+			ARG 2 initialDataConfig
 			ARG 3 safeMode
+			ARG 4 initMode
+	CLASS DataLoadOutput
+		METHOD <init> (Ljava/lang/Object;Lnet/minecraft/core/RegistryAccess$Frozen;)V
+			ARG 1 cookie
+			ARG 2 finalDimensions
+	CLASS DataLoadContext
+		METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/world/level/WorldDataConfiguration;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/core/RegistryAccess$Frozen;)V
+			ARG 1 resources
+			ARG 2 dataConfiguration
+			ARG 3 datapackWorldgen
+			ARG 4 datapackDimensions

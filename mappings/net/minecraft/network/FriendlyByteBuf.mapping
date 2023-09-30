@@ -7,10 +7,6 @@ CLASS net/minecraft/network/FriendlyByteBuf
 		ARG 1 buf
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
-	METHOD lambda$readWithCodec$0 (Lnet/minecraft/nbt/CompoundTag;Lcom/mojang/serialization/DataResult$PartialResult;)V
-		ARG 1 result
-	METHOD lambda$writeWithCodec$1 (Ljava/lang/Object;Lcom/mojang/serialization/DataResult$PartialResult;)V
-		ARG 1 result
 	METHOD order (Ljava/nio/ByteOrder;)Lio/netty/buffer/ByteBuf;
 		ARG 1 order
 	METHOD readByteArray (I)[B
@@ -28,8 +24,6 @@ CLASS net/minecraft/network/FriendlyByteBuf
 		ARG 1 allowedSize
 	METHOD readVarIntArray (I)[I
 		ARG 1 allowedSize
-	METHOD readWithCodec (Lcom/mojang/serialization/Codec;)Ljava/lang/Object;
-		ARG 1 codec
 	METHOD readWithCount (Ljava/util/function/Consumer;)V
 		ARG 1 deserializer
 	METHOD readerIndex (I)Lio/netty/buffer/ByteBuf;
@@ -83,8 +77,5 @@ CLASS net/minecraft/network/FriendlyByteBuf
 		ARG 1 array
 	METHOD writeVarLong (J)Lnet/minecraft/network/FriendlyByteBuf;
 		ARG 1 l
-	METHOD writeWithCodec (Lcom/mojang/serialization/Codec;Ljava/lang/Object;)V
-		ARG 1 codec
-		ARG 2 object
 	METHOD writerIndex (I)Lio/netty/buffer/ByteBuf;
 		ARG 1 index

@@ -1,0 +1,14 @@
+CLASS net/minecraft/client/gui/layouts/GridLayout
+	METHOD columnSpacing (I)Lnet/minecraft/client/gui/layouts/GridLayout;
+		ARG 1 columnSpacing
+	METHOD rowSpacing (I)Lnet/minecraft/client/gui/layouts/GridLayout;
+		ARG 1 rowSpacing
+	CLASS RowHelper
+		METHOD <init> (Lnet/minecraft/client/gui/layouts/GridLayout;I)V
+			ARG 2 columns
+	CLASS CellInhabitant
+		METHOD <init> (Lnet/minecraft/client/gui/layouts/LayoutElement;IIIILnet/minecraft/client/gui/layouts/LayoutSettings;)V
+			ARG 2 row
+			ARG 3 column
+			ARG 4 occupiedRows
+			ARG 5 occupiedColumns

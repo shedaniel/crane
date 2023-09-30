@@ -1,0 +1,6 @@
+CLASS net/minecraft/server/packs/linkfs/LinkFSPath
+	METHOD <init> (Lnet/minecraft/server/packs/linkfs/LinkFileSystem;Ljava/lang/String;Lnet/minecraft/server/packs/linkfs/LinkFSPath;Lnet/minecraft/server/packs/linkfs/PathContents;)V
+		ARG 1 fileSystem
+		ARG 2 name
+		ARG 3 parent
+		ARG 4 pathContents

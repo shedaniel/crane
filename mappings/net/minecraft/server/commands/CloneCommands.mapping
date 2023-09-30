@@ -1,4 +1,6 @@
 CLASS net/minecraft/server/commands/CloneCommands
+	METHOD getLoadedDimensionAndPosition (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/level/ServerLevel;Ljava/lang/String;)Lnet/minecraft/server/commands/CloneCommands$DimensionAndPosition;
+		ARG 0 context
 	CLASS Mode
 		METHOD <init> (Ljava/lang/String;IZ)V
 			ARG 3 canOverlap
@@ -7,3 +9,7 @@ CLASS net/minecraft/server/commands/CloneCommands
 			ARG 1 pos
 			ARG 2 state
 			ARG 3 tag
+	CLASS DimensionAndPosition
+		METHOD <init> (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)V
+			ARG 1 dimension
+			ARG 2 position

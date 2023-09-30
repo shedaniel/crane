@@ -5,3 +5,10 @@ CLASS net/minecraft/client/resources/model/ModelManager
 		ARG 3 maxMipmapLevels
 	METHOD updateMaxMipLevel (I)V
 		ARG 1 maxMipmapLevels
+	CLASS ReloadState
+		METHOD <init> (Lnet/minecraft/client/resources/model/ModelBakery;Lnet/minecraft/client/resources/model/BakedModel;Ljava/util/Map;Ljava/util/Map;Ljava/util/concurrent/CompletableFuture;)V
+			ARG 1 modelBakery
+			ARG 2 missingModel
+			ARG 3 modelCache
+			ARG 4 atlasPreparations
+			ARG 5 readyForUpload

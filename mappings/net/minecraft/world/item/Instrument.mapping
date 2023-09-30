@@ -1,5 +1,5 @@
 CLASS net/minecraft/world/item/Instrument
-	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;IF)V
+	METHOD <init> (Lnet/minecraft/core/Holder;IF)V
 		ARG 1 soundEvent
 		ARG 2 useDuration
 		ARG 3 range

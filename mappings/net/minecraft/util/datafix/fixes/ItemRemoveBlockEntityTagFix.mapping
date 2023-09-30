@@ -1,0 +1,3 @@
+CLASS net/minecraft/util/datafix/fixes/ItemRemoveBlockEntityTagFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;ZLjava/util/Set;)V
+		ARG 3 items

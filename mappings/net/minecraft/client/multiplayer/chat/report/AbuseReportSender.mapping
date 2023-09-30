@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/multiplayer/chat/report/AbuseReportSender
+	CLASS Services
+		METHOD <init> (Lnet/minecraft/client/multiplayer/chat/report/ReportEnvironment;Lcom/mojang/authlib/minecraft/UserApiService;)V
+			ARG 1 environment
+			ARG 2 userApiService

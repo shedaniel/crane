@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/telemetry/events/WorldUnloadEvent
+	METHOD setTime (J)V
+		ARG 1 lastGameTime

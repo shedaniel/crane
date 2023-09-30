@@ -3,23 +3,41 @@ CLASS net/minecraft/client/gui/components/ChatComponent
 		ARG 1 minecraft
 	METHOD addMessage (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 message
-	METHOD addMessage (Lnet/minecraft/network/chat/Component;I)V
+	METHOD addMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/MessageSignature;ILnet/minecraft/client/GuiMessageTag;Z)V
 		ARG 1 message
-	METHOD addMessage (Lnet/minecraft/network/chat/Component;IIZ)V
+		ARG 2 signature
+		ARG 3 addedTime
+		ARG 4 tag
+	METHOD addMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/MessageSignature;Lnet/minecraft/client/GuiMessageTag;)V
 		ARG 1 message
-		ARG 2 id
+		ARG 2 signature
+		ARG 3 tag
 	METHOD addRecentChat (Ljava/lang/String;)V
 		ARG 1 message
 	METHOD clearMessages (Z)V
 		ARG 1 clearRecent
-	METHOD enqueueMessage (Lnet/minecraft/network/chat/Component;)V
+	METHOD createDeletedMarker (Lnet/minecraft/client/GuiMessage;)Lnet/minecraft/client/GuiMessage;
 		ARG 1 message
+	METHOD deleteMessage (Lnet/minecraft/network/chat/MessageSignature;)V
+		ARG 1 signature
+	METHOD deleteMessageOrDelay (Lnet/minecraft/network/chat/MessageSignature;)Lnet/minecraft/client/gui/components/ChatComponent$DelayedMessageDeletion;
+		ARG 1 signature
+	METHOD drawTagIcon (Lcom/mojang/blaze3d/vertex/PoseStack;IILnet/minecraft/client/GuiMessageTag$Icon;)V
+		ARG 1 poses
+		ARG 4 icon
 	METHOD getClickedComponentStyleAt (DD)Lnet/minecraft/network/chat/Style;
 		ARG 1 x
 		ARG 3 y
-	METHOD removeById (I)V
-		ARG 1 id
-	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;I)V
+	METHOD getTagIconLeft (Lnet/minecraft/client/GuiMessage$Line;)I
+		ARG 1 line
+	METHOD logChatMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/GuiMessageTag;)V
+		ARG 1 message
+		ARG 2 tag
+	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;III)V
 		ARG 1 poses
 	METHOD scrollChat (I)V
 		ARG 1 deltaY
+	CLASS DelayedMessageDeletion
+		METHOD <init> (Lnet/minecraft/network/chat/MessageSignature;I)V
+			ARG 1 signature
+			ARG 2 deletableAfter

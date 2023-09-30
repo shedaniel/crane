@@ -1,7 +1,9 @@
 CLASS net/minecraft/sounds/SoundEvent
-	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
-		ARG 1 location
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;FZ)V
 		ARG 1 location
 		ARG 2 range
 		ARG 3 newSystem
+	METHOD readFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/sounds/SoundEvent;
+		ARG 0 buf
+	METHOD writeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

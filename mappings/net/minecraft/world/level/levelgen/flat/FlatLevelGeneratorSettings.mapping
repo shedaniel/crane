@@ -1,6 +1,5 @@
 CLASS net/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings
-	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/core/Registry;)V
+	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/core/Holder;Ljava/util/List;)V
 		ARG 1 structureOverrides
-		ARG 2 biomes
-	METHOD setBiome (Lnet/minecraft/core/Holder;)V
-		ARG 1 biome
+		ARG 2 biome
+		ARG 3 lakes

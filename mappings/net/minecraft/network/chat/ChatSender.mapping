@@ -1,9 +1,0 @@
-CLASS net/minecraft/network/chat/ChatSender
-	METHOD <init> (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
-		ARG 1 uuid
-		ARG 2 name
-		ARG 3 teamName
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf
-	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf

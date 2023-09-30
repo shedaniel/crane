@@ -9,7 +9,7 @@ CLASS net/minecraft/client/gui/components/toasts/ToastComponent
 	METHOD render (Lcom/mojang/blaze3d/vertex/PoseStack;)V
 		ARG 1 poses
 	CLASS ToastInstance
-		METHOD <init> (Lnet/minecraft/client/gui/components/toasts/ToastComponent;Lnet/minecraft/client/gui/components/toasts/Toast;)V
+		METHOD <init> (Lnet/minecraft/client/gui/components/toasts/ToastComponent;Lnet/minecraft/client/gui/components/toasts/Toast;II)V
 			ARG 2 toast
-		METHOD render (IILcom/mojang/blaze3d/vertex/PoseStack;)Z
-			ARG 1 width
+			ARG 3 index
+			ARG 4 slotCount

@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/BundlePacket
+	METHOD <init> (Ljava/lang/Iterable;)V
+		ARG 1 packets
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

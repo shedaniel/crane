@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/telemetry/ClientTelemetryManager
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lcom/mojang/authlib/minecraft/UserApiService;Lnet/minecraft/client/User;)V
+		ARG 2 userApiService

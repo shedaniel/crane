@@ -1,13 +1,18 @@
 CLASS net/minecraft/world/entity/animal/TropicalFish
 	METHOD saveToBucketTag (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 stack
+	CLASS Base
+		METHOD <init> (Ljava/lang/String;II)V
+			ARG 3 id
 	CLASS Pattern
-		METHOD <init> (Ljava/lang/String;III)V
-			ARG 3 base
-			ARG 4 index
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/entity/animal/TropicalFish$Base;I)V
+			ARG 3 name
+			ARG 4 base
+	CLASS Variant
+		METHOD <init> (Lnet/minecraft/world/entity/animal/TropicalFish$Pattern;Lnet/minecraft/world/item/DyeColor;Lnet/minecraft/world/item/DyeColor;)V
+			ARG 1 pattern
+			ARG 2 baseColor
+			ARG 3 patternColor
 	CLASS TropicalFishGroupData
-		METHOD <init> (Lnet/minecraft/world/entity/animal/TropicalFish;IIII)V
-			ARG 2 base
-			ARG 3 pattern
-			ARG 4 baseColor
-			ARG 5 patternColor
+		METHOD <init> (Lnet/minecraft/world/entity/animal/TropicalFish;Lnet/minecraft/world/entity/animal/TropicalFish$Variant;)V
+			ARG 2 variant

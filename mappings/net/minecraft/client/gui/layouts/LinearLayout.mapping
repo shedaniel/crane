@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/gui/layouts/LinearLayout
+	METHOD <init> (IIIILnet/minecraft/client/gui/layouts/LinearLayout$Orientation;)V
+		ARG 5 orientation

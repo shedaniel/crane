@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/pathfinder/FlyNodeEvaluator
+	METHOD canStartAt (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos

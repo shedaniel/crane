@@ -1,15 +1,6 @@
 CLASS net/minecraft/server/packs/VanillaPackResources
-	METHOD <init> (Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;[Ljava/lang/String;)V
-		ARG 1 packMetadata
+	METHOD <init> (Lnet/minecraft/server/packs/BuiltInMetadata;Ljava/util/Set;Ljava/util/List;Ljava/util/Map;)V
+		ARG 1 metadata
 		ARG 2 namespaces
-	METHOD createPath (Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/String;
-		ARG 0 packType
-		ARG 1 location
-	METHOD getResourceAsStream (Ljava/lang/String;)Ljava/io/InputStream;
-		ARG 1 location
-	METHOD getResourceAsStream (Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Ljava/io/InputStream;
-		ARG 1 packType
-		ARG 2 location
-	METHOD isResourceUrlValid (Ljava/lang/String;Ljava/net/URL;)Z
-		ARG 0 location
-		ARG 1 url
+		ARG 3 rootPaths
+		ARG 4 pathsForType

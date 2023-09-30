@@ -14,10 +14,6 @@ CLASS net/minecraft/client/gui/screens/debug/GameModeSwitcherScreen
 			ARG 3 name
 			ARG 4 command
 			ARG 5 renderStack
-		METHOD drawIcon (Lnet/minecraft/client/renderer/entity/ItemRenderer;II)V
-			ARG 1 itemRenderer
-			ARG 2 x
-			ARG 3 y
 		METHOD getFromGameType (Lnet/minecraft/world/level/GameType;)Ljava/util/Optional;
 			ARG 0 type
 		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/client/gui/screens/debug/GameModeSwitcherScreen$GameModeIcon;

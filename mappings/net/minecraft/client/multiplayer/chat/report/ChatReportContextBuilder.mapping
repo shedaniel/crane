@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/multiplayer/chat/report/ChatReportContextBuilder
+	METHOD <init> (I)V
+		ARG 1 leadingCount
+	CLASS Collector
+		METHOD <init> (Lnet/minecraft/client/multiplayer/chat/report/ChatReportContextBuilder;Lnet/minecraft/network/chat/PlayerChatMessage;)V
+			ARG 2 lastChainMessage
+		METHOD accept (Lnet/minecraft/network/chat/PlayerChatMessage;)Z
+			ARG 1 lastChainMessage

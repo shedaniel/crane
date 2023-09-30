@@ -2,7 +2,7 @@ CLASS net/minecraft/client/gui/screens/DeathScreen
 	METHOD <init> (Lnet/minecraft/network/chat/Component;Z)V
 		ARG 1 causeOfDeath
 		ARG 2 hardcore
-	METHOD confirmResult (Z)V
-		ARG 1 confirmed
 	METHOD getClickedComponentStyleAt (I)Lnet/minecraft/network/chat/Style;
 		ARG 1 mouseX
+	METHOD setButtonsActive (Z)V
+		ARG 1 active

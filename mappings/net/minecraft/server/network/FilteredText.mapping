@@ -1,4 +1,4 @@
 CLASS net/minecraft/server/network/FilteredText
-	METHOD <init> (Ljava/lang/Object;Ljava/lang/Object;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/network/chat/FilterMask;)V
 		ARG 1 raw
-		ARG 2 filtered
+		ARG 2 mask

@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/Brightness
+	METHOD <init> (II)V
+		ARG 1 block
+		ARG 2 sky

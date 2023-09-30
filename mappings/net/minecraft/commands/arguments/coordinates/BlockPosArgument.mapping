@@ -1,7 +1,11 @@
 CLASS net/minecraft/commands/arguments/coordinates/BlockPosArgument
+	METHOD getBlockPos (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/BlockPos;
+		ARG 0 context
 	METHOD getLoadedBlockPos (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/BlockPos;
 		ARG 0 context
 		ARG 1 string
+	METHOD getLoadedBlockPos (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/level/ServerLevel;Ljava/lang/String;)Lnet/minecraft/core/BlockPos;
+		ARG 0 context
 	METHOD getSpawnablePos (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/BlockPos;
 		ARG 0 context
 		ARG 1 string

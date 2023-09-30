@@ -12,9 +12,6 @@ CLASS net/minecraft/commands/Commands
 		ARG 1 string
 	METHOD literal (Ljava/lang/String;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
 		ARG 0 command
-	METHOD performCommand (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;)I
-		ARG 1 commandStack
-		ARG 2 string
 	METHOD sendCommands (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 player
 	CLASS ParseFunction

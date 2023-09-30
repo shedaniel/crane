@@ -3,9 +3,5 @@ CLASS net/minecraft/client/gui/screens/DirectJoinServerScreen
 		ARG 1 lastScreen
 		ARG 2 callback
 		ARG 3 serverData
-	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
 	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
-	METHOD lambda$init$2 (Ljava/lang/String;)V
-		ARG 1 text

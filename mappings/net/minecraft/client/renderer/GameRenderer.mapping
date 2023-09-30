@@ -16,3 +16,7 @@ CLASS net/minecraft/client/renderer/GameRenderer
 		ARG 1 renderBlockOutline
 	METHOD setRenderHand (Z)V
 		ARG 1 renderHand
+	CLASS ResourceCache
+		METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceProvider;Ljava/util/Map;)V
+			ARG 1 original
+			ARG 2 cache

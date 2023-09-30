@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/BundleDelimiterPacket
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

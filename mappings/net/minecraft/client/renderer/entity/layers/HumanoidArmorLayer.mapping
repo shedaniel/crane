@@ -1,4 +1,4 @@
 CLASS net/minecraft/client/renderer/entity/layers/HumanoidArmorLayer
-	METHOD <init> (Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;Lnet/minecraft/client/model/HumanoidModel;)V
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;Lnet/minecraft/client/model/HumanoidModel;Lnet/minecraft/client/resources/model/ModelManager;)V
 		ARG 2 innerModel
 		ARG 3 outerModel

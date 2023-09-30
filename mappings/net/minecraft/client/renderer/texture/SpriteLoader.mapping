@@ -1,0 +1,14 @@
+CLASS net/minecraft/client/renderer/texture/SpriteLoader
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;III)V
+		ARG 1 location
+		ARG 2 maxSupportedTextureSize
+		ARG 3 minWidth
+		ARG 4 minHeight
+	CLASS Preparations
+		METHOD <init> (IIILnet/minecraft/client/renderer/texture/TextureAtlasSprite;Ljava/util/Map;Ljava/util/concurrent/CompletableFuture;)V
+			ARG 1 width
+			ARG 2 height
+			ARG 3 mipLevel
+			ARG 4 missing
+			ARG 5 regions
+			ARG 6 readyForUpload

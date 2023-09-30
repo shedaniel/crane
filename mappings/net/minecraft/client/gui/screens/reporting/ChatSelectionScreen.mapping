@@ -1,0 +1,24 @@
+CLASS net/minecraft/client/gui/screens/reporting/ChatSelectionScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/multiplayer/chat/report/ReportingContext;Lnet/minecraft/client/multiplayer/chat/report/ChatReportBuilder;Ljava/util/function/Consumer;)V
+		ARG 1 lastScreen
+		ARG 2 reportingContext
+		ARG 4 onSelected
+	CLASS ChatSelectionList
+		CLASS Heading
+			METHOD <init> (Ljava/util/UUID;Lnet/minecraft/client/gui/screens/reporting/ChatSelectionScreen$ChatSelectionList$Entry;)V
+				ARG 1 sender
+				ARG 2 entry
+		CLASS DividerEntry
+			METHOD <init> (Lnet/minecraft/client/gui/screens/reporting/ChatSelectionScreen$ChatSelectionList;Lnet/minecraft/network/chat/Component;)V
+				ARG 2 text
+		CLASS MessageEntry
+			METHOD <init> (Lnet/minecraft/client/gui/screens/reporting/ChatSelectionScreen$ChatSelectionList;ILnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/GuiMessageTag;ZZ)V
+				ARG 2 chatId
+				ARG 3 text
+				ARG 4 narration
+				ARG 6 canReport
+				ARG 7 playerMessage
+		CLASS MessageHeadingEntry
+			METHOD <init> (Lnet/minecraft/client/gui/screens/reporting/ChatSelectionScreen$ChatSelectionList;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/network/chat/Component;Z)V
+				ARG 3 heading
+				ARG 4 canReport

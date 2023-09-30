@@ -1,0 +1,22 @@
+CLASS net/minecraft/commands/arguments/ResourceOrTagArgument
+	METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;Lnet/minecraft/resources/ResourceKey;)V
+		ARG 2 registryKey
+	METHOD getResourceOrTag (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/commands/arguments/ResourceOrTagArgument$Result;
+		ARG 0 context
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
+	CLASS Info
+		METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/arguments/ResourceOrTagArgument$Info$Template;
+			ARG 1 buf
+		METHOD serializeToNetwork (Lnet/minecraft/commands/arguments/ResourceOrTagArgument$Info$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 2 buf
+		CLASS Template
+			METHOD <init> (Lnet/minecraft/commands/arguments/ResourceOrTagArgument$Info;Lnet/minecraft/resources/ResourceKey;)V
+				ARG 2 registryKey
+	CLASS TagResult
+		METHOD <init> (Lnet/minecraft/core/HolderSet$Named;)V
+			ARG 1 tag
+	CLASS ResourceResult
+		METHOD <init> (Lnet/minecraft/core/Holder$Reference;)V
+			ARG 1 value

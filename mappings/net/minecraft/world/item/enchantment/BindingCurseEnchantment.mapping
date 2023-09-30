@@ -2,3 +2,5 @@ CLASS net/minecraft/world/item/enchantment/BindingCurseEnchantment
 	METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$Rarity;[Lnet/minecraft/world/entity/EquipmentSlot;)V
 		ARG 1 rarity
 		ARG 2 slots
+	METHOD canEnchant (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack

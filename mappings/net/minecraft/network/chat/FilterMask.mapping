@@ -1,0 +1,14 @@
+CLASS net/minecraft/network/chat/FilterMask
+	METHOD <init> (Ljava/util/BitSet;)V
+		ARG 1 mask
+	METHOD <init> (Ljava/util/BitSet;Lnet/minecraft/network/chat/FilterMask$Type;)V
+		ARG 1 mask
+		ARG 2 type
+	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/chat/FilterMask;
+		ARG 0 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/network/chat/FilterMask;)V
+		ARG 0 buf
+	CLASS Type
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/function/Supplier;)V
+			ARG 3 serializedName
+			ARG 4 codec

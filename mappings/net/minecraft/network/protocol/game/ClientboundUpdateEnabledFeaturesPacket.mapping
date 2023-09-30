@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientboundUpdateEnabledFeaturesPacket
+	METHOD <init> (Ljava/util/Set;)V
+		ARG 1 features
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf

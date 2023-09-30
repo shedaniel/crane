@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/resources/DownloadedPackSource
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 serverPackDir

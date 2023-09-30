@@ -1,0 +1,3 @@
+CLASS com/mojang/realmsclient/gui/RealmsNewsManager
+	METHOD <init> (Lcom/mojang/realmsclient/util/RealmsPersistence;)V
+		ARG 1 newsLocalStorage

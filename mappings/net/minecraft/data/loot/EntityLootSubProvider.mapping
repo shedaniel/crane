@@ -1,0 +1,4 @@
+CLASS net/minecraft/data/loot/EntityLootSubProvider
+	METHOD <init> (Lnet/minecraft/world/flag/FeatureFlagSet;Lnet/minecraft/world/flag/FeatureFlagSet;)V
+		ARG 1 allowed
+		ARG 2 required

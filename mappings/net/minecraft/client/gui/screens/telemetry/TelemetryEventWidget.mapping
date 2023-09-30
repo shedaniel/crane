@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/gui/screens/telemetry/TelemetryEventWidget
+	METHOD <init> (IIIILnet/minecraft/client/gui/Font;)V
+		ARG 5 font
+	METHOD setOnScrolledListener (Ljava/util/function/DoubleConsumer;)V
+		ARG 1 onScrolledListener
+	CLASS Content
+		METHOD <init> (Lnet/minecraft/client/gui/layouts/GridLayout;Lnet/minecraft/network/chat/Component;)V
+			ARG 1 container
+			ARG 2 narration
+	CLASS ContentBuilder
+		METHOD <init> (I)V
+			ARG 1 width

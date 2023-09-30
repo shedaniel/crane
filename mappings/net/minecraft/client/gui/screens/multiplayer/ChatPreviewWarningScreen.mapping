@@ -1,4 +1,0 @@
-CLASS net/minecraft/client/gui/screens/multiplayer/ChatPreviewWarningScreen
-	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/multiplayer/ServerData;)V
-		ARG 1 lastScreen
-		ARG 2 serverData

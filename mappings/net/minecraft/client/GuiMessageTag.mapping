@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/GuiMessageTag
+	METHOD <init> (ILnet/minecraft/client/GuiMessageTag$Icon;Lnet/minecraft/network/chat/Component;Ljava/lang/String;)V
+		ARG 1 indicatorColor
+		ARG 2 icon
+		ARG 3 text
+		ARG 4 logTag
+	CLASS Icon
+		METHOD <init> (Ljava/lang/String;IIIII)V
+			ARG 3 u
+			ARG 4 v
+			ARG 5 width
+			ARG 6 height

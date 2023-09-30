@@ -1,20 +1,15 @@
 CLASS net/minecraft/client/gui/screens/packs/TransferableSelectionList
-	METHOD <init> (Lnet/minecraft/client/Minecraft;IILnet/minecraft/network/chat/Component;)V
-		ARG 1 minecraft
-		ARG 2 width
-		ARG 3 height
-		ARG 4 title
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/packs/PackSelectionScreen;IILnet/minecraft/network/chat/Component;)V
+		ARG 2 screen
+		ARG 5 title
 	CLASS PackEntry
-		METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList;Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/gui/screens/packs/PackSelectionModel$Entry;)V
+		METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList;Lnet/minecraft/client/gui/screens/packs/PackSelectionModel$Entry;)V
 			ARG 1 minecraft
 			ARG 2 parent
-			ARG 3 screen
-			ARG 4 pack
+			ARG 3 pack
 		METHOD cacheDescription (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/client/gui/components/MultiLineLabel;
 			ARG 0 minecraft
 			ARG 1 description
 		METHOD cacheName (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/util/FormattedCharSequence;
 			ARG 0 minecraft
 			ARG 1 name
-		METHOD lambda$mouseClicked$0 (Z)V
-			ARG 1 confirmed

@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/StopAttackingIfTargetInvalid
-	METHOD <init> (Ljava/util/function/Predicate;Ljava/util/function/BiConsumer;Z)V
-		ARG 1 stopAttackingWhen
-		ARG 2 onTargetErased
-		ARG 3 canGrowTiredOfTryingToReachTarget

@@ -32,8 +32,8 @@ CLASS net/minecraft/client/Minecraft
 		ARG 1 cameraEntity
 	METHOD setConnectedToRealms (Z)V
 		ARG 1 connectedToRealms
-	METHOD setCurrentServer (Lnet/minecraft/client/multiplayer/ServerData;)V
-		ARG 1 currentServer
+	METHOD setLastInputType (Lnet/minecraft/client/InputType;)V
+		ARG 1 lastInputType
 	METHOD setLevel (Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 level
 	METHOD setOverlay (Lnet/minecraft/client/gui/screens/Overlay;)V

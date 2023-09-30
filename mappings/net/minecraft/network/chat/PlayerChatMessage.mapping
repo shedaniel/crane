@@ -1,5 +1,7 @@
 CLASS net/minecraft/network/chat/PlayerChatMessage
-	METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/MessageSignature;Ljava/util/Optional;)V
-		ARG 1 signedContent
+	METHOD <init> (Lnet/minecraft/network/chat/SignedMessageLink;Lnet/minecraft/network/chat/MessageSignature;Lnet/minecraft/network/chat/SignedMessageBody;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/FilterMask;)V
+		ARG 1 link
 		ARG 2 signature
-		ARG 3 unsignedContent
+		ARG 3 signedBody
+		ARG 4 unsignedContent
+		ARG 5 filterMask

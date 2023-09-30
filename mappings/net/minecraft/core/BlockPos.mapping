@@ -1,9 +1,5 @@
 CLASS net/minecraft/core/BlockPos
-	METHOD <init> (Lnet/minecraft/core/Position;)V
-		ARG 1 pos
 	METHOD <init> (Lnet/minecraft/core/Vec3i;)V
-		ARG 1 vec
-	METHOD <init> (Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 vec
 	METHOD asLong (III)J
 		ARG 0 x

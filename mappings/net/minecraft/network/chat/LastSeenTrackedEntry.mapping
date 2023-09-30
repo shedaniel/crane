@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/chat/LastSeenTrackedEntry
+	METHOD <init> (Lnet/minecraft/network/chat/MessageSignature;Z)V
+		ARG 1 signature
+		ARG 2 pending

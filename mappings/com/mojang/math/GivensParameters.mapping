@@ -1,0 +1,4 @@
+CLASS com/mojang/math/GivensParameters
+	METHOD <init> (FF)V
+		ARG 1 sinHalf
+		ARG 2 cosHalf

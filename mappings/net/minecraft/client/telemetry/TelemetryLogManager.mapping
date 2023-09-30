@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/telemetry/TelemetryLogManager
+	METHOD <init> (Lnet/minecraft/util/eventlog/EventLogDirectory;)V
+		ARG 1 directory

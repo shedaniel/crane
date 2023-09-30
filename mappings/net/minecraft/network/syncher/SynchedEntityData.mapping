@@ -1,9 +1,6 @@
 CLASS net/minecraft/network/syncher/SynchedEntityData
 	METHOD <init> (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
-	METHOD assignValue (Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;)V
-		ARG 1 to
-		ARG 2 from
 	METHOD assignValues (Ljava/util/List;)V
 		ARG 1 items
 	METHOD createDataItem (Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
@@ -15,25 +12,13 @@ CLASS net/minecraft/network/syncher/SynchedEntityData
 	METHOD defineId (Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
 		ARG 0 entitiyClass
 		ARG 1 serializer
-	METHOD genericHelper (Lnet/minecraft/network/FriendlyByteBuf;ILnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;
-		ARG 0 buf
-		ARG 1 id
-		ARG 2 serializer
 	METHOD get (Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
 		ARG 1 accessor
 	METHOD getItem (Lnet/minecraft/network/syncher/EntityDataAccessor;)Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;
 		ARG 1 accessor
-	METHOD pack (Ljava/util/List;Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 0 items
-		ARG 1 buf
 	METHOD set (Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
 		ARG 1 accessor
 		ARG 2 value
-	METHOD unpack (Lnet/minecraft/network/FriendlyByteBuf;)Ljava/util/List;
-		ARG 0 buf
-	METHOD writeDataItem (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;)V
-		ARG 0 buf
-		ARG 1 item
 	CLASS DataItem
 		METHOD <init> (Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
 			ARG 1 accessor
@@ -42,3 +27,14 @@ CLASS net/minecraft/network/syncher/SynchedEntityData
 			ARG 1 dirty
 		METHOD setValue (Ljava/lang/Object;)V
 			ARG 1 value
+	CLASS DataValue
+		METHOD <init> (ILnet/minecraft/network/syncher/EntityDataSerializer;Ljava/lang/Object;)V
+			ARG 1 id
+			ARG 2 serializer
+			ARG 3 value
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;I)Lnet/minecraft/network/syncher/SynchedEntityData$DataValue;
+			ARG 0 buf
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;ILnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/SynchedEntityData$DataValue;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

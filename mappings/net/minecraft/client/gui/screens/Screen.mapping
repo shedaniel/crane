@@ -1,14 +1,18 @@
 CLASS net/minecraft/client/gui/screens/Screen
 	METHOD <init> (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 title
-	METHOD addRenderableOnly (Lnet/minecraft/client/gui/components/Widget;)Lnet/minecraft/client/gui/components/Widget;
+	METHOD addRenderableOnly (Lnet/minecraft/client/gui/components/Renderable;)Lnet/minecraft/client/gui/components/Renderable;
 		ARG 1 widget
 	METHOD addRenderableWidget (Lnet/minecraft/client/gui/components/events/GuiEventListener;)Lnet/minecraft/client/gui/components/events/GuiEventListener;
 		ARG 1 widget
 	METHOD addWidget (Lnet/minecraft/client/gui/components/events/GuiEventListener;)Lnet/minecraft/client/gui/components/events/GuiEventListener;
 		ARG 1 widget
+	METHOD changeFocus (Lnet/minecraft/client/gui/ComponentPath;)V
+		ARG 1 path
 	METHOD confirmLink (Z)V
 		ARG 1 comfirmed
+	METHOD createArrowEvent (Lnet/minecraft/client/gui/navigation/ScreenDirection;)Lnet/minecraft/client/gui/navigation/FocusNavigationEvent$ArrowNavigation;
+		ARG 1 direction
 	METHOD findNarratableWidget (Ljava/util/List;Lnet/minecraft/client/gui/narration/NarratableEntry;)Lnet/minecraft/client/gui/screens/Screen$NarratableSearchResult;
 		ARG 0 narratables
 		ARG 1 lastNarratable
@@ -47,9 +51,6 @@ CLASS net/minecraft/client/gui/screens/Screen
 		ARG 1 widget
 	METHOD renderBackground (Lcom/mojang/blaze3d/vertex/PoseStack;)V
 		ARG 1 poses
-	METHOD renderBackground (Lcom/mojang/blaze3d/vertex/PoseStack;I)V
-		ARG 1 poses
-		ARG 2 v
 	METHOD renderComponentHoverEffect (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Style;II)V
 		ARG 1 poses
 		ARG 2 style
@@ -60,8 +61,8 @@ CLASS net/minecraft/client/gui/screens/Screen
 		ARG 2 lines
 		ARG 3 x
 		ARG 4 y
-	METHOD renderDirtBackground (I)V
-		ARG 1 v
+	METHOD renderDirtBackground (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poses
 	METHOD renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V
 		ARG 1 poses
 		ARG 2 lines
@@ -73,6 +74,11 @@ CLASS net/minecraft/client/gui/screens/Screen
 		ARG 3 tooltipComponent
 		ARG 4 x
 		ARG 5 y
+	METHOD renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/screens/Screen$DeferredTooltipRendering;II)V
+		ARG 1 poses
+		ARG 2 tooltip
+		ARG 3 x
+		ARG 4 y
 	METHOD renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Component;II)V
 		ARG 1 poses
 		ARG 2 text
@@ -83,11 +89,17 @@ CLASS net/minecraft/client/gui/screens/Screen
 		ARG 2 stack
 		ARG 3 x
 		ARG 4 y
-	METHOD renderTooltipInternal (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V
+	METHOD renderTooltipInternal (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;IILnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;)V
 		ARG 1 poses
 		ARG 2 lines
 		ARG 3 x
 		ARG 4 y
+		ARG 5 positioner
+	METHOD renderWithTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V
+		ARG 1 poses
+		ARG 2 mouseX
+		ARG 3 mouseY
+		ARG 4 delta
 	METHOD resize (Lnet/minecraft/client/Minecraft;II)V
 		ARG 1 minecraft
 		ARG 2 width
@@ -95,6 +107,18 @@ CLASS net/minecraft/client/gui/screens/Screen
 	METHOD scheduleNarration (JZ)V
 		ARG 1 delay
 		ARG 3 resetSuppression
+	METHOD setInitialFocus (Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+		ARG 1 component
+	METHOD setTooltipForNextRenderPass (Ljava/util/List;)V
+		ARG 1 tooltipLines
+	METHOD setTooltipForNextRenderPass (Ljava/util/List;Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;Z)V
+		ARG 1 tooltipLines
+		ARG 2 positioner
+	METHOD setTooltipForNextRenderPass (Lnet/minecraft/client/gui/components/Tooltip;Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;Z)V
+		ARG 1 tooltip
+		ARG 2 positioner
+	METHOD setTooltipForNextRenderPass (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 tooltip
 	METHOD suppressNarration (J)V
 		ARG 1 duration
 	METHOD updateNarratedWidget (Lnet/minecraft/client/gui/narration/NarrationElementOutput;)V
@@ -110,3 +134,7 @@ CLASS net/minecraft/client/gui/screens/Screen
 			ARG 1 entry
 			ARG 2 index
 			ARG 3 priority
+	CLASS DeferredTooltipRendering
+		METHOD <init> (Ljava/util/List;Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;)V
+			ARG 1 tooltip
+			ARG 2 positioner

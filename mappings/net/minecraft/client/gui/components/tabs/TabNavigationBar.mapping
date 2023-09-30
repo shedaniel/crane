@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/gui/components/tabs/TabNavigationBar
+	METHOD <init> (ILnet/minecraft/client/gui/components/tabs/TabManager;Ljava/lang/Iterable;)V
+		ARG 1 width
+		ARG 2 tabManager
+	METHOD setWidth (I)V
+		ARG 1 width
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/client/gui/components/tabs/TabManager;I)V
+			ARG 1 tabManager
+			ARG 2 width

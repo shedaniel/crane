@@ -1,0 +1,12 @@
+CLASS net/minecraft/network/chat/RemoteChatSession
+	METHOD <init> (Ljava/util/UUID;Lnet/minecraft/world/entity/player/ProfilePublicKey;)V
+		ARG 1 sessionId
+		ARG 2 profilePublicKey
+	CLASS Data
+		METHOD <init> (Ljava/util/UUID;Lnet/minecraft/world/entity/player/ProfilePublicKey$Data;)V
+			ARG 1 sessionId
+			ARG 2 profilePublicKey
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/chat/RemoteChatSession$Data;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/network/chat/RemoteChatSession$Data;)V
+			ARG 0 buf

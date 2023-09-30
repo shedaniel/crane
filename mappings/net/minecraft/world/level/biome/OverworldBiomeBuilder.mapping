@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/biome/OverworldBiomeBuilder
+	METHOD <init> (Lnet/minecraft/world/level/biome/OverworldBiomeBuilder$Modifier;)V
+		ARG 1 modifier

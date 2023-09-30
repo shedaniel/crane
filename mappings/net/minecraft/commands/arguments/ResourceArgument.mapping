@@ -1,0 +1,30 @@
+CLASS net/minecraft/commands/arguments/ResourceArgument
+	METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;Lnet/minecraft/resources/ResourceKey;)V
+		ARG 2 registryKey
+	METHOD getAttribute (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder$Reference;
+		ARG 0 context
+	METHOD getConfiguredFeature (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder$Reference;
+		ARG 0 context
+	METHOD getEnchantment (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder$Reference;
+		ARG 0 context
+	METHOD getEntityType (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder$Reference;
+		ARG 0 context
+	METHOD getMobEffect (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder$Reference;
+		ARG 0 context
+	METHOD getResource (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+		ARG 0 context
+	METHOD getStructure (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder$Reference;
+		ARG 0 context
+	METHOD getSummonableEntityType (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/Holder$Reference;
+		ARG 0 context
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
+	CLASS Info
+		METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/arguments/ResourceArgument$Info$Template;
+			ARG 1 buf
+		METHOD serializeToNetwork (Lnet/minecraft/commands/arguments/ResourceArgument$Info$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 2 buf
+		CLASS Template
+			METHOD <init> (Lnet/minecraft/commands/arguments/ResourceArgument$Info;Lnet/minecraft/resources/ResourceKey;)V
+				ARG 2 registryKey

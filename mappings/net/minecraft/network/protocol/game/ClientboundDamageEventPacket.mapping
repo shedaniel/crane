@@ -1,0 +1,15 @@
+CLASS net/minecraft/network/protocol/game/ClientboundDamageEventPacket
+	METHOD <init> (IIIILjava/util/Optional;)V
+		ARG 1 entityId
+		ARG 2 sourceTypeId
+		ARG 3 sourceCauseId
+		ARG 4 sourceDirectId
+		ARG 5 sourcePosition
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD readOptionalEntityId (Lnet/minecraft/network/FriendlyByteBuf;)I
+		ARG 0 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD writeOptionalEntityId (Lnet/minecraft/network/FriendlyByteBuf;I)V
+		ARG 0 buf

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/WalkAnimationState
+	METHOD setSpeed (F)V
+		ARG 1 speed

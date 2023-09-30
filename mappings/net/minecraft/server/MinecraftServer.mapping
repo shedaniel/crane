@@ -8,9 +8,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 6 fixerUpper
 		ARG 7 services
 		ARG 8 progressListenerFactory
-	METHOD configurePackRepository (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/world/level/DataPackConfig;Z)Lnet/minecraft/world/level/DataPackConfig;
-		ARG 0 packRepository
-		ARG 1 packConfig
 	METHOD createLevels (Lnet/minecraft/server/level/progress/ChunkProgressListener;)V
 		ARG 1 listener
 	METHOD fillServerSystemReport (Lnet/minecraft/SystemReport;)Lnet/minecraft/SystemReport;

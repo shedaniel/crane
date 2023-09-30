@@ -1,4 +1,4 @@
 CLASS net/minecraft/server/network/ServerStatusPacketListenerImpl
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/network/Connection;)V
-		ARG 1 server
+	METHOD <init> (Lnet/minecraft/network/protocol/status/ServerStatus;Lnet/minecraft/network/Connection;)V
+		ARG 1 status
 		ARG 2 connection

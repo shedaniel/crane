@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/chunk/ChunkGeneratorStructureState
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/biome/BiomeSource;JJLjava/util/List;)V
+		ARG 1 randomState
+		ARG 2 biomeSource
+		ARG 3 levelSeed
+		ARG 5 concentricRingsSeed

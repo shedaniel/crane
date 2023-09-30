@@ -1,4 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/LongJumpToPreferredBlock
-	METHOD <init> (Lnet/minecraft/util/valueproviders/UniformInt;IIFLjava/util/function/Function;Lnet/minecraft/tags/TagKey;FLjava/util/function/Predicate;)V
+	METHOD <init> (Lnet/minecraft/util/valueproviders/UniformInt;IIFLjava/util/function/Function;Lnet/minecraft/tags/TagKey;FLjava/util/function/BiPredicate;)V
 		ARG 6 preferredBlockTag
 		ARG 7 preferredBlocksChance

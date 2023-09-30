@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder
+	METHOD <init> (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$TriggerWithResult;)V
+		ARG 1 trigger

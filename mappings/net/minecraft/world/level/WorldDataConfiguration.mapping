@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/WorldDataConfiguration
+	METHOD <init> (Lnet/minecraft/world/level/DataPackConfig;Lnet/minecraft/world/flag/FeatureFlagSet;)V
+		ARG 1 dataPacks
+		ARG 2 enabledFeatures

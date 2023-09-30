@@ -1,0 +1,3 @@
+CLASS com/mojang/math/Divisor
+	METHOD <init> (II)V
+		ARG 2 denominator

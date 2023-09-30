@@ -1,4 +1,8 @@
 CLASS net/minecraft/resources/RegistryOps
-	METHOD <init> (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/core/RegistryAccess;Ljava/util/Optional;)V
-		ARG 2 registryAccess
-		ARG 3 loader
+	METHOD <init> (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/resources/RegistryOps$RegistryInfoLookup;)V
+		ARG 2 lookupProvider
+	CLASS RegistryInfo
+		METHOD <init> (Lnet/minecraft/core/HolderOwner;Lnet/minecraft/core/HolderGetter;Lcom/mojang/serialization/Lifecycle;)V
+			ARG 1 owner
+			ARG 2 getter
+			ARG 3 elementsLifecycle

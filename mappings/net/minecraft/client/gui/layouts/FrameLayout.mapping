@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/gui/layouts/FrameLayout
+	METHOD setMinHeight (I)Lnet/minecraft/client/gui/layouts/FrameLayout;
+		ARG 1 minHeight
+	METHOD setMinWidth (I)Lnet/minecraft/client/gui/layouts/FrameLayout;
+		ARG 1 minWidth

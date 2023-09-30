@@ -1,5 +1,6 @@
 CLASS net/minecraft/world/entity/ai/behavior/GateBehavior
 	METHOD <init> (Ljava/util/Map;Ljava/util/Set;Lnet/minecraft/world/entity/ai/behavior/GateBehavior$OrderPolicy;Lnet/minecraft/world/entity/ai/behavior/GateBehavior$RunningPolicy;Ljava/util/List;)V
+		ARG 1 entryCondition
 		ARG 2 exitErasedMemories
 		ARG 3 orderPolicy
 		ARG 4 runningPolicy

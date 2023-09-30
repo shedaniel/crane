@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/item/crafting/SmithingTrimRecipe
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/item/crafting/Ingredient;Lnet/minecraft/world/item/crafting/Ingredient;Lnet/minecraft/world/item/crafting/Ingredient;)V
+		ARG 1 id
+		ARG 2 template
+		ARG 3 base
+		ARG 4 addition
+	METHOD isAdditionIngredient (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD isBaseIngredient (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD isTemplateIngredient (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	CLASS Serializer
+		METHOD fromNetwork (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/SmithingTrimRecipe;
+			ARG 2 buf
+		METHOD toNetwork (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/SmithingTrimRecipe;)V
+			ARG 1 buf

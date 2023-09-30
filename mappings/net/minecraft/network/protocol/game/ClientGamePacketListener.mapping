@@ -41,8 +41,6 @@ CLASS net/minecraft/network/protocol/game/ClientGamePacketListener
 		ARG 1 packet
 	METHOD handleCustomPayload (Lnet/minecraft/network/protocol/game/ClientboundCustomPayloadPacket;)V
 		ARG 1 packet
-	METHOD handleCustomSoundEvent (Lnet/minecraft/network/protocol/game/ClientboundCustomSoundPacket;)V
-		ARG 1 packet
 	METHOD handleDisconnect (Lnet/minecraft/network/protocol/game/ClientboundDisconnectPacket;)V
 		ARG 1 packet
 	METHOD handleEntityEvent (Lnet/minecraft/network/protocol/game/ClientboundEntityEventPacket;)V
@@ -98,8 +96,6 @@ CLASS net/minecraft/network/protocol/game/ClientGamePacketListener
 	METHOD handlePlayerCombatEnter (Lnet/minecraft/network/protocol/game/ClientboundPlayerCombatEnterPacket;)V
 		ARG 1 packet
 	METHOD handlePlayerCombatKill (Lnet/minecraft/network/protocol/game/ClientboundPlayerCombatKillPacket;)V
-		ARG 1 packet
-	METHOD handlePlayerInfo (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoPacket;)V
 		ARG 1 packet
 	METHOD handleRemoveMobEffect (Lnet/minecraft/network/protocol/game/ClientboundRemoveMobEffectPacket;)V
 		ARG 1 packet

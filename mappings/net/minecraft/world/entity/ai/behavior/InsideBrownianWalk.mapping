@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/InsideBrownianWalk
-	METHOD <init> (F)V
-		ARG 1 speedModifier

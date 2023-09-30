@@ -19,8 +19,6 @@ CLASS net/minecraft/Util
 		ARG 1 choice
 	METHOD executeInSequence ([Ljava/util/function/BooleanSupplier;)Z
 		ARG 0 suppliers
-	METHOD failedFuture (Ljava/lang/Throwable;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 throwable
 	METHOD fetchChoiceType (Lcom/mojang/datafixers/DSL$TypeReference;Ljava/lang/String;)Lcom/mojang/datafixers/types/Type;
 		ARG 0 type
 		ARG 1 choice
@@ -45,8 +43,6 @@ CLASS net/minecraft/Util
 		ARG 2 runnable
 	METHOD lambda$prefix$13 (Ljava/util/function/Consumer;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 2 suffix
-	METHOD lambda$sanitizeName$14 (Lnet/minecraft/CharPredicate;I)Ljava/lang/String;
-		ARG 1 i
 	METHOD lambda$static$0 (Ljava/nio/file/spi/FileSystemProvider;)Z
 		ARG 0 fs
 	METHOD lastOf (Ljava/util/List;)Ljava/lang/Object;

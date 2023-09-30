@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/resources/DirectAssetIndex
-	METHOD <init> (Ljava/io/File;)V
-		ARG 1 assetsDirectory

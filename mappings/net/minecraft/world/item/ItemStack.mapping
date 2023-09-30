@@ -66,9 +66,6 @@ CLASS net/minecraft/world/item/ItemStack
 	METHOD isSame (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 first
 		ARG 1 second
-	METHOD isSameIgnoreDurability (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 0 first
-		ARG 1 second
 	METHOD isSameItemSameTags (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 first
 		ARG 1 second
@@ -107,8 +104,6 @@ CLASS net/minecraft/world/item/ItemStack
 	METHOD removeTagKey (Ljava/lang/String;)V
 		ARG 1 key
 	METHOD sameItem (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
-	METHOD sameItemStackIgnoreDurability (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
 	METHOD save (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;
 		ARG 1 tag

@@ -1,10 +1,11 @@
 CLASS net/minecraft/client/multiplayer/ClientPacketListener
-	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/Connection;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/client/ClientTelemetryManager;)V
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/Connection;Lnet/minecraft/client/multiplayer/ServerData;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/client/telemetry/WorldSessionTelemetryManager;)V
 		ARG 1 minecraft
 		ARG 2 callbackScreen
 		ARG 3 connection
-		ARG 4 localGameProfile
-		ARG 5 telemetryManager
+		ARG 4 serverData
+		ARG 5 localGameProfile
+		ARG 6 telemetryManager
 	METHOD getPlayerInfo (Ljava/lang/String;)Lnet/minecraft/client/multiplayer/PlayerInfo;
 		ARG 1 name
 	METHOD getPlayerInfo (Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;
@@ -18,3 +19,8 @@ CLASS net/minecraft/client/multiplayer/ClientPacketListener
 		ARG 1 packet
 	METHOD send (Lnet/minecraft/network/protocol/game/ServerboundResourcePackPacket$Action;)V
 		ARG 1 action
+	CLASS DeferredPacket
+		METHOD <init> (Lnet/minecraft/network/protocol/Packet;Ljava/util/function/BooleanSupplier;J)V
+			ARG 1 packet
+			ARG 2 sendCondition
+			ARG 3 expirationTime

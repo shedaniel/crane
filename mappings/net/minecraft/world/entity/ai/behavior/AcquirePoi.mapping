@@ -1,9 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/AcquirePoi
-	METHOD <init> (Ljava/util/function/Predicate;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;ZLjava/util/Optional;)V
-		ARG 1 poiType
-		ARG 3 memoryToAcquire
-		ARG 4 onlyIfAdult
-		ARG 5 onPoiAcquisitionEvent
 	CLASS JitteredLinearRetry
 		METHOD <init> (Lnet/minecraft/util/RandomSource;J)V
 			ARG 1 random

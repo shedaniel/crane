@@ -1,0 +1,14 @@
+CLASS net/minecraft/network/chat/SignedMessageBody
+	METHOD <init> (Ljava/lang/String;Ljava/time/Instant;JLnet/minecraft/network/chat/LastSeenMessages;)V
+		ARG 1 content
+		ARG 2 timeStamp
+		ARG 3 salt
+	CLASS Packed
+		METHOD <init> (Ljava/lang/String;Ljava/time/Instant;JLnet/minecraft/network/chat/LastSeenMessages$Packed;)V
+			ARG 1 content
+			ARG 2 timeStamp
+			ARG 3 salt
+		METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 buf

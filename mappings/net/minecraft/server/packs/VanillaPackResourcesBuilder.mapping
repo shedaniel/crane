@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/packs/VanillaPackResourcesBuilder
+	METHOD setMetadata (Lnet/minecraft/server/packs/BuiltInMetadata;)Lnet/minecraft/server/packs/VanillaPackResourcesBuilder;
+		ARG 1 metadata

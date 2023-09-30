@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/entity/ai/behavior/declarative/MemoryCondition
+	CLASS Absent
+		METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)V
+			ARG 1 memory
+	CLASS Present
+		METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)V
+			ARG 1 memory
+	CLASS Registered
+		METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)V
+			ARG 1 memory

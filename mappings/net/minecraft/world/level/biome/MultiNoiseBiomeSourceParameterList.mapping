@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/biome/MultiNoiseBiomeSourceParameterList
+	METHOD <init> (Lnet/minecraft/world/level/biome/MultiNoiseBiomeSourceParameterList$Preset;Lnet/minecraft/core/HolderGetter;)V
+		ARG 1 preset
+	CLASS Preset
+		METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/biome/MultiNoiseBiomeSourceParameterList$Preset$SourceProvider;)V
+			ARG 1 id
+			ARG 2 provider

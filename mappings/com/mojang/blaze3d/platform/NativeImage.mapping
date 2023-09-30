@@ -28,25 +28,12 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 1 x
 		ARG 2 y
 		ARG 3 color
-	METHOD combine (IIII)I
-		ARG 0 alpha
-		ARG 1 blue
-		ARG 2 green
-		ARG 3 red
 	METHOD downloadTexture (IZ)V
 		ARG 1 level
 		ARG 2 removeAlpha
-	METHOD fromBase64 (Ljava/lang/String;)Lcom/mojang/blaze3d/platform/NativeImage;
-		ARG 0 data
-	METHOD getA (I)I
-		ARG 0 color
-	METHOD getB (I)I
-		ARG 0 color
 	METHOD getBlueOrLuminance (II)B
 		ARG 1 x
 		ARG 2 y
-	METHOD getG (I)I
-		ARG 0 color
 	METHOD getGreenOrLuminance (II)B
 		ARG 1 x
 		ARG 2 y
@@ -56,8 +43,6 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 	METHOD getPixelRGBA (II)I
 		ARG 1 x
 		ARG 2 y
-	METHOD getR (I)I
-		ARG 0 color
 	METHOD getRedOrLuminance (II)B
 		ARG 1 x
 		ARG 2 y
@@ -114,8 +99,6 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 		ARG 4 closing
 	METHOD writeToFile (Ljava/io/File;)V
 		ARG 1 file
-	METHOD writeToFile (Ljava/lang/String;)V
-		ARG 1 path
 	METHOD writeToFile (Ljava/nio/file/Path;)V
 		ARG 1 path
 	CLASS Format

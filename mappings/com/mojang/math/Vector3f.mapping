@@ -1,9 +1,0 @@
-CLASS com/mojang/math/Vector3f
-	METHOD <init> (FFF)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD set (FFF)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z

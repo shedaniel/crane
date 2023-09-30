@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/commands/FillBiomeCommand
+	METHOD quantize (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;
+		ARG 0 pos

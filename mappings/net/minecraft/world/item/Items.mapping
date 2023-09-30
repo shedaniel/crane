@@ -3,16 +3,6 @@ CLASS net/minecraft/world/item/Items
 		ARG 0 blockItem
 	METHOD registerBlock (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/item/Item;
 		ARG 0 block
-	METHOD registerBlock (Lnet/minecraft/world/level/block/Block;Ljava/util/Optional;)Lnet/minecraft/world/item/Item;
-		ARG 0 block
-		ARG 1 tab
-	METHOD registerBlock (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/CreativeModeTab;)Lnet/minecraft/world/item/Item;
-		ARG 0 block
-		ARG 1 tab
-	METHOD registerBlock (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/CreativeModeTab;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/item/Item;
-		ARG 0 block
-		ARG 1 tab
-		ARG 2 alternativeBlocks
 	METHOD registerBlock (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/Item;
 		ARG 0 block
 		ARG 1 item

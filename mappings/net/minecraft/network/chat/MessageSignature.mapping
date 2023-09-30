@@ -1,5 +1,15 @@
 CLASS net/minecraft/network/chat/MessageSignature
-	METHOD <init> (Ljava/util/UUID;Ljava/time/Instant;Lnet/minecraft/util/Crypt$SaltSignaturePair;)V
-		ARG 1 sender
-		ARG 2 timeStamp
-		ARG 3 saltSignature
+	METHOD <init> ([B)V
+		ARG 1 bytes
+	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/chat/MessageSignature;
+		ARG 0 buf
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/network/chat/MessageSignature;)V
+		ARG 0 buf
+	CLASS Packed
+		METHOD <init> (ILnet/minecraft/network/chat/MessageSignature;)V
+			ARG 1 id
+			ARG 2 fullSignature
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/chat/MessageSignature$Packed;
+			ARG 0 buf
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/network/chat/MessageSignature$Packed;)V
+			ARG 0 buf

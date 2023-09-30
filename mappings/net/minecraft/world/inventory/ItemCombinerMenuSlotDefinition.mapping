@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/inventory/ItemCombinerMenuSlotDefinition
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/world/inventory/ItemCombinerMenuSlotDefinition$SlotDefinition;)V
+		ARG 1 slots
+		ARG 2 resultSlot
+	CLASS SlotDefinition
+		METHOD <init> (IIILjava/util/function/Predicate;)V
+			ARG 1 slotIndex
+			ARG 2 x
+			ARG 3 y
+			ARG 4 mayPlace

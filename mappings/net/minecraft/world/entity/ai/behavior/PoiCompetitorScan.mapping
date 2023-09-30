@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/PoiCompetitorScan
-	METHOD <init> (Lnet/minecraft/world/entity/npc/VillagerProfession;)V
-		ARG 1 profession

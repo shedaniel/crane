@@ -1,10 +1,38 @@
 CLASS net/minecraft/world/item/CreativeModeTab
-	METHOD <init> (ILjava/lang/String;)V
-		ARG 1 id
-		ARG 2 langId
-	METHOD setBackgroundSuffix (Ljava/lang/String;)Lnet/minecraft/world/item/CreativeModeTab;
-		ARG 1 backgroundSuffix
-	METHOD setEnchantmentCategories ([Lnet/minecraft/world/item/enchantment/EnchantmentCategory;)Lnet/minecraft/world/item/CreativeModeTab;
-		ARG 1 enchantmentCategories
-	METHOD setRecipeFolderName (Ljava/lang/String;)Lnet/minecraft/world/item/CreativeModeTab;
-		ARG 1 recipeFolderName
+	METHOD <init> (Lnet/minecraft/world/item/CreativeModeTab$Row;ILnet/minecraft/world/item/CreativeModeTab$Type;Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;Lnet/minecraft/world/item/CreativeModeTab$DisplayItemsGenerator;)V
+		ARG 1 row
+		ARG 2 column
+		ARG 3 type
+		ARG 4 displayName
+		ARG 5 iconGenerator
+		ARG 6 displayItemsGenerator
+	METHOD contains (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD setSearchTreeBuilder (Ljava/util/function/Consumer;)V
+		ARG 1 searchTreeBuilder
+	CLASS Output
+		METHOD accept (Lnet/minecraft/world/item/ItemStack;)V
+			ARG 1 stack
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/item/CreativeModeTab$Row;I)V
+			ARG 1 row
+			ARG 2 column
+		METHOD backgroundSuffix (Ljava/lang/String;)Lnet/minecraft/world/item/CreativeModeTab$Builder;
+			ARG 1 backgroundSuffix
+		METHOD displayItems (Lnet/minecraft/world/item/CreativeModeTab$DisplayItemsGenerator;)Lnet/minecraft/world/item/CreativeModeTab$Builder;
+			ARG 1 displayItemsGenerator
+		METHOD icon (Ljava/util/function/Supplier;)Lnet/minecraft/world/item/CreativeModeTab$Builder;
+			ARG 1 iconGenerator
+		METHOD title (Lnet/minecraft/network/chat/Component;)Lnet/minecraft/world/item/CreativeModeTab$Builder;
+			ARG 1 displayName
+		METHOD type (Lnet/minecraft/world/item/CreativeModeTab$Type;)Lnet/minecraft/world/item/CreativeModeTab$Builder;
+			ARG 1 type
+	CLASS ItemDisplayBuilder
+		METHOD <init> (Lnet/minecraft/world/item/CreativeModeTab;Lnet/minecraft/world/flag/FeatureFlagSet;)V
+			ARG 1 tab
+			ARG 2 featureFlagSet
+	CLASS ItemDisplayParameters
+		METHOD <init> (Lnet/minecraft/world/flag/FeatureFlagSet;ZLnet/minecraft/core/HolderLookup$Provider;)V
+			ARG 1 enabledFeatures
+			ARG 2 hasPermissions
+			ARG 3 holders

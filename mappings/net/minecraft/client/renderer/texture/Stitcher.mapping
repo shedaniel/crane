@@ -9,13 +9,11 @@ CLASS net/minecraft/client/renderer/texture/Stitcher
 		ARG 1 holder
 	METHOD gatherSprites (Lnet/minecraft/client/renderer/texture/Stitcher$SpriteLoader;)V
 		ARG 1 spriteLoader
-	METHOD lambda$gatherSprites$4 (Lnet/minecraft/client/renderer/texture/Stitcher$SpriteLoader;Lnet/minecraft/client/renderer/texture/Stitcher$Region;)V
-		ARG 2 region
-	METHOD registerSprite (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;)V
-		ARG 1 info
 	CLASS Holder
-		METHOD <init> (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;I)V
-			ARG 1 spriteInfo
+		METHOD <init> (Lnet/minecraft/client/renderer/texture/Stitcher$Entry;II)V
+			ARG 1 entry
+			ARG 2 width
+			ARG 3 height
 	CLASS Region
 		METHOD <init> (IIII)V
 			ARG 1 originX
@@ -25,9 +23,3 @@ CLASS net/minecraft/client/renderer/texture/Stitcher
 		METHOD add (Lnet/minecraft/client/renderer/texture/Stitcher$Holder;)Z
 			ARG 1 holder
 	CLASS SpriteLoader
-		METHOD load (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;IIII)V
-			ARG 1 info
-			ARG 2 atlasWidth
-			ARG 3 atlasHeight
-			ARG 4 x
-			ARG 5 y

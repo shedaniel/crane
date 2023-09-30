@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/packs/BuiltInMetadata
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 values

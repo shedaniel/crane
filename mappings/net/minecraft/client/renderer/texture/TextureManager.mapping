@@ -12,8 +12,6 @@ CLASS net/minecraft/client/renderer/texture/TextureManager
 	METHOD getTexture (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/texture/AbstractTexture;)Lnet/minecraft/client/renderer/texture/AbstractTexture;
 		ARG 1 location
 		ARG 2 defaultTexture
-	METHOD lambda$reload$5 (Ljava/lang/Runnable;)V
-		ARG 0 task
 	METHOD loadTexture (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/texture/AbstractTexture;)Lnet/minecraft/client/renderer/texture/AbstractTexture;
 		ARG 1 location
 		ARG 2 texture

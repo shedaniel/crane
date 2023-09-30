@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/feature/trunkplacers/CherryTrunkPlacer
+	METHOD <init> (IIILnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/UniformInt;Lnet/minecraft/util/valueproviders/IntProvider;)V
+		ARG 4 branchCount
+		ARG 5 branchHorizontalLength
+		ARG 6 branchStartOffsetFromTop
+		ARG 7 branchEndOffsetFromTop

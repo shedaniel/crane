@@ -16,12 +16,6 @@ CLASS net/minecraft/client/gui/screens/advancements/AdvancementTab
 		ARG 1 screen
 		ARG 2 tabsSize
 		ARG 3 advancement
-	METHOD drawContents (Lcom/mojang/blaze3d/vertex/PoseStack;)V
-		ARG 1 poses
-	METHOD drawIcon (IILnet/minecraft/client/renderer/entity/ItemRenderer;)V
-		ARG 1 left
-		ARG 2 top
-		ARG 3 itemRenderer
 	METHOD drawTab (Lcom/mojang/blaze3d/vertex/PoseStack;IIZ)V
 		ARG 1 poses
 		ARG 2 left

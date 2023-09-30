@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/telemetry/events/WorldLoadTimesEvent
+	METHOD <init> (ZLjava/time/Duration;)V
+		ARG 1 newWorld
+		ARG 2 worldLoadDuration

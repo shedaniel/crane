@@ -1,38 +1,3 @@
 CLASS net/minecraft/client/renderer/texture/TextureAtlas
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
 		ARG 1 location
-	METHOD getBasicSpriteInfos (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/Set;)Ljava/util/Collection;
-		ARG 1 resourceManager
-	METHOD getLoadedSprites (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/client/renderer/texture/Stitcher;I)Ljava/util/List;
-		ARG 1 resourceManager
-		ARG 2 stitcher
-		ARG 3 mipLevel
-	METHOD lambda$getLoadedSprites$4 (ILjava/util/Queue;Ljava/util/List;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;IIII)V
-		ARG 5 info
-		ARG 6 altasWidth
-		ARG 7 altasHeight
-		ARG 8 x
-		ARG 9 y
-	METHOD load (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;IIIII)Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;
-		ARG 1 resourceManager
-		ARG 2 info
-		ARG 3 altasWidth
-		ARG 4 altasHeight
-		ARG 5 mipLevel
-		ARG 6 x
-		ARG 7 y
-	METHOD prepareToStitch (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/stream/Stream;Lnet/minecraft/util/profiling/ProfilerFiller;I)Lnet/minecraft/client/renderer/texture/TextureAtlas$Preparations;
-		ARG 1 resourceManager
-		ARG 3 profiler
-		ARG 4 mipLevel
-	METHOD reload (Lnet/minecraft/client/renderer/texture/TextureAtlas$Preparations;)V
-		ARG 1 preparations
-	METHOD updateFilter (Lnet/minecraft/client/renderer/texture/TextureAtlas$Preparations;)V
-		ARG 1 preparations
-	CLASS Preparations
-		METHOD <init> (Ljava/util/Set;IIILjava/util/List;)V
-			ARG 1 sprites
-			ARG 2 width
-			ARG 3 height
-			ARG 4 mipLevel
-			ARG 5 regions

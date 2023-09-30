@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/animal/sniffer/Sniffer
+	METHOD canDig (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD getEatingSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent;
+		ARG 1 stack
+	METHOD isFood (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 1 stack
+	METHOD storeExploredPosition (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/entity/animal/sniffer/Sniffer;
+		ARG 1 pos

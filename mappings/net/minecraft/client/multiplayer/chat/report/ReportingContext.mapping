@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/multiplayer/chat/report/ReportingContext
+	METHOD <init> (Lnet/minecraft/client/multiplayer/chat/report/AbuseReportSender;Lnet/minecraft/client/multiplayer/chat/report/ReportEnvironment;Lnet/minecraft/client/multiplayer/chat/ChatLog;)V
+		ARG 1 sender
+		ARG 2 environment
+		ARG 3 chatLog
+	METHOD setChatReportDraft (Lnet/minecraft/client/multiplayer/chat/report/ChatReportBuilder$ChatReport;)V
+		ARG 1 chatReportDraft

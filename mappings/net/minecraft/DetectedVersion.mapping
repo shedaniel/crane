@@ -1,5 +1,3 @@
 CLASS net/minecraft/DetectedVersion
 	METHOD <init> (Lcom/google/gson/JsonObject;)V
 		ARG 1 jsonObject
-	METHOD getPackVersion (Lcom/mojang/bridge/game/PackType;)I
-		ARG 1 type

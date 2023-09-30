@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/Interaction
+	CLASS PlayerAction
+		METHOD <init> (Ljava/util/UUID;J)V
+			ARG 1 player
+			ARG 2 timestamp

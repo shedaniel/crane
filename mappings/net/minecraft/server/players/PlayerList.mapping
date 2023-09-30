@@ -1,7 +1,7 @@
 CLASS net/minecraft/server/players/PlayerList
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/world/level/storage/PlayerDataStorage;I)V
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/core/LayeredRegistryAccess;Lnet/minecraft/world/level/storage/PlayerDataStorage;I)V
 		ARG 1 server
-		ARG 2 registryHolder
+		ARG 2 registries
 		ARG 3 playerIo
 		ARG 4 maxPlayers
 	METHOD canPlayerLogin (Ljava/net/SocketAddress;Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/network/chat/Component;

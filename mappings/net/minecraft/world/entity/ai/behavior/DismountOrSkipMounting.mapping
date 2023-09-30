@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/DismountOrSkipMounting
-	METHOD <init> (ILjava/util/function/BiPredicate;)V
-		ARG 1 maxWalkDistToRideTarget
-		ARG 2 dontRideIf

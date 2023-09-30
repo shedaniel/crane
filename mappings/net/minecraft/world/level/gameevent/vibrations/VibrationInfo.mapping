@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/gameevent/vibrations/VibrationInfo
+	METHOD <init> (Lnet/minecraft/world/level/gameevent/GameEvent;FLnet/minecraft/world/phys/Vec3;Ljava/util/UUID;Ljava/util/UUID;Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 gameEvent
+		ARG 2 distance
+		ARG 3 pos
+		ARG 4 uuid
+		ARG 5 projectileOwnerUuid
+		ARG 6 entity

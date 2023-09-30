@@ -1,13 +1,8 @@
 CLASS net/minecraft/core/Registry
-	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Lifecycle;)V
-		ARG 1 key
-		ARG 2 lifecycle
 	METHOD containsKey (Lnet/minecraft/resources/ResourceKey;)Z
 		ARG 1 key
 	METHOD containsKey (Lnet/minecraft/resources/ResourceLocation;)Z
 		ARG 1 key
-	METHOD createRegistryKey (Ljava/lang/String;)Lnet/minecraft/resources/ResourceKey;
-		ARG 0 registryId
 	METHOD get (Lnet/minecraft/resources/ResourceKey;)Ljava/lang/Object;
 		ARG 1 key
 	METHOD get (Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/Object;

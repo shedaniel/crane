@@ -1,9 +1,0 @@
-CLASS net/minecraft/network/chat/ChatDecoration
-	METHOD <init> (Ljava/lang/String;Ljava/util/List;Lnet/minecraft/network/chat/Style;)V
-		ARG 1 translationKey
-		ARG 2 parameters
-		ARG 3 style
-	CLASS Parameter
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/network/chat/ChatDecoration$Parameter$Selector;)V
-			ARG 3 name
-			ARG 4 selector

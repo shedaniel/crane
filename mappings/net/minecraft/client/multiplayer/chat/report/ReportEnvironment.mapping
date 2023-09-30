@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/multiplayer/chat/report/ReportEnvironment
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/client/multiplayer/chat/report/ReportEnvironment$Server;)V
+		ARG 1 clientVersion
+		ARG 2 server
+	CLASS Server
+		CLASS Realm
+			METHOD <init> (JI)V
+				ARG 1 realmId
+		CLASS ThirdParty
+			METHOD <init> (Ljava/lang/String;)V
+				ARG 1 ip

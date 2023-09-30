@@ -4,5 +4,7 @@ CLASS net/minecraft/world/level/chunk/LevelChunkSection
 		ARG 3 biomes
 	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD readBiomes (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf

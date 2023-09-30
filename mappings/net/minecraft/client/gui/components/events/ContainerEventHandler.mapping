@@ -2,15 +2,25 @@ CLASS net/minecraft/client/gui/components/events/ContainerEventHandler
 	METHOD getChildAt (DD)Ljava/util/Optional;
 		ARG 1 mouseX
 		ARG 3 mouseY
+	METHOD handleArrowNavigation (Lnet/minecraft/client/gui/navigation/FocusNavigationEvent$ArrowNavigation;)Lnet/minecraft/client/gui/ComponentPath;
+		ARG 1 navigation
+	METHOD handleTabNavigation (Lnet/minecraft/client/gui/navigation/FocusNavigationEvent$TabNavigation;)Lnet/minecraft/client/gui/ComponentPath;
+		ARG 1 navigation
 	METHOD lambda$mouseReleased$0 (DDILnet/minecraft/client/gui/components/events/GuiEventListener;)Z
 		ARG 5 child
 	METHOD lambda$mouseScrolled$1 (DDDLnet/minecraft/client/gui/components/events/GuiEventListener;)Z
 		ARG 6 child
 	METHOD magicalSpecialHackyFocus (Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
 		ARG 1 focused
+	METHOD nextFocusPathInDirection (Lnet/minecraft/client/gui/navigation/ScreenRectangle;Lnet/minecraft/client/gui/navigation/ScreenDirection;Lnet/minecraft/client/gui/components/events/GuiEventListener;Lnet/minecraft/client/gui/navigation/FocusNavigationEvent;)Lnet/minecraft/client/gui/ComponentPath;
+		ARG 1 rect
+		ARG 2 direction
+		ARG 4 event
+	METHOD nextFocusPathVaguelyInDirection (Lnet/minecraft/client/gui/navigation/ScreenRectangle;Lnet/minecraft/client/gui/navigation/ScreenDirection;Lnet/minecraft/client/gui/components/events/GuiEventListener;Lnet/minecraft/client/gui/navigation/FocusNavigationEvent;)Lnet/minecraft/client/gui/ComponentPath;
+		ARG 1 rect
+		ARG 2 direction
+		ARG 4 event
 	METHOD setDragging (Z)V
 		ARG 1 dragging
 	METHOD setFocused (Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
-		ARG 1 focused
-	METHOD setInitialFocus (Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
 		ARG 1 focused

@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/BecomePassiveIfMemoryPresent
-	METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;I)V
-		ARG 2 pacifyDuration

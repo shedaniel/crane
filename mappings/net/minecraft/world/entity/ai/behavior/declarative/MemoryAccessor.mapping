@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor
+	METHOD <init> (Lnet/minecraft/world/entity/ai/Brain;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;Lcom/mojang/datafixers/kinds/App;)V
+		ARG 1 brain
+		ARG 2 memoryType
+		ARG 3 value

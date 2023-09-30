@@ -3,3 +3,5 @@ CLASS net/minecraft/client/gui/screens/inventory/SmithingScreen
 		ARG 1 menu
 		ARG 2 inventory
 		ARG 3 title
+	METHOD updateArmorStandPreview (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack

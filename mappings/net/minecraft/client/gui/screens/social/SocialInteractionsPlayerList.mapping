@@ -10,15 +10,7 @@ CLASS net/minecraft/client/gui/screens/social/SocialInteractionsPlayerList
 	METHOD addPlayer (Lnet/minecraft/client/multiplayer/PlayerInfo;Lnet/minecraft/client/gui/screens/social/SocialInteractionsScreen$Page;)V
 		ARG 1 playerInfo
 		ARG 2 page
-	METHOD lambda$updateFilteredPlayers$1 (Lnet/minecraft/client/gui/screens/social/PlayerEntry;)Z
-		ARG 1 player
-	METHOD lambda$updatePlayerList$0 (Lnet/minecraft/client/gui/screens/social/PlayerEntry;Lnet/minecraft/client/gui/screens/social/PlayerEntry;)I
-		ARG 0 first
-		ARG 1 second
 	METHOD removePlayer (Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD setFilter (Ljava/lang/String;)V
 		ARG 1 filter
-	METHOD updatePlayerList (Ljava/util/Collection;D)V
-		ARG 1 uuids
-		ARG 2 scrollAmount

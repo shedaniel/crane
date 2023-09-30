@@ -8,14 +8,6 @@ CLASS net/minecraft/world/level/block/entity/AbstractFurnaceBlockEntity
 		ARG 0 map
 		ARG 1 item
 		ARG 2 burnTime
-	METHOD burn (Lnet/minecraft/world/item/crafting/Recipe;Lnet/minecraft/core/NonNullList;I)Z
-		ARG 0 recipe
-		ARG 1 stacks
-		ARG 2 count
-	METHOD canBurn (Lnet/minecraft/world/item/crafting/Recipe;Lnet/minecraft/core/NonNullList;I)Z
-		ARG 0 recipe
-		ARG 1 stacks
-		ARG 2 count
 	METHOD getBurnDuration (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 1 stack
 	METHOD isFuel (Lnet/minecraft/world/item/ItemStack;)Z

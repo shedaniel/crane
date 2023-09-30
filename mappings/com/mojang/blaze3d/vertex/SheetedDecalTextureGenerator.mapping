@@ -1,6 +1,7 @@
 CLASS com/mojang/blaze3d/vertex/SheetedDecalTextureGenerator
-	METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexConsumer;Lcom/mojang/math/Matrix4f;Lcom/mojang/math/Matrix3f;)V
+	METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexConsumer;Lorg/joml/Matrix4f;Lorg/joml/Matrix3f;F)V
 		ARG 1 delegate
+		ARG 4 textureScale
 	METHOD normal (FFF)Lcom/mojang/blaze3d/vertex/VertexConsumer;
 		ARG 1 nx
 		ARG 2 ny

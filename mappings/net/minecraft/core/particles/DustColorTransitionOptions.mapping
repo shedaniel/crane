@@ -1,5 +1,5 @@
 CLASS net/minecraft/core/particles/DustColorTransitionOptions
-	METHOD <init> (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;F)V
+	METHOD <init> (Lorg/joml/Vector3f;Lorg/joml/Vector3f;F)V
 		ARG 2 toColor
 	METHOD writeToNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf

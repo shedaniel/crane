@@ -1,8 +1,11 @@
 CLASS net/minecraft/world/item/ArmorItem
-	METHOD <init> (Lnet/minecraft/world/item/ArmorMaterial;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/Item$Properties;)V
+	METHOD <init> (Lnet/minecraft/world/item/ArmorMaterial;Lnet/minecraft/world/item/ArmorItem$Type;Lnet/minecraft/world/item/Item$Properties;)V
 		ARG 1 material
-		ARG 2 slot
-		ARG 3 properties
+		ARG 2 type
 	METHOD dispenseArmor (Lnet/minecraft/core/BlockSource;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 blockSource
 		ARG 1 stack
+	CLASS Type
+		METHOD <init> (Ljava/lang/String;ILnet/minecraft/world/entity/EquipmentSlot;Ljava/lang/String;)V
+			ARG 3 slot
+			ARG 4 name

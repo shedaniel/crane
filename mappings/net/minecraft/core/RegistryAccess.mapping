@@ -1,28 +1,9 @@
 CLASS net/minecraft/core/RegistryAccess
-	METHOD ownedRegistry (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
-		ARG 1 registryId
-	METHOD put (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)V
-		ARG 0 builder
-		ARG 1 registryId
-		ARG 2 codec
-	METHOD put (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V
-		ARG 0 builder
-		ARG 1 registryId
-		ARG 2 codec
-		ARG 3 networkCodec
 	METHOD registry (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
 		ARG 1 registryId
 	METHOD registryOrThrow (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Registry;
 		ARG 1 registryId
-	CLASS RegistryData
-		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V
-			ARG 1 key
-			ARG 2 codec
-			ARG 3 networkCodec
 	CLASS RegistryEntry
 		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/Registry;)V
 			ARG 1 key
 			ARG 2 value
-	CLASS WritableRegistryAccess
-		METHOD <init> (Ljava/util/Map;)V
-			ARG 1 registries

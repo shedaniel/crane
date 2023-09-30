@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/SetEntityLookTarget
-	METHOD <init> (Ljava/util/function/Predicate;F)V
-		ARG 1 predicate

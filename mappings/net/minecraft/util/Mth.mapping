@@ -3,18 +3,10 @@ CLASS net/minecraft/util/Mth
 		ARG 0 a
 	METHOD abs (I)I
 		ARG 0 a
-	METHOD absFloor (D)I
-		ARG 0 a
-	METHOD average ([J)D
-		ARG 0 values
 	METHOD ceil (D)I
 		ARG 0 a
 	METHOD ceil (F)I
 		ARG 0 a
-	METHOD clamp (BBB)B
-		ARG 0 value
-		ARG 1 min
-		ARG 2 max
 	METHOD clamp (DDD)D
 		ARG 0 value
 		ARG 2 min
@@ -27,10 +19,6 @@ CLASS net/minecraft/util/Mth
 		ARG 0 value
 		ARG 1 min
 		ARG 2 max
-	METHOD clamp (JJJ)J
-		ARG 0 value
-		ARG 2 min
-		ARG 4 max
 	METHOD clampedLerp (DDD)D
 		ARG 0 min
 		ARG 2 max
@@ -47,15 +35,10 @@ CLASS net/minecraft/util/Mth
 	METHOD equal (FF)Z
 		ARG 0 a
 		ARG 1 b
-	METHOD fastFloor (D)I
-		ARG 0 a
 	METHOD floor (D)I
 		ARG 0 a
 	METHOD floor (F)I
 		ARG 0 a
-	METHOD intFloorDiv (II)I
-		ARG 0 x
-		ARG 1 y
 	METHOD lerp (DDD)D
 		ARG 0 progress
 		ARG 2 min

@@ -20,13 +20,6 @@ CLASS net/minecraft/client/multiplayer/ClientLevel
 		ARG 2 colorResolver
 	METHOD onChunkLoaded (Lnet/minecraft/world/level/ChunkPos;)V
 		ARG 1 chunkPos
-	METHOD playLocalSound (Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFZ)V
-		ARG 1 pos
-		ARG 2 sound
-		ARG 3 source
-		ARG 4 volume
-		ARG 5 pitch
-		ARG 6 spatial
 	METHOD putNonPlayerEntity (ILnet/minecraft/world/entity/Entity;)V
 		ARG 1 id
 		ARG 2 entity

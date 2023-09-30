@@ -1,11 +1,11 @@
 CLASS net/minecraft/data/loot/LootTableProvider
-	METHOD <init> (Lnet/minecraft/data/DataGenerator;)V
-		ARG 1 generator
-	METHOD lambda$run$0 (Ljava/util/Map;Lcom/mojang/datafixers/util/Pair;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/LootTable$Builder;)V
-		ARG 2 location
-		ARG 3 builder
-	METHOD lambda$run$1 (Ljava/util/Map;Lcom/mojang/datafixers/util/Pair;)V
-		ARG 1 subProvider
+	METHOD <init> (Lnet/minecraft/data/PackOutput;Ljava/util/Set;Ljava/util/List;)V
+		ARG 2 requiredTables
+		ARG 3 subProviders
 	METHOD lambda$run$3 (Lnet/minecraft/world/level/storage/loot/ValidationContext;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/level/storage/loot/LootTable;)V
 		ARG 1 location
 		ARG 2 lootTable
+	CLASS SubProviderEntry
+		METHOD <init> (Ljava/util/function/Supplier;Lnet/minecraft/world/level/storage/loot/parameters/LootContextParamSet;)V
+			ARG 1 provider
+			ARG 2 paramSet

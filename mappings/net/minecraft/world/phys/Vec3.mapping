@@ -3,8 +3,6 @@ CLASS net/minecraft/world/phys/Vec3
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD <init> (Lcom/mojang/math/Vector3f;)V
-		ARG 1 vec
 	METHOD atBottomCenterOf (Lnet/minecraft/core/Vec3i;)Lnet/minecraft/world/phys/Vec3;
 		ARG 0 vec
 	METHOD atCenterOf (Lnet/minecraft/core/Vec3i;)Lnet/minecraft/world/phys/Vec3;

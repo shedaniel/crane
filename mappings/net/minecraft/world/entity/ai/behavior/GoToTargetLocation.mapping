@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/GoToTargetLocation
-	METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;IF)V
-		ARG 1 locationMemory
-		ARG 2 closeEnoughDist
-		ARG 3 speedModifier

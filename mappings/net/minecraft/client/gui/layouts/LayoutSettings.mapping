@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/gui/layouts/LayoutSettings
+	CLASS LayoutSettingsImpl
+		METHOD align (FF)Lnet/minecraft/client/gui/layouts/LayoutSettings$LayoutSettingsImpl;
+			ARG 1 xAlignment
+			ARG 2 yAlignment
+		METHOD alignHorizontally (F)Lnet/minecraft/client/gui/layouts/LayoutSettings$LayoutSettingsImpl;
+			ARG 1 xAlignment
+		METHOD alignVertically (F)Lnet/minecraft/client/gui/layouts/LayoutSettings$LayoutSettingsImpl;
+			ARG 1 yAlignment
+		METHOD paddingBottom (I)Lnet/minecraft/client/gui/layouts/LayoutSettings$LayoutSettingsImpl;
+			ARG 1 paddingBottom
+		METHOD paddingLeft (I)Lnet/minecraft/client/gui/layouts/LayoutSettings$LayoutSettingsImpl;
+			ARG 1 paddingLeft
+		METHOD paddingRight (I)Lnet/minecraft/client/gui/layouts/LayoutSettings$LayoutSettingsImpl;
+			ARG 1 paddingRight
+		METHOD paddingTop (I)Lnet/minecraft/client/gui/layouts/LayoutSettings$LayoutSettingsImpl;
+			ARG 1 paddingTop

@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/texture/atlas/SpriteSourceType
+	METHOD <init> (Lcom/mojang/serialization/Codec;)V
+		ARG 1 codec

@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/packs/FeatureFlagsMetadataSection
+	METHOD <init> (Lnet/minecraft/world/flag/FeatureFlagSet;)V
+		ARG 1 flags

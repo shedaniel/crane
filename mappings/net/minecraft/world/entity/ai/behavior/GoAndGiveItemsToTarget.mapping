@@ -1,4 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/GoAndGiveItemsToTarget
-	METHOD <init> (Ljava/util/function/Function;F)V
+	METHOD <init> (Ljava/util/function/Function;FI)V
 		ARG 1 targetPositionGetter
 		ARG 2 speedModifier

@@ -1,0 +1,6 @@
+CLASS net/minecraft/network/chat/SignedMessageValidator
+	CLASS KeyBased
+		METHOD <init> (Lnet/minecraft/util/SignatureValidator;)V
+			ARG 1 validator
+		METHOD updateAndValidate (Lnet/minecraft/network/chat/PlayerChatMessage;)Z
+			ARG 1 lastMessage

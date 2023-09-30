@@ -1,8 +1,0 @@
-CLASS net/minecraft/world/entity/ai/behavior/InteractWith
-	METHOD <init> (Lnet/minecraft/world/entity/EntityType;ILjava/util/function/Predicate;Ljava/util/function/Predicate;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;FI)V
-		ARG 1 type
-		ARG 3 selfFilter
-		ARG 4 targetFilter
-		ARG 5 memory
-		ARG 6 speedModifier
-		ARG 7 maxDist

@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/renderer/texture/atlas/sources/PalettedPermutations
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/resources/ResourceLocation;Ljava/util/Map;)V
+		ARG 1 textures
+		ARG 2 paletteKey
+		ARG 3 permutations
+	CLASS PalettedSpriteSupplier
+		METHOD <init> (Lnet/minecraft/client/renderer/texture/atlas/sources/LazyLoadedImage;Ljava/util/function/Supplier;Lnet/minecraft/resources/ResourceLocation;)V
+			ARG 1 baseImage
+			ARG 2 palette
+			ARG 3 permutationLocation

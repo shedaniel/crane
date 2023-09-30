@@ -3,12 +3,6 @@ CLASS net/minecraft/world/level/storage/LevelStorageSource
 		ARG 1 baseDir
 		ARG 2 backupDir
 		ARG 3 fixerUpper
-	METHOD readDataPackConfig (Lcom/mojang/serialization/Dynamic;)Lnet/minecraft/world/level/DataPackConfig;
-		ARG 0 dynamic
-	METHOD readWorldGenSettings (Lcom/mojang/serialization/Dynamic;Lcom/mojang/datafixers/DataFixer;I)Lcom/mojang/datafixers/util/Pair;
-		ARG 0 dynamic
-		ARG 1 dataFixer
-		ARG 2 previousVersion
 	CLASS LevelDirectory
 		METHOD <init> (Ljava/nio/file/Path;)V
 			ARG 1 path

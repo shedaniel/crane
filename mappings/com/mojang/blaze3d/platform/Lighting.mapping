@@ -1,5 +1,0 @@
-CLASS com/mojang/blaze3d/platform/Lighting
-	METHOD setupLevel (Lcom/mojang/math/Matrix4f;)V
-		ARG 0 pose
-	METHOD setupNetherLevel (Lcom/mojang/math/Matrix4f;)V
-		ARG 0 pose

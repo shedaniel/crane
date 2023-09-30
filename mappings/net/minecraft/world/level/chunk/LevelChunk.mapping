@@ -20,6 +20,8 @@ CLASS net/minecraft/world/level/chunk/LevelChunk
 		ARG 1 pos
 	METHOD removeBlockEntityTicker (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 pos
+	METHOD replaceBiomes (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD replaceWithPacketData (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/nbt/CompoundTag;Ljava/util/function/Consumer;)V
 		ARG 1 buf
 	METHOD setClientLightReady (Z)V

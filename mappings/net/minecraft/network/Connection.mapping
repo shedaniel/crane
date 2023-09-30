@@ -14,10 +14,6 @@ CLASS net/minecraft/network/Connection
 		ARG 0 address
 	METHOD disconnect (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 disconnectedReason
-	METHOD doSendPacket (Lnet/minecraft/network/protocol/Packet;Lio/netty/util/concurrent/GenericFutureListener;Lnet/minecraft/network/ConnectionProtocol;Lnet/minecraft/network/ConnectionProtocol;)V
-		ARG 1 packet
-		ARG 2 futureListener
-		ARG 3 protocol
 	METHOD exceptionCaught (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Throwable;)V
 		ARG 1 context
 		ARG 2 throwable
@@ -26,12 +22,6 @@ CLASS net/minecraft/network/Connection
 		ARG 1 listener
 	METHOD send (Lnet/minecraft/network/protocol/Packet;)V
 		ARG 1 packet
-	METHOD send (Lnet/minecraft/network/protocol/Packet;Lio/netty/util/concurrent/GenericFutureListener;)V
-		ARG 1 packet
-		ARG 2 futureListener
-	METHOD sendPacket (Lnet/minecraft/network/protocol/Packet;Lio/netty/util/concurrent/GenericFutureListener;)V
-		ARG 1 packet
-		ARG 2 futureListener
 	METHOD setEncryptionKey (Ljavax/crypto/Cipher;Ljavax/crypto/Cipher;)V
 		ARG 1 decoder
 		ARG 2 encoder
@@ -46,6 +36,6 @@ CLASS net/minecraft/network/Connection
 		METHOD initChannel (Lio/netty/channel/Channel;)V
 			ARG 1 channel
 	CLASS PacketHolder
-		METHOD <init> (Lnet/minecraft/network/protocol/Packet;Lio/netty/util/concurrent/GenericFutureListener;)V
+		METHOD <init> (Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/PacketSendListener;)V
 			ARG 1 packet
 			ARG 2 listener

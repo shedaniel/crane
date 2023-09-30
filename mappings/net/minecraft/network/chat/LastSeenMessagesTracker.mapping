@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/chat/LastSeenMessagesTracker
+	METHOD addPending (Lnet/minecraft/network/chat/MessageSignature;Z)Z
+		ARG 1 lastTrackedMessage
+	CLASS Update
+		METHOD <init> (Lnet/minecraft/network/chat/LastSeenMessages;Lnet/minecraft/network/chat/LastSeenMessages$Update;)V
+			ARG 1 lastSeen
+			ARG 2 update
